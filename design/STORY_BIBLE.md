@@ -4,6 +4,8 @@
 
 > The Seventh Seal opened, and Heaven fell silent. The armies kept marching.
 
+**Opening screenplay:** [The Seventh Silence](OPENING_CINEMATIC.md) is the shared prologue before campaign selection. It preserves the mystery of the forged edicts and leads to H01, A01 or D01.
+
 ## THE PROMISE
 
 This is a three-sided war in which every playable side has a convincing reason to fight, a lie it has told itself, and a price for winning. Humans are not automatically righteous; angels are not uniformly ruthless; demons are not uniformly loyal to Hell. Salvation, sovereignty and freedom are different words. Sevenfall asks which one is worth a world.
