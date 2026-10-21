@@ -1,0 +1,32 @@
+# First original building pass: static art, anchored at the footprint's base.
+# Damaged state currently shares the intact image; animation is a later pass.
+a_spire:
+	Defaults:
+		Filename: sevenfall|art/a-spire.png
+		Offset: 0,-32
+	idle:
+	damaged-idle:
+	make:
+	icon:
+		Filename: sevenfall|art/a-spire-icon.png
+		Offset: 0,0
+h_generator:
+	Defaults:
+		Filename: sevenfall|art/h-generator.png
+		Offset: 0,-32
+	idle:
+	damaged-idle:
+	make:
+	icon:
+		Filename: sevenfall|art/h-generator-icon.png
+		Offset: 0,0
+d_heart:
+	Defaults:
+		Filename: sevenfall|art/d-heart.png
+		Offset: 0,-32
+	idle:
+	damaged-idle:
+	make:
+	icon:
+		Filename: sevenfall|art/d-heart-icon.png
+		Offset: 0,0

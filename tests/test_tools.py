@@ -12,6 +12,29 @@ spec.loader.exec_module(installer)
 
 
 class IntegrationTools(unittest.TestCase):
+    def test_art_dimensions_and_atlas_regions(self):
+        art = ROOT / 'mods/sevenfall/art'
+        def png_size(name):
+            data = (art / name).read_bytes()
+            self.assertEqual(data[:8], b'\x89PNG\r\n\x1a\n')
+            return struct.unpack_from('>II', data, 16)
+        for name in ['a-spire', 'h-generator', 'd-heart']:
+            self.assertEqual(png_size(name + '.png'), (96, 112))
+            self.assertEqual(png_size(name + '-icon.png'), (56, 42))
+            # PNG color type 6 is RGBA: retain alpha for terrain compositing.
+            self.assertEqual((art / (name + '.png')).read_bytes()[25], 6)
+        for scale in [1, 2, 3]:
+            suffix = '' if scale == 1 else f'-{scale}x'
+            for name, minimum in [('factions', (30*scale, 60*scale)), ('loadscreen', (512*scale, 256*scale))]:
+                actual = png_size(f'{name}{suffix}.png')
+                for size, required in zip(actual, minimum):
+                    self.assertGreaterEqual(size, required)
+                    self.assertEqual(size & (size-1), 0, 'Chrome textures must be power-of-two')
+        chrome = (ROOT / 'mods/sevenfall/chrome.yaml').read_text()
+        for x, y, width, height in re.findall(r'^\t\t\w+: (\d+), (\d+), (\d+), (\d+)$', chrome, re.M):
+            self.assertLessEqual(int(x)+int(width), 30)
+            self.assertLessEqual(int(y)+int(height), 60)
+
     def test_every_faction_has_lobby_icon_and_ingame_theme(self):
         mod = ROOT / 'mods/sevenfall'
         factions = re.findall(r'InternalName: ([ahd]_[a-z]+)', (mod / 'rules/10-factions.yaml').read_text())

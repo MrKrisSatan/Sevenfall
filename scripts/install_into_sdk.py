@@ -75,6 +75,8 @@ def main() -> None:
     content = content.replace('maps/ra/{DEV_VERSION}', 'maps/sevenfall/0.2')
     content = content.replace('Version: {DEV_VERSION}', 'Version: 0.2-dev')
     content = content.replace('SupportsMapsFrom: ra', 'SupportsMapsFrom: sevenfall')
+    content = content.replace('SpriteFormats: ShpD2,', 'SpriteFormats: PngSheet, ShpD2,')
+    content = content.replace('ra|uibits/loadscreen', 'sevenfall|art/loadscreen')
     content = content.replace('Missions:\n\tra|missions.yaml', 'Missions:')
     content = content.replace('AllowUnusedFluentMessagesInExternalPackages: false',
                               'AllowUnusedFluentMessagesInExternalPackages: true')
@@ -87,6 +89,7 @@ def main() -> None:
         ('FluentMessages', 'fluent/sevenfall.ftl'),
         ('Chrome', 'chrome.yaml'),
         ('ChromeMetrics', 'metrics.yaml'),
+        ('Sequences', 'sequences/power.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')

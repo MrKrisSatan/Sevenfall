@@ -2,6 +2,9 @@
 
 ## 0.2 development — 2026-10-21
 
+- Added custom faction power-building sprites, production icons, parent emblems and menu/loading branding; preserved transparent sources and reproducible art export tooling.
+- Verified all three new structures in the renderer and the Angel spire/icon/owner marker in a live skirmish; added power-of-two texture regression coverage.
+
 - Imported missing starter game source, pinned OpenRA/SDK and added build/test/launch tooling.
 - Fixed inherited Buildable removal and infantry production metadata; isolated custom maps.
 - Added a generated two-player proving ground, menu map and Sevenfall land AI rules.

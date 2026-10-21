@@ -13,10 +13,34 @@ Players:
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: h_bastion
+	PlayerReference@Host:
+		Name: Host
+		NonCombatant: True
+		Faction: a_seraph
+		Color: E7C76C
+	PlayerReference@Dominion:
+		Name: Dominion
+		NonCombatant: True
+		Faction: h_bastion
+		Color: 69B4D4
+	PlayerReference@Legions:
+		Name: Legions
+		NonCombatant: True
+		Faction: d_legion
+		Color: D34B78
 Actors:
 	MenuCenter: waypoint
 		Owner: Neutral
 		Location: 48,48
+	Spire: a_spire
+		Owner: Host
+		Location: 41,48
+	Generator: h_generator
+		Owner: Dominion
+		Location: 47,48
+	Heart: d_heart
+		Owner: Legions
+		Location: 53,48
 Rules:
 	World:
 		-StartGameNotification:

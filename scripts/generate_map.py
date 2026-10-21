@@ -53,15 +53,42 @@ Actors:
 ''', encoding='utf-8')
     shell = target.parent / 'sevenfall-menu'
     shell.mkdir(exist_ok=True)
-    (shell / 'map.bin').write_bytes((target / 'map.bin').read_bytes())
+    # The menu is a clean art showcase, not a resource field.
+    binary = bytearray((target / 'map.bin').read_bytes())
+    binary[17 + size*size*3:] = bytes(size*size*2)
+    (shell / 'map.bin').write_bytes(binary)
     text = (target / 'map.yaml').read_text(encoding='utf-8')
     text = text.replace('Visibility: Lobby', 'Visibility: Shellmap')
     text = text.replace('Title: Broken Choir - Proving Ground', 'Title: Sevenfall Menu')
     text = text[:text.index('\tPlayerReference@Multi0:')]
-    text += '''Actors:
+    text += '''	PlayerReference@Host:
+		Name: Host
+		NonCombatant: True
+		Faction: a_seraph
+		Color: E7C76C
+	PlayerReference@Dominion:
+		Name: Dominion
+		NonCombatant: True
+		Faction: h_bastion
+		Color: 69B4D4
+	PlayerReference@Legions:
+		Name: Legions
+		NonCombatant: True
+		Faction: d_legion
+		Color: D34B78
+Actors:
 	MenuCenter: waypoint
 		Owner: Neutral
 		Location: 48,48
+	Spire: a_spire
+		Owner: Host
+		Location: 41,48
+	Generator: h_generator
+		Owner: Dominion
+		Location: 47,48
+	Heart: d_heart
+		Owner: Legions
+		Location: 53,48
 Rules:
 	World:
 		-StartGameNotification:
