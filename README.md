@@ -6,7 +6,7 @@
 
 **Development status:** Pre-alpha **0.2 engine integration**. Builds and opens the game menu on Windows; full gameplay-loop validation and a standalone release remain outstanding.
 
-**[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
+**[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
 The field guide includes images and descriptions for all **39 current building designs
 and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
@@ -38,6 +38,10 @@ The repository now includes nine faction choices, 36 structure variants plus thr
 The [custom artwork passes](art/README.md) add faction Construction Yards, power buildings, refineries, eight-direction MCVs and harvesters, fifteen production icons, two grades of Veilglass deposits, parent faction emblems and Sevenfall menu branding. The expanded [building pass](art/BUILDINGS.md) adds 30 building sprites and icons, including faction-specific radar, repair, naval, aircraft, beast-training and technology facilities. Combat units and other unconverted assets still use placeholders.
 
 Use [BUILDING.md](BUILDING.md) to build and launch. See the [integration report](tests/INTEGRATION_REPORT.md) for verified results and [tests/ENGINE_TEST_CHECKLIST.md](tests/ENGINE_TEST_CHECKLIST.md) for the remaining playtest matrix. [TECHNICAL_STARTER.md](TECHNICAL_STARTER.md) preserves the original starter notes.
+
+## Story campaigns (design only)
+
+Sevenfall's narrative plan now includes **75 missions**, with **25 missions per main faction**, organized into five acts each. The three campaigns recount intertwined events from Human, Angel and Demon perspectives; their final missions are alternative versions of the same siege. See the [narrative story bible](design/STORY_BIBLE.md) and [full 75-mission atlas](design/CAMPAIGN_MISSIONS.md), including mission objectives, optional objectives, failure conditions and continuity notes. **None of these campaign missions is implemented in the current OpenRA prototype.**
 
 ## Project management
 
