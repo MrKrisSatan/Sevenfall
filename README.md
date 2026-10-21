@@ -29,7 +29,7 @@ The three major factions each have three playable subfactions:
 
 ## What is actually implemented?
 
-The initial source seed contains MiniYaml designs for nine faction choices, twelve structure variants, 21 unit variants (including three harvesters), six weapons and initial UI strings, plus SDK overlay/validation scripts. It is **not currently proven to run in OpenRA**; the skeletal gameplay rules, inherited Red Alert placeholders and AI plans need integration tests and fixes. **No playable release or installable binary is available yet.**
+The previously prepared local v0.1 source seed contains MiniYaml designs for nine faction choices, twelve structure variants, 21 unit variants (including three harvesters), six weapons and initial UI strings, plus SDK overlay/validation scripts. **The prototype source files have not yet been copied into this GitHub repository**; that work is tracked in [issue #1](https://github.com/MrKrisSatan/Sevenfall/issues/1). The prototype is **not yet proven to run in OpenRA**, and the inherited Red Alert placeholders and AI plans require integration tests. **No playable release or installable binary is available yet.**
 
 See [TECHNICAL_STARTER.md](TECHNICAL_STARTER.md) for setup caveats and [tests/ENGINE_TEST_CHECKLIST.md](tests/ENGINE_TEST_CHECKLIST.md) for verification requirements.
 
