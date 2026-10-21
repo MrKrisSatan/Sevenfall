@@ -23,6 +23,10 @@ class IntegrationTools(unittest.TestCase):
             self.assertEqual(png_size(name + '-icon.png'), (56, 42))
             # PNG color type 6 is RGBA: retain alpha for terrain compositing.
             self.assertEqual((art / (name + '.png')).read_bytes()[25], 6)
+        for name in ['a-veilworks', 'h-veilworks', 'd-veilworks']:
+            self.assertEqual(png_size(name + '.png'), (128, 128))
+            self.assertEqual(png_size(name + '-icon.png'), (56, 42))
+            self.assertEqual((art / (name + '.png')).read_bytes()[25], 6)
         for scale in [1, 2, 3]:
             suffix = '' if scale == 1 else f'-{scale}x'
             for name, minimum in [('factions', (30*scale, 60*scale)), ('loadscreen', (512*scale, 256*scale))]:

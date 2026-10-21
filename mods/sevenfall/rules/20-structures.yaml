@@ -1,4 +1,4 @@
-# Power buildings use original PNG artwork; remaining structures are placeholders.
+# Power buildings and refineries use original PNG artwork.
 A_SPIRE:
 	Inherits: POWR
 	RenderSprites:
@@ -80,7 +80,19 @@ D_HEART:
 A_VEILWORKS:
 	Inherits: PROC
 	RenderSprites:
-		Image: PROC
+		Image: a_veilworks
+	Selectable:
+		Bounds: 3755, 4096, 0, -341
+		DecorationBounds: 3755, 4096, 0, -341
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	-WithIdleOverlay@TOP:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 35
@@ -98,7 +110,19 @@ A_VEILWORKS:
 H_VEILWORKS:
 	Inherits: PROC
 	RenderSprites:
-		Image: PROC
+		Image: h_veilworks
+	Selectable:
+		Bounds: 3755, 4096, 0, -341
+		DecorationBounds: 3755, 4096, 0, -341
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	-WithIdleOverlay@TOP:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 35
@@ -116,7 +140,19 @@ H_VEILWORKS:
 D_VEILWORKS:
 	Inherits: PROC
 	RenderSprites:
-		Image: PROC
+		Image: d_veilworks
+	Selectable:
+		Bounds: 3755, 4096, 0, -341
+		DecorationBounds: 3755, 4096, 0, -341
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	-WithIdleOverlay@TOP:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 35

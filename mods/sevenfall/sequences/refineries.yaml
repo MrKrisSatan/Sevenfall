@@ -1,0 +1,37 @@
+# Static refinery pass: intact art is shared by make and damaged states.
+a_veilworks:
+	Defaults:
+		Filename: sevenfall|art/a-veilworks.png
+		Offset: 0,-8
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	make:
+	icon:
+		Filename: sevenfall|art/a-veilworks-icon.png
+		Offset: 0,0
+h_veilworks:
+	Defaults:
+		Filename: sevenfall|art/h-veilworks.png
+		Offset: 0,-8
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	make:
+	icon:
+		Filename: sevenfall|art/h-veilworks-icon.png
+		Offset: 0,0
+d_veilworks:
+	Defaults:
+		Filename: sevenfall|art/d-veilworks.png
+		Offset: 0,-8
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	make:
+	icon:
+		Filename: sevenfall|art/d-veilworks-icon.png
+		Offset: 0,0

@@ -90,6 +90,7 @@ def main() -> None:
         ('Chrome', 'chrome.yaml'),
         ('ChromeMetrics', 'metrics.yaml'),
         ('Sequences', 'sequences/power.yaml'),
+        ('Sequences', 'sequences/refineries.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')
