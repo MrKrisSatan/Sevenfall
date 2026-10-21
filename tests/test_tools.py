@@ -4,6 +4,9 @@ import struct
 import tempfile
 import re
 import unittest
+import zlib
+import hashlib
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('installer', ROOT / 'scripts/install_into_sdk.py')
@@ -12,6 +15,36 @@ spec.loader.exec_module(installer)
 
 
 class IntegrationTools(unittest.TestCase):
+    def test_logistics_png_sheet_metadata_and_provenance(self):
+        art = ROOT / 'mods/sevenfall/art'
+        for name, size, count in [
+            *((f'{f}-{kind}', (64, 64), 8) for f in 'ahd' for kind in ['mcv', 'harvester']),
+            ('veilglass-rough', (24, 24), 4), ('veilglass-enriched', (24, 24), 4),
+        ]:
+            data = (art / (name + '.png')).read_bytes()
+            self.assertEqual(struct.unpack_from('>II', data, 16), (size[0]*count, size[1]))
+            self.assertEqual(data[25], 6)
+            metadata = {}
+            offset = 8
+            while offset < len(data):
+                length = struct.unpack_from('>I', data, offset)[0]
+                kind = data[offset+4:offset+8]
+                payload = data[offset+8:offset+8+length]
+                crc = struct.unpack_from('>I', data, offset+8+length)[0]
+                self.assertEqual(zlib.crc32(kind+payload), crc, name)
+                if kind == b'tEXt':
+                    key, value = payload.split(b'\0', 1)
+                    metadata[key.decode()] = value.decode()
+                offset += length+12
+            self.assertEqual(metadata['FrameSize'], ','.join(map(str, size)))
+            self.assertEqual(int(metadata['FrameAmount']), count)
+        for f in 'ahd':
+            self.assertEqual(struct.unpack_from('>II', (art / f'{f}-yard.png').read_bytes(), 16), (128, 128))
+            for kind in ['yard', 'mcv', 'harvester']:
+                self.assertEqual(struct.unpack_from('>II', (art / f'{f}-{kind}-icon.png').read_bytes(), 16), (56, 42))
+        for asset in json.loads((ROOT / 'art/sources.json').read_text())['assets']:
+            self.assertEqual(hashlib.sha256((ROOT / asset['file']).read_bytes()).hexdigest(), asset['sha256'])
+
     def test_art_dimensions_and_atlas_regions(self):
         art = ROOT / 'mods/sevenfall/art'
         def png_size(name):

@@ -18,7 +18,6 @@ sf-faction-d-court-name = Demons: Court of Whispers
 sf-faction-d-court-description = Infernal sorcery and disruption.
 sf-faction-random-name = Random Sevenfall Faction
 sf-faction-random-description = Choose one of the nine playable hosts at random.
-sf-resource-veilglass-name = Veilglass
 
 sf-a-spire-name = Radiant Spire
 sf-a-spire-description = Celestial power generation; costly but efficient.
@@ -90,3 +89,6 @@ sf-d-devourer-description = Fast but fragile Veilglass collector.
 
 sf-title = Sevenfall - The War for Creation
 sf-bot-name = Sevenfall AI (prototype)
+
+sf-resource-veilglass-rough-name = Rough Veilglass
+sf-resource-veilglass-enriched-name = Enriched Veilglass

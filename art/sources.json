@@ -51,6 +51,61 @@
       "sha256": "88767e44fe4635c4dbcb86ec3c4248404c6b8c1d34a3aba673fe1fa649333499",
       "brief": "Black iron/bone refinery, magenta furnace and open unloading apron.",
       "prompt_file": "art/refinery-prompts.json"
+    },
+    {
+      "file": "art/source/a-yard.png",
+      "sha256": "6766cd1fd58c068f805abe690888034d1d961b49a78b9b55d639f6e00258d29e",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/h-yard.png",
+      "sha256": "3287fdf28f9e37cf0df3c7c5182198160a4717d9824f2e11b1c5af3c8f42e0f7",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/d-yard.png",
+      "sha256": "03c1d7e92941684e09104a546643e9793850eb0ea852011e8af685ddeb12d8c9",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/a-mcv.png",
+      "sha256": "6e1c65eb74d71274c5fd49578f4e08d2b1979a55be763d16595dcc400f042ff6",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/h-mcv.png",
+      "sha256": "edba740d9fb080be58ac468938d4950fb6ca48925b43ea7dc774cfefe5be5e5e",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/d-mcv.png",
+      "sha256": "8c0fb5ccc8666bb3edacdeeb5f4c08ec43620488c9c09bd4c41aad787a1e5fa1",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/a-harvester.png",
+      "sha256": "334776512b8ce9c7ef3ed7a4cefda53fee1e7c89b96b6eea36893def3cad9047",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/h-harvester.png",
+      "sha256": "261aeec4f9e8f9e4f8c2b5100e9be5f1c2a98128d6aa6566907c923a310cddab",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/d-harvester.png",
+      "sha256": "c0c5f38d2db926860573ae283dddec65f769745adec7dde4c65d54f7bc2ca674",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/veilglass-rough.png",
+      "sha256": "06429c2c5290e712c8ffbe535d9cd8d942a05a2522563585c4f427af4ee8076c",
+      "prompt_file": "art/logistics-prompts.json"
+    },
+    {
+      "file": "art/source/veilglass-enriched.png",
+      "sha256": "a739facc80b2fc5169f8d55f57a0e3d23d8f3d118c5b4aa8e3a882c4b00f0792",
+      "prompt_file": "art/logistics-prompts.json"
     }
   ]
 }
