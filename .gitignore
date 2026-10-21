@@ -1,0 +1,23 @@
+# Local development
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+*.log
+bin/
+obj/
+build/
+dist/
+artifacts/
+*.tmp
+
+# Do not commit Red Alert proprietary assets or game installs
+*.mix
+*.aud
+*.vqa
+*.shp
+*.pal
+*.vxl
+*.hva

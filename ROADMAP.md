@@ -1,0 +1,54 @@
+# Sevenfall development roadmap
+
+**Status as of 21 October 2026: pre-alpha source seed.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
+
+## Phase 0: Foundation and transparency
+- [x] Define original world, factions and Veilglass economy
+- [x] Draft first 9 subfaction choices
+- [x] Produce OpenRA MiniYaml prototype and static checker locally
+- [x] Initialize Sevenfall GitHub repository
+- [x] Publish project website source and living roadmap
+- [ ] Upload complete initial OpenRA source files and verify every file against the starter archive
+- [ ] Run OpenRA SDK compatibility/build and fix load errors
+- [ ] Verify clean license/asset provenance for public builds
+
+## Phase 1: First playable skirmish
+- [ ] Nine factions appear as selectable choices
+- [ ] Construction yard / power plant / refinery placement works
+- [ ] Three faction-specific harvesters mine and unload Veilglass
+- [ ] Infantry and vehicle production works, including prerequisites
+- [ ] Units navigate, attack, take damage and die
+- [ ] Player victory and defeat conditions work
+- [ ] Two human-controlled teams can finish a skirmish
+- [ ] Bot AI can harvest, build and attack in a complete match
+- [ ] Ship a reproducible, engine-verified pre-alpha build
+
+## Phase 2: Mechanical asymmetry
+- [ ] Angels: shields, elite air units, expensive reinforcements
+- [ ] Humans: repair, fortifications, combined-arms and artillery doctrine
+- [ ] Demons: swarms, corruption, infernal gateways and attrition
+- [ ] Give each of nine subfactions an exclusive tech branch and meaningful passive
+- [ ] Tune economy, counters, tech pacing and superweapons
+
+## Phase 3: Original world and presentation
+- [ ] Replace every Red Alert placeholder with licensable, original artwork and audio
+- [ ] Original Veilglass deposits, refinery effects and resource hazards
+- [ ] Nine subfaction colours/emblems, UI and ambient battlefield cues
+- [ ] Original multiplayer and skirmish maps
+- [ ] Full menus, tooltips, tutorial and accessibility settings
+
+## Phase 4: Campaigns and release
+- [ ] Angel campaign
+- [ ] Human campaign
+- [ ] Demon campaign
+- [ ] Scripted objectives, mission briefings and cinematics
+- [ ] Save/resume and mission progression tests
+- [ ] Windows and Linux packaging
+- [ ] Automated builds, changelog and reproducible release process
+- [ ] Gameplay balance, performance and regression passes
+
+## Build policy
+
+Only mark a build **playable** after OpenRA actually launches, the resource economy operates and a skirmish can end correctly. Publish tested binaries under [GitHub Releases](https://github.com/MrKrisSatan/Sevenfall/releases). Development notes and source commits must not be labelled as playable downloads.
+
+Track fine-grained tasks in [GitHub Issues](https://github.com/MrKrisSatan/Sevenfall/issues).
