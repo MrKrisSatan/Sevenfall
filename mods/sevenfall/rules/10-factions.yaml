@@ -65,9 +65,13 @@
 	ResourceRenderer:
 		ResourceTypes:
 			Ore:
-				Name: sf-resource-veilglass-name
+				Image: sf_veilglass
+				Sequences: rough
+				Name: sf-resource-veilglass-rough-name
 			Gems:
-				Name: sf-resource-veilglass-name
+				Image: sf_veilglass
+				Sequences: enriched
+				Name: sf-resource-veilglass-enriched-name
 
 World:
 	StartingUnits@mcvonly:
@@ -85,6 +89,28 @@ World:
 			Gems: 55
 
 FACT:
+	RenderSprites:
+		Image: h_yard
+		FactionImages:
+			a_seraph: a_yard
+			a_warden: a_yard
+			a_exile: a_yard
+			h_bastion: h_yard
+			h_union: h_yard
+			h_covenant: h_yard
+			d_legion: d_yard
+			d_brood: d_yard
+			d_court: d_yard
+	Selectable:
+		Bounds: 4096, 4267, 0, -768
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	ProvidesPrerequisite@sf_angels:
 		Factions: a_seraph, a_warden, a_exile
 		Prerequisite: sf.angels
@@ -121,3 +147,65 @@ FACT:
 	ProvidesPrerequisite@sf_d_court:
 		Factions: d_court
 		Prerequisite: sf.d_court
+
+MCV:
+	RenderSprites:
+		Image: h_mcv
+		FactionImages:
+			a_seraph: a_mcv
+			a_warden: a_mcv
+			a_exile: a_mcv
+			h_bastion: h_mcv
+			h_union: h_mcv
+			h_covenant: h_mcv
+			d_legion: d_mcv
+			d_brood: d_mcv
+			d_court: d_mcv
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+
+MCV.Husk:
+	RenderSprites:
+		Image: h_mcv
+		FactionImages:
+			a_seraph: a_mcv
+			a_warden: a_mcv
+			a_exile: a_mcv
+			h_bastion: h_mcv
+			h_union: h_mcv
+			h_covenant: h_mcv
+			d_legion: d_mcv
+			d_brood: d_mcv
+			d_court: d_mcv
+
+HARV.EmptyHusk:
+	RenderSprites:
+		Image: h_harvester
+		FactionImages:
+			a_seraph: a_harvester
+			a_warden: a_harvester
+			a_exile: a_harvester
+			h_bastion: h_harvester
+			h_union: h_harvester
+			h_covenant: h_harvester
+			d_legion: d_harvester
+			d_brood: d_harvester
+			d_court: d_harvester
+
+HARV.FullHusk:
+	RenderSprites:
+		Image: h_harvester
+		FactionImages:
+			a_seraph: a_harvester
+			a_warden: a_harvester
+			a_exile: a_harvester
+			h_bastion: h_harvester
+			h_union: h_harvester
+			h_covenant: h_harvester
+			d_legion: d_harvester
+			d_brood: d_harvester
+			d_court: d_harvester

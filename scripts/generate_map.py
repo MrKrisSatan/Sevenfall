@@ -56,6 +56,12 @@ Actors:
     # The menu is a clean art showcase, not a resource field.
     binary = bytearray((target / 'map.bin').read_bytes())
     binary[17 + size*size*3:] = bytes(size*size*2)
+    # Small real Veilglass deposits for the logistics art showcase.
+    for cx in [42, 48, 54]:
+        for x in range(cx-1, cx+2):
+            for y in range(59, 62):
+                offset = 17 + size*size*3 + (x*size+y)*2
+                binary[offset:offset+2] = bytes((1 if x < cx+1 else 2, 12 if x < cx+1 else 3))
     (shell / 'map.bin').write_bytes(binary)
     text = (target / 'map.yaml').read_text(encoding='utf-8')
     text = text.replace('Visibility: Lobby', 'Visibility: Shellmap')
@@ -79,7 +85,40 @@ Actors:
 Actors:
 	MenuCenter: waypoint
 		Owner: Neutral
-		Location: 48,48
+		Location: 48,49
+	YardA: fact
+		Owner: Host
+		Location: 41,42
+	YardH: fact
+		Owner: Dominion
+		Location: 47,42
+	YardD: fact
+		Owner: Legions
+		Location: 53,42
+	McvA: mcv
+		Owner: Host
+		Location: 44,50
+		Facing: 640
+	McvH: mcv
+		Owner: Dominion
+		Location: 50,50
+		Facing: 640
+	McvD: mcv
+		Owner: Legions
+		Location: 56,50
+		Facing: 640
+	Gatherer: a_gatherer
+		Owner: Host
+		Location: 42,57
+		Facing: 512
+	Harvester: h_harvester
+		Owner: Dominion
+		Location: 48,57
+		Facing: 512
+	Devourer: d_devourer
+		Owner: Legions
+		Location: 54,57
+		Facing: 512
 	Spire: a_spire
 		Owner: Host
 		Location: 41,48

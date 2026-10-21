@@ -1,4 +1,4 @@
-# Sevenfall faction art — power and refinery passes
+# Sevenfall faction art
 
 ![In-game-size sprites enlarged 3x](power-buildings-preview.png)
 
@@ -12,12 +12,17 @@ Left to right: **Radiant Spire** (Angels), **Veil Generator** (Humans),
   Their 128×128 frames contain artwork up to 88×96 pixels. Existing footprints,
   docking offsets, free harvesters, storage, costs and power use are preserved.
 - Three parent faction emblems, mapped to all nine subfaction selectors.
+- Three Construction Yard designs and faction-specific MCVs, mapped to all nine subfactions.
+- Three original harvesters and six eight-direction vehicle sheets, with matching icons.
+- Rough and enriched Veilglass deposits with four density frames each.
+  See [the logistics pass](LOGISTICS.md) for frame conventions and validation limits.
 - Sevenfall menu/loading graphic with the three emblems and game title, replacing the RA logo.
 - 1×, 2× and 3× UI atlases, padded to power-of-two GPU texture dimensions.
 - PNG sequence loader registration and actor sequence bindings. Each building has an
   always-visible player-coloured `===` ownership marker; PNG pixels themselves are not remapped.
-- Main-menu showcase contains all six structures. Only the showcase suppresses free
-  harvesters, so placeholder vehicles do not clutter the resource-free menu.
+- Main-menu showcase contains all nine structures, three MCVs, three collectors and
+  small Veilglass deposits. It suppresses refinery free actors and places one collector
+  per faction explicitly; these collect and eventually deplete the showcase deposits.
 
 ![Refinery sprites enlarged 3x](refinery-buildings-preview.png)
 
@@ -34,17 +39,19 @@ unloading apron, with faction-specific processing towers and materials.
 
 ## Provenance
 
-The nine source PNGs were generated for Sevenfall using the built-in OpenAI image
+The twenty source PNGs were generated for Sevenfall using the built-in OpenAI image
 generation tool on 21 October 2026. Prompts described original faction concepts from
 the design bible; no third-party reference artwork was supplied. File provenance and
 SHA-256 hashes are recorded in `sources.json`. These are AI-generated development assets,
 not hand-painted work. The repository's original-content licensing decision remains open;
 this pass does not assign a new content licence or claim exclusive rights.
 The exact refinery generation prompts are recorded in `refinery-prompts.json`.
+Logistics and Veilglass prompts, including the Angel MCV correction, are recorded
+in `logistics-prompts.json`.
 
 The script performs technical resizing and atlas packing, preserving source transparency.
 It adds ordinary text for the title and random-faction question mark. Existing Red Alert
-terrain, units, other structures, interface borders and audio remain placeholders.
+terrain, combat units, other structures, interface borders and audio remain placeholders.
 
 ## Rebuild derived assets
 
@@ -65,8 +72,10 @@ when rebuilding on another OS. Inspect the result before committing regenerated 
 ## Deliberate limitations
 
 This is a static sprite pass. Idle, damaged-idle and make currently use the same image.
-There is no custom construction animation, damaged artwork or wreck sprite yet; inherited
-power-building and refinery bib/death art is removed. The inherited refinery roof overlay
+There is no custom construction animation or damaged artwork yet; inherited
+power-building, yard and refinery bib/death art is removed. Vehicle husks provisionally
+reuse the new intact silhouettes with the inherited dark overlay and fire.
+The inherited refinery roof overlay
 is removed because the new art has an open dock; there is no separate foreground
 occlusion layer yet. Docking alignment and occlusion need a full harvesting playtest.
 Gameplay costs, output and prerequisites are unchanged.
@@ -76,7 +85,8 @@ The nine subfactions share their parent's emblem; distinct subfaction heraldry i
 
 - OpenRA `--check-yaml` passes for the mod and both maps.
 - OpenRA `--check-missing-sprites` passes for all four inherited tilesets with local content installed.
-- Five regression tests pass, including PNG dimensions/alpha, texture sizes and flag-region bounds.
+- Six regression tests pass, including PNG dimensions/alpha, frame metadata and CRCs,
+  provenance hashes, texture sizes and flag-region bounds.
 - All three building PNGs and the new menu graphic were visually inspected in the running engine.
 - Observed the Angel spire, production icon and player-colour marker in a live skirmish.
 - High-DPI atlas files are checked structurally; 2×/3× display hardware has not been playtested.
@@ -87,5 +97,5 @@ and transparency. Derived sprites were visually inspected and the updated game
 launched successfully; the Angel refinery icon was observed in the live sidebar.
 All-faction harvesting and damage-state playtests remain outstanding.
 
-Next art pass: harvester designs for each parent faction, then infantry;
+Next art pass: barracks/factories and infantry;
 add construction/damage animations and team-colour masks as the animation pipeline develops.

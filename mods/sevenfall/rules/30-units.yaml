@@ -1,4 +1,4 @@
-# Prototype troops and vehicles; all art is explicit base-game placeholder art.
+# Prototype troops and combat vehicles use placeholders; harvesters have original art.
 # Main-faction units
 A_WATCHER:
 	Inherits: E1
@@ -351,7 +351,15 @@ D_HEXER:
 A_GATHERER:
 	Inherits: HARV
 	RenderSprites:
-		Image: HARV
+		Image: a_harvester
+	WithHarvesterSpriteBody:
+		ImageByFullness: a_harvester
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 35
@@ -369,7 +377,15 @@ A_GATHERER:
 H_HARVESTER:
 	Inherits: HARV
 	RenderSprites:
-		Image: HARV
+		Image: h_harvester
+	WithHarvesterSpriteBody:
+		ImageByFullness: h_harvester
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 35
@@ -387,7 +403,15 @@ H_HARVESTER:
 D_DEVOURER:
 	Inherits: HARV
 	RenderSprites:
-		Image: HARV
+		Image: d_harvester
+	WithHarvesterSpriteBody:
+		ImageByFullness: d_harvester
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 35

@@ -31,7 +31,40 @@ Players:
 Actors:
 	MenuCenter: waypoint
 		Owner: Neutral
-		Location: 48,48
+		Location: 48,49
+	YardA: fact
+		Owner: Host
+		Location: 41,42
+	YardH: fact
+		Owner: Dominion
+		Location: 47,42
+	YardD: fact
+		Owner: Legions
+		Location: 53,42
+	McvA: mcv
+		Owner: Host
+		Location: 44,50
+		Facing: 640
+	McvH: mcv
+		Owner: Dominion
+		Location: 50,50
+		Facing: 640
+	McvD: mcv
+		Owner: Legions
+		Location: 56,50
+		Facing: 640
+	Gatherer: a_gatherer
+		Owner: Host
+		Location: 42,57
+		Facing: 512
+	Harvester: h_harvester
+		Owner: Dominion
+		Location: 48,57
+		Facing: 512
+	Devourer: d_devourer
+		Owner: Legions
+		Location: 54,57
+		Facing: 512
 	Spire: a_spire
 		Owner: Host
 		Location: 41,48

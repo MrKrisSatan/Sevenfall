@@ -1,0 +1,104 @@
+# Generated clockwise turnaround frames use negative Facings for OpenRA world yaw.
+a_yard:
+	Defaults:
+		Filename: sevenfall|art/a-yard.png
+		Offset: 0,-16
+	idle:
+	damaged-idle:
+	make:
+	build:
+	damaged-build:
+	icon:
+		Filename: sevenfall|art/a-yard-icon.png
+		Offset: 0,0
+a_mcv:
+	Defaults:
+		Filename: sevenfall|art/a-mcv.png
+	idle:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/a-mcv-icon.png
+a_harvester:
+	Defaults:
+		Filename: sevenfall|art/a-harvester.png
+	idle:
+		Facings: -8
+	harvest:
+		Facings: -8
+	dock:
+		Facings: -8
+	dock-loop:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/a-harvester-icon.png
+h_yard:
+	Defaults:
+		Filename: sevenfall|art/h-yard.png
+		Offset: 0,-16
+	idle:
+	damaged-idle:
+	make:
+	build:
+	damaged-build:
+	icon:
+		Filename: sevenfall|art/h-yard-icon.png
+		Offset: 0,0
+h_mcv:
+	Defaults:
+		Filename: sevenfall|art/h-mcv.png
+	idle:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/h-mcv-icon.png
+h_harvester:
+	Defaults:
+		Filename: sevenfall|art/h-harvester.png
+	idle:
+		Facings: -8
+	harvest:
+		Facings: -8
+	dock:
+		Facings: -8
+	dock-loop:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/h-harvester-icon.png
+d_yard:
+	Defaults:
+		Filename: sevenfall|art/d-yard.png
+		Offset: 0,-16
+	idle:
+	damaged-idle:
+	make:
+	build:
+	damaged-build:
+	icon:
+		Filename: sevenfall|art/d-yard-icon.png
+		Offset: 0,0
+d_mcv:
+	Defaults:
+		Filename: sevenfall|art/d-mcv.png
+	idle:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/d-mcv-icon.png
+d_harvester:
+	Defaults:
+		Filename: sevenfall|art/d-harvester.png
+	idle:
+		Facings: -8
+	harvest:
+		Facings: -8
+	dock:
+		Facings: -8
+	dock-loop:
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/d-harvester-icon.png
+sf_veilglass:
+	rough:
+		Filename: sevenfall|art/veilglass-rough.png
+		Length: 4
+	enriched:
+		Filename: sevenfall|art/veilglass-enriched.png
+		Length: 4
