@@ -2,6 +2,11 @@
 
 ## 0.2 development — 2026-10-21
 
+- Expanded the building artwork pass to barracks, factories, advanced power,
+  repair depots, radar, naval facilities, helipads, airfields, kennels and tech centres
+  for all three parent factions. Added faction-specific support-building rules,
+  repair targets and a 39-building inspection map. See [coverage and limits](art/BUILDINGS.md).
+
 - Added custom faction power-building sprites, production icons, parent emblems and menu/loading branding; preserved transparent sources and reproducible art export tooling.
 - Verified all three new structures in the renderer and the Angel spire/icon/owner marker in a live skirmish; added power-of-two texture regression coverage.
 

@@ -1,0 +1,242 @@
+[
+  {
+    "name": "a-chapel",
+    "role": "barracks",
+    "width": 64,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "h-barracks",
+    "role": "barracks",
+    "width": 64,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "d-pit",
+    "role": "barracks",
+    "width": 64,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "a-armory",
+    "role": "factory",
+    "width": 96,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "h-motorpool",
+    "role": "factory",
+    "width": 96,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "d-forge",
+    "role": "factory",
+    "width": 96,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "a-advpower",
+    "role": "advpower",
+    "width": 88,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "h-advpower",
+    "role": "advpower",
+    "width": 88,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "d-advpower",
+    "role": "advpower",
+    "width": 88,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "a-service",
+    "role": "service",
+    "width": 88,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "h-service",
+    "role": "service",
+    "width": 88,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "d-service",
+    "role": "service",
+    "width": 88,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "a-radar",
+    "role": "radar",
+    "width": 64,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "h-radar",
+    "role": "radar",
+    "width": 64,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "d-radar",
+    "role": "radar",
+    "width": 64,
+    "height": 88,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "a-naval",
+    "role": "naval",
+    "width": 96,
+    "height": 80,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "h-naval",
+    "role": "naval",
+    "width": 96,
+    "height": 80,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "d-naval",
+    "role": "naval",
+    "width": 96,
+    "height": 80,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "a-helipad",
+    "role": "helipad",
+    "width": 64,
+    "height": 56,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "h-helipad",
+    "role": "helipad",
+    "width": 64,
+    "height": 56,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "d-helipad",
+    "role": "helipad",
+    "width": 64,
+    "height": 56,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "a-airfield",
+    "role": "airfield",
+    "width": 96,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "h-airfield",
+    "role": "airfield",
+    "width": 96,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "d-airfield",
+    "role": "airfield",
+    "width": 96,
+    "height": 64,
+    "anchor": "center",
+    "offset": 0
+  },
+  {
+    "name": "a-kennel",
+    "role": "kennel",
+    "width": 40,
+    "height": 44,
+    "anchor": "bottom",
+    "offset": -40
+  },
+  {
+    "name": "h-kennel",
+    "role": "kennel",
+    "width": 40,
+    "height": 44,
+    "anchor": "bottom",
+    "offset": -40
+  },
+  {
+    "name": "d-kennel",
+    "role": "kennel",
+    "width": 40,
+    "height": 44,
+    "anchor": "bottom",
+    "offset": -40
+  },
+  {
+    "name": "a-tech",
+    "role": "tech",
+    "width": 72,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "h-tech",
+    "role": "tech",
+    "width": 72,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  },
+  {
+    "name": "d-tech",
+    "role": "tech",
+    "width": 72,
+    "height": 80,
+    "anchor": "bottom",
+    "offset": -24
+  }
+]

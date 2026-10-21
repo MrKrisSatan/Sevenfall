@@ -1,0 +1,493 @@
+# Intact pass; damage/construction/resupply animation currently reuse intact art.
+a_chapel:
+	Defaults:
+		Filename: sevenfall|art/a-chapel.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-chapel-icon.png
+		Offset: 0,0
+h_barracks:
+	Defaults:
+		Filename: sevenfall|art/h-barracks.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-barracks-icon.png
+		Offset: 0,0
+d_pit:
+	Defaults:
+		Filename: sevenfall|art/d-pit.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-pit-icon.png
+		Offset: 0,0
+a_armory:
+	Defaults:
+		Filename: sevenfall|art/a-armory.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-armory-icon.png
+		Offset: 0,0
+h_motorpool:
+	Defaults:
+		Filename: sevenfall|art/h-motorpool.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-motorpool-icon.png
+		Offset: 0,0
+d_forge:
+	Defaults:
+		Filename: sevenfall|art/d-forge.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-forge-icon.png
+		Offset: 0,0
+a_advpower:
+	Defaults:
+		Filename: sevenfall|art/a-advpower.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-advpower-icon.png
+		Offset: 0,0
+h_advpower:
+	Defaults:
+		Filename: sevenfall|art/h-advpower.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-advpower-icon.png
+		Offset: 0,0
+d_advpower:
+	Defaults:
+		Filename: sevenfall|art/d-advpower.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-advpower-icon.png
+		Offset: 0,0
+a_service:
+	Defaults:
+		Filename: sevenfall|art/a-service.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/a-service-icon.png
+		Offset: 0,0
+h_service:
+	Defaults:
+		Filename: sevenfall|art/h-service.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/h-service-icon.png
+		Offset: 0,0
+d_service:
+	Defaults:
+		Filename: sevenfall|art/d-service.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/d-service-icon.png
+		Offset: 0,0
+a_radar:
+	Defaults:
+		Filename: sevenfall|art/a-radar.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-radar-icon.png
+		Offset: 0,0
+h_radar:
+	Defaults:
+		Filename: sevenfall|art/h-radar.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-radar-icon.png
+		Offset: 0,0
+d_radar:
+	Defaults:
+		Filename: sevenfall|art/d-radar.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-radar-icon.png
+		Offset: 0,0
+a_naval:
+	Defaults:
+		Filename: sevenfall|art/a-naval.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/a-naval-icon.png
+		Offset: 0,0
+h_naval:
+	Defaults:
+		Filename: sevenfall|art/h-naval.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/h-naval-icon.png
+		Offset: 0,0
+d_naval:
+	Defaults:
+		Filename: sevenfall|art/d-naval.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/d-naval-icon.png
+		Offset: 0,0
+a_helipad:
+	Defaults:
+		Filename: sevenfall|art/a-helipad.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/a-helipad-icon.png
+		Offset: 0,0
+h_helipad:
+	Defaults:
+		Filename: sevenfall|art/h-helipad.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/h-helipad-icon.png
+		Offset: 0,0
+d_helipad:
+	Defaults:
+		Filename: sevenfall|art/d-helipad.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/d-helipad-icon.png
+		Offset: 0,0
+a_airfield:
+	Defaults:
+		Filename: sevenfall|art/a-airfield.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/a-airfield-icon.png
+		Offset: 0,0
+h_airfield:
+	Defaults:
+		Filename: sevenfall|art/h-airfield.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/h-airfield-icon.png
+		Offset: 0,0
+d_airfield:
+	Defaults:
+		Filename: sevenfall|art/d-airfield.png
+		Offset: 0,0
+	idle:
+		ZOffset: -1c511
+	damaged-idle:
+		ZOffset: -1c511
+	place:
+	make:
+		ZOffset: -1c511
+	active:
+		ZOffset: -1c511
+	damaged-active:
+		ZOffset: -1c511
+	dead:
+		ZOffset: -1c511
+	icon:
+		Filename: sevenfall|art/d-airfield-icon.png
+		Offset: 0,0
+a_kennel:
+	Defaults:
+		Filename: sevenfall|art/a-kennel.png
+		Offset: 0,-40
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-kennel-icon.png
+		Offset: 0,0
+h_kennel:
+	Defaults:
+		Filename: sevenfall|art/h-kennel.png
+		Offset: 0,-40
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-kennel-icon.png
+		Offset: 0,0
+d_kennel:
+	Defaults:
+		Filename: sevenfall|art/d-kennel.png
+		Offset: 0,-40
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-kennel-icon.png
+		Offset: 0,0
+a_tech:
+	Defaults:
+		Filename: sevenfall|art/a-tech.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/a-tech-icon.png
+		Offset: 0,0
+h_tech:
+	Defaults:
+		Filename: sevenfall|art/h-tech.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/h-tech-icon.png
+		Offset: 0,0
+d_tech:
+	Defaults:
+		Filename: sevenfall|art/d-tech.png
+		Offset: 0,-24
+	idle:
+	damaged-idle:
+	place:
+	make:
+	active:
+	damaged-active:
+	dead:
+	icon:
+		Filename: sevenfall|art/d-tech-icon.png
+		Offset: 0,0

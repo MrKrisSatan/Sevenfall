@@ -1,0 +1,194 @@
+[
+  {
+    "name": "a-advpower",
+    "role": "advpower",
+    "faction": "a",
+    "prompt": "Original Sevenfall advanced power plant RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A broad high-output reactor complex with THREE clearly visible energy cores and heavy conduits. No doors, landing pad, or radar dish.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 88
+  },
+  {
+    "name": "h-advpower",
+    "role": "advpower",
+    "faction": "h",
+    "prompt": "Original Sevenfall advanced power plant RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A broad high-output reactor complex with THREE clearly visible energy cores and heavy conduits. No doors, landing pad, or radar dish.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 88
+  },
+  {
+    "name": "d-advpower",
+    "role": "advpower",
+    "faction": "d",
+    "prompt": "Original Sevenfall advanced power plant RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A broad high-output reactor complex with THREE clearly visible energy cores and heavy conduits. No doors, landing pad, or radar dish.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 88
+  },
+  {
+    "name": "a-service",
+    "role": "service",
+    "faction": "a",
+    "prompt": "Original Sevenfall vehicle service depot RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. An OPEN low repair platform with a large EMPTY flat central service pad, open approach from every side, short repair arms and equipment only at rear corners. No roof over the central pad, no vehicle.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 64
+  },
+  {
+    "name": "h-service",
+    "role": "service",
+    "faction": "h",
+    "prompt": "Original Sevenfall vehicle service depot RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. An OPEN low repair platform with a large EMPTY flat central service pad, open approach from every side, short repair arms and equipment only at rear corners. No roof over the central pad, no vehicle.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 64
+  },
+  {
+    "name": "d-service",
+    "role": "service",
+    "faction": "d",
+    "prompt": "Original Sevenfall vehicle service depot RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. An OPEN low repair platform with a large EMPTY flat central service pad, open approach from every side, short repair arms and equipment only at rear corners. No roof over the central pad, no vehicle.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 88pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 88,
+    "height": 64
+  },
+  {
+    "name": "a-radar",
+    "role": "radar",
+    "faction": "a",
+    "prompt": "Original Sevenfall radar and reconnaissance building RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A compact sensing station with ONE unmistakable large upward angled dish or ring sensor over a squat control bunker. No factory bay or landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 88
+  },
+  {
+    "name": "h-radar",
+    "role": "radar",
+    "faction": "h",
+    "prompt": "Original Sevenfall radar and reconnaissance building RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A compact sensing station with ONE unmistakable large upward angled dish or ring sensor over a squat control bunker. No factory bay or landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 88
+  },
+  {
+    "name": "d-radar",
+    "role": "radar",
+    "faction": "d",
+    "prompt": "Original Sevenfall radar and reconnaissance building RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A compact sensing station with ONE unmistakable large upward angled dish or ring sensor over a squat control bunker. No factory bay or landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 88
+  },
+  {
+    "name": "a-naval",
+    "role": "naval",
+    "faction": "a",
+    "prompt": "Original Sevenfall naval production dock RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A U-shaped floating dock, two broad parallel piers flanking a completely EMPTY TRANSPARENT central water channel open toward front and rear, compact control building across one side only. No water painted into background, no ship, no enclosed garage.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 80
+  },
+  {
+    "name": "h-naval",
+    "role": "naval",
+    "faction": "h",
+    "prompt": "Original Sevenfall naval production dock RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A U-shaped floating dock, two broad parallel piers flanking a completely EMPTY TRANSPARENT central water channel open toward front and rear, compact control building across one side only. No water painted into background, no ship, no enclosed garage.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 80
+  },
+  {
+    "name": "d-naval",
+    "role": "naval",
+    "faction": "d",
+    "prompt": "Original Sevenfall naval production dock RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A U-shaped floating dock, two broad parallel piers flanking a completely EMPTY TRANSPARENT central water channel open toward front and rear, compact control building across one side only. No water painted into background, no ship, no enclosed garage. Make this a SUBMARINE PEN: reinforced covered side piers with open deep central slipway. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 80
+  },
+  {
+    "name": "a-helipad",
+    "role": "helipad",
+    "faction": "a",
+    "prompt": "Original Sevenfall vertical aircraft landing facility RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A low square landing platform, large EMPTY flat pad in centre with a simple geometric landing ring (no letter H), tiny control hut at rear corner. Completely clear centre, no aircraft, no roof.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 56
+  },
+  {
+    "name": "h-helipad",
+    "role": "helipad",
+    "faction": "h",
+    "prompt": "Original Sevenfall vertical aircraft landing facility RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A low square landing platform, large EMPTY flat pad in centre with a simple geometric landing ring (no letter H), tiny control hut at rear corner. Completely clear centre, no aircraft, no roof.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 56
+  },
+  {
+    "name": "d-helipad",
+    "role": "helipad",
+    "faction": "d",
+    "prompt": "Original Sevenfall vertical aircraft landing facility RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A low square landing platform, large EMPTY flat pad in centre with a simple geometric landing ring (no letter H), tiny control hut at rear corner. Completely clear centre, no aircraft, no roof.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 64pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 64,
+    "height": 56
+  },
+  {
+    "name": "a-airfield",
+    "role": "airfield",
+    "faction": "a",
+    "prompt": "Original Sevenfall fixed-wing aircraft runway RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A broad low flat RUNWAY oriented left-to-right, strip with bright short centreline markings and a small low hangar/control booth along REAR edge. Entire middle and both runway ends clear, no aircraft, no roof over runway.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 64
+  },
+  {
+    "name": "h-airfield",
+    "role": "airfield",
+    "faction": "h",
+    "prompt": "Original Sevenfall fixed-wing aircraft runway RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A broad low flat RUNWAY oriented left-to-right, strip with bright short centreline markings and a small low hangar/control booth along REAR edge. Entire middle and both runway ends clear, no aircraft, no roof over runway.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 64
+  },
+  {
+    "name": "d-airfield",
+    "role": "airfield",
+    "faction": "d",
+    "prompt": "Original Sevenfall fixed-wing aircraft runway RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A broad low flat RUNWAY oriented left-to-right, strip with bright short centreline markings and a small low hangar/control booth along REAR edge. Entire middle and both runway ends clear, no aircraft, no roof over runway.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 96pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 96,
+    "height": 64
+  },
+  {
+    "name": "a-kennel",
+    "role": "kennel",
+    "faction": "a",
+    "prompt": "Original Sevenfall scout-beast training den RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. A very small low secure enclosure with squat shelter, open front animal-sized entrance, two low side pens. No animals, no people, no giant statue. Clearly much smaller than barracks.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 40pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 40,
+    "height": 44
+  },
+  {
+    "name": "h-kennel",
+    "role": "kennel",
+    "faction": "h",
+    "prompt": "Original Sevenfall scout-beast training den RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. A very small low secure enclosure with squat shelter, open front animal-sized entrance, two low side pens. No animals, no people, no giant statue. Clearly much smaller than barracks.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 40pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 40,
+    "height": 44
+  },
+  {
+    "name": "d-kennel",
+    "role": "kennel",
+    "faction": "d",
+    "prompt": "Original Sevenfall scout-beast training den RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. A very small low secure enclosure with squat shelter, open front animal-sized entrance, two low side pens. No animals, no people, no giant statue. Clearly much smaller than barracks.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 40pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 40,
+    "height": 44
+  },
+  {
+    "name": "a-tech",
+    "role": "tech",
+    "faction": "a",
+    "prompt": "Original Sevenfall high-tier research centre RTS building sprite. ANGEL faction: ivory stone, polished gold, cyan crystalline lights, restrained wing motifs and halo architecture. An advanced research building with sealed central laboratory, geometric roof instrument and two low side labs. Sophisticated unmistakable research silhouette, no factory door, no landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 72pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 72,
+    "height": 80
+  },
+  {
+    "name": "h-tech",
+    "role": "tech",
+    "faction": "h",
+    "prompt": "Original Sevenfall high-tier research centre RTS building sprite. HUMAN faction: graphite concrete, olive steel, amber industrial lights, practical angular military engineering. An advanced research building with sealed central laboratory, geometric roof instrument and two low side labs. Sophisticated unmistakable research silhouette, no factory door, no landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 72pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 72,
+    "height": 80
+  },
+  {
+    "name": "d-tech",
+    "role": "tech",
+    "faction": "d",
+    "prompt": "Original Sevenfall high-tier research centre RTS building sprite. DEMON faction: black iron, scorched bone ribs, crimson armor, magenta energy lights, compact menacing horn motifs. No gore. An advanced research building with sealed central laboratory, geometric roof instrument and two low side labs. Sophisticated unmistakable research silhouette, no factory door, no landing pad.  Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting. Stylized pre-rendered RTS art, bold simple readable material masses at 72pixels wide. Entire single building fully visible centered on genuine transparent background. No terrain, characters, vehicles, text, labels, grid, detached smoke, floating effects or decorative background. Preserve functional open spaces. Compact game silhouette.",
+    "width": 72,
+    "height": 80
+  }
+]

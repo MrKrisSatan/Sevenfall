@@ -170,7 +170,17 @@ D_VEILWORKS:
 A_CHAPEL:
 	Inherits: TENT
 	RenderSprites:
-		Image: TENT
+		Image: a_chapel
+	Selectable:
+		Bounds: 2731, 3413, 0, -683
+		DecorationBounds: 2731, 3413, 0, -683
+	-WithBuildingBib:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -184,7 +194,17 @@ A_CHAPEL:
 H_BARRACKS:
 	Inherits: TENT
 	RenderSprites:
-		Image: TENT
+		Image: h_barracks
+	Selectable:
+		Bounds: 2731, 3413, 0, -683
+		DecorationBounds: 2731, 3413, 0, -683
+	-WithBuildingBib:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -198,7 +218,17 @@ H_BARRACKS:
 D_PIT:
 	Inherits: BARR
 	RenderSprites:
-		Image: BARR
+		Image: d_pit
+	Selectable:
+		Bounds: 2731, 3413, 0, -683
+		DecorationBounds: 2731, 3413, 0, -683
+	-WithBuildingBib:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -212,7 +242,18 @@ D_PIT:
 A_ARMORY:
 	Inherits: WEAP
 	RenderSprites:
-		Image: WEAP
+		Image: a_armory
+	Selectable:
+		Bounds: 4096, 3413, 0, -683
+		DecorationBounds: 4096, 3413, 0, -683
+	-WithBuildingBib:
+	-WithProductionDoorOverlay:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 45
@@ -226,7 +267,18 @@ A_ARMORY:
 H_MOTORPOOL:
 	Inherits: WEAP
 	RenderSprites:
-		Image: WEAP
+		Image: h_motorpool
+	Selectable:
+		Bounds: 4096, 3413, 0, -683
+		DecorationBounds: 4096, 3413, 0, -683
+	-WithBuildingBib:
+	-WithProductionDoorOverlay:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 45
@@ -240,7 +292,18 @@ H_MOTORPOOL:
 D_FORGE:
 	Inherits: WEAP
 	RenderSprites:
-		Image: WEAP
+		Image: d_forge
+	Selectable:
+		Bounds: 4096, 3413, 0, -683
+		DecorationBounds: 4096, 3413, 0, -683
+	-WithBuildingBib:
+	-WithProductionDoorOverlay:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 45

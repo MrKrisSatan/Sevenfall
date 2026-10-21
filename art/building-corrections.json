@@ -1,0 +1,7 @@
+[
+  {
+    "name": "a-airfield",
+    "prompt": "Edit this original Sevenfall Angel airfield sprite. Preserve the runway, hangar, tower, materials, shape and camera angle. Remove ALL surrounding background glow, haze, shadow and backdrop outside the building silhouette. Clean opaque building cutout with genuine zero-alpha transparency around it, including between roof details. No glow halo, no shadow outside the base. Do not change the design. Keep entire building in frame.",
+    "note": "Final transparent composite inspected against a coloured background; source RGB outside the alpha silhouette is not rendered."
+  }
+]

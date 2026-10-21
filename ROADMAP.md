@@ -32,6 +32,9 @@
 - [ ] Tune economy, counters, tech pacing and superweapons
 
 ## Phase 3: Original world and presentation
+- [x] Add intact sprites and icons for the current base/support building roster across three parent factions
+- [ ] Complete original combat-unit, aircraft, naval and beast sprites
+- [ ] Add building construction/damage frames and unit animation sets
 - [ ] Replace every Red Alert placeholder with licensable, original artwork and audio
 - [ ] Original Veilglass deposits, refinery effects and resource hazards
 - [ ] Nine subfaction colours/emblems, UI and ambient battlefield cues

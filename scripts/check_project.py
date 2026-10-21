@@ -25,7 +25,7 @@ missing = referenced - set(fluent_ids)
 assert not missing, f'Missing fluent strings: {sorted(missing)}'
 # All intentional new actor identifiers are assigned an image unless they are rule overrides.
 actors = {}
-for f in ('20-structures.yaml', '30-units.yaml'):
+for f in ('20-structures.yaml', '25-support-structures.yaml', '30-units.yaml'):
     filetext = (base / 'rules' / f).read_text(encoding='utf8')
     for m in re.finditer(r'(?m)^([A-Z][A-Z0-9_]+):\n(.*?)(?=^[A-Z][A-Z0-9_]+:\n|\Z)', filetext, re.S|re.M):
         key, body = m.group(1),m.group(2)
