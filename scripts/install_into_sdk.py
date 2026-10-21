@@ -54,6 +54,23 @@ CAMPAIGN_PROTOTYPES = (
 )
 
 
+def stage_original_unit_turnarounds(target: Path) -> int:
+    """Stage authored direction-specific sprites for future animation bindings.
+
+    The source pack contains eight distinct facings per unit, not movement,
+    firing, or death cycles. These sprites are NOT yet active combat sprites.
+    """
+    source = PROJECT / 'art' / 'unit-turnarounds' / 'sheets'
+    sprites = sorted(source.glob('*.png'))
+    if len(sprites) != 39:
+        raise RuntimeError(f'Expected 39 original directional sprite sheets, found {len(sprites)}')
+    destination = target / 'art' / 'unit-turnarounds'
+    destination.mkdir(parents=True, exist_ok=True)
+    for sprite in sprites:
+        shutil.copy2(sprite, destination / sprite.name)
+    return len(sprites)
+
+
 def install_campaign_map_binaries(target: Path) -> None:
     """Install the three source-only mission maps onto the prototype terrain."""
     terrain = MOD_SOURCE / 'maps' / 'broken-choir' / 'map.bin'
@@ -86,6 +103,7 @@ def main() -> None:
             shutil.copy2(item, dest)
 
     install_campaign_map_binaries(target)
+    staged_unit_count = stage_original_unit_turnarounds(target)
 
     # All SDK-provided RA content stays mounted as ra|. Only our additions use sevenfall|.
     content = ra_manifest.read_text(encoding='utf-8-sig')
@@ -145,6 +163,7 @@ def main() -> None:
 
     print(f'Sevenfall overlay installed: {target}')
     print(f'Generated vanilla actor exclusions: {len(original)}')
+    print(f'Original eight-facing unit turnarounds staged (not yet animated): {staged_unit_count}')
     print('Next: SDK make.cmd [all] and make.cmd [test] (Windows), or make && make test (Linux).')
     print('NOTE: 0.3 candidate: three source-backed campaign previews installed; live victory/combat remain unverified.')
 
