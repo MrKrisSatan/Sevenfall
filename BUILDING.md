@@ -66,7 +66,10 @@ change display mode through Settings after launch if desired.
 
 ## Validation and remaining work
 
-Use the [nine-faction skirmish runbook](tests/SKIRMISH_RUNBOOK.md) to record\nreal economy, combat, AI and victory results. All cases begin as NOT RUN.\n\nSee [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
+Use the [nine-faction skirmish runbook](tests/SKIRMISH_RUNBOOK.md) to record
+real economy, combat, AI and victory results. All cases begin as NOT RUN.
+
+See [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
 not prove harvesting, balance, victory, replay safety or AI quality. The next milestone
 is measured end-to-end economy/combat testing for all three parent factions, followed
 by the nine-faction matrix. Original assets, campaigns, defenses, expansion MCVs,
