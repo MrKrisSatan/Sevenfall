@@ -21,6 +21,10 @@ exact commits by `scripts/build.py`. Existing checkouts at another commit are re
 
 ## Windows
 
+You can double-click `PLAY_SEVENFALL_DEV.cmd` in the repository root to run
+source tests, build the pinned SDK and launch the local prototype in order.
+Alternatively, run the commands manually:
+
 ```powershell
 py -3 scripts/build.py build
 py -3 -m unittest discover -s tests
@@ -73,6 +77,10 @@ After a successful build, open **Singleplayer → Missions** or the mission sele
 | Ashes of Earth | **H03: The Glass Fields** | Free Earth Union | Blood Brood |
 | War in Heaven | **A03: A Glass of Wrath** | Order of the Gate | Blood Brood |
 | The Ninth Mouth | **D02: Seeds of Ruin** | Blood Brood | Bastion Directorate |
+
+All **39 original eight-facing unit sheets** are copied into the SDK's
+`mods/sevenfall/art/unit-turnarounds/` staging folder. They are not active
+combat animations yet; the current live units still use placeholders.
 
 The campaign preview missions use **Broken Choir prototype terrain copied into
 the local SDK during installation**, not yet authored story maps. Their source
