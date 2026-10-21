@@ -1,7 +1,7 @@
 # SEVENFALL: THE WAR FOR CREATION
 ## Campaign mission atlas 1.0: 75 missions, three perspectives
 
-**Status:** approved-design candidate / narrative and mission specification only. **No campaign missions are currently implemented or playable.** This atlas expands the [story bible](STORY_BIBLE.md), preserves the original eight mission titles per faction in their narrative order, and supplies **25 human, 25 angel and 25 demon** missions.
+**Status:** narrative proposal / mission specification only. **No campaign missions are currently implemented or playable.** This atlas expands the [story bible](STORY_BIBLE.md), preserves the original eight mission titles per faction in their narrative order, and supplies **25 human, 25 angel and 25 demon** missions.
 
 > The Seventh Seal broke. The world did not end. Three armies arrived to decide what came next. Only one of them had been asked to live there.
 
@@ -114,7 +114,7 @@
 **Theatre:** Harrow's living settlements. **Primary:** break the Court's false voting seals, protect Tamar and the Witness delegates, and move civilians through safe exits. **Optional:** accept a temporary halt in artillery fire while neutral witnesses inspect the evacuation. **Failure:** witness assembly destroyed. **Story:** a legal victory without the consent of the governed would reproduce Vhal's crime.
 
 #### H25. We Remain
-**Theatre:** Harrow of Dawn central Seamfall. **Primary:** maintain physical Veilglass harvesting, defend command infrastructure, stop the Edict and Ninth Mouth countdowns, and defeat the final contested force. **Final choice:** **Open Earth**, a limited Lazarus severance with voluntary reconstruction; or **Iron Earth**, a human monopoly maintained by authoritarian orbital power. **Failure:** relay network destroyed or rival completion timer expires. **Story:** humanity determines whether its independence extends to the civilians it claims to protect.
+**Theatre:** Harrow of Dawn central Seamfall. **Primary:** maintain physical Veilglass harvesting, defend command infrastructure, stop the Edict and Ninth Mouth countdowns, and defeat the final contested force. **Optional:** Protect the neutral witness pavilion during the final artillery exchange, preserving additional testimony for the epilogue. **Final choice:** **Open Earth**, a limited Lazarus severance with voluntary reconstruction; or **Iron Earth**, a human monopoly maintained by authoritarian orbital power. **Failure:** relay network destroyed or rival completion timer expires. **Story:** humanity determines whether its independence extends to the civilians it claims to protect.
 
 ## CAMPAIGN II: WAR IN HEAVEN (ANGELS)
 
@@ -160,7 +160,7 @@
 **Theatre:** hidden Unshackled library. **Primary:** locate copies of the old command hierarchy, defeat Hexers and defend scholars before a Synod purge arrives. **Optional:** recover a testimony about the First Watch that would embarrass the Host. **Failure:** all original tablets destroyed. **Story:** the First Covenant limited outside rule by design.
 
 #### A12. The Unshackling
-**Theatre:** vaults under Broken Choir. **Primary:** survive the Synod purge and Court raid, protect Maeron's Penitents and evacuate documentary evidence. **Choice:** seize the records as heresy or recognise Maeron's witness and disobey the suspect edict. **Failure:** every document carrier eliminated. **Story:** celestial unanimity was manufactured by deleting dissent from the record.
+**Theatre:** vaults under Broken Choir. **Primary:** survive the Synod purge and Court raid, protect Maeron's Penitents and evacuate documentary evidence. **Optional:** Rescue the original hearing transcripts before the vault seals, enabling an impartial review of Maeron's charges. **Choice:** seize the records as heresy or recognise Maeron's witness and disobey the suspect edict. **Failure:** every document carrier eliminated. **Story:** celestial unanimity was manufactured by deleting dissent from the record.
 
 #### A13. Ten Thousand Eyes
 **Theatre:** Angel observatory network. **Primary:** rebuild an All-Seeing Halo intelligence network without exposing civilian positions to the Court. **Optional:** stop tracking neutral towns and accept reduced scouting vision. **Failure:** all observatories captured. **Story:** observation can protect refugees or enable their imprisonment.
@@ -174,7 +174,7 @@
 ### ACT IV: THE WITNESS LEDGER (A16–A20)
 
 #### A16. The Empty Gate
-**Theatre:** threshold complex. **Primary:** hold shield pylons, escort refugees and harvest Veilglass needed to keep defenses powered against the Court's breach engines. **Choice:** close immediately with civilians outside, or extend the defense so they can escape. **Failure:** all Gate anchors lost. **Story:** the genuine surviving directive is to hear living testimony.
+**Theatre:** threshold complex. **Primary:** hold shield pylons, escort refugees and harvest Veilglass needed to keep defenses powered against the Court's breach engines. **Optional:** Keep a secondary refugee bridge intact, rescuing families beyond the minimum evacuation quota. **Choice:** close immediately with civilians outside, or extend the defense so they can escape. **Failure:** all Gate anchors lost. **Story:** the genuine surviving directive is to hear living testimony.
 
 #### A17. The Names Not Burned
 **Theatre:** Witness Kin refuge. **Primary:** guard a human delegation as its elders speak before an Angel tribunal, withstanding both infernal and fanatic interruption. **Optional:** record dissenting testimonies rather than a unanimous decree. **Failure:** witness assembly silenced. **Story:** the covenant is held by communities, not by a celestial succession of rulers.
@@ -203,7 +203,7 @@
 **Theatre:** Harrow witness amphitheatre. **Primary:** secure tribunal approaches, keep Tamar alive and prevent Vhal from substituting counterfeit witnesses. **Optional:** grant adversarial speakers from human settlements and infernal defectors a hearing. **Failure:** testimony corrupted or site destroyed. **Story:** the commander must decide whether listening is a duty or a weakness.
 
 #### A25. Judgment Deferred
-**Theatre:** Harrow of Dawn central Seamfall. **Primary:** survive three-front attacks, retain Gatherer income, stop the Ninth Mouth and take the Edict command nodes. **Final choice:** **The Open Gate**, a voluntary guardian pact that preserves human rule, or **Radiant Quarantine**, a closed, safe but authoritarian world beneath the Host. **Failure:** the Gate collapses or Vhal completes his claim. **Story:** a celestial victory reveals whether mercy and freedom can coexist.
+**Theatre:** Harrow of Dawn central Seamfall. **Primary:** survive three-front attacks, retain Gatherer income, stop the Ninth Mouth and take the Edict command nodes. **Optional:** Spare the surrounded human field hospital while neutralizing its adjacent Lazarus relay by precision strike. **Final choice:** **The Open Gate**, a voluntary guardian pact that preserves human rule, or **Radiant Quarantine**, a closed, safe but authoritarian world beneath the Host. **Failure:** the Gate collapses or Vhal completes his claim. **Story:** a celestial victory reveals whether mercy and freedom can coexist.
 
 ## CAMPAIGN III: THE NINTH MOUTH (DEMONS)
 
@@ -269,7 +269,7 @@
 **Theatre:** abandoned First Watch station. **Primary:** defeat a celestial garrison that holds the other half of the contract record and escape before Synod reinforcements arrive. **Optional:** save an Unshackled prisoner who can confirm its provenance. **Failure:** contract record lost. **Story:** both celestial and infernal histories altered the same ancient event for political convenience.
 
 #### D18. The Court's Price
-**Theatre:** Court of Whispers archive. **Primary:** survive Vhal's ambush, destroy three counterfeit contract presses and extract the original Witness Ledger fragments. **Choice:** send the record to Azrakh for an empire or to Nerezza for a genuine revolt. **Failure:** archive seized by Vhal and the player's command destroyed. **Story:** the Ninth Mouth will bind every traveller directly to Vhal.
+**Theatre:** Court of Whispers archive. **Primary:** survive Vhal's ambush, destroy three counterfeit contract presses and extract the original Witness Ledger fragments. **Optional:** Free the contract scribes enslaved beneath the presses before demolishing the archive. **Choice:** send the record to Azrakh for an empire or to Nerezza for a genuine revolt. **Failure:** archive seized by Vhal and the player's command destroyed. **Story:** the Ninth Mouth will bind every traveller directly to Vhal.
 
 #### D19. Crownless
 **Theatre:** infernal political capital. **Primary:** defeat the Court's loyal bodyguard and release captured commanders while keeping the army supplied. **Optional:** avoid razing the labour district, where families of enslaved Thralls live. **Failure:** rebel command compound destroyed. **Story:** without Vhal's promised throne, the Legion must discover what its army is actually for.
@@ -292,7 +292,7 @@
 **Theatre:** Harrow's underground covenant machinery. **Primary:** use Veilglass power to break or transfer three binding anchors while holding off celestial and infernal interference. **Optional:** free imprisoned Witness Kin and enemy deserters. **Failure:** all anchor sites lost. **Story:** the player may inherit Hell's power intact or destroy the system that produces automatic obedience.
 
 #### D25. The Shape of Freedom
-**Theatre:** Harrow of Dawn central Seamfall. **Primary:** maintain Infernal Devourer supply, defeat Vhal's guard and repel both Lazarus and the Edict while preparing the Ninth Mouth. **Final choice:** **Crown of Ash**, rule Earth and Hell through captured bondage; or **Unbound Fire**, invert the gateway and release infernal servants from their inherited chains. **Failure:** Ninth Mouth lost or enemy final strike resolves. **Story:** the final irony is whether the victorious rebel chooses to become a master.
+**Theatre:** Harrow of Dawn central Seamfall. **Primary:** maintain Infernal Devourer supply, defeat Vhal's guard and repel both Lazarus and the Edict while preparing the Ninth Mouth. **Optional:** Preserve the refugee corridor shared by demon noncombatants and human civilians as the Ninth Mouth powers up. **Final choice:** **Crown of Ash**, rule Earth and Hell through captured bondage; or **Unbound Fire**, invert the gateway and release infernal servants from their inherited chains. **Failure:** Ninth Mouth lost or enemy final strike resolves. **Story:** the final irony is whether the victorious rebel chooses to become a master.
 
 ## SHARED EVENTS: CONSISTENCY LOCKS
 
