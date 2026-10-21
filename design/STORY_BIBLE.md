@@ -1,5 +1,5 @@
 # SEVENFALL: THE WAR FOR CREATION
-## Narrative bible 1.0 | The Seventh Silence
+## Narrative bible 1.1 | The Seventh Silence and 75-mission structure
 **Status:** Narrative specification, not an implemented campaign. **Continuity:** Expands [GAME_DESIGN.md](GAME_DESIGN.md) without replacing the original three factions, nine subfactions, C&C harvesting economy or the existing eight-mission titles per campaign.
 
 > The Seventh Seal opened, and Heaven fell silent. The armies kept marching.
@@ -131,47 +131,25 @@ Hell is both a realm and a layered imperial war machine. **Devils**, in Sevenfal
 
 ## 5. CAMPAIGN STRUCTURE AND SHARED CHRONOLOGY
 
-Three parent campaigns, **eight missions each**, preserve all existing title beats. Each campaign shares locations and key events but tells different truths. Missions **1–7** converge on a common war history. Each mission **8** begins at the Harrow of Dawn but is an **alternative playable ending**. No one is required to play one side as the canonical winner. This prevents contradictory base destruction claims being treated as simultaneous historical fact.
+**Expanded canonical plan: 75 missions, exactly 25 per major faction.** The full, numbered, objective-by-objective specification lives in **[CAMPAIGN_MISSIONS.md](CAMPAIGN_MISSIONS.md)**. This bible describes the setting and character arcs; the mission atlas is authoritative for mission numbering, detailed objectives, fail states and crossover references. The original eight mission titles per campaign survive in their relative story order, with the final titles now at H25, A25 and D25.
 
-| Story phase | Human view | Angel view | Demon view | Shared turning point |
-|---|---|---|---|---|
-| The Fall | H1–H2 | A1–A2 | D1 | Sixth signs and seventh silence, refugees and first bases |
-| The Crystal War | H3 | A3 | D2–D3 | Veilglass supplies are contested |
-| The False Edicts | H4–H5 | A4–A5 | D4–D5 | Evidence of a forged divine and infernal command appears |
-| The Ledger | H6–H7 | A6–A7 | D6–D7 | Witnesses reveal the covenant's missing clause |
-| The Harrow | H8 | A8 | D8 | Three alternative resolutions of the same final crisis |
+The campaigns share one broad history but each tells a different, sometimes mistaken account. Numbering is local to the selected campaign: H07 and A08 describe the same Broken Choir conflict from opposite sides. The final Harrow battles H25, A25 and D25 are **alternative victories**, never all true simultaneously.
 
-**Mission logic contract:** story objectives sit atop real OpenRA economy mechanics. Most maps retain starting MCV/conyard, finite Veilglass, refineries, build queues and harvesters. Scripted civilians, restricted-tech infiltrations, defense countdowns and boss units are *mission-specific exceptions*; they must not replace the core harvesting model. A dramatic scene needs an actual playable objective, optional objective, fail condition, and consequence.
+| Act | Missions in each campaign | Narrative focus | RTS progression |
+|---|---|---|---|
+| I. The Breaking | 01–05 | Fall, rescue, incursion and first crystal | MCV deployment, power, refinery, infantry and initial vehicles |
+| II. The War of Claims | 06–10 | Coercive edicts, sieges and the fight for territory | Ambushes, artillery, subfaction exclusives and harassment |
+| III. The False Edicts | 11–15 | Institutional betrayals, war crimes and forged authority | Multi-front fights, regional hazards and intelligence |
+| IV. The Witness Ledger | 16–20 | Restoring the ancient consent clause | Escorts, archive defenses, evidence and changing alliances |
+| V. The Harrow of Dawn | 21–25 | Three invasions and the irreversible final choice | Large-scale logistics, siege warfare and planned superweapon finales |
+
+**Gameplay invariant:** Sevenfall remains a classic Command & Conquer style RTS. Most missions require a base and **finite, physical Veilglass extraction** with returns to the matching faction refinery. No campaign introduces passive strategic-point requisition. Civilian escorts and scripted infiltrations are specific mission variants, not the core economy. All 75 missions are **story specifications** rather than already implemented OpenRA gameplay.
 
 ## 6. CAMPAIGN I: ASHES OF EARTH (HUMANS)
 
-**Tagline:** They came to inherit our world. We reminded them who lives here.
+**25 missions: H01–H25.** The player leads the Last Dominion of Man, with Bastion Directorate, Free Earth Union or Ashen Covenant perspectives. The story starts with **The Day the Sky Broke** and **Last Light**, reaches real harvesting at **The Glass Fields (H03)**, contests **Do Not Look Up (H07)**, defends **The Endless Descent (H10)**, exposes **The False Sanctuary (H14)** and **Broken Covenant (H19)**, and ends at **We Remain (H25)**. Voss's military control, Awan's communal sovereignty and Vey's research ethics complicate every victory. The final decision is **Open Earth** or **Iron Earth**.
 
-Player position: a Last Dominion field commander reporting to Mara Voss, Idris Awan or Elian Vey depending on selected subfaction. The player must choose between fast military victory and building a coalition capable of living after the war.
-
-### H1. The Day the Sky Broke
-*Ashen Causeway, first day.* The sky splits over the evacuation of Crown Vale. Celestial formations initially appear to shepherd refugees, but quarantine drones mark the motorway for compulsory evacuation and an infernal scouting swarm erupts from the median. **Main:** move survivors to three shelters, protect a convoy and deploy the starting command vehicle at a safe road junction. **Optional:** rescue a stranded ambulance, preserving medics for H2. **Failure:** convoy destroyed or last shelter lost. **Revelation echo:** sixth-seal sky signs. **Player learns:** movement, control groups, civilian protection, first base deployment. **Reversal:** the apparent rescuers carry weapons configured for siege, not evacuation.
-
-### H2. Last Light
-*Shelter Delta.* A Veil Generator powers floodlights, field hospitals and the first Survival Barracks. **Main:** build a defended camp and maintain power through coordinated assaults. **Optional:** send scouts to help two settlements instead of requisitioning their supplies. **Failure:** command vault and hospital both fall. **Units:** Riflemen, Rocketeers, generator, barracks. **Character:** Mara Voss imposes rationing; Idris objects to confiscations. **Consequence:** saved volunteers provide a small opening force or lost morale changes radio chatter.
-
-### H3. The Glass Fields
-*First major mining belt.* Human engineers discover that raw crystals can power counter-entity ammunition and the factories needed to manufacture it. **Main:** build a Fracture Refinery, escort an Industrial Harvester through **two complete deposit-to-refinery cycles**, construct a Motor Pool and field Bulwarks. **Optional:** preserve workers at a dangerous enriched site instead of over-mining it. **Failure:** both refineries destroyed and no functional way to rebuild before enemy assault. **Enemy:** Demon Devourer raiders and Angel Watchers. **Consequence:** Tamar Rell offers a warning: the crystal is not permission to own the earth from which it grows.
-
-### H4. Do Not Look Up
-*Broken Choir.* A Seraphic Synod inspection declares the district contaminated and orders its population relocated without assent. **Main:** destroy or disable the All-Seeing Halo radar, capture a fragmentary Celestial Archive, and escape with witness data. **Optional:** disable the Aegis escort instead of destroying the hospice beneath it. **Enemy:** Watchers, Judicators and an Aegis Engine. **Reversal:** the stolen order contains formatting errors that no authentic heavenly command should have. **Consequence:** Angel dialogue later changes if civilians are spared.
-
-### H5. The Endless Descent
-*The Ashen Causeway revisited.* Iron Legions drive siege beasts toward refugee columns; the Free Earth Union has to hold the road. **Main:** defend three convoy launch windows, repair Bulwarks, and eliminate the active Flesh Forge before a final assault. **Optional:** rescue an isolated company of Ash Templars who will reveal what the old sigils mean. **Failure:** too many convoys destroyed. **Units:** Siege Cannons for Bastion, Rangers for Union, Ash Templars for Covenant. **Reversal:** a demon courier offers tactical assistance against Vhal's creatures and asks for nothing in return, but his loyalty is uncertain.
-
-### H6. The False Sanctuary
-*Salt Meridian.* A human-led enclave promises food and safety but sells an identity seal to every entrant, unknowingly licensing its inhabitants' movements to the Court of Whispers. **Main:** secure water treatment works, break the Court's supply contract, and rescue the witnesses. **Choice:** liberate the enclave and negotiate supplies, **or** seize the enriched field and rule the settlement by emergency law. **Failure:** destruction of the water works or all witnesses. **Consequence:** **Trust** or **Control** flag affecting H8 support, garrison availability and closing narration. This is a critical moral decision, not a hidden damage bonus.
-
-### H7. Broken Covenant
-*Ruined civic archive under Broken Choir.* An Ashen Covenant splinter group has been testing whether Witness Kin can stabilize the Harrow by involuntary neural translation. **Main:** disable the experimental apparatus, capture the missing ledger clause and stop the incoming Court raiders. **Choice:** destroy all coercive research or preserve verified non-coercive technical notes with the consent of survivors. **Optional:** escort Tamar to transmit the exact clause through the Two Witnesses' broadcast. **Reversal:** she reveals Vhal's true objective and that the Edict, Lazarus and Ninth Mouth are three different methods of occupying the same reality-wound.
-
-### H8. We Remain
-*The Harrow of Dawn.* All three armies converge on the last Seamfall. **Main:** harvest enough finite Veilglass to maintain a forward production base, preserve witness relay towers, and prevent both the Edict and Ninth Mouth from completing their countdowns. **Final decision:** **Open Earth** (activate a limited Lazarus burst severing outside occupation, evacuating those trapped on the seams), or **Iron Earth** (weaponize the complete network and enforce a human monopoly over Veilglass at immense political cost). **Enemy:** mixed Celestial and Infernal battlegroups, one or both briefly distracted by Vhal's betrayal. **Ending:** either a scarred federation of free settlements or a powerful Dominion at risk of becoming the empire it fought.
+[See all 25 human mission briefs and objectives.](CAMPAIGN_MISSIONS.md#campaign-i-ashes-of-earth-humans)
 
 ### Human opening cinematic (script extract)
 **BLACK.** A siren gives way to a sound like hundreds of cathedral bells striking underwater. Every phone in Crown Vale shows the same unreadable symbol. Across the skyline, a line of gold opens in the clouds. Below it, black iron begins climbing out of the streets.
@@ -186,33 +164,9 @@ Player position: a Last Dominion field commander reporting to Mara Voss, Idris A
 
 ## 7. CAMPAIGN II: WAR IN HEAVEN (ANGELS)
 
-**Tagline:** Mercy without freedom is another kind of conquest.
+**25 missions: A01–A25.** Seraphic Synod, Order of the Gate and The Unshackled fight first to guard Creation, then over the meaning of a suspicious celestial command. The original major beats occur at **The Call to Arms (A01)**, **The Choir Unbroken (A02)**, **A Glass of Wrath (A03)**, **The Emperor of Ash (A06)**, **The Mortal Refusal (A08)**, **The Unshackling (A12)**, **The Empty Gate (A16)** and **Judgment Deferred (A25)**. Seraviel, Orathiel and Maeron disagree without being simplified into angelic good or evil. The endgame is **The Open Gate** or **Radiant Quarantine**.
 
-Player position: a celestial field commander attached to the Synod, Gate or Unshackled. The story first frames mortal resistance as dangerous disorder, then reveals why the Host's hierarchy must be examined rather than obeyed blindly.
-
-### A1. The Call to Arms
-*The Empty Gate approach.* The Seventh Silence interrupts an angelic processional order. A fallback command orders a descent to protect the Gate. **Main:** deploy the Celestial MCV, build a Radiant Spire and repel infernal scouting parties. **Optional:** shelter human travellers caught in the landing zone. **Failure:** Gate anchor destroyed. **Unit roster:** Watchers and the faction construction chain. **Mystery:** the fallback edict lacks a living counter-signature.
-
-### A2. The Choir Unbroken
-*Refugee quarter.* A demonic assault targets an evacuation column. **Main:** protect a human sanctuary while fortifying it with Choir Citadels and Watchers. **Optional:** let civilians control their own exit routes, even if it weakens battlefield efficiency. **Conflict:** High Legate Seraviel orders compulsory relocation. Custodian Orathiel argues that protection is not ownership. **Failure:** destruction of the sanctuary and evacuation infrastructure.
-
-### A3. A Glass of Wrath
-*The Glass Fields.* **Main:** build a Sanctification Crucible, use the Celestial Gatherer to complete two full mining-and-unloading cycles, protect its route from Demon Skitters, and manufacture Aegis Engines. **Optional:** stabilize a volatile seam at the cost of a smaller short-term Veilglass yield. **Enemy:** Blood Brood swarms. **Reversal:** the Host's own maps omit the existence of the Witness Ledger, even though a centuries-old vault names it.
-
-### A4. The Emperor of Ash
-*The Sable Crown.* An Iron Legion citadel prepares a dimensional siege engine. **Main:** escort Judicators to disable anti-air sentries, break the Flesh Forges, and destroy the Hellreaver marshal. **Optional:** spare demon prisoners who have rejected Vhal's rule; they reveal that their infernal orders also contain forged clauses. **Fail:** gate-fortress rises before the siege battery is silenced. **Question:** is an enemy who reveals truth still an enemy to be exterminated?
-
-### A5. The Mortal Refusal
-*Broken Choir, simultaneous with H4.* The Synod sends the player to seize a city whose citizens refuse celestial "rescue." **Main:** secure the All-Seeing Halo network while containing Human Bulwark and Rocketeer fire. **Optional:** protect the hospice, avoid using heavy fire in a civilian zone and offer a genuine evacuation corridor. **Reversal:** human archivists show the commander an inconsistent authorization code. **Consequence:** **Mercy** or **Decree** flag; Orathiel or Seraviel gains influence.
-
-### A6. The Unshackling
-*Broken Choir subterranean records.* Captain Maeron's Unshackled have stolen orders that prove the chain of command was subverted. **Main:** survive attacks by a Synod purge detachment and a Court of Whispers infiltration cell, then escort surviving archives to the Witness Kin. **Choice:** condemn Maeron and seize his proof, or accept his testimony and openly disobey the forged decree. **Optional:** keep Gatekeeper defenders alive in both cases. **Reversal:** the Synod is not the origin of its own most extreme command.
-
-### A7. The Empty Gate
-*Celestial threshold complex.* Reality buckles around the Gate; the Court tries to turn its shield pylons into conduits for the Ninth Mouth. **Main:** protect critical pylons while harvesting enough Veilglass to keep defenses powered. **Choice:** close access immediately, stranding refugees, or prolong the defense to evacuate everyone. **Optional:** transmit Tamar Rell's testimony to all choirs. **Failure:** all pylons lost before gate control can be decided. **Reversal:** the last true order found here is a request to *hear the living*, not to rule them.
-
-### A8. Judgment Deferred
-*The Harrow of Dawn.* **Main:** fight a three-sided siege, capture the command spires and stop the Ninth Mouth before a cataclysmic rupture. **Final decision:** **The Open Gate** (renounce compulsory guardianship, return stewardship to living peoples and create voluntary defense pacts), or **The Radiant Quarantine** (activate the Edict of Dawn, close the breaches, disarm rival powers and confine Earth's nations beneath perpetual celestial supervision). **Ending:** compassionate guardianship without sovereignty, or an uneasy alliance of equals. Both demand sacrifices; the latter's cruelty is never framed as a direct divine command.
+[See all 25 Angel mission briefs and objectives.](CAMPAIGN_MISSIONS.md#campaign-ii-war-in-heaven-angels)
 
 ### Angel opening cinematic (script extract)
 A cathedral hangs in a sky without stars. Endless ranks of armoured beings turn toward a throne obscured by impossible light. Choirs ascend. Seven vast rings stop rotating.
@@ -229,33 +183,9 @@ The gates open. Below them, Earth burns.
 
 ## 8. CAMPAIGN III: THE NINTH MOUTH (DEMONS)
 
-**Tagline:** Hell taught us to kneel. The world above taught us there were other ways to stand.
+**25 missions: D01–D25.** Iron Legions, Blood Brood and Court of Whispers begin in a conquest that might emancipate infernal servants. The original beats endure as **Hunger Wakes (D01)**, **Seeds of Ruin (D02)**, **The Gate Eaters (D03)**, **Iron and Horn (D05)**, **The Crown Below (D07)**, **Blasphemous Engine (D15)**, **The Court's Price (D18)** and **The Shape of Freedom (D25)**. Azrakh, Tzura and Nerezza must face Vhal's plan to replace all infernal masters with himself. The endgame is **Unbound Fire** or **Crown of Ash**.
 
-Player position: a commander of the Iron Legions, Blood Brood or Court of Whispers. Demon characters are not uniformly sympathetic. They have material interests, rival allegiances and the capacity for terrible cruelty. Vhal's conspiracy is first portrayed as a way to liberate infernal troops from immortal warlords.
-
-### D1. Hunger Wakes
-*The Sable Crown foothills.* Newly opened fissures give the Infernal Host a path to Earth. **Main:** deploy a demonic construction nucleus, grow a Furnace Heart and Birthing Pit, defeat a human picket. **Optional:** rescue bound Thralls from a collapsed infernal caravan, reducing immediate mining time. **Failure:** lose the spawning ground. **Reveal:** the first orders promise freedom after victory; veteran troops laugh bitterly at the word.
-
-### D2. Seeds of Ruin
-*The Glass Fields.* **Main:** establish a Maw of Want, spawn a Devourer, make two complete Veilglass return trips, and overwhelm exposed human mining infrastructure with Thralls and Cinderlings. **Optional:** harvest a safer outer field rather than poison nearby water, or rush enriched deposits for faster units. **Choice effect:** **Restraint** or **Ruin** flag for later negotiations. **Failure:** all production nests destroyed before the campaign objective is complete.
-
-### D3. The Gate Eaters
-*Celestial supply road.* **Main:** flank and destroy an Angel Gatherer convoy, disable ward pylons and seize navigational codes. **Optional:** save a caravan of infernal labourers instead of letting the Court consume them as a distraction. **Enemy:** Angel Watchers, Judicators, limited Aegis units. **Reversal:** the captured codes contain a phrase not from either Heaven or Hell, but from a buried mortal language.
-
-### D4. Iron and Horn
-*The Sable Crown foundry.* **Main:** protect Flesh Forges as Ravagers and Hellreavers are produced, then break a Celestial fortress. **Optional:** free beasts and miners held as debt-collateral; a spared infernal smith opens a shortcut. **Conflict:** Archduke Azrakh demands full military command while Chancellor Vhal offers secret contracts promising emancipation. **Reversal:** the contracts create even stronger chains.
-
-### D5. The Crown Below
-*The infernal border kingdom.* Vhal provokes a coup in Hell to make Azrakh's army fight itself. **Main:** capture or destroy rival forge-lords' strongholds and prevent a Court Hexer from replacing the legion's command sigils. **Optional:** bargain for surrender rather than slaughter surrendered defenders. **Consequence:** **Dominion** or **Release** flag and available allied units in D8. **Reversal:** the "legal claim to Earth" rests on a fabricated oath.
-
-### D6. Blasphemous Engine
-*Human Lazarus test ground.* The Court orders the player to sabotage a human prototype that could cut infernal access forever. **Main:** disable the targeting network, defeat a Bastion defensive screen, and seize its Veilglass capacitor. **Optional:** evacuate captive demon workers and human technicians before sabotage. **Reversal:** human engineers possess a more complete clause of the Witness Ledger than Vhal admits. **Consequence:** Lady Nerezza begins openly doubting her master.
-
-### D7. The Court's Price
-*Court of Whispers archive.* Vhal reveals that the Ninth Mouth will not free infernal armies: it will bind every entity crossing it to **his** claim of authority. **Main:** survive ambush by Hexers, dismantle three counterfeit contract presses and extract the original witness archive. **Choice:** give the archive to Azrakh for a new infernal empire, or entrust it to Nerezza and a negotiated revolt. **Optional:** free the bound beings whose signatures fueled Vhal's ascent. **Reversal:** even a demon who never signed can be enslaved by a forged ancestor's debt.
-
-### D8. The Shape of Freedom
-*The Harrow of Dawn.* **Main:** seize enough Veilglass to power the Ninth Mouth, defeat Vhal's elite Court guard, repel Synod containment strikes and Human Lazarus bombardment. **Final decision:** **Crown of Ash** (seize the Mouth, dominate Earth and Hell under a new infernal monarch), or **Unbound Fire** (invert the ritual to break Hell's oldest command chains, open a limited way home for its conscripts and deny yourself the crown). **Ending:** grim imperial supremacy or an uncertain, violent freedom. Neither turns Hell magically benevolent.
+[See all 25 Demon mission briefs and objectives.](CAMPAIGN_MISSIONS.md#campaign-iii-the-ninth-mouth-demons)
 
 ### Demon opening cinematic (script extract)
 A furnace city is built in the shape of a crown. Miles of ranked armour stand beside living breeding pits. Horns sound, but no soldiers move.
@@ -270,15 +200,16 @@ A Thrall cuts the iron shackle from another's throat. Above them, a violet crack
 
 ## 9. THE SAME BATTLE, THREE UNRELIABLE ACCOUNTS
 
-The chronology is designed to give meaning to a replay:
+The **[75-mission atlas](CAMPAIGN_MISSIONS.md#shared-events-consistency-locks)** is the authoritative shared-event table. The principal crossovers are:
 
-1. **H4 and A5, Broken Choir:** Humans recall a brutal occupation attempt; Angels recall a containment mission obstructed by armed mortals. Both versions contain facts and omissions. The player's optional actions decide what witnesses remember.
-2. **A4 and D4, Sable Crown:** Angels claim to have crushed a hellish siege machine; Demons claim they retooled their foundry and survived. Destroy the forward forge in A4, not the entire realm's industry, so the accounts can coexist.
-3. **H6 and D5:** Both discover that apparent lawful authority was built on coercion and invented contracts.
-4. **H7, A7 and D7:** The three sides independently find **the same missing clause** from different artifacts, without a mystical single-protagonist coincidence.
-5. **H8/A8/D8:** Different winners are alternate possible endings. All preserve the truth that Vhal forged the wartime orders; the player's ethics determine what their victory *means*.
+1. **H07 / A08, Broken Choir inspection:** the human account is an occupation; the angelic account is a containment mission. Both witness the forged authorization. D14 describes the Court's aftermath and misinformation.
+2. **H10 / A10 / D12, Ashen Causeway:** civilians attempt to flee a demonic siege, defended by a human convoy screen and an independent angelic guardian. Optional rescue choices shift dialogue, not core history.
+3. **A06 / D05, Sable Crown:** celestial raiders destroy an outer siege forge; the demonic player defends the main foundry. The accounts describe distinct locations of one complex, so they can both occur.
+4. **H14 / D10, Salt Meridian:** coercive Court contracts are the same scheme discovered on different dates. Angels uncover the environmental consequences in A14.
+5. **H16–H20 / A16–A20 / D16–D20:** each side independently reconstructs the **same missing consent clause**, from different records and witnesses.
+6. **H25 / A25 / D25:** each is an *alternate timeline* after the common Harrow siege, with two ethical conclusions for its victor.
 
-The public story page may tease the conspiracy but should avoid revealing the forged orders until later campaign missions. Localisation/script briefs should label specific spoiler passages.
+The public website should not spoil the forged orders before the intended midpoint. Keep spoiler-tagged dialogue, localization and cutscene notes separate from public marketing summaries.
 
 ## 10. THE THREE ENDING FAMILIES
 
@@ -306,11 +237,11 @@ The Ninth Mouth opens inward. Across the infernal plains, iron collars collapse 
 
 ## 11. HOW THE NINE SUBFACTIONS CHANGE THE STORY
 
-Selecting a subfaction should matter without multiplying the main story into 72 separate missions. Each parent campaign retains eight missions, with a distinct **named advisor**, **exclusive existing unit**, **additional optional objective**, **dialogue position**, **ending epilogue line** and **one field modifier** per choice. Exclusive mechanics beyond the prototype are planned, not shipped.
+Selecting a subfaction should matter without multiplying the main story into 225 distinct maps. Each parent campaign has 25 missions (75 total), with a distinct **named advisor**, **exclusive existing unit**, **additional optional objective**, **dialogue position**, **ending epilogue line** and **one field modifier** per choice. Exclusive mechanics beyond the prototype are planned, not shipped.
 
 | Subfaction | Narrative intervention | Prototype exclusive | Planned campaign effect |
 |---|---|---|---|
-| Seraphic Synod | Seraviel demands obedience; H/A5 quarantine is framed as holy procedure | Seraphim | Strong assault / costly defensive errors |
+| Seraphic Synod | Seraviel demands obedience; A08 quarantine is framed as holy procedure | Seraphim | Strong assault / costly defensive errors |
 | Order of the Gate | Orathiel prioritizes evacuees and threshold defence | Gatekeeper | Fortify/refugee objective and slow shielding |
 | The Unshackled | Maeron exposes the forged order earliest but risks court-martial | Penitent | Alternate infiltration route and early harassment |
 | Bastion Directorate | Voss can save a city by martial requisition | Siege Cannon | Extra siege option with settlement trust cost |
@@ -326,21 +257,21 @@ Selecting a subfaction should matter without multiplying the main story into 72 
 
 Keep the current OpenRA prototype roster intact while bringing this story online gradually.
 
-**Vertical slice priority:** H3 **The Glass Fields**, A3 **A Glass of Wrath**, D2 **Seeds of Ruin**. All three reuse the existing original Veilglass deposit art and current refineries/harvesters. Each mission teaches a distinct side's economy: mine, return, unload, defend the route, build infantry, build vehicles, finish a valid win/loss loop. Reuse the existing Broken Choir test map for prototypes where practical; author story terrain only after the mechanics pass.
+**Vertical slice priority:** H03 **The Glass Fields**, A03 **A Glass of Wrath**, D02 **Seeds of Ruin**. All three reuse the existing original Veilglass deposit art and current refineries/harvesters. Each mission teaches a distinct side's economy: mine, return, unload, defend the route, build infantry, build vehicles, finish a valid win/loss loop. Reuse the existing Broken Choir test map for prototypes where practical; author story terrain only after the mechanics pass.
 
-**Second wave:** H4/A5 on a shared Broken Choir map and D3 as a convoy interception mission. Do not require AI scripting, hero art, helicopters or supernatural traits until they exist.
+**Second wave:** H07/A08 on a shared Broken Choir map and D03 as a convoy interception mission. Do not require AI scripting, hero art, helicopters or supernatural traits until they exist.
 
-**Third wave:** unique objectives and faction ethics, map-specific scripted hazards, branching flags, persistent mission saves, custom voiceover, campaign cinematics, Nephilim civilian sprites, scripted bosses, named-hero mechanics, superweapons and alternative endings.
+**Third wave:** complete Acts I–V in the [mission atlas](CAMPAIGN_MISSIONS.md), incorporating faction ethics, map-specific scripted hazards, branching flags, persistent saves, original voiceover, cinematics, Witness Kin civilian sprites, scripted bosses, hero systems, superweapons and alternative endings. New code and assets must be tested as introduced.
 
 ### Delivery checklist
 - [ ] Story reviewed for continuity against existing actors and subfaction names.
 - [ ] Campaign scripts and map actor spawns reference legal Sevenfall IDs, not removed Red Alert menus.
 - [ ] Three economy tutorial missions launch and complete in the pinned OpenRA SDK.
-- [ ] All 24 main missions have valid game objective, failure, restart and victory flows.
+- [ ] All 75 main missions have valid game objective, failure, restart and victory flows.
 - [ ] Branching choices persist through mission progression and save/resume in supported engine configuration.
 - [ ] All proper names and story messages enter Fluent localisation and are verified in screenshots.
 - [ ] Intro/outro audio and art are newly authored or appropriately licensed.
-- [ ] Three endings and six variants work without assuming another campaign has been played.
+- [ ] Three finales (H25/A25/D25) and six ending variants work without assuming another campaign has been played.
 - [ ] Full campaigns tested on Windows/Linux and shipping rights reviewed.
 
 ## 13. FINAL NARRATIVE NORTH STAR
