@@ -103,6 +103,22 @@ class FirstWarMissionContracts(unittest.TestCase):
                 self.assertEqual(binary.read_bytes(), original)
         self.assertEqual(terrain.read_bytes(), original)
 
+    def test_original_unit_sheet_staging_matches_sources(self):
+        source = ROOT / "art" / "unit-turnarounds" / "sheets"
+        originals = sorted(source.glob("*.png"))
+        self.assertEqual(len(originals), 39)
+        with tempfile.TemporaryDirectory() as name:
+            dest = Path(name)
+            count = installer.stage_original_unit_turnarounds(dest)
+            self.assertEqual(count, 39)
+            staged = dest / "art" / "unit-turnarounds"
+            self.assertEqual({f.name for f in staged.glob("*.png")},
+                             {f.name for f in originals})
+            for name in ("a-watcher", "h-rifleman", "d-thrall",
+                         "a-aegis", "h-bulwark", "d-ravager"):
+                self.assertEqual((staged / (name + ".png")).read_bytes(),
+                                 (source / (name + ".png")).read_bytes())
+
     def test_all_player_and_opponent_actors_exist_in_sevenfall_rules(self):
         from test_gameplay_contract import load_actors
         actors = load_actors()
