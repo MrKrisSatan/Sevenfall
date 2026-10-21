@@ -45,6 +45,45 @@ def append_manifest_section(source: str, section: str, line: str) -> str:
     return source[:match.start()] + block.rstrip('\n') + f'\n\t{line}\n\n' + source[match.end():]
 
 
+# These missions deliberately reuse the existing Proving Ground terrain while
+# mission-specific maps, scripted objectives and encounter design are validated.
+# Map binaries are generated in the installed SDK, never guessed or distributed
+# as independently completed campaign maps.
+CAMPAIGN_PROTOTYPES = (
+    'h03-glass-fields', 'a03-glass-wrath', 'd02-seeds-ruin',
+)
+
+
+def stage_original_unit_turnarounds(target: Path) -> int:
+    """Stage authored direction-specific sprites for future animation bindings.
+
+    The source pack contains eight distinct facings per unit, not movement,
+    firing, or death cycles. These sprites are NOT yet active combat sprites.
+    """
+    source = PROJECT / 'art' / 'unit-turnarounds' / 'sheets'
+    sprites = sorted(source.glob('*.png'))
+    if len(sprites) != 39:
+        raise RuntimeError(f'Expected 39 original directional sprite sheets, found {len(sprites)}')
+    destination = target / 'art' / 'unit-turnarounds'
+    destination.mkdir(parents=True, exist_ok=True)
+    for sprite in sprites:
+        shutil.copy2(sprite, destination / sprite.name)
+    return len(sprites)
+
+
+def install_campaign_map_binaries(target: Path) -> None:
+    """Install the three source-only mission maps onto the prototype terrain."""
+    terrain = MOD_SOURCE / 'maps' / 'broken-choir' / 'map.bin'
+    if not terrain.is_file():
+        raise RuntimeError('Broken Choir prototype terrain is missing.')
+    for mission in CAMPAIGN_PROTOTYPES:
+        folder = target / 'maps' / mission
+        for file in ('map.yaml', 'mission.lua'):
+            if not (folder / file).is_file():
+                raise RuntimeError(f'Missing campaign source: {mission}/{file}')
+        shutil.copy2(terrain, folder / 'map.bin')
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('sdk', type=Path, help='OpenRAModSDK checkout root')
@@ -63,6 +102,9 @@ def main() -> None:
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(item, dest)
 
+    install_campaign_map_binaries(target)
+    staged_unit_count = stage_original_unit_turnarounds(target)
+
     # All SDK-provided RA content stays mounted as ra|. Only our additions use sevenfall|.
     content = ra_manifest.read_text(encoding='utf-8-sig')
     content = content.replace('\t\t$ra: ra', '\t\t$ra: ra\n\t\t$sevenfall: sevenfall', 1)
@@ -73,7 +115,7 @@ def main() -> None:
     content = content.replace('ra|rules/ai.yaml', 'sevenfall|rules/40-ai.yaml')
     content = content.replace('ra|maps: System', 'sevenfall|maps: System')
     content = content.replace('maps/ra/{DEV_VERSION}', 'maps/sevenfall/0.2')
-    content = content.replace('Version: {DEV_VERSION}', 'Version: 0.2-dev')
+    content = content.replace('Version: {DEV_VERSION}', 'Version: 0.3-dev')
     content = content.replace('SupportsMapsFrom: ra', 'SupportsMapsFrom: sevenfall')
     content = content.replace('SpriteFormats: ShpD2,', 'SpriteFormats: PngSheet, ShpD2,')
     content = content.replace('ra|uibits/loadscreen', 'sevenfall|art/loadscreen')
@@ -81,6 +123,7 @@ def main() -> None:
     content = content.replace('AllowUnusedFluentMessagesInExternalPackages: false',
                               'AllowUnusedFluentMessagesInExternalPackages: true')
     for section, file in [
+        ('Missions', 'missions.yaml'),
         ('Rules', 'rules/00-hide-red-alert.yaml'),
         ('Rules', 'rules/10-factions.yaml'),
         ('Rules', 'rules/20-structures.yaml'),
@@ -120,8 +163,9 @@ def main() -> None:
 
     print(f'Sevenfall overlay installed: {target}')
     print(f'Generated vanilla actor exclusions: {len(original)}')
+    print(f'Original eight-facing unit turnarounds staged (not yet animated): {staged_unit_count}')
     print('Next: SDK make.cmd [all] and make.cmd [test] (Windows), or make && make test (Linux).')
-    print('NOTE: this is an integration starter, NOT a validated playable build.')
+    print('NOTE: 0.3 candidate: three source-backed campaign previews installed; live victory/combat remain unverified.')
 
 
 if __name__ == '__main__':

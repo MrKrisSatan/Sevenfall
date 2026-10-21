@@ -1,6 +1,6 @@
 # Sevenfall development roadmap
 
-**Status as of 21 October 2026: pre-alpha 0.2 engine integration.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
+**Status as of 21 October 2026: pre-alpha 0.3 development candidate.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
 
 ## Phase 0: Foundation and transparency
 - [x] Define original world, factions and Veilglass economy
@@ -14,6 +14,19 @@
 - [ ] Verify clean license/asset provenance for public builds
 
 ## Phase 1: First playable skirmish
+
+**0.3 source integration progress (not live-game acceptance):**
+
+- [x] Author Lua mission scripts and map sources for H03, A03 and D02
+- [x] Register three previews in the OpenRA mission selector and generate their
+      binary test maps from existing Broken Choir terrain during SDK install
+- [x] Stage all 39 original eight-facing unit sprite sheets into local SDK
+- [x] Add automated mission-map, faction-contract and sprite-staging tests
+- [ ] Confirm the three scripts actually start, complete and fail correctly in game
+- [ ] Integrate genuine combat movement, attack and death animations; currently only directional art exists
+- [ ] Release a truly tested standalone Windows prototype, once asset rights permit
+
+
 - [ ] Nine factions appear as selectable choices
 - [ ] Construction yard / power plant / refinery placement works
 - [ ] Three faction-specific harvesters mine and unload Veilglass

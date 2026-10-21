@@ -1,4 +1,4 @@
-# Building Sevenfall 0.2 development prototype
+# Building Sevenfall 0.3 development candidate
 
 This is a working engine integration milestone, not a finished standalone game.
 The menu, graphics, sound and terrain still use locally installed Red Alert placeholders.
@@ -20,6 +20,10 @@ exact commits by `scripts/build.py`. Existing checkouts at another commit are re
 | OpenRA | release-20250330 | b4f3d8ae02b6bd6f4a3a5441e6d0daf7c5073787 |
 
 ## Windows
+
+You can double-click `PLAY_SEVENFALL_DEV.cmd` in the repository root to run
+source tests, build the pinned SDK and launch the local prototype in order.
+Alternatively, run the commands manually:
 
 ```powershell
 py -3 scripts/build.py build
@@ -64,6 +68,59 @@ Launch defaults to a 1280×720 window and a double-size **software cursor**. Thi
 the invisible hardware cursor observed on the development workstation. Resize or
 change display mode through Settings after launch if desired.
 
+## Campaign preview missions (0.3 source integration)
+
+After a successful build, open **Singleplayer → Missions** or the mission selector and select one of the new campaign previews:
+
+| Campaign | Preview | Locked faction | Enemy |
+|---|---|---|---|
+| Ashes of Earth | **H03: The Glass Fields** | Free Earth Union | Blood Brood |
+| War in Heaven | **A03: A Glass of Wrath** | Order of the Gate | Blood Brood |
+| The Ninth Mouth | **D02: Seeds of Ruin** | Blood Brood | Bastion Directorate |
+
+All **39 original eight-facing unit sheets** are copied into the SDK's
+`mods/sevenfall/art/unit-turnarounds/` staging folder. They are not active
+combat animations yet; the current live units still use placeholders.
+
+The campaign preview missions use **Broken Choir prototype terrain copied into
+the local SDK during installation**, not yet authored story maps. Their source
+folders contain `map.yaml` and `mission.lua`. The installer stages the required
+`map.bin` from the repository's original arena. No new map binary or proprietary
+assets are downloaded from a third party.
+
+**Prototype scripted objectives:** deploy a construction yard, construct faction
+power and refinery, refine at least **900 credits of physically gathered
+Veilglass**, build the faction barracks and vehicle factory, produce both required
+combat units, and destroy the enemy Construction Yard. There is a secondary
+objective to keep the first refinery and at least one harvester alive. Loss of
+all own construction yards and MCVs fails the scenario.
+
+**Important test caveat:** currently the script observes increases in a player's
+stored resource credits rather than a dedicated harvester-unload callback. It
+cannot *independently* prove that two separate unloading cycles occurred. The
+nine-faction runbook still requires visual confirmation of two complete trips.
+Enemy AI is the existing prototype `sevenfall` bot, whose complete campaign
+behavior must still be verified during a real match. Lua mission scripts have
+not yet been observed running to a full win/loss on a Windows desktop.
+
+### Windows validation steps
+
+1. Clone the repository, install Python 3, Git, .NET 8 SDK and .NET 6 runtime.
+2. Run `py -3 -m unittest discover -s tests`.
+3. Run `py -3 scripts/build.py build` to populate the pinned SDK, copy the
+   three campaign map binaries, compile OpenRA and execute engine YAML lint.
+4. Run `py -3 scripts/build.py launch`, install legally obtained Red Alert
+   data if the launcher requests it, and select a campaign preview.
+5. Complete **all three** scripted objectives and one failure test for each map.
+   Confirm enemy AI behavior, combat damage, harvest/unload income and log errors
+   before marking a scenario PLAYABLE.
+6. Record results against [the 0.3 acceptance log](tests/FIRST_WAR_RUNBOOK.md).
+   A CI compile/lint pass is **not** proof of an interactive working build.
+
+The existing reproducible Windows workflow compiles the pinned engine in GitHub
+Actions. No independently installable, asset-clean Windows release archive has
+been published; the current dev candidate requires local engine and game content.
+
 ## Validation and remaining work
 
 Use the [nine-faction skirmish runbook](tests/SKIRMISH_RUNBOOK.md) to record
@@ -72,8 +129,8 @@ real economy, combat, AI and victory results. All cases begin as NOT RUN.
 See [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
 not prove harvesting, balance, victory, replay safety or AI quality. The next milestone
 is measured end-to-end economy/combat testing for all three parent factions, followed
-by the nine-faction matrix. Original assets, campaigns, defenses, expansion MCVs,
-support powers and superweapons remain future work.
+by the nine-faction matrix. Original combat animations, the remaining 72 campaign missions, defenses,
+expansion MCVs, support powers and superweapons remain future work.
 
 Sources: [OpenRA SDK](https://github.com/OpenRA/OpenRAModSDK),
 [OpenRA stable release](https://www.openra.net/news/release-20250330/).

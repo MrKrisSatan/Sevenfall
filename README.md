@@ -4,13 +4,29 @@
 
 > The Seventh Seal has broken. Heaven has descended, Hell has risen, and humanity refuses to surrender its world.
 
-**Development status:** Pre-alpha **0.2 engine integration**. Builds and opens the game menu on Windows; full gameplay-loop validation and a standalone release remain outstanding.
+**Development status:** Pre-alpha **0.3 development candidate**. The pinned Windows engine integration builds and an initial three-mission Lua campaign slice is in source. Live end-to-end skirmish, campaign-win verification and an independently installable release remain outstanding.
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
 The field guide includes images and descriptions for all **39 current building designs
 and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
-original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included; animation and game integration remain pending.
+original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included; animation and active combat-unit binding remain pending. The 39 original eight-direction sheets are now staged into the local SDK by the developer installer; they are not yet finished movement/shooting/death animation sets.
+
+## Try the 0.3 development candidate (Windows)
+
+Clone the repository and double-click **[PLAY_SEVENFALL_DEV.cmd](PLAY_SEVENFALL_DEV.cmd)**,
+or follow [the pinned manual build commands](BUILDING.md). This installs an
+OpenRA SDK and builds it **locally**; legally acquired Red Alert game data
+is still required and is **not bundled**. After launching, select
+**Singleplayer → Missions** to inspect one of the three new 0.3 previews:
+
+- **H03 The Glass Fields**: Humans versus Blood Brood.
+- **A03 A Glass of Wrath**: Angels versus Blood Brood.
+- **D02 Seeds of Ruin**: Demons versus Bastion Directorate.
+
+Their sources include actual OpenRA Lua objective scripts and scenario actors.
+They are **not yet proven playable through victory and defeat in a live match**.
+Report observed outcomes using [the First War runbook](tests/FIRST_WAR_RUNBOOK.md).
 
 ## The premise
 
