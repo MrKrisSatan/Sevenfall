@@ -1,0 +1,22 @@
+[
+  {
+    "id": "a-judicator",
+    "change": "The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Judicator facing SOUTHEAST: helmet face, chest and both missile pod mouths point toward the LOWER RIGHT corner. Show its front-right three-quarter heading, with back wings behind it toward UPPER LEFT. It must be the opposite front diagonal from the bottom-row second cell, not another southwest view.",
+    "prompt": "Precise correction of this exact Sevenfall 4-column by 2-row transparent eight-direction sprite sheet. The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Judicator facing SOUTHEAST: helmet face, chest and both missile pod mouths point toward the LOWER RIGHT corner. Show its front-right three-quarter heading, with back wings behind it toward UPPER LEFT. It must be the opposite front diagonal from the bottom-row second cell, not another southwest view. Preserve all seven other cells, overall canvas dimensions, grid positions, scale, identity, equipment and transparent background. Do not add labels, text, shadows, ground, additional views or detached elements."
+  },
+  {
+    "id": "h-templar",
+    "change": "The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Ash Templar facing SOUTHEAST: helmet face, chest, boots and gun muzzle point toward the LOWER RIGHT corner. Back machinery lies toward UPPER LEFT. It must be the opposite front diagonal from the bottom-row second cell, not another southwest view. Keep the weapon held consistently.",
+    "prompt": "Precise correction of this exact Sevenfall 4-column by 2-row transparent eight-direction sprite sheet. The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Ash Templar facing SOUTHEAST: helmet face, chest, boots and gun muzzle point toward the LOWER RIGHT corner. Back machinery lies toward UPPER LEFT. It must be the opposite front diagonal from the bottom-row second cell, not another southwest view. Keep the weapon held consistently. Preserve all seven other cells, overall canvas dimensions, grid positions, scale, identity, equipment and transparent background. Do not add labels, text, shadows, ground, additional views or detached elements."
+  },
+  {
+    "id": "h-rocketeer",
+    "change": "The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Rocketeer facing SOUTHEAST: helmet face, chest, boots and rocket launcher muzzle point toward the LOWER RIGHT corner. Back ammunition pack lies toward UPPER LEFT. It must be the opposite front diagonal from bottom-row second cell, not another southwest view.",
+    "prompt": "Precise correction of this exact Sevenfall 4-column by 2-row transparent eight-direction sprite sheet. The TOP ROW FOURTH cell wrongly repeats the southwest view. Replace ONLY that top-right cell with the same Rocketeer facing SOUTHEAST: helmet face, chest, boots and rocket launcher muzzle point toward the LOWER RIGHT corner. Back ammunition pack lies toward UPPER LEFT. It must be the opposite front diagonal from bottom-row second cell, not another southwest view. Preserve all seven other cells, overall canvas dimensions, grid positions, scale, identity, equipment and transparent background. Do not add labels, text, shadows, ground, additional views or detached elements."
+  },
+  {
+    "id": "h-bulwark",
+    "change": "In the TOP ROW FOURTH cell, REMOVE the erroneous extra gun barrel projecting toward upper left from the rear of the turret. Keep exactly ONE main gun pointing southeast toward lower right, as that tank already correctly faces. Reconstruct the small rear turret surface without that extra rear barrel. Do not alter any other view.",
+    "prompt": "Precise correction of this exact Sevenfall 4-column by 2-row transparent eight-direction sprite sheet. In the TOP ROW FOURTH cell, REMOVE the erroneous extra gun barrel projecting toward upper left from the rear of the turret. Keep exactly ONE main gun pointing southeast toward lower right, as that tank already correctly faces. Reconstruct the small rear turret surface without that extra rear barrel. Do not alter any other view. Preserve all seven other cells, overall canvas dimensions, grid positions, scale, identity, equipment and transparent background. Do not add labels, text, shadows, ground, additional views or detached elements."
+  }
+]

@@ -1,0 +1,3525 @@
+{
+  "directionOrder": [
+    "n",
+    "ne",
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw"
+  ],
+  "openraFacings": -8,
+  "assets": [
+    {
+      "id": "a-mcv",
+      "source": "art/source/a-mcv.png",
+      "sourceSha256": "6e1c65eb74d71274c5fd49578f4e08d2b1979a55be763d16595dcc400f042ff6",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 63,
+          "top": 18,
+          "width": 280,
+          "height": 381
+        },
+        {
+          "left": 441,
+          "top": 71,
+          "width": 380,
+          "height": 330
+        },
+        {
+          "left": 897,
+          "top": 36,
+          "width": 440,
+          "height": 351
+        },
+        {
+          "left": 1388,
+          "top": 16,
+          "width": 376,
+          "height": 405
+        },
+        {
+          "left": 68,
+          "top": 452,
+          "width": 279,
+          "height": 386
+        },
+        {
+          "left": 413,
+          "top": 449,
+          "width": 397,
+          "height": 402
+        },
+        {
+          "left": 850,
+          "top": 466,
+          "width": 441,
+          "height": 358
+        },
+        {
+          "left": 1347,
+          "top": 464,
+          "width": 395,
+          "height": 385
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "7313ad0aa9c039fbde415a8a30037f266f1d65218922595c5843ddda4f5e0432",
+        "6cf0aa6ed3b699f9b6f6925bc599d167c372eeeb5621608b64ed82e4c84e61a4",
+        "fe059378385f81feaffa5eb43ddc6ac4aa1a6c0e37748c5d587401be0ad406ed",
+        "65303561e8a502ec462658803996aa1d8647bda129f4beb4900d136ee0b8f5c5",
+        "c3a8c114a487691957b178649d691935908a6406b1843cf21dd8edd049972314",
+        "717c29e72810440bab58829e5a591f60c04d36d518941037e026abc0d4b07c35",
+        "526754684b90a993dff53b6d6303b6915b1335d917539630cdc92de97b25f612",
+        "f087f47f0c96f9f39ba11e96ea23cb4cae08084c9f63dcd5c09611293f568335"
+      ],
+      "sheetSha256": "d47aee94a5db3831d2a6064e7bb6bcb0fba391e18962e39468f5e9777d4f6d70",
+      "sheet": "art/unit-turnarounds/sheets/a-mcv.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-mcv/n.png",
+        "art/unit-turnarounds/frames/a-mcv/ne.png",
+        "art/unit-turnarounds/frames/a-mcv/e.png",
+        "art/unit-turnarounds/frames/a-mcv/se.png",
+        "art/unit-turnarounds/frames/a-mcv/s.png",
+        "art/unit-turnarounds/frames/a-mcv/sw.png",
+        "art/unit-turnarounds/frames/a-mcv/w.png",
+        "art/unit-turnarounds/frames/a-mcv/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-mcv.webp"
+    },
+    {
+      "id": "a-aegis",
+      "source": "art/source/turnarounds/a-aegis.png",
+      "sourceSha256": "f66f17885506889b758b46c69f4fb28ac8dbe47de8ccfe7de779448fabba79af",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 74,
+          "top": 17,
+          "width": 290,
+          "height": 407
+        },
+        {
+          "left": 437,
+          "top": 48,
+          "width": 436,
+          "height": 378
+        },
+        {
+          "left": 889,
+          "top": 105,
+          "width": 443,
+          "height": 285
+        },
+        {
+          "left": 1341,
+          "top": 67,
+          "width": 418,
+          "height": 371
+        },
+        {
+          "left": 69,
+          "top": 442,
+          "width": 299,
+          "height": 374
+        },
+        {
+          "left": 416,
+          "top": 459,
+          "width": 456,
+          "height": 387
+        },
+        {
+          "left": 885,
+          "top": 511,
+          "width": 447,
+          "height": 287
+        },
+        {
+          "left": 1338,
+          "top": 480,
+          "width": 434,
+          "height": 363
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "3cc588556870323b2bd2e93a57a03695012a94feda49f92e80f1c9b4b8026c3e",
+        "2ab439e0e3ac92ad3053203e76d583942509d9a9c85a9276c8fffaa2bd381e99",
+        "d3e9069b5a3b711cd66b62b54c986d3d62b0909516f119bf51a68d0204fa9d2a",
+        "e7d21b850e92f8ed8aa704842190a61a10db79e4b55d8587e4a639818085b250",
+        "789befa16d0ee3b91242175988b761cc00ee4b10bec68f0a9c7e2e8b6d5b4b37",
+        "205c08dfd1365975fc774b3f56b53d882cd0a56d3ceebee3332d25ed51ccdeaa",
+        "444841982efcdd9e5a1d946222b6eead6b85fa51bc016d82341892acf6478f8b",
+        "3576668cc65ebceb9f0299a2b43e963cc9969ba4691e8b4b134a361501a900f6"
+      ],
+      "sheetSha256": "7d2a8bd513ba8cebe4a238e107afe1206e31a1dfb58960c1898730000b5d5b06",
+      "sheet": "art/unit-turnarounds/sheets/a-aegis.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-aegis/n.png",
+        "art/unit-turnarounds/frames/a-aegis/ne.png",
+        "art/unit-turnarounds/frames/a-aegis/e.png",
+        "art/unit-turnarounds/frames/a-aegis/se.png",
+        "art/unit-turnarounds/frames/a-aegis/s.png",
+        "art/unit-turnarounds/frames/a-aegis/sw.png",
+        "art/unit-turnarounds/frames/a-aegis/w.png",
+        "art/unit-turnarounds/frames/a-aegis/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-aegis.webp"
+    },
+    {
+      "id": "a-gatherer",
+      "source": "art/source/a-harvester.png",
+      "sourceSha256": "334776512b8ce9c7ef3ed7a4cefda53fee1e7c89b96b6eea36893def3cad9047",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 50,
+          "top": 10,
+          "width": 244,
+          "height": 390
+        },
+        {
+          "left": 376,
+          "top": 12,
+          "width": 445,
+          "height": 405
+        },
+        {
+          "left": 848,
+          "top": 81,
+          "width": 546,
+          "height": 258
+        },
+        {
+          "left": 1403,
+          "top": 13,
+          "width": 362,
+          "height": 395
+        },
+        {
+          "left": 49,
+          "top": 432,
+          "width": 245,
+          "height": 442
+        },
+        {
+          "left": 350,
+          "top": 444,
+          "width": 409,
+          "height": 411
+        },
+        {
+          "left": 781,
+          "top": 531,
+          "width": 567,
+          "height": 260
+        },
+        {
+          "left": 1389,
+          "top": 460,
+          "width": 375,
+          "height": 394
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "bfc26087fe4ec586fd09d13f9013342030f6d3ac45c51dd7ec8e5f3e6c0f1d72",
+        "945da4b9718219340349efea13cdf5b98ff6649d7dcd839b093a83aee13c3e7f",
+        "d47a87cf434511486c33ece131282e23c3d692d4cb99b0150d101c1ad9cc0d1e",
+        "26720e21a590a127f4ebed703fb5e54ce9fb065ae3bf0cb1d8d5444c8564fb5e",
+        "9ee29291c78fd39c15777ec922436cdf256723f0da07eb8725ef3f0bfacdb44f",
+        "9d2b5965059d7982cf52c7195fc70f0dd40b030d13488adec3358da01fd73cef",
+        "8cd336defdd64cf5993837d788516c551868cca55776293fa661ef0c1de9da25",
+        "8025c558cd8d7392a0de2d22dd1b4ae6782c7ed987b70894daa285cab1374322"
+      ],
+      "sheetSha256": "258a1edf2793fe6ecf138281336087396e7fc41fc31727ee8a067555b4927f16",
+      "sheet": "art/unit-turnarounds/sheets/a-gatherer.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-gatherer/n.png",
+        "art/unit-turnarounds/frames/a-gatherer/ne.png",
+        "art/unit-turnarounds/frames/a-gatherer/e.png",
+        "art/unit-turnarounds/frames/a-gatherer/se.png",
+        "art/unit-turnarounds/frames/a-gatherer/s.png",
+        "art/unit-turnarounds/frames/a-gatherer/sw.png",
+        "art/unit-turnarounds/frames/a-gatherer/w.png",
+        "art/unit-turnarounds/frames/a-gatherer/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-gatherer.webp"
+    },
+    {
+      "id": "a-gatekeeper",
+      "source": "art/source/turnarounds/a-gatekeeper.png",
+      "sourceSha256": "3fd82d405530c66d812d4baf50248cd9ec3bc8ad88e13adbbbed8ff13545f16b",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 62,
+          "top": 13,
+          "width": 293,
+          "height": 410
+        },
+        {
+          "left": 440,
+          "top": 25,
+          "width": 414,
+          "height": 408
+        },
+        {
+          "left": 891,
+          "top": 92,
+          "width": 425,
+          "height": 269
+        },
+        {
+          "left": 1359,
+          "top": 25,
+          "width": 398,
+          "height": 404
+        },
+        {
+          "left": 43,
+          "top": 443,
+          "width": 335,
+          "height": 414
+        },
+        {
+          "left": 419,
+          "top": 460,
+          "width": 418,
+          "height": 405
+        },
+        {
+          "left": 886,
+          "top": 539,
+          "width": 420,
+          "height": 263
+        },
+        {
+          "left": 1356,
+          "top": 460,
+          "width": 418,
+          "height": 402
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "1e73753184441b06bf6f914a6624a09c2d00e88796360e9cb1bf72c85b365f15",
+        "26977f2ec803bfd490bd2b1048d7869d6dcc890874afb87a65dfa1ffa7c06a9a",
+        "8f3e84f857f241a83a6a29d24fcf2f890723b47dae324ccd83071774e83316e9",
+        "b031817bf615a3cda8ce45c55e4886f82bc07b5ce8fd30b769dcd16efe28b3a4",
+        "51e31103dc7eb967de09314c9cd826f0e2725e19a59a04479eebc804958b8eb4",
+        "bf2e155b7e6fd1e3fb345c0859c31a3fe073f8632649a8b3ae5752949911ebf8",
+        "4e9fdcd99c697dda5cb7b3f0d0aa22d9114aaaa2971f1dacf3bfda8941a4ea16",
+        "c0e0ccde854e696bc15682f21fe85a48579c518723f08da3b50d6d365979942b"
+      ],
+      "sheetSha256": "cd60706592870b9ea2772cdee9d70a7f251e82aa90378f0e67cc9b1f6c8297b9",
+      "sheet": "art/unit-turnarounds/sheets/a-gatekeeper.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-gatekeeper/n.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/ne.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/e.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/se.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/s.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/sw.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/w.png",
+        "art/unit-turnarounds/frames/a-gatekeeper/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-gatekeeper.webp"
+    },
+    {
+      "id": "a-judicator",
+      "source": "art/source/turnarounds/a-judicator-v2.png",
+      "sourceSha256": "f93f546a2a41e811260bf9420d7780742302c7f54b8ae5ba2948eb46860331c7",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 46,
+          "top": 13,
+          "width": 397,
+          "height": 392
+        },
+        {
+          "left": 474,
+          "top": 3,
+          "width": 369,
+          "height": 436
+        },
+        {
+          "left": 922,
+          "top": 2,
+          "width": 324,
+          "height": 436
+        },
+        {
+          "left": 1332,
+          "top": 8,
+          "width": 413,
+          "height": 425
+        },
+        {
+          "left": 33,
+          "top": 443,
+          "width": 411,
+          "height": 433
+        },
+        {
+          "left": 495,
+          "top": 436,
+          "width": 390,
+          "height": 427
+        },
+        {
+          "left": 952,
+          "top": 450,
+          "width": 339,
+          "height": 425
+        },
+        {
+          "left": 1373,
+          "top": 442,
+          "width": 386,
+          "height": 433
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "feb2e3cd35cd83b3ece3692d260d5a919cd8d90c7451e8f3373631ab3a210443",
+        "792afeafc6f35a17e34eff5f1442630d202f2bbfa7e77d19f5b8ae1ca264d585",
+        "7530d79135dadee7e17a754ebaba5e0aa7251e578500ad184a3a29f07623e284",
+        "8a9ad649cdd292396013434b7b31441ce3a9ccc04bc026db47a241fd171653fd",
+        "1c6823f8abaa44acdb08ac48d828b27536efc1b4efbe3b4115ec0994b2892835",
+        "2f662657e29a356b600760c401ac783068a6b5d7ddfd5a8c297359f4ec4ff0f2",
+        "cfc6949738f39b8e365ce115ba7fb9a6955a86c79804ee41deba09bdda120a61",
+        "b0d39148031c19f5392e4e39aa10ee339f5015c3365ab7cc4d8a05ed9c31a6b9"
+      ],
+      "sheetSha256": "66c23563b8e6b9a513d83401a556602dadd0a8b57e539cef6d85e0ce3249c199",
+      "sheet": "art/unit-turnarounds/sheets/a-judicator.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-judicator/n.png",
+        "art/unit-turnarounds/frames/a-judicator/ne.png",
+        "art/unit-turnarounds/frames/a-judicator/e.png",
+        "art/unit-turnarounds/frames/a-judicator/se.png",
+        "art/unit-turnarounds/frames/a-judicator/s.png",
+        "art/unit-turnarounds/frames/a-judicator/sw.png",
+        "art/unit-turnarounds/frames/a-judicator/w.png",
+        "art/unit-turnarounds/frames/a-judicator/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-judicator.webp"
+    },
+    {
+      "id": "a-penitent",
+      "source": "art/source/turnarounds/a-penitent.png",
+      "sourceSha256": "2cb4cf07fe08399f1e949df0978241e627f5e0b46efc953d44885c9ab84d5be0",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 62,
+          "top": 15,
+          "width": 320,
+          "height": 417
+        },
+        {
+          "left": 483,
+          "top": 14,
+          "width": 358,
+          "height": 412
+        },
+        {
+          "left": 935,
+          "top": 16,
+          "width": 371,
+          "height": 424
+        },
+        {
+          "left": 1433,
+          "top": 15,
+          "width": 318,
+          "height": 429
+        },
+        {
+          "left": 68,
+          "top": 449,
+          "width": 329,
+          "height": 419
+        },
+        {
+          "left": 537,
+          "top": 451,
+          "width": 323,
+          "height": 420
+        },
+        {
+          "left": 903,
+          "top": 454,
+          "width": 360,
+          "height": 399
+        },
+        {
+          "left": 1371,
+          "top": 461,
+          "width": 364,
+          "height": 392
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "6c9d6bfca3bede91fe8b60380b797bf830a0b9dcb6e26368e8f4a7334714940b",
+        "158e5c52ffc10d1b02d991eac159a14d615ffdd0b11d4266c956fe342d6989d4",
+        "ea058ea1f2fd8f0aee5b3d000ee4ab20f93a7fd23c107d3520fc497d3b1bc0c2",
+        "ba00be0130f638e45a15dd0c2473a0837311d0aa6c022b10d78ecba78275674e",
+        "a5ebc289a17b89b832f3a8c7531dd6f106677612d6679c1161cc9caceac74300",
+        "6a6a402e5a59f77bbda9143160638d6960e29f618721b35b2f1dcd71ff5cb062",
+        "51917c0e99bcadc417f02285a1200f1f2c0afc4965ee38b15a9844d19c0b7e8e",
+        "f74a1e84ffc69cd7e7616d6fa372f202ef3351583637b848414104d9937e038e"
+      ],
+      "sheetSha256": "91547ebcc3436801185cf81548b6fd089a748e7b77ba818eabab756ebd4438ca",
+      "sheet": "art/unit-turnarounds/sheets/a-penitent.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-penitent/n.png",
+        "art/unit-turnarounds/frames/a-penitent/ne.png",
+        "art/unit-turnarounds/frames/a-penitent/e.png",
+        "art/unit-turnarounds/frames/a-penitent/se.png",
+        "art/unit-turnarounds/frames/a-penitent/s.png",
+        "art/unit-turnarounds/frames/a-penitent/sw.png",
+        "art/unit-turnarounds/frames/a-penitent/w.png",
+        "art/unit-turnarounds/frames/a-penitent/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-penitent.webp"
+    },
+    {
+      "id": "a-seraphim",
+      "source": "art/source/turnarounds/a-seraphim.png",
+      "sourceSha256": "e19ac8bbd3e15cd2cb32b902beff3aeab86d221fac4ed979cae097f469ba6a49",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 26,
+          "top": 12,
+          "width": 445,
+          "height": 402
+        },
+        {
+          "left": 487,
+          "top": 7,
+          "width": 449,
+          "height": 399
+        },
+        {
+          "left": 948,
+          "top": 8,
+          "width": 388,
+          "height": 415
+        },
+        {
+          "left": 1352,
+          "top": 7,
+          "width": 380,
+          "height": 423
+        },
+        {
+          "left": 14,
+          "top": 431,
+          "width": 423,
+          "height": 426
+        },
+        {
+          "left": 440,
+          "top": 425,
+          "width": 447,
+          "height": 417
+        },
+        {
+          "left": 881,
+          "top": 440,
+          "width": 397,
+          "height": 411
+        },
+        {
+          "left": 1277,
+          "top": 431,
+          "width": 479,
+          "height": 410
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "35b9d5e9a1f8a8004a0265b06299b65ac0bac479fd1d0ca13014ad0bcc2f27d0",
+        "f5084a4fb6e83fb40c0f1821b66bff38157a5093bd1e6f595a37d5633454286b",
+        "672386f3749fda4d836166697e485393aee1ab593462d4948ffd9015afcc1405",
+        "6b495aa111e2682adb960dd8f3bfedc79b36fae74b79785a3f5c3cd386f3e05e",
+        "9d5ea147061e0c25ce1288bf155ae678f99b2d78e03cf1fef1214a7796fac9fe",
+        "b5962d465cca01d109dcc91dd2e39da614a5e01722a659dfb707abeedd2c0bf3",
+        "2084d60124d371d6f5dd5a8dfc0341ce8d404386f8a7260c639628719483ae7f",
+        "1d0ce976a5e68288d57d2379c68cdfa940e8d8a07ce9e364246b0452885b3302"
+      ],
+      "sheetSha256": "6766c286182d7142fb630995bb7331b586fbf4219b02b0e54e0eeeb293d944cb",
+      "sheet": "art/unit-turnarounds/sheets/a-seraphim.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-seraphim/n.png",
+        "art/unit-turnarounds/frames/a-seraphim/ne.png",
+        "art/unit-turnarounds/frames/a-seraphim/e.png",
+        "art/unit-turnarounds/frames/a-seraphim/se.png",
+        "art/unit-turnarounds/frames/a-seraphim/s.png",
+        "art/unit-turnarounds/frames/a-seraphim/sw.png",
+        "art/unit-turnarounds/frames/a-seraphim/w.png",
+        "art/unit-turnarounds/frames/a-seraphim/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-seraphim.webp"
+    },
+    {
+      "id": "a-watcher",
+      "source": "art/source/turnarounds/a-watcher.png",
+      "sourceSha256": "841ec4a78ae78e39e9bfd7d278d8ebae1252fc7947fe7104bb26c53f6ffd9c8f",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 47,
+          "top": 15,
+          "width": 361,
+          "height": 396
+        },
+        {
+          "left": 459,
+          "top": 13,
+          "width": 425,
+          "height": 413
+        },
+        {
+          "left": 921,
+          "top": 14,
+          "width": 427,
+          "height": 418
+        },
+        {
+          "left": 1361,
+          "top": 5,
+          "width": 395,
+          "height": 432
+        },
+        {
+          "left": 52,
+          "top": 443,
+          "width": 343,
+          "height": 439
+        },
+        {
+          "left": 432,
+          "top": 446,
+          "width": 443,
+          "height": 413
+        },
+        {
+          "left": 886,
+          "top": 453,
+          "width": 427,
+          "height": 413
+        },
+        {
+          "left": 1367,
+          "top": 449,
+          "width": 373,
+          "height": 408
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "83b55f6527df2b0b13718d4c92db5d4a86a9f325c93c5760817280c9093a4d17",
+        "315b718c6d4ba1df451416b6d1ac1831355c24c3f96b91ab285110dfb67f423e",
+        "6dcbf8b1ec70b3c8753c5d18a00c7ab5b0e7b0256fba811f5a99b082a918afc7",
+        "3e83a07cac6d039018392bcb4509900c21346c0c397f36c53050cfbfec6c5454",
+        "320773cc699a2e98236ae4b6f7b6e9fb1f2426180fca8bfba7389f529743ca4c",
+        "21a614da58be53d89f0f3d233ecd971f486c176e0ec0e4fed0630ad375d4dbee",
+        "589e22ce9bf582500c719510782563d14cac148dd2c202e39275bec2ea5388da",
+        "90b47580a3f2c2cd59712b698598367ed40940e55689826f85f05654d88486a1"
+      ],
+      "sheetSha256": "aa5651494de7fa86294b621fc8f03e1831abb961703cd96d2fe878d401df4fb0",
+      "sheet": "art/unit-turnarounds/sheets/a-watcher.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-watcher/n.png",
+        "art/unit-turnarounds/frames/a-watcher/ne.png",
+        "art/unit-turnarounds/frames/a-watcher/e.png",
+        "art/unit-turnarounds/frames/a-watcher/se.png",
+        "art/unit-turnarounds/frames/a-watcher/s.png",
+        "art/unit-turnarounds/frames/a-watcher/sw.png",
+        "art/unit-turnarounds/frames/a-watcher/w.png",
+        "art/unit-turnarounds/frames/a-watcher/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-watcher.webp"
+    },
+    {
+      "id": "h-mcv",
+      "source": "art/source/h-mcv.png",
+      "sourceSha256": "edba740d9fb080be58ac468938d4950fb6ca48925b43ea7dc774cfefe5be5e5e",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 57,
+          "top": 22,
+          "width": 279,
+          "height": 363
+        },
+        {
+          "left": 403,
+          "top": 37,
+          "width": 416,
+          "height": 375
+        },
+        {
+          "left": 862,
+          "top": 119,
+          "width": 499,
+          "height": 274
+        },
+        {
+          "left": 1390,
+          "top": 24,
+          "width": 365,
+          "height": 391
+        },
+        {
+          "left": 64,
+          "top": 445,
+          "width": 267,
+          "height": 384
+        },
+        {
+          "left": 393,
+          "top": 461,
+          "width": 417,
+          "height": 386
+        },
+        {
+          "left": 849,
+          "top": 542,
+          "width": 504,
+          "height": 273
+        },
+        {
+          "left": 1383,
+          "top": 489,
+          "width": 379,
+          "height": 362
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "adbb83493578a6413455bbd002b0b437b923dc1e4d2d2c64703e74477c199258",
+        "0c38d780cddaf0a17cf91a033e82c20ad4a1d56bf6cbf1629e7905ca4e09415b",
+        "a397bb8e09791ee92c8bf417b598faa42c39fc10a0a061f3c3b9ecd06b7f4fd5",
+        "c21e997a5cfaf4c64d99d5a7854da55484caef67d34111aafaf6d543ccfc58a1",
+        "1986bac60e798cbb5246a9e24d15b02268a6ed62a9abbc412ab977db14e68339",
+        "2b20ec2c34c7116e94a1c651c5ea4a7433d04edd54b6ecb45b93d76266b7437a",
+        "4e58c18edaf961227fe672227b18dcda32d1ec17d5495b8475542f7f25ea1e92",
+        "edcddb66dee80d24a6de461bf2673fc8350fda237d528993a3e173c5d6b8a606"
+      ],
+      "sheetSha256": "22665477b7bfbd667f4f2203b24cc2165df6ef17d714a471969c7f0405668cd1",
+      "sheet": "art/unit-turnarounds/sheets/h-mcv.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-mcv/n.png",
+        "art/unit-turnarounds/frames/h-mcv/ne.png",
+        "art/unit-turnarounds/frames/h-mcv/e.png",
+        "art/unit-turnarounds/frames/h-mcv/se.png",
+        "art/unit-turnarounds/frames/h-mcv/s.png",
+        "art/unit-turnarounds/frames/h-mcv/sw.png",
+        "art/unit-turnarounds/frames/h-mcv/w.png",
+        "art/unit-turnarounds/frames/h-mcv/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-mcv.webp"
+    },
+    {
+      "id": "h-templar",
+      "source": "art/source/turnarounds/h-templar-v2.png",
+      "sourceSha256": "0241d658b5d3ce95e5c9be71a5f4c307aeec5326abfe612e3fc639199888208d",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 90,
+          "top": 14,
+          "width": 298,
+          "height": 419
+        },
+        {
+          "left": 519,
+          "top": 13,
+          "width": 344,
+          "height": 397
+        },
+        {
+          "left": 936,
+          "top": 10,
+          "width": 380,
+          "height": 422
+        },
+        {
+          "left": 1395,
+          "top": 13,
+          "width": 310,
+          "height": 423
+        },
+        {
+          "left": 90,
+          "top": 449,
+          "width": 300,
+          "height": 414
+        },
+        {
+          "left": 466,
+          "top": 445,
+          "width": 375,
+          "height": 402
+        },
+        {
+          "left": 910,
+          "top": 440,
+          "width": 365,
+          "height": 426
+        },
+        {
+          "left": 1398,
+          "top": 448,
+          "width": 304,
+          "height": 418
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "36ee63ecfebceb215b013a3a89a6419e9c41750ae7ab5c0c630f62c3173b8337",
+        "9c39e46de4ce7cc0ee6264f77f4c389ee71117aede78f192f074d30922f86da9",
+        "b011efcf6f54cbd8a541200e5a62500b7bed3ac831caebfc1e7f19bb60b7db8e",
+        "1bf9c892b3391753ded19664745f1788c7e3805a8cea4f27247bbfa3865dd64a",
+        "9aa92f16a28b79c284deaf3b656b14d340ba64986dc37bd1df96a523a2fd3fb5",
+        "708197d2e6f499da1dc127652be9212dbe460dbe3a66349cb017ee294ac85bb0",
+        "ab7fb70a746a66b820becc32dd9deeba80063c8f1c79cce9c0f58a498c79182b",
+        "ba07a8c3c42524c4c90685bc769dee5a1c23cd51814b3b807497f46b780eacb3"
+      ],
+      "sheetSha256": "316ba44c5640cb69a5da6bc9ec9b60ee8cf9da264702ab1a5e0cbd5981e127a9",
+      "sheet": "art/unit-turnarounds/sheets/h-templar.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-templar/n.png",
+        "art/unit-turnarounds/frames/h-templar/ne.png",
+        "art/unit-turnarounds/frames/h-templar/e.png",
+        "art/unit-turnarounds/frames/h-templar/se.png",
+        "art/unit-turnarounds/frames/h-templar/s.png",
+        "art/unit-turnarounds/frames/h-templar/sw.png",
+        "art/unit-turnarounds/frames/h-templar/w.png",
+        "art/unit-turnarounds/frames/h-templar/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-templar.webp"
+    },
+    {
+      "id": "h-bulwark",
+      "source": "art/source/turnarounds/h-bulwark-v2.png",
+      "sourceSha256": "7bc8c1695a677acdd51f1108cb0c677532bbb08621cfaf998e1c582a11528273",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 48,
+          "top": 26,
+          "width": 296,
+          "height": 394
+        },
+        {
+          "left": 401,
+          "top": 72,
+          "width": 424,
+          "height": 362
+        },
+        {
+          "left": 848,
+          "top": 152,
+          "width": 504,
+          "height": 234
+        },
+        {
+          "left": 1370,
+          "top": 122,
+          "width": 385,
+          "height": 312
+        },
+        {
+          "left": 48,
+          "top": 498,
+          "width": 295,
+          "height": 330
+        },
+        {
+          "left": 367,
+          "top": 499,
+          "width": 449,
+          "height": 341
+        },
+        {
+          "left": 823,
+          "top": 547,
+          "width": 508,
+          "height": 233
+        },
+        {
+          "left": 1349,
+          "top": 497,
+          "width": 409,
+          "height": 338
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "5c2ccd550c84080957929069d0504978a8c8d8e470622986cafbb2a0ebed2b1e",
+        "af09c66ad0f1aec5ba159b07ba9f66f5c6eb3aa5f27e3357b638a91c6bf5adc1",
+        "a12f8fc01edfd705fd83d550b4218c5bd426611bbaab80725133d8736adb36ed",
+        "9ca7b37d88a8a5572af17938ec4deab38d2aa1396483cfda016870aadc271581",
+        "2b51c716ad2dd45029fa0ee15114a72dba2b7c43bec6f32602f931be97f55e35",
+        "501c0e148249e5a786aeecd58c0d4f455382125f1ff7a33b7f2d510a06e2ccaf",
+        "328e84f79217f7524f677f8990f4770b222e72a3941cddad5e1ef2d35a5f09cb",
+        "b87edd79a6d1eedb86b3cdcd78f37b0b5ae3bebd52f37598d5e3d75ec49361c3"
+      ],
+      "sheetSha256": "54d1323d2ae84a5dbb51ac4ca9c77a3757691f69f555fe109951ecbc22f5ad75",
+      "sheet": "art/unit-turnarounds/sheets/h-bulwark.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-bulwark/n.png",
+        "art/unit-turnarounds/frames/h-bulwark/ne.png",
+        "art/unit-turnarounds/frames/h-bulwark/e.png",
+        "art/unit-turnarounds/frames/h-bulwark/se.png",
+        "art/unit-turnarounds/frames/h-bulwark/s.png",
+        "art/unit-turnarounds/frames/h-bulwark/sw.png",
+        "art/unit-turnarounds/frames/h-bulwark/w.png",
+        "art/unit-turnarounds/frames/h-bulwark/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-bulwark.webp"
+    },
+    {
+      "id": "h-harvester",
+      "source": "art/source/h-harvester.png",
+      "sourceSha256": "261aeec4f9e8f9e4f8c2b5100e9be5f1c2a98128d6aa6566907c923a310cddab",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 91,
+          "top": 68,
+          "width": 246,
+          "height": 323
+        },
+        {
+          "left": 463,
+          "top": 89,
+          "width": 354,
+          "height": 310
+        },
+        {
+          "left": 917,
+          "top": 134,
+          "width": 431,
+          "height": 230
+        },
+        {
+          "left": 1409,
+          "top": 81,
+          "width": 351,
+          "height": 318
+        },
+        {
+          "left": 90,
+          "top": 484,
+          "width": 246,
+          "height": 348
+        },
+        {
+          "left": 441,
+          "top": 499,
+          "width": 384,
+          "height": 315
+        },
+        {
+          "left": 872,
+          "top": 558,
+          "width": 426,
+          "height": 225
+        },
+        {
+          "left": 1390,
+          "top": 519,
+          "width": 344,
+          "height": 292
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "2ccb5af2278af1f2e4db5609ed0eff0abf7c20d1506e72dc6237a1b5fe722b1a",
+        "a972fb9f8d0acae319f0a6932ee8122a3515a1ced7abb242b6325282d1523d0b",
+        "c479f531604a8fcf6db140a1572120484922f6826947e182a4ab8e02472e43d6",
+        "b5875aa82adfd8eebca5164ac5fcfee19cc52dfa3f3ae15f03efa72b4ea854e6",
+        "e59c6c503bdad0bf9522c0cbab1d403b218e776a7b5ec5ebe3a102d2895725fa",
+        "31e79304df1088fd57b2e758c8fa43bb73b80358be954ec5cdeaa609651b0146",
+        "57a0b02e5d47423ca2ca9b5338582c7d7acbf951e2407a256e72e790cb4a6a58",
+        "7baddd916a8463f104cd892f320cd6d1623c8ac4ea6e51b8f34a3b3da9bb0afd"
+      ],
+      "sheetSha256": "571e1e5d7e65af00314b2cf78009e44cb899b0edb1a6be041be73362a2e4ef37",
+      "sheet": "art/unit-turnarounds/sheets/h-harvester.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-harvester/n.png",
+        "art/unit-turnarounds/frames/h-harvester/ne.png",
+        "art/unit-turnarounds/frames/h-harvester/e.png",
+        "art/unit-turnarounds/frames/h-harvester/se.png",
+        "art/unit-turnarounds/frames/h-harvester/s.png",
+        "art/unit-turnarounds/frames/h-harvester/sw.png",
+        "art/unit-turnarounds/frames/h-harvester/w.png",
+        "art/unit-turnarounds/frames/h-harvester/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-harvester.webp"
+    },
+    {
+      "id": "h-rifleman",
+      "source": "art/source/turnarounds/h-rifleman.png",
+      "sourceSha256": "7de3794cbe838b3aa63b2101b450775d01774118dedf0e44527db04a4d1fd518",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 142,
+          "top": 14,
+          "width": 233,
+          "height": 420
+        },
+        {
+          "left": 545,
+          "top": 14,
+          "width": 252,
+          "height": 409
+        },
+        {
+          "left": 976,
+          "top": 10,
+          "width": 286,
+          "height": 424
+        },
+        {
+          "left": 1412,
+          "top": 12,
+          "width": 275,
+          "height": 429
+        },
+        {
+          "left": 141,
+          "top": 455,
+          "width": 229,
+          "height": 414
+        },
+        {
+          "left": 539,
+          "top": 457,
+          "width": 234,
+          "height": 386
+        },
+        {
+          "left": 937,
+          "top": 450,
+          "width": 282,
+          "height": 406
+        },
+        {
+          "left": 1431,
+          "top": 457,
+          "width": 242,
+          "height": 411
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "fe13e6802baee7ab34209c611dae56016821e3de8d6f36f5c0c499ec2ed98047",
+        "a09150033173d73f861403953ab7bc99c254cbb3543962e0ff55ed6a2703779a",
+        "80cc54deeeb2a8ad31577caa56b0a99a5bc626d5f570f83eaa602b0643dcfe3d",
+        "8cf7713471bfea341ea6e3cebba841dad377b316e0bf1d719c565841f333e718",
+        "d7112ad0cf85d763ac7ca7377a5a261b98569631cc4fee2619b9a8eab34b9336",
+        "e378e513d1b524953fef0ded73c49d624e349ecde3725ca8ba99b54ad597adaf",
+        "83a4285606d68b5df4176a13590120a8efaa87c7341e7bd52982a063102c79a3",
+        "df5989b92cc8b8ecd8bc803acf9322b850ac243579cd8732e7ce76cc16ea1c12"
+      ],
+      "sheetSha256": "6935bf7b5a3fdc2a446f1135d8f2bb875fc46fdb51749aac578f7f690013ba87",
+      "sheet": "art/unit-turnarounds/sheets/h-rifleman.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-rifleman/n.png",
+        "art/unit-turnarounds/frames/h-rifleman/ne.png",
+        "art/unit-turnarounds/frames/h-rifleman/e.png",
+        "art/unit-turnarounds/frames/h-rifleman/se.png",
+        "art/unit-turnarounds/frames/h-rifleman/s.png",
+        "art/unit-turnarounds/frames/h-rifleman/sw.png",
+        "art/unit-turnarounds/frames/h-rifleman/w.png",
+        "art/unit-turnarounds/frames/h-rifleman/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-rifleman.webp"
+    },
+    {
+      "id": "h-rocketeer",
+      "source": "art/source/turnarounds/h-rocketeer-v2.png",
+      "sourceSha256": "bb25b64577066529f281650f001dfc0bb80ca19e67e8731018ad1d380752294f",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 107,
+          "top": 5,
+          "width": 272,
+          "height": 420
+        },
+        {
+          "left": 516,
+          "top": 22,
+          "width": 310,
+          "height": 402
+        },
+        {
+          "left": 979,
+          "top": 25,
+          "width": 331,
+          "height": 418
+        },
+        {
+          "left": 1383,
+          "top": 7,
+          "width": 313,
+          "height": 415
+        },
+        {
+          "left": 111,
+          "top": 436,
+          "width": 253,
+          "height": 408
+        },
+        {
+          "left": 475,
+          "top": 432,
+          "width": 326,
+          "height": 434
+        },
+        {
+          "left": 925,
+          "top": 442,
+          "width": 345,
+          "height": 424
+        },
+        {
+          "left": 1398,
+          "top": 434,
+          "width": 299,
+          "height": 419
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "e4dc8f4830de3e7414f391d43e41fa5c2d4855183e27732011820b1b57e2e49b",
+        "8b97e3ebe5bf99c7dcb87aceb103d8a795a0504a961c7393bf234b0b4b524c35",
+        "6995d5ac7f97dc1f367f07e482b2369e8f883b1cd7a6857d681678362170a60e",
+        "0f9a9c81eb85b2057cd79aa406c00eb5c7b1e9f18b9bac66990bf34554c6a7de",
+        "36c946ec67b5002f60a46edf6590ef5840771703d91866d55408878e870f46ec",
+        "929f4b84b4eb6b7db54cfc919126e3105e9de6781f33ad81bafb1690baa5b2de",
+        "dab3d3a9e8dbb04e754d7b55c5e7d4c87dc0aa8fec31d65cdef8e28de872b214",
+        "b64b8f2da447de364fc6ce6c985f784ed2badc69f0d92829b5254fd702d7142e"
+      ],
+      "sheetSha256": "2f2c8d4ba71b0700966c407c84ecfc4291754199d0f87505cdc03ec4e516a120",
+      "sheet": "art/unit-turnarounds/sheets/h-rocketeer.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-rocketeer/n.png",
+        "art/unit-turnarounds/frames/h-rocketeer/ne.png",
+        "art/unit-turnarounds/frames/h-rocketeer/e.png",
+        "art/unit-turnarounds/frames/h-rocketeer/se.png",
+        "art/unit-turnarounds/frames/h-rocketeer/s.png",
+        "art/unit-turnarounds/frames/h-rocketeer/sw.png",
+        "art/unit-turnarounds/frames/h-rocketeer/w.png",
+        "art/unit-turnarounds/frames/h-rocketeer/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-rocketeer.webp"
+    },
+    {
+      "id": "h-siegegun",
+      "source": "art/source/turnarounds/h-siegegun.png",
+      "sourceSha256": "bbe99c15ee4badab80b49dab7de37fb9da100a32c52a89d9790ab8d818895783",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 24,
+          "top": 9,
+          "width": 361,
+          "height": 404
+        },
+        {
+          "left": 429,
+          "top": 11,
+          "width": 413,
+          "height": 416
+        },
+        {
+          "left": 895,
+          "top": 54,
+          "width": 442,
+          "height": 351
+        },
+        {
+          "left": 1333,
+          "top": 99,
+          "width": 425,
+          "height": 327
+        },
+        {
+          "left": 15,
+          "top": 459,
+          "width": 389,
+          "height": 384
+        },
+        {
+          "left": 447,
+          "top": 466,
+          "width": 437,
+          "height": 394
+        },
+        {
+          "left": 888,
+          "top": 498,
+          "width": 443,
+          "height": 345
+        },
+        {
+          "left": 1364,
+          "top": 453,
+          "width": 403,
+          "height": 404
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "ca9ce3334b9e914dc2e85b00a8db715e823cc60003e9c935901b341ef1e5b5fe",
+        "efc0c179b0e5f38019654e3aab560714e33a102db3902cb56c208a4c023b5802",
+        "6533f965f9c2e75b92ab619aa7301dbfd93b3baaa241b6652552e75fea57143e",
+        "6cea316599245994a357119bf9cf904f329d415e3200bce089e64d9890b76c42",
+        "40bc922578b8e96f47cee7c3f5841a17413e3d5ce870782b069fd79d171cb588",
+        "a7592279c6d269361407921f4b8708eb59abf2610ccbe6c0799a264997d47cbd",
+        "6b25d99f3db8def1d9491fccb4e9797ad5a4a989300f63c6fa81cb422c471f7a",
+        "c4577464b27019e099d03e3b857231de819304a207c23e0a3ced3c52aa5c0b04"
+      ],
+      "sheetSha256": "8ad2c83c98896c2847d2bba544a9f2898a7ba439c05f6db3059f0164c1c66b18",
+      "sheet": "art/unit-turnarounds/sheets/h-siegegun.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-siegegun/n.png",
+        "art/unit-turnarounds/frames/h-siegegun/ne.png",
+        "art/unit-turnarounds/frames/h-siegegun/e.png",
+        "art/unit-turnarounds/frames/h-siegegun/se.png",
+        "art/unit-turnarounds/frames/h-siegegun/s.png",
+        "art/unit-turnarounds/frames/h-siegegun/sw.png",
+        "art/unit-turnarounds/frames/h-siegegun/w.png",
+        "art/unit-turnarounds/frames/h-siegegun/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-siegegun.webp"
+    },
+    {
+      "id": "h-ranger",
+      "source": "art/source/turnarounds/h-ranger.png",
+      "sourceSha256": "31d2f1fe720954da97aeefbf8a8f5f1461daac9e1a821667a587353ae064c3e5",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 36,
+          "top": 13,
+          "width": 304,
+          "height": 414
+        },
+        {
+          "left": 481,
+          "top": 12,
+          "width": 318,
+          "height": 414
+        },
+        {
+          "left": 924,
+          "top": 13,
+          "width": 362,
+          "height": 408
+        },
+        {
+          "left": 1414,
+          "top": 18,
+          "width": 330,
+          "height": 417
+        },
+        {
+          "left": 108,
+          "top": 444,
+          "width": 312,
+          "height": 417
+        },
+        {
+          "left": 529,
+          "top": 448,
+          "width": 323,
+          "height": 405
+        },
+        {
+          "left": 905,
+          "top": 446,
+          "width": 370,
+          "height": 391
+        },
+        {
+          "left": 1376,
+          "top": 449,
+          "width": 345,
+          "height": 403
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "e1220575d763f1d26500ac2390aa718b5288bd9f68ffe29f7ae404fcf9c6cab2",
+        "fbd8ac780ffa01a0e8c9c655ff30ff9ce8c4a679d81036637b3eb904a3e4de37",
+        "f5d7a55c8a89bdaeac535e6ab135a1b25667f62aa68e8144a92ce8624f895f6f",
+        "b3a7b33ea49f7e8dc411ffbc592a8f62b362e5055ff1de9fbe4d902f6d3d1182",
+        "da90ec3ff7569607e61f9aa89ffe648a0fa517c805550430e301777563953862",
+        "34f48063bf9cc69e1b67579b6eea498ccae181ff44a66bb14f9e87fe87d3fada",
+        "421a7ec41ca592058a70bfae229d909e987997e1caf80b5a2af7a8ee7e8cdac1",
+        "a324fa6ff8d0c650996820948d8d2033b4bfda96c62d9b809815056fc2e1dece"
+      ],
+      "sheetSha256": "d746995d47eda1aa384c6db8af7347047c446265c487b2f508774f77ab178bc9",
+      "sheet": "art/unit-turnarounds/sheets/h-ranger.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-ranger/n.png",
+        "art/unit-turnarounds/frames/h-ranger/ne.png",
+        "art/unit-turnarounds/frames/h-ranger/e.png",
+        "art/unit-turnarounds/frames/h-ranger/se.png",
+        "art/unit-turnarounds/frames/h-ranger/s.png",
+        "art/unit-turnarounds/frames/h-ranger/sw.png",
+        "art/unit-turnarounds/frames/h-ranger/w.png",
+        "art/unit-turnarounds/frames/h-ranger/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-ranger.webp"
+    },
+    {
+      "id": "d-mcv",
+      "source": "art/source/d-mcv.png",
+      "sourceSha256": "8c0fb5ccc8666bb3edacdeeb5f4c08ec43620488c9c09bd4c41aad787a1e5fa1",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 44,
+          "top": 18,
+          "width": 305,
+          "height": 370
+        },
+        {
+          "left": 390,
+          "top": 9,
+          "width": 458,
+          "height": 413
+        },
+        {
+          "left": 872,
+          "top": 93,
+          "width": 471,
+          "height": 263
+        },
+        {
+          "left": 1360,
+          "top": 15,
+          "width": 398,
+          "height": 408
+        },
+        {
+          "left": 32,
+          "top": 448,
+          "width": 300,
+          "height": 378
+        },
+        {
+          "left": 375,
+          "top": 442,
+          "width": 421,
+          "height": 405
+        },
+        {
+          "left": 806,
+          "top": 505,
+          "width": 509,
+          "height": 266
+        },
+        {
+          "left": 1340,
+          "top": 434,
+          "width": 432,
+          "height": 405
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "df34f6e297850d3a2abf445952637f9c78713bf91dacfd8640116bac058bf97b",
+        "cbc48a0ceabffd54a52c0ad0081719d65fe36042b34ab16c37f881b5b218be08",
+        "9687d00023a580eebb76d68ebbc43a69c96c0de833d63b90fe6ce8532b4ab161",
+        "5e47df2b2d8aa0ce7523f7406e6c6af8f95f96e8aff8389811e9859ce5010cdf",
+        "7a2a045826b603c2ea8c2eeb47511e0c41fc7a053a948bd5a5236afdb591279a",
+        "cfa039a9bbd4fd12458877d927d89b55ca0f63c985913e15f9ad07aa1dac2e76",
+        "594f99eeedfcbdf5651ef286a71fbb6de5006bb4494c6d0bf01cb58cb07aafe9",
+        "fdd05e3ffcdef94e6ab65d4a01a54a9e69041ee88e25f778c809c9be39d94cc3"
+      ],
+      "sheetSha256": "a16ee944d1e28a536948031ca3c331939c1ecaf45b7a5af1f2e5b96ae0213344",
+      "sheet": "art/unit-turnarounds/sheets/d-mcv.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-mcv/n.png",
+        "art/unit-turnarounds/frames/d-mcv/ne.png",
+        "art/unit-turnarounds/frames/d-mcv/e.png",
+        "art/unit-turnarounds/frames/d-mcv/se.png",
+        "art/unit-turnarounds/frames/d-mcv/s.png",
+        "art/unit-turnarounds/frames/d-mcv/sw.png",
+        "art/unit-turnarounds/frames/d-mcv/w.png",
+        "art/unit-turnarounds/frames/d-mcv/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-mcv.webp"
+    },
+    {
+      "id": "d-cinderling",
+      "source": "art/source/turnarounds/d-cinderling-v2.png",
+      "sourceSha256": "2d9e2b601c2f34398d84e1266cf10f8823befa6dc27965edad9d00f6010747f4",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 33,
+          "top": 17,
+          "width": 420,
+          "height": 422
+        },
+        {
+          "left": 490,
+          "top": 10,
+          "width": 399,
+          "height": 411
+        },
+        {
+          "left": 948,
+          "top": 10,
+          "width": 363,
+          "height": 420
+        },
+        {
+          "left": 1335,
+          "top": 14,
+          "width": 418,
+          "height": 409
+        },
+        {
+          "left": 18,
+          "top": 422,
+          "width": 410,
+          "height": 423
+        },
+        {
+          "left": 437,
+          "top": 423,
+          "width": 402,
+          "height": 442
+        },
+        {
+          "left": 901,
+          "top": 438,
+          "width": 381,
+          "height": 430
+        },
+        {
+          "left": 1378,
+          "top": 444,
+          "width": 375,
+          "height": 399
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "e142d9054b6b181394216568d3d79ffef06effc9e5fe18ff8eacb241818116cb",
+        "33ba6babdee4c990688bc201439722a7dca512914a19c66fdf18d26a1870e7b2",
+        "b83fed82ea894fd475fd92e262820a750cef481f856bb79f39caf769623a7e85",
+        "9f39bae17a1d8ca2834f3b98c507951fb7a5a816f4cc3ab53b9359d3084a996f",
+        "8335944d59e6a2358c321acbfa958d0251405f40e4074e1a2f8e8042b09901bb",
+        "36d100ddc7a15cb248f73755738f975f93740765f001e650c0786d1dd08ff3e8",
+        "fb7670a22c8c40fe15bef0ed623515f75e6da8811d4cc185f8fad41d9d093d88",
+        "6d9f506492a7d14b8dff50a7628110f4f53ae48c90287767550f438fc96275d4"
+      ],
+      "sheetSha256": "7b3e19002c53c788f34d03323aa9a238736613b1e52c659e2a380518177ec1fe",
+      "sheet": "art/unit-turnarounds/sheets/d-cinderling.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-cinderling/n.png",
+        "art/unit-turnarounds/frames/d-cinderling/ne.png",
+        "art/unit-turnarounds/frames/d-cinderling/e.png",
+        "art/unit-turnarounds/frames/d-cinderling/se.png",
+        "art/unit-turnarounds/frames/d-cinderling/s.png",
+        "art/unit-turnarounds/frames/d-cinderling/sw.png",
+        "art/unit-turnarounds/frames/d-cinderling/w.png",
+        "art/unit-turnarounds/frames/d-cinderling/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-cinderling.webp"
+    },
+    {
+      "id": "d-hellreaver",
+      "source": "art/source/turnarounds/d-hellreaver.png",
+      "sourceSha256": "a0709d47314ab2996dc32a728bf5bc4a916fb2f5592db03aa63e7148e1931aeb",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 40,
+          "top": 25,
+          "width": 375,
+          "height": 376
+        },
+        {
+          "left": 456,
+          "top": 34,
+          "width": 414,
+          "height": 385
+        },
+        {
+          "left": 879,
+          "top": 80,
+          "width": 436,
+          "height": 323
+        },
+        {
+          "left": 1330,
+          "top": 37,
+          "width": 434,
+          "height": 382
+        },
+        {
+          "left": 36,
+          "top": 449,
+          "width": 382,
+          "height": 375
+        },
+        {
+          "left": 440,
+          "top": 464,
+          "width": 433,
+          "height": 383
+        },
+        {
+          "left": 896,
+          "top": 483,
+          "width": 437,
+          "height": 337
+        },
+        {
+          "left": 1339,
+          "top": 453,
+          "width": 428,
+          "height": 394
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "00002d2c0748addef5ed71e51eb3f1e49931e249e034fc98ce51d3fc648f3702",
+        "f4d74c1b6177b4a17b1c0dece65c083b23af62f5f9aa2c35b4b1e177b326c354",
+        "dd8031e887727cfea5aad0d578854c0c97ab4b0a7a043913ff5a0f7c48117d3a",
+        "e05ad856f0961b6245c8f702239babd876d7f41b7b7a8ba5d4d60ea983e33051",
+        "9cb0e01a18c4c542f1e83b93dd3ff87eaf78c465fe987cdc7de759ef90ea4710",
+        "1f3f56fa098cedbe0f85f12c208b7a87423d357935994e91637dec20d415feca",
+        "387f79fd22dcda49de468f0f487892f655e939fad15cf716edb68c247b250f0e",
+        "804e2e88efc72d9acd8b56db9f474b0bacceac19944c9c2e78d4d0df9843abe7"
+      ],
+      "sheetSha256": "e98075e5e1433bce9f96ef1b689970807180da5044ce850a6cf072d8ffcfd3b7",
+      "sheet": "art/unit-turnarounds/sheets/d-hellreaver.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-hellreaver/n.png",
+        "art/unit-turnarounds/frames/d-hellreaver/ne.png",
+        "art/unit-turnarounds/frames/d-hellreaver/e.png",
+        "art/unit-turnarounds/frames/d-hellreaver/se.png",
+        "art/unit-turnarounds/frames/d-hellreaver/s.png",
+        "art/unit-turnarounds/frames/d-hellreaver/sw.png",
+        "art/unit-turnarounds/frames/d-hellreaver/w.png",
+        "art/unit-turnarounds/frames/d-hellreaver/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-hellreaver.webp"
+    },
+    {
+      "id": "d-hexer",
+      "source": "art/source/turnarounds/d-hexer-v2.png",
+      "sourceSha256": "8a9ce315867a8d2fca90774bf2d5c0a335ec53d866ab26152e4597eebfc412f0",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 82,
+          "top": 7,
+          "width": 337,
+          "height": 431
+        },
+        {
+          "left": 517,
+          "top": 13,
+          "width": 322,
+          "height": 425
+        },
+        {
+          "left": 970,
+          "top": 8,
+          "width": 274,
+          "height": 436
+        },
+        {
+          "left": 1371,
+          "top": 11,
+          "width": 330,
+          "height": 436
+        },
+        {
+          "left": 63,
+          "top": 447,
+          "width": 358,
+          "height": 410
+        },
+        {
+          "left": 530,
+          "top": 442,
+          "width": 322,
+          "height": 426
+        },
+        {
+          "left": 961,
+          "top": 445,
+          "width": 324,
+          "height": 426
+        },
+        {
+          "left": 1416,
+          "top": 451,
+          "width": 318,
+          "height": 404
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "de2002a97ebfb14e8f2dac1a6fe57fbc20361c94159ccd84a2e12773118fd89b",
+        "519de195d0b45f909d7899176b7864dd68ca91e3d7b89bf29b7da16504df4a44",
+        "b65cef3052ee898913de5d653cacd0faf3122e83faaeaf3a5174ee40f9962ad7",
+        "e5112553a01db2d6d3f8c0e90f79339838fe03d46a283005c1975f9964c08e44",
+        "42cd6fe1c48aa3ccbd04a3f95d0147cc49018875fbe78f60f01dd7ac8f16206f",
+        "823ccb88cb3039a3778b8fde9eb32aed0c3d126c3b894e5a6e03818661de6703",
+        "0c7bfeebf5e0cc66abbd46938557c59f43dfc9d6d3bf949b7bc7353be8869cc9",
+        "4068dff73e510c9be4a99790604b512116d10a9c37c83354b2fd74e2890110de"
+      ],
+      "sheetSha256": "3ab57f12b652310c667fe6f0ca3d9ec6c7314c32c2a2ea7c1738de2bb9d83987",
+      "sheet": "art/unit-turnarounds/sheets/d-hexer.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-hexer/n.png",
+        "art/unit-turnarounds/frames/d-hexer/ne.png",
+        "art/unit-turnarounds/frames/d-hexer/e.png",
+        "art/unit-turnarounds/frames/d-hexer/se.png",
+        "art/unit-turnarounds/frames/d-hexer/s.png",
+        "art/unit-turnarounds/frames/d-hexer/sw.png",
+        "art/unit-turnarounds/frames/d-hexer/w.png",
+        "art/unit-turnarounds/frames/d-hexer/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-hexer.webp"
+    },
+    {
+      "id": "d-devourer",
+      "source": "art/source/d-harvester.png",
+      "sourceSha256": "c0c5f38d2db926860573ae283dddec65f769745adec7dde4c65d54f7bc2ca674",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 91,
+          "top": 63,
+          "width": 263,
+          "height": 312
+        },
+        {
+          "left": 462,
+          "top": 69,
+          "width": 360,
+          "height": 318
+        },
+        {
+          "left": 896,
+          "top": 117,
+          "width": 429,
+          "height": 232
+        },
+        {
+          "left": 1380,
+          "top": 57,
+          "width": 323,
+          "height": 332
+        },
+        {
+          "left": 96,
+          "top": 464,
+          "width": 252,
+          "height": 353
+        },
+        {
+          "left": 475,
+          "top": 481,
+          "width": 337,
+          "height": 327
+        },
+        {
+          "left": 891,
+          "top": 557,
+          "width": 428,
+          "height": 221
+        },
+        {
+          "left": 1391,
+          "top": 502,
+          "width": 348,
+          "height": 316
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "95de21ceb3dd91afb7da9dddbe2a1eae55812a26528ec686b6e747f8e33dac9a",
+        "4e481d0ae3cfab75d5365a0b833c2ac3d737254c00072614b71358940d7fe1e2",
+        "cd9c6aacc9ff57ed636cd45f3bc7dfacd1bc9b2acac9fe1662abf6cbc06602b3",
+        "08b22d72fb483ade7cba32dbcded20e509b494efbd1c240b531153fe8b317f81",
+        "9c726e4b9ff952d61bf81e2750fe03662e23c10047ca59508147c12de5dec0bf",
+        "4fa084df75e8ea754537660df532124cbc3ceb385a92d3a5b44caeff61e3b8be",
+        "3b8da85a13e5726fc5ebf868bba0dd1f9c904d2a8e9e547f584ed624df33d201",
+        "4126698f689d81eb13e4eb3e99d0ce86f58c4a939ed16162710673304f3df551"
+      ],
+      "sheetSha256": "efc2fc95db3535faa324ea220b61709e601443da0807b36cb044a4a09ec4c95b",
+      "sheet": "art/unit-turnarounds/sheets/d-devourer.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-devourer/n.png",
+        "art/unit-turnarounds/frames/d-devourer/ne.png",
+        "art/unit-turnarounds/frames/d-devourer/e.png",
+        "art/unit-turnarounds/frames/d-devourer/se.png",
+        "art/unit-turnarounds/frames/d-devourer/s.png",
+        "art/unit-turnarounds/frames/d-devourer/sw.png",
+        "art/unit-turnarounds/frames/d-devourer/w.png",
+        "art/unit-turnarounds/frames/d-devourer/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-devourer.webp"
+    },
+    {
+      "id": "d-ravager",
+      "source": "art/source/turnarounds/d-ravager.png",
+      "sourceSha256": "c43b11351126c7b0265423bc990fd320e3290052d58638a500499f3bf7a0c4d7",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 58,
+          "top": 10,
+          "width": 324,
+          "height": 429
+        },
+        {
+          "left": 454,
+          "top": 12,
+          "width": 415,
+          "height": 385
+        },
+        {
+          "left": 880,
+          "top": 65,
+          "width": 502,
+          "height": 338
+        },
+        {
+          "left": 1375,
+          "top": 31,
+          "width": 386,
+          "height": 394
+        },
+        {
+          "left": 50,
+          "top": 433,
+          "width": 330,
+          "height": 430
+        },
+        {
+          "left": 422,
+          "top": 452,
+          "width": 402,
+          "height": 411
+        },
+        {
+          "left": 838,
+          "top": 491,
+          "width": 510,
+          "height": 337
+        },
+        {
+          "left": 1361,
+          "top": 464,
+          "width": 398,
+          "height": 385
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "34428448a309ae8ff0dbb030a6f3b89dea894354054758533ab2d2b188de5dbc",
+        "c3d4787ca38458f0f8a27d3cf965a96572ea7bbc37d20057fcc98b6dcaf5c7fe",
+        "675ea8e711b7850bf68ec90fcf1e8c3024d234172595b151874be35eeec24338",
+        "c9781bf932bb37d145c335e854066af81111f6870e96388bc05e186d090de0cd",
+        "cd64dc330a97ab8bead7612fa97a36a4433dc1776c9ef00297ccbfd26152c794",
+        "14d4a4ed528cd2a3589f9fce6eea7068e93fad17485df0074a580b67c7436c14",
+        "72694cfb1a5eedb3c09364bb28e3717f972f5f96f4e742572c88bc944a6a0c71",
+        "98b5f92777846b3fce222c6adfb3a97d907f786c130e842ae0925f5d228b8e4c"
+      ],
+      "sheetSha256": "b3bf3b839e3ed0377ca012a00639499c657db4efd108e7d9095fdd43754b436e",
+      "sheet": "art/unit-turnarounds/sheets/d-ravager.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-ravager/n.png",
+        "art/unit-turnarounds/frames/d-ravager/ne.png",
+        "art/unit-turnarounds/frames/d-ravager/e.png",
+        "art/unit-turnarounds/frames/d-ravager/se.png",
+        "art/unit-turnarounds/frames/d-ravager/s.png",
+        "art/unit-turnarounds/frames/d-ravager/sw.png",
+        "art/unit-turnarounds/frames/d-ravager/w.png",
+        "art/unit-turnarounds/frames/d-ravager/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-ravager.webp"
+    },
+    {
+      "id": "d-skitter",
+      "source": "art/source/turnarounds/d-skitter.png",
+      "sourceSha256": "95372bbd07e2b00ac9539b88328586643ad3e9d0b155054527eeefc5adf9aac0",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 36,
+          "top": 34,
+          "width": 378,
+          "height": 392
+        },
+        {
+          "left": 457,
+          "top": 34,
+          "width": 424,
+          "height": 399
+        },
+        {
+          "left": 907,
+          "top": 98,
+          "width": 415,
+          "height": 311
+        },
+        {
+          "left": 1362,
+          "top": 61,
+          "width": 390,
+          "height": 368
+        },
+        {
+          "left": 37,
+          "top": 461,
+          "width": 376,
+          "height": 376
+        },
+        {
+          "left": 446,
+          "top": 466,
+          "width": 427,
+          "height": 371
+        },
+        {
+          "left": 908,
+          "top": 498,
+          "width": 429,
+          "height": 325
+        },
+        {
+          "left": 1361,
+          "top": 478,
+          "width": 390,
+          "height": 362
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 58,
+      "frameHashes": [
+        "750a9774d05069eff4d297d1bf7bd760eab2c307b8d3737c5ee7c407e08421a8",
+        "2e5a519a227fe48e08ad71022550ee75c3ca5300f225693d49e732ae9bd0ceb7",
+        "b9a99f4777c353137fe03e3929effa4768edca2385b9ffb01d91562afaaf5fd7",
+        "bbe4c386f04728da8154e241627626ee6420fff8dfab32213aa367b6aa24e462",
+        "a7ecdfb30af251a23b67bdbc5987b5ba2868c01c507c62e4035c95982a85a08b",
+        "a59d8d59817bd07dd29ee4f68e7589cf545b1bd1ea5629e9017cc0551332008c",
+        "ca429e9af23908a7e71dc379828d0c157e289cedf1c83eb933d0c37d5e98bd2c",
+        "52e34f8a1450edc1640794cac2e45e50f3d35d3ab248c95f50af2839be16ddac"
+      ],
+      "sheetSha256": "957c3585910b1030b8edd77753accf4b9750d4d697bf9d622cb1f0593357e74a",
+      "sheet": "art/unit-turnarounds/sheets/d-skitter.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-skitter/n.png",
+        "art/unit-turnarounds/frames/d-skitter/ne.png",
+        "art/unit-turnarounds/frames/d-skitter/e.png",
+        "art/unit-turnarounds/frames/d-skitter/se.png",
+        "art/unit-turnarounds/frames/d-skitter/s.png",
+        "art/unit-turnarounds/frames/d-skitter/sw.png",
+        "art/unit-turnarounds/frames/d-skitter/w.png",
+        "art/unit-turnarounds/frames/d-skitter/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-skitter.webp"
+    },
+    {
+      "id": "d-thrall",
+      "source": "art/source/turnarounds/d-thrall-v2.png",
+      "sourceSha256": "fc29b485d008645d5596e269dca47e49dda0e1e5ff692f0ddb635597258bc5ba",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 19,
+          "top": 7,
+          "width": 414,
+          "height": 414
+        },
+        {
+          "left": 507,
+          "top": 7,
+          "width": 344,
+          "height": 424
+        },
+        {
+          "left": 991,
+          "top": 7,
+          "width": 269,
+          "height": 425
+        },
+        {
+          "left": 1345,
+          "top": 16,
+          "width": 404,
+          "height": 406
+        },
+        {
+          "left": 12,
+          "top": 450,
+          "width": 439,
+          "height": 405
+        },
+        {
+          "left": 485,
+          "top": 445,
+          "width": 370,
+          "height": 427
+        },
+        {
+          "left": 963,
+          "top": 447,
+          "width": 266,
+          "height": 414
+        },
+        {
+          "left": 1355,
+          "top": 446,
+          "width": 366,
+          "height": 425
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 40,
+      "frameHashes": [
+        "7190fd9bd04e4cc9e641051a9e48a99ab764c8408203d2fb0ffe0548cc191bdb",
+        "a3cc09e4b3575bb54ea5be2f51a642f637b4e6fffc9d93f951be7944048fccc7",
+        "b7ff661b1ef9ee00bd84b20e8ad3aab7dd8ee3ecbc3adbd37df4279de43ecf03",
+        "094762418e3de7193774a34c174ac5067bffa84b538cf2a4aff99a1d45c4643d",
+        "ad76591b33c4eda49fb25a64d1e1a383055d84e4660f50deb2ac06d6411a5e78",
+        "ba8b8e8d340fb9eb353c7501e2d95eb656e69f43e17bc98ba956c9894e786827",
+        "fe2320f0a103744d94a423ecbdfb3a8362e984d0ab85e0942450d391bedbdb97",
+        "1d17097a66219e8a364e8e4b685083e086abb8d825466e12d4a8445ccd59d817"
+      ],
+      "sheetSha256": "6fa32af0799834ed2823320f83118dd298de1bef88daa0dbd8bad9343b3b090e",
+      "sheet": "art/unit-turnarounds/sheets/d-thrall.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-thrall/n.png",
+        "art/unit-turnarounds/frames/d-thrall/ne.png",
+        "art/unit-turnarounds/frames/d-thrall/e.png",
+        "art/unit-turnarounds/frames/d-thrall/se.png",
+        "art/unit-turnarounds/frames/d-thrall/s.png",
+        "art/unit-turnarounds/frames/d-thrall/sw.png",
+        "art/unit-turnarounds/frames/d-thrall/w.png",
+        "art/unit-turnarounds/frames/d-thrall/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-thrall.webp"
+    },
+    {
+      "id": "a-tidebreaker",
+      "source": "art/source/turnarounds/a-tidebreaker.png",
+      "sourceSha256": "0310c64e3e670aa6dedbd53dd26f00739bc05386034a18afecccd9de86644586",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 55,
+          "top": 35,
+          "width": 277,
+          "height": 374
+        },
+        {
+          "left": 421,
+          "top": 63,
+          "width": 407,
+          "height": 335
+        },
+        {
+          "left": 862,
+          "top": 112,
+          "width": 484,
+          "height": 213
+        },
+        {
+          "left": 1367,
+          "top": 49,
+          "width": 379,
+          "height": 342
+        },
+        {
+          "left": 76,
+          "top": 447,
+          "width": 234,
+          "height": 397
+        },
+        {
+          "left": 400,
+          "top": 476,
+          "width": 397,
+          "height": 345
+        },
+        {
+          "left": 834,
+          "top": 542,
+          "width": 507,
+          "height": 214
+        },
+        {
+          "left": 1370,
+          "top": 484,
+          "width": 388,
+          "height": 335
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "f94246601d7e9a6b14c212278c559ccb3b5729a3346c8624542ad545c548c666",
+        "02a41a3f73600472126c0ee019d9e8b1d21c8d1a95319dc16bfbaca359cf686b",
+        "b3ed0f4202354271280b827973429a9191b3ca6c1f7550132a9d03580b9ca967",
+        "f2d0a2b68b28b07b5cd5346256c2798e2c54f29ac71658ee0cd3255efe62136d",
+        "68d31f29a5badac552aab8c706e2815f4f9d946580d69d77d487e37683902dcb",
+        "04861e55a13265e45a1419d6c2e10c654323c9b4f97e72a14b55377405054521",
+        "8833d1802e0d15859555592f4f5b03ae07411c55d163ce10e45148eb9948237d",
+        "1ebe24ce7abe1f04f62d3c47444bc66f16241e6d8a4400c428a5d115ec11b34c"
+      ],
+      "sheetSha256": "193ffb7fcc3866ea3d0762e9386bbe38a82945f875ac09f5f3ba898441892d4c",
+      "sheet": "art/unit-turnarounds/sheets/a-tidebreaker.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-tidebreaker/n.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/ne.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/e.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/se.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/s.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/sw.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/w.png",
+        "art/unit-turnarounds/frames/a-tidebreaker/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-tidebreaker.webp"
+    },
+    {
+      "id": "a-tideveil",
+      "source": "art/source/turnarounds/a-tideveil.png",
+      "sourceSha256": "942498d4c4ce7c106050d05f680b8da360dc8eb5a054c6ec2392c4d086f6ce58",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 119,
+          "top": 43,
+          "width": 187,
+          "height": 357
+        },
+        {
+          "left": 472,
+          "top": 76,
+          "width": 354,
+          "height": 315
+        },
+        {
+          "left": 889,
+          "top": 101,
+          "width": 496,
+          "height": 227
+        },
+        {
+          "left": 1402,
+          "top": 78,
+          "width": 331,
+          "height": 300
+        },
+        {
+          "left": 120,
+          "top": 462,
+          "width": 183,
+          "height": 363
+        },
+        {
+          "left": 445,
+          "top": 514,
+          "width": 386,
+          "height": 294
+        },
+        {
+          "left": 848,
+          "top": 527,
+          "width": 500,
+          "height": 231
+        },
+        {
+          "left": 1389,
+          "top": 493,
+          "width": 355,
+          "height": 330
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "81c53991af64dad117169e62581093c2f3ae6a5c5eed9f4c8f046baaf3487dd0",
+        "9522371f2c92ab16532b0ec8674d1d500f007d5dc6ed126a5f1b416533cf775d",
+        "6130f3d57eda776a5db088660cc71d2502b90230bbf062397c52381ea400e3cf",
+        "04efb4354c82fa1bfa1f4a5ce65fd006c84c745d033b48e186784c36a1eb316e",
+        "c879903a15b61ce51daf67492b9df87bf5a9729aec746f5c23ab8608c8ad1085",
+        "2d4f9e070b3c7e7fb2b10235735585fa4a3e9c0921811171a2c97a9b6e7f6212",
+        "d2ad02cb221d9940aee6aaa03046f7e980d9f8525900a7d8b4eb45d06e7e263b",
+        "dddb5d05cfe615596b7f6397159883c3d4104288f1b35d82947c0315340bc114"
+      ],
+      "sheetSha256": "a7965ccd68bfb228845789baa5a54fa62cc3501cd6665ce5a53a10202cc806c9",
+      "sheet": "art/unit-turnarounds/sheets/a-tideveil.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-tideveil/n.png",
+        "art/unit-turnarounds/frames/a-tideveil/ne.png",
+        "art/unit-turnarounds/frames/a-tideveil/e.png",
+        "art/unit-turnarounds/frames/a-tideveil/se.png",
+        "art/unit-turnarounds/frames/a-tideveil/s.png",
+        "art/unit-turnarounds/frames/a-tideveil/sw.png",
+        "art/unit-turnarounds/frames/a-tideveil/w.png",
+        "art/unit-turnarounds/frames/a-tideveil/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-tideveil.webp"
+    },
+    {
+      "id": "a-halo-skimmer",
+      "source": "art/source/turnarounds/a-halo-skimmer.png",
+      "sourceSha256": "34fa7497d740f119bea04867a4c56cce4e2ef84f6b716b69811e10d69959a01c",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 18,
+          "top": 63,
+          "width": 410,
+          "height": 311
+        },
+        {
+          "left": 478,
+          "top": 103,
+          "width": 361,
+          "height": 233
+        },
+        {
+          "left": 903,
+          "top": 105,
+          "width": 454,
+          "height": 219
+        },
+        {
+          "left": 1391,
+          "top": 42,
+          "width": 372,
+          "height": 360
+        },
+        {
+          "left": 21,
+          "top": 444,
+          "width": 406,
+          "height": 404
+        },
+        {
+          "left": 457,
+          "top": 480,
+          "width": 375,
+          "height": 356
+        },
+        {
+          "left": 862,
+          "top": 543,
+          "width": 459,
+          "height": 223
+        },
+        {
+          "left": 1384,
+          "top": 537,
+          "width": 360,
+          "height": 232
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "5f59f08201ee4c3a54a6f937350dbead534b126281bc2a2032706da0a9a0c072",
+        "d3e285602ce3ed14b1fee548b6047fa86fb7acd5619ab5762b466bf49b72c6ba",
+        "4955f0dbb55b6f418ceeb7e0ef5c9d785f07b280356efe1b15cfb9c8ca1bacb5",
+        "3b3d12202464014ee6281ca0ce17a10aa456d1a7c6335d6e9fa287779da489c4",
+        "2ec6b605dd669e8f4c911889f44767188651fb2fc629fcff017bf5b441c19157",
+        "718b40571e1fb9b90061605d175e0d0f198aa0991afb8e68b6dc014d7112b527",
+        "fc1f57a490a639c88d6337cc30dc3f0641dd94f12f4c4bbf9527fe6aaf9848f8",
+        "65dabc4cb59751483fdabd2947461b952b3e80be1cb1b5987cef71eb5adb4d57"
+      ],
+      "sheetSha256": "3e5c18f5a76332cb1a8222bf73c9ced3b1de2c3a38a2622f250b4549b1f41d27",
+      "sheet": "art/unit-turnarounds/sheets/a-halo-skimmer.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-halo-skimmer/n.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/ne.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/e.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/se.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/s.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/sw.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/w.png",
+        "art/unit-turnarounds/frames/a-halo-skimmer/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-halo-skimmer.webp"
+    },
+    {
+      "id": "a-dawnwing",
+      "source": "art/source/turnarounds/a-dawnwing.png",
+      "sourceSha256": "aa32f755c4d4f1e2063d0cf00dc36d1d53a11db1b6cb507bb843c6c5cf423b4a",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 17,
+          "top": 70,
+          "width": 420,
+          "height": 275
+        },
+        {
+          "left": 468,
+          "top": 72,
+          "width": 368,
+          "height": 282
+        },
+        {
+          "left": 905,
+          "top": 98,
+          "width": 423,
+          "height": 256
+        },
+        {
+          "left": 1367,
+          "top": 40,
+          "width": 389,
+          "height": 325
+        },
+        {
+          "left": 17,
+          "top": 465,
+          "width": 419,
+          "height": 362
+        },
+        {
+          "left": 475,
+          "top": 473,
+          "width": 358,
+          "height": 329
+        },
+        {
+          "left": 876,
+          "top": 533,
+          "width": 431,
+          "height": 261
+        },
+        {
+          "left": 1382,
+          "top": 486,
+          "width": 369,
+          "height": 298
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "2acea077880fe9dde6a10091cc3e17d5c8d1c29a5ce6bce258654da209b30436",
+        "2a7cf3e91d85b251aa35798774223fffdf14ce5ad0d27e49ec4e674c0e77f147",
+        "3d6c961688fb9de7b3be9d6df8ee8ee0905060fe93e7cb56da6a6c0fb7add7f3",
+        "b115483c147f3fa2a8dc6cb9598f52ee2b14f797ff7c11832102d8d8e61cce79",
+        "d74cbd80d44f8bcadbd44234b628adfe6e5c5692d56df68241fafa756da79a7d",
+        "ec37cf2a7d7227fa08d70e5f484399f1b5851a64c706a869b66c2db33480a9c2",
+        "2e074c4a1c69155adf5f70d08e6c792e7505f40f903092c38bd4c23c823353c1",
+        "9d25a6bd6385fc14aba000f4ed59c5b386d9d0d01a2bbb34d2f9c58714c1e183"
+      ],
+      "sheetSha256": "8501d7d82a8458c20b56e40f1ba8fd0f76dd6ec985870b49e0012c538d787958",
+      "sheet": "art/unit-turnarounds/sheets/a-dawnwing.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-dawnwing/n.png",
+        "art/unit-turnarounds/frames/a-dawnwing/ne.png",
+        "art/unit-turnarounds/frames/a-dawnwing/e.png",
+        "art/unit-turnarounds/frames/a-dawnwing/se.png",
+        "art/unit-turnarounds/frames/a-dawnwing/s.png",
+        "art/unit-turnarounds/frames/a-dawnwing/sw.png",
+        "art/unit-turnarounds/frames/a-dawnwing/w.png",
+        "art/unit-turnarounds/frames/a-dawnwing/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-dawnwing.webp"
+    },
+    {
+      "id": "a-guardian",
+      "source": "art/source/turnarounds/a-guardian.png",
+      "sourceSha256": "53115b71089d27b8b7619080969d20ef756788e21aa5102059f31c0a692ade55",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 106,
+          "top": 5,
+          "width": 238,
+          "height": 422
+        },
+        {
+          "left": 469,
+          "top": 3,
+          "width": 335,
+          "height": 424
+        },
+        {
+          "left": 862,
+          "top": 37,
+          "width": 455,
+          "height": 356
+        },
+        {
+          "left": 1385,
+          "top": 33,
+          "width": 357,
+          "height": 384
+        },
+        {
+          "left": 102,
+          "top": 433,
+          "width": 244,
+          "height": 417
+        },
+        {
+          "left": 480,
+          "top": 462,
+          "width": 356,
+          "height": 383
+        },
+        {
+          "left": 901,
+          "top": 463,
+          "width": 455,
+          "height": 355
+        },
+        {
+          "left": 1415,
+          "top": 436,
+          "width": 328,
+          "height": 419
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 46,
+      "frameHashes": [
+        "38a7d0ab4b66ba96d301a27062091e4167e13842a9478b0f8dd395bb45b54064",
+        "080ea5da14e43b400459668f3d30f268aa0c97d15d822fc99579c660ab4ff632",
+        "6a18bb0f20f0bf710a36301e488e8a3e1b91b8a8877e8feb3198a23016acded4",
+        "076e03e7af182754b2969e61c17932b021477572bac39fa8cb204ca96ac85b4c",
+        "2e8c01cfd7158360629a50ada81640a2689af42c575a84b37984474d9007262e",
+        "3ec80f81cf29a7e05a69aacabf7d72dfc285b93a88316a73aa70a00ba98f4ddb",
+        "e078bb68c727d60c29a731ed73fdd079373eeb626b707cb003571b74c2592ada",
+        "19ac0eee54063d6161b090533b720a2d11b8d4fbc783d11d301e0850807e2875"
+      ],
+      "sheetSha256": "e1c2f484d31df0c7d7ab491b674f78bd5ddf7de497e810e93745af97a3b1dcb0",
+      "sheet": "art/unit-turnarounds/sheets/a-guardian.png",
+      "frames": [
+        "art/unit-turnarounds/frames/a-guardian/n.png",
+        "art/unit-turnarounds/frames/a-guardian/ne.png",
+        "art/unit-turnarounds/frames/a-guardian/e.png",
+        "art/unit-turnarounds/frames/a-guardian/se.png",
+        "art/unit-turnarounds/frames/a-guardian/s.png",
+        "art/unit-turnarounds/frames/a-guardian/sw.png",
+        "art/unit-turnarounds/frames/a-guardian/w.png",
+        "art/unit-turnarounds/frames/a-guardian/nw.png"
+      ],
+      "preview": "assets/turnarounds/a-guardian.webp"
+    },
+    {
+      "id": "h-breakwater",
+      "source": "art/source/turnarounds/h-breakwater.png",
+      "sourceSha256": "2a5730e2e4d7fa07b7e8c7bcc10f0675389f192037894be709344c2151dbf6c6",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 152,
+          "top": 15,
+          "width": 138,
+          "height": 394
+        },
+        {
+          "left": 431,
+          "top": 64,
+          "width": 386,
+          "height": 335
+        },
+        {
+          "left": 837,
+          "top": 96,
+          "width": 523,
+          "height": 211
+        },
+        {
+          "left": 1374,
+          "top": 56,
+          "width": 386,
+          "height": 336
+        },
+        {
+          "left": 151,
+          "top": 456,
+          "width": 138,
+          "height": 394
+        },
+        {
+          "left": 406,
+          "top": 500,
+          "width": 419,
+          "height": 325
+        },
+        {
+          "left": 833,
+          "top": 535,
+          "width": 512,
+          "height": 211
+        },
+        {
+          "left": 1375,
+          "top": 511,
+          "width": 383,
+          "height": 313
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "e0fce0434b20b89d89ec57546077139f1ed1c807053744a5cfc47eb1a8dba413",
+        "db07dd5c48306eac1bf2ddcad38de289a92bd83ff84cf55781b71d8137ffba73",
+        "c6172de13601d5077c00da674fd8d55bf6445089abf9864ca08a00907fcb8234",
+        "9641c3a0900191e928bcb993cdd86dc73a495ebe8536be237a061c84b8ea74f9",
+        "f32b95bc32aa6d08dd2510c68ac3ad94b234ae0a02ff0d74bca82da2c07dd8ad",
+        "c3b785a71a711fe7be8bd0cedd359cba9d6ae27e460a0dfc200c43659447f747",
+        "b1ba0f67297d257c5436fd67c3b2119b37d5b271792bce7ca47c95daf1600cf0",
+        "7914fa64c440af1a64867c13007ad906c3facf5ed8b93eda75406d611ed3e1f9"
+      ],
+      "sheetSha256": "3f0bd47c8ce1bab2800f2c8772c67a0c464d5b0cdb81532e6df8f209c02aaf97",
+      "sheet": "art/unit-turnarounds/sheets/h-breakwater.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-breakwater/n.png",
+        "art/unit-turnarounds/frames/h-breakwater/ne.png",
+        "art/unit-turnarounds/frames/h-breakwater/e.png",
+        "art/unit-turnarounds/frames/h-breakwater/se.png",
+        "art/unit-turnarounds/frames/h-breakwater/s.png",
+        "art/unit-turnarounds/frames/h-breakwater/sw.png",
+        "art/unit-turnarounds/frames/h-breakwater/w.png",
+        "art/unit-turnarounds/frames/h-breakwater/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-breakwater.webp"
+    },
+    {
+      "id": "h-deepwatch",
+      "source": "art/source/turnarounds/h-deepwatch.png",
+      "sourceSha256": "33eae11bfc3a2daeb0afd1b771400d2b193168c7c6387a49710f92b180ffe406",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 90,
+          "top": 19,
+          "width": 174,
+          "height": 416
+        },
+        {
+          "left": 409,
+          "top": 70,
+          "width": 371,
+          "height": 345
+        },
+        {
+          "left": 841,
+          "top": 121,
+          "width": 554,
+          "height": 204
+        },
+        {
+          "left": 1432,
+          "top": 73,
+          "width": 330,
+          "height": 318
+        },
+        {
+          "left": 96,
+          "top": 458,
+          "width": 159,
+          "height": 391
+        },
+        {
+          "left": 389,
+          "top": 492,
+          "width": 426,
+          "height": 347
+        },
+        {
+          "left": 824,
+          "top": 555,
+          "width": 570,
+          "height": 202
+        },
+        {
+          "left": 1431,
+          "top": 489,
+          "width": 310,
+          "height": 348
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "38f766a9301c888f4991aa10557610eaac031e541fd96de074667f7d4517d137",
+        "3847b407de90be075f665d4d62426006feb78db0b1e38c7e123204f9922cb668",
+        "2433cf4b1359ddb6c871d49299939ccb9d877e4e20dce5ad4aa7c30850cc9b0f",
+        "a3322eb4409ba3c3cc97afb13e21b21bee2d4f5eb9ff4ce2d7094391a10b7677",
+        "3e223a60b115b7fa9a87f8bf2f4835b642c562830ab61bcf97a1c7ad0201f427",
+        "0e4309d95c634fc3d1fdcfe85af0b2ca33ec1e715fa4f03671d894c18ff06aae",
+        "ddd95f2f45e6b8cda60a6435c9f11daadf46be08ffbbbf6098a4005f091f9df7",
+        "d14c22f760c0b9063b9a338db8293ae6c493fa5f8a99058b1ac6f7d347b04401"
+      ],
+      "sheetSha256": "8f8fa0538e11da1d35a3f9e378a4e336c82f02742d8cb47e72e0546fe9382d70",
+      "sheet": "art/unit-turnarounds/sheets/h-deepwatch.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-deepwatch/n.png",
+        "art/unit-turnarounds/frames/h-deepwatch/ne.png",
+        "art/unit-turnarounds/frames/h-deepwatch/e.png",
+        "art/unit-turnarounds/frames/h-deepwatch/se.png",
+        "art/unit-turnarounds/frames/h-deepwatch/s.png",
+        "art/unit-turnarounds/frames/h-deepwatch/sw.png",
+        "art/unit-turnarounds/frames/h-deepwatch/w.png",
+        "art/unit-turnarounds/frames/h-deepwatch/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-deepwatch.webp"
+    },
+    {
+      "id": "h-kestrel",
+      "source": "art/source/turnarounds/h-kestrel.png",
+      "sourceSha256": "87013062de0759031b24903300aaeba9d974d4517efd5444f5f7c5d7ff3efc07",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 23,
+          "top": 42,
+          "width": 401,
+          "height": 352
+        },
+        {
+          "left": 449,
+          "top": 82,
+          "width": 391,
+          "height": 276
+        },
+        {
+          "left": 895,
+          "top": 114,
+          "width": 457,
+          "height": 226
+        },
+        {
+          "left": 1369,
+          "top": 31,
+          "width": 375,
+          "height": 375
+        },
+        {
+          "left": 23,
+          "top": 449,
+          "width": 400,
+          "height": 409
+        },
+        {
+          "left": 471,
+          "top": 473,
+          "width": 380,
+          "height": 373
+        },
+        {
+          "left": 868,
+          "top": 559,
+          "width": 460,
+          "height": 223
+        },
+        {
+          "left": 1368,
+          "top": 535,
+          "width": 394,
+          "height": 268
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "aab9d01fc08db0222f3ffb085668ff60aa016631de5421f59a1d0b4d3e0362a9",
+        "f2c84994a79f2c6373820e6dc7e50896b6c65d23e7203416c6f4e0fdfb7a4960",
+        "96adafe779226708cd814593aadb0a88ecee3651de77aa1fe800a55864c2a3bd",
+        "95551a4e2c1e3c83a45eb700eae9a8656dafde1a47681611b449f99314e418be",
+        "52af2be607f8c39fa14d0adf5403bf86a30db739eff140ca4082ca344f7a087d",
+        "4d54e50d9dadb9deaad1c33a414a18f6b013ec963193569aebea8398da6d816a",
+        "ee70829cbda39286dabfb2b84a53dab97acfc1058135e87a972d62ae3c08e282",
+        "59752aed5ba145d9813e5719ec26cbbe17830bd3c1c683caae9510fea44d2063"
+      ],
+      "sheetSha256": "b5f61aeab12b29ca5d6528af7e4c056618f5999200d7895cf0c4ae7e41cb03f4",
+      "sheet": "art/unit-turnarounds/sheets/h-kestrel.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-kestrel/n.png",
+        "art/unit-turnarounds/frames/h-kestrel/ne.png",
+        "art/unit-turnarounds/frames/h-kestrel/e.png",
+        "art/unit-turnarounds/frames/h-kestrel/se.png",
+        "art/unit-turnarounds/frames/h-kestrel/s.png",
+        "art/unit-turnarounds/frames/h-kestrel/sw.png",
+        "art/unit-turnarounds/frames/h-kestrel/w.png",
+        "art/unit-turnarounds/frames/h-kestrel/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-kestrel.webp"
+    },
+    {
+      "id": "h-stormhawk",
+      "source": "art/source/turnarounds/h-stormhawk.png",
+      "sourceSha256": "9cca8a9412153e6934dc9b4d4bd712c96bf12d63a84027c4978540c9999b0a9f",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 41,
+          "top": 53,
+          "width": 376,
+          "height": 336
+        },
+        {
+          "left": 464,
+          "top": 74,
+          "width": 383,
+          "height": 299
+        },
+        {
+          "left": 900,
+          "top": 114,
+          "width": 433,
+          "height": 233
+        },
+        {
+          "left": 1357,
+          "top": 76,
+          "width": 388,
+          "height": 330
+        },
+        {
+          "left": 43,
+          "top": 468,
+          "width": 372,
+          "height": 360
+        },
+        {
+          "left": 452,
+          "top": 476,
+          "width": 388,
+          "height": 334
+        },
+        {
+          "left": 886,
+          "top": 520,
+          "width": 438,
+          "height": 234
+        },
+        {
+          "left": 1368,
+          "top": 502,
+          "width": 375,
+          "height": 286
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "9759647959d0491df20b874d0a5149bab5a7e396c80e41fcf1dcdb8a64e72750",
+        "b9cf7bd9ba3b02dbd4c4f3f40e276aff771081b81a79d92ffb05d7ab924c03af",
+        "734d90f7ae53a6767381fb474661d09e561d2748316694fed9d02c22bba6575f",
+        "8cf400807afaeaf13aa181c761f0d18215ad705962dfc6259cfec58d4c3a9183",
+        "9b134a7bc171fba9e79082a8442ab44d32cb24bfdb6c8d0e72c1d506375274f8",
+        "1cd8e838b6bc812af4580ecc9da3a717364713e424aaab868f011a28e7d13a23",
+        "633b471751f6843fa09fce6ea4d777becec8754ca396711b50c3a034684e59f6",
+        "ec72fa82d292d5217dc7fd86d83a306f1e5b04c3fb56eaaa97dc8edad0ad5a35"
+      ],
+      "sheetSha256": "a9d931e27d29683f9a356596cb76add9c8364f398e6c24e7eea27b12d900527d",
+      "sheet": "art/unit-turnarounds/sheets/h-stormhawk.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-stormhawk/n.png",
+        "art/unit-turnarounds/frames/h-stormhawk/ne.png",
+        "art/unit-turnarounds/frames/h-stormhawk/e.png",
+        "art/unit-turnarounds/frames/h-stormhawk/se.png",
+        "art/unit-turnarounds/frames/h-stormhawk/s.png",
+        "art/unit-turnarounds/frames/h-stormhawk/sw.png",
+        "art/unit-turnarounds/frames/h-stormhawk/w.png",
+        "art/unit-turnarounds/frames/h-stormhawk/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-stormhawk.webp"
+    },
+    {
+      "id": "h-patrol-hound",
+      "source": "art/source/turnarounds/h-patrol-hound.png",
+      "sourceSha256": "5f891fd50480480b442a264f8e8888a723ba63cbb1f2a0333d65f25d3d608101",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 158,
+          "top": 6,
+          "width": 143,
+          "height": 415
+        },
+        {
+          "left": 513,
+          "top": 3,
+          "width": 274,
+          "height": 427
+        },
+        {
+          "left": 899,
+          "top": 36,
+          "width": 419,
+          "height": 364
+        },
+        {
+          "left": 1415,
+          "top": 63,
+          "width": 297,
+          "height": 362
+        },
+        {
+          "left": 145,
+          "top": 434,
+          "width": 161,
+          "height": 415
+        },
+        {
+          "left": 516,
+          "top": 461,
+          "width": 307,
+          "height": 390
+        },
+        {
+          "left": 894,
+          "top": 465,
+          "width": 416,
+          "height": 374
+        },
+        {
+          "left": 1429,
+          "top": 431,
+          "width": 287,
+          "height": 425
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 46,
+      "frameHashes": [
+        "d97a37730b8848607696db4ed79088f6984a5c2e8b8921926916b3233817c2ee",
+        "83cf31e4e2094f0e1c93930cf6bf9cdcf3d9174b23e33ea395f9584afcc1cdb5",
+        "e47e2d654e3810b745c56715c79446cf40ab251491b38bd1dc149e059160c786",
+        "b7a3909b086d8f265b431141043ff58e66de9788cc9356ef51dd86f89af7b307",
+        "26ffb05fd6c71cc640cae8afb005a81933796cecde944ee13c29896d88e9975f",
+        "2f2999bdedafab29cc96d8ac9084e30a586c7860e2e49775fcfda52f8a90c19f",
+        "4e5fed806b53106364b6171dd97bb545cce3aa7c21092cb676ad0a9d900d2356",
+        "9618947def0a658982cc279b29f079711abb53dabd3e34765a3549ac0e5a521b"
+      ],
+      "sheetSha256": "8b739e8b3413b11d11a25c1aeb2b201c4dce657a0b2eaac00e99b431e91ed4a1",
+      "sheet": "art/unit-turnarounds/sheets/h-patrol-hound.png",
+      "frames": [
+        "art/unit-turnarounds/frames/h-patrol-hound/n.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/ne.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/e.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/se.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/s.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/sw.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/w.png",
+        "art/unit-turnarounds/frames/h-patrol-hound/nw.png"
+      ],
+      "preview": "assets/turnarounds/h-patrol-hound.webp"
+    },
+    {
+      "id": "d-dreadwake",
+      "source": "art/source/turnarounds/d-dreadwake.png",
+      "sourceSha256": "51ff7c40d602661ffb79e60488df8b2dafd3ca372ba351b100f0852113107343",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 93,
+          "top": 3,
+          "width": 250,
+          "height": 403
+        },
+        {
+          "left": 452,
+          "top": 11,
+          "width": 348,
+          "height": 394
+        },
+        {
+          "left": 856,
+          "top": 104,
+          "width": 506,
+          "height": 222
+        },
+        {
+          "left": 1353,
+          "top": 32,
+          "width": 409,
+          "height": 333
+        },
+        {
+          "left": 96,
+          "top": 431,
+          "width": 234,
+          "height": 424
+        },
+        {
+          "left": 381,
+          "top": 463,
+          "width": 393,
+          "height": 345
+        },
+        {
+          "left": 770,
+          "top": 534,
+          "width": 567,
+          "height": 230
+        },
+        {
+          "left": 1375,
+          "top": 464,
+          "width": 389,
+          "height": 344
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "0d5a46a37f7941e2dab96ca6084f8efaaffcbdfcd7bbece64248aa341e33d454",
+        "cb3b46de02e9a321869371e32e6a4f6c7cf878d842396cf8f32d44149e9fb6ba",
+        "9de5a3f5ada884444a89087db40fc8212359c4aff3b3a485d3a4aa80dd35d102",
+        "cc78f128e549aabef545cb78e9d8395d345989b15384e910378d57c5fdde516e",
+        "73d5d55c7748dc25f1b979dadf65f5185a9804504567be835dba872f3d1cd0e8",
+        "f5d4e94d32f6429112fbd8d1aac60f8cc4bb55caddb190e9702ee7d699c8d79e",
+        "1f705d84f41e706d366f196183910e8e25ce1330bff95e3cdcb5fc421fbaac2e",
+        "daa3ac17bcacc074d418ef1afc14b678cae51618af015561cd3324d8a63959bf"
+      ],
+      "sheetSha256": "613b306a6abe57479fddd0e59943b39aee9e8c269f37b208a1ae5b59ea3ee26a",
+      "sheet": "art/unit-turnarounds/sheets/d-dreadwake.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-dreadwake/n.png",
+        "art/unit-turnarounds/frames/d-dreadwake/ne.png",
+        "art/unit-turnarounds/frames/d-dreadwake/e.png",
+        "art/unit-turnarounds/frames/d-dreadwake/se.png",
+        "art/unit-turnarounds/frames/d-dreadwake/s.png",
+        "art/unit-turnarounds/frames/d-dreadwake/sw.png",
+        "art/unit-turnarounds/frames/d-dreadwake/w.png",
+        "art/unit-turnarounds/frames/d-dreadwake/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-dreadwake.webp"
+    },
+    {
+      "id": "d-leviathan",
+      "source": "art/source/turnarounds/d-leviathan.png",
+      "sourceSha256": "6eaa0eb1cb57e39d78b9ade8558d040f8479e4966a03f14d948f4fea6e9d89e7",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 47,
+          "top": 25,
+          "width": 252,
+          "height": 397
+        },
+        {
+          "left": 369,
+          "top": 50,
+          "width": 387,
+          "height": 356
+        },
+        {
+          "left": 797,
+          "top": 114,
+          "width": 552,
+          "height": 242
+        },
+        {
+          "left": 1356,
+          "top": 89,
+          "width": 397,
+          "height": 310
+        },
+        {
+          "left": 62,
+          "top": 455,
+          "width": 232,
+          "height": 403
+        },
+        {
+          "left": 346,
+          "top": 496,
+          "width": 410,
+          "height": 328
+        },
+        {
+          "left": 771,
+          "top": 531,
+          "width": 566,
+          "height": 250
+        },
+        {
+          "left": 1367,
+          "top": 477,
+          "width": 384,
+          "height": 345
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 80,
+      "frameHashes": [
+        "b736301574f231f9dbb4c48a5975434ffa9ca4ad0451812a2c9054517717eb5a",
+        "7077b8a9162f59dffa25321ae096c98db059f3783de6c7f90a162e89599f1bda",
+        "96498c32d64e9c125544145de56af5dc9d4d2027025f5adb9b08cb5996a888f0",
+        "e71dd96e52477621b2126ba54a286bc171f6fc4ba274e5e7b88ea0e6c45b7cb3",
+        "11416e2622ee6c52017967853cfed7b91db0968ca717a32e12ca381effb809ed",
+        "bf7fda7911d7963e199d248ee76f461c221cca335255c638142fea09d796b6f0",
+        "68ea6b7bd91b0c01eb4ea92da62cc5f4fd8db32e87a25f02bfe662e7cea0a6d9",
+        "b2b123dedb3892396ecc0a307f3b243cd389a453d4d200e377ada79df58bc048"
+      ],
+      "sheetSha256": "9b47c497e1e226a1920143c9378e2d5a4343386d9dd9f347e3802862e7ad5820",
+      "sheet": "art/unit-turnarounds/sheets/d-leviathan.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-leviathan/n.png",
+        "art/unit-turnarounds/frames/d-leviathan/ne.png",
+        "art/unit-turnarounds/frames/d-leviathan/e.png",
+        "art/unit-turnarounds/frames/d-leviathan/se.png",
+        "art/unit-turnarounds/frames/d-leviathan/s.png",
+        "art/unit-turnarounds/frames/d-leviathan/sw.png",
+        "art/unit-turnarounds/frames/d-leviathan/w.png",
+        "art/unit-turnarounds/frames/d-leviathan/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-leviathan.webp"
+    },
+    {
+      "id": "d-harpy",
+      "source": "art/source/turnarounds/d-harpy.png",
+      "sourceSha256": "6449fe72b15bffda3513945df98f9a1b3aea78ad35bf65d0f2fdd014f69fb9fc",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 1,
+          "top": 110,
+          "width": 484,
+          "height": 271
+        },
+        {
+          "left": 462,
+          "top": 85,
+          "width": 443,
+          "height": 277
+        },
+        {
+          "left": 884,
+          "top": 111,
+          "width": 423,
+          "height": 251
+        },
+        {
+          "left": 1350,
+          "top": 79,
+          "width": 419,
+          "height": 285
+        },
+        {
+          "left": 2,
+          "top": 544,
+          "width": 483,
+          "height": 208
+        },
+        {
+          "left": 482,
+          "top": 536,
+          "width": 421,
+          "height": 246
+        },
+        {
+          "left": 917,
+          "top": 525,
+          "width": 415,
+          "height": 254
+        },
+        {
+          "left": 1329,
+          "top": 496,
+          "width": 445,
+          "height": 286
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "c29029f8dde70390d861eb36e8c9d70e5388848238b03c7f9f084b4a9a63c470",
+        "2417cabe56c0fb53f8bbe6d1edddc5b62630d088fd199c8a4e22545b75cd86a0",
+        "42f070d57c722de75be6499323292a729b52b9857a8bfe4b9dd4ac65bcf0f129",
+        "1b1b583cdc7ee91f10b4bcf51815cbec89b6bd7e0dda94863f569f07f39f0617",
+        "3f80c28ebd6235d077ce53ca904812363c025ca4171d1364af048162ac316616",
+        "41566f7b49cca9230d88d0223750378ab1032fba41c5a1616d583c0ed460527c",
+        "25181150e52a59f18e3b0050a1e1d30aff543b3af53b70c13fa7f0026467a11a",
+        "9c767b6c536c2955ecbc8534237f79a33d067662bdf099c79b0e901efd0bfe16"
+      ],
+      "sheetSha256": "8a8a485d4d3f433471ecf1626e9cf1a407f2bcc4ecbd8701b82fb9c0b89894db",
+      "sheet": "art/unit-turnarounds/sheets/d-harpy.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-harpy/n.png",
+        "art/unit-turnarounds/frames/d-harpy/ne.png",
+        "art/unit-turnarounds/frames/d-harpy/e.png",
+        "art/unit-turnarounds/frames/d-harpy/se.png",
+        "art/unit-turnarounds/frames/d-harpy/s.png",
+        "art/unit-turnarounds/frames/d-harpy/sw.png",
+        "art/unit-turnarounds/frames/d-harpy/w.png",
+        "art/unit-turnarounds/frames/d-harpy/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-harpy.webp"
+    },
+    {
+      "id": "d-hellwing",
+      "source": "art/source/turnarounds/d-hellwing.png",
+      "sourceSha256": "8e7cd6c08ff4fd18ba54f7e808d81be98f14485e2b1533995937763b36f0b441",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 10,
+          "top": 20,
+          "width": 425,
+          "height": 375
+        },
+        {
+          "left": 450,
+          "top": 41,
+          "width": 396,
+          "height": 376
+        },
+        {
+          "left": 895,
+          "top": 84,
+          "width": 439,
+          "height": 288
+        },
+        {
+          "left": 1359,
+          "top": 20,
+          "width": 398,
+          "height": 383
+        },
+        {
+          "left": 20,
+          "top": 465,
+          "width": 405,
+          "height": 394
+        },
+        {
+          "left": 456,
+          "top": 470,
+          "width": 409,
+          "height": 366
+        },
+        {
+          "left": 884,
+          "top": 524,
+          "width": 439,
+          "height": 282
+        },
+        {
+          "left": 1363,
+          "top": 487,
+          "width": 393,
+          "height": 358
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 70,
+      "frameHashes": [
+        "7ecc0d4b927d244572098543f1d825bb1e09410493bfcbf12e413f2de2aafb85",
+        "4ab8b23bb9ea5949b169678bf4b06b7b747396a3ee78f55f6827d998f3407bca",
+        "c1e7c20062437e8c7e56bd114e67b3688ba42b1b7700d7b8a5191cc14fb7e937",
+        "a283a5e2f8941153aaedd8ddaf42de90f4a636874b8d291e4a783aac2a1ddbc8",
+        "48bea06c97f67b7cb38b5506439d6654ff16ff00b1380ca30e45b3fd40da13fd",
+        "d4f8db209607dff211d179a1ae80abd2e513cd23ae2c93004671745958014ffe",
+        "9847c905f7cda816aff094b565c48684d858b972870a32eb84e397a57db21144",
+        "e42326366fba344c9481809c772edab76e6eabe66c2052e87fc1b258e6e5d35a"
+      ],
+      "sheetSha256": "16b9c19502fee474890a0051ab204f7da16dc442d0f210f0e889c9cdc977120e",
+      "sheet": "art/unit-turnarounds/sheets/d-hellwing.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-hellwing/n.png",
+        "art/unit-turnarounds/frames/d-hellwing/ne.png",
+        "art/unit-turnarounds/frames/d-hellwing/e.png",
+        "art/unit-turnarounds/frames/d-hellwing/se.png",
+        "art/unit-turnarounds/frames/d-hellwing/s.png",
+        "art/unit-turnarounds/frames/d-hellwing/sw.png",
+        "art/unit-turnarounds/frames/d-hellwing/w.png",
+        "art/unit-turnarounds/frames/d-hellwing/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-hellwing.webp"
+    },
+    {
+      "id": "d-hellhound",
+      "source": "art/source/turnarounds/d-hellhound.png",
+      "sourceSha256": "3c2ef03721181cf9e7afe9a24ea00489b8dd3e822cb1302c532f2bd482ed5e1d",
+      "directions": [
+        "n",
+        "ne",
+        "e",
+        "se",
+        "s",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "boxes": [
+        {
+          "left": 93,
+          "top": 12,
+          "width": 229,
+          "height": 401
+        },
+        {
+          "left": 421,
+          "top": 14,
+          "width": 362,
+          "height": 402
+        },
+        {
+          "left": 853,
+          "top": 67,
+          "width": 477,
+          "height": 327
+        },
+        {
+          "left": 1417,
+          "top": 67,
+          "width": 329,
+          "height": 337
+        },
+        {
+          "left": 75,
+          "top": 453,
+          "width": 260,
+          "height": 406
+        },
+        {
+          "left": 469,
+          "top": 499,
+          "width": 335,
+          "height": 353
+        },
+        {
+          "left": 883,
+          "top": 520,
+          "width": 488,
+          "height": 325
+        },
+        {
+          "left": 1426,
+          "top": 454,
+          "width": 335,
+          "height": 397
+        }
+      ],
+      "frameSize": 128,
+      "drawSize": 46,
+      "frameHashes": [
+        "627556435f1b09b4fcc60d0c94a4b1bb55fe62c53413c8c315812ecca2e7f5e4",
+        "8d841066994bc0cbcf4cb507aa7b0589ea7531231bd29f763f258f3e203b1285",
+        "ce601fa4aa6e0e5f0c6864bc476a7acd09e9eb23bf88ebac9b0d10329c8dd0c0",
+        "2a79c3e92e1b43d64a9b3ca95acc98a7a42115457ccbd942dd7f9521ada6714b",
+        "c6cd47a4d8e7165beaf75960ba010fc3dc53b63490b76d1bc5aa4aa904b02980",
+        "cea19fe0d023f2215dabed793ca0a265bd53a255f5bf4b3701354c0c51dca121",
+        "177bbdac705888f3fd6dec92328666f2adf82a27b782ce9afe86d5c8ebff2cc6",
+        "a2c6c89d471eb327e5ae8edeb2ac9b67b77ae2145a517567536204316119d1e0"
+      ],
+      "sheetSha256": "4887037206c6966d52ef76ccd4269b203dd992b379b7aaaedfba94bf380002cc",
+      "sheet": "art/unit-turnarounds/sheets/d-hellhound.png",
+      "frames": [
+        "art/unit-turnarounds/frames/d-hellhound/n.png",
+        "art/unit-turnarounds/frames/d-hellhound/ne.png",
+        "art/unit-turnarounds/frames/d-hellhound/e.png",
+        "art/unit-turnarounds/frames/d-hellhound/se.png",
+        "art/unit-turnarounds/frames/d-hellhound/s.png",
+        "art/unit-turnarounds/frames/d-hellhound/sw.png",
+        "art/unit-turnarounds/frames/d-hellhound/w.png",
+        "art/unit-turnarounds/frames/d-hellhound/nw.png"
+      ],
+      "preview": "assets/turnarounds/d-hellhound.webp"
+    }
+  ]
+}

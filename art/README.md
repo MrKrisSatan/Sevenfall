@@ -99,3 +99,7 @@ All-faction harvesting and damage-state playtests remain outstanding.
 
 The [expanded building pass](BUILDINGS.md) covers production and support buildings. Next: units;
 add construction/damage animations and team-colour masks as the animation pipeline develops.
+
+## Eight-direction unit artwork
+
+[39 designs / 312 transparent views](unit-turnarounds/README.md), including the current roster and new naval, aircraft and kennel-beast concepts. Includes individual PNGs, OpenRA-format strips, source sheets and generation prompts. Combat integration and animation remain pending.

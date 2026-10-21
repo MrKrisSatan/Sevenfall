@@ -10,7 +10,7 @@
 
 The field guide includes images and descriptions for all **39 current building designs
 and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
-original concept illustrations; their in-game sprite pass remains pending.
+original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included; animation and game integration remain pending.
 
 ## The premise
 

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore 312 directional views of 39 Sevenfall unit designs, including infantry, vehicles, ships, aircraft and beasts.">
+  <title>Unit Turnarounds | Sevenfall</title><meta name="theme-color" content="#0b0c13">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="catalogue.css"><link rel="stylesheet" href="turnarounds.css">
+  <script src="turnarounds.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#unit-art">Skip to unit artwork</a>
+  <header class="topbar"><a class="logo" href="index.html">✦ SEVENFALL</a><nav aria-label="Main navigation"><a href="forces.html">Field Guide</a><a href="turnarounds.html" aria-current="page">Unit Artwork</a><a href="index.html#roadmap">Progress</a><a href="https://github.com/MrKrisSatan/Sevenfall">GitHub ↗</a></nav></header>
+  <main>
+    <section class="section guide-intro"><p class="eyebrow">THE WAR FOR CREATION / UNIT ARTWORK</p><h1>Every angle.<br><em>Every army.</em></h1><p class="guide-lead">Infantry, war engines, fleets and flying horrors. Inspect eight directional views of every unit design.</p><div class="guide-counts"><span><b>39</b> unit designs</span><span><b>312</b> directional views</span><span><b>3</b> factions</span></div><div class="guide-note"><strong>Directional artwork, ready for the next art pass</strong><p>These sheets show eight orientations of a single pose. Walking, attacks, flight cycles and damage animations are still to come. The 15 new naval, aircraft and kennel designs are concepts awaiting gameplay integration. Existing MCV and harvester designs are included.</p></div></section>
+    <section class="section roster-section" id="unit-art" aria-label="Directional unit artwork">
+      <form id="turn-filters" class="roster-controls" role="search" hidden>
+        <div class="filter-fields"><label for="turn-search">Find a unit<input id="turn-search" type="search" placeholder="Name or description…"></label><label for="turn-faction">Faction<select id="turn-faction"><option value="all">All factions</option><option value="angels">Angels</option><option value="humans">Humans</option><option value="demons">Demons</option></select></label><label for="turn-category">Unit type<select id="turn-category"><option value="all">All types</option><option value="infantry">Infantry</option><option value="vehicles">Vehicles</option><option value="logistics">MCVs &amp; harvesters</option><option value="ships">Ships &amp; submarines</option><option value="aircraft">Aircraft</option><option value="beasts">Beasts</option></select></label></div>
+        <div class="filter-summary"><p id="turn-count" role="status">39 unit designs</p><button type="reset" class="reset-filters">Reset filters</button></div>
+      </form>
+      <p class="sheet-order">Sheet order: N · NE · E · SE / S · SW · W · NW. Select a sheet to inspect each view.</p>
+      <noscript><p>All eight directions are visible in each sheet below. Enable JavaScript for filtering and the direction viewer.</p></noscript>
+      <p id="turn-empty" hidden>No units match. Try another search or reset the filters.</p>
+      <div class="turn-grid"><!-- TURNAROUND_CARDS --></div>
+    </section>
+  </main>
+  <dialog id="turn-dialog" aria-labelledby="turn-title"><button type="button" class="dialog-close" aria-label="Close directions" autofocus>Close ×</button><p class="eyebrow">EIGHT-DIRECTION ARTWORK</p><h2 id="turn-title"></h2><div id="turn-stage" role="img" aria-label=""></div><div class="turn-navigation"><button type="button" id="turn-previous" aria-label="Previous direction">←</button><p id="turn-facing" role="status"></p><button type="button" id="turn-next" aria-label="Next direction">→</button></div><div id="turn-directions" role="group" aria-label="View direction"></div><p id="turn-detail"></p><a id="turn-download" href="#">View this PNG on GitHub ↗</a></dialog>
+  <footer><a class="logo" href="index.html">✦ SEVENFALL</a><p>Original AI-generated development artwork · Built with OpenRA</p><a href="forces.html">Building &amp; unit field guide ↗</a></footer>
+</body>
+</html>
