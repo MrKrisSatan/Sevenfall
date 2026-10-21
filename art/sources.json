@@ -1,0 +1,38 @@
+{
+  "created": "2026-10-21",
+  "generator": "OpenAI built-in image generation",
+  "third_party_reference_images": false,
+  "background": "transparent",
+  "assets": [
+    {
+      "file": "art/source/a-spire.png",
+      "sha256": "040eaa36f3e1260955e6de294533b3c8595ee7697f21a21c471d922f023db325",
+      "brief": "Ivory/gold basilica reactor, tall spire, cyan crystal, wing buttresses; orthographic RTS building."
+    },
+    {
+      "file": "art/source/angels-emblem.png",
+      "sha256": "5b7980239d0f24d53f1d04183ecacd6ddacdd697fd373ffcc65cb22bc27a70e3",
+      "brief": "Broken golden halo, ivory crystal spear, angular wings, cyan glint."
+    },
+    {
+      "file": "art/source/d-heart.png",
+      "sha256": "be3899094da7e8b2f85fa24f7100320aff63662e7cf3ff98430ae464c48c9c71",
+      "brief": "Black iron/bone horned furnace, crimson organic armor, magenta crystal; orthographic RTS building."
+    },
+    {
+      "file": "art/source/demons-emblem.png",
+      "sha256": "178e1fe17d8385ed894a0549a0b6a40fbb1e0fd6da94704244434a584abce1bf",
+      "brief": "Broken black-iron crown, bone horns, magenta diamond flame."
+    },
+    {
+      "file": "art/source/h-generator.png",
+      "sha256": "cd34b05560382298c1b81482b6d850cade0a42ebf5b670901c8a571ad901b03f",
+      "brief": "Graphite/olive armored reactor, twin cooling stacks, amber conduits, violet crystal; orthographic RTS building."
+    },
+    {
+      "file": "art/source/humans-emblem.png",
+      "sha256": "c7c387f4ccdbab3fc9fe8b82e231cd270c8b1651e20543126433fd76eaaf4d8c",
+      "brief": "Steel shield, amber rising sun, silver tower, olive chevrons."
+    }
+  ]
+}

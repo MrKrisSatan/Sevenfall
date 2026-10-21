@@ -1,9 +1,18 @@
-# All visible buildings use placeholder Red Alert art for the prototype.
-# Replace RenderSprites.Image with original Sevenfall art in production.
+# Power buildings use original PNG artwork; remaining structures are placeholders.
 A_SPIRE:
 	Inherits: POWR
 	RenderSprites:
-		Image: POWR
+		Image: a_spire
+	Selectable:
+		Bounds: 2730, 4096, 0, -1536
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
@@ -19,7 +28,17 @@ A_SPIRE:
 H_GENERATOR:
 	Inherits: POWR
 	RenderSprites:
-		Image: POWR
+		Image: h_generator
+	Selectable:
+		Bounds: 2901, 2901, 0, -939
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
@@ -35,7 +54,17 @@ H_GENERATOR:
 D_HEART:
 	Inherits: POWR
 	RenderSprites:
-		Image: POWR
+		Image: d_heart
+	Selectable:
+		Bounds: 2901, 3243, 0, -1109
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10

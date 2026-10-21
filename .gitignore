@@ -25,3 +25,4 @@ artifacts/
 .sdk/
 .tools/
 .starter-import/
+node_modules/

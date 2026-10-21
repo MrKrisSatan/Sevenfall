@@ -14,47 +14,47 @@
 	Faction@a_seraph:
 		Name: sf-faction-a-seraph-name
 		InternalName: a_seraph
-		Side: Allies
+		Side: Angels
 		Description: sf-faction-a-seraph-description
 	Faction@a_warden:
 		Name: sf-faction-a-warden-name
 		InternalName: a_warden
-		Side: Allies
+		Side: Angels
 		Description: sf-faction-a-warden-description
 	Faction@a_exile:
 		Name: sf-faction-a-exile-name
 		InternalName: a_exile
-		Side: Allies
+		Side: Angels
 		Description: sf-faction-a-exile-description
 	Faction@h_bastion:
 		Name: sf-faction-h-bastion-name
 		InternalName: h_bastion
-		Side: Allies
+		Side: Humans
 		Description: sf-faction-h-bastion-description
 	Faction@h_union:
 		Name: sf-faction-h-union-name
 		InternalName: h_union
-		Side: Allies
+		Side: Humans
 		Description: sf-faction-h-union-description
 	Faction@h_covenant:
 		Name: sf-faction-h-covenant-name
 		InternalName: h_covenant
-		Side: Allies
+		Side: Humans
 		Description: sf-faction-h-covenant-description
 	Faction@d_legion:
 		Name: sf-faction-d-legion-name
 		InternalName: d_legion
-		Side: Soviet
+		Side: Demons
 		Description: sf-faction-d-legion-description
 	Faction@d_brood:
 		Name: sf-faction-d-brood-name
 		InternalName: d_brood
-		Side: Soviet
+		Side: Demons
 		Description: sf-faction-d-brood-description
 	Faction@d_court:
 		Name: sf-faction-d-court-name
 		InternalName: d_court
-		Side: Soviet
+		Side: Demons
 		Description: sf-faction-d-court-description
 	Faction@sf_random:
 		Name: sf-faction-random-name

@@ -1,12 +1,34 @@
-# Temporary neutral glyph for every original faction; no missing lobby sprites.
+# Parent faction emblems; dedicated subfaction marks remain a later art pass.
 flags:
+	Image: sevenfall|art/factions.png
+	Image2x: sevenfall|art/factions-2x.png
+	Image3x: sevenfall|art/factions-3x.png
 	Regions:
-		a_seraph: 226, 241, 30, 15
-		a_warden: 226, 241, 30, 15
-		a_exile: 226, 241, 30, 15
-		h_bastion: 226, 241, 30, 15
-		h_union: 226, 241, 30, 15
-		h_covenant: 226, 241, 30, 15
-		d_legion: 226, 241, 30, 15
-		d_brood: 226, 241, 30, 15
-		d_court: 226, 241, 30, 15
+		a_seraph: 0, 0, 30, 15
+		a_warden: 0, 0, 30, 15
+		a_exile: 0, 0, 30, 15
+		h_bastion: 0, 15, 30, 15
+		h_union: 0, 15, 30, 15
+		h_covenant: 0, 15, 30, 15
+		d_legion: 0, 30, 30, 15
+		d_brood: 0, 30, 30, 15
+		d_court: 0, 30, 30, 15
+		Random: 0, 45, 30, 15
+		RandomAllies: 0, 45, 30, 15
+		RandomSoviet: 0, 45, 30, 15
+		spectator: 0, 45, 30, 15
+		allies: 0, 15, 30, 15
+		england: 0, 15, 30, 15
+		france: 0, 15, 30, 15
+		germany: 0, 15, 30, 15
+		spain: 0, 15, 30, 15
+		turkey: 0, 15, 30, 15
+		greece: 0, 15, 30, 15
+		soviet: 0, 15, 30, 15
+		russia: 0, 15, 30, 15
+		ukraine: 0, 15, 30, 15
+
+^LoadScreen:
+	Image: sevenfall|art/loadscreen.png
+	Image2x: sevenfall|art/loadscreen-2x.png
+	Image3x: sevenfall|art/loadscreen-3x.png
