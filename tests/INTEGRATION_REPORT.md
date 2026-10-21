@@ -9,6 +9,9 @@
   rendered window. Placeholder Red Alert menu and art are clearly still present.
 - Visually inspected the skirmish lobby and faction dropdown after fixing missing flag
   regions; added per-faction sidebar theme mappings and regression coverage.
+- Observed a running skirmish with a deployed construction yard, placed power building,
+  active construction queue and functioning faction-themed sidebar. This is a smoke
+  check, not completion of the full faction/economy acceptance matrix.
 - User confirmed the cursor became visible after enabling a double-size software cursor.
 - Python regression tests cover manifest insertion, buildable scanning, binary map
   layout, clear starting cells, and equal resources under 180-degree rotation.
