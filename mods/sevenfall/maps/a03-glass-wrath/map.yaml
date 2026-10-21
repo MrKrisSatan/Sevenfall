@@ -1,0 +1,89 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: A03: A Glass of Wrath (0.3 preview)
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: MissionSelector
+Categories: Campaign
+LockPreview: True
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Commander:
+		Name: Commander
+		Playable: True
+		Required: True
+		AllowBots: False
+		LockFaction: True
+		Faction: a_warden
+		LockColor: True
+		Color: 69B4D4
+		LockTeam: True
+		LockSpawn: True
+		Enemies: Enemy
+	PlayerReference@Enemy:
+		Name: Enemy
+		Faction: d_brood
+		Color: D34B78
+		Bot: sevenfall
+		Enemies: Commander
+Actors:
+	CommanderMcv: mcv
+		Owner: Commander
+		Location: 15,15
+		Facing: 640
+	CommanderGuard1: a_watcher
+		Owner: Commander
+		Location: 17,17
+		Facing: 640
+	CommanderGuard2: a_watcher
+		Owner: Commander
+		Location: 18,17
+		Facing: 640
+	EnemyYard: fact
+		Owner: Enemy
+		Location: 79,79
+	EnemyPower: d_heart
+		Owner: Enemy
+		Location: 85,76
+	EnemyRefinery: d_veilworks
+		Owner: Enemy
+		Location: 71,77
+	EnemyBarracks: d_pit
+		Owner: Enemy
+		Location: 84,84
+	EnemyFactory: d_forge
+		Owner: Enemy
+		Location: 74,85
+	EnemyGuard1: d_thrall
+		Owner: Enemy
+		Location: 75,75
+	EnemyGuard2: d_thrall
+		Owner: Enemy
+		Location: 79,74
+	EnemyArmor: d_ravager
+		Owner: Enemy
+		Location: 82,75
+Rules:
+	World:
+		-SpawnStartingUnits:
+		-MapStartingLocations:
+		LuaScript:
+			Scripts: mission.lua
+		MissionData:
+			Briefing: The Host must protect the Gatherers while refining unstable Veilglass. Raise a Sanctification Crucible, field Watchers and Aegis Engines, and purge the Blood Brood beachhead.
+		ObjectivesPanel:
+			PanelName: MISSION_OBJECTIVES
+	Player:
+		-ConquestVictoryConditions:
+		MissionObjectives:
+			EarlyGameOver: True
+		PlayerResources:
+			DefaultCash: 7000
+			DefaultCashDropdownVisible: False
+			DefaultCashDropdownLocked: True
