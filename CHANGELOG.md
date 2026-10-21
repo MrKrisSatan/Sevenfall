@@ -1,5 +1,23 @@
 # Sevenfall changelog
 
+## 0.3 development candidate — 2026-10-21
+
+**Integration source, not a playable release.**
+
+- Wrote three OpenRA Lua scenario previews: H03 The Glass Fields (Humans),
+  A03 A Glass of Wrath (Angels), and D02 Seeds of Ruin (Demons).
+- Registered the new three-campaign mission selection, with starting MCVs,
+  preplaced enemy bases and Sevenfall land AI; included economy/production/
+  destruction objectives and game failure.
+- Reused the original Broken Choir terrain in three locally generated test
+  map binaries, avoiding false claims that final campaign maps exist.
+- Staged the 39 original eight-direction character/vehicle sheets in the SDK;
+  still missing original walking, combat, death and damage animation cycles.
+- Added mission contract tests, developer runbook and an easy Windows
+  `PLAY_SEVENFALL_DEV.cmd` build/launch command.
+- Source-level and engine checks are distinct from real mission completion,
+  live AI reliability, independent Windows packaging and a public release.
+
 ## 0.2 development — 2026-10-21
 
 - Expanded the building artwork pass to barracks, factories, advanced power,
