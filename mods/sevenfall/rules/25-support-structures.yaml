@@ -1,0 +1,592 @@
+# Faction-specific support and production buildings. Balance is provisional.
+
+A_ADVPOWER:
+	Inherits: APWR
+	RenderSprites:
+		Image: a_advpower
+	Selectable:
+		Bounds: 3755, 3755, 0, -853
+		DecorationBounds: 3755, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: a_radar, ~sf.angels, ~techlevel.medium
+		Description: sf-a-advpower-description
+	Tooltip:
+		Name: sf-a-advpower-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_advpower
+
+H_ADVPOWER:
+	Inherits: APWR
+	RenderSprites:
+		Image: h_advpower
+	Selectable:
+		Bounds: 3755, 3755, 0, -853
+		DecorationBounds: 3755, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: h_radar, ~sf.humans, ~techlevel.medium
+		Description: sf-h-advpower-description
+	Tooltip:
+		Name: sf-h-advpower-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_advpower
+
+D_ADVPOWER:
+	Inherits: APWR
+	RenderSprites:
+		Image: d_advpower
+	Selectable:
+		Bounds: 3755, 3755, 0, -853
+		DecorationBounds: 3755, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	-WithDeathAnimation:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: d_radar, ~sf.demons, ~techlevel.medium
+		Description: sf-d-advpower-description
+	Tooltip:
+		Name: sf-d-advpower-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_advpower
+
+A_SERVICE:
+	Inherits: FIX
+	RenderSprites:
+		Image: a_service
+	Selectable:
+		Bounds: 3755, 2731, 0, 0
+		DecorationBounds: 3755, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: a_armory, ~sf.angels, ~techlevel.medium
+		Description: sf-a-service-description
+	Tooltip:
+		Name: sf-a-service-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_service
+
+H_SERVICE:
+	Inherits: FIX
+	RenderSprites:
+		Image: h_service
+	Selectable:
+		Bounds: 3755, 2731, 0, 0
+		DecorationBounds: 3755, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: h_motorpool, ~sf.humans, ~techlevel.medium
+		Description: sf-h-service-description
+	Tooltip:
+		Name: sf-h-service-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_service
+
+D_SERVICE:
+	Inherits: FIX
+	RenderSprites:
+		Image: d_service
+	Selectable:
+		Bounds: 3755, 2731, 0, 0
+		DecorationBounds: 3755, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: d_forge, ~sf.demons, ~techlevel.medium
+		Description: sf-d-service-description
+	Tooltip:
+		Name: sf-d-service-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_service
+
+A_RADAR:
+	Inherits: DOME
+	RenderSprites:
+		Image: a_radar
+	Selectable:
+		Bounds: 2731, 3755, 0, -853
+		DecorationBounds: 2731, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: a_veilworks, ~sf.angels, ~techlevel.medium
+		Description: sf-a-radar-description
+	Tooltip:
+		Name: sf-a-radar-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_radar
+
+H_RADAR:
+	Inherits: DOME
+	RenderSprites:
+		Image: h_radar
+	Selectable:
+		Bounds: 2731, 3755, 0, -853
+		DecorationBounds: 2731, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: h_veilworks, ~sf.humans, ~techlevel.medium
+		Description: sf-h-radar-description
+	Tooltip:
+		Name: sf-h-radar-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_radar
+
+D_RADAR:
+	Inherits: DOME
+	RenderSprites:
+		Image: d_radar
+	Selectable:
+		Bounds: 2731, 3755, 0, -853
+		DecorationBounds: 2731, 3755, 0, -853
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: d_veilworks, ~sf.demons, ~techlevel.medium
+		Description: sf-d-radar-description
+	Tooltip:
+		Name: sf-d-radar-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_radar
+
+A_NAVAL:
+	Inherits: SYRD
+	RenderSprites:
+		Image: a_naval
+	Selectable:
+		Bounds: 4096, 3413, 0, 0
+		DecorationBounds: 4096, 3413, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 75
+		Prerequisites: anypower, ~sf.angels, ~techlevel.low
+		Description: sf-a-naval-description
+	Tooltip:
+		Name: sf-a-naval-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_naval
+
+H_NAVAL:
+	Inherits: SYRD
+	RenderSprites:
+		Image: h_naval
+	Selectable:
+		Bounds: 4096, 3413, 0, 0
+		DecorationBounds: 4096, 3413, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 75
+		Prerequisites: anypower, ~sf.humans, ~techlevel.low
+		Description: sf-h-naval-description
+	Tooltip:
+		Name: sf-h-naval-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_naval
+
+D_NAVAL:
+	Inherits: SPEN
+	RenderSprites:
+		Image: d_naval
+	Selectable:
+		Bounds: 4096, 3413, 0, 0
+		DecorationBounds: 4096, 3413, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 75
+		Prerequisites: anypower, ~sf.demons, ~techlevel.low
+		Description: sf-d-naval-description
+	Tooltip:
+		Name: sf-d-naval-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_naval
+
+A_HELIPAD:
+	Inherits: HPAD
+	RenderSprites:
+		Image: a_helipad
+	Selectable:
+		Bounds: 2731, 2389, 0, 0
+		DecorationBounds: 2731, 2389, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: a_radar, ~sf.angels, ~techlevel.medium
+		Description: sf-a-helipad-description
+	Tooltip:
+		Name: sf-a-helipad-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_helipad
+
+H_HELIPAD:
+	Inherits: HPAD
+	RenderSprites:
+		Image: h_helipad
+	Selectable:
+		Bounds: 2731, 2389, 0, 0
+		DecorationBounds: 2731, 2389, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: h_radar, ~sf.humans, ~techlevel.medium
+		Description: sf-h-helipad-description
+	Tooltip:
+		Name: sf-h-helipad-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_helipad
+
+D_HELIPAD:
+	Inherits: HPAD
+	RenderSprites:
+		Image: d_helipad
+	Selectable:
+		Bounds: 2731, 2389, 0, 0
+		DecorationBounds: 2731, 2389, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: d_radar, ~sf.demons, ~techlevel.medium
+		Description: sf-d-helipad-description
+	Tooltip:
+		Name: sf-d-helipad-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_helipad
+
+A_AIRFIELD:
+	Inherits: AFLD
+	RenderSprites:
+		Image: a_airfield
+	Selectable:
+		Bounds: 4096, 2731, 0, 0
+		DecorationBounds: 4096, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-AirstrikePower@spyplane:
+	-ParatroopersPower@paratroopers:
+	-AirstrikePower@parabombs:
+	-SupportPowerChargeBar:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 85
+		Prerequisites: a_radar, ~sf.angels, ~techlevel.medium
+		Description: sf-a-airfield-description
+	Tooltip:
+		Name: sf-a-airfield-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_airfield
+
+H_AIRFIELD:
+	Inherits: AFLD
+	RenderSprites:
+		Image: h_airfield
+	Selectable:
+		Bounds: 4096, 2731, 0, 0
+		DecorationBounds: 4096, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-AirstrikePower@spyplane:
+	-ParatroopersPower@paratroopers:
+	-AirstrikePower@parabombs:
+	-SupportPowerChargeBar:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 85
+		Prerequisites: h_radar, ~sf.humans, ~techlevel.medium
+		Description: sf-h-airfield-description
+	Tooltip:
+		Name: sf-h-airfield-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_airfield
+
+D_AIRFIELD:
+	Inherits: AFLD
+	RenderSprites:
+		Image: d_airfield
+	Selectable:
+		Bounds: 4096, 2731, 0, 0
+		DecorationBounds: 4096, 2731, 0, 0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-AirstrikePower@spyplane:
+	-ParatroopersPower@paratroopers:
+	-AirstrikePower@parabombs:
+	-SupportPowerChargeBar:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 85
+		Prerequisites: d_radar, ~sf.demons, ~techlevel.medium
+		Description: sf-d-airfield-description
+	Tooltip:
+		Name: sf-d-airfield-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_airfield
+
+A_KENNEL:
+	Inherits: KENN
+	RenderSprites:
+		Image: a_kennel
+	Selectable:
+		Bounds: 1707, 1877, 0, -597
+		DecorationBounds: 1707, 1877, 0, -597
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: a_chapel, ~sf.angels, ~techlevel.infonly
+		Description: sf-a-kennel-description
+	Tooltip:
+		Name: sf-a-kennel-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_kennel
+
+H_KENNEL:
+	Inherits: KENN
+	RenderSprites:
+		Image: h_kennel
+	Selectable:
+		Bounds: 1707, 1877, 0, -597
+		DecorationBounds: 1707, 1877, 0, -597
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: h_barracks, ~sf.humans, ~techlevel.infonly
+		Description: sf-h-kennel-description
+	Tooltip:
+		Name: sf-h-kennel-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_kennel
+
+D_KENNEL:
+	Inherits: KENN
+	RenderSprites:
+		Image: d_kennel
+	Selectable:
+		Bounds: 1707, 1877, 0, -597
+		DecorationBounds: 1707, 1877, 0, -597
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: d_pit, ~sf.demons, ~techlevel.infonly
+		Description: sf-d-kennel-description
+	Tooltip:
+		Name: sf-d-kennel-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_kennel
+
+A_TECH:
+	Inherits: ATEK
+	RenderSprites:
+		Image: a_tech
+	Selectable:
+		Bounds: 3072, 3413, 0, -683
+		DecorationBounds: 3072, 3413, 0, -683
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	-GpsPower:
+	-SupportPowerChargeBar:
+	-InfiltrateForSupportPowerReset:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: a_armory, a_radar, ~sf.angels, ~techlevel.high
+		Description: sf-a-tech-description
+	Tooltip:
+		Name: sf-a-tech-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: a_tech
+
+H_TECH:
+	Inherits: ATEK
+	RenderSprites:
+		Image: h_tech
+	Selectable:
+		Bounds: 3072, 3413, 0, -683
+		DecorationBounds: 3072, 3413, 0, -683
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	-GpsPower:
+	-SupportPowerChargeBar:
+	-InfiltrateForSupportPowerReset:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: h_motorpool, h_radar, ~sf.humans, ~techlevel.high
+		Description: sf-h-tech-description
+	Tooltip:
+		Name: sf-h-tech-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: h_tech
+
+D_TECH:
+	Inherits: STEK
+	RenderSprites:
+		Image: d_tech
+	Selectable:
+		Bounds: 3072, 3413, 0, -683
+		DecorationBounds: 3072, 3413, 0, -683
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-WithBuildingBib:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: d_forge, d_radar, ~sf.demons, ~techlevel.high
+		Description: sf-d-tech-description
+	Tooltip:
+		Name: sf-d-tech-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: d_tech

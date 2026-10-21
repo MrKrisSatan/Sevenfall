@@ -1,0 +1,187 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Building Gallery
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: a_seraph
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 1
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		Faction: h_bastion
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 2
+	PlayerReference@Multi2:
+		Name: Multi2
+		Playable: True
+		Faction: d_legion
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 3
+Actors:
+	Spawn0: mpspawn
+		Owner: Neutral
+		Location: 9,12
+	Building0_0: fact
+		Owner: Multi0
+		Location: 9,18
+	Building0_1: a_spire
+		Owner: Multi0
+		Location: 19,18
+	Building0_2: a_veilworks
+		Owner: Multi0
+		Location: 9,26
+	Building0_3: a_chapel
+		Owner: Multi0
+		Location: 19,26
+	Building0_4: a_armory
+		Owner: Multi0
+		Location: 9,34
+	Building0_5: a_advpower
+		Owner: Multi0
+		Location: 19,34
+	Building0_6: a_service
+		Owner: Multi0
+		Location: 9,42
+	Building0_7: a_radar
+		Owner: Multi0
+		Location: 19,42
+	Building0_8: a_helipad
+		Owner: Multi0
+		Location: 9,50
+	Building0_9: a_airfield
+		Owner: Multi0
+		Location: 19,50
+	Building0_10: a_kennel
+		Owner: Multi0
+		Location: 9,58
+	Building0_11: a_tech
+		Owner: Multi0
+		Location: 19,58
+	Building0_12: a_naval
+		Owner: Multi0
+		Location: 9,74
+	Spawn1: mpspawn
+		Owner: Neutral
+		Location: 39,12
+	Building1_0: fact
+		Owner: Multi1
+		Location: 39,18
+	Building1_1: h_generator
+		Owner: Multi1
+		Location: 49,18
+	Building1_2: h_veilworks
+		Owner: Multi1
+		Location: 39,26
+	Building1_3: h_barracks
+		Owner: Multi1
+		Location: 49,26
+	Building1_4: h_motorpool
+		Owner: Multi1
+		Location: 39,34
+	Building1_5: h_advpower
+		Owner: Multi1
+		Location: 49,34
+	Building1_6: h_service
+		Owner: Multi1
+		Location: 39,42
+	Building1_7: h_radar
+		Owner: Multi1
+		Location: 49,42
+	Building1_8: h_helipad
+		Owner: Multi1
+		Location: 39,50
+	Building1_9: h_airfield
+		Owner: Multi1
+		Location: 49,50
+	Building1_10: h_kennel
+		Owner: Multi1
+		Location: 39,58
+	Building1_11: h_tech
+		Owner: Multi1
+		Location: 49,58
+	Building1_12: h_naval
+		Owner: Multi1
+		Location: 39,74
+	Spawn2: mpspawn
+		Owner: Neutral
+		Location: 69,12
+	Building2_0: fact
+		Owner: Multi2
+		Location: 69,18
+	Building2_1: d_heart
+		Owner: Multi2
+		Location: 79,18
+	Building2_2: d_veilworks
+		Owner: Multi2
+		Location: 69,26
+	Building2_3: d_pit
+		Owner: Multi2
+		Location: 79,26
+	Building2_4: d_forge
+		Owner: Multi2
+		Location: 69,34
+	Building2_5: d_advpower
+		Owner: Multi2
+		Location: 79,34
+	Building2_6: d_service
+		Owner: Multi2
+		Location: 69,42
+	Building2_7: d_radar
+		Owner: Multi2
+		Location: 79,42
+	Building2_8: d_helipad
+		Owner: Multi2
+		Location: 69,50
+	Building2_9: d_airfield
+		Owner: Multi2
+		Location: 79,50
+	Building2_10: d_kennel
+		Owner: Multi2
+		Location: 69,58
+	Building2_11: d_tech
+		Owner: Multi2
+		Location: 79,58
+	Building2_12: d_naval
+		Owner: Multi2
+		Location: 69,74
+Rules:
+	World:
+		-SpawnStartingUnits:
+	Player:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True
+	A_VEILWORKS:
+		-FreeActor:
+	H_VEILWORKS:
+		-FreeActor:
+	D_VEILWORKS:
+		-FreeActor:
+	A_ADVPOWER:
+		Power:
+			Amount: 2000
+	H_ADVPOWER:
+		Power:
+			Amount: 2000
+	D_ADVPOWER:
+		Power:
+			Amount: 2000

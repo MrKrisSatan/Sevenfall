@@ -89,6 +89,8 @@ World:
 			Gems: 55
 
 FACT:
+	TransformsIntoRepairable:
+		RepairActors: a_service, h_service, d_service
 	RenderSprites:
 		Image: h_yard
 		FactionImages:
@@ -209,3 +211,15 @@ HARV.FullHusk:
 			d_legion: d_harvester
 			d_brood: d_harvester
 			d_court: d_harvester
+
+^Vehicle:
+	Repairable:
+		RepairActors: a_service, h_service, d_service
+
+^Ship:
+	RepairableNear:
+		RepairActors: a_naval, h_naval, d_naval
+
+^Plane:
+	Repairable:
+		RepairActors: a_service, h_service, d_service

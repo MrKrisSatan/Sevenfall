@@ -84,6 +84,7 @@ def main() -> None:
         ('Rules', 'rules/00-hide-red-alert.yaml'),
         ('Rules', 'rules/10-factions.yaml'),
         ('Rules', 'rules/20-structures.yaml'),
+        ('Rules', 'rules/25-support-structures.yaml'),
         ('Rules', 'rules/30-units.yaml'),
         ('Weapons', 'weapons/sevenfall.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
@@ -92,6 +93,7 @@ def main() -> None:
         ('Sequences', 'sequences/power.yaml'),
         ('Sequences', 'sequences/refineries.yaml'),
         ('Sequences', 'sequences/logistics.yaml'),
+        ('Sequences', 'sequences/buildings.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')

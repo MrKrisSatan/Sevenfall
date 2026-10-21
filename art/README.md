@@ -39,7 +39,7 @@ unloading apron, with faction-specific processing towers and materials.
 
 ## Provenance
 
-The twenty source PNGs were generated for Sevenfall using the built-in OpenAI image
+The source PNGs were generated for Sevenfall using the built-in OpenAI image
 generation tool on 21 October 2026. Prompts described original faction concepts from
 the design bible; no third-party reference artwork was supplied. File provenance and
 SHA-256 hashes are recorded in `sources.json`. These are AI-generated development assets,
@@ -78,7 +78,7 @@ reuse the new intact silhouettes with the inherited dark overlay and fire.
 The inherited refinery roof overlay
 is removed because the new art has an open dock; there is no separate foreground
 occlusion layer yet. Docking alignment and occlusion need a full harvesting playtest.
-Gameplay costs, output and prerequisites are unchanged.
+Earlier art passes kept gameplay values unchanged. The expanded building roster adds new prerequisites and repair targets; see BUILDINGS.md.
 The nine subfactions share their parent's emblem; distinct subfaction heraldry is still pending.
 
 ## Verification
@@ -97,5 +97,5 @@ and transparency. Derived sprites were visually inspected and the updated game
 launched successfully; the Angel refinery icon was observed in the live sidebar.
 All-faction harvesting and damage-state playtests remain outstanding.
 
-Next art pass: barracks/factories and infantry;
+The [expanded building pass](BUILDINGS.md) covers production and support buildings. Next: units;
 add construction/damage animations and team-colour masks as the animation pipeline develops.

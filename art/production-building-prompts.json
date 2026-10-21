@@ -1,0 +1,26 @@
+[
+  {
+    "name": "a-chapel",
+    "prompt": "Original Sevenfall Angel Chapel infantry barracks RTS building sprite. Compact ivory-stone chapel with gold edges, cyan narrow stained-crystal windows, small halo above rear ridge, folded wing buttresses. Clearly visible OPEN dark personnel doorway at front centre, short broad stairs to ground, low side dormitory wings. No vehicle bay, no crystals in courtyard, no tall power-reactor tower. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting, stylized pre-rendered RTS art with bold readable shapes at64pixels wide. One whole isolated building centered on genuine transparent background, all details contained, no people, vehicles, text, grid, terrain or smoke. Silhouette roughly square, visibly smaller than a factory."
+  },
+  {
+    "name": "h-barracks",
+    "prompt": "Original Sevenfall Human infantry barracks RTS building sprite. Compact graphite concrete and olive steel fortified military quarters, low angular roof, amber slit windows, small communications mast, paired low dormitory wings. Clearly visible OPEN dark personnel doorway at front centre with short broad steps, amber doorway light. No vehicle bay, no tanks or cranes. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting, stylized pre-rendered RTS art with bold readable shapes at64pixels wide. One whole isolated building centered on genuine transparent background, all details contained, no people, vehicles, text, grid, terrain, flags or smoke. Silhouette roughly square, squat practical bunker visibly smaller than a factory."
+  },
+  {
+    "name": "d-pit",
+    "prompt": "Original Sevenfall Demon Pit infantry barracks RTS building sprite. Compact black iron and scorched bone summoning den, squat crimson armored side chambers around a recessed magenta-lit central opening. Rear horned arch frames a visible OPEN dark personnel entrance leading out at front bottom via short broad stone steps. Bone rib buttresses, restrained magenta fissures. No tank, no vehicle bay, no machinery cranes, no gore or characters. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left lighting, stylized pre-rendered RTS art with bold readable shapes at64pixels wide. One whole isolated building centered on genuine transparent background, no text, grid, terrain, smoke or detached flame. Silhouette roughly square, smaller than a factory."
+  },
+  {
+    "name": "a-armory",
+    "prompt": "Original Sevenfall Angel Armory VEHICLE FACTORY RTS building sprite. Broad low ivory-stone and gold armored fabrication hangar, swept wing-shaped roof panels, cyan inset conduit stripes and small gold halo insignia built into roof. Very wide OPEN dark garage bay on front centre with flat straight ground-level exit ramp, large enough for a tank. Bay is empty and clearly open. No tall spire, no courtyard crystal, no refinery tanks, no crane arms. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left light. Stylized pre-rendered RTS bold readable shapes at96pixels wide, width about1.4times height. Entire building centered isolated on genuine transparent background, no vehicles, people, text, grid, terrain or smoke."
+  },
+  {
+    "name": "h-motorpool",
+    "prompt": "Original Sevenfall Human Motor Pool VEHICLE FACTORY RTS building sprite. Broad low graphite-concrete and olive steel fortified assembly hangar, angular segmented roof, amber work lights, small ventilation stacks, flat maintenance wings. Very wide OPEN dark garage bay on front centre with flat straight ground-level exit ramp and amber hazard stripes, large enough for a tank. Bay is empty and clearly open. No crane arms, no storage tanks or reactor tower. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left light. Stylized pre-rendered RTS bold readable shapes at96pixels wide, width about1.4times height. Entire building centered isolated on genuine transparent background, no vehicles, people, text, grid, terrain or smoke."
+  },
+  {
+    "name": "d-forge",
+    "prompt": "Original Sevenfall Demon Forge VEHICLE FACTORY RTS building sprite. Broad low black-iron and crimson armored infernal assembly hangar, heavy bone-rib roof arches, compact horned corners, magenta inset furnace seams, low rear vents. Very wide OPEN dark garage bay on front centre with flat straight ground-level exit ramp, large enough for a tank. Bay empty and clearly open, low bone teeth only above lintel not blocking entrance. No tall spire, no courtyard crystal, no refinery tanks, no crane arms, no gore. Orthographic three-quarter overhead55degrees, front toward bottom, upper-left light. Stylized pre-rendered RTS bold readable shapes at96pixels wide, width about1.4times height. Entire building centered isolated on genuine transparent background, no vehicles, people, text, grid, terrain, smoke or detached flames."
+  }
+]

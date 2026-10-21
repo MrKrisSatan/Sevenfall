@@ -55,6 +55,11 @@ The arena is deliberately flat and symmetric for economic testing. It has equal
 starting deposits, exposed expansion deposits, and a central enriched basin. It is
 not yet the finished asymmetric Broken Choir battlefield.
 
+For artwork inspection, choose **Sevenfall Building Gallery**. Its three player slots
+are locked to Angels, Humans and Demons, with each faction's complete current building
+roster preplaced. Naval facilities sit in the southern water strip. This is a developer
+gallery without an economy, not a normal skirmish map. See [building coverage](art/BUILDINGS.md).
+
 Launch defaults to a 1280×720 window and a double-size **software cursor**. This fixes
 the invisible hardware cursor observed on the development workstation. Resize or
 change display mode through Settings after launch if desired.

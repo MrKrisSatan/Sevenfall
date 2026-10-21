@@ -44,6 +44,14 @@ test and windowed launch commands.
 
 ## Next executable milestone
 
+Building artwork follow-up: 30 new intact building sprites and icons complete the
+current base/support roster (39 faction building designs including prior artwork).
+Eight Python tests pass; engine YAML checks pass for all three maps, and sprite
+checks pass for four tilesets. The building gallery loads; the Angel building
+rows and build icons were observed, including infantry leaving the Chapel.
+Final gallery visibility/spawn locks were linted after that observation and require
+a fresh match to verify. See [building pass details](../art/BUILDINGS.md).
+
 Play all three parents on the proving ground: deploy → power → refinery → two full
 harvest/unload cycles → infantry/vehicle production → attack → annihilation. Record
 income, power, queue behavior and bot activity, fix failures, then repeat all nine

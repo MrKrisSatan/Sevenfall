@@ -15,6 +15,44 @@ spec.loader.exec_module(installer)
 
 
 class IntegrationTools(unittest.TestCase):
+    def test_complete_building_roster_has_art_and_faction_prerequisites(self):
+        mod = ROOT / 'mods/sevenfall'
+        catalog = json.loads((ROOT / 'art/building-catalog.json').read_text())
+        self.assertEqual(len(catalog), 30)
+        expected = {'barracks', 'factory', 'advpower', 'service', 'radar',
+                    'naval', 'helipad', 'airfield', 'kennel', 'tech'}
+        self.assertEqual({item['role'] for item in catalog}, expected)
+        sequences = (mod / 'sequences/buildings.yaml').read_text()
+        rules = (mod / 'rules/20-structures.yaml').read_text() + (mod / 'rules/25-support-structures.yaml').read_text()
+        provenance = {a['file'] for a in json.loads((ROOT / 'art/sources.json').read_text())['assets']}
+        for role in expected:
+            self.assertEqual({item['name'][0] for item in catalog if item['role'] == role}, set('ahd'))
+        for item in catalog:
+            name = item['name']
+            self.assertIn(f'art/source/{name}.png', provenance)
+            self.assertIn(name.replace('-', '_') + ':\n', sequences)
+            actor = name.replace('-', '_').upper()
+            body = rules.split(actor + ':\n')[1].split('\n\n')[0]
+            self.assertIn('~sf.' + {'a':'angels', 'h':'humans', 'd':'demons'}[name[0]], body)
+            self.assertIn('Image: ' + actor.lower(), body)
+            for suffix, dimensions in [('', (128,128)), ('-icon',(56,42))]:
+                data = (mod / 'art' / (name + suffix + '.png')).read_bytes()
+                self.assertEqual(struct.unpack_from('>II', data, 16), dimensions)
+            self.assertEqual((mod / 'art' / (name + '.png')).read_bytes()[25], 6)
+
+    def test_gallery_contains_every_building_and_naval_water(self):
+        folder = ROOT / 'mods/sevenfall/maps/building-gallery'
+        text = (folder/'map.yaml').read_text()
+        buildings = re.findall(r'\tBuilding\d+_\d+: (\w+)\n\t\tOwner: (\w+)\n\t\tLocation: (\d+),(\d+)', text)
+        self.assertEqual(len(buildings), 39)
+        data = (folder/'map.bin').read_bytes()
+        for actor, owner, x, y in buildings:
+            x, y = int(x), int(y)
+            if actor.endswith('_naval'):
+                for dx in range(3):
+                    for dy in range(3):
+                        self.assertEqual(struct.unpack_from('<H', data, 17+((x+dx)*96+y+dy)*3)[0], 1)
+
     def test_logistics_png_sheet_metadata_and_provenance(self):
         art = ROOT / 'mods/sevenfall/art'
         for name, size, count in [
