@@ -101,6 +101,19 @@ class CampaignDesignTests(unittest.TestCase):
             self.assertTrue(source and alt)
             self.assertTrue((ROOT / "docs" / source).is_file(), source)
 
+    def test_shared_opening_cinematic_honours_campaigns(self):
+        script = (ROOT / "design" / "OPENING_CINEMATIC.md").read_text(encoding="utf-8")
+        for name in (
+            "TAMAR RELL", "SERAVIEL", "AZRAKH", "VHAL", "MARA VOSS",
+            "VEILGLASS", "SEVENTH SILENCE", "THE CELESTIAL HOST",
+            "THE LAST DOMINION", "THE INFERNAL LEGIONS",
+            "H01: THE DAY THE SKY BROKE", "A01: THE CALL TO ARMS",
+            "D01: HUNGER WAKES",
+        ):
+            self.assertIn(name, script.upper())
+        self.assertIn("OPENING_CINEMATIC.md", (ROOT / "README.md").read_text())
+        self.assertIn("OPENING_CINEMATIC.md", (ROOT / "docs/campaigns.html").read_text())
+
     def test_project_documents_use_new_scope(self):
         bible = BIBLE.read_text(encoding="utf-8")
         game_design = (ROOT / "design" / "GAME_DESIGN.md").read_text(encoding="utf-8")
