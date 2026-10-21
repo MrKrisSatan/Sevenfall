@@ -33,6 +33,24 @@
       "file": "art/source/humans-emblem.png",
       "sha256": "c7c387f4ccdbab3fc9fe8b82e231cd270c8b1651e20543126433fd76eaaf4d8c",
       "brief": "Steel shield, amber rising sun, silver tower, olive chevrons."
+    },
+    {
+      "file": "art/source/a-veilworks.png",
+      "sha256": "11d90e1cb77e5f9b4a36ff26d19f1306f90ee1606c0953e7dc82ffc6a385a73a",
+      "brief": "Ivory/gold refinery, cyan tower and open unloading apron.",
+      "prompt_file": "art/refinery-prompts.json"
+    },
+    {
+      "file": "art/source/h-veilworks.png",
+      "sha256": "383cd6aba08618b53ef23520060525d9c22170a87c9326b831f36591958a7b93",
+      "brief": "Olive/graphite refinery, violet crystal chamber and amber unloading apron.",
+      "prompt_file": "art/refinery-prompts.json"
+    },
+    {
+      "file": "art/source/d-veilworks.png",
+      "sha256": "88767e44fe4635c4dbcb86ec3c4248404c6b8c1d34a3aba673fe1fa649333499",
+      "brief": "Black iron/bone refinery, magenta furnace and open unloading apron.",
+      "prompt_file": "art/refinery-prompts.json"
     }
   ]
 }

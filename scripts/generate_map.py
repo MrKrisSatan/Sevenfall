@@ -89,11 +89,26 @@ Actors:
 	Heart: d_heart
 		Owner: Legions
 		Location: 53,48
+	Refinerya: a_veilworks
+		Owner: Host
+		Location: 41,54
+	Refineryh: h_veilworks
+		Owner: Dominion
+		Location: 47,54
+	Refineryd: d_veilworks
+		Owner: Legions
+		Location: 53,54
 Rules:
 	World:
 		-StartGameNotification:
 		-SpawnStartingUnits:
 		-MapStartingLocations:
+	A_VEILWORKS:
+		-FreeActor:
+	H_VEILWORKS:
+		-FreeActor:
+	D_VEILWORKS:
+		-FreeActor:
 	Player:
 		Shroud:
 			FogCheckboxEnabled: False
