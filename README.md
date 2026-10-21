@@ -4,7 +4,7 @@
 
 > The Seventh Seal has broken. Heaven has descended, Hell has risen, and humanity refuses to surrender its world.
 
-**Development status:** Pre-alpha **source prototype**. No engine-verified playable build has been released.
+**Development status:** Pre-alpha **0.2 engine integration**. Builds and opens the game menu on Windows; full gameplay-loop validation and a standalone release remain outstanding.
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
@@ -29,9 +29,9 @@ The three major factions each have three playable subfactions:
 
 ## What is actually implemented?
 
-The previously prepared local v0.1 source seed contains MiniYaml designs for nine faction choices, twelve structure variants, 21 unit variants (including three harvesters), six weapons and initial UI strings, plus SDK overlay/validation scripts. **The prototype source files have not yet been copied into this GitHub repository**; that work is tracked in [issue #1](https://github.com/MrKrisSatan/Sevenfall/issues/1). The prototype is **not yet proven to run in OpenRA**, and the inherited Red Alert placeholders and AI plans require integration tests. **No playable release or installable binary is available yet.**
+The repository now includes nine faction choices, twelve structure variants, 21 unit variants (including three harvesters), six weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
 
-See [TECHNICAL_STARTER.md](TECHNICAL_STARTER.md) for setup caveats and [tests/ENGINE_TEST_CHECKLIST.md](tests/ENGINE_TEST_CHECKLIST.md) for verification requirements.
+Use [BUILDING.md](BUILDING.md) to build and launch. See the [integration report](tests/INTEGRATION_REPORT.md) for verified results and [tests/ENGINE_TEST_CHECKLIST.md](tests/ENGINE_TEST_CHECKLIST.md) for the remaining playtest matrix. [TECHNICAL_STARTER.md](TECHNICAL_STARTER.md) preserves the original starter notes.
 
 ## Project management
 

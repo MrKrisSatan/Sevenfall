@@ -1,0 +1,83 @@
+# One prototype land AI supports all nine factions through the normal tech tree.
+Player:
+	ModularBot@Sevenfall:
+		Name: sf-bot-name
+		Type: sevenfall
+	GrantConditionOnBotOwner@Sevenfall:
+		Condition: sevenfall-ai
+		Bots: sevenfall
+	McvManagerBotModule:
+		RequiresCondition: sevenfall-ai
+		McvTypes: mcv
+		ConstructionYardTypes: fact
+		McvFactoryTypes: a_armory, h_motorpool, d_forge
+	HarvesterBotModule:
+		RequiresCondition: sevenfall-ai
+		HarvesterTypes: a_gatherer, h_harvester, d_devourer
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks
+	BuildingRepairBotModule:
+		RequiresCondition: sevenfall-ai
+	BaseBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		MinimumExcessPower: 30
+		MaximumExcessPower: 130
+		ConstructionYardTypes: fact
+		PowerTypes: a_spire, h_generator, d_heart
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks
+		BarracksTypes: a_chapel, h_barracks, d_pit
+		VehiclesFactoryTypes: a_armory, h_motorpool, d_forge
+		ProductionTypes: a_chapel, h_barracks, d_pit, a_armory, h_motorpool, d_forge
+		BuildingLimits:
+			a_veilworks: 3
+			h_veilworks: 3
+			d_veilworks: 3
+			a_chapel: 2
+			h_barracks: 2
+			d_pit: 2
+			a_armory: 1
+			h_motorpool: 1
+			d_forge: 1
+		BuildingFractions:
+			a_veilworks: 30
+			h_veilworks: 30
+			d_veilworks: 30
+			a_chapel: 10
+			h_barracks: 10
+			d_pit: 10
+			a_armory: 10
+			h_motorpool: 10
+			d_forge: 10
+	UnitBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		UnitsToBuild:
+			a_gatherer: 15
+			h_harvester: 15
+			d_devourer: 15
+			a_watcher: 60
+			h_rifleman: 60
+			d_thrall: 75
+			a_judicator: 25
+			h_rocketeer: 25
+			d_cinderling: 25
+			a_aegis: 30
+			h_bulwark: 40
+			d_ravager: 45
+			a_seraphim: 15
+			a_gatekeeper: 15
+			a_penitent: 20
+			h_siegegun: 15
+			h_ranger: 20
+			h_templar: 15
+			d_hellreaver: 15
+			d_skitter: 30
+			d_hexer: 15
+		UnitLimits:
+			a_gatherer: 4
+			h_harvester: 4
+			d_devourer: 4
+	SquadManagerBotModule:
+		RequiresCondition: sevenfall-ai
+		SquadSize: 12
+		ExcludeFromSquadsTypes: mcv, a_gatherer, h_harvester, d_devourer
+		ConstructionYardTypes: fact
+		ProtectionTypes: fact, a_veilworks, h_veilworks, d_veilworks, a_gatherer, h_harvester, d_devourer

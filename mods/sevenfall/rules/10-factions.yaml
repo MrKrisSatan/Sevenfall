@@ -1,0 +1,123 @@
+# SEVENFALL: selection and tech prerequisites.
+# This overlay is loaded after Red Alert's rules/world.yaml.
+^BaseWorld:
+	-Faction@allies:
+	-Faction@england:
+	-Faction@france:
+	-Faction@germany:
+	-Faction@soviet:
+	-Faction@russia:
+	-Faction@ukraine:
+	-Faction@random:
+	-Faction@randomallies:
+	-Faction@randomsoviet:
+	Faction@a_seraph:
+		Name: sf-faction-a-seraph-name
+		InternalName: a_seraph
+		Side: Allies
+		Description: sf-faction-a-seraph-description
+	Faction@a_warden:
+		Name: sf-faction-a-warden-name
+		InternalName: a_warden
+		Side: Allies
+		Description: sf-faction-a-warden-description
+	Faction@a_exile:
+		Name: sf-faction-a-exile-name
+		InternalName: a_exile
+		Side: Allies
+		Description: sf-faction-a-exile-description
+	Faction@h_bastion:
+		Name: sf-faction-h-bastion-name
+		InternalName: h_bastion
+		Side: Allies
+		Description: sf-faction-h-bastion-description
+	Faction@h_union:
+		Name: sf-faction-h-union-name
+		InternalName: h_union
+		Side: Allies
+		Description: sf-faction-h-union-description
+	Faction@h_covenant:
+		Name: sf-faction-h-covenant-name
+		InternalName: h_covenant
+		Side: Allies
+		Description: sf-faction-h-covenant-description
+	Faction@d_legion:
+		Name: sf-faction-d-legion-name
+		InternalName: d_legion
+		Side: Soviet
+		Description: sf-faction-d-legion-description
+	Faction@d_brood:
+		Name: sf-faction-d-brood-name
+		InternalName: d_brood
+		Side: Soviet
+		Description: sf-faction-d-brood-description
+	Faction@d_court:
+		Name: sf-faction-d-court-name
+		InternalName: d_court
+		Side: Soviet
+		Description: sf-faction-d-court-description
+	Faction@sf_random:
+		Name: sf-faction-random-name
+		InternalName: Random
+		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
+		Side: Random
+		Description: sf-faction-random-description
+	ResourceRenderer:
+		ResourceTypes:
+			Ore:
+				Name: sf-resource-veilglass-name
+			Gems:
+				Name: sf-resource-veilglass-name
+
+World:
+	StartingUnits@mcvonly:
+		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
+	-StartingUnits@lightallies:
+	-StartingUnits@lightsoviet:
+	-StartingUnits@heavyallies:
+	-StartingUnits@heavysoviet:
+
+^BasePlayer:
+	PlayerResources:
+		ResourceValues:
+			# Low-grade and high-grade Veilglass, a single mineral.
+			Ore: 30
+			Gems: 55
+
+FACT:
+	ProvidesPrerequisite@sf_angels:
+		Factions: a_seraph, a_warden, a_exile
+		Prerequisite: sf.angels
+	ProvidesPrerequisite@sf_humans:
+		Factions: h_bastion, h_union, h_covenant
+		Prerequisite: sf.humans
+	ProvidesPrerequisite@sf_demons:
+		Factions: d_legion, d_brood, d_court
+		Prerequisite: sf.demons
+	ProvidesPrerequisite@sf_a_seraph:
+		Factions: a_seraph
+		Prerequisite: sf.a_seraph
+	ProvidesPrerequisite@sf_a_warden:
+		Factions: a_warden
+		Prerequisite: sf.a_warden
+	ProvidesPrerequisite@sf_a_exile:
+		Factions: a_exile
+		Prerequisite: sf.a_exile
+	ProvidesPrerequisite@sf_h_bastion:
+		Factions: h_bastion
+		Prerequisite: sf.h_bastion
+	ProvidesPrerequisite@sf_h_union:
+		Factions: h_union
+		Prerequisite: sf.h_union
+	ProvidesPrerequisite@sf_h_covenant:
+		Factions: h_covenant
+		Prerequisite: sf.h_covenant
+	ProvidesPrerequisite@sf_d_legion:
+		Factions: d_legion
+		Prerequisite: sf.d_legion
+	ProvidesPrerequisite@sf_d_brood:
+		Factions: d_brood
+		Prerequisite: sf.d_brood
+	ProvidesPrerequisite@sf_d_court:
+		Factions: d_court
+		Prerequisite: sf.d_court

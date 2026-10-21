@@ -1,0 +1,187 @@
+# All visible buildings use placeholder Red Alert art for the prototype.
+# Replace RenderSprites.Image with original Sevenfall art in production.
+A_SPIRE:
+	Inherits: POWR
+	RenderSprites:
+		Image: POWR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.angels, ~techlevel.infonly
+		Description: sf-a-spire-description
+	Valued:
+		Cost: 420
+	Tooltip:
+		Name: sf-a-spire-name
+	Power:
+		Amount: 125
+
+H_GENERATOR:
+	Inherits: POWR
+	RenderSprites:
+		Image: POWR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.humans, ~techlevel.infonly
+		Description: sf-h-generator-description
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: sf-h-generator-name
+	Power:
+		Amount: 110
+
+D_HEART:
+	Inherits: POWR
+	RenderSprites:
+		Image: POWR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.demons, ~techlevel.infonly
+		Description: sf-d-heart-description
+	Valued:
+		Cost: 370
+	Tooltip:
+		Name: sf-d-heart-name
+	Power:
+		Amount: 120
+
+A_VEILWORKS:
+	Inherits: PROC
+	RenderSprites:
+		Image: PROC
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.angels, ~techlevel.infonly
+		Description: sf-a-veilworks-description
+	Valued:
+		Cost: 1650
+	Tooltip:
+		Name: sf-a-veilworks-name
+	FreeActor:
+		Actor: A_GATHERER
+	Power:
+		Amount: -35
+
+H_VEILWORKS:
+	Inherits: PROC
+	RenderSprites:
+		Image: PROC
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.humans, ~techlevel.infonly
+		Description: sf-h-veilworks-description
+	Valued:
+		Cost: 1350
+	Tooltip:
+		Name: sf-h-veilworks-name
+	FreeActor:
+		Actor: H_HARVESTER
+	Power:
+		Amount: -30
+
+D_VEILWORKS:
+	Inherits: PROC
+	RenderSprites:
+		Image: PROC
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.demons, ~techlevel.infonly
+		Description: sf-d-veilworks-description
+	Valued:
+		Cost: 1450
+	Tooltip:
+		Name: sf-d-veilworks-name
+	FreeActor:
+		Actor: D_DEVOURER
+	Power:
+		Amount: -30
+
+A_CHAPEL:
+	Inherits: TENT
+	RenderSprites:
+		Image: TENT
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.angels, ~techlevel.infonly
+		Description: sf-a-chapel-description
+	Valued:
+		Cost: 650
+	Tooltip:
+		Name: sf-a-chapel-name
+
+H_BARRACKS:
+	Inherits: TENT
+	RenderSprites:
+		Image: TENT
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.humans, ~techlevel.infonly
+		Description: sf-h-barracks-description
+	Valued:
+		Cost: 450
+	Tooltip:
+		Name: sf-h-barracks-name
+
+D_PIT:
+	Inherits: BARR
+	RenderSprites:
+		Image: BARR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.demons, ~techlevel.infonly
+		Description: sf-d-pit-description
+	Valued:
+		Cost: 440
+	Tooltip:
+		Name: sf-d-pit-name
+
+A_ARMORY:
+	Inherits: WEAP
+	RenderSprites:
+		Image: WEAP
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: a_veilworks, ~sf.angels, ~techlevel.low
+		Description: sf-a-armory-description
+	Valued:
+		Cost: 2200
+	Tooltip:
+		Name: sf-a-armory-name
+
+H_MOTORPOOL:
+	Inherits: WEAP
+	RenderSprites:
+		Image: WEAP
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: h_veilworks, ~sf.humans, ~techlevel.low
+		Description: sf-h-motorpool-description
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: sf-h-motorpool-name
+
+D_FORGE:
+	Inherits: WEAP
+	RenderSprites:
+		Image: WEAP
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: d_veilworks, ~sf.demons, ~techlevel.low
+		Description: sf-d-forge-description
+	Valued:
+		Cost: 1350
+	Tooltip:
+		Name: sf-d-forge-name

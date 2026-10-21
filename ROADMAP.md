@@ -1,6 +1,6 @@
 # Sevenfall development roadmap
 
-**Status as of 21 October 2026: pre-alpha source seed.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
+**Status as of 21 October 2026: pre-alpha 0.2 engine integration.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
 
 ## Phase 0: Foundation and transparency
 - [x] Define original world, factions and Veilglass economy
@@ -8,8 +8,9 @@
 - [x] Produce OpenRA MiniYaml prototype and static checker locally
 - [x] Initialize Sevenfall GitHub repository
 - [x] Publish project website source and living roadmap
-- [ ] Upload complete initial OpenRA source files and verify every file against the starter archive
-- [ ] Run OpenRA SDK compatibility/build and fix load errors
+- [x] Import the starter game rules, weapons, localisation and scripts into the repository
+- [x] Pin engine/SDK, build on Windows, pass engine lint and fix menu/lobby load errors
+- [ ] Complete in-match runtime and nine-faction playtests
 - [ ] Verify clean license/asset provenance for public builds
 
 ## Phase 1: First playable skirmish

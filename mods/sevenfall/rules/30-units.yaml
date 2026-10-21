@@ -1,0 +1,403 @@
+# Prototype troops and vehicles; all art is explicit base-game placeholder art.
+# Main-faction units
+A_WATCHER:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: a_chapel, ~sf.angels, ~techlevel.infonly
+		Description: sf-a-watcher-description
+	Tooltip:
+		Name: sf-a-watcher-name
+	Valued:
+		Cost: 170
+	Health:
+		HP: 7200
+	Mobile:
+		Speed: 75
+	Armament@PRIMARY:
+		Weapon: SF_HaloLance
+
+H_RIFLEMAN:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: h_barracks, ~sf.humans, ~techlevel.infonly
+		Description: sf-h-rifleman-description
+	Tooltip:
+		Name: sf-h-rifleman-name
+	Valued:
+		Cost: 90
+	Health:
+		HP: 5100
+	Mobile:
+		Speed: 87
+	Armament@PRIMARY:
+		Weapon: SF_PulseRifle
+
+D_THRALL:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: d_pit, ~sf.demons, ~techlevel.infonly
+		Description: sf-d-thrall-description
+	Tooltip:
+		Name: sf-d-thrall-name
+	Valued:
+		Cost: 55
+	Health:
+		HP: 3500
+	Mobile:
+		Speed: 105
+	Armament@PRIMARY:
+		Weapon: SF_HellClaw
+
+A_JUDICATOR:
+	Inherits: E3
+	RenderSprites:
+		Image: E3
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 20
+		Prerequisites: a_chapel, ~sf.angels, ~techlevel.low
+		Description: sf-a-judicator-description
+	Tooltip:
+		Name: sf-a-judicator-name
+	Valued:
+		Cost: 360
+	Health:
+		HP: 7800
+	Armament@PRIMARY:
+		Weapon: RedEye
+	Armament@SECONDARY:
+		Weapon: Dragon
+
+H_ROCKETEER:
+	Inherits: E3
+	RenderSprites:
+		Image: E3
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 20
+		Prerequisites: h_barracks, ~sf.humans, ~techlevel.low
+		Description: sf-h-rocketeer-description
+	Tooltip:
+		Name: sf-h-rocketeer-name
+	Valued:
+		Cost: 285
+	Health:
+		HP: 4800
+
+D_CINDERLING:
+	Inherits: E2
+	RenderSprites:
+		Image: E2
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 20
+		Prerequisites: d_pit, ~sf.demons, ~techlevel.low
+		Description: sf-d-cinderling-description
+	Tooltip:
+		Name: sf-d-cinderling-name
+	Valued:
+		Cost: 215
+	Health:
+		HP: 3900
+	Armament@PRIMARY:
+		Weapon: SF_Cinder
+
+A_AEGIS:
+	Inherits: 2TNK
+	RenderSprites:
+		Image: 2TNK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: a_armory, ~sf.angels, ~techlevel.medium
+		Description: sf-a-aegis-description
+	Tooltip:
+		Name: sf-a-aegis-name
+	Valued:
+		Cost: 1600
+	Health:
+		HP: 67000
+	Mobile:
+		Speed: 67
+	Armament:
+		Weapon: SF_Sanction
+
+H_BULWARK:
+	Inherits: 2TNK
+	RenderSprites:
+		Image: 2TNK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: h_motorpool, ~sf.humans, ~techlevel.medium
+		Description: sf-h-bulwark-description
+	Tooltip:
+		Name: sf-h-bulwark-name
+	Valued:
+		Cost: 890
+	Health:
+		HP: 46000
+	Mobile:
+		Speed: 80
+	Armament:
+		Weapon: SF_Stormshell
+
+D_RAVAGER:
+	Inherits: 1TNK
+	RenderSprites:
+		Image: 1TNK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: d_forge, ~sf.demons, ~techlevel.medium
+		Description: sf-d-ravager-description
+	Tooltip:
+		Name: sf-d-ravager-name
+	Valued:
+		Cost: 620
+	Health:
+		HP: 22500
+	Mobile:
+		Speed: 122
+
+# One faction-exclusive unit per subfaction for the initial integration slice.
+A_SERAPHIM:
+	Inherits: E3
+	RenderSprites:
+		Image: E3
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: a_chapel, ~sf.a_seraph, ~techlevel.medium
+		Description: sf-a-seraphim-description
+	Tooltip:
+		Name: sf-a-seraphim-name
+	Valued:
+		Cost: 630
+	Health:
+		HP: 12200
+	Armament@SECONDARY:
+		Weapon: SF_HaloLance
+
+A_GATEKEEPER:
+	Inherits: 2TNK
+	RenderSprites:
+		Image: 2TNK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 85
+		Prerequisites: a_armory, ~sf.a_warden, ~techlevel.medium
+		Description: sf-a-gatekeeper-description
+	Tooltip:
+		Name: sf-a-gatekeeper-name
+	Valued:
+		Cost: 2050
+	Health:
+		HP: 97000
+	Mobile:
+		Speed: 52
+
+A_PENITENT:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: a_chapel, ~sf.a_exile, ~techlevel.low
+		Description: sf-a-penitent-description
+	Tooltip:
+		Name: sf-a-penitent-name
+	Valued:
+		Cost: 120
+	Health:
+		HP: 4800
+	Mobile:
+		Speed: 103
+	Armament@PRIMARY:
+		Weapon: SF_HaloLance
+
+H_SIEGEGUN:
+	Inherits: V2RL
+	RenderSprites:
+		Image: V2RL
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 85
+		Prerequisites: h_motorpool, ~sf.h_bastion, ~techlevel.medium
+		Description: sf-h-siegegun-description
+	Tooltip:
+		Name: sf-h-siegegun-name
+	Valued:
+		Cost: 950
+	Health:
+		HP: 23000
+
+H_RANGER:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: h_barracks, ~sf.h_union, ~techlevel.low
+		Description: sf-h-ranger-description
+	Tooltip:
+		Name: sf-h-ranger-name
+	Valued:
+		Cost: 125
+	Mobile:
+		Speed: 110
+	Armament@PRIMARY:
+		Weapon: SF_PulseRifle
+
+H_TEMPLAR:
+	Inherits: E3
+	RenderSprites:
+		Image: E3
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: h_barracks, ~sf.h_covenant, ~techlevel.low
+		Description: sf-h-templar-description
+	Tooltip:
+		Name: sf-h-templar-name
+	Valued:
+		Cost: 405
+	Health:
+		HP: 8500
+
+D_HELLREAVER:
+	Inherits: 2TNK
+	RenderSprites:
+		Image: 2TNK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 85
+		Prerequisites: d_forge, ~sf.d_legion, ~techlevel.medium
+		Description: sf-d-hellreaver-description
+	Tooltip:
+		Name: sf-d-hellreaver-name
+	Valued:
+		Cost: 1180
+	Health:
+		HP: 55000
+	Armament:
+		Weapon: SF_Cinder
+
+D_SKITTER:
+	Inherits: E1
+	RenderSprites:
+		Image: E1
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: d_pit, ~sf.d_brood, ~techlevel.low
+		Description: sf-d-skitter-description
+	Tooltip:
+		Name: sf-d-skitter-name
+	Valued:
+		Cost: 35
+	Health:
+		HP: 2300
+	Mobile:
+		Speed: 126
+	Armament@PRIMARY:
+		Weapon: SF_HellClaw
+
+D_HEXER:
+	Inherits: E3
+	RenderSprites:
+		Image: E3
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 80
+		Prerequisites: d_pit, ~sf.d_court, ~techlevel.low
+		Description: sf-d-hexer-description
+	Tooltip:
+		Name: sf-d-hexer-name
+	Valued:
+		Cost: 440
+	Health:
+		HP: 5900
+	Armament@SECONDARY:
+		Weapon: SF_HaloLance
+
+# Same harvested mineral; three logistics doctrines.
+A_GATHERER:
+	Inherits: HARV
+	RenderSprites:
+		Image: HARV
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 35
+		Prerequisites: a_veilworks, ~sf.angels, ~techlevel.infonly
+		Description: sf-a-gatherer-description
+	Tooltip:
+		Name: sf-a-gatherer-name
+	Valued:
+		Cost: 1320
+	Health:
+		HP: 74000
+	Mobile:
+		Speed: 65
+
+H_HARVESTER:
+	Inherits: HARV
+	RenderSprites:
+		Image: HARV
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 35
+		Prerequisites: h_veilworks, ~sf.humans, ~techlevel.infonly
+		Description: sf-h-harvester-description
+	Tooltip:
+		Name: sf-h-harvester-name
+	Valued:
+		Cost: 1000
+	Health:
+		HP: 62000
+	Mobile:
+		Speed: 75
+
+D_DEVOURER:
+	Inherits: HARV
+	RenderSprites:
+		Image: HARV
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 35
+		Prerequisites: d_veilworks, ~sf.demons, ~techlevel.infonly
+		Description: sf-d-devourer-description
+	Tooltip:
+		Name: sf-d-devourer-name
+	Valued:
+		Cost: 950
+	Health:
+		HP: 45000
+	Mobile:
+		Speed: 88

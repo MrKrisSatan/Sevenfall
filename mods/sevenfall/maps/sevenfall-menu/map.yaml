@@ -1,0 +1,28 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Menu
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Shellmap
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+Actors:
+	MenuCenter: waypoint
+		Owner: Neutral
+		Location: 48,48
+Rules:
+	World:
+		-StartGameNotification:
+		-SpawnStartingUnits:
+		-MapStartingLocations:
+	Player:
+		Shroud:
+			FogCheckboxEnabled: False
+			ExploredMapCheckboxEnabled: True
