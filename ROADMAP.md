@@ -42,9 +42,11 @@
 - [ ] Full menus, tooltips, tutorial and accessibility settings
 
 ## Phase 4: Campaigns and release
-- [ ] Angel campaign
-- [ ] Human campaign
-- [ ] Demon campaign
+- [x] Specify 75 narrative missions (25 each for Human, Angel and Demon) across five acts; design-only, not playable
+- [ ] Angel campaign: implement and validate all 25 missions
+- [ ] Human campaign: implement and validate all 25 missions
+- [ ] Demon campaign: implement and validate all 25 missions
+- [ ] Implement three alternate Harrow finales and all six narrative ending variants
 - [ ] Scripted objectives, mission briefings and cinematics
 - [ ] Save/resume and mission progression tests
 - [ ] Windows and Linux packaging
@@ -54,5 +56,7 @@
 ## Build policy
 
 Only mark a build **playable** after OpenRA actually launches, the resource economy operates and a skirmish can end correctly. Publish tested binaries under [GitHub Releases](https://github.com/MrKrisSatan/Sevenfall/releases). Development notes and source commits must not be labelled as playable downloads.
+
+The canonical narrative and 75 mission specifications live in [STORY_BIBLE.md](design/STORY_BIBLE.md) and [CAMPAIGN_MISSIONS.md](design/CAMPAIGN_MISSIONS.md). These are design specifications, not shipped game content.
 
 Track fine-grained tasks in [GitHub Issues](https://github.com/MrKrisSatan/Sevenfall/issues).

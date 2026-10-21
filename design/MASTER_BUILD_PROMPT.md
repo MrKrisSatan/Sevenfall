@@ -13,7 +13,7 @@ Tone: grand, grim, Gothic, war-torn, tragic, cinematic and unrelentingly apocaly
 - **Common finite mineable map resource: Veilglass**. Created when the Veil between realms fractures. It is one substance with rough deposits and highly enriched veins (two grades, not two unrelated resources). Each side requires Veilglass to fuel its economy, but extraction speed, storage, vehicle durability, refinery efficiency and special uses differ.
 - Three distinct base architecture styles; unique faction tech tree, infantry line, vehicles/beasts, artillery, air, scouting, detectors, anti-air, repair/heal, defenses, siege and late-game superweapon. Units must have strengths AND counters.
 - Subfactions each grant an exclusive combat unit, a passive rule, a support ability, a unique building or tech fork, and a meaningful trade-off.
-- Single player skirmish vs AI, LAN/online multiplayer if supported, nine-choice faction lobby, 3 campaigns (at least 8 missions each in full release), save and resume where engine permits, difficulty levels, hotkeys, tooltips, music and accessibility-friendly silhouettes.
+- Single player skirmish vs AI, LAN/online multiplayer if supported, nine-choice faction lobby, 3 full narrative campaigns (25 missions per parent faction, 75 total, across five acts each), with all nine subfaction variants sharing their parent's maps, save and resume where engine permits, difficulty levels, hotkeys, tooltips, music and accessibility-friendly silhouettes.
 - All stats and abilities defined as game data (OpenRA MiniYaml; C# custom traits only if essential). Scripts are reserved for missions and AI events when possible. Deterministic simulation and replay safety take priority.
 
 ## Faction asymmetry contract
@@ -68,7 +68,7 @@ At least: builder/MCV, harvester, scout, cheap line infantry, anti-armor infantr
 7. Implement real skirmish AI: economic build order, harvesters, production, army composition, target priorities, scouting and expansion for all nine choices. Bots must use actual Sevenfall actor IDs.
 8. Build a custom asymmetrical map (e.g. 96x96 "Broken Choir") with two safe starts and a heavily contested enriched Veilglass basin. Avoid ambiguous spawn balance.
 9. Run in-engine automated/static tests plus manual playtests: 10-minute economic sanity, 20-minute AI survival, 1v1 asymmetric matchup, replay determinism; then iterate balance.
-10. After stable skirmish, build scripted campaigns and in-world presentation. Do not claim game-complete at a design-only or YAML-only stage.
+10. After stable skirmish, implement the 75 scenario briefs in design/CAMPAIGN_MISSIONS.md as deterministic OpenRA missions, beginning with H03, A03 and D02. Follow five acts per parent faction, implement the three alternate final battles and six ethical ending variants, and create in-world presentation. Do not claim game-complete at a design-only or YAML-only stage.
 
 ## Delivery requirements
 Write and modify real project files, not only suggestions. After each implementation pass, list files changed, tested features, exact blockers and the next executable milestone. Ship minimal integrated features rather than a huge untestable collection of promises. Treat placeholder art and incomplete AI honestly. Include user-facing run/build instructions on Windows and Linux. Keep gameplay cohesive, responsive on modest hardware and scalable to large C&C-style battles.

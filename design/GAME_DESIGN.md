@@ -106,39 +106,17 @@ Hell has numbers, cruelty and unnatural biology, but its most useful weapon is t
 
 The starter uses the existing OpenRA engine actors, animations and maps as temporary integration placeholders. Some full-release traits (wards, corruption, hero units, repair mechanics, original terrain, campaign logic, AI, audio) are intentionally not yet implemented.
 
-## The first three campaigns
+## The three campaigns: 75 missions
 
-### Campaign I: Ashes of Earth (Humans)
-1. **The Day the Sky Broke:** evacuate a city; teach selection and movement.
-2. **Last Light:** power the emergency refuge and field first defenses.
-3. **The Glass Fields:** first refinery, Veilglass harvest and harvester protection.
-4. **Do Not Look Up:** repel an Angel inspection force and capture relic technology.
-5. **The Endless Descent:** hold a highway against Demon waves while civilian trucks escape.
-6. **The False Sanctuary:** choose to rescue a human enclave or seize its rare mineral field.
-7. **Broken Covenant:** destroy a human collaborationist installation; introduce subfaction identity.
-8. **We Remain:** survive a three-way war for humanity's first fortified Veilglass city.
+The canonical campaign specification has been expanded to **25 missions each for Humans, Angels and Demons**, grouped into **five acts per faction** (75 total). The old eight-mission concept was a narrative skeleton; its original mission titles are preserved in expanded order. All campaigns remain design-only until OpenRA mission maps and objectives have been implemented and engine-verified.
 
-### Campaign II: War in Heaven (Angels)
-1. **The Call to Arms:** descend and establish a beachhead.
-2. **The Choir Unbroken:** defend refugees while sealing first breaches.
-3. **A Glass of Wrath:** secure Seamfalls and defend Gatherers.
-4. **The Emperor of Ash:** break an Infernal Legions fortification.
-5. **The Mortal Refusal:** fight an entrenched human force without destroying civilians.
-6. **The Unshackling:** confront renegade angels seeking a different peace.
-7. **The Empty Gate:** defend a collapsing heavenly threshold.
-8. **Judgment Deferred:** choose whether order deserves a world without free will.
+| Campaign | Acts | Beginning | Key shared battles | Finale |
+|---|---|---|---|---|
+| **Ashes of Earth** (Human H01–H25) | The Breaking; War of Claims; False Edicts; Witness Ledger; Harrow | Evacuate Crown Vale, refine Veilglass, form the Last Dominion | Broken Choir (H07), Causeway (H10), the coerced enclave (H14) | **We Remain (H25)**: Open Earth / Iron Earth |
+| **War in Heaven** (Angel A01–A25) | Same five acts through an Angel perspective | Arrive at Empty Gate, protect the Host's wards, mine Veilglass | Sable Crown (A06), Broken Choir (A08), Causeway (A10) | **Judgment Deferred (A25)**: Open Gate / Radiant Quarantine |
+| **The Ninth Mouth** (Demon D01–D25) | Same five acts through an infernal perspective | Raise Birthing Pits, mine with Devourers, fight Hell's internal chains | Sable Crown (D05), Court contracts (D10), Causeway (D12) | **The Shape of Freedom (D25)**: Unbound Fire / Crown of Ash |
 
-### Campaign III: The Ninth Mouth (Demons)
-1. **Hunger Wakes:** hatch a foothold in the ruins.
-2. **Seeds of Ruin:** spread corruption and harvest Veilglass.
-3. **The Gate Eaters:** ambush celestial supply lines.
-4. **Iron and Horn:** obtain Hell-forged siege technology.
-5. **The Crown Below:** quell a rival infernal lord.
-6. **Blasphemous Engine:** sabotage a human Veilglass weapon.
-7. **The Court's Price:** survive betrayal by the Court of Whispers.
-8. **The Shape of Freedom:** claim Earth or sever Hell's ancient chains.
-
-All missions are story/specification only at the starter stage.
+See **[STORY_BIBLE.md](STORY_BIBLE.md)** for researched inspiration and characters, and **[CAMPAIGN_MISSIONS.md](CAMPAIGN_MISSIONS.md)** for all 75 scenarios with primary objectives, optional objectives, failure states, planned mechanics and crossover safeguards. H25, A25 and D25 are alternate resolutions of a common crisis, not three simultaneously canonical victories.
 
 ## Presentation and art direction
 
@@ -159,7 +137,7 @@ All missions are story/specification only at the starter stage.
 
 **M3 / full roster:** complete unique actor rules/assets for ground and air, defensive structures, support powers, superweapons, post-match statistics and balance.
 
-**M4 / campaigns:** 24 scripted missions, objectives/briefings, narrative cinematics and mission progression; save/resume verified against engine support.
+**M4 / campaigns:** 75 scripted missions, objectives/briefings, narrative cinematics and mission progression; save/resume verified against engine support.
 
 **M5 / launch candidate:** visual/audio polish, localisation, accessibility, installer and mod licensing review, extensive game test matrix.
 
