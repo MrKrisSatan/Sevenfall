@@ -1,0 +1,30 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Broken Choir - Proving Ground
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Conquest
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: Random
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		Faction: Random
+Actors:
+	Spawn0: mpspawn
+		Owner: Neutral
+		Location: 15,15
+	Spawn1: mpspawn
+		Owner: Neutral
+		Location: 80,80

@@ -1,5 +1,7 @@
 # SEVENFALL: The War for Creation
 
+> Historical v0.1 starter notes. Current setup and results are in [BUILDING.md](BUILDING.md) and [the integration report](tests/INTEGRATION_REPORT.md).
+
 **OpenRA pre-alpha technical seed • 2026-10-21 • original RTS concept**
 
 **Status: SOURCE STARTER, NOT A FINISHED OR ENGINE-VERIFIED GAME.** Static checks on this archive have passed, but an actual OpenRA build/launch could not be run in this environment. The mod uses Red Alert placeholder visuals, maps and engine content; original art/audio, campaigns, functional AI and complete trait implementations are future milestones.

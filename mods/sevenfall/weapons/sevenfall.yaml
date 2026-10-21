@@ -1,0 +1,64 @@
+# Reuses engine weapon primitives with original Sevenfall tuning.
+SF_HaloLance:
+	Inherits: PortaTesla
+	ReloadDelay: 65
+	Range: 5c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 5400
+		Versus:
+			None: 125
+			Wood: 65
+			Light: 85
+			Heavy: 65
+			Concrete: 40
+
+SF_PulseRifle:
+	Inherits: M1Carbine
+	ReloadDelay: 18
+	Range: 5c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 1300
+		Versus:
+			None: 120
+			Wood: 25
+			Light: 35
+			Heavy: 12
+			Concrete: 12
+
+SF_HellClaw:
+	Inherits: Claw
+	ReloadDelay: 19
+	Range: 1c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 3400
+		Versus:
+			None: 125
+			Wood: 20
+			Light: 35
+			Heavy: 10
+			Concrete: 12
+
+SF_Cinder:
+	Inherits: FireballLauncher
+	ReloadDelay: 56
+	Range: 4c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 8000
+		Versus:
+			None: 85
+			Wood: 125
+			Light: 65
+			Heavy: 30
+			Concrete: 55
+
+SF_Sanction:
+	Inherits: 90mm
+	ReloadDelay: 85
+	Warhead@1Dam: SpreadDamage
+		Damage: 10000
+
+SF_Stormshell:
+	Inherits: 90mm
+	ReloadDelay: 78
+	Warhead@1Dam: SpreadDamage
+		Damage: 8000

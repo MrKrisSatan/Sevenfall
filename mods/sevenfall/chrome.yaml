@@ -1,0 +1,12 @@
+# Temporary neutral glyph for every original faction; no missing lobby sprites.
+flags:
+	Regions:
+		a_seraph: 226, 241, 30, 15
+		a_warden: 226, 241, 30, 15
+		a_exile: 226, 241, 30, 15
+		h_bastion: 226, 241, 30, 15
+		h_union: 226, 241, 30, 15
+		h_covenant: 226, 241, 30, 15
+		d_legion: 226, 241, 30, 15
+		d_brood: 226, 241, 30, 15
+		d_court: 226, 241, 30, 15
