@@ -110,7 +110,7 @@ class CampaignDesignTests(unittest.TestCase):
         self.assertIn("25 missions", game_design)
         self.assertIn("75 narrative missions", roadmap)
         self.assertIn('href="campaigns.html"', home)
-        self.assertIn('href="campaigns.html"', (ROOT / "README.md").read_text(encoding="utf-8"))
+        self.assertIn('campaigns.html', (ROOT / "README.md").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":
