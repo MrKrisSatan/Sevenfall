@@ -6,7 +6,11 @@
 
 **Development status:** Pre-alpha **0.2 engine integration**. Builds and opens the game menu on Windows; full gameplay-loop validation and a standalone release remain outstanding.
 
-**[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
+**[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
+
+The field guide includes images and descriptions for all **39 current building designs
+and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
+original concept illustrations; their in-game sprite pass remains pending.
 
 ## The premise
 

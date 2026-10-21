@@ -1,0 +1,97 @@
+{
+  "generator": "OpenAI image generation",
+  "created": "2026-10-21",
+  "purpose": "Website combat-unit concepts; not installed game sprites",
+  "assets": [
+    {
+      "id": "a-aegis",
+      "source": "art/source/website/a-aegis.png",
+      "sha256": "1ed2ebfcb690c72d64c697e29066d370181a76fff19b6ffe297fab7c3ad0f153"
+    },
+    {
+      "id": "a-gatekeeper",
+      "source": "art/source/website/a-gatekeeper.png",
+      "sha256": "041cd7c1ff7c2953f545c22f9a5e97935a843dba7c94a43c03b1cd283ab0a2ae"
+    },
+    {
+      "id": "a-judicator",
+      "source": "art/source/website/a-judicator.png",
+      "sha256": "481e52fb1dbe34a9b6c87e2c095b5f855b4a403807e7c114d7cdfc75dfb30bdd"
+    },
+    {
+      "id": "a-penitent",
+      "source": "art/source/website/a-penitent.png",
+      "sha256": "7601bd8c6c916402708c15b2ec522efa1d463d6746da0e13acd96c2173ab96c3"
+    },
+    {
+      "id": "a-seraphim",
+      "source": "art/source/website/a-seraphim.png",
+      "sha256": "7c70aa32f92fb018aab56f89f69e34395a3f3b6660efff5901bd6df66d852b83"
+    },
+    {
+      "id": "a-watcher",
+      "source": "art/source/website/a-watcher.png",
+      "sha256": "6eca34ed0d03a87145cb88351dc447aa5d28dc7ac57584c05e7e604e1ab12f8c"
+    },
+    {
+      "id": "h-templar",
+      "source": "art/source/website/h-templar.png",
+      "sha256": "8a3a866c2f3e82c7e1edb796387d743828a5675af1afe4ce07476da56566b3f5"
+    },
+    {
+      "id": "h-bulwark",
+      "source": "art/source/website/h-bulwark.png",
+      "sha256": "8dee0f1c611c39d4220a214483670ced4112f541d1cd1bbd46a5ec8882a64cdd"
+    },
+    {
+      "id": "h-rifleman",
+      "source": "art/source/website/h-rifleman.png",
+      "sha256": "7047523e3ec5672ee14bc17ea8be85344e87078c3cfc79a23bb51899cb206e79"
+    },
+    {
+      "id": "h-rocketeer",
+      "source": "art/source/website/h-rocketeer.png",
+      "sha256": "dcd72882862bc82f879f4f27bd3df1a04c82c7227e9504f58a13f040ea4c893f"
+    },
+    {
+      "id": "h-siegegun",
+      "source": "art/source/website/h-siegegun.png",
+      "sha256": "7da621e63f4f3a0f579c30cc392d1dfc44bdb07a9328372fadac7df1f6e40716"
+    },
+    {
+      "id": "h-ranger",
+      "source": "art/source/website/h-ranger.png",
+      "sha256": "f928964eabc2ef6890639271ac8638b7eede8c135dff4b4bcc6b1c0d75df55ff"
+    },
+    {
+      "id": "d-cinderling",
+      "source": "art/source/website/d-cinderling.png",
+      "sha256": "e20f31686a808f58dcb5bcd24643069b4a08087d4c6ac58bb8dadd1b66637df2"
+    },
+    {
+      "id": "d-hellreaver",
+      "source": "art/source/website/d-hellreaver.png",
+      "sha256": "b5ec5c421d378704fd81ceac58e7a91037bedbea30f84021be8ec7b07eb2f3d5"
+    },
+    {
+      "id": "d-hexer",
+      "source": "art/source/website/d-hexer.png",
+      "sha256": "6b75f17d04b71dcc943d82fffb0bf0e91d64c14df3005871ab159d05d5b1135b"
+    },
+    {
+      "id": "d-ravager",
+      "source": "art/source/website/d-ravager.png",
+      "sha256": "718eafe5be9c500be60d503449242bc7b1078f9fe35962ce83f0167c1e3b5115"
+    },
+    {
+      "id": "d-skitter",
+      "source": "art/source/website/d-skitter.png",
+      "sha256": "e3b0f262cfeface328df2dc305891f9f9840cbbffd00a6744405bc1be9e917c8"
+    },
+    {
+      "id": "d-thrall",
+      "source": "art/source/website/d-thrall.png",
+      "sha256": "4f5e6f0f69d22651875065d93b3ce3dc30c25692c8f21ef6ed28ec648ca83985"
+    }
+  ]
+}
