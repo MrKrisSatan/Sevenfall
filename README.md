@@ -43,6 +43,8 @@ Use [BUILDING.md](BUILDING.md) to build and launch. See the [integration report]
 
 Sevenfall's narrative plan now includes **75 missions**, with **25 missions per main faction**, organized into five acts each. The three campaigns recount intertwined events from Human, Angel and Demon perspectives; their final missions are alternative versions of the same siege. See the [narrative story bible](design/STORY_BIBLE.md) and [full 75-mission atlas](design/CAMPAIGN_MISSIONS.md), including mission objectives, optional objectives, failure conditions and continuity notes. **None of these campaign missions is implemented in the current OpenRA prototype.**
 
+The shared opening cinematic, **[The Seventh Silence](design/OPENING_CINEMATIC.md)**, introduces the three armies and ends at the faction selection screen. This is a written screenplay, not a rendered in-game cutscene.
+
 ## Project management
 
 The living checklist is [ROADMAP.md](ROADMAP.md). Individual tasks are tracked in [GitHub Issues](https://github.com/MrKrisSatan/Sevenfall/issues); issues are only checked off once the change is verified. [CHANGELOG.md](CHANGELOG.md) tracks completed updates. Finished, tested builds will be published under [Releases](https://github.com/MrKrisSatan/Sevenfall/releases), not announced before they exist.
