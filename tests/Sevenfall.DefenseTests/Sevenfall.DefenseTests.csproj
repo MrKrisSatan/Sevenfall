@@ -2,4 +2,5 @@
   <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
   <ItemGroup><Compile Include="../../code/OpenRA.Mods.Sevenfall/DreadRules.cs" Link="DreadRules.cs" /></ItemGroup>
   <ItemGroup><Compile Include="../../code/OpenRA.Mods.Sevenfall/VeilglassRules.cs" Link="VeilglassRules.cs" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../../code/Sevenfall.FuzzyInference/Sevenfall.FuzzyInference.csproj" /></ItemGroup>
 </Project>

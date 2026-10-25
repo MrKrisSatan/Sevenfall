@@ -15,6 +15,9 @@ the manifest and application script; `scripts/build.py` applies it automatically
   MapCache can release an empty sheet before any map previews arrive; subsequent
   reads previously accessed a zero-size uninitialized texture.
 - Use framebuffer readback for ANGLE, as for GLES, rather than glGetTexImage.
+- Use Sevenfall's source-included Mamdani implementation in place of the unavailable
+  binary-only fuzzy-library fork. Existing squad rules and thresholds are retained;
+  centroid integration uses 256 intervals. Upgrade DependencyModel to 10.0.13.
 
 Native terrain diagnostics exercise empty-sheet and nonempty-pixel readback.
 Python tests enforce patch idempotence and rejection of unreviewed source changes.

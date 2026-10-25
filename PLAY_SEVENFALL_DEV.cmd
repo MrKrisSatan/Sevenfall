@@ -8,7 +8,7 @@ echo ================================================
 echo.
 echo This compiles a local pinned OpenRA SDK installation.
 echo The campaign previews have not yet passed live match tests.
-echo Red Alert data must be obtained legally, and is not bundled.
+echo No Red Alert installation is needed. Source builds require .NET SDK 10.0.402.
 echo.
 where py >nul 2>nul
 if errorlevel 1 (

@@ -11,7 +11,8 @@ from audit_release_dependencies import inspect
 from collect_package_notices import collect
 from package_profiles import stage_mod
 import engine_patches
-from build import TARGET_FRAMEWORK
+from build import TARGET_FRAMEWORK, RUNTIME_VERSION
+from release_dependencies import collect as collect_release_notices
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -63,11 +64,11 @@ def main():
     if dest.exists():
         raise SystemExit(f'Candidate already exists: {dest}. Use a new version suffix to preserve evidence.')
     dest.mkdir(parents=True)
-    for project in ('OpenRA.Launcher', 'OpenRA.Mods.Common', 'OpenRA.Mods.Cnc', 'OpenRA.Platforms.Default', 'OpenRA.Utility'):
+    for project in ('OpenRA.Launcher', 'OpenRA.Mods.Common', 'OpenRA.Mods.Cnc', 'OpenRA.Platforms.Default', 'OpenRA.Utility', 'OpenRA.Server'):
         run(args.dotnet, 'publish', engine/project/(project+'.csproj'), '-c', 'Release', '-r', 'win-x64',
-            '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', '-p:TargetPlatform=win-x64', '-p:PublishDir='+str(dest))
+            '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', f'-p:RuntimeFrameworkVersion={RUNTIME_VERSION}', '-p:TargetPlatform=win-x64', '-p:PublishDir='+str(dest))
     run(args.dotnet, 'publish', engine/'OpenRA.WindowsLauncher/OpenRA.WindowsLauncher.csproj', '-c', 'Release',
-        '-r', 'win-x64', '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', '-p:TargetPlatform=win-x64', '-p:LauncherName=Sevenfall',
+        '-r', 'win-x64', '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', f'-p:RuntimeFrameworkVersion={RUNTIME_VERSION}', '-p:TargetPlatform=win-x64', '-p:LauncherName=Sevenfall',
         '-p:ModID=sevenfall', '-p:DisplayName=Sevenfall', '-p:FaqUrl=https://github.com/MrKrisSatan/Sevenfall/issues',
         '-p:InformationalVersion='+args.version, '-p:PublishDir='+str(dest))
     shutil.copy2(engine/'bin/OpenRA.Mods.Sevenfall.dll', dest)
@@ -87,10 +88,13 @@ def main():
     for file in ('THIRD_PARTY_NOTICES.md', 'ALPHA_README.md'):
         shutil.copy2(ROOT/file, dest/file)
     collect(engine, dest/'Notices')
+    notice_audit = collect_release_notices(dest)
     (dest/'BUILD_INFO.json').write_text(json.dumps({
         'version': args.version, 'platform': 'windows-x64', 'self_contained': True,
         'configuration': 'Release', 'source_revisions': revisions,
         'target_framework': TARGET_FRAMEWORK, 'engine_patches': engine_patches.verify(engine),
+        'runtime_framework_version': RUNTIME_VERSION,
+        'notice_audit': notice_audit,
         'profile': args.profile, 'included_maps': included_maps,
     }, indent=2)+'\n', encoding='utf-8')
     # No external proprietary formats are allowed to sneak into the candidate.

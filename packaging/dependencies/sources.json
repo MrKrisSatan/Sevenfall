@@ -1,0 +1,343 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "id": "discord",
+      "repository": "Lachee/discord-rpc-csharp",
+      "revision": "0e08664a68b61e5f7adf341d3946d504e8dcfba2",
+      "url": "https://codeload.github.com/Lachee/discord-rpc-csharp/tar.gz/0e08664a68b61e5f7adf341d3946d504e8dcfba2",
+      "sha256": "6c6e2ea9491868968206b22479b651d1fba46d46ffedb1a3cccf6141b31422df",
+      "filename": "discord-0e08664a68b6.tar.gz",
+      "packages": [
+        "DiscordRichPresence/1.2.1.24"
+      ],
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "linguini-bundle",
+      "repository": "Ygg01/Linguini",
+      "revision": "21b67654fc373a85c4f791d48b14e3c5ffa7e071",
+      "url": "https://codeload.github.com/Ygg01/Linguini/tar.gz/21b67654fc373a85c4f791d48b14e3c5ffa7e071",
+      "sha256": "0392d68940d1f0999574209aed894d35ceace9b4410a08d15ad9aa89712d42f9",
+      "filename": "linguini-bundle-21b67654fc37.tar.gz",
+      "packages": [
+        "Linguini.Bundle/0.8.1"
+      ],
+      "notice_paths": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT",
+        "THIRD-PARTY LICENSES"
+      ]
+    },
+    {
+      "id": "linguini-shared",
+      "repository": "Ygg01/Linguini",
+      "revision": "251f15e907a6e52e08e80f769a827c747b8e9ee8",
+      "url": "https://codeload.github.com/Ygg01/Linguini/tar.gz/251f15e907a6e52e08e80f769a827c747b8e9ee8",
+      "sha256": "4712974f3bd1672456137e8eff8f3170e030338535ac1964d37e52bcaa78696b",
+      "filename": "linguini-shared-251f15e907a6.tar.gz",
+      "packages": [
+        "Linguini.Shared/0.8.0",
+        "Linguini.Syntax/0.8.0"
+      ],
+      "notice_paths": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT",
+        "THIRD-PARTY LICENSES"
+      ]
+    },
+    {
+      "id": "mono-nat",
+      "repository": "mono/Mono.Nat",
+      "revision": "48ef888146d15fa6f93e5f41dbbe55929dcdec54",
+      "url": "https://codeload.github.com/mono/Mono.Nat/tar.gz/48ef888146d15fa6f93e5f41dbbe55929dcdec54",
+      "sha256": "1d90eef08e187680e05c798cb0e4dd8d4ef6b4710fca8b5595a84f8c9c3c0d30",
+      "filename": "mono-nat-48ef888146d1.tar.gz",
+      "packages": [
+        "Mono.NAT/3.0.4"
+      ],
+      "notice_paths": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "id": "newtonsoft",
+      "repository": "JamesNK/Newtonsoft.Json",
+      "revision": "ae9fe44e1323e91bcbd185ca1a14099fba7c021f",
+      "url": "https://codeload.github.com/JamesNK/Newtonsoft.Json/tar.gz/ae9fe44e1323e91bcbd185ca1a14099fba7c021f",
+      "sha256": "9e38e784ae80f4482e28157de891a30fef00c2c5fde1b41bc168c328a5360d3b",
+      "filename": "newtonsoft-ae9fe44e1323.tar.gz",
+      "packages": [
+        "Newtonsoft.Json/13.0.1"
+      ],
+      "notice_paths": [
+        "Doc/license.txt",
+        "LICENSE.md"
+      ]
+    },
+    {
+      "id": "nvorbis",
+      "repository": "NVorbis/NVorbis",
+      "revision": "519d4e2aae7d6a4d5bab552ec5c1e517e9c78855",
+      "url": "https://codeload.github.com/NVorbis/NVorbis/tar.gz/519d4e2aae7d6a4d5bab552ec5c1e517e9c78855",
+      "sha256": "bd02e45ef102ffc4251adcfa6c829975c2669bd02837742fefe0b7af9645989e",
+      "filename": "nvorbis-519d4e2aae7d.tar.gz",
+      "packages": [
+        "NVorbis/0.10.5"
+      ],
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "pfim",
+      "repository": "nickbabcock/Pfim",
+      "revision": "0ad08ec47115331839626991cd03b7e777cc7376",
+      "url": "https://codeload.github.com/nickbabcock/Pfim/tar.gz/0ad08ec47115331839626991cd03b7e777cc7376",
+      "sha256": "d4b7775590c39ce6a2b11ea603ae35d7ccaaea4afade403e6f90e59647ac3e1f",
+      "filename": "pfim-0ad08ec47115.tar.gz",
+      "packages": [
+        "Pfim/0.11.3"
+      ],
+      "notice_paths": [
+        "LICENSE.txt",
+        "src/Pfim.Viewer/Resources/Entypo-license.txt",
+        "src/Pfim.Viewer/Resources/WindowsIcons-license.txt"
+      ]
+    },
+    {
+      "id": "beacon",
+      "repository": "rix0rrr/beacon",
+      "revision": "eeb5e3b6dccfba57b1a21ce29ce85ef1378b817f",
+      "url": "https://codeload.github.com/rix0rrr/beacon/tar.gz/eeb5e3b6dccfba57b1a21ce29ce85ef1378b817f",
+      "sha256": "05b1a5ebd8fee6c532b1c126b2281295de453ae4a5c49fff549294947abd4f1e",
+      "filename": "beacon-eeb5e3b6dccf.tar.gz",
+      "packages": [
+        "rix0rrr.BeaconLib/1.0.2"
+      ],
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "sharpziplib",
+      "repository": "icsharpcode/SharpZipLib",
+      "revision": "33f64eb0f28cdd2b084cb822fcc224c7c5aba553",
+      "url": "https://codeload.github.com/icsharpcode/SharpZipLib/tar.gz/33f64eb0f28cdd2b084cb822fcc224c7c5aba553",
+      "sha256": "c8e4861eea365c7b58ab88c08759532b79055731fd763cf2b7075ddbecba02e4",
+      "filename": "sharpziplib-33f64eb0f28c.tar.gz",
+      "packages": [
+        "SharpZipLib/1.4.2"
+      ],
+      "notice_paths": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "id": "mp3sharp",
+      "repository": "Nihlus/MP3Sharp",
+      "revision": "8731947ded938eaf3645a27feac4dbd1c63bc97e",
+      "url": "https://codeload.github.com/Nihlus/MP3Sharp/tar.gz/8731947ded938eaf3645a27feac4dbd1c63bc97e",
+      "sha256": "22837a81ebd939d6014aae8c6791708e16f11bb044cd5aae890354c94fd64a58",
+      "filename": "mp3sharp-8731947ded93.tar.gz",
+      "packages": [
+        "MP3Sharp/1.0.5"
+      ],
+      "notice_paths": [
+        "license.txt"
+      ]
+    },
+    {
+      "id": "taglib",
+      "repository": "mono/taglib-sharp",
+      "revision": "b5ae84f2e84087bf160bb0471420200dd2b5d809",
+      "url": "https://codeload.github.com/mono/taglib-sharp/tar.gz/b5ae84f2e84087bf160bb0471420200dd2b5d809",
+      "sha256": "2e54eb7382991caeafd2ac414ca5ab6ca2a4d2b5fe9bba4d8abff3fc1b308195",
+      "filename": "taglib-b5ae84f2e840.tar.gz",
+      "packages": [
+        "TagLibSharp/2.3.0"
+      ],
+      "notice_paths": [
+        "COPYING",
+        "src/TaglibSharp.Tests/samples/LICENSE"
+      ]
+    },
+    {
+      "id": "eluant",
+      "repository": "OpenRA/Eluant",
+      "revision": "e2932a142160acfef5815b36ed4b811128a5d148",
+      "url": "https://codeload.github.com/OpenRA/Eluant/tar.gz/e2932a142160acfef5815b36ed4b811128a5d148",
+      "sha256": "41f0f05e56d7de404f705410fe8e3608bca6b937399fd3c87e90294ac4a1d51d",
+      "filename": "eluant-e2932a142160.tar.gz",
+      "packages": [
+        "OpenRA-Eluant/1.0.22"
+      ],
+      "notice_paths": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "id": "freetype-wrapper",
+      "repository": "OpenRA/FreeType",
+      "revision": "adf37b2ade3f930c8c9a2ca9a02d2a81e9fb5421",
+      "url": "https://codeload.github.com/OpenRA/FreeType/tar.gz/adf37b2ade3f930c8c9a2ca9a02d2a81e9fb5421",
+      "sha256": "8f6073b2af4a852d002cd949b9c634c0ae01b96a7eb5bb7a20d6453dc3fb20f7",
+      "filename": "freetype-wrapper-adf37b2ade3f.tar.gz",
+      "packages": [
+        "OpenRA-Freetype6/1.0.11"
+      ],
+      "notice_paths": []
+    },
+    {
+      "id": "openal-wrapper",
+      "repository": "OpenRA/OpenAL-CS",
+      "revision": "406a2a52b6266e80a73ba60b05331edf647d34b8",
+      "url": "https://codeload.github.com/OpenRA/OpenAL-CS/tar.gz/406a2a52b6266e80a73ba60b05331edf647d34b8",
+      "sha256": "cbb0d0ef103ed0850c38e180fc6a6f9602a2c105f8569dd2f8d02cd3aed5ca76",
+      "filename": "openal-wrapper-406a2a52b626.tar.gz",
+      "packages": [
+        "OpenRA-OpenAL-CS/1.0.22"
+      ],
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "sdl-wrapper",
+      "repository": "OpenRA/SDL2-CS",
+      "revision": "33ade4f0c563f4050afbe6c7a8b8f47639d1b639",
+      "url": "https://codeload.github.com/OpenRA/SDL2-CS/tar.gz/33ade4f0c563f4050afbe6c7a8b8f47639d1b639",
+      "sha256": "fa63f41381bb0960a3f94451254f7a760544321304875e8d34bf9a3fc58ab19a",
+      "filename": "sdl-wrapper-33ade4f0c563.tar.gz",
+      "packages": [
+        "OpenRA-SDL2-CS/1.0.42"
+      ],
+      "notice_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "id": "angle",
+      "repository": "google/angle",
+      "revision": "5c0b4251bd2ceb89e0f92863e51da1fc6135ed59",
+      "url": "https://codeload.github.com/google/angle/tar.gz/5c0b4251bd2ceb89e0f92863e51da1fc6135ed59",
+      "sha256": "f682ef2f02da1c097271f0da6b6b13e11ce1bd3a4d6041951d7191f1a972ff00",
+      "filename": "angle-5c0b4251bd2c.tar.gz",
+      "packages": [
+        "OpenRA-SDL2-CS/1.0.42"
+      ],
+      "notice_paths": [
+        "LICENSE",
+        "src/common/third_party/xxhash/LICENSE",
+        "src/libANGLE/overlay/LICENSE.txt",
+        "src/libANGLE/renderer/vulkan/shaders/src/third_party/etc_decoder/LICENSE",
+        "src/libANGLE/renderer/vulkan/shaders/src/third_party/ffx_spd/LICENSE",
+        "src/tests/test_utils/third_party/LICENSE",
+        "src/third_party/ceval/LICENSE",
+        "src/third_party/libXNVCtrl/LICENSE",
+        "src/third_party/volk/LICENSE.md",
+        "third_party/android_system_sdk/LICENSE",
+        "third_party/bazel/LICENSE",
+        "third_party/colorama/LICENSE",
+        "third_party/flatbuffers/LICENSE",
+        "third_party/proguard/LICENSE",
+        "third_party/r8/LICENSE",
+        "third_party/turbine/LICENSE",
+        "tools/flex-bison/third_party/m4sugar/LICENSE",
+        "tools/flex-bison/third_party/skeletons/LICENSE",
+        "util/windows/third_party/StackWalker/LICENSE"
+      ]
+    },
+    {
+      "id": "openal-soft-1.23.1",
+      "url": "https://openal-soft.org/openal-releases/openal-soft-1.23.1.tar.bz2",
+      "sha256": "796f4b89134c4e57270b7f0d755f0fa3435b90da437b745160a49bd41c845b21",
+      "filename": "openal-soft-1.23.1.tar.bz2",
+      "packages": [
+        "OpenRA-OpenAL-CS/1.0.22"
+      ],
+      "notice_paths": [
+        "COPYING"
+      ]
+    },
+    {
+      "id": "lua-5.1.5",
+      "url": "https://www.lua.org/ftp/lua-5.1.5.tar.gz",
+      "sha256": "2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333",
+      "filename": "lua-5.1.5.tar.gz",
+      "packages": [
+        "OpenRA-Eluant/1.0.22"
+      ],
+      "notice_paths": [
+        "COPYRIGHT"
+      ]
+    },
+    {
+      "id": "freetype-2.13.0",
+      "url": "https://codeload.github.com/freetype/freetype/tar.gz/refs/tags/VER-2-13-0",
+      "sha256": "a683f1091aee95d2deaca9292d976f87415610b8ae1ea186abeebcb08e83ab12",
+      "filename": "freetype-2.13.0.tar.gz",
+      "packages": [
+        "OpenRA-Freetype6/1.0.11"
+      ],
+      "notice_paths": [
+        "LICENSE.TXT",
+        "src/tools/no-copyright",
+        "src/tools/update-copyright",
+        "src/tools/update-copyright-year",
+        "docs/FTL.TXT",
+        "docs/GPLv2.TXT"
+      ]
+    },
+    {
+      "id": "SDL2-2.32.0",
+      "url": "https://www.libsdl.org/release/SDL2-2.32.0.tar.gz",
+      "sha256": "f5c2b52498785858f3de1e2996eba3c1b805d08fe168a47ea527c7fc339072d0",
+      "filename": "SDL2-2.32.0.tar.gz",
+      "packages": [
+        "OpenRA-SDL2-CS/1.0.42"
+      ],
+      "notice_paths": [
+        "LICENSE.txt",
+        "Xcode-iOS/Demos/data/bitmapfont/license.txt",
+        "Xcode/SDL/pkg-support/resources/License.txt",
+        "build-scripts/update-copyright.sh",
+        "include/SDL_copying.h",
+        "src/hidapi/LICENSE-bsd.txt",
+        "src/hidapi/LICENSE-gpl3.txt",
+        "src/hidapi/LICENSE-orig.txt",
+        "src/hidapi/LICENSE.txt",
+        "src/video/yuv2rgb/LICENSE",
+        "test/COPYING",
+        "test/unifont-13.0.06-license.txt",
+        "visualtest/COPYING.txt"
+      ]
+    },
+    {
+      "id": "gnu-freefont-20090104",
+      "url": "https://ftp.gnu.org/gnu/freefont/freefont-sfd-20090104.tar.gz",
+      "sha256": "3655d3172c2d103ef0136a320d30748a56292a5b2e4bd8d463c402d757cea2c2",
+      "filename": "freefont-sfd-20090104.tar.gz",
+      "packages": [],
+      "notice_paths": [
+        "COPYING",
+        "AUTHORS",
+        "README"
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "file": "mods/common/FreeSans.ttf",
+      "sha256": "13d65b85a5a91620906577cc5effdef8a3ed2873472b2144eda4a422ab6ff588",
+      "source_component": "gnu-freefont-20090104"
+    },
+    {
+      "file": "mods/common/FreeSansBold.ttf",
+      "sha256": "16294c0eb62b33d904d4e1dfce18730e8ea1030c56731aa23c6d9a743254667f",
+      "source_component": "gnu-freefont-20090104"
+    }
+  ]
+}

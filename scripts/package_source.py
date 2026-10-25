@@ -30,8 +30,11 @@ def main():
             bundle.writestr(name+'.tar', archive)
             bundle.writestr(name+'.commit', sha+'\n')
         bundle.writestr('README.txt', 'Extract the three source tar files. Sevenfall/BUILDING.md contains build instructions.\n'
-                        'Pinned third-party dependency source and licence verification is a separate release gate.\n')
+                        'Sevenfall/scripts/build.py applies the reviewed, hash-pinned engine overlay automatically.\n'
+                        'The companion dependencies-source.zip supplies native/audio library and font source.\n')
     target.with_suffix('.zip.sha256').write_text(hashlib.sha256(target.read_bytes()).hexdigest()+'  '+target.name+'\n')
     print(target)
+    from release_dependencies import bundle as bundle_dependencies
+    print(bundle_dependencies(args.version))
 if __name__ == '__main__':
     main()

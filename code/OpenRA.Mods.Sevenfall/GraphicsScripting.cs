@@ -11,6 +11,22 @@ namespace OpenRA.Mods.Sevenfall
     {
         public SFGraphicsCheckGlobal(ScriptContext context) : base(context) { }
 
+        [Desc("Diagnostic: enqueue all bundled map previews for the actual map-cache renderer.")]
+        public int PrimeMapPreviews()
+        {
+            var previews = Game.ModData.MapCache.Where(p => p.Preview != null).ToArray();
+            foreach (var preview in previews)
+                preview.GetMinimap();
+            return previews.Length;
+        }
+
+        [Desc("Diagnostic: all bundled preview images have real cached thumbnail sprites.")]
+        public bool MapPreviewsLoaded()
+        {
+            var previews = Game.ModData.MapCache.Where(p => p.Preview != null).ToArray();
+            return previews.Length > 0 && previews.All(p => p.GetMinimap() != null);
+        }
+
         [Desc("Diagnostic: upload an empty sheet, release its CPU buffer, and read back initialized zero pixels.")]
         public bool EmptySheetReadback()
         {

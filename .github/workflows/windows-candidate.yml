@@ -1,6 +1,11 @@
 name: Windows skirmish candidate
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Optional exact tester-release version; empty builds a numbered candidate'
+        required: false
+        type: string
   push:
     branches: [main]
     paths:
@@ -29,8 +34,12 @@ jobs:
       - run: python scripts/build.py build
       - name: Package committed skirmish candidate
         shell: pwsh
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
         run: |
-          $version = '0.3.0-alpha.candidate.${{ github.run_number }}'
+          $version = $env:REQUESTED_VERSION
+          if (-not $version) { $version = '0.3.0-alpha.candidate.${{ github.run_number }}' }
+          if ($version -notmatch '^0\.[0-9]+\.[0-9]+-[A-Za-z0-9.]+$') { throw 'Invalid alpha version' }
           "CANDIDATE_VERSION=$version" >> $env:GITHUB_ENV
           python scripts/package_windows.py --profile skirmish --version $version --dotnet dotnet
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
@@ -55,6 +64,22 @@ jobs:
           Copy-Item -LiteralPath '.sdk/mods/sevenfall/maps/terrain-test' -Destination "$acceptance/mods/sevenfall/maps/terrain-test" -Recurse
           $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
           python scripts/run_defense_test.py --package $acceptance --scenario terrain --support-dir artifacts/windows-native-terrain --timeout 180
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Two standalone clients and dedicated server synchronization
+        shell: pwsh
+        run: |
+          $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
+          Copy-Item -LiteralPath '.sdk/mods/sevenfall/maps/network-test' -Destination "$acceptance/mods/sevenfall/maps/network-test" -Recurse
+          $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
+          python scripts/run_network_test.py --package $acceptance --support-dir artifacts/windows-native-network --timeout 260
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Standalone save and load state round-trip
+        shell: pwsh
+        run: |
+          $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
+          Copy-Item -LiteralPath '.sdk/mods/sevenfall/maps/save-test' -Destination "$acceptance/mods/sevenfall/maps/save-test" -Recurse
+          $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
+          python scripts/run_save_test.py --package $acceptance --support-dir artifacts/windows-native-save --timeout 180
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Compile setup with preinstalled Inno Setup
         shell: pwsh
@@ -87,4 +112,6 @@ jobs:
             dist/*.sha256
             artifacts/installer-lifecycle.json
             artifacts/windows-native-terrain/*
+            artifacts/windows-native-network/*
+            artifacts/windows-native-save/*
             docs/RELEASE_BLOCKERS.md

@@ -16,15 +16,22 @@ provenance manifests in the source repository. No exclusivity or trademark right
 in AI-generated images are asserted. No EA/Westwood game sprites, palettes,
 cinematics, music, speech or game archives are part of the standalone package.
 
-The common OpenRA module includes GNU FreeFont; upstream AUTHORS identifies it
-as GPL. Exact font notices/source must be verified before publication.
+The common OpenRA module includes GNU FreeFont 20090104. Both bundled FreeSans
+files were matched byte for byte against that official TrueType distribution.
+Its exact corresponding SFD source, COPYING, AUTHORS and README are supplied in
+the companion dependency-source archive; font hashes are pinned in the source manifest.
 The packaging script collects available NuGet licence texts and metadata in
 `Notices`, including Microsoft .NET runtime licences and notices. Entries without
-licence texts remain review items, not implied clearance.
+licence texts are supplemented from hash-pinned upstream source archives. Packaging
+rejects any runtime package without included distribution notices. Build-only
+packages are distinguished from libraries referenced by the shipped runtime manifests.
 OpenRA's dependencies include SDL2, FreeType, OpenAL, Eluant/Lua, Mono.NAT,
 SharpZipLib, Linguini, NVorbis, TagLib#, MP3Sharp and other packages identified in
 the upstream AUTHORS and the published dependency metadata. Preserve their
-included licences when redistributing the candidate.
+included licences when redistributing the candidate. The old binary-only fuzzy
+library is replaced by Sevenfall's original GPL-3.0-or-later inference implementation.
+The supported .NET 10 runtime is bundled; its exact licences/notices are retained.
+`Notices/RELINKING.md` explains replacement of dynamically loaded LGPL libraries.
 
 Corresponding source: https://github.com/MrKrisSatan/Sevenfall (the release tag),
 https://github.com/OpenRA/OpenRA (the pinned commit above), and

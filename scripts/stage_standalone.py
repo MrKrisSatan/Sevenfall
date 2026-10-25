@@ -132,6 +132,7 @@ def stage(sdk, target):
     manifest = manifest.replace('Rules:\n', 'Rules:\n')
     # Place final overrides after other actor definitions.
     manifest = manifest.replace('\tsevenfall|rules/51-engineers.yaml', '\tsevenfall|rules/51-engineers.yaml\n\tsevenfall|rules/90-alpha.yaml')
+    manifest = manifest.replace('LoadScreen: LogoStripeLoadScreen', 'LoadScreen: SFAcceptanceLoadScreen')
     (target/'mod.yaml').write_text(manifest)
     # Direct sounds can be inherited by original Sevenfall actors too.
     for directory in ('rules', 'weapons'):

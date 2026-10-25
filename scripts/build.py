@@ -14,6 +14,7 @@ SDK = ROOT / '.sdk'
 SDK_COMMIT = '0059e22e0e3bfc862500aaaa9fe1aed4ea4e994a'
 ENGINE_COMMIT = 'b4f3d8ae02b6bd6f4a3a5441e6d0daf7c5073787'
 TARGET_FRAMEWORK = 'net10.0'
+RUNTIME_VERSION = '10.0.13'
 
 def run(*args, **kwargs):
     subprocess.run([str(a) for a in args], check=True, cwd=ROOT, **kwargs)
@@ -40,6 +41,8 @@ def main():
     from engine_patches import apply
     apply(engine)
     if args.action == 'build':
+        run(args.dotnet, 'build', ROOT/'code/Sevenfall.FuzzyInference/Sevenfall.FuzzyInference.csproj',
+            '-c', 'Release', '--nologo', f'-p:OutputPath={engine / "bin"}')
         run(args.dotnet, 'build', engine / 'OpenRA.sln', '-c', 'Release', '--nologo', '-m:1')
     run(args.dotnet, 'build', ROOT / 'code/OpenRA.Mods.Sevenfall/OpenRA.Mods.Sevenfall.csproj',
         '-c', 'Release', '--nologo', f'-p:OpenRAEngineDir={engine}',

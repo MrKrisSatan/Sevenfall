@@ -174,5 +174,5 @@ Rules:
 			InitialStanceAI: HoldFire
 Weapons:
 	SF_PulseRifle:
-		Warhead@1Dam:
+		Warhead@1Dam: SpreadDamage
 			Damage: 999999
