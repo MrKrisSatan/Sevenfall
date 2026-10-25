@@ -27,7 +27,7 @@ async function loadReleases() {
       const published = release.published_at ? new Date(release.published_at).toLocaleDateString("en-GB", {year:"numeric",month:"short",day:"numeric"}) : "Unpublished";
       return '<div class="release-entry"><strong><a href="' + safe(release.html_url) + '" target="_blank" rel="noopener">' + safe(release.name || release.tag_name) + ' ↗</a></strong><p>' + safe(release.prerelease ? "Pre-release" : "Release") + ' · ' + safe(published) + ' · ' + safe(release.assets?.length || 0) + ' downloadable asset(s). Read release notes for testing status.</p></div>';
     }).join("");
-  } catch (error) { /* Preserve visible no-build fallback */ }
+  } catch (error) { /* Preserve the static published-release links. */ }
 }
 loadIssues();
 loadReleases();

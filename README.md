@@ -14,7 +14,7 @@ original concept illustrations. The [eight-direction artwork gallery](https://mr
 
 ## Play the Windows skirmish alpha
 
-Download the setup EXE or portable ZIP from **[GitHub Releases](https://github.com/MrKrisSatan/Sevenfall/releases)**.
+Download the setup EXE or portable ZIP from **[v0.3.0-alpha.1](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.1)**.
 The game bundles its runtime and content: OpenRA, Red Alert and a separate .NET
 installation are not required. Choose **Singleplayer → Skirmish**; The Twelvefold
 Scar supports up to twelve players. Sources, dependency/font sources and checksums
