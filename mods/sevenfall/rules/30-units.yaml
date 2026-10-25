@@ -404,7 +404,6 @@ D_RAVAGER:
 	Mobile:
 		Speed: 120
 
-# One faction-exclusive unit per subfaction for the initial integration slice.
 	GrantConditionOnAttack@SF_FRENZY:
 		Condition: sf-frenzy
 		ArmamentNames: primary, secondary
@@ -421,6 +420,7 @@ D_RAVAGER:
 		Color: D8443040
 		RequiresCondition: sf-frenzy
 
+# One faction-exclusive unit per subfaction for the initial integration slice.
 A_SERAPHIM:
 	Inherits: E3
 	RenderSprites:
@@ -811,7 +811,6 @@ D_HEXER:
 	Armament@SECONDARY:
 		Weapon: SF_HexBolt
 
-# Same harvested mineral; three logistics doctrines.
 	Mobile:
 		Speed: 90
 	Armament@PRIMARY:
@@ -838,6 +837,7 @@ D_HEXER:
 		Color: D8443040
 		RequiresCondition: sf-frenzy
 
+# Same harvested mineral; three logistics doctrines.
 A_GATHERER:
 	Inherits: HARV
 	RenderSprites:
