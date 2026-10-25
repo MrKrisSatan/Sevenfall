@@ -173,9 +173,9 @@ SF_CinderMaw:
         sequences += '\tshoot:\n\t\tStart: 3\n\t\tLength: 3\n\t\tTick: 80\n'
         sequences += f'\ticon:\n\t\tFilename: sevenfall|art/defenses/{actor}-icon.png\n\t\tOffset: 0,0\n\n'
         messages += [f'sf-{key}-name = {entry["name"]}', f'sf-{key}-description = {entry["description"]}']
-    (MOD / 'rules/45-defenses.yaml').write_text(rules, encoding='utf-8')
-    (MOD / 'sequences/defenses.yaml').write_text(sequences, encoding='utf-8')
-    (MOD / 'weapons/defenses.yaml').write_text(weapons, encoding='utf-8')
+    (MOD / 'rules/45-defenses.yaml').write_text(rules.rstrip() + '\n', encoding='utf-8')
+    (MOD / 'sequences/defenses.yaml').write_text(sequences.rstrip() + '\n', encoding='utf-8')
+    (MOD / 'weapons/defenses.yaml').write_text(weapons.rstrip() + '\n', encoding='utf-8')
     fluent = MOD / 'fluent/sevenfall.ftl'
     existing = fluent.read_text(encoding='utf-8').split('# Sevenfall defense roster')[0].rstrip()
     fluent.write_text(existing + '\n\n# Sevenfall defense roster\n' + '\n'.join(messages) + '\n', encoding='utf-8')

@@ -524,4 +524,3 @@ D_SKYHOOK:
 	WithAttackAnimation:
 		Sequence: shoot
 		DelayRelativeTo: Attack
-
