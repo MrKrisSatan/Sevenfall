@@ -51,5 +51,14 @@ exception while loading map thumbnails (NVIDIA RTX 3060, driver 610.88).
 This demonstrates why installer and utility acceptance alone cannot approve release.
 Selecting native OpenGL (`Graphics.GLProfile=Modern`) avoided that exception and
 allowed selection of The Twelvefold Scar in the normal twelve-slot lobby.
-The package now seeds that tested renderer preference; a rebuilt candidate must
-pass before replacing #1. Other GPU/driver combinations remain untested.
+The package now seeds that tested renderer preference.
+[Candidate #2](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40218464105)
+at revision `14d261e` passed exact-package utility checks, setup compilation,
+installer lifecycle and source/checksum generation. Other GPU/driver combinations
+remain untested.
+
+The native-OpenGL smoke also launched The Twelvefold Scar through the normal
+skirmish lobby and deployed its MCV. Map thumbnails remain blank: the debug log
+records an index error reading an uninitialized map-preview texture. Map labels,
+selection and gameplay work. This remaining preview-cache defect is a separate
+open release issue, not a passed presentation check.

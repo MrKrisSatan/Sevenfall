@@ -11,6 +11,8 @@ a setup EXE and checks install/reinstall/uninstall with preserved user data;
 the workflow [passed at gameplay revision 331f80b](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40217579692),
 including installer lifecycle checks and corresponding source/checksum artifacts.
 This is runner acceptance, not independent clean-machine gameplay approval.
+The [replacement candidate #2](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40218464105)
+also passed, with native OpenGL seeded as the preferred renderer.
 
 The [latest skirmish-alpha audit](SKIRMISH_ALPHA_AUDIT.md) reviews commit
 `360d23f`, distinguishes the portable executable from an installer, and records
@@ -63,6 +65,11 @@ The portable executable has been tested on the development Windows host with iso
 support data. This is not an independent clean-PC or clean-VM installation test.
 
 ## Remaining publication gates
+
+The downloaded candidate also exposed a map-preview texture/cache defect. Native
+OpenGL avoids the ANGLE fatal error on the tested GPU and is now the package's
+default preference, but lobby thumbnails still fail to load. Fix and verify the
+preview cache and test additional GPU/driver combinations before public release.
 
 1. Complete conquest win/loss acceptance for all parent factions.
 2. Complete an unassisted AI match, inspect combat/economy behavior and verify a finalized replay.
