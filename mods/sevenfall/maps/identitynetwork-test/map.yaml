@@ -1,0 +1,514 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Twelve Faction Identity Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_area52
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_area52
+	PlayerReference@Enemy:
+		Name: Enemy
+		Faction: h_area52
+		Enemies: F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12
+	PlayerReference@F1:
+		Name: F1
+		Faction: a_seraph
+		Enemies: Enemy
+	PlayerReference@F2:
+		Name: F2
+		Faction: a_warden
+		Enemies: Enemy
+	PlayerReference@F3:
+		Name: F3
+		Faction: a_exile
+		Enemies: Enemy
+	PlayerReference@F4:
+		Name: F4
+		Faction: a_desolation
+		Enemies: Enemy
+	PlayerReference@F5:
+		Name: F5
+		Faction: h_bastion
+		Enemies: Enemy
+	PlayerReference@F6:
+		Name: F6
+		Faction: h_union
+		Enemies: Enemy
+	PlayerReference@F7:
+		Name: F7
+		Faction: h_covenant
+		Enemies: Enemy
+	PlayerReference@F8:
+		Name: F8
+		Faction: h_area52
+		Enemies: Enemy
+	PlayerReference@F9:
+		Name: F9
+		Faction: d_legion
+		Enemies: Enemy
+	PlayerReference@F10:
+		Name: F10
+		Faction: d_brood
+		Enemies: Enemy
+	PlayerReference@F11:
+		Name: F11
+		Faction: d_court
+		Enemies: Enemy
+	PlayerReference@F12:
+		Name: F12
+		Faction: d_contempt
+		Enemies: Enemy
+	PlayerReference@Observer2:
+		Name: Observer2
+		Playable: True
+		NonCombatant: True
+		Faction: h_area52
+Actors:
+	Spawn2: mpspawn
+		Owner: Neutral
+		Location: 46,45
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 45,45
+	Power1: a_spire
+		Owner: F1
+		Location: 8,8
+	Reserve1: a_spire
+		Owner: F1
+		Location: 12,8
+	Ultimate1: sf_a_seraph_ultimate
+		Owner: F1
+		Location: 8,11
+	Unit1: sf_identity_infantry
+		Owner: F1
+		Location: 17,15
+	Enemy1: sf_identity_infantry
+		Owner: Enemy
+		Location: 18,15
+	Armor1: sf_identity_armor
+		Owner: Enemy
+		Location: 19,15
+	Building1: h_generator
+		Owner: Enemy
+		Location: 20,15
+	Specialist1: a_luminary
+		Owner: F1
+		Location: 16,17
+	Power2: a_spire
+		Owner: F2
+		Location: 36,8
+	Reserve2: a_spire
+		Owner: F2
+		Location: 40,8
+	Ultimate2: sf_a_warden_ultimate
+		Owner: F2
+		Location: 36,11
+	Unit2: sf_identity_infantry
+		Owner: F2
+		Location: 45,15
+	Enemy2: sf_identity_infantry
+		Owner: Enemy
+		Location: 46,15
+	Armor2: sf_identity_armor
+		Owner: Enemy
+		Location: 47,15
+	Building2: h_generator
+		Owner: Enemy
+		Location: 48,15
+	Specialist2: a_wardbearer
+		Owner: F2
+		Location: 44,17
+	Power3: a_spire
+		Owner: F3
+		Location: 64,8
+	Reserve3: a_spire
+		Owner: F3
+		Location: 68,8
+	Ultimate3: sf_a_exile_ultimate
+		Owner: F3
+		Location: 64,11
+	Unit3: sf_identity_infantry
+		Owner: F3
+		Location: 73,15
+	Enemy3: sf_identity_infantry
+		Owner: Enemy
+		Location: 74,15
+	Armor3: sf_identity_armor
+		Owner: Enemy
+		Location: 75,15
+	Building3: h_generator
+		Owner: Enemy
+		Location: 76,15
+	Specialist3: a_outrider
+		Owner: F3
+		Location: 72,17
+	Power4: a_spire
+		Owner: F4
+		Location: 8,29
+	Reserve4: a_spire
+		Owner: F4
+		Location: 12,29
+	Ultimate4: sf_a_desolation_ultimate
+		Owner: F4
+		Location: 8,32
+	Unit4: sf_identity_infantry
+		Owner: F4
+		Location: 17,36
+	Enemy4: sf_identity_infantry
+		Owner: Enemy
+		Location: 18,36
+	Armor4: sf_identity_armor
+		Owner: Enemy
+		Location: 19,36
+	Building4: h_generator
+		Owner: Enemy
+		Location: 20,36
+	Specialist4: a_cantor
+		Owner: F4
+		Location: 16,38
+	Power5: h_generator
+		Owner: F5
+		Location: 36,29
+	Reserve5: h_generator
+		Owner: F5
+		Location: 40,29
+	Ultimate5: sf_h_bastion_ultimate
+		Owner: F5
+		Location: 36,32
+	Unit5: sf_identity_infantry
+		Owner: F5
+		Location: 45,36
+	Enemy5: sf_identity_infantry
+		Owner: Enemy
+		Location: 46,36
+	Armor5: sf_identity_armor
+		Owner: Enemy
+		Location: 47,36
+	Building5: h_generator
+		Owner: Enemy
+		Location: 48,36
+	Specialist5: h_sapper
+		Owner: F5
+		Location: 44,38
+	Power6: h_generator
+		Owner: F6
+		Location: 64,29
+	Reserve6: h_generator
+		Owner: F6
+		Location: 68,29
+	Ultimate6: sf_h_union_ultimate
+		Owner: F6
+		Location: 64,32
+	Unit6: sf_identity_infantry
+		Owner: F6
+		Location: 73,36
+	Enemy6: sf_identity_infantry
+		Owner: Enemy
+		Location: 74,36
+	Armor6: sf_identity_armor
+		Owner: Enemy
+		Location: 75,36
+	Building6: h_generator
+		Owner: Enemy
+		Location: 76,36
+	Specialist6: h_pathfinder
+		Owner: F6
+		Location: 72,38
+	Power7: h_generator
+		Owner: F7
+		Location: 8,50
+	Reserve7: h_generator
+		Owner: F7
+		Location: 12,50
+	Ultimate7: sf_h_covenant_ultimate
+		Owner: F7
+		Location: 8,53
+	Unit7: sf_identity_infantry
+		Owner: F7
+		Location: 17,57
+	Enemy7: sf_identity_infantry
+		Owner: Enemy
+		Location: 18,57
+	Armor7: sf_identity_armor
+		Owner: Enemy
+		Location: 19,57
+	Building7: h_generator
+		Owner: Enemy
+		Location: 20,57
+	Specialist7: h_confessor
+		Owner: F7
+		Location: 16,59
+	Power8: h_generator
+		Owner: F8
+		Location: 36,50
+	Reserve8: h_generator
+		Owner: F8
+		Location: 40,50
+	Ultimate8: sf_h_area52_ultimate
+		Owner: F8
+		Location: 36,53
+	Unit8: sf_identity_infantry
+		Owner: F8
+		Location: 45,57
+	Enemy8: sf_identity_infantry
+		Owner: Enemy
+		Location: 46,57
+	Armor8: sf_identity_armor
+		Owner: Enemy
+		Location: 47,57
+	Building8: h_generator
+		Owner: Enemy
+		Location: 48,57
+	Specialist8: h_janus
+		Owner: F8
+		Location: 44,59
+	Power9: d_heart
+		Owner: F9
+		Location: 64,50
+	Reserve9: d_heart
+		Owner: F9
+		Location: 68,50
+	Ultimate9: sf_d_legion_ultimate
+		Owner: F9
+		Location: 64,53
+	Unit9: sf_identity_infantry
+		Owner: F9
+		Location: 73,57
+	Enemy9: sf_identity_infantry
+		Owner: Enemy
+		Location: 74,57
+	Armor9: sf_identity_armor
+		Owner: Enemy
+		Location: 75,57
+	Building9: h_generator
+		Owner: Enemy
+		Location: 76,57
+	Specialist9: d_taskmaster
+		Owner: F9
+		Location: 72,59
+	Power10: d_heart
+		Owner: F10
+		Location: 8,71
+	Reserve10: d_heart
+		Owner: F10
+		Location: 12,71
+	Ultimate10: sf_d_brood_ultimate
+		Owner: F10
+		Location: 8,74
+	Unit10: sf_identity_infantry
+		Owner: F10
+		Location: 17,78
+	Enemy10: sf_identity_infantry
+		Owner: Enemy
+		Location: 18,78
+	Armor10: sf_identity_armor
+		Owner: Enemy
+		Location: 19,78
+	Building10: h_generator
+		Owner: Enemy
+		Location: 20,78
+	Specialist10: d_goremaw
+		Owner: F10
+		Location: 16,80
+	Power11: d_heart
+		Owner: F11
+		Location: 36,71
+	Reserve11: d_heart
+		Owner: F11
+		Location: 40,71
+	Ultimate11: sf_d_court_ultimate
+		Owner: F11
+		Location: 36,74
+	Unit11: sf_identity_infantry
+		Owner: F11
+		Location: 45,78
+	Enemy11: sf_identity_infantry
+		Owner: Enemy
+		Location: 46,78
+	Armor11: sf_identity_armor
+		Owner: Enemy
+		Location: 47,78
+	Building11: h_generator
+		Owner: Enemy
+		Location: 48,78
+	Specialist11: d_silencer
+		Owner: F11
+		Location: 44,80
+	Power12: d_heart
+		Owner: F12
+		Location: 64,71
+	Reserve12: d_heart
+		Owner: F12
+		Location: 68,71
+	Ultimate12: sf_d_contempt_ultimate
+		Owner: F12
+		Location: 64,74
+	Unit12: sf_identity_infantry
+		Owner: F12
+		Location: 73,78
+	Enemy12: sf_identity_infantry
+		Owner: Enemy
+		Location: 74,78
+	Armor12: sf_identity_armor
+		Owner: Enemy
+		Location: 75,78
+	Building12: h_generator
+		Owner: Enemy
+		Location: 76,78
+	Specialist12: d_contemptor
+		Owner: F12
+		Location: 72,80
+	Gate: a_gatekeeper
+		Owner: F2
+		Location: 43,15
+	Supply: h_pathfinder
+		Owner: F6
+		Location: 72,36
+	Oath: h_confessor
+		Owner: F7
+		Location: 16,57
+	Iron: d_taskmaster
+		Owner: F9
+		Location: 72,57
+	BroodKiller: d_goremaw
+		Owner: F10
+		Location: 13,81
+	BroodVictim: sf_identity_infantry
+		Owner: Enemy
+		Location: 14,81
+	BroodFriendly: sf_identity_infantry
+		Owner: F10
+		Location: 15,77
+	CourtCaster: d_silencer
+		Owner: F11
+		Location: 40,87
+	CourtVictim: sf_identity_infantry
+		Owner: Enemy
+		Location: 43,87
+Rules:
+	World:
+		SFNetworkProbe:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: identity-test.lua
+	Player:
+		Shroud:
+			ExploredMapCheckboxEnabled: True
+	SF_IDENTITY_INFANTRY:
+		Inherits: H_RIFLEMAN
+		-Buildable:
+		Health:
+			HP: 30000
+	SF_IDENTITY_ARMOR:
+		Inherits: H_BULWARK
+		-Buildable:
+		Health:
+			HP: 300000
+	H_RIFLEMAN:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_BULWARK:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_GOREMAW:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_SILENCER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_GATEKEEPER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_PATHFINDER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_CONFESSOR:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_TASKMASTER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_LUMINARY:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_WARDBEARER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_OUTRIDER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_CANTOR:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_SAPPER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_JANUS:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_CONTEMPTOR:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	SF_A_SERAPH_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_A_WARDEN_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_A_EXILE_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_A_DESOLATION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_H_BASTION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_H_UNION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_H_COVENANT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_H_AREA52_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_D_LEGION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_D_BROOD_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_D_COURT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25
+	SF_D_CONTEMPT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 25

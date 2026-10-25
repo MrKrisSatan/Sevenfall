@@ -6,6 +6,11 @@
 
 **Development status:** **0.3 Windows skirmish tester alpha**. The standalone package includes twelve faction choices and three skirmish maps. Campaign completion and broader balance/content work remain in development. See the [tester guide](docs/TESTER_GUIDE.md) and [acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
+The next faction pass gives **all twelve hosts distinct mechanics, two exclusive
+units each and a unique superweapon**. See [faction identities, controls and
+counterplay](docs/FACTION_IDENTITIES.md). Nine specialist variants reuse the game's
+authored animated bodies; twelve new arrays use faction technology-building art.
+
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
 The field guide includes images and descriptions for all **57 current building designs

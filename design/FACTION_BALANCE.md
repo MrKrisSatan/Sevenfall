@@ -1,5 +1,9 @@
 # Faction asymmetry — initial playable tuning
 
+Historical parent-faction tuning below. The subsequent [twelve-faction identity
+pass](../docs/FACTION_IDENTITIES.md) implements exclusive mechanics, additional
+specialists, support powers and superweapons for every choice.
+
 Implemented 25 October 2026 against upstream `681cf3b`. This is an initial balance
 pass, not a claim of competitive balance or completed faction technology trees.
 

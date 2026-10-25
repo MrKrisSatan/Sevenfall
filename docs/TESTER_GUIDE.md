@@ -12,6 +12,7 @@ press **F** to deploy. Build power, a Veilworks refinery, barracks and vehicle
 production. Harvesters gather physical Veilglass and deliver it to the refinery.
 
 Three parent factions each offer four choices. See the
+[twelve faction mechanics, exclusive units and superweapons](FACTION_IDENTITIES.md),
 [subfaction controls and counterplay](SUBFACTIONS.md) and [defenses](DEFENSES.md).
 Area Fifty Two changes its SERAPH/ABYSS protocol by deploying a powered Containment
 Pylon. Flesh-wall influence, powered light barriers and hazardous Veilglass can

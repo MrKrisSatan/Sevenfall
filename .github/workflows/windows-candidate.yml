@@ -73,6 +73,22 @@ jobs:
           $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
           python scripts/run_network_test.py --package $acceptance --support-dir artifacts/windows-native-network --timeout 260
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Twelve faction mechanics and autonomous superweapon AI
+        shell: pwsh
+        run: |
+          $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
+          foreach ($map in @('identity-test', 'identityai-test', 'identitynetwork-test', 'identitysave-test')) {
+            Copy-Item -LiteralPath ".sdk/mods/sevenfall/maps/$map" -Destination "$acceptance/mods/sevenfall/maps/$map" -Recurse
+          }
+          $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
+          python scripts/run_defense_test.py --package $acceptance --scenario identity --support-dir artifacts/windows-native-identity --timeout 240
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/run_defense_test.py --package $acceptance --scenario identityai --support-dir artifacts/windows-native-identityai --timeout 240
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/run_network_test.py --package $acceptance --scenario identity --support-dir artifacts/windows-identity-network --timeout 300
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/run_save_test.py --package $acceptance --scenario identity --support-dir artifacts/windows-identity-save --timeout 240
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Standalone save and load state round-trip
         shell: pwsh
         run: |
@@ -120,4 +136,8 @@ jobs:
             artifacts/windows-native-terrain/*
             artifacts/windows-native-network/*
             artifacts/windows-native-save/*
+            artifacts/windows-native-identity/*
+            artifacts/windows-native-identityai/*
+            artifacts/windows-identity-network/*
+            artifacts/windows-identity-save/*
             docs/RELEASE_BLOCKERS.md

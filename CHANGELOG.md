@@ -1,5 +1,17 @@
 # Sevenfall changelog
 
+## Twelve-faction identity pass (alpha.2)
+
+- Added unique passive mechanics to the nine original choices, retaining the
+  Choir, Area Fifty Two and Circle of Contempt doctrines.
+- Added nine specialist variants; every faction now has two exclusive units.
+- Added twelve distinct powered superweapon arrays, targeting previews, warning
+  and impact effects, recharge timers and destruction/power/capture counterplay.
+- Added AI technology/array production and faction-specific support decisions.
+- Added native twelve-power, autonomous AI, two-client and pending-strike save/load
+  acceptance maps. See `docs/FACTION_IDENTITIES.md` for actual mechanics and limits.
+
+
 ## Windows skirmish tester release — 0.3.0-alpha.1
 
 - Self-contained .NET 10.0.13 Windows game, per-user setup, portable ZIP and

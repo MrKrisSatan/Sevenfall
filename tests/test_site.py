@@ -43,13 +43,13 @@ class WebsiteTests(unittest.TestCase):
         ids = [r['id'] for r in records]
         self.assertEqual(len(ids), len(set(ids)))
         actors = set()
-        for filename in ['20-structures.yaml', '25-support-structures.yaml', '30-units.yaml', '45-defenses.yaml','55-subfactions.yaml']:
-            actors.update(re.findall(r'^([A-Z][A-Z_]+):', (ROOT / 'mods/sevenfall/rules' / filename).read_text(encoding='utf-8'), re.M))
+        for filename in ['20-structures.yaml', '25-support-structures.yaml', '30-units.yaml', '45-defenses.yaml','55-subfactions.yaml','60-identities.yaml']:
+            actors.update(re.findall(r'^([A-Z][A-Z0-9_]+):', (ROOT / 'mods/sevenfall/rules' / filename).read_text(encoding='utf-8'), re.M))
         self.assertEqual({r['actor'] for r in records}, actors | {'FACT', 'MCV'})
         for faction in ['angels', 'humans', 'demons']:
-            self.assertEqual(collections.Counter(r['kind'] for r in records if r['faction'] == faction), {'buildings': 19, 'units': 10})
+            self.assertEqual(collections.Counter(r['kind'] for r in records if r['faction'] == faction), {'buildings': 23, 'units': 13})
         for sub in catalogue.SUBFACTIONS:
-            self.assertEqual(sum(r['subfaction'] == sub for r in records), 3 if sub in ['a_desolation','h_area52','d_contempt'] else 1)
+            self.assertEqual(sum(r['subfaction'] == sub for r in records), 4 if sub in ['a_desolation','h_area52','d_contempt'] else 3)
         for r in records:
             self.assertTrue(r['name'] and r['description'] and r['role'])
             self.assertTrue((ROOT / r['source']).is_file(), r['source'])
@@ -70,8 +70,8 @@ class WebsiteTests(unittest.TestCase):
             if name == 'forces.html':
                 for option in ['buildings', 'units', *catalogue.SUBFACTIONS]:
                     self.assertIn(option, page.options)
-                self.assertEqual(len(page.images), 87)
-                self.assertEqual(len(page.full_art), 87)
+                self.assertEqual(len(page.images), 108)
+                self.assertEqual(len(page.full_art), 108)
                 expected = (ROOT / 'docs/catalogue.template.html').read_text(encoding='utf-8').replace('<!-- ROSTER_CARDS -->', '\n'.join(map(catalogue.render_card, catalogue.build_records())))
                 self.assertEqual(text, expected)
 

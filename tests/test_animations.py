@@ -23,9 +23,9 @@ class AnimationExports(unittest.TestCase):
         extras = json.loads((ROOT / 'art/subfactions/catalogue.json').read_text(encoding='utf-8'))
         newunits = {e['id'].replace('_', '-') for e in extras if e['kind']=='unit'}
         newbuildings = {e['id'].replace('_', '-') for e in extras if e['kind']=='building'}
-        self.assertEqual(units | newunits, {r['id'] for r in catalogue if r['kind'] == 'units'})
+        self.assertEqual(units | newunits, {r.get('variant_of',r['id']) for r in catalogue if r['kind'] == 'units'})
         defenses = {a['id'].replace('_', '-') for a in json.loads((ROOT / 'art/defenses/catalogue.json').read_text())}
-        self.assertEqual(buildings | defenses | newbuildings, {r['id'] for r in catalogue if r['kind'] == 'buildings'})
+        self.assertEqual(buildings | defenses | newbuildings, {r.get('variant_of',r['id']) for r in catalogue if r['kind'] == 'buildings'})
         self.assertFalse(buildings & defenses)
         self.assertEqual((len(units), len(buildings)), (24, 39))
 

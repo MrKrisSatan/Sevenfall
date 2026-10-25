@@ -16,10 +16,10 @@ for p in files:
             assert key not in local_ids, f'Duplicate {key} within {p}'
             local_ids.add(key)
             # These overlays intentionally refine actors declared earlier.
-            if p.name not in ('10-factions.yaml', '35-animations.yaml', '55-subfactions.yaml', '90-alpha.yaml'):
+            if p.name not in ('10-factions.yaml', '35-animations.yaml', '55-subfactions.yaml', '60-identities.yaml', '90-alpha.yaml'):
                 assert key not in ids, f'Duplicate {key}: {p} and {ids[key]}'
             ids[key] = f'{p.name}:{no}'
-ftl = (base / 'fluent/sevenfall.ftl').read_text(encoding='utf8')
+ftl = '\n'.join(p.read_text(encoding='utf8') for p in (base / 'fluent').glob('*.ftl'))
 fluent_ids = re.findall(r'^([a-z][a-z0-9-]+)\s*=', ftl, flags=re.MULTILINE)
 assert len(set(fluent_ids)) == len(fluent_ids), 'Duplicate ftl name'
 referenced = set()

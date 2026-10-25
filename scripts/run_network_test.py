@@ -16,6 +16,7 @@ def main():
     parser.add_argument('--package',type=Path)
     parser.add_argument('--dotnet',default=str(ROOT/'.tools/dotnet10/dotnet.exe'))
     parser.add_argument('--support-dir',type=Path,required=True)
+    parser.add_argument('--scenario',choices=['doctrine','identity'],default='doctrine')
     parser.add_argument('--timeout',type=int,default=240)
     args=parser.parse_args();engine=(args.package or args.engine_dir).resolve();support=args.support_dir.resolve()
     if support.exists():parser.error('Preserving existing acceptance evidence; choose a fresh directory')
@@ -23,7 +24,10 @@ def main():
     search=str(engine/'mods') if args.package else f'{ROOT/".sdk/mods"},{engine/"mods"}'
     env=dict(os.environ,ENGINE_DIR=str(engine),MOD_SEARCH_PATHS=search)
     utility=[str(engine/'OpenRA.Utility.exe')] if args.package else [args.dotnet,str(engine/'bin/OpenRA.Utility.dll')]
-    network_map=engine/'mods/sevenfall/maps/network-test' if args.package else ROOT/'.sdk/mods/sevenfall/maps/network-test'
+    mapname='identitynetwork-test' if args.scenario=='identity' else 'network-test'
+    checks=78 if args.scenario=='identity' else 34
+    marker=args.scenario.upper()+'_TEST COMPLETE checks='+str(checks)
+    network_map=engine/'mods/sevenfall/maps'/mapname if args.package else ROOT/'.sdk/mods/sevenfall/maps'/mapname
     uid=subprocess.check_output([*utility,'sevenfall','--map-hash',str(network_map)],env=env,text=True).strip()
     if not re.fullmatch('[0-9a-f]{40}',uid):raise RuntimeError('Invalid map hash output')
     with socket.socket() as reservation:
@@ -55,14 +59,14 @@ def main():
         texts=[(support/f'client-{i}.log').read_text(encoding='utf-8',errors='replace') for i in range(2)]
         snapshots=[dict(re.findall(r'NETWORK_TEST SNAPSHOT tick=(\d+) hash=(-?\d+)',text)) for text in texts]
         for i,(client,text) in enumerate(zip(clients,texts)):
-            if client.poll()!=0 or 'NETWORK_TEST COMPLETE ticks=1250' not in text or 'DOCTRINE_TEST COMPLETE checks=34' not in text:
+            if client.poll()!=0 or 'NETWORK_TEST COMPLETE ticks=1250' not in text or marker not in text:
                 raise RuntimeError(f'Client {i} did not complete native network/doctrine acceptance')
             if 'out of sync' in text.lower() or 'Fatal Lua Error' in text or 'Exception of type' in text:
                 raise RuntimeError(f'Client {i} logged an exception or synchronization failure')
         if len(snapshots[0])<5 or snapshots[0]!=snapshots[1]:raise RuntimeError('Independent client sync snapshots differ')
-        report={'clients':2,'dedicated_server':True,'doctrine_assertions_per_client':34,'matching_sync_snapshots':snapshots[0],'ticks':1250,'normal_client_exit_codes':[c.returncode for c in clients]}
+        report={'clients':2,'dedicated_server':True,args.scenario+'_assertions_per_client':checks,'matching_sync_snapshots':snapshots[0],'ticks':1250,'normal_client_exit_codes':[c.returncode for c in clients]}
         (support/'network-acceptance.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
-        print('PASS: two native clients, 34 doctrine checks each, matching sync hashes and graceful exits.')
+        print(f'PASS: two native clients, {checks} {args.scenario} checks each, matching sync hashes and graceful exits.')
     finally:
         for process in reversed(processes):
             if process.poll() is None:

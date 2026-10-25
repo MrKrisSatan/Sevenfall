@@ -18,7 +18,7 @@ class TurnaroundTests(unittest.TestCase):
 
     def test_all_current_units_and_new_domains_have_eight_views(self):
         current = json.loads((ROOT / 'docs/roster.json').read_text(encoding='utf-8'))
-        current_ids = {r['id'] for r in current if r['kind'] == 'units'}
+        current_ids = {r.get('variant_of',r['id']) for r in current if r['kind'] == 'units'}
         ids = {r['id'] for r in self.roster}
         new = json.loads((ROOT / 'art/subfactions/manifest.json').read_text(encoding='utf-8'))
         animated_ids = {e['id'].replace('_','-') for e in new['assets'] if e['frames']==64}

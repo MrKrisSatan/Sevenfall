@@ -1,5 +1,24 @@
 # Skirmish tester alpha acceptance — 25 October 2026
 
+## Alpha.2 faction identity pass
+
+The [twelve-faction identity pass](FACTION_IDENTITIES.md) adds two exclusive units
+per faction, nine new specialist variants, nine additional passives and twelve
+exclusive superweapons. Source validation: **103 Python tests**, **120 C# assertions**,
+engine YAML and chrome checks. Native faction acceptance: **78 checks** covering
+all twelve real powers and their counterplay. A separate prepared-army AI scenario
+verifies **12 independent faction superweapon launches**, without scripted targeting.
+
+The new two-client variant runs the full 78-check scenario on each independent
+client and compares five world-state hashes. The new save/load variant saves at
+tick 200, **during the first set of pending strike warnings**, restores through
+the normal load order and compares four later hashes plus the full 78 checks.
+The Windows packaging workflow runs all these against a disposable copy of the
+exact self-contained release binaries, alongside the original regression gates.
+The additional diagnostic maps remain absent from the public skirmish profile.
+
+## Alpha.1 baseline evidence
+
 Scope: a complete, self-contained **Windows x64 skirmish alpha for testers**.
 This is an early playtest release, not the finished campaign game or a claim that
 every faction matchup is balanced. Public downloads include setup, portable game,

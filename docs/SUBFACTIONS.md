@@ -1,5 +1,9 @@
 # Three additional subfaction doctrines
 
+The current twelve-faction pass is documented in [Faction identities](FACTION_IDENTITIES.md).
+All twelve now have two exclusive units, distinct mechanics and a superweapon.
+The detailed Choir, Area Fifty Two and Circle mechanics below remain in effect.
+
 These are additive playable prototypes: the original nine choices remain, and the
 lobby/random pool now contains twelve. Each addition has two exclusive units and
 one exclusive defense, while retaining its parent's economy and shared army.

@@ -1,0 +1,67 @@
+# Generated original specialist weapons.
+
+SF_Luminary:
+	Inherits: SF_HaloLance
+	Range: 7c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 6500
+
+SF_WardBolt:
+	Inherits: SF_HaloLance
+	Range: 4c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 2200
+
+SF_Outrider:
+	Inherits: SF_Sanction
+	Range: 5c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 4200
+
+SF_BreachCharge:
+	Inherits: SF_RocketeerAG
+	Range: 3c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 5500
+		Versus:
+			Concrete: 140
+			Wood: 100
+
+SF_Pathfinder:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 1000
+
+SF_Confessor:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 1000
+
+SF_Taskmaster:
+	Inherits: SF_Cinder
+	Range: 4c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 3600
+
+SF_Goremaw:
+	Inherits: SF_RavagerClaw
+	Range: 1c512
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 7500
+
+SF_Silencer:
+	Inherits: SF_Cinder
+	Range: 7c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 1600

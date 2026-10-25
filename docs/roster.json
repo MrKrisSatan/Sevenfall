@@ -69,6 +69,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "sf-a-exile-ultimate",
+    "actor": "SF_A_EXILE_ULTIMATE",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Heaven in Revolt Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, allied units within 6 cells gain 40% firepower and 50% speed for 20s, but take 20% more damage. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 180s.",
+    "source": "art/source/a-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "a-tech",
+    "art_id": "a-tech",
+    "availability": "The Unshackled exclusive",
+    "subfaction": "a_exile"
+  },
+  {
     "id": "a-armory",
     "actor": "A_ARMORY",
     "faction": "angels",
@@ -137,6 +152,21 @@
     "status": "Original game art",
     "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "sf-a-desolation-ultimate",
+    "actor": "SF_A_DESOLATION_ULTIMATE",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Requiem for the Living Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, allied troops within 6 cells gain 45% firepower for 20s; enemy infantry are weakened and slowed for 12s. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 240s.",
+    "source": "art/source/a-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "a-tech",
+    "art_id": "a-tech",
+    "availability": "Choir of Desolation exclusive",
+    "subfaction": "a_desolation"
   },
   {
     "id": "a-service",
@@ -221,6 +251,36 @@
     "status": "Original game art",
     "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "sf-a-seraph-ultimate",
+    "actor": "SF_A_SERAPH_ULTIMATE",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Spear of First Light Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, deals 15000 damage to enemy units and 25000 to buildings within 4 cells. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 240s.",
+    "source": "art/source/a-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "a-tech",
+    "art_id": "a-tech",
+    "availability": "Seraphic Synod exclusive",
+    "subfaction": "a_seraph"
+  },
+  {
+    "id": "sf-a-warden-ultimate",
+    "actor": "SF_A_WARDEN_ULTIMATE",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "The Unbroken Gate Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, allies within 6 cells take 65% less damage and regenerate 2% HP per second for 15s. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 210s.",
+    "source": "art/source/a-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "a-tech",
+    "art_id": "a-tech",
+    "availability": "Order of the Gate exclusive",
+    "subfaction": "a_warden"
   },
   {
     "id": "a-naval",
@@ -335,6 +395,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "a-outrider",
+    "actor": "A_OUTRIDER",
+    "faction": "angels",
+    "kind": "units",
+    "name": "Exile Outrider",
+    "role": "Exclusive specialist",
+    "description": "Fast, lightly protected attack chassis. At low health Defiance improves speed and damage; kite rather than trade with heavy armor.",
+    "source": "art/source/website/a-aegis.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "a-aegis",
+    "art_id": "a-aegis",
+    "availability": "The Unshackled exclusive",
+    "subfaction": "a_exile"
+  },
+  {
     "id": "a-gatekeeper",
     "actor": "A_GATEKEEPER",
     "faction": "angels",
@@ -363,6 +438,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "a-luminary",
+    "actor": "A_LUMINARY",
+    "faction": "angels",
+    "kind": "units",
+    "name": "Luminary",
+    "role": "Exclusive specialist",
+    "description": "Long-range seven-cell light artillery in an infantry body; needs a screen and three seconds stationary for focused volleys.",
+    "source": "art/source/website/a-judicator.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "a-judicator",
+    "art_id": "a-judicator",
+    "availability": "Seraphic Synod exclusive",
+    "subfaction": "a_seraph"
+  },
+  {
     "id": "a-penitent",
     "actor": "A_PENITENT",
     "faction": "angels",
@@ -389,6 +479,21 @@
     "status": "Concept illustration",
     "availability": "Seraphic Synod exclusive",
     "subfaction": "a_seraph"
+  },
+  {
+    "id": "a-wardbearer",
+    "actor": "A_WARDBEARER",
+    "faction": "angels",
+    "kind": "units",
+    "name": "Wardbearer",
+    "role": "Exclusive specialist",
+    "description": "Infantry shield relay. Projects the same four-cell non-stacking formation protection as a Gatekeeper.",
+    "source": "art/source/website/a-watcher.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "a-watcher",
+    "art_id": "a-watcher",
+    "availability": "Order of the Gate exclusive",
+    "subfaction": "a_warden"
   },
   {
     "id": "a-watcher",
@@ -430,6 +535,21 @@
     "status": "Original game art",
     "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "sf-h-covenant-ultimate",
+    "actor": "SF_H_COVENANT_ULTIMATE",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Ashes to Ashes Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, fully heals allied infantry and reduces incoming damage by 80% for 12s within 6 cells. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 210s.",
+    "source": "art/source/h-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "h-tech",
+    "art_id": "h-tech",
+    "availability": "Ashen Covenant exclusive",
+    "subfaction": "h_covenant"
   },
   {
     "id": "h-autocannon",
@@ -488,6 +608,21 @@
     "subfaction": "h_area52"
   },
   {
+    "id": "sf-h-union-ultimate",
+    "actor": "SF_H_UNION_ULTIMATE",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Emergency Airlift Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, repairs allied units by 30% maximum HP and grants 30% speed for 20s within 7 cells. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 150s.",
+    "source": "art/source/h-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "h-tech",
+    "art_id": "h-tech",
+    "availability": "Free Earth Union exclusive",
+    "subfaction": "h_union"
+  },
+  {
     "id": "h-veilworks",
     "actor": "H_VEILWORKS",
     "faction": "humans",
@@ -544,6 +679,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "sf-h-area52-ultimate",
+    "actor": "SF_H_AREA52_ULTIMATE",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Project Event Horizon Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, deals 12000 damage to enemies, locks all nearby troops for 6s, and nullifies supernatural abilities for 30s. Affects friendly troops too. Radius 5. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 270s.",
+    "source": "art/source/h-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "h-tech",
+    "art_id": "h-tech",
+    "availability": "Area Fifty Two exclusive",
+    "subfaction": "h_area52"
+  },
+  {
     "id": "h-radar",
     "actor": "H_RADAR",
     "faction": "humans",
@@ -584,6 +734,21 @@
     "status": "Original game art",
     "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "sf-h-bastion-ultimate",
+    "actor": "SF_H_BASTION_ULTIMATE",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Rolling Thunder Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, three eastward-moving impacts at 1s intervals deal 9000 unit / 18000 building damage in 3-cell circles. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 240s.",
+    "source": "art/source/h-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "h-tech",
+    "art_id": "h-tech",
+    "availability": "Bastion Directorate exclusive",
+    "subfaction": "h_bastion"
   },
   {
     "id": "h-service",
@@ -684,6 +849,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "h-confessor",
+    "actor": "H_CONFESSOR",
+    "faction": "humans",
+    "kind": "units",
+    "name": "Ash Confessor",
+    "role": "Exclusive specialist",
+    "description": "Lightly armed battlefield medic. Projects a four-cell healing and protection oath for infantry.",
+    "source": "art/source/website/h-rifleman.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "h-rifleman",
+    "art_id": "h-rifleman",
+    "availability": "Ashen Covenant exclusive",
+    "subfaction": "h_covenant"
+  },
+  {
     "id": "h-templar",
     "actor": "H_TEMPLAR",
     "faction": "humans",
@@ -696,6 +876,21 @@
     "status": "Concept illustration",
     "availability": "Ashen Covenant exclusive",
     "subfaction": "h_covenant"
+  },
+  {
+    "id": "h-sapper",
+    "actor": "H_SAPPER",
+    "faction": "humans",
+    "kind": "units",
+    "name": "Bastion Sapper",
+    "role": "Exclusive specialist",
+    "description": "Short-range breaching rocket specialist. Strong against concrete; fragile during the approach.",
+    "source": "art/source/website/h-rocketeer.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "h-rocketeer",
+    "art_id": "h-rocketeer",
+    "availability": "Bastion Directorate exclusive",
+    "subfaction": "h_bastion"
   },
   {
     "id": "h-bulwark",
@@ -738,6 +933,21 @@
     "status": "Original game art",
     "availability": "Area Fifty Two exclusive",
     "subfaction": "h_area52"
+  },
+  {
+    "id": "h-pathfinder",
+    "actor": "H_PATHFINDER",
+    "faction": "humans",
+    "kind": "units",
+    "name": "Pathfinder",
+    "role": "Exclusive specialist",
+    "description": "Fast reconnaissance vehicle and six-cell mobile supply relay. Nearby allies move and reload faster.",
+    "source": "art/source/website/h-bulwark.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "h-bulwark",
+    "art_id": "h-bulwark",
+    "availability": "Free Earth Union exclusive",
+    "subfaction": "h_union"
   },
   {
     "id": "h-retrieval",
@@ -1061,6 +1271,66 @@
     "subfaction": "shared"
   },
   {
+    "id": "sf-d-contempt-ultimate",
+    "actor": "SF_D_CONTEMPT_ULTIMATE",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "The Final Verdict Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, enemy units below half HP suffer 25000 damage; others take 8000, buildings 15000. Nearby allies gain 45% firepower for 12s. Radius 5. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 240s.",
+    "source": "art/source/d-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "d-tech",
+    "art_id": "d-tech",
+    "availability": "Circle of Contempt exclusive",
+    "subfaction": "d_contempt"
+  },
+  {
+    "id": "sf-d-court-ultimate",
+    "actor": "SF_D_COURT_ULTIMATE",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "The Nameless Silence Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, enemy units and defenses within 5 cells deal no weapon damage and troops cannot move for 12s. Does not disable superweapon charging. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 240s.",
+    "source": "art/source/d-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "d-tech",
+    "art_id": "d-tech",
+    "availability": "Court of Whispers exclusive",
+    "subfaction": "d_court"
+  },
+  {
+    "id": "sf-d-legion-ultimate",
+    "actor": "SF_D_LEGION_ULTIMATE",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "The Ninth Furnace Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, deals 65000 damage to enemy buildings and 10000 to troops within 4 cells; survivors move at 40% speed for 10s. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 270s.",
+    "source": "art/source/d-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "d-tech",
+    "art_id": "d-tech",
+    "availability": "Iron Legions exclusive",
+    "subfaction": "d_legion"
+  },
+  {
+    "id": "sf-d-brood-ultimate",
+    "actor": "SF_D_BROOD_ULTIMATE",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "The Red Deluge Array",
+    "role": "Exclusive superweapon",
+    "description": "After 3s, allied infantry within 7 cells heal 25% HP, regenerate 2% HP/sec and attack 35% faster for 30s. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 180s.",
+    "source": "art/source/d-tech.png",
+    "status": "Variant \u2014 parent building art",
+    "variant_of": "d-tech",
+    "art_id": "d-tech",
+    "availability": "Blood Brood exclusive",
+    "subfaction": "d_brood"
+  },
+  {
     "id": "d-throne",
     "actor": "D_THRONE",
     "faction": "demons",
@@ -1117,6 +1387,21 @@
     "subfaction": "d_contempt"
   },
   {
+    "id": "d-goremaw",
+    "actor": "D_GOREMAW",
+    "faction": "demons",
+    "kind": "units",
+    "name": "Goremaw",
+    "role": "Exclusive specialist",
+    "description": "Heavy melee predator. Enemy troop kills restore health and accelerate its next hunt; vulnerable to kiting.",
+    "source": "art/source/website/d-ravager.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "d-ravager",
+    "art_id": "d-ravager",
+    "availability": "Blood Brood exclusive",
+    "subfaction": "d_brood"
+  },
+  {
     "id": "d-hellreaver",
     "actor": "D_HELLREAVER",
     "faction": "demons",
@@ -1159,6 +1444,21 @@
     "subfaction": "shared"
   },
   {
+    "id": "d-taskmaster",
+    "actor": "D_TASKMASTER",
+    "faction": "demons",
+    "kind": "units",
+    "name": "Iron Taskmaster",
+    "role": "Exclusive specialist",
+    "description": "Armored command infantry. Projects a four-cell siege formation that trades movement speed for protection.",
+    "source": "art/source/website/d-cinderling.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "d-cinderling",
+    "art_id": "d-cinderling",
+    "availability": "Iron Legions exclusive",
+    "subfaction": "d_legion"
+  },
+  {
     "id": "d-magistrate",
     "actor": "D_MAGISTRATE",
     "faction": "demons",
@@ -1185,6 +1485,21 @@
     "status": "Concept illustration",
     "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "d-silencer",
+    "actor": "D_SILENCER",
+    "faction": "demons",
+    "kind": "units",
+    "name": "Silencer",
+    "role": "Exclusive specialist",
+    "description": "Fragile seven-cell curse specialist. Its attacks slow and weaken a victim, enabling the rest of the army to close.",
+    "source": "art/source/website/d-cinderling.png",
+    "status": "Variant \u2014 parent concept reference",
+    "variant_of": "d-cinderling",
+    "art_id": "d-cinderling",
+    "availability": "Court of Whispers exclusive",
+    "subfaction": "d_court"
   },
   {
     "id": "d-skitter",

@@ -15,6 +15,7 @@ def main():
     p.add_argument('--engine-dir',type=Path,default=ROOT/'.sdk/engine')
     p.add_argument('--support-dir',type=Path,required=True)
     p.add_argument('--dotnet',default=str(ROOT/'.tools/dotnet10/dotnet.exe'))
+    p.add_argument('--scenario',choices=['doctrine','identity'],default='doctrine')
     p.add_argument('--timeout',type=int,default=180)
     a=p.parse_args();engine=(a.package or a.engine_dir).resolve();support=a.support_dir.resolve()
     if support.exists():p.error('Choose a fresh support directory; existing evidence is preserved')
@@ -32,7 +33,7 @@ def main():
         command=[*prefix,'Game.Mod=sevenfall',f'Engine.EngineDir={engine}',f'Engine.ModSearchPaths={search}',f'Engine.SupportDir={folder}',
             'Player.Name=SaveTester','Graphics.Mode=Windowed','Graphics.WindowedSize=1024,768','Graphics.DisableHardwareCursors=True',
             'Debug.SendSystemInformation=False','Debug.SystemInformationVersionPrompt=999','Game.IntroductionPromptVersion=999',
-            'Launch.Map=save-test' if mode=='baseline' else 'Sevenfall.LoadAcceptance=sevenfall-acceptance.orasav']
+            ('Launch.Map=identitysave-test' if a.scenario=='identity' else 'Launch.Map=save-test') if mode=='baseline' else 'Sevenfall.LoadAcceptance=sevenfall-acceptance.orasav']
         log=support/(mode+'.log')
         with log.open('w',encoding='utf-8') as output:
             try:
@@ -42,14 +43,14 @@ def main():
                 print('\n'.join(log.read_text(encoding='utf-8',errors='replace').splitlines()[-35:]))
                 raise
         text=log.read_text(encoding='utf-8',errors='replace')
-        if 'SAVE_TEST COMPLETE restored='+('False' if mode=='baseline' else 'True') not in text or 'DOCTRINE_TEST COMPLETE checks=34' not in text:
+        if 'SAVE_TEST COMPLETE restored='+('False' if mode=='baseline' else 'True') not in text or (a.scenario.upper()+'_TEST COMPLETE checks='+str(78 if a.scenario=='identity' else 34)) not in text:
             raise RuntimeError('Save/load or doctrine acceptance failed: '+mode)
         if 'SAVE_TEST FAIL' in text or 'Fatal Lua Error' in text or 'Exception of type' in text:
             raise RuntimeError('Save/load logged a failure: '+mode)
         snapshots.append(dict(re.findall(r'SAVE_TEST SNAPSHOT tick=(\d+) hash=(-?\d+)',text)))
     if len(snapshots[0])!=4 or snapshots[0]!=snapshots[1]:raise RuntimeError('Restored state diverged from uninterrupted state')
-    report={'normal_save_and_load_orders':True,'doctrine_assertions_per_run':34,'matching_state_checkpoints':snapshots[0],'normal_exit_codes':[0,0]}
+    report={'normal_save_and_load_orders':True,a.scenario+'_assertions_per_run':78 if a.scenario=='identity' else 34,'matching_state_checkpoints':snapshots[0],'normal_exit_codes':[0,0]}
     (support/'save-acceptance.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
-    print('PASS: real save/load, four matching world-state hashes and 34 doctrine checks per run.')
+    print(f'PASS: real save/load, four matching world-state hashes and {a.scenario} checks on both runs.')
 
 if __name__=='__main__':main()

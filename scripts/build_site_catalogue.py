@@ -1,6 +1,7 @@
 """Build the static, no-JavaScript-required website roster from Sevenfall rules."""
 from pathlib import Path
 import re, json, html
+from build_faction_identities import FACTIONS as IDENTITIES, SPECIALIST_ROLES
 
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / 'mods/sevenfall'
@@ -15,7 +16,7 @@ ROLES = {'advpower':'Advanced power','service':'Vehicle repair','radar':'Radar',
  'spire':'Power','generator':'Power','heart':'Power','veilworks':'Veilglass refinery'}
 
 def build_records():
-    strings = dict(re.findall(r'^(sf-[\w-]+) = (.*)$', (MOD/'fluent/sevenfall.ftl').read_text(encoding='utf-8'), re.M))
+    strings = dict(re.findall(r'^(sf-[\w-]+) = (.*)$', '\n'.join(p.read_text(encoding='utf-8') for p in (MOD/'fluent').glob('*.ftl')), re.M))
     records=[]
     for f,(faction,label) in FACTIONS.items():
         records.append(dict(id=f+'-yard',actor='FACT',faction=faction,kind='buildings',name=label[:-1]+' Construction Yard',
@@ -51,14 +52,28 @@ def build_records():
         records.append(dict(id=key,actor=actor.upper(),faction=FACTIONS[actor[0]][0],kind='units' if item['kind']=='unit' else 'buildings',
           name=item['name'],role=item['role'],description=item['description'],source='art/subfactions/source/'+actor+'.png',
           sprite=True,status='Original game art',availability=SUBFACTIONS[item['faction']]+' exclusive',subfaction=item['faction']))
+    originals={r['id']:r for r in records}
+    for faction,name,kind,power,mechanic,first,unit,title,parent,cost,hp,weapon,wp,queue,production,tech,seconds in IDENTITIES:
+        key=faction.replace('_','-')
+        base=originals[tech.replace('_','-')]
+        records.append(dict(id='sf-'+key+'-ultimate',actor='SF_'+faction.upper()+'_ULTIMATE',faction=base['faction'],kind='buildings',
+          name=power+' Array',role='Exclusive superweapon',description=strings['sf-power-'+key+'-description'],source=base['source'],
+          status='Variant — parent building art',variant_of=base['id'],art_id=base['id'],availability=name+' exclusive',subfaction=faction))
+        if title:
+            base=originals[parent.lower().replace('_','-')]
+            records.append(dict(id=unit.replace('_','-'),actor=unit.upper(),faction=base['faction'],kind='units',name=title,
+              role='Exclusive specialist',description=SPECIALIST_ROLES[unit],source=base['source'],status='Variant — parent concept reference',
+              variant_of=base['id'],art_id=base['id'],availability=name+' exclusive',subfaction=faction))
     records.sort(key=lambda r:(list(v[0] for v in FACTIONS.values()).index(r['faction']),r['kind']=='units',r['actor'] not in ['FACT','MCV'],r['name']))
     return records
 
 def render_card(r):
     e=html.escape
+    art_id=r.get('art_id',r['id'])
     note='Original animated game sprite integrated; concept art shown.' if r['status']=='Concept illustration' else 'Current original artwork.'
+    if 'variant_of' in r:note='Uses existing parent artwork; distinct in-game role and abilities.'
     return f'''<article class="roster-card {r['faction']}" id="{r['id']}" data-faction="{r['faction']}" data-kind="{r['kind']}" data-subfaction="{r['subfaction']}">
-  <button class="art-button" type="button" aria-label="Enlarge {e(r['name'])} artwork" data-art="assets/roster/full/{r['id']}.webp"><img src="assets/roster/{r['id']}.webp" width="512" height="384" loading="lazy" decoding="async" alt="{e(r['name'])} — {e(r['status'].lower())}"></button>
+  <button class="art-button" type="button" aria-label="Enlarge {e(r['name'])} artwork" data-art="assets/roster/full/{art_id}.webp"><img src="assets/roster/{art_id}.webp" width="512" height="384" loading="lazy" decoding="async" alt="{e(r['name'])} — {e(r['status'].lower())}"></button>
   <div class="roster-card-copy"><p class="card-kicker">{r['faction'].title()} / {e(r['role'])}</p><h3>{e(r['name'])}</h3><p>{e(r['description'])}</p><p class="availability">{e(r['availability'])}</p><p class="art-status"><span>{r['status']}</span> {note}</p></div>
 </article>'''
 

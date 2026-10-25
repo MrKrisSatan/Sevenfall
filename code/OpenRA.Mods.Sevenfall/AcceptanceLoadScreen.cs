@@ -34,7 +34,7 @@ namespace OpenRA.Mods.Sevenfall
                     Game.ModData.Manifest.Metadata.Version, save);
                 var state = new GameSave(path);
                 var map = Game.ModData.MapCache[state.GlobalSettings.Map];
-                if (Path.GetFileName(map.PackageName) != "save-test")
+                if (Path.GetFileName(map.PackageName) != "save-test" && Path.GetFileName(map.PackageName) != "identitysave-test")
                     throw new InvalidOperationException("Save acceptance is limited to the developer map");
                 Game.CreateAndStartLocalServer(map.Uid, new[]
                 {
@@ -57,7 +57,7 @@ namespace OpenRA.Mods.Sevenfall
             var lobby = manager.LobbyInfo;
             var map = Game.ModData.MapCache[lobby.GlobalSettings.Map];
             // This automation is impossible on the published skirmish map list.
-            if (map == null || Path.GetFileName(map.PackageName) != "network-test") return;
+            if (map == null || (Path.GetFileName(map.PackageName) != "network-test" && Path.GetFileName(map.PackageName) != "identitynetwork-test")) return;
             var local = lobby.ClientWithIndex(manager.Connection.LocalClientId);
             if (local == null) return;
             if (local.State == Session.ClientState.NotReady)

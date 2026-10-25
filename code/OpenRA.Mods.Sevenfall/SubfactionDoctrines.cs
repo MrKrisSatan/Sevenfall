@@ -79,8 +79,9 @@ namespace OpenRA.Mods.Sevenfall
         static bool Enemy(Actor a, Actor b) => a.Owner.RelationshipWith(b.Owner) == PlayerRelationship.Enemy;
         IEnumerable<SFDoctrineMember> Current(World world) => world.Actors.Where(Living)
             .Select(a => a.TraitOrDefault<SFDoctrineMember>()).Where(m => m != null && m.Active).OrderBy(m => m.Actor.ActorID);
-        public bool Suppressed(Actor actor) => actor.OccupiesSpace != null && members.Any(m => m.Active && m.Info.Role == SFDoctrineRole.Pylon
+        bool InNullField(Actor actor) => actor.OccupiesSpace != null && members.Any(m => m.Active && m.Info.Role == SFDoctrineRole.Pylon
             && m.Actor.Owner.Faction.InternalName == "h_area52" && Near(actor, m.Actor, 4096));
+        public bool Suppressed(Actor actor) => InNullField(actor) || (actor.TraitOrDefault<SFSuppressionState>()?.Active ?? false);
         public bool Convicted(Actor actor) => actor.Owner.Faction.InternalName == "a_desolation" && !Suppressed(actor)
             && members.Any(m => m.Active && m.Actor.Owner == actor.Owner &&
                 (m.Info.Role == SFDoctrineRole.Cantor || m.Info.Role == SFDoctrineRole.Shrine) && !Suppressed(m.Actor) && Near(actor, m.Actor, 5120));
@@ -173,7 +174,7 @@ namespace OpenRA.Mods.Sevenfall
             {
                 var s = For(actor.Owner);
                 var role = actor.TraitOrDefault<SFDoctrineMember>()?.Info.Role;
-                if (Suppressed(actor)) Grant(actor, "sf-null");
+                if (InNullField(actor)) Grant(actor, "sf-null");
                 if (role == SFDoctrineRole.Follower && Convicted(actor)) Grant(actor, "sf-conviction");
                 if (actor.Owner.Faction.InternalName == "a_desolation" && actor.Info.Name.StartsWith("a_")
                     && role != SFDoctrineRole.Follower && s.Resonance > 0 && Convicted(actor))
