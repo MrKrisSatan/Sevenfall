@@ -11,9 +11,9 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / 'mods/sevenfall'
 FACTIONS = {
-    'a': ('a_seraph', 'a_warden', 'a_exile'),
-    'h': ('h_bastion', 'h_union', 'h_covenant'),
-    'd': ('d_legion', 'd_brood', 'd_court'),
+    'a': ('a_seraph', 'a_warden', 'a_exile', 'a_desolation'),
+    'h': ('h_bastion', 'h_union', 'h_covenant', 'h_area52'),
+    'd': ('d_legion', 'd_brood', 'd_court', 'd_contempt'),
 }
 
 

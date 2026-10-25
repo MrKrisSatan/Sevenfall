@@ -10,13 +10,13 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 RULES = ROOT / "mods" / "sevenfall" / "rules"
 SIDES = {
-    "a": ("angels", ("a_seraph", "a_warden", "a_exile"),
+    "a": ("angels", ("a_seraph", "a_warden", "a_exile", "a_desolation"),
           "a_spire", "a_veilworks", "a_chapel", "a_armory", "a_gatherer",
           "a_watcher", "a_aegis"),
-    "h": ("humans", ("h_bastion", "h_union", "h_covenant"),
+    "h": ("humans", ("h_bastion", "h_union", "h_covenant", "h_area52"),
           "h_generator", "h_veilworks", "h_barracks", "h_motorpool",
           "h_harvester", "h_rifleman", "h_bulwark"),
-    "d": ("demons", ("d_legion", "d_brood", "d_court"),
+    "d": ("demons", ("d_legion", "d_brood", "d_court", "d_contempt"),
           "d_heart", "d_veilworks", "d_pit", "d_forge", "d_devourer",
           "d_thrall", "d_ravager"),
 }
@@ -71,9 +71,9 @@ class SkirmishContracts(unittest.TestCase):
         cls.factions = (RULES / "10-factions.yaml").read_text(encoding="utf-8")
         cls.ai = (RULES / "40-ai.yaml").read_text(encoding="utf-8")
 
-    def test_nine_factions_start_with_provided_gates(self):
+    def test_twelve_factions_start_with_provided_gates(self):
         expected = {f for side in SIDES.values() for f in side[1]}
-        names = re.findall(r"(?m)^\t\tInternalName: ([ahd]_[a-z]+)$", self.factions)
+        names = re.findall(r"(?m)^\t\tInternalName: ([ahd]_[a-z0-9]+)$", self.factions)
         self.assertEqual(set(names), expected)
         self.assertEqual(len(names), len(expected))
 

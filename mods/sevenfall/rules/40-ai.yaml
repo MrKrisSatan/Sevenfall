@@ -27,8 +27,11 @@ Player:
 		BarracksTypes: a_chapel, h_barracks, d_pit
 		VehiclesFactoryTypes: a_armory, h_motorpool, d_forge
 		ProductionTypes: a_chapel, h_barracks, d_pit, a_armory, h_motorpool, d_forge
-		DefenseTypes: a_watchfire, a_judgment, a_skyward, h_autocannon, h_missilenest, d_spinenest, d_cindermaw, d_skyhook
+		DefenseTypes: a_watchfire, a_judgment, a_skyward, h_autocannon, h_missilenest, d_spinenest, d_cindermaw, d_skyhook, a_processional, h_containment, d_throne
 		BuildingLimits:
+			a_processional: 2
+			h_containment: 1
+			d_throne: 2
 			a_watchfire: 2
 			a_judgment: 2
 			a_skyward: 2
@@ -47,6 +50,9 @@ Player:
 			h_motorpool: 1
 			d_forge: 1
 		BuildingFractions:
+			a_processional: 4
+			h_containment: 8
+			d_throne: 4
 			a_watchfire: 4
 			a_judgment: 4
 			a_skyward: 4
@@ -67,6 +73,12 @@ Player:
 	UnitBuilderBotModule:
 		RequiresCondition: sevenfall-ai
 		UnitsToBuild:
+			a_congregant: 45
+			a_cantor: 12
+			h_retrieval: 20
+			h_janus: 25
+			d_magistrate: 15
+			d_contemptor: 30
 			a_gatherer: 15
 			h_harvester: 15
 			d_devourer: 15

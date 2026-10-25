@@ -38,6 +38,9 @@
 - [ ] Ship a reproducible, engine-verified pre-alpha build
 
 ## Phase 2: Mechanical asymmetry
+- [x] Add Choir of Desolation, Area Fifty Two and Circle of Contempt as three
+      additional prototypes, each with two units, a defense and a tested doctrine
+- [ ] Complete full-match balance acceptance for the expanded twelve-choice roster
 - [x] Initial explicit combat stats/weapons, Angel Renewal, Human depot engineering
       and Demon Blood Frenzy; see [balance and limits](design/FACTION_BALANCE.md)
 - [x] Initial 15 faction defenses, including sanctuary, garrisons and dread conversion

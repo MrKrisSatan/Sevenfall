@@ -89,7 +89,7 @@ class FactionBalanceTests(unittest.TestCase):
             self.assertEqual(field(frenzy,'RequiredShotsPerInstance'),'1')
             self.assertEqual(field(frenzy,'RevokeDelay'),'100')
             for modifier in ['FirepowerMultiplier@SF_FRENZY','SpeedMultiplier@SF_FRENZY']:
-                self.assertEqual(field(trait(b,modifier),'RequiresCondition'),'sf-frenzy')
+                self.assertEqual(field(trait(b,modifier),'RequiresCondition'),'sf-frenzy && !sf-null')
         self.assertEqual(count,6)
 
     def test_human_engineering_and_economy_remain_separate(self):

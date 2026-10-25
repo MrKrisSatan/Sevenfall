@@ -6,7 +6,8 @@
     "art:animations": "node scripts/prepare_animations.cjs",
     "art:units": "node scripts/prepare_unit_turnarounds.cjs",
     "art": "node scripts/prepare_art.cjs && node scripts/prepare_logistics_art.cjs && node scripts/prepare_building_art.cjs",
-    "site:art": "node scripts/prepare_site_art.cjs"
+    "site:art": "node scripts/prepare_site_art.cjs",
+    "art:subfactions": "node scripts/prepare_subfaction_art.cjs"
   },
   "devDependencies": {
     "sharp": "0.35.5"

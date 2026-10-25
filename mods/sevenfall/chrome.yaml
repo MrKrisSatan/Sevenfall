@@ -7,12 +7,15 @@ flags:
 		a_seraph: 0, 0, 30, 15
 		a_warden: 0, 0, 30, 15
 		a_exile: 0, 0, 30, 15
+		a_desolation: 0, 0, 30, 15
 		h_bastion: 0, 15, 30, 15
 		h_union: 0, 15, 30, 15
 		h_covenant: 0, 15, 30, 15
+		h_area52: 0, 15, 30, 15
 		d_legion: 0, 30, 30, 15
 		d_brood: 0, 30, 30, 15
 		d_court: 0, 30, 30, 15
+		d_contempt: 0, 30, 30, 15
 		Random: 0, 45, 30, 15
 		RandomAllies: 0, 45, 30, 15
 		RandomSoviet: 0, 45, 30, 15

@@ -24,7 +24,8 @@ namespace OpenRA.Mods.Sevenfall
     {
         public readonly Actor Actor;
         public SFDefenseSource(Actor actor, SFDefenseSourceInfo info) : base(info) { Actor = actor; }
-        public bool Active => !IsTraitDisabled && Actor.IsInWorld && !Actor.IsDead && !Actor.Disposed;
+        public bool Active => !IsTraitDisabled && Actor.IsInWorld && !Actor.IsDead && !Actor.Disposed && (Info.Kind == SFDefenseKind.Wire || Info.Kind == SFDefenseKind.Thorns
+            || !(Actor.World.WorldActor.TraitOrDefault<SFDoctrineManager>()?.Suppressed(Actor) ?? false));
         public bool Contains(Actor actor) => (actor.CenterPosition - Actor.CenterPosition).HorizontalLengthSquared <= (long)Info.Range.Length * Info.Range.Length;
     }
 
@@ -154,7 +155,7 @@ namespace OpenRA.Mods.Sevenfall
                     mind.Progress = 0;
                     elapsed = 0; // Start timing at first contact, never five ticks before it.
                 }
-                mind.Progress = DreadRules.Advance(mind.Progress, elapsed, dread != null, sanctuary != null, tick < mind.ImmuneUntil);
+                mind.Progress = DreadRules.Advance(mind.Progress, elapsed, dread != null, sanctuary != null || (world.WorldActor.TraitOrDefault<SFDoctrineManager>()?.Convicted(actor) ?? false), tick < mind.ImmuneUntil);
                 if (mind.Progress > 0)
                     Condition(actor, this, "sf-dread");
                 if (mind.Progress < DreadRules.ThresholdTicks || dread == null)
@@ -170,6 +171,8 @@ namespace OpenRA.Mods.Sevenfall
                     if (!Living(victim) || !wall.Active || wall.Actor.Owner != owner || !Enemy(wall.Actor, victim) || !wall.Contains(victim))
                         return;
                     if (w.Actors.Where(Living).Select(a => a.TraitOrDefault<SFDefenseSource>()).Any(s => s != null && s.Active && s.Info.Kind == SFDefenseKind.Sanctuary && Allied(s.Actor, victim) && s.Contains(victim)))
+                        return;
+                    if (w.WorldActor.TraitOrDefault<SFDoctrineManager>()?.Convicted(victim) ?? false)
                         return;
                     victim.CancelActivity();
                     victim.ChangeOwner(owner);

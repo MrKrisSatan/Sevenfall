@@ -39,6 +39,7 @@ A_WATCHER:
 	Armament@PRIMARY:
 		Weapon: SF_HaloLance
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -128,13 +129,13 @@ D_THRALL:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 A_JUDICATOR:
 	Inherits: E3
@@ -179,6 +180,7 @@ A_JUDICATOR:
 	AutoTarget:
 		ScanRadius: 9
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -272,13 +274,13 @@ D_CINDERLING:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 A_AEGIS:
 	Inherits: 2TNK
@@ -319,6 +321,7 @@ A_AEGIS:
 		Recoil: 0
 		Weapon: SF_Sanction
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -412,13 +415,13 @@ D_RAVAGER:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 # One faction-exclusive unit per subfaction for the initial integration slice.
 A_SERAPHIM:
@@ -464,6 +467,7 @@ A_SERAPHIM:
 	AutoTarget:
 		ScanRadius: 9
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -509,6 +513,7 @@ A_GATEKEEPER:
 	Mobile:
 		Speed: 48
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -553,6 +558,7 @@ A_PENITENT:
 	Armament@PRIMARY:
 		Weapon: SF_PenitentLance
 	ChangesHealth@SF_RENEWAL:
+		RequiresCondition: !sf-null
 		Step: 0
 		PercentageStep: 1
 		Delay: 25
@@ -717,13 +723,13 @@ D_HELLREAVER:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 D_SKITTER:
 	Inherits: E1
@@ -770,13 +776,13 @@ D_SKITTER:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 D_HEXER:
 	Inherits: E3
@@ -829,13 +835,13 @@ D_HEXER:
 		RevokeDelay: 100
 	FirepowerMultiplier@SF_FRENZY:
 		Modifier: 120
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	SpeedMultiplier@SF_FRENZY:
 		Modifier: 110
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 	WithColoredOverlay@SF_FRENZY:
 		Color: D8443040
-		RequiresCondition: sf-frenzy
+		RequiresCondition: sf-frenzy && !sf-null
 
 # Same harvested mineral; three logistics doctrines.
 A_GATHERER:

@@ -20,7 +20,9 @@ class TurnaroundTests(unittest.TestCase):
         current = json.loads((ROOT / 'docs/roster.json').read_text(encoding='utf-8'))
         current_ids = {r['id'] for r in current if r['kind'] == 'units'}
         ids = {r['id'] for r in self.roster}
-        self.assertTrue(current_ids <= ids)
+        new = json.loads((ROOT / 'art/subfactions/manifest.json').read_text(encoding='utf-8'))
+        animated_ids = {e['id'].replace('_','-') for e in new['assets'] if e['frames']==64}
+        self.assertTrue(current_ids <= ids | animated_ids)
         self.assertEqual(len(ids), 39)
         self.assertEqual({r['id'] for r in self.manifest['assets']}, ids)
         self.assertEqual(self.manifest['directionOrder'], DIRECTIONS)

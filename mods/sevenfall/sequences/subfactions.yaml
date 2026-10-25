@@ -1,0 +1,560 @@
+a_congregant:
+	stand:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/a_congregant-icon.png
+a_congregant_death:
+	die:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/a_congregant.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+a_cantor:
+	stand:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/a_cantor-icon.png
+a_cantor_death:
+	die:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/a_cantor.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+h_retrieval:
+	stand:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/h_retrieval-icon.png
+h_retrieval_death:
+	die:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/h_retrieval.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+h_janus:
+	stand:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/h_janus-icon.png
+	damaged-idle:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 40
+		Length: 1
+		Facings: -8
+		Stride: 3
+	critical-idle:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 41
+		Length: 1
+		Facings: -8
+		Stride: 3
+h_janus_death:
+	die:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/h_janus.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+d_magistrate:
+	stand:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/d_magistrate-icon.png
+d_magistrate_death:
+	die:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/d_magistrate.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+d_contemptor:
+	stand:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	idle:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 0
+		Facings: -8
+	icon:
+		Filename: sevenfall|art/subfactions/d_contemptor-icon.png
+d_contemptor_death:
+	die:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/subfactions/d_contemptor.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+
+a_processional:
+	idle:
+		Filename: sevenfall|art/subfactions/a_processional.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	make:
+		Filename: sevenfall|art/subfactions/a_processional.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	damaged-idle:
+		Filename: sevenfall|art/subfactions/a_processional.png
+		Start: 1
+		Length: 1
+		Tick: 100
+	critical-idle:
+		Filename: sevenfall|art/subfactions/a_processional.png
+		Start: 2
+		Length: 1
+		Tick: 100
+	shoot:
+		Filename: sevenfall|art/subfactions/a_processional.png
+		Start: 3
+		Length: 3
+		Tick: 100
+	icon:
+		Filename: sevenfall|art/subfactions/a_processional-icon.png
+
+h_containment:
+	idle:
+		Filename: sevenfall|art/subfactions/h_containment.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	make:
+		Filename: sevenfall|art/subfactions/h_containment.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	damaged-idle:
+		Filename: sevenfall|art/subfactions/h_containment.png
+		Start: 1
+		Length: 1
+		Tick: 100
+	critical-idle:
+		Filename: sevenfall|art/subfactions/h_containment.png
+		Start: 2
+		Length: 1
+		Tick: 100
+	shoot:
+		Filename: sevenfall|art/subfactions/h_containment.png
+		Start: 3
+		Length: 3
+		Tick: 100
+	icon:
+		Filename: sevenfall|art/subfactions/h_containment-icon.png
+
+d_throne:
+	idle:
+		Filename: sevenfall|art/subfactions/d_throne.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	make:
+		Filename: sevenfall|art/subfactions/d_throne.png
+		Start: 0
+		Length: 1
+		Tick: 100
+	damaged-idle:
+		Filename: sevenfall|art/subfactions/d_throne.png
+		Start: 1
+		Length: 1
+		Tick: 100
+	critical-idle:
+		Filename: sevenfall|art/subfactions/d_throne.png
+		Start: 2
+		Length: 1
+		Tick: 100
+	shoot:
+		Filename: sevenfall|art/subfactions/d_throne.png
+		Start: 3
+		Length: 3
+		Tick: 100
+	icon:
+		Filename: sevenfall|art/subfactions/d_throne-icon.png

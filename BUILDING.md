@@ -178,3 +178,14 @@ and kills units to check all 24 death actor spawns. Inspect `Logs/lua.log` for
 
 To rebuild authored exports: `npm install`, `npm run art:animations`, then
 `python scripts/bind_animations.py`. Run source tests and the engine build afterward.
+
+## Additional faction doctrines
+
+Choir of Desolation, Area Fifty Two and Circle of Contempt are additive lobby choices.
+See [roles, controls and counters](docs/SUBFACTIONS.md). For Area Fifty Two, select
+a powered Containment Pylon and use Deploy (F) to switch SERAPH/ABYSS. The oldest
+powered pylon controls the army; switching pauses Janus fire for three seconds.
+
+Native acceptance: `python scripts/run_defense_test.py --scenario doctrine --support-dir artifacts/doctrines`
+and `python scripts/run_defense_test.py --scenario subproduction --support-dir artifacts/subproduction --timeout 650`.
+The latter uses real paid construction, placement and harvesting for the three new choices.

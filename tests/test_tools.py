@@ -112,8 +112,8 @@ class IntegrationTools(unittest.TestCase):
 
     def test_every_faction_has_lobby_icon_and_ingame_theme(self):
         mod = ROOT / 'mods/sevenfall'
-        factions = re.findall(r'InternalName: ([ahd]_[a-z]+)', (mod / 'rules/10-factions.yaml').read_text())
-        self.assertEqual(len(factions), 9)
+        factions = re.findall(r'InternalName: ([ahd]_[a-z0-9]+)', (mod / 'rules/10-factions.yaml').read_text())
+        self.assertEqual(len(factions), 12)
         chrome = (mod / 'chrome.yaml').read_text()
         metrics = (mod / 'metrics.yaml').read_text()
         for faction in factions:

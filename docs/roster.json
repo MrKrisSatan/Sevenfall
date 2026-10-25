@@ -9,7 +9,7 @@
     "description": "The heart of the Angel base. Deploy an MCV to establish this yard and construct faction buildings.",
     "source": "art/source/a-yard.png",
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -23,7 +23,7 @@
     "source": "art/source/a-radar.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -37,7 +37,7 @@
     "source": "art/source/a-tech.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -51,7 +51,7 @@
     "source": "art/source/a-chapel.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -65,7 +65,7 @@
     "source": "art/source/a-kennel.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -79,7 +79,7 @@
     "source": "art/source/a-armory.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -93,8 +93,22 @@
     "source": "art/defenses/source/a_judgment.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "a-processional",
+    "actor": "A_PROCESSIONAL",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Processional Shrine",
+    "role": "Shrine",
+    "description": "Powered four-person garrison and hymn relay. Extends Conviction and enables martyrdom within five cells. Empty shrines cannot shoot.",
+    "source": "art/subfactions/source/a_processional.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Choir of Desolation exclusive",
+    "subfaction": "a_desolation"
   },
   {
     "id": "a-advpower",
@@ -107,7 +121,7 @@
     "source": "art/source/a-advpower.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -121,7 +135,7 @@
     "source": "art/source/a-spire.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -135,7 +149,7 @@
     "source": "art/source/a-service.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -149,7 +163,7 @@
     "source": "art/source/a-veilworks.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -163,7 +177,7 @@
     "source": "art/defenses/source/a_sanctuary.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -177,7 +191,7 @@
     "source": "art/source/a-airfield.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -191,7 +205,7 @@
     "source": "art/source/a-helipad.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -205,7 +219,7 @@
     "source": "art/defenses/source/a_skyward.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -219,7 +233,7 @@
     "source": "art/source/a-naval.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -233,7 +247,7 @@
     "source": "art/defenses/source/a_dawnwall.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -247,7 +261,7 @@
     "source": "art/defenses/source/a_watchfire.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -261,7 +275,7 @@
     "source": "art/source/a-mcv.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -275,8 +289,36 @@
     "source": "art/source/website/a-aegis.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "a-congregant",
+    "actor": "A_CONGREGANT",
+    "faction": "angels",
+    "kind": "units",
+    "name": "Ashbound Congregant",
+    "role": "Follower",
+    "description": "Cheap human worshipper. Within five cells of a Cantor or Processional Shrine, Conviction reduces damage and prevents dread. Enemy-caused deaths charge nearby Choir angels: three stacks maximum, six seconds.",
+    "source": "art/subfactions/source/a_congregant.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Choir of Desolation exclusive",
+    "subfaction": "a_desolation"
+  },
+  {
+    "id": "a-cantor",
+    "actor": "A_CANTOR",
+    "faction": "angels",
+    "kind": "units",
+    "name": "Cantor of Desolation",
+    "role": "Cantor",
+    "description": "Angelic overseer. Grants Conviction to nearby worshippers and enables Last Hymn martyrdom within five cells. Kill or isolate the Cantor to break the formation.",
+    "source": "art/subfactions/source/a_cantor.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Choir of Desolation exclusive",
+    "subfaction": "a_desolation"
   },
   {
     "id": "a-gatherer",
@@ -289,7 +331,7 @@
     "source": "art/source/a-harvester.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -317,7 +359,7 @@
     "source": "art/source/website/a-judicator.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -359,7 +401,7 @@
     "source": "art/source/website/a-watcher.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -372,7 +414,7 @@
     "description": "The heart of the Human base. Deploy an MCV to establish this yard and construct faction buildings.",
     "source": "art/source/h-yard.png",
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -386,7 +428,7 @@
     "source": "art/source/h-airfield.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -400,7 +442,7 @@
     "source": "art/defenses/source/h_autocannon.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -414,7 +456,7 @@
     "source": "art/defenses/source/h_blastwall.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -428,8 +470,22 @@
     "source": "art/source/h-kennel.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "h-containment",
+    "actor": "H_CONTAINMENT",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Containment Pylon",
+    "role": "Pylon",
+    "description": "Powered null field suppresses Renewal, Blood Frenzy, dread and doctrine buffs within four cells, including friendly supernatural abilities. Select and Deploy (F) to switch SERAPH/ABYSS; oldest powered pylon controls your Janus tanks. Switching takes three seconds.",
+    "source": "art/subfactions/source/h_containment.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Area Fifty Two exclusive",
+    "subfaction": "h_area52"
   },
   {
     "id": "h-veilworks",
@@ -442,7 +498,7 @@
     "source": "art/source/h-veilworks.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -456,7 +512,7 @@
     "source": "art/source/h-helipad.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -470,7 +526,7 @@
     "source": "art/source/h-motorpool.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -484,7 +540,7 @@
     "source": "art/source/h-naval.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -498,7 +554,7 @@
     "source": "art/source/h-radar.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -512,7 +568,7 @@
     "source": "art/defenses/source/h_razorwire.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -526,7 +582,7 @@
     "source": "art/defenses/source/h_entrenchment.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -540,7 +596,7 @@
     "source": "art/source/h-service.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -554,7 +610,7 @@
     "source": "art/defenses/source/h_missilenest.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -568,7 +624,7 @@
     "source": "art/source/h-barracks.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -582,7 +638,7 @@
     "source": "art/source/h-tech.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -596,7 +652,7 @@
     "source": "art/source/h-generator.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -610,7 +666,7 @@
     "source": "art/source/h-advpower.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -624,7 +680,7 @@
     "source": "art/source/h-mcv.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -652,7 +708,7 @@
     "source": "art/source/website/h-bulwark.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -666,8 +722,36 @@
     "source": "art/source/h-harvester.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "h-janus",
+    "actor": "H_JANUS",
+    "faction": "humans",
+    "kind": "units",
+    "name": "Janus Tank",
+    "role": "Janus",
+    "description": "Experimental containment tank. SERAPH fires long-range precision shots; ABYSS delivers short-range infernal fire. A powered Containment Pylon is required. Protocol changes disable firing for three seconds.",
+    "source": "art/subfactions/source/h_janus.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Area Fifty Two exclusive",
+    "subfaction": "h_area52"
+  },
+  {
+    "id": "h-retrieval",
+    "actor": "H_RETRIEVAL",
+    "faction": "humans",
+    "kind": "units",
+    "name": "Retrieval Team",
+    "role": "Retrieval",
+    "description": "Black-site reconnaissance infantry with eight-cell sight and short-range cloak detection. Screens expensive experimental vehicles. Sample recovery remains future research.",
+    "source": "art/subfactions/source/h_retrieval.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Area Fifty Two exclusive",
+    "subfaction": "h_area52"
   },
   {
     "id": "h-rifleman",
@@ -680,7 +764,7 @@
     "source": "art/source/website/h-rifleman.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -694,7 +778,7 @@
     "source": "art/source/website/h-rocketeer.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -735,7 +819,7 @@
     "description": "The heart of the Demon base. Deploy an MCV to establish this yard and construct faction buildings.",
     "source": "art/source/d-yard.png",
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -749,7 +833,7 @@
     "source": "art/source/d-advpower.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -763,7 +847,7 @@
     "source": "art/source/d-naval.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -777,7 +861,7 @@
     "source": "art/source/d-pit.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -791,7 +875,7 @@
     "source": "art/defenses/source/d_thornfield.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -805,7 +889,7 @@
     "source": "art/defenses/source/d_cindermaw.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -819,7 +903,7 @@
     "source": "art/source/d-forge.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -833,7 +917,7 @@
     "source": "art/source/d-tech.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -847,7 +931,7 @@
     "source": "art/source/d-heart.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -861,7 +945,7 @@
     "source": "art/source/d-helipad.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -875,7 +959,7 @@
     "source": "art/source/d-kennel.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -889,7 +973,7 @@
     "source": "art/source/d-airfield.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -903,7 +987,7 @@
     "source": "art/source/d-veilworks.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -917,7 +1001,7 @@
     "source": "art/source/d-service.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -931,7 +1015,7 @@
     "source": "art/defenses/source/d_mourningwall.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -945,7 +1029,7 @@
     "source": "art/source/d-radar.png",
     "sprite": false,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -959,7 +1043,7 @@
     "source": "art/defenses/source/d_skyhook.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -973,8 +1057,22 @@
     "source": "art/defenses/source/d_spinenest.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "d-throne",
+    "actor": "D_THRONE",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Throne of Scorn",
+    "role": "Throne",
+    "description": "Powered organic defense and command monument. If both attacker and its living Magistrate stand within five cells, condemnation damage rises from 15% to 30%.",
+    "source": "art/subfactions/source/d_throne.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Circle of Contempt exclusive",
+    "subfaction": "d_contempt"
   },
   {
     "id": "d-mcv",
@@ -987,7 +1085,7 @@
     "source": "art/source/d-mcv.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -1001,8 +1099,22 @@
     "source": "art/source/website/d-cinderling.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "d-contemptor",
+    "actor": "D_CONTEMPTOR",
+    "faction": "demons",
+    "kind": "units",
+    "name": "Contemptor",
+    "role": "Contemptor",
+    "description": "Armored close-range execution beast. Strong against damaged heavy targets; weak against cheap infantry screens. Gains 30% execution damage against targets below half health.",
+    "source": "art/subfactions/source/d_contemptor.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Circle of Contempt exclusive",
+    "subfaction": "d_contempt"
   },
   {
     "id": "d-hellreaver",
@@ -1043,8 +1155,22 @@
     "source": "art/source/d-harvester.png",
     "sprite": true,
     "status": "Original game art",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
+  },
+  {
+    "id": "d-magistrate",
+    "actor": "D_MAGISTRATE",
+    "faction": "demons",
+    "kind": "units",
+    "name": "Magistrate of Ash",
+    "role": "Magistrate",
+    "description": "Attacking pronounces Contempt: one visible target per player, ten-second mark, eight-second retarget cooldown. Circle attacks deal 15% extra damage; killing the condemned enemy grants six seconds of Ascendancy. Killing the Magistrate cancels the mark.",
+    "source": "art/subfactions/source/d_magistrate.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Circle of Contempt exclusive",
+    "subfaction": "d_contempt"
   },
   {
     "id": "d-ravager",
@@ -1057,7 +1183,7 @@
     "source": "art/source/website/d-ravager.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   },
   {
@@ -1085,7 +1211,7 @@
     "source": "art/source/website/d-thrall.png",
     "sprite": false,
     "status": "Concept illustration",
-    "availability": "Shared by all three subfactions",
+    "availability": "Shared by all four subfactions",
     "subfaction": "shared"
   }
 ]

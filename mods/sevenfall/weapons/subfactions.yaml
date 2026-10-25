@@ -1,0 +1,39 @@
+SF_Congregant:
+	Inherits: SF_PulseRifle
+	Range: 4c0
+	ReloadDelay: 28
+	Warhead@1Dam: SpreadDamage
+		Damage: 350
+		ValidRelationships: Enemy
+SF_JanusSeraph:
+	Inherits: SF_Judgment
+	Range: 7c0
+	ReloadDelay: 80
+	Warhead@1Dam: SpreadDamage
+		Damage: 9500
+		ValidRelationships: Enemy
+SF_JanusAbyss:
+	Inherits: SF_CinderMaw
+	Range: 4c0
+	ReloadDelay: 55
+	Warhead@1Dam: SpreadDamage
+		Damage: 11500
+		ValidRelationships: Enemy
+SF_Magistrate:
+	Inherits: SF_Cinder
+	Range: 6c0
+	ReloadDelay: 50
+	Warhead@1Dam: SpreadDamage
+		Damage: 1200
+		ValidRelationships: Enemy
+SF_Contemptor:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 6500
+		ValidRelationships: Enemy
+		Versus:
+			None: 20
+			Light: 100
+			Heavy: 130

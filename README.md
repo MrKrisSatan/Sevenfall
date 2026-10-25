@@ -8,9 +8,9 @@
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
-The field guide includes images and descriptions for all **54 current building designs
-and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
-original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 24 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 54 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
+The field guide includes images and descriptions for all **57 current building designs
+and 30 unit designs**, with faction and subfaction filters. Combat-unit images are
+original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 30 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 57 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
 
 ## Try the 0.3 development candidate (Windows)
 
@@ -34,22 +34,28 @@ Report observed outcomes using [the First War runbook](tests/FIRST_WAR_RUNBOOK.m
 
 The Book of Revelation has come to pass. The broken boundary between Heaven, Earth and Hell has produced **Veilglass**, crystallised creation energy. Angels need it to sustain celestial war machines. Humans refine it to power their industrial resistance. Demons corrupt it to feed infernal armies.
 
-The three major factions each have three playable subfactions:
+The three major factions each have four playable subfactions:
 
 | Angels | Humans | Demons |
 |---|---|---|
 | Seraphic Synod | Bastion Directorate | Iron Legions |
 | Order of the Gate | Free Earth Union | Blood Brood |
 | The Unshackled | Ashen Covenant | Court of Whispers |
+| Choir of Desolation | Area Fifty Two | Circle of Contempt |
 
 ## Gameplay pillars
 
 - Classic **Command & Conquer** economy: construction yards, power plants, physical harvesters, refineries, base construction and large armies.
 - Three **asymmetric faction doctrines**: elite Angels, flexible Human combined arms, and aggressive Demonic swarms.
-- Nine subfactions, diverse units and tech trees, field control, superweapons and three planned campaigns.
+- Twelve subfactions, diverse units and tech trees, field control, superweapons and three planned campaigns.
 - Custom art, audio and maps in the finished game.
 
 ## What is actually implemented?
+
+The [three additional doctrines](docs/SUBFACTIONS.md) add worshipper martyrdom,
+SERAPH/ABYSS containment protocols, and condemned-target execution. Each new
+subfaction has two exclusive units and a defense, bringing selection to twelve.
+
 
 The [faction asymmetry pass](design/FACTION_BALANCE.md) gives Angels durable elites
 with delayed health recovery, Humans longer-range combined arms and faster depot
@@ -66,7 +72,7 @@ razorwire, three-person entrenchments, and faction ground/anti-air turrets.
 All 15 defenses have original art and damage states; 33 native acceptance checks
 exercise their effects and counters.
 
-The repository now includes nine faction choices, 36 structure variants, three faction Construction Yards and 15 faction defenses, 21 unit variants (including three harvesters), faction weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
+The repository now includes twelve faction choices, 36 structure variants, three faction Construction Yards and 18 faction defenses, 27 unit variants (including three harvesters), faction weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
 
 The [custom artwork passes](art/README.md) add faction Construction Yards, power buildings, refineries, eight-direction MCVs and harvesters, fifteen production icons, two grades of Veilglass deposits, parent faction emblems and Sevenfall menu branding. The expanded [building pass](art/BUILDINGS.md) adds 30 building sprites and icons, including faction-specific radar, repair, naval, aircraft, beast-training and technology facilities. Implemented combat units now use original directional and animated art. Sounds, projectiles and other unconverted assets still use placeholders.
 

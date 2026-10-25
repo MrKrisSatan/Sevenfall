@@ -1,0 +1,178 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Doctrine Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Choir:
+		Name: Choir
+		Faction: a_desolation
+		Enemies: Enemy
+	PlayerReference@Area:
+		Name: Area
+		Faction: h_area52
+		Enemies: Enemy
+	PlayerReference@Circle:
+		Name: Circle
+		Faction: d_contempt
+		Enemies: Enemy
+	PlayerReference@Enemy:
+		Name: Enemy
+		Faction: h_bastion
+		Enemies: Choir, Area, Circle
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 45,45
+	ChoirPower: a_spire
+		Owner: Choir
+		Location: 5,5
+	AreaPower: h_generator
+		Owner: Area
+		Location: 25,25
+	CirclePower: d_heart
+		Owner: Circle
+		Location: 55,5
+	EnemyPower: d_heart
+		Owner: Enemy
+		Location: 18,5
+	Cantor: a_cantor
+		Owner: Choir
+		Location: 10,10
+	SelfMartyr: a_congregant
+		Owner: Choir
+		Location: 10,11
+	Martyr1: a_congregant
+		Owner: Choir
+		Location: 11,10
+	Martyr2: a_congregant
+		Owner: Choir
+		Location: 11,11
+	Martyr3: a_congregant
+		Owner: Choir
+		Location: 12,11
+	Martyr4: a_congregant
+		Owner: Choir
+		Location: 12,10
+	Protected: a_congregant
+		Owner: Choir
+		Location: 11,9
+	Dread: d_mourningwall
+		Owner: Enemy
+		Location: 13,8
+	Executor: h_rifleman
+		Owner: Enemy
+		Location: 14,10
+	Pylon: h_containment
+		Owner: Area
+		Location: 30,30
+	Janus: h_janus
+		Owner: Area
+		Location: 32,30
+	LongTarget: sf_doctrine_dummy
+		Owner: Enemy
+		Location: 37,30
+	NearTarget: sf_doctrine_dummy
+		Owner: Enemy
+		Location: 34,30
+	NullAngel: a_watcher
+		Owner: Choir
+		Location: 32,32
+	Retrieval: h_retrieval
+		Owner: Area
+		Location: 28,34
+	Magistrate: d_magistrate
+		Owner: Circle
+		Location: 60,10
+	Beast: d_contemptor
+		Owner: Circle
+		Location: 61,10
+	MarkedTarget: sf_doctrine_dummy
+		Owner: Enemy
+		Location: 63,10
+	SecondTarget: sf_doctrine_dummy
+		Owner: Enemy
+		Location: 63,12
+	Shrine: a_processional
+		Owner: Choir
+		Location: 10,20
+	ShrineFollower: a_congregant
+		Owner: Choir
+		Location: 13,20
+	NullWire: h_razorwire
+		Owner: Area
+		Location: 33,29
+	WireWalker: h_rifleman
+		Owner: Enemy
+		Location: 32,29
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: doctrine-test.lua
+	Player:
+		-ConquestVictoryConditions:
+	sf_doctrine_dummy:
+		Inherits: H_BULWARK
+		-Buildable:
+		RenderSprites:
+			Image: h_bulwark
+		Health:
+			HP: 1000000
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_CONGREGANT:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_CANTOR:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_RETRIEVAL:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_JANUS:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_MAGISTRATE:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	D_CONTEMPTOR:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	A_WATCHER:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_RIFLEMAN:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_BULWARK:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+Weapons:
+	SF_PulseRifle:
+		Warhead@1Dam:
+			Damage: 999999

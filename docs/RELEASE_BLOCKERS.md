@@ -8,12 +8,16 @@ the next acceptance and release-engineering steps.
 
 ## Scope of the first alpha
 
-Nine faction selections, original ground-unit/building artwork, faction combat doctrines,
+Twelve faction selections, original ground-unit/building artwork, faction combat doctrines,
 land skirmishes, explosive Veilglass, garrisonable houses, repairable/destructible bridges,
 neutral menus and faction HUDs. Aircraft, naval and beast production facilities are
 hidden until their playable rosters exist. Campaign previews remain development content.
 Legacy voices/music are deliberately silent; combat compatibility effects are simple
 original vector sprites. This is an early playable-art pass, not final presentation.
+
+The [additional doctrine pass](SUBFACTIONS.md) preserves the original nine choices and adds
+three prototypes. Their component/paid-production evidence does not expand the
+completed-match acceptance matrix automatically.
 
 ## Completed standalone work
 

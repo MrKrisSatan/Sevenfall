@@ -8,10 +8,10 @@ MOD = ROOT / 'mods/sevenfall'
 
 class UIThemeTests(unittest.TestCase):
     def test_every_playable_faction_resolves_to_its_parent_theme(self):
-        factions = re.findall(r'InternalName: ([ahd]_[a-z]+)', (MOD/'rules/10-factions.yaml').read_text())
+        factions = re.findall(r'InternalName: ([ahd]_[a-z0-9]+)', (MOD/'rules/10-factions.yaml').read_text())
         metrics = dict(re.findall(r'FactionSuffix-([^:]+): (\w+)', (MOD/'metrics.yaml').read_text()))
         expected = {'a': 'angelic', 'h': 'human', 'd': 'infernal'}
-        self.assertEqual(len(factions), 9)
+        self.assertEqual(len(factions), 12)
         for faction in factions:
             self.assertEqual(metrics[faction], expected[faction[0]])
 

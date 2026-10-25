@@ -1,0 +1,42 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Additional Subfaction Production Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@P0:
+		Name: P0
+		Faction: a_desolation
+		Playable: True
+		LockFaction: True
+	PlayerReference@P1:
+		Name: P1
+		Faction: h_area52
+	PlayerReference@P2:
+		Name: P2
+		Faction: d_contempt
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 10,10
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: subproduction-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True

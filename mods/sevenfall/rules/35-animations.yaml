@@ -243,9 +243,12 @@ MCV.SFDEATH:
 			a_seraph: a_mcv_death
 			a_warden: a_mcv_death
 			a_exile: a_mcv_death
+			a_desolation: a_mcv_death
 			h_bastion: h_mcv_death
 			h_union: h_mcv_death
 			h_covenant: h_mcv_death
+			h_area52: h_mcv_death
 			d_legion: d_mcv_death
 			d_brood: d_mcv_death
 			d_court: d_mcv_death
+			d_contempt: d_mcv_death

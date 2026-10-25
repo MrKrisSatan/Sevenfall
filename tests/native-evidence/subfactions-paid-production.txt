@@ -1,0 +1,68 @@
+25 October 2026; pinned Windows engine; fresh content-free support directory.
+Lua debug: SUBPRODUCTION_TEST PASS: MCV deploys P0
+Lua debug: SUBPRODUCTION_TEST PASS: MCV deploys P1
+Lua debug: SUBPRODUCTION_TEST PASS: MCV deploys P2
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_generator P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_heart P2
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_spire P0
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_barracks P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_pit P2
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_chapel P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_veilworks P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_veilworks P2
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=3 units=0 queued=true cash=17548 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_veilworks P0
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_motorpool P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_forge P2
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=4 units=0 queued=true cash=16510 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=5 units=0 queued=true cash=16945 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=5 units=0 queued=true cash=16918 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_armory P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=5 units=0 queued=true cash=16183 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=5 units=0 queued=true cash=16713 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=5 units=0 queued=true cash=16765 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_radar P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_radar P2
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_advpower P2
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=5 units=0 queued=true cash=15605 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=6 units=0 queued=true cash=16605 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=7 units=0 queued=true cash=16403 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_radar P0
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_advpower P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed d_throne P2
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_advpower P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=d_magistrate
+Lua debug: SUBPRODUCTION_TEST PASS: produced d_magistrate P2
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=7 units=0 queued=true cash=15200 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=7 units=0 queued=true cash=16605 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=8 units=1 queued=true cash=15894 ready=false
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed h_containment P1
+Lua debug: SUBPRODUCTION_TEST PASS: paid and placed a_processional P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=a_congregant
+Lua debug: SUBPRODUCTION_TEST PASS: produced a_congregant P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=h_retrieval
+Lua debug: SUBPRODUCTION_TEST PASS: produced h_retrieval P1
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=d_contemptor
+Lua debug: SUBPRODUCTION_TEST PASS: produced d_contemptor P2
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=a_cantor
+Lua debug: SUBPRODUCTION_TEST PASS: produced a_cantor P0
+Lua debug: SUBPRODUCTION_TEST DETAIL: P0 stage=9 units=2 queued=false cash=14974 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P1 stage=8 units=1 queued=true cash=16515 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: P2 stage=9 units=2 queued=false cash=15340 ready=false
+Lua debug: SUBPRODUCTION_TEST DETAIL: produced count=1 type=h_janus
+Lua debug: SUBPRODUCTION_TEST PASS: produced h_janus P1
+Lua debug: SUBPRODUCTION_TEST PASS: complete paid construction and three unit roles P0
+Lua debug: SUBPRODUCTION_TEST PASS: constructed refinery accepts real deliveries P0
+Lua debug: SUBPRODUCTION_TEST PASS: production spent cash P0
+Lua debug: SUBPRODUCTION_TEST PASS: complete paid construction and three unit roles P1
+Lua debug: SUBPRODUCTION_TEST PASS: constructed refinery accepts real deliveries P1
+Lua debug: SUBPRODUCTION_TEST PASS: production spent cash P1
+Lua debug: SUBPRODUCTION_TEST PASS: complete paid construction and three unit roles P2
+Lua debug: SUBPRODUCTION_TEST PASS: constructed refinery accepts real deliveries P2
+Lua debug: SUBPRODUCTION_TEST PASS: production spent cash P2
+Lua debug: SUBPRODUCTION_TEST COMPLETE checks=39

@@ -2,10 +2,13 @@ Metrics:
 	FactionSuffix-a_seraph: angelic
 	FactionSuffix-a_warden: angelic
 	FactionSuffix-a_exile: angelic
+	FactionSuffix-a_desolation: angelic
 	FactionSuffix-h_bastion: human
 	FactionSuffix-h_union: human
 	FactionSuffix-h_covenant: human
+	FactionSuffix-h_area52: human
 	FactionSuffix-d_legion: infernal
 	FactionSuffix-d_brood: infernal
 	FactionSuffix-d_court: infernal
+	FactionSuffix-d_contempt: infernal
 	TextfieldColorHighlight: 434C58

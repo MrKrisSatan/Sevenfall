@@ -24,14 +24,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--support-dir', type=Path, required=True)
     parser.add_argument('--dotnet', default='dotnet')
+    parser.add_argument('--engine-dir', type=Path, help='An isolated built engine directory for concurrent diagnostics')
     parser.add_argument('--package', type=Path, help='Test the self-contained executable in this extracted candidate')
     parser.add_argument('--replay', type=Path, help='Replay a recorded diagnostic instead of launching its map')
-    parser.add_argument('--scenario', choices=['defense', 'release', 'environment', 'production', 'match'], default='defense')
+    parser.add_argument('--scenario', choices=['defense', 'release', 'environment', 'production', 'match', 'doctrine', 'subproduction'], default='defense')
     parser.add_argument('--timeout', type=int)
     args = parser.parse_args()
     support = args.support_dir.resolve()
     from audit_release_dependencies import inspect
-    engine = args.package.resolve() if args.package else ROOT / '.sdk/engine'
+    engine = args.package.resolve() if args.package else args.engine_dir.resolve() if args.engine_dir else ROOT / '.sdk/engine'
     mod = engine / 'mods/sevenfall' if args.package else ROOT / '.sdk/mods/sevenfall'
     if not inspect(mod / 'mod.yaml')['independent_manifest']:
         parser.error('Standalone diagnostic requires a manifest without external RA dependencies')

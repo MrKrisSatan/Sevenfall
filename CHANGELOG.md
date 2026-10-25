@@ -1,5 +1,17 @@
 # Sevenfall changelog
 
+## Three additional subfaction doctrines - 2026-10-25
+
+- Added Choir of Desolation, Area Fifty Two and Circle of Contempt, preserving the
+  original nine choices. Lobby, random selection, economy gates and HUDs support twelve.
+- Added two exclusive units and one defense per faction, with nine original assets,
+  eight-view movement/firing/death frames, icons and a field guide expanded to 87 entries.
+- Implemented capped Last Hymn martyrdom, Conviction, SERAPH/ABYSS switching and null
+  fields, condemned targets, execution bonuses and temporary Ascendancy.
+- Native acceptance: 34 doctrine checks and 39 real paid-production/economy checks
+  for the three additions. Full-match balance and multiplayer acceptance remain open.
+- Full mechanics, controls and counterplay: docs/SUBFACTIONS.md.
+
 ## Skirmish alpha release audit — 2026-10-25
 
 - Reviewed standalone staging, gameplay diagnostics, source and Windows distribution.

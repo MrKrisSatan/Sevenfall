@@ -1,0 +1,36 @@
+25 October 2026; pinned Windows engine; fresh content-free support directory.
+Lua debug: DOCTRINE_TEST PASS: Cantor grants Conviction
+Lua debug: DOCTRINE_TEST PASS: powered shrine extends hymn network
+Lua debug: DOCTRINE_TEST PASS: containment field affects friendly supernatural units
+Lua debug: DOCTRINE_TEST PASS: SERAPH is default protocol
+Lua debug: DOCTRINE_TEST PASS: wire crossing is inside the null field
+Lua debug: DOCTRINE_TEST PASS: physical razorwire remains harmful inside a null field
+Lua debug: DOCTRINE_TEST PASS: self-inflicted martyrdom grants no Resonance
+Lua debug: DOCTRINE_TEST PASS: Magistrate attack condemns its target
+Lua debug: DOCTRINE_TEST PASS: Circle-only condemnation grants 15 percent damage
+Lua debug: DOCTRINE_TEST PASS: foreign factions gain no condemnation damage
+Lua debug: DOCTRINE_TEST PASS: enemy kill grants one Last Hymn stack
+Lua debug: DOCTRINE_TEST PASS: SERAPH Janus hits a long-range target
+Lua debug: DOCTRINE_TEST PASS: protocol cannot switch instantly
+Lua debug: DOCTRINE_TEST PASS: second martyr adds a stack
+Lua debug: DOCTRINE_TEST PASS: Throne strengthens a nearby living Magistrate
+Lua debug: DOCTRINE_TEST PASS: Contemptor executes damaged targets with bounded combined bonus
+Lua debug: DOCTRINE_TEST PASS: third martyr reaches cap
+Lua debug: DOCTRINE_TEST PASS: ABYSS activates after transition
+Lua debug: DOCTRINE_TEST PASS: further martyrs cannot exceed three stacks
+Lua debug: DOCTRINE_TEST PASS: Last Hymn actually strengthens nearby angel attacks
+Lua debug: DOCTRINE_TEST PASS: destroying a condemned target grants Ascendancy
+Lua debug: DOCTRINE_TEST PASS: destroyed target clears condemnation
+Lua debug: DOCTRINE_TEST PASS: ABYSS Janus fires its infernal weapon
+Lua debug: DOCTRINE_TEST PASS: null field pauses angelic Renewal
+Lua debug: DOCTRINE_TEST PASS: protocol can return to SERAPH
+Lua debug: DOCTRINE_TEST PASS: Conviction prevents flesh-wall conversion
+Lua debug: DOCTRINE_TEST PASS: Ascendancy expires
+Lua debug: DOCTRINE_TEST PASS: Last Hymn expires without more martyrdom
+Lua debug: DOCTRINE_TEST PASS: expired Last Hymn restores normal firepower
+Lua debug: DOCTRINE_TEST PASS: power loss disables containment field
+Lua debug: DOCTRINE_TEST PASS: retarget cooldown eventually permits another condemnation
+Lua debug: DOCTRINE_TEST PASS: killing Magistrate cancels condemnation
+Lua debug: DOCTRINE_TEST PASS: Janus cannot fire without powered containment
+Lua debug: DOCTRINE_TEST PASS: Renewal resumes after containment power loss
+Lua debug: DOCTRINE_TEST COMPLETE checks=34

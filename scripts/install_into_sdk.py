@@ -172,8 +172,10 @@ def main() -> None:
         ('Rules', 'rules/45-defenses.yaml'),
         ('Rules', 'rules/50-environment.yaml'),
         ('Rules', 'rules/51-engineers.yaml'),
+        ('Rules', 'rules/55-subfactions.yaml'),
         ('Weapons', 'weapons/sevenfall.yaml'),
         ('Weapons', 'weapons/defenses.yaml'),
+        ('Weapons', 'weapons/subfactions.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
         ('Chrome', 'chrome.yaml'),
         ('Chrome', 'chrome-ui.yaml'),
@@ -185,6 +187,7 @@ def main() -> None:
         ('Sequences', 'sequences/units.yaml'),
         ('Sequences', 'sequences/animations.yaml'),
         ('Sequences', 'sequences/defenses.yaml'),
+        ('Sequences', 'sequences/subfactions.yaml'),
         ('Sequences', 'sequences/environment.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')

@@ -59,10 +59,25 @@
 		InternalName: d_court
 		Side: Demons
 		Description: sf-faction-d-court-description
+	Faction@a_desolation:
+		Name: sf-faction-a-desolation-name
+		InternalName: a_desolation
+		Side: Angels
+		Description: sf-faction-a-desolation-description
+	Faction@h_area52:
+		Name: sf-faction-h-area52-name
+		InternalName: h_area52
+		Side: Humans
+		Description: sf-faction-h-area52-description
+	Faction@d_contempt:
+		Name: sf-faction-d-contempt-name
+		InternalName: d_contempt
+		Side: Demons
+		Description: sf-faction-d-contempt-description
 	Faction@sf_random:
 		Name: sf-faction-random-name
 		InternalName: Random
-		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
+		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52
 		Side: Random
 		Description: sf-faction-random-description
 	ResourceRenderer:
@@ -77,11 +92,12 @@
 				Name: sf-resource-veilglass-enriched-name
 
 World:
+	SFDoctrineManager:
 	BridgeLayer:
 	SFDefenseManager:
 	SFVeilglassHazard:
 	StartingUnits@mcvonly:
-		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
+		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52
 	-StartingUnits@lightallies:
 	-StartingUnits@lightsoviet:
 	-StartingUnits@heavyallies:
@@ -104,12 +120,15 @@ FACT:
 			a_seraph: a_yard
 			a_warden: a_yard
 			a_exile: a_yard
+			a_desolation: a_yard
 			h_bastion: h_yard
 			h_union: h_yard
 			h_covenant: h_yard
+			h_area52: h_yard
 			d_legion: d_yard
 			d_brood: d_yard
 			d_court: d_yard
+			d_contempt: d_yard
 	Selectable:
 		Bounds: 4096, 4267, 0, -768
 	-WithBuildingBib:
@@ -121,13 +140,13 @@ FACT:
 		ValidRelationships: Ally, Neutral, Enemy
 		RequiresSelection: False
 	ProvidesPrerequisite@sf_angels:
-		Factions: a_seraph, a_warden, a_exile
+		Factions: a_seraph, a_warden, a_exile, a_desolation
 		Prerequisite: sf.angels
 	ProvidesPrerequisite@sf_humans:
-		Factions: h_bastion, h_union, h_covenant
+		Factions: h_bastion, h_union, h_covenant, h_area52
 		Prerequisite: sf.humans
 	ProvidesPrerequisite@sf_demons:
-		Factions: d_legion, d_brood, d_court
+		Factions: d_legion, d_brood, d_court, d_contempt
 		Prerequisite: sf.demons
 	ProvidesPrerequisite@sf_a_seraph:
 		Factions: a_seraph
@@ -157,6 +176,18 @@ FACT:
 		Factions: d_court
 		Prerequisite: sf.d_court
 
+	ProvidesPrerequisite@sf_a_desolation:
+		Factions: a_desolation
+		Prerequisite: sf.a_desolation
+
+	ProvidesPrerequisite@sf_h_area52:
+		Factions: h_area52
+		Prerequisite: sf.h_area52
+
+	ProvidesPrerequisite@sf_d_contempt:
+		Factions: d_contempt
+		Prerequisite: sf.d_contempt
+
 MCV:
 	RenderSprites:
 		Image: h_mcv
@@ -164,12 +195,15 @@ MCV:
 			a_seraph: a_mcv
 			a_warden: a_mcv
 			a_exile: a_mcv
+			a_desolation: a_mcv
 			h_bastion: h_mcv
 			h_union: h_mcv
 			h_covenant: h_mcv
+			h_area52: h_mcv
 			d_legion: d_mcv
 			d_brood: d_mcv
 			d_court: d_mcv
+			d_contempt: d_mcv
 	WithTextDecoration@OWNER:
 		Text: ===
 		UsePlayerColor: True
@@ -184,12 +218,15 @@ MCV.Husk:
 			a_seraph: a_mcv
 			a_warden: a_mcv
 			a_exile: a_mcv
+			a_desolation: a_mcv
 			h_bastion: h_mcv
 			h_union: h_mcv
 			h_covenant: h_mcv
+			h_area52: h_mcv
 			d_legion: d_mcv
 			d_brood: d_mcv
 			d_court: d_mcv
+			d_contempt: d_mcv
 
 HARV.EmptyHusk:
 	RenderSprites:
@@ -198,12 +235,15 @@ HARV.EmptyHusk:
 			a_seraph: a_harvester
 			a_warden: a_harvester
 			a_exile: a_harvester
+			a_desolation: a_harvester
 			h_bastion: h_harvester
 			h_union: h_harvester
 			h_covenant: h_harvester
+			h_area52: h_harvester
 			d_legion: d_harvester
 			d_brood: d_harvester
 			d_court: d_harvester
+			d_contempt: d_harvester
 
 HARV.FullHusk:
 	RenderSprites:
@@ -212,12 +252,15 @@ HARV.FullHusk:
 			a_seraph: a_harvester
 			a_warden: a_harvester
 			a_exile: a_harvester
+			a_desolation: a_harvester
 			h_bastion: h_harvester
 			h_union: h_harvester
 			h_covenant: h_harvester
+			h_area52: h_harvester
 			d_legion: d_harvester
 			d_brood: d_harvester
 			d_court: d_harvester
+			d_contempt: d_harvester
 
 ^Vehicle:
 	Repairable:
