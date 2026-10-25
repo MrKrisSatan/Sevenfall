@@ -45,11 +45,13 @@ kennel beasts. All nine subfaction exclusives are included.
 
 ## Integration boundary
 
-This pass delivers **directional images**, not animation cycles. New combat strips
-are staged here rather than replacing moving/attacking game sprites with a single
-pose. Walk/run, attack, prone, flight/rotor, death and damage frames, turret handling,
-team colours and in-engine alignment/playtests remain separate work. The six
-existing logistics actors continue to use their already-integrated sheets.
+This reference pack preserves **directional images**. The separate
+[animation and damage pass](../animations/README.md) now integrates movement,
+attack/work and death cycles for all 24 implemented faction unit designs, plus
+vehicle and building damage artwork. These source views remain useful for idle
+poses, icons and design references. The 15 expanded naval, aircraft and beast
+concepts still need gameplay actors. Separate prone/flight cycles, turret layers,
+team colours and further visual polish remain future work.
 
 Original concept references and generated source sheets are retained. Corrected
 `-v2` sources supersede their first drafts where selected by `roster.json`.
@@ -61,6 +63,7 @@ Original-content licensing remains unchanged. No borrowed game artwork is includ
 npm install
 npm run art:units
 python scripts/build_turnaround_gallery.py
+python -m pip install -r requirements-test.txt
 python -m unittest discover -s tests
 ```
 

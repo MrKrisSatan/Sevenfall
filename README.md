@@ -67,7 +67,7 @@ The living checklist is [ROADMAP.md](ROADMAP.md). Individual tasks are tracked i
 
 ## GitHub Pages setup
 
-Site files live in `docs/`. Repository owner: **Settings → Pages → Build and deployment → Deploy from a branch → main → /docs → Save**. After GitHub publishes the site, visit https://mrkrissatan.github.io/Sevenfall/ . Adding files to the repo does **not** enable Pages automatically.
+Site files live in `docs/` and are published by `.github/workflows/pages.yml` when website files change on `main`. In repository Settings → Pages, select **GitHub Actions** as the publishing source. The published site is [https://mrkrissatan.github.io/Sevenfall/](https://mrkrissatan.github.io/Sevenfall/).
 
 ## Engine & rights
 

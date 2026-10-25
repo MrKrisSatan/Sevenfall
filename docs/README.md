@@ -3,7 +3,7 @@
 This is a static site designed for GitHub Pages.
 
 ## Enable publishing
-Repository owner: Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main → Folder: /docs → Save.
+The `.github/workflows/pages.yml` workflow publishes `docs/` when website files change on `main`. Repository owner: Settings → Pages → Build and deployment → Source: GitHub Actions. The workflow can also be started manually from Actions.
 
 URL: https://mrkrissatan.github.io/Sevenfall/
 
