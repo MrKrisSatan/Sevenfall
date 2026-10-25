@@ -16,8 +16,10 @@ original concept illustrations. The [eight-direction artwork gallery](https://mr
 
 Clone the repository and double-click **[PLAY_SEVENFALL_DEV.cmd](PLAY_SEVENFALL_DEV.cmd)**,
 or follow [the pinned manual build commands](BUILDING.md). This installs an
-OpenRA SDK and builds it **locally**; legally acquired Red Alert game data
-is still required and is **not bundled**. After launching, select
+OpenRA SDK and builds it **locally**. The standalone staging pass now uses original
+Sevenfall assets and adapted GPL OpenRA definitions; **Red Alert content is no longer required**.
+A portable Windows candidate has passed native environment checks, but publication
+is still gated by the [release checklist](docs/RELEASE_BLOCKERS.md). After launching, select
 **Singleplayer → Missions** to inspect one of the three new 0.3 previews:
 
 - **H03 The Glass Fields**: Humans versus Blood Brood.
@@ -86,6 +88,6 @@ Site files live in `docs/` and are published by `.github/workflows/pages.yml` wh
 
 ## Engine & rights
 
-Sevenfall is an original game concept; OpenRA's engine is GPLv3. The current SDK overlay uses unbundled Red Alert content for temporary visuals/gameplay scaffolding. Do not redistribute proprietary assets. Art/audio licensing for the finished original project has not been chosen yet.
+Sevenfall is an original game concept using the GPLv3 OpenRA engine. Standalone staging copies only adapted textual OpenRA definitions, with attribution, and uses original Sevenfall graphics plus intentionally limited alpha audio. See [distribution notices](THIRD_PARTY_NOTICES.md). Dependency source/licence verification remains a publication gate.
 
 Created October 2026.

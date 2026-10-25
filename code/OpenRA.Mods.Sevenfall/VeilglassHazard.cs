@@ -96,7 +96,10 @@ namespace OpenRA.Mods.Sevenfall
                         if (resources.GetResource(destination).Type != null ||
                             !resources.CanAddResource(deposit.Type, destination, amount))
                             continue;
-                        var added = resources.AddResource(deposit.Type, destination, amount);
+                        // ResourceLayer seeds a new cell with one unit before adding.
+                        // Charge the actual resulting density, including that seed.
+                        resources.AddResource(deposit.Type, destination, amount - 1);
+                        var added = resources.GetResource(destination).Density;
                         if (added > 0)
                         {
                             budget -= added;

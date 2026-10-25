@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install the Sevenfall OpenRA prototype as a Red Alert overlay.
+"""Install Sevenfall with adapted OpenRA definitions and original content.
 
 Usage: python scripts/install_into_sdk.py PATH_TO_OPENRA_MOD_SDK
 No network access needed; run SDK `make` first to fetch its engine.
@@ -198,6 +198,9 @@ def main() -> None:
     hide += ''.join(f'{actor}:\n\tBuildable:\n\t\tPrerequisites: ~disabled\n' for actor in original)
     (target / 'rules' / '00-hide-red-alert.yaml').write_text(hide, encoding='utf-8')
 
+    from stage_standalone import stage
+    stage(sdk, target)
+
     if not args.no_config:
         cfg_path = sdk / 'mod.config'
         if not cfg_path.is_file():
@@ -210,7 +213,7 @@ def main() -> None:
         # settings are intentionally not modified or claimed to be release ready.
         cfg_path.write_text(cfg, encoding='utf-8')
 
-    print(f'Sevenfall overlay installed: {target}')
+    print(f'Sevenfall standalone content staged: {target}')
     print(f'Generated vanilla actor exclusions: {len(original)}')
     print(f'Original eight-facing reference sheets staged: {staged_unit_count}')
     print(f'Authored animation/damage sheets staged: {animation_count}')

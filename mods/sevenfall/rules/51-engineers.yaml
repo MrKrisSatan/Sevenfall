@@ -1,9 +1,8 @@
 # Repair specialists temporarily reuse existing original faction infantry art.
 ^SF_ENGINEER:
-	Inherits: E6
-	-Captures:
-	-Captures@REUSABLE:
-	-GrantConditionOnPrerequisite@GLOBALREUSABLEENGINEER:
+	Inherits: ^Soldier
+	Inherits@selection: ^SelectableSupportUnit
+	-AttackFrontal:
 	-Voiced:
 	-WithDeathAnimation:
 	WithInfantryBody:

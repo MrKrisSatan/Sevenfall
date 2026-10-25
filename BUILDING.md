@@ -1,15 +1,15 @@
 # Building Sevenfall 0.3 development candidate
 
 This is a working engine integration milestone, not a finished standalone game.
-The menu, graphics, sound and terrain still use locally installed Red Alert placeholders.
-No proprietary content is included in this repository.
+Standalone staging uses original Sevenfall graphics and terrain, deliberately limited
+alpha audio, and adapted GPL OpenRA definitions. No Red Alert installation is required.
 
 ## Requirements
 
 - Git and Python 3.10 or later.
 - .NET SDK 8 (tested with 8.0.408) and .NET runtime 6.0.36. The pinned engine targets net6.0.
 - Windows x64 or Linux x64 with OpenRA's SDL2/OpenAL/OpenGL prerequisites.
-- Red Alert content installed through OpenRA's content manager on first launch.
+- No external game-content installer is required.
 
 The SDK and engine are cloned into ignored `.sdk/` directories and verified against
 exact commits by `scripts/build.py`. Existing checkouts at another commit are rejected.
@@ -113,8 +113,7 @@ not yet been observed running to a full win/loss on a Windows desktop.
    simulate engine scheduling, harvesting, combat or AI.
 3. Run `py -3 scripts/build.py build` to populate the pinned SDK, copy the
    three campaign map binaries, compile OpenRA and execute engine YAML lint.
-4. Run `py -3 scripts/build.py launch`, install legally obtained Red Alert
-   data if the launcher requests it, and select a campaign preview.
+4. Run `py -3 scripts/build.py launch` and select a campaign preview.
 5. Complete **all three** scripted objectives and one failure test for each map.
    Confirm enemy AI behavior, combat damage, harvest/unload income and log errors
    before marking a scenario PLAYABLE.
@@ -123,7 +122,31 @@ not yet been observed running to a full win/loss on a Windows desktop.
 
 The existing reproducible Windows workflow compiles the pinned engine in GitHub
 Actions. No independently installable, asset-clean Windows release archive has
-been published; the current dev candidate requires local engine and game content.
+been published. Source development needs the SDK/runtime; the portable Windows
+candidate bundles its own runtime and content.
+
+## Portable Windows candidate and native diagnostics
+
+After `scripts/build.py build`, run:
+
+```powershell
+python scripts/package_windows.py --version 0.3.0-alpha.1
+python scripts/run_defense_test.py --scenario environment --package dist/Sevenfall-0.3.0-alpha.1-windows-x64 --support-dir artifacts/portable-test
+```
+
+The package contains `Sevenfall.exe` and a local `Support` directory. Packaging
+refuses external RA manifest references and proprietary game archive formats.
+It creates a ZIP, file inventory and SHA-256 checksum; these do not imply release
+approval. Use a fresh version suffix when rebuilding to preserve prior candidates.
+Commit the tested sources, then run `scripts/package_source.py --version VERSION`
+to bundle Sevenfall and the pinned engine/SDK sources. Third-party dependency
+source and licence verification remains separate.
+
+Native scenarios are `environment`, `release`, `defense`, `production`, and `match`.
+The first three have passed with fresh support folders. `production` exercises
+normal paid queues and validated placement; `match` observes unassisted AI conquest.
+Use longer `--timeout` values for those scenarios. For source builds, pass
+`--dotnet PATH` instead of `--package PATH`.
 
 ## Validation and remaining work
 

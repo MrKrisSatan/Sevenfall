@@ -1,0 +1,34 @@
+Lua debug: DEFENSE_TEST PASS: razorwire slows enemy infantry
+Lua debug: DEFENSE_TEST PASS: razorwire damages crossing infantry
+Lua debug: DEFENSE_TEST PASS: living thorns slow enemy infantry
+Lua debug: DEFENSE_TEST PASS: living thorns damage crossing infantry
+Lua debug: DEFENSE_TEST PASS: overlapping flesh walls do not convert early
+Lua debug: DEFENSE_TEST PASS: empty entrenchment cannot shoot
+Lua debug: DEFENSE_TEST PASS: hostile vehicles crush razorwire
+Lua debug: DEFENSE_TEST PASS: concrete wall blocks ordinary tracked vehicles
+Lua debug: DEFENSE_TEST PASS: powered light wall incinerates enemy infantry
+Lua debug: DEFENSE_TEST PASS: powered light wall incinerates crossing armor
+Lua debug: DEFENSE_TEST PASS: allied infantry can cross friendly light
+Lua debug: DEFENSE_TEST PASS: power cut opens safe passage through hostile light
+Lua debug: DEFENSE_TEST PASS: sustained moaning converts enemy infantry
+Lua debug: DEFENSE_TEST PASS: sanctuary prevents conversion
+Lua debug: DEFENSE_TEST PASS: sanctuary heals allied infantry
+Lua debug: DEFENSE_TEST PASS: retreat escapes conversion
+Lua debug: DEFENSE_TEST PASS: vehicles are immune to insanity
+Lua debug: DEFENSE_TEST PASS: destroying flesh wall stops its influence
+Lua debug: DEFENSE_TEST PASS: power cut silences flesh-wall conversion
+Lua debug: DEFENSE_TEST PASS: living flesh regenerates after damage cooldown
+Lua debug: DEFENSE_TEST PASS: human autocannon fires through power loss
+Lua debug: DEFENSE_TEST PASS: entrenchment accepts three infantry
+Lua debug: DEFENSE_TEST PASS: garrisoned infantry fire from entrenchment
+Lua debug: DEFENSE_TEST PASS: defense damages AngelGunTarget
+Lua debug: DEFENSE_TEST PASS: defense damages LanceTarget
+Lua debug: DEFENSE_TEST PASS: defense damages SpineTarget
+Lua debug: DEFENSE_TEST PASS: defense damages MawTarget
+Lua debug: DEFENSE_TEST PASS: anti-air defense 1 hits aircraft
+Lua debug: DEFENSE_TEST PASS: anti-air defense 2 hits aircraft
+Lua debug: DEFENSE_TEST PASS: anti-air defense 3 hits aircraft
+Lua debug: DEFENSE_TEST PASS: dedicated anti-air ignores ground armor
+Lua debug: DEFENSE_TEST PASS: recent converts resist immediate reconversion
+Lua debug: DEFENSE_TEST PASS: conversion immunity expires and opposing influence works
+Lua debug: DEFENSE_TEST COMPLETE checks=33

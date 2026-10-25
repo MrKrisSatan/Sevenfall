@@ -186,3 +186,5 @@ sf-engineer-description = Unarmed repair specialist. Repairs damaged civilian ho
 sf-a-engineer-name = Angelic Restorer
 sf-h-engineer-name = Human Field Engineer
 sf-d-engineer-name = Infernal Mason
+sf-mcv-alpha-name = Mobile Construction Vehicle
+sf-mcv-alpha-description = Deploys into a Construction Yard. Requires a Service Depot.

@@ -6,6 +6,14 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.Sevenfall
 {
     [ScriptPropertyGroup("Sevenfall engineering")]
+    public class SFBridgePostProperties : ScriptActorProperties, Requires<BridgeHutInfo>
+    {
+        public SFBridgePostProperties(ScriptContext context, Actor self) : base(context, self) { }
+        [Desc("Current damage state of the bridge connected to this repair post.")]
+        public string BridgeDamageState => Self.Trait<BridgeHut>().BridgeDamageState.ToString();
+    }
+
+    [ScriptPropertyGroup("Sevenfall engineering")]
     public class SFEngineerProperties : ScriptActorProperties, Requires<RepairsBridgesInfo>
     {
         public SFEngineerProperties(ScriptContext context, Actor self) : base(context, self) { }

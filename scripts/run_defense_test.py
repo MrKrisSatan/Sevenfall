@@ -1,6 +1,6 @@
-"""Run native, content-dependent diagnostics and fail on missing acceptance markers.
+"""Run native standalone diagnostics and fail on missing acceptance markers.
 
-Requires an already-built SDK and --support-dir containing installed game content.
+Requires an already-built SDK. Use an empty --support-dir for clean-content checks.
 This launches a local game window, collects evidence, and closes only its own process.
 """
 import argparse
@@ -24,14 +24,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--support-dir', type=Path, required=True)
     parser.add_argument('--dotnet', default='dotnet')
-    parser.add_argument('--scenario', choices=['defense', 'release', 'environment'], default='defense')
+    parser.add_argument('--package', type=Path, help='Test the self-contained executable in this extracted candidate')
+    parser.add_argument('--replay', type=Path, help='Replay a recorded diagnostic instead of launching its map')
+    parser.add_argument('--scenario', choices=['defense', 'release', 'environment', 'production', 'match'], default='defense')
     parser.add_argument('--timeout', type=int)
     args = parser.parse_args()
     support = args.support_dir.resolve()
-    if not (support / 'Content/ra/v2/conquer.mix').is_file():
-        parser.error('The selected support directory must already contain installed Red Alert content')
+    from audit_release_dependencies import inspect
+    engine = args.package.resolve() if args.package else ROOT / '.sdk/engine'
+    mod = engine / 'mods/sevenfall' if args.package else ROOT / '.sdk/mods/sevenfall'
+    if not inspect(mod / 'mod.yaml')['independent_manifest']:
+        parser.error('Standalone diagnostic requires a manifest without external RA dependencies')
     support.mkdir(parents=True, exist_ok=True)
-    engine = ROOT / '.sdk/engine'
     timeout = args.timeout or (230 if args.scenario == 'release' else 110)
     marker = args.scenario.upper() + '_TEST'
     transcript = support / f'{args.scenario}-diagnostic-output.log'
@@ -41,6 +45,12 @@ def main():
                'Graphics.DisableHardwareCursors=True', 'Graphics.CursorDouble=True',
                'Debug.SendSystemInformation=False', 'Debug.SystemInformationVersionPrompt=999',
                'Game.IntroductionPromptVersion=999', f'Launch.Map={args.scenario}-test']
+    if args.package:
+        command = [str(engine / 'Sevenfall.exe'), 'Game.Mod=sevenfall',
+                   f'Engine.LaunchPath={engine / "Sevenfall.exe"}',
+                   f'Engine.ModSearchPaths={engine / "mods"}'] + command[5:]
+    if args.replay:
+        command[-1] = f'Launch.Replay={args.replay.resolve()}'
     success = False
     with transcript.open('w', encoding='utf-8') as output:
         process = subprocess.Popen(command, cwd=ROOT, stdout=output, stderr=subprocess.STDOUT)
@@ -65,6 +75,7 @@ def main():
             print(line)
     print('Full native transcript:', transcript)
     if not success:
+        print('Game process exit code:', process.returncode)
         raise SystemExit('Native acceptance failed or timed out; inspect the transcript and Logs/lua.log')
 
 

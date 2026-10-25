@@ -1,0 +1,45 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall AI Match Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Humans:
+		Name: Humans
+		Faction: h_bastion
+		Bot: sevenfall
+		Enemies: Demons
+	PlayerReference@Demons:
+		Name: Demons
+		Faction: d_legion
+		Bot: sevenfall
+		Enemies: Humans
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 45,45
+	HumanMCV: mcv
+		Owner: Humans
+		Location: 15,15
+	DemonMCV: mcv
+		Owner: Demons
+		Location: 80,80
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: match-test.lua

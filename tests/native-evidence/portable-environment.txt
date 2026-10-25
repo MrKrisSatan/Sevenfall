@@ -1,0 +1,13 @@
+Lua debug: ENVIRONMENT_TEST PASS: nearby infantry claim shelter
+Lua debug: ENVIRONMENT_TEST PASS: engineer repairs surviving house
+Lua debug: ENVIRONMENT_TEST PASS: house repair preserves engineer
+Lua debug: ENVIRONMENT_TEST PASS: infantry enters garrison
+Lua debug: ENVIRONMENT_TEST DETAIL: engineer=60,32 idle=true bridge=Undamaged hp=150000
+Lua debug: ENVIRONMENT_TEST PASS: engineer repairs damaged bridge
+Lua debug: ENVIRONMENT_TEST PASS: forced fire destroys neutral bridge
+Lua debug: ENVIRONMENT_TEST PASS: engineer restores destroyed crossing
+Lua debug: ENVIRONMENT_TEST PASS: bridge repair preserves engineer
+Lua debug: ENVIRONMENT_TEST PASS: restored bridge allows ground passage
+Lua debug: ENVIRONMENT_TEST PASS: forced fire destroys claimed house
+Lua debug: ENVIRONMENT_TEST PASS: destroyed house ejects garrison
+Lua debug: ENVIRONMENT_TEST COMPLETE checks=11

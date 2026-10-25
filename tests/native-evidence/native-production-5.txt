@@ -1,0 +1,172 @@
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P0
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P1
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P2
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P3
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P4
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P5
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P6
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P7
+Lua debug: PRODUCTION_TEST PASS: MCV deploys P8
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_generator P3
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_generator P4
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_generator P5
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_heart P6
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_heart P7
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_heart P8
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_spire P0
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_spire P1
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_spire P2
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_barracks P3
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_barracks P4
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_barracks P5
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_pit P6
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_pit P7
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_pit P8
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_chapel P0
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_chapel P1
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_chapel P2
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=3 units=0 queued=true cash=18798 ready=false
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_veilworks P3
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_veilworks P4
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_veilworks P5
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_veilworks P6
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_veilworks P7
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_veilworks P8
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=3 units=0 queued=true cash=17548 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=3 units=0 queued=true cash=17548 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=3 units=0 queued=true cash=17548 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=4 units=0 queued=true cash=17551 ready=false
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_veilworks P0
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_veilworks P1
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_veilworks P2
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_motorpool P3
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_motorpool P4
+Lua debug: PRODUCTION_TEST PASS: paid and placed h_motorpool P5
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_forge P6
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_forge P7
+Lua debug: PRODUCTION_TEST PASS: paid and placed d_forge P8
+Lua debug: PRODUCTION_TEST PASS: produced d_thrall P6
+Lua debug: PRODUCTION_TEST PASS: produced d_thrall P7
+Lua debug: PRODUCTION_TEST PASS: produced d_thrall P8
+Lua debug: PRODUCTION_TEST PASS: produced h_rifleman P3
+Lua debug: PRODUCTION_TEST PASS: produced h_rifleman P4
+Lua debug: PRODUCTION_TEST PASS: produced h_rifleman P5
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=4 units=0 queued=true cash=16510 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=4 units=0 queued=true cash=16510 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=4 units=0 queued=true cash=16510 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=5 units=1 queued=true cash=16945 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=5 units=1 queued=true cash=16945 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=5 units=1 queued=true cash=16945 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=5 units=1 queued=true cash=16897 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=5 units=1 queued=true cash=16897 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=5 units=1 queued=true cash=16897 ready=false
+Lua debug: PRODUCTION_TEST PASS: produced d_ravager P6
+Lua debug: PRODUCTION_TEST PASS: produced d_ravager P7
+Lua debug: PRODUCTION_TEST PASS: produced d_ravager P8
+Lua debug: PRODUCTION_TEST PASS: produced d_skitter P7
+Lua debug: PRODUCTION_TEST PASS: produced d_hexer P8
+Lua debug: PRODUCTION_TEST PASS: produced h_bulwark P3
+Lua debug: PRODUCTION_TEST PASS: produced h_bulwark P4
+Lua debug: PRODUCTION_TEST PASS: produced h_bulwark P5
+Lua debug: PRODUCTION_TEST PASS: produced h_ranger P4
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_armory P0
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_armory P1
+Lua debug: PRODUCTION_TEST PASS: paid and placed a_armory P2
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=5 units=0 queued=true cash=16183 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=5 units=0 queued=true cash=16183 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=5 units=0 queued=true cash=16183 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=5 units=2 queued=true cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=5 units=2 queued=true cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=5 units=2 queued=true cash=16415 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=6 units=3 queued=false cash=16850 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=6 units=3 queued=false cash=16505 ready=false
+Lua debug: PRODUCTION_TEST PASS: produced h_templar P5
+Lua debug: PRODUCTION_TEST PASS: produced d_hellreaver P6
+Lua debug: PRODUCTION_TEST PASS: produced a_watcher P0
+Lua debug: PRODUCTION_TEST PASS: produced a_watcher P1
+Lua debug: PRODUCTION_TEST PASS: produced a_watcher P2
+Lua debug: PRODUCTION_TEST PASS: produced h_siegegun P3
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=5 units=1 queued=true cash=15862 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=5 units=1 queued=true cash=15862 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=5 units=1 queued=true cash=15862 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=6 units=3 queued=false cash=16416 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=6 units=3 queued=false cash=16235 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=6 units=3 queued=false cash=16850 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=6 units=3 queued=false cash=16505 ready=false
+Lua debug: PRODUCTION_TEST PASS: produced a_aegis P0
+Lua debug: PRODUCTION_TEST PASS: produced a_aegis P1
+Lua debug: PRODUCTION_TEST PASS: produced a_aegis P2
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=5 units=2 queued=true cash=15653 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=5 units=2 queued=true cash=15653 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=5 units=2 queued=true cash=15653 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=6 units=3 queued=false cash=16416 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=6 units=3 queued=false cash=16235 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=6 units=3 queued=false cash=16850 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=6 units=3 queued=false cash=16505 ready=false
+Lua debug: PRODUCTION_TEST PASS: produced a_penitent P2
+Lua debug: PRODUCTION_TEST PASS: produced a_seraphim P0
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=6 units=3 queued=false cash=15530 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=5 units=2 queued=true cash=15500 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=6 units=3 queued=false cash=15653 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=6 units=3 queued=false cash=16416 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=6 units=3 queued=false cash=16235 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=6 units=3 queued=false cash=16850 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=6 units=3 queued=false cash=16505 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P0 stage=6 units=3 queued=false cash=15530 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P1 stage=5 units=2 queued=true cash=15216 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P2 stage=6 units=3 queued=false cash=15653 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P3 stage=6 units=3 queued=false cash=16416 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P4 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P5 stage=6 units=3 queued=false cash=16716 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P6 stage=6 units=3 queued=false cash=16235 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P7 stage=6 units=3 queued=false cash=16850 ready=false
+Lua debug: PRODUCTION_TEST DETAIL: P8 stage=6 units=3 queued=false cash=16505 ready=false
+Lua debug: PRODUCTION_TEST PASS: produced a_gatekeeper P1
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P0
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P0
+Lua debug: PRODUCTION_TEST PASS: production spent cash P0
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P1
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P1
+Lua debug: PRODUCTION_TEST PASS: production spent cash P1
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P2
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P2
+Lua debug: PRODUCTION_TEST PASS: production spent cash P2
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P3
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P3
+Lua debug: PRODUCTION_TEST PASS: production spent cash P3
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P4
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P4
+Lua debug: PRODUCTION_TEST PASS: production spent cash P4
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P5
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P5
+Lua debug: PRODUCTION_TEST PASS: production spent cash P5
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P6
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P6
+Lua debug: PRODUCTION_TEST PASS: production spent cash P6
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P7
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P7
+Lua debug: PRODUCTION_TEST PASS: production spent cash P7
+Lua debug: PRODUCTION_TEST PASS: complete paid construction and three unit roles P8
+Lua debug: PRODUCTION_TEST PASS: constructed refinery accepts real deliveries P8
+Lua debug: PRODUCTION_TEST PASS: production spent cash P8
+Lua debug: PRODUCTION_TEST COMPLETE checks=99

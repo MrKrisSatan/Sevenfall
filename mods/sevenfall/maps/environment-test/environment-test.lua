@@ -25,6 +25,7 @@ WorldLoaded = function()
         engineer.RepairBridge(WestPost34)
     end)
     Later(32, function()
+        print("ENVIRONMENT_TEST DETAIL: engineer=" .. tostring(engineer.Location) .. " idle=" .. tostring(engineer.IsIdle) .. " bridge=" .. WestPost34.BridgeDamageState .. " hp=" .. Bridge34.Health)
         Check(Bridge34.Health == Bridge34.MaxHealth, "engineer repairs damaged bridge")
         Bridge34.Health = 1
         attacker = Actor.Create("h_rifleman", true, {Owner=player, Location=CPos.New(60,34)})

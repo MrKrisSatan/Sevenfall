@@ -38,6 +38,7 @@ WorldLoaded = function()
 				spread = spread + Veilglass.DensityAt(cell)
 			end
 		end
+		print("RELEASE_TEST DETAIL: scattered density=" .. spread)
 		Check(spread > 0 and spread <= 6, "blast scatters capped Veilglass onto new cells")
 	end)
 	Later(180, function()

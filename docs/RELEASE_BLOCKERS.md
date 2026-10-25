@@ -1,73 +1,74 @@
 # Standalone alpha readiness
 
-Status: **not ready to publish a standalone executable release**.
+Status: **Windows candidate builds and launches without Red Alert content; not yet approved for publication.**
 
-## Implemented in the release-blocker pass
+## Scope of the first alpha
 
-- The three preview missions now read cumulative accepted refinery income from
-  a synced Sevenfall player trait. Spending, cash grants and resource assignments
-  cannot inflate or hide actual deliveries. Lua regression coverage includes
-  spending the entire delivery between polls and excluding resource grants.
-- Explosive Veilglass is implemented; see [hazard behavior](../design/VEILGLASS_HAZARDS.md).
-- All 77 cursor states now use original RGBA vector graphics and no external
-  cursor palette. Native cursor visibility and hotspot acceptance remain pending.
-- A native nine-faction harvesting/hazard diagnostic and runner are committed.
-  It does not substitute for deployment, production, victory or network testing.
-- Engine CI now includes Windows and Ubuntu 22.04 and uploads a manifest-level
-  external-dependency report. Build success is separate from runtime acceptance.
-- `scripts/audit_release_dependencies.py --require-independent` refuses an
-  independent-manifest pass while Red Alert mounts/imports remain.
+Nine faction selections, original ground-unit/building artwork, faction combat doctrines,
+land skirmishes, explosive Veilglass, garrisonable houses, repairable/destructible bridges,
+neutral menus and faction HUDs. Aircraft, naval and beast production facilities are
+hidden until their playable rosters exist. Campaign previews remain development content.
+Legacy voices/music are deliberately silent; combat compatibility effects are simple
+original vector sprites. This is an early playable-art pass, not final presentation.
 
-- Original terrain, trees, garrisonable houses, destructible bridges and faction engineers are implemented; see [environment behavior](../design/ENVIRONMENT.md). Native damage, repair and crossing acceptance remains NOT RUN.
+## Completed standalone work
 
-## Asset replacement inventory
+- `stage_standalone.py` adapts only textual GPL OpenRA definitions and retains attribution.
+  Original Sevenfall assets replace file palettes, legacy sequences, cursors, glyphs and terrain.
+- The manifest audit reports **0 external Red Alert references**. Engine CI now requires this.
+- Native missing-sprite validation passes. The manifest scanner alone does not prove this.
+- The Windows packaging script bundles the runtime, portable settings, file hashes and ZIP checksum.
+  It refuses proprietary game archive formats and preserves existing candidates.
+- Source-bundle and dependency-notice inventory scripts are available. Inventory entries with
+  missing licence texts still require resolution before public distribution.
+- Native tests fixed bridge-post targeting, invalid engineer inheritance used by map previews,
+  and a Veilglass scatter accounting bug (empty cells had received one extra resource unit).
 
-The [generated manifest report](release-dependencies.json) identifies **89**
-external RA references after replacing the cursor manifest, four terrain imports, player layout import and title font. This counts manifest entries, not unique proprietary
-files. OpenRA-authored rules/layout code and original game content must be
-reviewed separately; a `ra|` reference alone does not establish ownership.
+## Verified evidence (25 October 2026)
 
-| Area | Current dependency | Required replacement or review |
-|---|---|---|
-| Manifest/content installation | RA content filesystem, MIX packages, ra-content | Own manifest and asset-only package mounts; no external game installation |
-| Terrain | Original alpha tileset now replaces all four RA tilesets | Native renderer, transition and crossing validation; inherited world palettes still need review |
-| Interface | Original neutral menus and three faction HUD skins; inherited glyph/layout definitions remain | Finish glyph/dependency review and attribution; native HUD, menu and cursor checks |
-| Combat presentation | Inherited sequences, projectile/impact/death effects | Original effect sequences, remove unused inherited actors/assets |
-| Audio | RA sound/voice/music definitions and archive mounts | Original audio or intentionally silent alpha definitions; no missing-file fallback |
-| Rules | Shared RA actors, weapons, world/player definitions | Extract required OpenRA-authored gameplay definitions with licence notices; resolve inheritance |
-| Original Sevenfall art | Source prompts and hashes exist | Complete distribution-rights/content licence inventory before packaging |
+| Check | Result |
+|---|---|
+| Python regression suite | 71 passed |
+| Native environment diagnostic, empty support folder | 11 passed |
+| Native harvesting/hazard diagnostic, all nine factions | 24 passed |
+| Native defenses and conversion/counters | 33 passed |
+| Self-contained Windows executable, environment diagnostic | 11 passed |
+| Manifest external-reference gate | PASS, 0 |
+| Original chrome bounds at 1x/2x/3x | 208 collections passed |
+| Engine YAML, sequences and Fluent | Passed; unused upstream text warnings remain |
+| MCV and paid production diagnostic | 99 passed across all nine factions |
+| Unassisted AI conquest match | In progress; economy and armies observed, no completed-match pass yet |
+| Replay acceptance | Not passed; terminated diagnostic recordings are not completed-match evidence |
+| Two-client multiplayer, save/load, independent clean machine | NOT RUN |
 
-The scanner is deliberately a narrow architecture check, **not** a licence
-clearance or a proof that transitive assets are complete. Do not package simply
-because its reference count reaches zero.
+The portable executable has been tested on the development Windows host with isolated
+support data. This is not an independent clean-PC or clean-VM installation test.
 
-## Runtime evidence still required
+## Remaining publication gates
 
-Local test content could not be located in this pass. Native diagnostics remain
-NOT RUN. Once content is available, build first, then run:
+1. Complete conquest win/loss acceptance for all parent factions.
+2. Complete an unassisted AI match, inspect combat/economy behavior and verify a finalized replay.
+3. Exercise two-client synchronization and save/load; record any limitations explicitly.
+4. Complete exact third-party licence texts/corresponding-source inventory, including fonts
+   and native libraries. Package the committed Sevenfall and pinned engine/SDK sources.
+5. Remove or clearly separate diagnostic maps and unaccepted campaign previews from the
+   public skirmish build; test the final archive, launch path, settings and first-run menu.
+6. Test the final archive on a clean Windows machine/VM, run CI at the published commit,
+   then tag and publish binaries, source and checksums together.
+
+## Reproduce native checks
+
+Build with `python scripts/build.py build`, then use a fresh support directory:
 
 ```powershell
-python scripts/run_defense_test.py --scenario release --support-dir PATH --dotnet .tools/dotnet/dotnet.exe
-python scripts/run_defense_test.py --scenario defense --support-dir PATH --dotnet .tools/dotnet/dotnet.exe
+python scripts/run_defense_test.py --scenario environment --support-dir artifacts/native-environment --dotnet .tools/dotnet/dotnet.exe
+python scripts/run_defense_test.py --scenario release --support-dir artifacts/native-release --dotnet .tools/dotnet/dotnet.exe --timeout 260
+python scripts/run_defense_test.py --scenario defense --support-dir artifacts/native-defense --dotnet .tools/dotnet/dotnet.exe
+python scripts/run_defense_test.py --scenario production --support-dir artifacts/native-production --dotnet .tools/dotnet/dotnet.exe --timeout 600
+python scripts/run_defense_test.py --scenario match --support-dir artifacts/native-match --dotnet .tools/dotnet/dotnet.exe --timeout 1400
 ```
 
-PATH must contain `Content/ra/v2/conquer.mix` and the other required test content.
-This is a development-only dependency; it must not ship in a standalone archive.
+For an extracted candidate use `--package PATH` instead of `--dotnet PATH`.
+No `conquer.mix` or other external game content is needed. Reports distinguish
+scripted component checks from complete matches; neither is silently substituted for the other.
 
-Then complete the [skirmish runbook](../tests/SKIRMISH_RUNBOOK.md),
-[campaign runbook](../tests/FIRST_WAR_RUNBOOK.md), Veilglass flight/landing and
-capture tests, multiplayer/replay checks and large-army profiling. Finally build
-Windows packages with bundled runtime, notices, source availability and checksums;
-verify launch and complete matches on a clean machine without Red Alert content.
-Linux executable packaging/clean-machine testing remains separate from Linux CI.
-
-## Validation recorded for this pass
-
-- 68 Python tests passed, including campaign-spending regression, cursor atlas
-  integrity and diagnostic-runner failure handling.
-- Seven C# dread assertions and 104 Veilglass radius/spread assertions passed.
-- Sevenfall native extension compiled without warnings or errors; engine YAML,
-  sequence definitions and Fluent validation passed for twelve maps/one original tileset.
-- Cursor atlas inspected visually. This is not an in-game cursor acceptance test.
-- Independent-manifest gate correctly failed with the 89 remaining references.
-- Native diagnostics, clean-machine launch and multiplayer were NOT RUN.

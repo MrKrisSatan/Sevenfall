@@ -1,0 +1,66 @@
+# Standalone land-skirmish alpha scope. No external game-content features.
+^BaseWorld:
+	-ChronoVortexRenderer:
+	MusicPlaylist:
+		VictoryMusic:
+		DefeatMusic:
+	ShroudRenderer:
+		FogVariants: fog
+		Index: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+		UseExtendedIndex: False
+World:
+	-CrateSpawner:
+	-WithResourceAnimation@GEMS:
+	-SmudgeLayer@SCORCH:
+	-SmudgeLayer@CRATER:
+MCV:
+	Buildable:
+		Prerequisites: sf_service, ~techlevel.medium
+		Description: sf-mcv-alpha-description
+	Tooltip:
+		Name: sf-mcv-alpha-name
+A_SERVICE:
+	ProvidesPrerequisite@sf_service:
+		Prerequisite: sf_service
+H_SERVICE:
+	ProvidesPrerequisite@sf_service:
+		Prerequisite: sf_service
+D_SERVICE:
+	ProvidesPrerequisite@sf_service:
+		Prerequisite: sf_service
+A_NAVAL:
+	Buildable:
+		Prerequisites: ~disabled
+H_NAVAL:
+	Buildable:
+		Prerequisites: ~disabled
+D_NAVAL:
+	Buildable:
+		Prerequisites: ~disabled
+A_HELIPAD:
+	Buildable:
+		Prerequisites: ~disabled
+H_HELIPAD:
+	Buildable:
+		Prerequisites: ~disabled
+D_HELIPAD:
+	Buildable:
+		Prerequisites: ~disabled
+A_AIRFIELD:
+	Buildable:
+		Prerequisites: ~disabled
+H_AIRFIELD:
+	Buildable:
+		Prerequisites: ~disabled
+D_AIRFIELD:
+	Buildable:
+		Prerequisites: ~disabled
+A_KENNEL:
+	Buildable:
+		Prerequisites: ~disabled
+H_KENNEL:
+	Buildable:
+		Prerequisites: ~disabled
+D_KENNEL:
+	Buildable:
+		Prerequisites: ~disabled

@@ -213,6 +213,8 @@ SF_BRIDGE_POST:
 		Dimensions: 1,1
 		Footprint: x
 	Interactable:
+	Targetable:
+		TargetTypes: BridgeRepair
 	Tooltip:
 		Name: sf-bridge-post-name
 	TooltipDescription:
