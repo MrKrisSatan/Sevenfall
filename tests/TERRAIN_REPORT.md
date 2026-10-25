@@ -41,3 +41,15 @@ Reproduction commands and content notes: [TWELVEFOLD_SCAR.md](../docs/TWELVEFOLD
 Candidate build and artifacts:
 [Windows skirmish candidate #1](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40217579692).
 This creates a test candidate, not a public release.
+
+## Downloaded candidate graphics finding
+
+The exact candidate #1 archive was downloaded and its SHA-256 checksums verified.
+Its installer lifecycle checked 860 installed file hashes and preserved settings
+and saves. Local menu testing then exposed an ANGLE texture-readback/framebuffer
+exception while loading map thumbnails (NVIDIA RTX 3060, driver 610.88).
+This demonstrates why installer and utility acceptance alone cannot approve release.
+Selecting native OpenGL (`Graphics.GLProfile=Modern`) avoided that exception and
+allowed selection of The Twelvefold Scar in the normal twelve-slot lobby.
+The package now seeds that tested renderer preference; a rebuilt candidate must
+pass before replacing #1. Other GPU/driver combinations remain untested.

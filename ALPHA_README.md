@@ -9,6 +9,10 @@ OpenRA, Red Alert and a separately installed .NET runtime are not required.
 Windows x64 is the initial target. Saves, settings, replays and logs are kept in
 the adjacent `Support` folder. Keep the full folder together when moving it.
 
+The candidate prefers native OpenGL (Modern). The bundled ANGLE renderer crashed
+during map-preview loading on the development GPU and is not accepted for this
+candidate. Machines without the preferred renderer still need compatibility testing.
+
 The alpha focuses on land skirmishes with three parent factions and twelve
 subfactions, original buildings/units, physical Veilglass harvesting, explosive
 Veilglass hazards, defenses, faction HUDs and destructible civilian environments.

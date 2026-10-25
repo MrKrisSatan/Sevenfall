@@ -77,7 +77,7 @@ def main():
     # Portable settings are scoped to this directory, leaving existing installations alone.
     support = dest/'Support'
     support.mkdir()
-    (support/'settings.yaml').write_text('Graphics:\n\tMode: Windowed\n\tWindowedSize: 1600,900\n'
+    (support/'settings.yaml').write_text('Graphics:\n\tGLProfile: Modern\n\tMode: Windowed\n\tWindowedSize: 1600,900\n'
         '\tDisableHardwareCursors: True\n\tCursorDouble: True\nDebug:\n\tSendSystemInformation: False\n')
     for file in ('THIRD_PARTY_NOTICES.md', 'ALPHA_README.md'):
         shutil.copy2(ROOT/file, dest/file)
