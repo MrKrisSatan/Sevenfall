@@ -18,17 +18,19 @@ Status: **not ready to publish a standalone executable release**.
 - `scripts/audit_release_dependencies.py --require-independent` refuses an
   independent-manifest pass while Red Alert mounts/imports remain.
 
+- Original terrain, trees, garrisonable houses, destructible bridges and faction engineers are implemented; see [environment behavior](../design/ENVIRONMENT.md). Native damage, repair and crossing acceptance remains NOT RUN.
+
 ## Asset replacement inventory
 
-The [generated manifest report](release-dependencies.json) identifies **95**
-external RA references after replacing the cursor manifest. This counts manifest entries, not unique proprietary
+The [generated manifest report](release-dependencies.json) identifies **91**
+external RA references after replacing the cursor manifest and four terrain imports. This counts manifest entries, not unique proprietary
 files. OpenRA-authored rules/layout code and original game content must be
 reviewed separately; a `ra|` reference alone does not establish ownership.
 
 | Area | Current dependency | Required replacement or review |
 |---|---|---|
 | Manifest/content installation | RA content filesystem, MIX packages, ra-content | Own manifest and asset-only package mounts; no external game installation |
-| Terrain | Four RA tilesets and palette definitions | Original alpha terrain/tileset, map migration and renderer validation |
+| Terrain | Original alpha tileset now replaces all four RA tilesets | Native renderer, transition and crossing validation; inherited world palettes still need review |
 | Interface | RA chrome, layouts and title font; original cursors now bound | Original UI graphics; review reusable OpenRA code/fonts and attribution; test cursors |
 | Combat presentation | Inherited sequences, projectile/impact/death effects | Original effect sequences, remove unused inherited actors/assets |
 | Audio | RA sound/voice/music definitions and archive mounts | Original audio or intentionally silent alpha definitions; no missing-file fallback |
@@ -61,11 +63,11 @@ Linux executable packaging/clean-machine testing remains separate from Linux CI.
 
 ## Validation recorded for this pass
 
-- 61 Python tests passed, including campaign-spending regression, cursor atlas
+- 65 Python tests passed, including campaign-spending regression, cursor atlas
   integrity and diagnostic-runner failure handling.
 - Seven C# dread assertions and 104 Veilglass radius/spread assertions passed.
 - Sevenfall native extension compiled without warnings or errors; engine YAML,
-  sequence definitions and Fluent validation passed for ten maps/four tilesets.
+  sequence definitions and Fluent validation passed for twelve maps/one original tileset.
 - Cursor atlas inspected visually. This is not an in-game cursor acceptance test.
-- Independent-manifest gate correctly failed with the 95 remaining references.
+- Independent-manifest gate correctly failed with the 91 remaining references.
 - Native diagnostics, clean-machine launch and multiplayer were NOT RUN.

@@ -1,5 +1,16 @@
 # Sevenfall changelog
 
+## Environment damage and repair pass — 2026-10-25
+
+- Added original terrain, roads, paths, cliffs, four trees and Ashen Crossing.
+- Civilian cottages and townhouses support garrisons, damage frames, forced-fire
+  destruction, occupant ejection and engineer repair while still standing.
+- Bridges have damage/ruin frames, lose their crossing when destroyed, and can
+  be restored by engineers through bankside maintenance posts.
+- Added three asymmetrical faction engineers and a native environment diagnostic.
+- Replaced all four RA tileset imports with one original alpha tileset; 91 external
+  RA manifest references remain. Native gameplay acceptance remains NOT RUN.
+
 ## Release blockers and explosive Veilglass — 2026-10-25
 
 - Campaign objectives count real accepted refinery income instead of sampling

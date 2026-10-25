@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "manifest_sha256": "7f97127be3ba48731424085bab8ac884cf80beedf066d8d6f4374c64088fbec6",
+  "manifest_sha256": "88371a1f28ca07f00047fd48f66e4434b5e6d513954e691a0df1ea90c38cf606",
   "external_ra_references": [
     {
       "section": "FileSystem",
@@ -324,58 +324,38 @@
     },
     {
       "section": "Sequences",
-      "line": 99,
+      "line": 101,
       "reference": "ra|sequences/ships.yaml"
     },
     {
       "section": "Sequences",
-      "line": 100,
+      "line": 102,
       "reference": "ra|sequences/vehicles.yaml"
     },
     {
       "section": "Sequences",
-      "line": 101,
+      "line": 103,
       "reference": "ra|sequences/structures.yaml"
     },
     {
       "section": "Sequences",
-      "line": 102,
+      "line": 104,
       "reference": "ra|sequences/infantry.yaml"
     },
     {
       "section": "Sequences",
-      "line": 103,
+      "line": 105,
       "reference": "ra|sequences/aircraft.yaml"
     },
     {
       "section": "Sequences",
-      "line": 104,
+      "line": 106,
       "reference": "ra|sequences/misc.yaml"
     },
     {
       "section": "Sequences",
-      "line": 105,
+      "line": 107,
       "reference": "ra|sequences/decorations.yaml"
-    },
-    {
-      "section": "TileSets",
-      "line": 115,
-      "reference": "ra|tilesets/snow.yaml"
-    },
-    {
-      "section": "TileSets",
-      "line": 116,
-      "reference": "ra|tilesets/interior.yaml"
-    },
-    {
-      "section": "TileSets",
-      "line": 117,
-      "reference": "ra|tilesets/temperat.yaml"
-    },
-    {
-      "section": "TileSets",
-      "line": 118,
-      "reference": "ra|tilesets/desert.yaml"
     },
     {
       "section": "Chrome",

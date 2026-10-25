@@ -1,0 +1,223 @@
+# Original environmental actors. Art and bridge crossing tiles are Sevenfall assets.
+^SF_TREE:
+	Inherits: ^Tree
+	-WithDamageOverlay@SmallBurn:
+	-WithDamageOverlay@MediumBurn:
+	-WithDamageOverlay@LargeBurn:
+	RenderSprites:
+		Palette: sf_rgba
+	Health:
+		HP: 18000
+	Targetable:
+		TargetTypes: GroundActor, Trees
+		RequiresForceFire: True
+SF_OAK:
+	Inherits: ^SF_TREE
+	RenderSprites:
+		Image: sf_oak
+SF_PINE:
+	Inherits: ^SF_TREE
+	RenderSprites:
+		Image: sf_pine
+SF_DEADTREE:
+	Inherits: ^SF_TREE
+	RenderSprites:
+		Image: sf_deadtree
+SF_BURNTREE:
+	Inherits: ^SF_TREE
+	RenderSprites:
+		Image: sf_burntree
+
+^SF_CIVILIAN_HOUSE:
+	Inherits: ^TechBuilding
+	Inherits@shape: ^2x2Shape
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@PIPS: ^CargoPips
+	-RequiresBuildableArea:
+	-FireWarheadsOnDeath:
+	-SoundOnDamageTransition:
+	-ProximityCaptor:
+	-CommandBarBlacklist:
+	RenderSprites:
+		Palette: sf_rgba
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+		RequiresBaseProvider: False
+		BuildSounds:
+		UndeploySounds:
+	Targetable:
+		TargetTypes: GroundActor, Structure
+		RequiresForceFire: True
+	TooltipDescription:
+		Description: sf-house-description
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	Cargo:
+		Types: Infantry
+		MaxWeight: 4
+		EjectOnDeath: True
+		UnloadVoice:
+	AttackGarrisoned:
+		Armaments: garrisoned
+		PortOffsets: 512,0,512, 0,-512,512, -512,0,512, 0,512,512
+		PortYaws: 0, 256, 512, 768
+		PortCones: 128, 128, 128, 128
+	SFCivilianShelter:
+	InstantlyRepairable:
+		Types: sf-civilian
+	RevealsShroud:
+		Range: 5c0
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	MapEditorData:
+		Categories: Civilian building
+
+SF_COTTAGE:
+	Inherits: ^SF_CIVILIAN_HOUSE
+	RenderSprites:
+		Image: sf_cottage
+	Tooltip:
+		Name: sf-cottage-name
+	SpawnActorOnDeath:
+		Actor: sf_cottage_ruin
+		OwnerType: InternalName
+SF_TOWNHOUSE:
+	Inherits: ^SF_CIVILIAN_HOUSE
+	RenderSprites:
+		Image: sf_townhouse
+	Tooltip:
+		Name: sf-townhouse-name
+	Health:
+		HP: 120000
+	Cargo:
+		MaxWeight: 6
+	SpawnActorOnDeath:
+		Actor: sf_townhouse_ruin
+		OwnerType: InternalName
+
+^SF_RUBBLE:
+	Inherits: ^SpriteActor
+	AlwaysVisible:
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Palette: sf_rgba
+	WithSpriteBody:
+		Sequence: dead
+	Interactable:
+	MapEditorData:
+		Categories: Civilian building
+SF_COTTAGE_RUIN:
+	Inherits: ^SF_RUBBLE
+	RenderSprites:
+		Image: sf_cottage
+SF_TOWNHOUSE_RUIN:
+	Inherits: ^SF_RUBBLE
+	RenderSprites:
+		Image: sf_townhouse
+
+^SF_BRIDGE:
+	Inherits: ^SpriteActor
+	AlwaysVisible:
+	RenderSprites:
+		Palette: sf_rgba
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	Interactable:
+	Tooltip:
+		Name: sf-bridge-name
+	TooltipDescription:
+		Description: sf-bridge-description
+	Health:
+		HP: 150000
+	Armor:
+		Type: Heavy
+	Targetable:
+		TargetTypes: GroundActor, Structure, Bridge
+		RequiresForceFire: True
+	HitShape:
+	MapEditorData:
+		Categories: Bridge
+SF_BRIDGE_EW:
+	Inherits: ^SF_BRIDGE
+	RenderSprites:
+		Image: sf_bridge_ew
+	Building:
+		Dimensions: 3,1
+		Footprint: ___
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536,-512
+			BottomRight: 1536,512
+	GroundLevelBridge:
+	SpawnActorOnDeath:
+		Actor: sf_bridge_ew_ruin
+SF_BRIDGE_NS:
+	Inherits: ^SF_BRIDGE
+	RenderSprites:
+		Image: sf_bridge_ns
+	Building:
+		Dimensions: 1,3
+		Footprint: _ _ _
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512,-1536
+			BottomRight: 512,1536
+	GroundLevelBridge:
+	SpawnActorOnDeath:
+		Actor: sf_bridge_ns_ruin
+SF_BRIDGE_EW_RUIN:
+	Inherits: SF_BRIDGE_EW
+	-GroundLevelBridge:
+	-SpawnActorOnDeath:
+	-Health:
+	-Armor:
+	-Targetable:
+	-HitShape:
+	WithSpriteBody:
+		Sequence: dead
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: sf_bridge_ew
+SF_BRIDGE_NS_RUIN:
+	Inherits: SF_BRIDGE_NS
+	-GroundLevelBridge:
+	-SpawnActorOnDeath:
+	-Health:
+	-Armor:
+	-Targetable:
+	-HitShape:
+	WithSpriteBody:
+		Sequence: dead
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: sf_bridge_ns
+
+SF_BRIDGE_POST:
+	Inherits: ^SpriteActor
+	AlwaysVisible:
+	RenderSprites:
+		Image: sf_bridge_post
+		Palette: sf_rgba
+	WithSpriteBody:
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	Interactable:
+	Tooltip:
+		Name: sf-bridge-post-name
+	TooltipDescription:
+		Description: sf-bridge-post-description
+	BridgeHut:
+		NeighbourOffsets: -1,-1, -1,0, -1,1, 0,-1, 0,1, 1,-1, 1,0, 1,1
+	MapEditorData:
+		Categories: Bridge

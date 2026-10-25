@@ -174,3 +174,15 @@ sf-d-cindermaw-name = Cinder Maw
 sf-d-cindermaw-description = A short-range infernal furnace burns armored attackers; outrange it with artillery. Requires power.
 sf-d-skyhook-name = Skyhook Reliquary
 sf-d-skyhook-description = Living guided skyhooks attack aircraft only; requires power.
+
+sf-cottage-name = Civilian Cottage
+sf-townhouse-name = Civilian Townhouse
+sf-house-description = Move infantry beside an empty house to claim it, then enter to garrison. Force-fire to destroy. Engineers repair surviving houses.
+sf-bridge-name = Stone Bridge
+sf-bridge-description = Destructible crossing. Destroying the deck blocks ground passage. Send an engineer to the repair post to restore it.
+sf-bridge-post-name = Bridge Repair Post
+sf-bridge-post-description = Send an engineer here to repair or rebuild the linked bridge.
+sf-engineer-description = Unarmed repair specialist. Repairs damaged civilian houses and restores bridges at their repair posts. Reusable after repair.
+sf-a-engineer-name = Angelic Restorer
+sf-h-engineer-name = Human Field Engineer
+sf-d-engineer-name = Infernal Mason

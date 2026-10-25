@@ -1,0 +1,96 @@
+# Repair specialists temporarily reuse existing original faction infantry art.
+^SF_ENGINEER:
+	Inherits: E6
+	-Captures:
+	-Captures@REUSABLE:
+	-GrantConditionOnPrerequisite@GLOBALREUSABLEENGINEER:
+	-Voiced:
+	-WithDeathAnimation:
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+	Parachutable:
+		-GroundCorpseSequence:
+	InstantlyRepairs:
+		Types: sf-civilian
+		ValidRelationships: Ally, Neutral
+		EnterBehaviour: Exit
+	RepairsBridges:
+		EnterBehaviour: Exit
+	WithTextDecoration@ROLE:
+		Text: +
+		UsePlayerColor: True
+		Position: TopRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	TooltipDescription:
+		Description: sf-engineer-description
+A_ENGINEER:
+	Inherits: ^SF_ENGINEER
+	RenderSprites:
+		Image: a_penitent
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: a_chapel, ~sf.angels, ~techlevel.infonly
+		Description: sf-engineer-description
+		BuildDurationModifier: 75
+	Tooltip:
+		Name: sf-a-engineer-name
+	Valued:
+		Cost: 500
+	Health:
+		HP: 7000
+	Mobile:
+		Speed: 70
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
+	SpawnActorOnDeath:
+		Actor: a_penitent.death
+H_ENGINEER:
+	Inherits: ^SF_ENGINEER
+	RenderSprites:
+		Image: h_ranger
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: h_barracks, ~sf.humans, ~techlevel.infonly
+		Description: sf-engineer-description
+		BuildDurationModifier: 60
+	Tooltip:
+		Name: sf-h-engineer-name
+	Valued:
+		Cost: 350
+	Health:
+		HP: 4500
+	Mobile:
+		Speed: 87
+	SpawnActorOnDeath:
+		Actor: h_ranger.death
+D_ENGINEER:
+	Inherits: ^SF_ENGINEER
+	RenderSprites:
+		Image: d_hexer
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: d_pit, ~sf.demons, ~techlevel.infonly
+		Description: sf-engineer-description
+		BuildDurationModifier: 45
+	Tooltip:
+		Name: sf-d-engineer-name
+	Valued:
+		Cost: 250
+	Health:
+		HP: 3000
+	Mobile:
+		Speed: 105
+	SpawnActorOnDeath:
+		Actor: d_hexer.death

@@ -1,0 +1,19 @@
+{
+  "generator": "Built-in imagegen; original ground/water textures, 2026-10-25",
+  "assets": [
+    {
+      "source": "art/terrain/source/ground.png",
+      "sourceSha256": "69813abcc623c171db102a973e7a3d57b10af7c2d0c0ae16e4b3be1eb21511f4",
+      "file": "mods/sevenfall/art/terrain/ground.png",
+      "sha256": "ac0f75daa001a1ab6508833a5d96073eec3ce54fda0bfbaa091eaacb10bb6301",
+      "frames": 16
+    },
+    {
+      "source": "art/terrain/source/water.png",
+      "sourceSha256": "8da0ecc35a4e8cea27a5ec33ae1ab4fdf74cb5aaf166111248ff2ae6c351baa1",
+      "file": "mods/sevenfall/art/terrain/water.png",
+      "sha256": "386db46acad4178db57dc9207b99a93452c40ac543278281b1b1eb28dc1734d4",
+      "frames": 1
+    }
+  ]
+}

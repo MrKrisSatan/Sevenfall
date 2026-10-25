@@ -1,0 +1,92 @@
+{
+  "sources": [
+    {
+      "file": "art/terrain/source/varied-atlas.png",
+      "sha256": "92e5bdfbb4f4998c0c4c1314fcd7a98b52e52e7fa6b17cc0e7d3b15ab3f69980"
+    },
+    {
+      "file": "art/terrain/source/trees.png",
+      "sha256": "9123ec0c5127d15a45ecb5d3066eb2b4aff4ef4917b741ca546d10f8e8b71771"
+    },
+    {
+      "file": "art/terrain/source/house-damage-grid.png",
+      "sha256": "6a038c8635d826ffc6069017575f0c7fa4fe05008ecb3f1bc2dd71b858b78201"
+    },
+    {
+      "file": "art/terrain/source/bridge-damage-clear.png",
+      "sha256": "f4a5332c6b21277257715c65f9140638fbdea8dd49638a21845736427a787df2"
+    }
+  ],
+  "assets": [
+    {
+      "file": "mods/sevenfall/art/terrain/varied.png",
+      "sha256": "aa9c90cb1c74e788a24eb86ecfa9a332e07d34bbd52c6336f9b28b49e719e2d2",
+      "frames": 22,
+      "width": 24,
+      "height": 24
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_oak.png",
+      "sha256": "011b74fabf86e43b6ebb9ca370627284ba4c8c3438555d2c9d101b825a0e8171",
+      "frames": 1,
+      "width": 64,
+      "height": 80
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_pine.png",
+      "sha256": "01ff3ead727cfe6eb1325ede3faef313e580ffccf6386f5416b87830b5474165",
+      "frames": 1,
+      "width": 64,
+      "height": 80
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_deadtree.png",
+      "sha256": "eda393d5e565fce8f4ca05cc598ce72c475882438b5aa1007e7b6284316e0052",
+      "frames": 1,
+      "width": 64,
+      "height": 80
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_burntree.png",
+      "sha256": "a7003a29ec5f4c27c4b58d07103a052f8a6108843f816efd9d63f93a63e2209c",
+      "frames": 1,
+      "width": 64,
+      "height": 80
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_cottage.png",
+      "sha256": "67dd07865020e14165a30b8cff0c6378997e656bf20e4b2d916dfe568fa75ceb",
+      "frames": 4,
+      "width": 96,
+      "height": 96
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_bridge_post.png",
+      "sha256": "e8cdf99ce9fdf23d7598932810194f5765246cc778f2adb9ddf7a426fb513c0f",
+      "frames": 1,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_townhouse.png",
+      "sha256": "439e56289b26760a63aae9ae5e57067ef56caa047233bca7109b759824bc1b81",
+      "frames": 4,
+      "width": 96,
+      "height": 96
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_bridge_ew.png",
+      "sha256": "fa2af90d76ed0c89d96e1061805ebe22cd6f8c8b1f92ef4ec03c1ebb97ed674c",
+      "frames": 4,
+      "width": 72,
+      "height": 24
+    },
+    {
+      "file": "mods/sevenfall/art/terrain/sf_bridge_ns.png",
+      "sha256": "702933f1b462315c2bc659c3380d5c933dc8918b1eaf3cd5afed675a77913383",
+      "frames": 4,
+      "width": 24,
+      "height": 72
+    }
+  ]
+}

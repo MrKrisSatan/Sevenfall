@@ -1,0 +1,291 @@
+# Original Sevenfall alpha terrain. TEMPERAT is retained for map compatibility.
+General:
+	Name: Sevenfall Ashlands
+	Id: TEMPERAT
+	SheetSize: 512
+	Palette: sf_rgba
+	EditorTemplateOrder: Terrain, Road, Path, Cliff
+Terrain:
+	TerrainType@Beach:
+		Type: Beach
+		TargetTypes: Ground
+		Color: 817C69
+	TerrainType@Bridge:
+		Type: Bridge
+		TargetTypes: Ground, Bridge
+		Color: 67636A
+	TerrainType@Clear:
+		Type: Clear
+		TargetTypes: Ground
+		Color: 57594B
+	TerrainType@Gems:
+		Type: Gems
+		TargetTypes: Ground
+		Color: AC79CB
+	TerrainType@Ore:
+		Type: Ore
+		TargetTypes: Ground
+		Color: 8A6CB0
+	TerrainType@River:
+		Type: River
+		TargetTypes: Ground
+		Color: 294451
+	TerrainType@Road:
+		Type: Road
+		TargetTypes: Ground
+		Color: 676252
+	TerrainType@Rock:
+		Type: Rock
+		TargetTypes: Ground
+		Color: 4B4A51
+	TerrainType@Rough:
+		Type: Rough
+		TargetTypes: Ground
+		Color: 535046
+	TerrainType@Tree:
+		Type: Tree
+		TargetTypes: Ground
+		Color: 424B40
+	TerrainType@Wall:
+		Type: Wall
+		TargetTypes: Ground
+		Color: 807B80
+	TerrainType@Water:
+		Type: Water
+		TargetTypes: Water
+		Color: 294451
+Templates:
+	Template@255:
+		Id: 255
+		Images: sevenfall|art/terrain/ground.png
+		Size: 1,1
+		PickAny: True
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+	Template@65535:
+		Id: 65535
+		Images: sevenfall|art/terrain/ground.png
+		Size: 1,1
+		PickAny: True
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+	Template@1:
+		Id: 1
+		Images: sevenfall|art/terrain/water.png
+		Size: 1,1
+		PickAny: True
+		Categories: Terrain
+		Tiles:
+			0: Water
+
+	Template@100:
+		Id: 100
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 0
+		Categories: Terrain
+		Tiles:
+			0: Clear
+
+	Template@101:
+		Id: 101
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 1
+		Categories: Terrain
+		Tiles:
+			0: Clear
+
+	Template@102:
+		Id: 102
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 2
+		Categories: Terrain
+		Tiles:
+			0: Clear
+
+	Template@103:
+		Id: 103
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 3
+		Categories: Terrain
+		Tiles:
+			0: Rough
+
+	Template@104:
+		Id: 104
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 4
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@105:
+		Id: 105
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 5
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@106:
+		Id: 106
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 6
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@107:
+		Id: 107
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 7
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@108:
+		Id: 108
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 8
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@109:
+		Id: 109
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 9
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@110:
+		Id: 110
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 10
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@111:
+		Id: 111
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 11
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@112:
+		Id: 112
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 12
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@113:
+		Id: 113
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 13
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@116:
+		Id: 116
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 16
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@117:
+		Id: 117
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 17
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@118:
+		Id: 118
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 18
+		Categories: Road
+		Tiles:
+			0: Road
+
+	Template@119:
+		Id: 119
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 19
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@120:
+		Id: 120
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 20
+		Categories: Path
+		Tiles:
+			0: Road
+
+	Template@121:
+		Id: 121
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 21
+		Categories: Path
+		Tiles:
+			0: Road

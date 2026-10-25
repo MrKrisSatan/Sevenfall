@@ -139,6 +139,8 @@ def main() -> None:
     content = re.sub(r'(?m)^\tWindowTitle: .*$', '\tWindowTitle: sf-title', content, count=1)
     content = content.replace('ra|rules/ai.yaml', 'sevenfall|rules/40-ai.yaml')
     content = content.replace('ra|cursors.yaml', 'sevenfall|cursors.yaml')
+    content = re.sub(r'(?m)^TileSets:\n(?:\t[^\n]*\n)+',
+                     'TileSets:\n\tsevenfall|tilesets/alpha.yaml\n', content, count=1)
     content = content.replace('ra|maps: System', 'sevenfall|maps: System')
     content = content.replace('maps/ra/{DEV_VERSION}', 'maps/sevenfall/0.2')
     content = content.replace('Version: {DEV_VERSION}', 'Version: 0.3-dev')
@@ -158,6 +160,8 @@ def main() -> None:
         ('Rules', 'rules/30-units.yaml'),
         ('Rules', 'rules/35-animations.yaml'),
         ('Rules', 'rules/45-defenses.yaml'),
+        ('Rules', 'rules/50-environment.yaml'),
+        ('Rules', 'rules/51-engineers.yaml'),
         ('Weapons', 'weapons/sevenfall.yaml'),
         ('Weapons', 'weapons/defenses.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
@@ -170,6 +174,7 @@ def main() -> None:
         ('Sequences', 'sequences/units.yaml'),
         ('Sequences', 'sequences/animations.yaml'),
         ('Sequences', 'sequences/defenses.yaml'),
+        ('Sequences', 'sequences/environment.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')

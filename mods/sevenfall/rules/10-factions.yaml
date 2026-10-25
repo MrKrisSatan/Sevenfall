@@ -1,6 +1,9 @@
 # SEVENFALL: selection and tech prerequisites.
 # This overlay is loaded after Red Alert's rules/world.yaml.
 ^BaseWorld:
+	PaletteFromGrayscale@sf_rgba:
+		Name: sf_rgba
+		AllowModifiers: False
 	-Faction@allies:
 	-Faction@england:
 	-Faction@france:
@@ -74,6 +77,7 @@
 				Name: sf-resource-veilglass-enriched-name
 
 World:
+	BridgeLayer:
 	SFDefenseManager:
 	SFVeilglassHazard:
 	StartingUnits@mcvonly:

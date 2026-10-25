@@ -24,7 +24,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--support-dir', type=Path, required=True)
     parser.add_argument('--dotnet', default='dotnet')
-    parser.add_argument('--scenario', choices=['defense', 'release'], default='defense')
+    parser.add_argument('--scenario', choices=['defense', 'release', 'environment'], default='defense')
     parser.add_argument('--timeout', type=int)
     args = parser.parse_args()
     support = args.support_dir.resolve()
