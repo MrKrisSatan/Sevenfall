@@ -1,0 +1,520 @@
+# Original eight-direction combat poses. No Red Alert body/turret/corpse sprites.
+# Movement and attack currently hold the matching facing; these are not animation cycles.
+a_watcher:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-watcher.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+h_rifleman:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-rifleman.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+d_thrall:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-thrall.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+a_judicator:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-judicator.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+h_rocketeer:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-rocketeer.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+d_cinderling:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-cinderling.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+a_aegis:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-aegis.png
+		Scale: 1
+	idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+h_bulwark:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-bulwark.png
+		Scale: 1
+	idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+d_ravager:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-ravager.png
+		Scale: 1
+	idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+a_seraphim:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-seraphim.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+a_gatekeeper:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-gatekeeper.png
+		Scale: 1
+	idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+a_penitent:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/a-penitent.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+h_siegegun:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-siegegun.png
+		Scale: 1
+	idle:
+		Facings: -8
+	empty-idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+h_ranger:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-ranger.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+h_templar:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/h-templar.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+
+d_hellreaver:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-hellreaver.png
+		Scale: 1
+	idle:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+d_skitter:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-skitter.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 0.6897
+
+d_hexer:
+	Defaults:
+		Filename: sevenfall|art/unit-turnarounds/d-hexer.png
+		Scale: 1
+	stand:
+		Facings: -8
+	stand2:
+		Facings: -8
+	idle1:
+		Facings: -8
+	idle2:
+		Facings: -8
+	run:
+		Facings: -8
+	shoot:
+		Facings: -8
+	throw:
+		Facings: -8
+	prone-stand:
+		Facings: -8
+	prone-stand2:
+		Facings: -8
+	prone-run:
+		Facings: -8
+	prone-shoot:
+		Facings: -8
+	prone-throw:
+		Facings: -8
+	liedown:
+		Facings: -8
+	standup:
+		Facings: -8
+	parachute:
+		Facings: -8
+	icon:
+		Start: 3
+		Scale: 1.0
+

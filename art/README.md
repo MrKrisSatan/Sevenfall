@@ -102,4 +102,9 @@ add construction/damage animations and team-colour masks as the animation pipeli
 
 ## Eight-direction unit artwork
 
-[39 designs / 312 transparent views](unit-turnarounds/README.md), including the current roster and new naval, aircraft and kennel-beast concepts. Includes individual PNGs, OpenRA-format strips, source sheets and generation prompts. Combat integration and animation remain pending.
+[39 designs / 312 transparent views](unit-turnarounds/README.md), including the current roster and new naval, aircraft and kennel-beast concepts. Includes individual PNGs, OpenRA-format strips, source sheets and generation prompts. The implemented roster is now bound to original animation exports; see [the animation and damage pass](animations/README.md).
+
+## Animation and damage follow-up
+
+The historical static passes above are superseded for movement, attacks, unit deaths
+and building damage by [the authored animation pass](animations/README.md).

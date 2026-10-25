@@ -16,6 +16,8 @@ if errorlevel 1 (
   goto error
 )
 echo [1/3] Running source and mission contract tests...
+py -3 -m pip install -r requirements-test.txt
+if errorlevel 1 goto error
 py -3 -m unittest discover -s tests
 if errorlevel 1 goto error
 echo [2/3] Compiling pinned engine and checking all mod YAML...

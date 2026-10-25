@@ -8,11 +8,15 @@ files = list((base / 'rules').glob('*.yaml')) + list((base / 'weapons').glob('*.
 assert files, 'No OpenRA YAML found'
 ids = {}
 for p in files:
+    local_ids = set()
     for no, raw in enumerate(p.read_text(encoding='utf8').splitlines(), 1):
         assert not raw.startswith(' '), f'{p}:{no}: MiniYaml indentation must use tabs'
         if raw and not raw.startswith(('\t', '#', ' ')) and raw.endswith(':'):
             key = raw[:-1]
-            if p.name not in ('10-factions.yaml',):
+            assert key not in local_ids, f'Duplicate {key} within {p}'
+            local_ids.add(key)
+            # These two overlays intentionally refine actors declared earlier.
+            if p.name not in ('10-factions.yaml', '35-animations.yaml'):
                 assert key not in ids, f'Duplicate {key}: {p} and {ids[key]}'
             ids[key] = f'{p.name}:{no}'
 ftl = (base / 'fluent/sevenfall.ftl').read_text(encoding='utf8')

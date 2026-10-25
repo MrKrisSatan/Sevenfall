@@ -1,9 +1,25 @@
-# Prototype troops and combat vehicles use placeholders; harvesters have original art.
+# All implemented units use original Sevenfall directional artwork.
+# Combat poses currently hold one authored frame per direction; animation cycles remain future work.
 # Main-faction units
 A_WATCHER:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: a_watcher
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -24,7 +40,22 @@ A_WATCHER:
 H_RIFLEMAN:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: h_rifleman
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -45,7 +76,22 @@ H_RIFLEMAN:
 D_THRALL:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: d_thrall
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -66,7 +112,20 @@ D_THRALL:
 A_JUDICATOR:
 	Inherits: E3
 	RenderSprites:
-		Image: E3
+		Image: a_judicator
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -87,7 +146,20 @@ A_JUDICATOR:
 H_ROCKETEER:
 	Inherits: E3
 	RenderSprites:
-		Image: E3
+		Image: h_rocketeer
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -104,7 +176,20 @@ H_ROCKETEER:
 D_CINDERLING:
 	Inherits: E2
 	RenderSprites:
-		Image: E2
+		Image: d_cinderling
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -123,7 +208,22 @@ D_CINDERLING:
 A_AEGIS:
 	Inherits: 2TNK
 	RenderSprites:
-		Image: 2TNK
+		Image: a_aegis
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-Turreted:
+	-AttackTurreted:
+	AttackFrontal:
+		FacingTolerance: 0
+	-SpawnActorOnDeath:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -138,12 +238,30 @@ A_AEGIS:
 	Mobile:
 		Speed: 67
 	Armament:
+		-MuzzleSequence:
+		LocalOffset: 512,0,90
+		Recoil: 0
 		Weapon: SF_Sanction
 
 H_BULWARK:
 	Inherits: 2TNK
 	RenderSprites:
-		Image: 2TNK
+		Image: h_bulwark
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-Turreted:
+	-AttackTurreted:
+	AttackFrontal:
+		FacingTolerance: 0
+	-SpawnActorOnDeath:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -158,12 +276,33 @@ H_BULWARK:
 	Mobile:
 		Speed: 80
 	Armament:
+		-MuzzleSequence:
+		LocalOffset: 512,0,90
+		Recoil: 0
 		Weapon: SF_Stormshell
 
 D_RAVAGER:
 	Inherits: 1TNK
 	RenderSprites:
-		Image: 1TNK
+		Image: d_ravager
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-Turreted:
+	-AttackTurreted:
+	AttackFrontal:
+		FacingTolerance: 0
+	Armament:
+		-MuzzleSequence:
+		LocalOffset: 512,0,90
+		Recoil: 0
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -182,7 +321,20 @@ D_RAVAGER:
 A_SERAPHIM:
 	Inherits: E3
 	RenderSprites:
-		Image: E3
+		Image: a_seraphim
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -201,7 +353,26 @@ A_SERAPHIM:
 A_GATEKEEPER:
 	Inherits: 2TNK
 	RenderSprites:
-		Image: 2TNK
+		Image: a_gatekeeper
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-Turreted:
+	-AttackTurreted:
+	AttackFrontal:
+		FacingTolerance: 0
+	Armament:
+		-MuzzleSequence:
+		LocalOffset: 512,0,90
+		Recoil: 0
+	-SpawnActorOnDeath:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 85
@@ -219,7 +390,22 @@ A_GATEKEEPER:
 A_PENITENT:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: a_penitent
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -240,7 +426,15 @@ A_PENITENT:
 H_SIEGEGUN:
 	Inherits: V2RL
 	RenderSprites:
-		Image: V2RL
+		Image: h_siegegun
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 85
@@ -256,7 +450,22 @@ H_SIEGEGUN:
 H_RANGER:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: h_ranger
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -275,7 +484,20 @@ H_RANGER:
 H_TEMPLAR:
 	Inherits: E3
 	RenderSprites:
-		Image: E3
+		Image: h_templar
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -292,7 +514,22 @@ H_TEMPLAR:
 D_HELLREAVER:
 	Inherits: 2TNK
 	RenderSprites:
-		Image: 2TNK
+		Image: d_hellreaver
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	-ClassicFacingBodyOrientation:
+	BodyOrientation:
+	-WithSpriteTurret:
+	-WithMuzzleOverlay:
+	-Turreted:
+	-AttackTurreted:
+	AttackFrontal:
+		FacingTolerance: 0
+	-SpawnActorOnDeath:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 85
@@ -305,12 +542,30 @@ D_HELLREAVER:
 	Health:
 		HP: 55000
 	Armament:
+		-MuzzleSequence:
+		LocalOffset: 512,0,90
+		Recoil: 0
 		Weapon: SF_Cinder
 
 D_SKITTER:
 	Inherits: E1
 	RenderSprites:
-		Image: E1
+		Image: d_skitter
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
+	Armament@GARRISONED:
+		-MuzzleSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -331,7 +586,20 @@ D_SKITTER:
 D_HEXER:
 	Inherits: E3
 	RenderSprites:
-		Image: E3
+		Image: d_hexer
+	WithTextDecoration@OWNER:
+		Text: ===
+		UsePlayerColor: True
+		Position: BottomRight
+		ValidRelationships: Ally, Neutral, Enemy
+		RequiresSelection: False
+	WithInfantryBody:
+		IdleSequences: stand
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	-WithDeathAnimation:
+	Parachutable:
+		-GroundCorpseSequence:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier

@@ -12,9 +12,31 @@ local lastStoredCredits = 0
 local sawInfantry = false
 local sawArmour = false
 local winOrLoss = false
+local firstRefinery
+local firstHarvester
+local preservationFailed = false
 
 local function Has(type)
 	return #commander.GetActorsByType(type) > 0
+end
+
+-- Keep actor identities: replacements must not restore this bonus. Removal
+-- covers selling as well as destruction; capture fails even if recaptured.
+local function FailPreservation()
+	if winOrLoss or preservationFailed then
+		return
+	end
+	preservationFailed = true
+	commander.MarkFailedObjective(optionalObjective)
+end
+
+local function TrackFirst(type)
+	local actor = commander.GetActorsByType(type)[1]
+	if actor then
+		Trigger.OnKilledOrCaptured(actor, FailPreservation)
+		Trigger.OnRemovedFromWorld(actor, FailPreservation)
+	end
+	return actor
 end
 
 WorldLoaded = function()
@@ -42,14 +64,31 @@ WorldLoaded = function()
 			sawArmour = true
 		end
 	end)
-	Trigger.OnKilled(Map.NamedActor("CommanderMcv"), function()
-		-- Do not fail if this actor was deployed into a construction yard.
-		-- The tick loop checks if there is any surviving command facility.
-	end)
 end
 
 Tick = function()
-	if winOrLoss or DateTime.GameTime % 25 ~= 0 then
+	if winOrLoss then
+		return
+	end
+
+	-- Inspect new economy actors every tick, including refinery FreeActor miners
+	-- which do not pass through OnAnyProduction.
+	if not firstRefinery then
+		firstRefinery = TrackFirst("a_veilworks")
+	end
+	if not firstHarvester then
+		firstHarvester = TrackFirst("a_gatherer")
+	end
+
+	-- Defeat takes priority over completing the final objective on this tick.
+	-- Deploying replaces the MCV with FACT, so either command actor suffices.
+	if not Has("fact") and not Has("mcv") then
+		commander.MarkFailedObjective(assaultObjective)
+		winOrLoss = true
+		return
+	end
+
+	if DateTime.GameTime % 25 ~= 0 then
 		return
 	end
 
@@ -59,20 +98,29 @@ Tick = function()
 	end
 	lastStoredCredits = stored
 
-	if not commander.IsObjectiveCompleted(economyObjective)
-		and Has("fact") and Has("a_spire") and Has("a_veilworks")
-		and refinedCredits >= 900 then
+	local economyReady = commander.IsObjectiveCompleted(economyObjective)
+		or (Has("fact") and Has("a_spire") and Has("a_veilworks") and refinedCredits >= 900)
+	local armyReady = commander.IsObjectiveCompleted(armyObjective)
+		or (Has("a_chapel") and Has("a_armory") and sawInfantry and sawArmour)
+	local assaultReady = commander.IsObjectiveCompleted(assaultObjective)
+		or #enemy.GetActorsByType("fact") == 0
+
+	-- Resolve the bonus before the final primary objective awards victory.
+	if economyReady and armyReady and assaultReady then
+		if not preservationFailed and firstRefinery and firstHarvester then
+			commander.MarkCompletedObjective(optionalObjective)
+		else
+			FailPreservation()
+		end
+	end
+
+	if economyReady then
 		commander.MarkCompletedObjective(economyObjective)
 	end
-
-	if not commander.IsObjectiveCompleted(armyObjective)
-		and Has("a_chapel") and Has("a_armory")
-		and sawInfantry and sawArmour then
+	if armyReady then
 		commander.MarkCompletedObjective(armyObjective)
 	end
-
-	if not commander.IsObjectiveCompleted(assaultObjective)
-		and #enemy.GetActorsByType("fact") == 0 then
+	if assaultReady then
 		commander.MarkCompletedObjective(assaultObjective)
 	end
 
@@ -80,18 +128,5 @@ Tick = function()
 		and commander.IsObjectiveCompleted(armyObjective)
 		and commander.IsObjectiveCompleted(assaultObjective) then
 		winOrLoss = true
-		if Has("a_gatherer") and Has("a_veilworks") then
-			commander.MarkCompletedObjective(optionalObjective)
-		else
-			commander.MarkFailedObjective(optionalObjective)
-		end
-	end
-
-	-- Deployment replaces the starting MCV with a FACT; only fail if BOTH
-	-- forms of command have vanished. A player without a yard or MCV
-	-- cannot complete the building objectives.
-	if not winOrLoss and not Has("fact") and not Has("mcv") then
-		winOrLoss = true
-		commander.MarkFailedObjective(assaultObjective)
 	end
 end

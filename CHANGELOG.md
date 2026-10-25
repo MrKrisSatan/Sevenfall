@@ -1,5 +1,20 @@
 # Sevenfall changelog
 
+## Animation and damage development pass — 2026-10-25
+
+- Added authored movement, attack/work and collapse/death cycles for all 24
+  implemented faction unit designs, using original Sevenfall design references.
+- Added damaged animation variants for vehicles/beasts and heavy/critical damage
+  sprites for all 39 implemented building designs, with repair returning healthy art.
+- Preserved facing through unit death actors, followed by a short corpse/wreck hold.
+- Added source prompts, hashed manifests, reproducible atlas packing/binding tools,
+  an animation diagnostic map and regression coverage.
+- Verified 43 automated tests, engine YAML checks for eight maps, sprite loading
+  across four tilesets, and the native diagnostic through all 24 death spawns.
+- Initial animation pass: prone/parachuting/construction cycles, visual polish,
+  full campaign/skirmish acceptance and a standalone release remain outstanding.
+- Also fixed campaign preservation bonuses and defeat/victory ordering.
+
 ## 0.3 development candidate — 2026-10-21
 
 **Integration source, not a playable release.**

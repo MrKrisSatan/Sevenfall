@@ -1,0 +1,142 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Unit Gallery
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: h_bastion
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 1
+	PlayerReference@HostA:
+		Name: HostA
+		NonCombatant: True
+		Faction: a_seraph
+		Color: E7C76C
+	PlayerReference@HostD:
+		Name: HostD
+		NonCombatant: True
+		Faction: d_legion
+		Color: D34B78
+Actors:
+	Spawn0: mpspawn
+		Owner: Neutral
+		Location: 48,47
+	Unita0: mcv
+		Owner: HostA
+		Location: 34,36
+		Facing: 384
+	Unita1: a_watcher
+		Owner: HostA
+		Location: 34,39
+		Facing: 384
+	Unita2: a_judicator
+		Owner: HostA
+		Location: 34,42
+		Facing: 384
+	Unita3: a_aegis
+		Owner: HostA
+		Location: 34,45
+		Facing: 384
+	Unita4: a_seraphim
+		Owner: HostA
+		Location: 34,48
+		Facing: 384
+	Unita5: a_gatekeeper
+		Owner: HostA
+		Location: 34,51
+		Facing: 384
+	Unita6: a_penitent
+		Owner: HostA
+		Location: 34,54
+		Facing: 384
+	Unita7: a_gatherer
+		Owner: HostA
+		Location: 34,57
+		Facing: 384
+	Unith0: mcv
+		Owner: Multi0
+		Location: 48,36
+		Facing: 384
+	Unith1: h_rifleman
+		Owner: Multi0
+		Location: 48,39
+		Facing: 384
+	Unith2: h_rocketeer
+		Owner: Multi0
+		Location: 48,42
+		Facing: 384
+	Unith3: h_bulwark
+		Owner: Multi0
+		Location: 48,45
+		Facing: 384
+	Unith4: h_siegegun
+		Owner: Multi0
+		Location: 48,48
+		Facing: 384
+	Unith5: h_ranger
+		Owner: Multi0
+		Location: 48,51
+		Facing: 384
+	Unith6: h_templar
+		Owner: Multi0
+		Location: 48,54
+		Facing: 384
+	Unith7: h_harvester
+		Owner: Multi0
+		Location: 48,57
+		Facing: 384
+	Unitd0: mcv
+		Owner: HostD
+		Location: 62,36
+		Facing: 384
+	Unitd1: d_thrall
+		Owner: HostD
+		Location: 62,39
+		Facing: 384
+	Unitd2: d_cinderling
+		Owner: HostD
+		Location: 62,42
+		Facing: 384
+	Unitd3: d_ravager
+		Owner: HostD
+		Location: 62,45
+		Facing: 384
+	Unitd4: d_hellreaver
+		Owner: HostD
+		Location: 62,48
+		Facing: 384
+	Unitd5: d_skitter
+		Owner: HostD
+		Location: 62,51
+		Facing: 384
+	Unitd6: d_hexer
+		Owner: HostD
+		Location: 62,54
+		Facing: 384
+	Unitd7: d_devourer
+		Owner: HostD
+		Location: 62,57
+		Facing: 384
+Rules:
+	World:
+		-SpawnStartingUnits:
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True

@@ -1,0 +1,2 @@
+# Execute the actual mission scripts using OpenRA's Lua language version.
+lupa==2.6

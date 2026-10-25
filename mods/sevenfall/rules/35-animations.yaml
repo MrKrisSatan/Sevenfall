@@ -1,0 +1,251 @@
+# Generated animation bindings. Gameplay weapons and prerequisites remain in 30-units.yaml.
+^SF_ANIMATED_DEATH:
+	Inherits: ^BasicHusk
+	Inherits@SF_SPRITES: ^SpriteActor
+	Husk:
+		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach, Water, River
+	QuantizeFacingsFromSequence:
+		Sequence: corpse
+	WithFacingSpriteBody:
+		StartSequence: die
+		Sequence: corpse
+	KillsSelf:
+		Delay: 150
+		RemoveInstead: True
+	-MapEditorData:
+A_AEGIS:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_aegis.death
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+A_AEGIS.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_aegis_death
+
+A_GATHERER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_gatherer.death
+	WithMoveAnimation:
+		MoveSequence: move
+	-SpawnActorOnDeath:
+	-HarvesterHuskModifier:
+A_GATHERER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_harvester_death
+
+A_GATEKEEPER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_gatekeeper.death
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+A_GATEKEEPER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_gatekeeper_death
+
+A_JUDICATOR:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_judicator.death
+A_JUDICATOR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_judicator_death
+
+A_PENITENT:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_penitent.death
+A_PENITENT.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_penitent_death
+
+A_SERAPHIM:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_seraphim.death
+A_SERAPHIM.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_seraphim_death
+
+A_WATCHER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_watcher.death
+A_WATCHER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_watcher_death
+
+H_TEMPLAR:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_templar.death
+H_TEMPLAR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_templar_death
+
+H_BULWARK:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_bulwark.death
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+H_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_bulwark_death
+
+H_HARVESTER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_harvester.death
+	WithMoveAnimation:
+		MoveSequence: move
+	-SpawnActorOnDeath:
+	-HarvesterHuskModifier:
+H_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_harvester_death
+
+H_RIFLEMAN:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_rifleman.death
+H_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_rifleman_death
+
+H_ROCKETEER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_rocketeer.death
+H_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_rocketeer_death
+
+H_SIEGEGUN:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_siegegun.death
+	WithMoveAnimation:
+		MoveSequence: move
+	-WithFacingSpriteBody@EMPTY:
+	WithFacingSpriteBody:
+		-RequiresCondition:
+		Name: body
+	Armament:
+		-ReloadingCondition:
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+H_SIEGEGUN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_siegegun_death
+
+H_RANGER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_ranger.death
+H_RANGER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_ranger_death
+
+D_CINDERLING:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_cinderling.death
+D_CINDERLING.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_cinderling_death
+
+D_HELLREAVER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_hellreaver.death
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+D_HELLREAVER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_hellreaver_death
+
+D_HEXER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_hexer.death
+D_HEXER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_hexer_death
+
+D_DEVOURER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_devourer.death
+	WithMoveAnimation:
+		MoveSequence: move
+	-SpawnActorOnDeath:
+	-HarvesterHuskModifier:
+D_DEVOURER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_harvester_death
+
+D_RAVAGER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_ravager.death
+	WithMoveAnimation:
+		MoveSequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		DelayRelativeTo: Attack
+D_RAVAGER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_ravager_death
+
+D_SKITTER:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_skitter.death
+D_SKITTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_skitter_death
+
+D_THRALL:
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_thrall.death
+D_THRALL.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_thrall_death
+
+MCV:
+	-SpawnActorOnDeath:
+	WithMoveAnimation:
+		MoveSequence: move
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: mcv.sfdeath
+MCV.SFDEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_mcv_death
+		FactionImages:
+			a_seraph: a_mcv_death
+			a_warden: a_mcv_death
+			a_exile: a_mcv_death
+			h_bastion: h_mcv_death
+			h_union: h_mcv_death
+			h_covenant: h_mcv_death
+			d_legion: d_mcv_death
+			d_brood: d_mcv_death
+			d_court: d_mcv_death

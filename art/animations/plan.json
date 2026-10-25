@@ -1,0 +1,610 @@
+[
+  {
+    "id": "a-mcv",
+    "kind": "unit",
+    "unit": "a-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/a-mcv.png",
+    "destination": "art/animations/source/a-mcv.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Angel MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-mcv-damaged",
+    "kind": "unit",
+    "unit": "a-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/a-mcv.png",
+    "destination": "art/animations/source/a-mcv-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Angel MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-aegis",
+    "kind": "unit",
+    "unit": "a-aegis",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/a-aegis.png",
+    "destination": "art/animations/source/a-aegis.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Aegis Engine. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Aegis Engine. A broad armored celestial tracked siege tank, ivory gold plating, wing-shaped side armor, powerful long cyan crystal cannon, grounded heavy war machine. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-aegis-damaged",
+    "kind": "unit",
+    "unit": "a-aegis",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/a-aegis.png",
+    "destination": "art/animations/source/a-aegis-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Aegis Engine. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Aegis Engine. A broad armored celestial tracked siege tank, ivory gold plating, wing-shaped side armor, powerful long cyan crystal cannon, grounded heavy war machine. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-gatherer",
+    "kind": "unit",
+    "unit": "a-gatherer",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/a-gatherer.png",
+    "destination": "art/animations/source/a-gatherer.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Celestial Gatherer. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-gatherer-damaged",
+    "kind": "unit",
+    "unit": "a-gatherer",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/a-gatherer.png",
+    "destination": "art/animations/source/a-gatherer-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Celestial Gatherer. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-gatekeeper",
+    "kind": "unit",
+    "unit": "a-gatekeeper",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/a-gatekeeper.png",
+    "destination": "art/animations/source/a-gatekeeper.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Gatekeeper. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Gatekeeper. Extremely heavy celestial siege vehicle, fortress-like ivory gold hull, thick armored tracks, broad frontal shield plates, massive cyan cannon, gate-shaped turret. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-gatekeeper-damaged",
+    "kind": "unit",
+    "unit": "a-gatekeeper",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/a-gatekeeper.png",
+    "destination": "art/animations/source/a-gatekeeper-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Gatekeeper. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Gatekeeper. Extremely heavy celestial siege vehicle, fortress-like ivory gold hull, thick armored tracks, broad frontal shield plates, massive cyan cannon, gate-shaped turret. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-judicator",
+    "kind": "unit",
+    "unit": "a-judicator",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/a-judicator.png",
+    "destination": "art/animations/source/a-judicator.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Judicator. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Judicator. An angel heavy weapons infantry warrior in ivory and gold armor, folded metal wings, large shoulder-mounted cyan crystal missile launcher and targeting optics. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-penitent",
+    "kind": "unit",
+    "unit": "a-penitent",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/a-penitent.png",
+    "destination": "art/animations/source/a-penitent.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Penitent. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Penitent. Fast fallen angel scout infantry, worn ivory armor over dark leather, ragged folded wings, gold mask, compact cyan energy rifle, lean agile silhouette. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-seraphim",
+    "kind": "unit",
+    "unit": "a-seraphim",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/a-seraphim.png",
+    "destination": "art/animations/source/a-seraphim.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Seraphim. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Seraphim. Elite radiant angel infantry, six compact folded ivory feather wings, golden ceremonial battle armor, cyan radiant lance, imposing upright humanoid. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-watcher",
+    "kind": "unit",
+    "unit": "a-watcher",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/a-watcher.png",
+    "destination": "art/animations/source/a-watcher.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Watcher. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Watcher. An armored angel sentinel with folded ivory wings, enclosed gold helmet, cyan spear-like energy rifle, sturdy celestial infantry armor. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-mcv",
+    "kind": "unit",
+    "unit": "h-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/h-mcv.png",
+    "destination": "art/animations/source/h-mcv.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Human MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-mcv-damaged",
+    "kind": "unit",
+    "unit": "h-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/h-mcv.png",
+    "destination": "art/animations/source/h-mcv-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Human MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-templar",
+    "kind": "unit",
+    "unit": "h-templar",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/h-templar.png",
+    "destination": "art/animations/source/h-templar.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Ash Templar. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Ash Templar. Human religious heavy infantry, graphite armored exosuit, ash-grey tabard, olive shoulder plates, amber visor, powerful compact launcher and reinforced armor. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-bulwark",
+    "kind": "unit",
+    "unit": "h-bulwark",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/h-bulwark.png",
+    "destination": "art/animations/source/h-bulwark.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Bulwark Tank. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Bulwark Tank. Human medium battle tank, olive armor graphite tracks, amber running lights, low angular turret, single long cannon, practical industrial design. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-bulwark-damaged",
+    "kind": "unit",
+    "unit": "h-bulwark",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/h-bulwark.png",
+    "destination": "art/animations/source/h-bulwark-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Bulwark Tank. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Bulwark Tank. Human medium battle tank, olive armor graphite tracks, amber running lights, low angular turret, single long cannon, practical industrial design. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells.",
+    "correctionReference": "art/animations/source/h-bulwark.png",
+    "correctionPrompt": "Edit this COMPLETE 8-column, 12-row tank animation atlas into a damaged version. Preserve the EXACT same 1024x1536 canvas, positions, scale, poses, all EIGHT columns, all TWELVE existing rows, and every one of its 96 tank sprites, including the final row of EIGHT wrecks at the very bottom. Change ONLY the condition of every tank: add physically broken cracked armor plates, charred hull patches, exposed machinery and small holes. Preserve every walking/driving/firing/death pose and muzzle flash from the reference; do not shift any sprites or remove ANY sprite or ANY row. The original bottom row ALREADY has wrecks: keep all of them in their positions and add damage. Maintain genuine transparent background and preserve clear margins. Do not add a blank row, background, text or grid."
+  },
+  {
+    "id": "h-harvester",
+    "kind": "unit",
+    "unit": "h-harvester",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/h-harvester.png",
+    "destination": "art/animations/source/h-harvester.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Industrial Harvester. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-harvester-damaged",
+    "kind": "unit",
+    "unit": "h-harvester",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/h-harvester.png",
+    "destination": "art/animations/source/h-harvester-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Industrial Harvester. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-rifleman",
+    "kind": "unit",
+    "unit": "h-rifleman",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/h-rifleman.png",
+    "destination": "art/animations/source/h-rifleman.png",
+    "prompt": "Create a production sprite animation atlas for Sevenfall Human Rifleman, preserving EXACTLY the armored olive/tan sci-fi rifleman design in the reference image. The reference is an eight-facing strip ordered N NE E SE S SW W NW. Output one transparent PNG portrait atlas, exact regular grid 8 columns by 12 rows, preferably 1024x1536 pixels with square 128x128 cells. Every cell shows ONE complete small full-body unit at constant scale, same fixed camera elevation and feet anchor. Columns are always N NE E SE S SW W NW; N shows back, S front. Rows 1-4 are four genuine WALK gait keyframes (left contact, left passing, right contact, right passing), articulated limbs, not translation/rotation of a frozen pose. Rows 5-8 are four FIRE rifle keyframes (aim, muzzle flash and recoil, recoil recovery, aim). Rows 9-12 are four DEATH keyframes (stagger, knees buckle, fall sideways, collapsed corpse). Every direction needs its own poses. Unit occupies about 48 percent of cell width/height matching reference small game sprite scale. Absolutely no grid lines, labels, text, backgrounds, UI, extra unrelated subjects, drop shadows, clipping, or checkerboard drawn into image. True transparent alpha background. Maintain constant model identity and weapon across all 96 cells."
+  },
+  {
+    "id": "h-rocketeer",
+    "kind": "unit",
+    "unit": "h-rocketeer",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/h-rocketeer.png",
+    "destination": "art/animations/source/h-rocketeer.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Rocketeer. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Rocketeer. Human anti-armor infantry, olive graphite heavy tactical armor, amber visor, large portable guided rocket launcher held on shoulder, spare rockets backpack. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-siegegun",
+    "kind": "unit",
+    "unit": "h-siegegun",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/h-siegegun.png",
+    "destination": "art/animations/source/h-siegegun.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Siege Cannon. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Siege Cannon. Human heavy self-propelled long-range artillery, olive graphite tracked chassis, long elevated siege cannon, stabilizer arms, amber optics. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-siegegun-damaged",
+    "kind": "unit",
+    "unit": "h-siegegun",
+    "category": "vehicles",
+    "reference": "art/unit-turnarounds/sheets/h-siegegun.png",
+    "destination": "art/animations/source/h-siegegun-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Siege Cannon. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Siege Cannon. Human heavy self-propelled long-range artillery, olive graphite tracked chassis, long elevated siege cannon, stabilizer arms, amber optics. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "h-ranger",
+    "kind": "unit",
+    "unit": "h-ranger",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/h-ranger.png",
+    "destination": "art/animations/source/h-ranger.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Wasteland Ranger. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Wasteland Ranger. Human fast wasteland scout, weathered olive coat over light graphite armor, hood and respirator, compact rifle, amber goggles, lean mobile infantry. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-mcv",
+    "kind": "unit",
+    "unit": "d-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/d-mcv.png",
+    "destination": "art/animations/source/d-mcv.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Demon MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-mcv-damaged",
+    "kind": "unit",
+    "unit": "d-mcv",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/d-mcv.png",
+    "destination": "art/animations/source/d-mcv-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Demon MCV. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-cinderling",
+    "kind": "unit",
+    "unit": "d-cinderling",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/d-cinderling.png",
+    "destination": "art/animations/source/d-cinderling.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Cinderling. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Cinderling. Small infernal incendiary creature, blackened crimson skin, bone horns, ember-filled armored chest, magenta furnace backpack and flame-projecting claw weapon, hunched biped. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-hellreaver",
+    "kind": "unit",
+    "unit": "d-hellreaver",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-hellreaver.png",
+    "destination": "art/animations/source/d-hellreaver.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Hellreaver. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Hellreaver. Huge armored demonic siege beast, six powerful legs, crimson flesh enclosed in black iron, enormous bone tusks, magenta furnace siege cannon mounted on back. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-hellreaver-damaged",
+    "kind": "unit",
+    "unit": "d-hellreaver",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-hellreaver.png",
+    "destination": "art/animations/source/d-hellreaver-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Hellreaver. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Hellreaver. Huge armored demonic siege beast, six powerful legs, crimson flesh enclosed in black iron, enormous bone tusks, magenta furnace siege cannon mounted on back. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-hexer",
+    "kind": "unit",
+    "unit": "d-hexer",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/d-hexer.png",
+    "destination": "art/animations/source/d-hexer.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Hexer. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Hexer. Demonic ranged sorcerer, tall thin humanoid with bone horns, black iron and crimson robes, magenta crystal staff, arcane glowing hands, no detached particles. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-devourer",
+    "kind": "unit",
+    "unit": "d-devourer",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/d-devourer.png",
+    "destination": "art/animations/source/d-devourer.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Infernal Devourer. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-devourer-damaged",
+    "kind": "unit",
+    "unit": "d-devourer",
+    "category": "logistics",
+    "reference": "art/unit-turnarounds/sheets/d-devourer.png",
+    "destination": "art/animations/source/d-devourer-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Infernal Devourer. Reference image is the exact design and eight orientations to preserve.  Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four moving vehicle with rolling tracks/wheels and mechanical suspension motion cycle keyframes. Rows5-8 four working/mining or deployment mechanism keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-ravager",
+    "kind": "unit",
+    "unit": "d-ravager",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-ravager.png",
+    "destination": "art/animations/source/d-ravager.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Ravager Beast. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Ravager Beast. Fast demonic shock beast, low muscular crimson quadruped, black iron armor, sweeping bone horns, magenta glowing fissures, huge forward claws. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-ravager-damaged",
+    "kind": "unit",
+    "unit": "d-ravager",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-ravager.png",
+    "destination": "art/animations/source/d-ravager-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Ravager Beast. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Ravager Beast. Fast demonic shock beast, low muscular crimson quadruped, black iron armor, sweeping bone horns, magenta glowing fissures, huge forward claws. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-skitter",
+    "kind": "unit",
+    "unit": "d-skitter",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-skitter.png",
+    "destination": "art/animations/source/d-skitter.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Skitter. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Skitter. Tiny fast infernal swarm creature, six thin clawed legs, low crimson body, black chitin shell, bone spikes, magenta eyes, distinct insect-like silhouette. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-skitter-damaged",
+    "kind": "unit",
+    "unit": "d-skitter",
+    "category": "beasts",
+    "reference": "art/unit-turnarounds/sheets/d-skitter.png",
+    "destination": "art/animations/source/d-skitter-damaged.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Skitter. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Skitter. Tiny fast infernal swarm creature, six thin clawed legs, low crimson body, black chitin shell, bone spikes, magenta eyes, distinct insect-like silhouette. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. HEAVILY DAMAGED VARIANT throughout every frame: torn plating, broken armor, scorched hull and exposed internals; for beasts wounds and torn carapace, no gore. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "d-thrall",
+    "kind": "unit",
+    "unit": "d-thrall",
+    "category": "infantry",
+    "reference": "art/unit-turnarounds/sheets/d-thrall.png",
+    "destination": "art/animations/source/d-thrall.png",
+    "prompt": "Production Sevenfall RTS sprite animation atlas of Thrall. Reference image is the exact design and eight orientations to preserve. Original Sevenfall RTS unit concept illustration: Thrall. Lesser infernal melee creature, lean crimson sinewy body, black iron shoulder plates, bone horns, elongated claws, magenta glowing eyes, hunched biped. Preserve faction colors, equipment, camera elevation, small game-sprite rendering, constant scale and anchor. Healthy variant. One transparent PNG atlas regular grid EIGHT COLUMNS and TWELVE ROWS, 1024x1536 square128 cells. Columns N NE E SE S SW W NW (N back, S front). Rows1-4 four walk or run with genuine articulated limb motion cycle keyframes. Rows5-8 four weapon firing or melee attack keyframes: preparation, discharge/impact with recoil, recovery, ready. Rows9-12 death progression: initial failure/stagger, collapse/breakup, wreck/corpse settling, final wreck/corpse. Every cell ONE complete unit, same camera and position. Keep subject within central 70 percent of each cell. Distinct poses, not translated or rotated copies. Genuine alpha transparency. No drawn background, labels, grid lines, text, UI or cropped subjects. Leave margins and clear separation between cells."
+  },
+  {
+    "id": "a-advpower",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-advpower.png",
+    "destination": "art/animations/source/a-advpower-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-advpower."
+  },
+  {
+    "id": "a-airfield",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-airfield.png",
+    "destination": "art/animations/source/a-airfield-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-airfield."
+  },
+  {
+    "id": "a-armory",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-armory.png",
+    "destination": "art/animations/source/a-armory-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-armory."
+  },
+  {
+    "id": "a-chapel",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-chapel.png",
+    "destination": "art/animations/source/a-chapel-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-chapel."
+  },
+  {
+    "id": "a-helipad",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-helipad.png",
+    "destination": "art/animations/source/a-helipad-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-helipad."
+  },
+  {
+    "id": "a-kennel",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-kennel.png",
+    "destination": "art/animations/source/a-kennel-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-kennel."
+  },
+  {
+    "id": "a-naval",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-naval.png",
+    "destination": "art/animations/source/a-naval-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-naval."
+  },
+  {
+    "id": "a-radar",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-radar.png",
+    "destination": "art/animations/source/a-radar-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-radar."
+  },
+  {
+    "id": "a-service",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-service.png",
+    "destination": "art/animations/source/a-service-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-service."
+  },
+  {
+    "id": "a-spire",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-spire.png",
+    "destination": "art/animations/source/a-spire-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-spire."
+  },
+  {
+    "id": "a-tech",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-tech.png",
+    "destination": "art/animations/source/a-tech-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-tech."
+  },
+  {
+    "id": "a-veilworks",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-veilworks.png",
+    "destination": "art/animations/source/a-veilworks-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-veilworks."
+  },
+  {
+    "id": "a-yard",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/a-yard.png",
+    "destination": "art/animations/source/a-yard-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID a-yard."
+  },
+  {
+    "id": "d-advpower",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-advpower.png",
+    "destination": "art/animations/source/d-advpower-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-advpower."
+  },
+  {
+    "id": "d-airfield",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-airfield.png",
+    "destination": "art/animations/source/d-airfield-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-airfield."
+  },
+  {
+    "id": "d-forge",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-forge.png",
+    "destination": "art/animations/source/d-forge-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-forge."
+  },
+  {
+    "id": "d-heart",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-heart.png",
+    "destination": "art/animations/source/d-heart-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-heart."
+  },
+  {
+    "id": "d-helipad",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-helipad.png",
+    "destination": "art/animations/source/d-helipad-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-helipad."
+  },
+  {
+    "id": "d-kennel",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-kennel.png",
+    "destination": "art/animations/source/d-kennel-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-kennel."
+  },
+  {
+    "id": "d-naval",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-naval.png",
+    "destination": "art/animations/source/d-naval-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-naval."
+  },
+  {
+    "id": "d-pit",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-pit.png",
+    "destination": "art/animations/source/d-pit-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-pit."
+  },
+  {
+    "id": "d-radar",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-radar.png",
+    "destination": "art/animations/source/d-radar-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-radar."
+  },
+  {
+    "id": "d-service",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-service.png",
+    "destination": "art/animations/source/d-service-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-service."
+  },
+  {
+    "id": "d-tech",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-tech.png",
+    "destination": "art/animations/source/d-tech-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-tech."
+  },
+  {
+    "id": "d-veilworks",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-veilworks.png",
+    "destination": "art/animations/source/d-veilworks-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-veilworks."
+  },
+  {
+    "id": "d-yard",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/d-yard.png",
+    "destination": "art/animations/source/d-yard-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID d-yard."
+  },
+  {
+    "id": "h-advpower",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-advpower.png",
+    "destination": "art/animations/source/h-advpower-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-advpower."
+  },
+  {
+    "id": "h-airfield",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-airfield.png",
+    "destination": "art/animations/source/h-airfield-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-airfield."
+  },
+  {
+    "id": "h-barracks",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-barracks.png",
+    "destination": "art/animations/source/h-barracks-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-barracks."
+  },
+  {
+    "id": "h-generator",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-generator.png",
+    "destination": "art/animations/source/h-generator-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-generator."
+  },
+  {
+    "id": "h-helipad",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-helipad.png",
+    "destination": "art/animations/source/h-helipad-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-helipad."
+  },
+  {
+    "id": "h-kennel",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-kennel.png",
+    "destination": "art/animations/source/h-kennel-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-kennel."
+  },
+  {
+    "id": "h-motorpool",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-motorpool.png",
+    "destination": "art/animations/source/h-motorpool-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-motorpool."
+  },
+  {
+    "id": "h-naval",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-naval.png",
+    "destination": "art/animations/source/h-naval-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-naval."
+  },
+  {
+    "id": "h-radar",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-radar.png",
+    "destination": "art/animations/source/h-radar-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-radar."
+  },
+  {
+    "id": "h-service",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-service.png",
+    "destination": "art/animations/source/h-service-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-service."
+  },
+  {
+    "id": "h-tech",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-tech.png",
+    "destination": "art/animations/source/h-tech-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-tech."
+  },
+  {
+    "id": "h-veilworks",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-veilworks.png",
+    "destination": "art/animations/source/h-veilworks-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-veilworks."
+  },
+  {
+    "id": "h-yard",
+    "kind": "building",
+    "reference": "mods/sevenfall/art/h-yard.png",
+    "destination": "art/animations/source/h-yard-damage.png",
+    "prompt": "Create damage variants for the exact Sevenfall RTS building in the reference. Preserve its identity, camera, pixel-painted style, footprint, scale, roofline and anchor. One transparent PNG horizontal strip of THREE equal square cells, 1536x512. Each cell contains the same single whole building at the same position and scale with full margins. Left: heavily damaged but operational, broken plating, visible cracks, exposed structural internals and small ember fires. Center: critically damaged, ruined roof, collapsed portions, scorched breached walls, glowing fires. Right: destroyed building rubble/wreck, low collapsed silhouette with recognizable faction materials. Genuine alpha background. Do not add ground tiles, background, labels, text, grid, unrelated objects or arbitrary redesign. Do not merely darken the original. Keep physical damage changes and silhouette breakup. Building ID h-yard."
+  }
+]

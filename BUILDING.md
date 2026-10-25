@@ -27,6 +27,7 @@ Alternatively, run the commands manually:
 
 ```powershell
 py -3 scripts/build.py build
+py -3 -m pip install -r requirements-test.txt
 py -3 -m unittest discover -s tests
 py -3 scripts/build.py launch
 ```
@@ -39,6 +40,7 @@ which the script detects automatically. Python is available in the Codex bundled
 
 ```sh
 python3 scripts/build.py build
+python3 -m pip install -r requirements-test.txt
 python3 -m unittest discover -s tests
 python3 scripts/build.py launch
 ```
@@ -78,9 +80,7 @@ After a successful build, open **Singleplayer → Missions** or the mission sele
 | War in Heaven | **A03: A Glass of Wrath** | Order of the Gate | Blood Brood |
 | The Ninth Mouth | **D02: Seeds of Ruin** | Blood Brood | Bastion Directorate |
 
-All **39 original eight-facing unit sheets** are copied into the SDK's
-`mods/sevenfall/art/unit-turnarounds/` staging folder. They are not active
-combat animations yet; the current live units still use placeholders.
+The SDK stages all 39 directional reference sheets and the 63 authored animation/damage exports. All 24 implemented faction unit designs now have movement, attack/work and death cycles; all 39 building designs have heavy and critical damage states. See [animation frame layout and limitations](art/animations/README.md).
 
 The campaign preview missions use **Broken Choir prototype terrain copied into
 the local SDK during installation**, not yet authored story maps. Their source
@@ -106,7 +106,10 @@ not yet been observed running to a full win/loss on a Windows desktop.
 ### Windows validation steps
 
 1. Clone the repository, install Python 3, Git, .NET 8 SDK and .NET 6 runtime.
-2. Run `py -3 -m unittest discover -s tests`.
+2. Run `py -3 -m pip install -r requirements-test.txt`, then
+   `py -3 -m unittest discover -s tests`. Mission behavior tests run the actual
+   scripts under Lua 5.1 against a limited OpenRA API double; they do not
+   simulate engine scheduling, harvesting, combat or AI.
 3. Run `py -3 scripts/build.py build` to populate the pinned SDK, copy the
    three campaign map binaries, compile OpenRA and execute engine YAML lint.
 4. Run `py -3 scripts/build.py launch`, install legally obtained Red Alert
@@ -129,8 +132,19 @@ real economy, combat, AI and victory results. All cases begin as NOT RUN.
 See [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
 not prove harvesting, balance, victory, replay safety or AI quality. The next milestone
 is measured end-to-end economy/combat testing for all three parent factions, followed
-by the nine-faction matrix. Original combat animations, the remaining 72 campaign missions, defenses,
+by the nine-faction matrix. Animation polish, the remaining 72 campaign missions, defenses,
 expansion MCVs, support powers and superweapons remain future work.
 
 Sources: [OpenRA SDK](https://github.com/OpenRA/OpenRAModSDK),
 [OpenRA stable release](https://www.openra.net/news/release-20250330/).
+
+## Animation diagnostic
+
+Choose **Sevenfall Animation Diagnostic** from the skirmish map list, or launch
+the installed SDK with `Launch.Map=animation-test`. This developer-only map
+orders movement and attacks, applies heavy and critical damage, repairs buildings,
+and kills units to check all 24 death actor spawns. Inspect `Logs/lua.log` for
+`ANIMATION_DIAGNOSTIC PASS`. This diagnostic does not prove campaign completion.
+
+To rebuild authored exports: `npm install`, `npm run art:animations`, then
+`python scripts/bind_animations.py`. Run source tests and the engine build afterward.

@@ -23,7 +23,7 @@
 - [x] Stage all 39 original eight-facing unit sprite sheets into local SDK
 - [x] Add automated mission-map, faction-contract and sprite-staging tests
 - [ ] Confirm the three scripts actually start, complete and fail correctly in game
-- [ ] Integrate genuine combat movement, attack and death animations; currently only directional art exists
+- [x] Integrate an initial authored movement, attack/work and death animation pass for all 24 implemented faction unit designs, plus damage artwork for all 39 buildings; polish and wider gameplay acceptance remain
 - [ ] Release a truly tested standalone Windows prototype, once asset rights permit
 
 

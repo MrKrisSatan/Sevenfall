@@ -1,0 +1,349 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Animation Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: h_bastion
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 1
+	PlayerReference@HostA:
+		Name: HostA
+		NonCombatant: True
+		Faction: a_seraph
+		Color: E7C76C
+	PlayerReference@HostD:
+		Name: HostD
+		NonCombatant: True
+		Faction: d_legion
+		Color: D34B78
+Actors:
+	Spawn0: mpspawn
+		Owner: Neutral
+		Location: 48,35
+	Unita0: mcv
+		Owner: HostA
+		Location: 14,10
+		Facing: 384
+	Targeta0: sf_animation_target
+		Owner: Neutral
+		Location: 21,10
+	Unita1: a_watcher
+		Owner: HostA
+		Location: 14,13
+		Facing: 384
+	Targeta1: sf_animation_target
+		Owner: Neutral
+		Location: 21,13
+	Unita2: a_judicator
+		Owner: HostA
+		Location: 14,16
+		Facing: 384
+	Targeta2: sf_animation_target
+		Owner: Neutral
+		Location: 21,16
+	Unita3: a_aegis
+		Owner: HostA
+		Location: 14,19
+		Facing: 384
+	Targeta3: sf_animation_target
+		Owner: Neutral
+		Location: 21,19
+	Unita4: a_seraphim
+		Owner: HostA
+		Location: 14,22
+		Facing: 384
+	Targeta4: sf_animation_target
+		Owner: Neutral
+		Location: 21,22
+	Unita5: a_gatekeeper
+		Owner: HostA
+		Location: 14,25
+		Facing: 384
+	Targeta5: sf_animation_target
+		Owner: Neutral
+		Location: 21,25
+	Unita6: a_penitent
+		Owner: HostA
+		Location: 14,28
+		Facing: 384
+	Targeta6: sf_animation_target
+		Owner: Neutral
+		Location: 21,28
+	Unita7: a_gatherer
+		Owner: HostA
+		Location: 14,31
+		Facing: 384
+	Targeta7: sf_animation_target
+		Owner: Neutral
+		Location: 21,31
+	Buildinga0: fact
+		Owner: HostA
+		Location: 9,42
+	Buildinga1: a_spire
+		Owner: HostA
+		Location: 19,42
+	Buildinga2: a_veilworks
+		Owner: HostA
+		Location: 9,47
+	Buildinga3: a_chapel
+		Owner: HostA
+		Location: 19,47
+	Buildinga4: a_armory
+		Owner: HostA
+		Location: 9,52
+	Buildinga5: a_advpower
+		Owner: HostA
+		Location: 19,52
+	Buildinga6: a_service
+		Owner: HostA
+		Location: 9,57
+	Buildinga7: a_radar
+		Owner: HostA
+		Location: 19,57
+	Buildinga8: a_naval
+		Owner: HostA
+		Location: 9,77
+	Buildinga9: a_helipad
+		Owner: HostA
+		Location: 19,62
+	Buildinga10: a_airfield
+		Owner: HostA
+		Location: 9,67
+	Buildinga11: a_kennel
+		Owner: HostA
+		Location: 19,67
+	Buildinga12: a_tech
+		Owner: HostA
+		Location: 9,72
+	Unith0: mcv
+		Owner: Multi0
+		Location: 44,10
+		Facing: 384
+	Targeth0: sf_animation_target
+		Owner: Neutral
+		Location: 51,10
+	Unith1: h_rifleman
+		Owner: Multi0
+		Location: 44,13
+		Facing: 384
+	Targeth1: sf_animation_target
+		Owner: Neutral
+		Location: 51,13
+	Unith2: h_rocketeer
+		Owner: Multi0
+		Location: 44,16
+		Facing: 384
+	Targeth2: sf_animation_target
+		Owner: Neutral
+		Location: 51,16
+	Unith3: h_bulwark
+		Owner: Multi0
+		Location: 44,19
+		Facing: 384
+	Targeth3: sf_animation_target
+		Owner: Neutral
+		Location: 51,19
+	Unith4: h_siegegun
+		Owner: Multi0
+		Location: 44,22
+		Facing: 384
+	Targeth4: sf_animation_target
+		Owner: Neutral
+		Location: 51,22
+	Unith5: h_ranger
+		Owner: Multi0
+		Location: 44,25
+		Facing: 384
+	Targeth5: sf_animation_target
+		Owner: Neutral
+		Location: 51,25
+	Unith6: h_templar
+		Owner: Multi0
+		Location: 44,28
+		Facing: 384
+	Targeth6: sf_animation_target
+		Owner: Neutral
+		Location: 51,28
+	Unith7: h_harvester
+		Owner: Multi0
+		Location: 44,31
+		Facing: 384
+	Targeth7: sf_animation_target
+		Owner: Neutral
+		Location: 51,31
+	Buildingh0: fact
+		Owner: Multi0
+		Location: 39,42
+	Buildingh1: h_generator
+		Owner: Multi0
+		Location: 49,42
+	Buildingh2: h_veilworks
+		Owner: Multi0
+		Location: 39,47
+	Buildingh3: h_barracks
+		Owner: Multi0
+		Location: 49,47
+	Buildingh4: h_motorpool
+		Owner: Multi0
+		Location: 39,52
+	Buildingh5: h_advpower
+		Owner: Multi0
+		Location: 49,52
+	Buildingh6: h_service
+		Owner: Multi0
+		Location: 39,57
+	Buildingh7: h_radar
+		Owner: Multi0
+		Location: 49,57
+	Buildingh8: h_naval
+		Owner: Multi0
+		Location: 39,77
+	Buildingh9: h_helipad
+		Owner: Multi0
+		Location: 49,62
+	Buildingh10: h_airfield
+		Owner: Multi0
+		Location: 39,67
+	Buildingh11: h_kennel
+		Owner: Multi0
+		Location: 49,67
+	Buildingh12: h_tech
+		Owner: Multi0
+		Location: 39,72
+	Unitd0: mcv
+		Owner: HostD
+		Location: 74,10
+		Facing: 384
+	Targetd0: sf_animation_target
+		Owner: Neutral
+		Location: 81,10
+	Unitd1: d_thrall
+		Owner: HostD
+		Location: 74,13
+		Facing: 384
+	Targetd1: sf_animation_target
+		Owner: Neutral
+		Location: 81,13
+	Unitd2: d_cinderling
+		Owner: HostD
+		Location: 74,16
+		Facing: 384
+	Targetd2: sf_animation_target
+		Owner: Neutral
+		Location: 81,16
+	Unitd3: d_ravager
+		Owner: HostD
+		Location: 74,19
+		Facing: 384
+	Targetd3: sf_animation_target
+		Owner: Neutral
+		Location: 81,19
+	Unitd4: d_hellreaver
+		Owner: HostD
+		Location: 74,22
+		Facing: 384
+	Targetd4: sf_animation_target
+		Owner: Neutral
+		Location: 81,22
+	Unitd5: d_skitter
+		Owner: HostD
+		Location: 74,25
+		Facing: 384
+	Targetd5: sf_animation_target
+		Owner: Neutral
+		Location: 81,25
+	Unitd6: d_hexer
+		Owner: HostD
+		Location: 74,28
+		Facing: 384
+	Targetd6: sf_animation_target
+		Owner: Neutral
+		Location: 81,28
+	Unitd7: d_devourer
+		Owner: HostD
+		Location: 74,31
+		Facing: 384
+	Targetd7: sf_animation_target
+		Owner: Neutral
+		Location: 81,31
+	Buildingd0: fact
+		Owner: HostD
+		Location: 69,42
+	Buildingd1: d_heart
+		Owner: HostD
+		Location: 79,42
+	Buildingd2: d_veilworks
+		Owner: HostD
+		Location: 69,47
+	Buildingd3: d_pit
+		Owner: HostD
+		Location: 79,47
+	Buildingd4: d_forge
+		Owner: HostD
+		Location: 69,52
+	Buildingd5: d_advpower
+		Owner: HostD
+		Location: 79,52
+	Buildingd6: d_service
+		Owner: HostD
+		Location: 69,57
+	Buildingd7: d_radar
+		Owner: HostD
+		Location: 79,57
+	Buildingd8: d_naval
+		Owner: HostD
+		Location: 69,77
+	Buildingd9: d_helipad
+		Owner: HostD
+		Location: 79,62
+	Buildingd10: d_airfield
+		Owner: HostD
+		Location: 69,67
+	Buildingd11: d_kennel
+		Owner: HostD
+		Location: 79,67
+	Buildingd12: d_tech
+		Owner: HostD
+		Location: 69,72
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: animation-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True
+	sf_animation_target:
+		Inherits: H_GENERATOR
+		-Buildable:
+		-Selectable:
+		-Targetable:
+		Interactable:
+		Health:
+			HP: 100000000
+		Targetable@ANIMATION:
+			TargetTypes: GroundActor, Structure
+	A_VEILWORKS:
+		-FreeActor:
+	H_VEILWORKS:
+		-FreeActor:
+	D_VEILWORKS:
+		-FreeActor:

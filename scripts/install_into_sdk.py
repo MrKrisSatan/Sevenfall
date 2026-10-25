@@ -7,6 +7,8 @@ No network access needed; run SDK `make` first to fetch its engine.
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 import re
 import shutil
 from pathlib import Path
@@ -55,10 +57,10 @@ CAMPAIGN_PROTOTYPES = (
 
 
 def stage_original_unit_turnarounds(target: Path) -> int:
-    """Stage authored direction-specific sprites for future animation bindings.
+    """Stage authored directional reference sprites used by idle/icon bindings.
 
-    The source pack contains eight distinct facings per unit, not movement,
-    firing, or death cycles. These sprites are NOT yet active combat sprites.
+    The reference pack contains eight distinct facings per unit. Authored motion,
+    attack and death cycles are staged separately by stage_animations().
     """
     source = PROJECT / 'art' / 'unit-turnarounds' / 'sheets'
     sprites = sorted(source.glob('*.png'))
@@ -66,6 +68,28 @@ def stage_original_unit_turnarounds(target: Path) -> int:
         raise RuntimeError(f'Expected 39 original directional sprite sheets, found {len(sprites)}')
     destination = target / 'art' / 'unit-turnarounds'
     destination.mkdir(parents=True, exist_ok=True)
+    for sprite in sprites:
+        shutil.copy2(sprite, destination / sprite.name)
+    return len(sprites)
+
+
+def stage_animations(target: Path) -> int:
+    """Copy only validated, authored animation exports into the installed mod."""
+    source = PROJECT / 'art' / 'animations' / 'sheets'
+    destination = target / 'art' / 'animations'
+    destination.mkdir(parents=True, exist_ok=True)
+    manifest = json.loads((source.parent / 'manifest.json').read_text(encoding='utf-8'))
+    assets = manifest['assets']
+    if len(assets) != 63:
+        raise RuntimeError('Expected animation/damage exports for 24 units and 39 buildings')
+    sprites = []
+    for asset in assets:
+        sprite = PROJECT / asset['file']
+        if sprite.parent.resolve() != source.resolve():
+            raise RuntimeError(f'Animation export outside expected sheets directory: {sprite}')
+        if hashlib.sha256(sprite.read_bytes()).hexdigest() != asset['sha256']:
+            raise RuntimeError(f'Animation export hash mismatch: {sprite}')
+        sprites.append(sprite)
     for sprite in sprites:
         shutil.copy2(sprite, destination / sprite.name)
     return len(sprites)
@@ -104,6 +128,7 @@ def main() -> None:
 
     install_campaign_map_binaries(target)
     staged_unit_count = stage_original_unit_turnarounds(target)
+    animation_count = stage_animations(target)
 
     # All SDK-provided RA content stays mounted as ra|. Only our additions use sevenfall|.
     content = ra_manifest.read_text(encoding='utf-8-sig')
@@ -129,6 +154,7 @@ def main() -> None:
         ('Rules', 'rules/20-structures.yaml'),
         ('Rules', 'rules/25-support-structures.yaml'),
         ('Rules', 'rules/30-units.yaml'),
+        ('Rules', 'rules/35-animations.yaml'),
         ('Weapons', 'weapons/sevenfall.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
         ('Chrome', 'chrome.yaml'),
@@ -137,6 +163,8 @@ def main() -> None:
         ('Sequences', 'sequences/refineries.yaml'),
         ('Sequences', 'sequences/logistics.yaml'),
         ('Sequences', 'sequences/buildings.yaml'),
+        ('Sequences', 'sequences/units.yaml'),
+        ('Sequences', 'sequences/animations.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')
@@ -163,7 +191,8 @@ def main() -> None:
 
     print(f'Sevenfall overlay installed: {target}')
     print(f'Generated vanilla actor exclusions: {len(original)}')
-    print(f'Original eight-facing unit turnarounds staged (not yet animated): {staged_unit_count}')
+    print(f'Original eight-facing reference sheets staged: {staged_unit_count}')
+    print(f'Authored animation/damage sheets staged: {animation_count}')
     print('Next: SDK make.cmd [all] and make.cmd [test] (Windows), or make && make test (Linux).')
     print('NOTE: 0.3 candidate: three source-backed campaign previews installed; live victory/combat remain unverified.')
 

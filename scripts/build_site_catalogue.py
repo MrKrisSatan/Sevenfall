@@ -45,7 +45,7 @@ def build_records():
 
 def render_card(r):
     e=html.escape
-    note='In-game sprite pending.' if r['status']=='Concept illustration' else 'Current original artwork.'
+    note='Original animated game sprite integrated; concept art shown.' if r['status']=='Concept illustration' else 'Current original artwork.'
     return f'''<article class="roster-card {r['faction']}" id="{r['id']}" data-faction="{r['faction']}" data-kind="{r['kind']}" data-subfaction="{r['subfaction']}">
   <button class="art-button" type="button" aria-label="Enlarge {e(r['name'])} artwork" data-art="assets/roster/full/{r['id']}.webp"><img src="assets/roster/{r['id']}.webp" width="512" height="384" loading="lazy" decoding="async" alt="{e(r['name'])} — {e(r['status'].lower())}"></button>
   <div class="roster-card-copy"><p class="card-kicker">{r['faction'].title()} / {e(r['role'])}</p><h3>{e(r['name'])}</h3><p>{e(r['description'])}</p><p class="availability">{e(r['availability'])}</p><p class="art-status"><span>{r['status']}</span> {note}</p></div>
