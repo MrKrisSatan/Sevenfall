@@ -6,20 +6,20 @@
 
 **Development status:** **0.3 Windows skirmish tester alpha**. The standalone package includes twelve faction choices and three skirmish maps. Campaign completion and broader balance/content work remain in development. See the [tester guide](docs/TESTER_GUIDE.md) and [acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
-The next faction pass gives **all twelve hosts distinct mechanics, two exclusive
+The faction identity pass gives **all twelve hosts distinct mechanics, two exclusive
 units each and a unique superweapon**. See [faction identities, controls and
 counterplay](docs/FACTION_IDENTITIES.md). Nine specialist variants reuse the game's
 authored animated bodies; twelve new arrays use faction technology-building art.
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
-The field guide includes images and descriptions for all **57 current building designs
-and 30 unit designs**, with faction and subfaction filters. Combat-unit images are
+The field guide includes images and descriptions for all **69 building entries
+and 39 unit entries**, including twelve superweapon arrays and nine specialist variants, with faction and subfaction filters. Combat-unit images are
 original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 30 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 57 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
 
 ## Play the Windows skirmish alpha
 
-Download the setup EXE or portable ZIP from **[v0.3.0-alpha.1](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.1)**.
+Download the setup EXE or portable ZIP from **[v0.3.0-alpha.2](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2)**.
 The game bundles its runtime and content: OpenRA, Red Alert and a separate .NET
 installation are not required. Choose **Singleplayer → Skirmish**; The Twelvefold
 Scar supports up to twelve players. Sources, dependency/font sources and checksums
