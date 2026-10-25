@@ -1,5 +1,5 @@
 # All implemented units use original Sevenfall directional artwork.
-# Combat poses currently hold one authored frame per direction; animation cycles remain future work.
+# Animated bodies are bound in 35-animations.yaml. Combat tuning is explicit here.
 # Main-faction units
 A_WATCHER:
 	Inherits: E1
@@ -20,22 +20,30 @@ A_WATCHER:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_HaloLance
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
 		Prerequisites: a_chapel, ~sf.angels, ~techlevel.infonly
 		Description: sf-a-watcher-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-watcher-name
 	Valued:
-		Cost: 170
+		Cost: 200
 	Health:
-		HP: 7200
+		HP: 9000
 	Mobile:
-		Speed: 75
+		Speed: 72
 	Armament@PRIMARY:
 		Weapon: SF_HaloLance
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 H_RIFLEMAN:
 	Inherits: E1
@@ -56,18 +64,20 @@ H_RIFLEMAN:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_PulseRifle
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
 		Prerequisites: h_barracks, ~sf.humans, ~techlevel.infonly
 		Description: sf-h-rifleman-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-rifleman-name
 	Valued:
 		Cost: 90
 	Health:
-		HP: 5100
+		HP: 4800
 	Mobile:
 		Speed: 87
 	Armament@PRIMARY:
@@ -92,22 +102,39 @@ D_THRALL:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_HellClaw
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
 		Prerequisites: d_pit, ~sf.demons, ~techlevel.infonly
 		Description: sf-d-thrall-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-thrall-name
 	Valued:
 		Cost: 55
 	Health:
-		HP: 3500
+		HP: 3200
 	Mobile:
-		Speed: 105
+		Speed: 110
 	Armament@PRIMARY:
 		Weapon: SF_HellClaw
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
 
 A_JUDICATOR:
 	Inherits: E3
@@ -132,16 +159,31 @@ A_JUDICATOR:
 		BuildPaletteOrder: 20
 		Prerequisites: a_chapel, ~sf.angels, ~techlevel.low
 		Description: sf-a-judicator-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-judicator-name
 	Valued:
-		Cost: 360
+		Cost: 400
 	Health:
-		HP: 7800
+		HP: 9600
 	Armament@PRIMARY:
-		Weapon: RedEye
+		Weapon: SF_JudicatorAA
 	Armament@SECONDARY:
-		Weapon: Dragon
+		Weapon: SF_JudicatorAG
+	Mobile:
+		Speed: 68
+	Armament@GARRISONED:
+		Weapon: SF_JudicatorAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_JudicatorAG
+	AutoTarget:
+		ScanRadius: 9
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 H_ROCKETEER:
 	Inherits: E3
@@ -166,12 +208,25 @@ H_ROCKETEER:
 		BuildPaletteOrder: 20
 		Prerequisites: h_barracks, ~sf.humans, ~techlevel.low
 		Description: sf-h-rocketeer-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-rocketeer-name
 	Valued:
-		Cost: 285
+		Cost: 260
 	Health:
-		HP: 4800
+		HP: 4500
+	Mobile:
+		Speed: 87
+	Armament@PRIMARY:
+		Weapon: SF_RocketeerAA
+	Armament@SECONDARY:
+		Weapon: SF_RocketeerAG
+	Armament@GARRISONED:
+		Weapon: SF_RocketeerAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_RocketeerAG
+	AutoTarget:
+		ScanRadius: 9
 
 D_CINDERLING:
 	Inherits: E2
@@ -196,14 +251,34 @@ D_CINDERLING:
 		BuildPaletteOrder: 20
 		Prerequisites: d_pit, ~sf.demons, ~techlevel.low
 		Description: sf-d-cinderling-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-cinderling-name
 	Valued:
-		Cost: 215
+		Cost: 210
 	Health:
-		HP: 3900
+		HP: 3600
 	Armament@PRIMARY:
 		Weapon: SF_Cinder
+	Mobile:
+		Speed: 98
+	Armament@GARRISONED:
+		Weapon: SF_Cinder
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
 
 A_AEGIS:
 	Inherits: 2TNK
@@ -229,19 +304,26 @@ A_AEGIS:
 		BuildPaletteOrder: 60
 		Prerequisites: a_armory, ~sf.angels, ~techlevel.medium
 		Description: sf-a-aegis-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-aegis-name
 	Valued:
-		Cost: 1600
+		Cost: 1700
 	Health:
-		HP: 67000
+		HP: 72000
 	Mobile:
-		Speed: 67
+		Speed: 62
 	Armament:
 		-MuzzleSequence:
 		LocalOffset: 512,0,90
 		Recoil: 0
 		Weapon: SF_Sanction
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 H_BULWARK:
 	Inherits: 2TNK
@@ -267,12 +349,13 @@ H_BULWARK:
 		BuildPaletteOrder: 60
 		Prerequisites: h_motorpool, ~sf.humans, ~techlevel.medium
 		Description: sf-h-bulwark-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-bulwark-name
 	Valued:
-		Cost: 890
+		Cost: 950
 	Health:
-		HP: 46000
+		HP: 48000
 	Mobile:
 		Speed: 80
 	Armament:
@@ -280,6 +363,8 @@ H_BULWARK:
 		LocalOffset: 512,0,90
 		Recoil: 0
 		Weapon: SF_Stormshell
+	Repairable:
+		HpPerStep: 1500
 
 D_RAVAGER:
 	Inherits: 1TNK
@@ -303,21 +388,39 @@ D_RAVAGER:
 		-MuzzleSequence:
 		LocalOffset: 512,0,90
 		Recoil: 0
+		Weapon: SF_RavagerClaw
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
 		Prerequisites: d_forge, ~sf.demons, ~techlevel.medium
 		Description: sf-d-ravager-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-ravager-name
 	Valued:
-		Cost: 620
+		Cost: 650
 	Health:
-		HP: 22500
+		HP: 28000
 	Mobile:
-		Speed: 122
+		Speed: 120
 
 # One faction-exclusive unit per subfaction for the initial integration slice.
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
+
 A_SERAPHIM:
 	Inherits: E3
 	RenderSprites:
@@ -341,14 +444,31 @@ A_SERAPHIM:
 		BuildPaletteOrder: 80
 		Prerequisites: a_chapel, ~sf.a_seraph, ~techlevel.medium
 		Description: sf-a-seraphim-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-seraphim-name
 	Valued:
-		Cost: 630
+		Cost: 650
 	Health:
-		HP: 12200
+		HP: 12800
 	Armament@SECONDARY:
-		Weapon: SF_HaloLance
+		Weapon: SF_SeraphFire
+	Mobile:
+		Speed: 65
+	Armament@PRIMARY:
+		Weapon: SF_SeraphAA
+	Armament@GARRISONED:
+		Weapon: SF_SeraphAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_SeraphFire
+	AutoTarget:
+		ScanRadius: 9
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 A_GATEKEEPER:
 	Inherits: 2TNK
@@ -372,20 +492,28 @@ A_GATEKEEPER:
 		-MuzzleSequence:
 		LocalOffset: 512,0,90
 		Recoil: 0
+		Weapon: SF_GatekeeperLance
 	-SpawnActorOnDeath:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 85
 		Prerequisites: a_armory, ~sf.a_warden, ~techlevel.medium
 		Description: sf-a-gatekeeper-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-gatekeeper-name
 	Valued:
-		Cost: 2050
+		Cost: 2200
 	Health:
-		HP: 97000
+		HP: 105000
 	Mobile:
-		Speed: 52
+		Speed: 48
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 A_PENITENT:
 	Inherits: E1
@@ -406,22 +534,30 @@ A_PENITENT:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_PenitentLance
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
 		Prerequisites: a_chapel, ~sf.a_exile, ~techlevel.low
 		Description: sf-a-penitent-description
+		BuildDurationModifier: 75
 	Tooltip:
 		Name: sf-a-penitent-name
 	Valued:
-		Cost: 120
+		Cost: 150
 	Health:
-		HP: 4800
+		HP: 6200
 	Mobile:
 		Speed: 103
 	Armament@PRIMARY:
-		Weapon: SF_HaloLance
+		Weapon: SF_PenitentLance
+	ChangesHealth@SF_RENEWAL:
+		Step: 0
+		PercentageStep: 1
+		Delay: 25
+		StartIfBelow: 100
+		DamageCooldown: 200
 
 H_SIEGEGUN:
 	Inherits: V2RL
@@ -440,12 +576,19 @@ H_SIEGEGUN:
 		BuildPaletteOrder: 85
 		Prerequisites: h_motorpool, ~sf.h_bastion, ~techlevel.medium
 		Description: sf-h-siegegun-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-siegegun-name
 	Valued:
-		Cost: 950
+		Cost: 1100
 	Health:
-		HP: 23000
+		HP: 21000
+	Mobile:
+		Speed: 55
+	Armament:
+		Weapon: SF_SiegeShell
+	Repairable:
+		HpPerStep: 1500
 
 H_RANGER:
 	Inherits: E1
@@ -466,12 +609,14 @@ H_RANGER:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_RangerRifle
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
 		Prerequisites: h_barracks, ~sf.h_union, ~techlevel.low
 		Description: sf-h-ranger-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-ranger-name
 	Valued:
@@ -479,7 +624,9 @@ H_RANGER:
 	Mobile:
 		Speed: 110
 	Armament@PRIMARY:
-		Weapon: SF_PulseRifle
+		Weapon: SF_RangerRifle
+	Health:
+		HP: 4000
 
 H_TEMPLAR:
 	Inherits: E3
@@ -504,12 +651,25 @@ H_TEMPLAR:
 		BuildPaletteOrder: 80
 		Prerequisites: h_barracks, ~sf.h_covenant, ~techlevel.low
 		Description: sf-h-templar-description
+		BuildDurationModifier: 60
 	Tooltip:
 		Name: sf-h-templar-name
 	Valued:
-		Cost: 405
+		Cost: 380
 	Health:
-		HP: 8500
+		HP: 6800
+	Mobile:
+		Speed: 75
+	Armament@PRIMARY:
+		Weapon: SF_TemplarAA
+	Armament@SECONDARY:
+		Weapon: SF_TemplarAG
+	Armament@GARRISONED:
+		Weapon: SF_TemplarAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_TemplarAG
+	AutoTarget:
+		ScanRadius: 9
 
 D_HELLREAVER:
 	Inherits: 2TNK
@@ -535,17 +695,35 @@ D_HELLREAVER:
 		BuildPaletteOrder: 85
 		Prerequisites: d_forge, ~sf.d_legion, ~techlevel.medium
 		Description: sf-d-hellreaver-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-hellreaver-name
 	Valued:
-		Cost: 1180
+		Cost: 1250
 	Health:
-		HP: 55000
+		HP: 58000
 	Armament:
 		-MuzzleSequence:
 		LocalOffset: 512,0,90
 		Recoil: 0
-		Weapon: SF_Cinder
+		Weapon: SF_ReaverClaw
+	Mobile:
+		Speed: 85
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
 
 D_SKITTER:
 	Inherits: E1
@@ -566,22 +744,39 @@ D_SKITTER:
 		-GroundCorpseSequence:
 	Armament@GARRISONED:
 		-MuzzleSequence:
+		Weapon: SF_SkitterClaw
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
 		Prerequisites: d_pit, ~sf.d_brood, ~techlevel.low
 		Description: sf-d-skitter-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-skitter-name
 	Valued:
 		Cost: 35
 	Health:
-		HP: 2300
+		HP: 2200
 	Mobile:
-		Speed: 126
+		Speed: 130
 	Armament@PRIMARY:
-		Weapon: SF_HellClaw
+		Weapon: SF_SkitterClaw
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
 
 D_HEXER:
 	Inherits: E3
@@ -606,16 +801,43 @@ D_HEXER:
 		BuildPaletteOrder: 80
 		Prerequisites: d_pit, ~sf.d_court, ~techlevel.low
 		Description: sf-d-hexer-description
+		BuildDurationModifier: 45
 	Tooltip:
 		Name: sf-d-hexer-name
 	Valued:
-		Cost: 440
+		Cost: 380
 	Health:
-		HP: 5900
+		HP: 4200
 	Armament@SECONDARY:
-		Weapon: SF_HaloLance
+		Weapon: SF_HexBolt
 
 # Same harvested mineral; three logistics doctrines.
+	Mobile:
+		Speed: 90
+	Armament@PRIMARY:
+		Weapon: SF_HexAA
+	Armament@GARRISONED:
+		Weapon: SF_HexAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_HexBolt
+	AutoTarget:
+		ScanRadius: 9
+	GrantConditionOnAttack@SF_FRENZY:
+		Condition: sf-frenzy
+		ArmamentNames: primary, secondary
+		RequiredShotsPerInstance: 1
+		MaximumInstances: 1
+		RevokeDelay: 100
+	FirepowerMultiplier@SF_FRENZY:
+		Modifier: 120
+		RequiresCondition: sf-frenzy
+	SpeedMultiplier@SF_FRENZY:
+		Modifier: 110
+		RequiresCondition: sf-frenzy
+	WithColoredOverlay@SF_FRENZY:
+		Color: D8443040
+		RequiresCondition: sf-frenzy
+
 A_GATHERER:
 	Inherits: HARV
 	RenderSprites:
@@ -667,6 +889,8 @@ H_HARVESTER:
 		HP: 62000
 	Mobile:
 		Speed: 75
+	Repairable:
+		HpPerStep: 1500
 
 D_DEVOURER:
 	Inherits: HARV

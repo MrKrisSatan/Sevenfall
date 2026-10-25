@@ -55,7 +55,8 @@ Choose Singleplayer → Skirmish, select **Broken Choir - Proving Ground**, sele
 Sevenfall faction and add **Sevenfall AI (prototype)** to the other slot. Start with
 MCV-only units and 5,000 credits. Deploy the MCV, build power, a refinery, and infantry
 production. The refinery provides the matching mining unit. Build a vehicle factory
-to replace miners and produce armor. Both resource grades supply the same credits.
+to replace miners and produce armor. Both resource grades feed one currency:
+rough Veilglass is worth 30 credits per resource unit and enriched Veilglass 55.
 
 The arena is deliberately flat and symmetric for economic testing. It has equal
 starting deposits, exposed expansion deposits, and a central enriched basin. It is
@@ -132,7 +133,7 @@ real economy, combat, AI and victory results. All cases begin as NOT RUN.
 See [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
 not prove harvesting, balance, victory, replay safety or AI quality. The next milestone
 is measured end-to-end economy/combat testing for all three parent factions, followed
-by the nine-faction matrix. Animation polish, the remaining 72 campaign missions, defenses,
+by the nine-faction matrix. Animation polish, the remaining 72 campaign missions, defense balance,
 expansion MCVs, support powers and superweapons remain future work.
 
 Sources: [OpenRA SDK](https://github.com/OpenRA/OpenRAModSDK),

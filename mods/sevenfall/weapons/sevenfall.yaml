@@ -1,10 +1,13 @@
-# Reuses engine weapon primitives with original Sevenfall tuning.
+# Sevenfall faction weapons: explicit combat values, inherited projectile/effect primitives.
+# Damage uses OpenRA internal HP units; one shot per volley. See design/FACTION_BALANCE.md.
+
 SF_HaloLance:
 	Inherits: PortaTesla
-	ReloadDelay: 65
-	Range: 5c512
+	ReloadDelay: 60
+	Range: 5c0
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 5400
+		Damage: 4800
 		Versus:
 			None: 125
 			Wood: 65
@@ -15,9 +18,10 @@ SF_HaloLance:
 SF_PulseRifle:
 	Inherits: M1Carbine
 	ReloadDelay: 18
-	Range: 5c512
+	Range: 6c0
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 1300
+		Damage: 1200
 		Versus:
 			None: 120
 			Wood: 25
@@ -27,10 +31,11 @@ SF_PulseRifle:
 
 SF_HellClaw:
 	Inherits: Claw
-	ReloadDelay: 19
+	ReloadDelay: 20
 	Range: 1c512
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 3400
+		Damage: 2800
 		Versus:
 			None: 125
 			Wood: 20
@@ -40,12 +45,13 @@ SF_HellClaw:
 
 SF_Cinder:
 	Inherits: FireballLauncher
-	ReloadDelay: 56
-	Range: 4c512
+	ReloadDelay: 55
+	Range: 3c512
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 8000
+		Damage: 7000
 		Versus:
-			None: 85
+			None: 100
 			Wood: 125
 			Light: 65
 			Heavy: 30
@@ -53,12 +59,284 @@ SF_Cinder:
 
 SF_Sanction:
 	Inherits: 90mm
-	ReloadDelay: 85
+	ReloadDelay: 95
+	Range: 6c0
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 10000
+		Damage: 12000
+		Versus:
+			None: 25
+			Wood: 75
+			Light: 85
+			Heavy: 120
+			Concrete: 65
 
 SF_Stormshell:
 	Inherits: 90mm
-	ReloadDelay: 78
+	ReloadDelay: 60
+	Range: 7c0
+	Burst: 1
 	Warhead@1Dam: SpreadDamage
-		Damage: 8000
+		Damage: 7200
+		Versus:
+			None: 30
+			Wood: 75
+			Light: 100
+			Heavy: 105
+			Concrete: 50
+
+SF_JudicatorAG:
+	Inherits: Dragon
+	ReloadDelay: 80
+	Range: 6c0
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 7500
+		Versus:
+			None: 12
+			Wood: 70
+			Light: 80
+			Heavy: 120
+			Concrete: 55
+
+SF_JudicatorAA:
+	Inherits: RedEye
+	ReloadDelay: 75
+	Range: 7c0
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 6500
+		Versus:
+			None: 10
+			Wood: 50
+			Light: 100
+			Heavy: 100
+			Concrete: 50
+
+SF_RocketeerAG:
+	Inherits: Dragon
+	ReloadDelay: 48
+	Range: 7c0
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 4200
+		Versus:
+			None: 10
+			Wood: 65
+			Light: 85
+			Heavy: 110
+			Concrete: 50
+
+SF_RocketeerAA:
+	Inherits: RedEye
+	ReloadDelay: 45
+	Range: 8c0
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 3800
+		Versus:
+			None: 10
+			Wood: 50
+			Light: 100
+			Heavy: 100
+			Concrete: 50
+
+SF_SeraphFire:
+	Inherits: PortaTesla
+	ReloadDelay: 70
+	Range: 5c0
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 6800
+		Versus:
+			None: 130
+			Wood: 75
+			Light: 75
+			Heavy: 45
+			Concrete: 40
+		Spread: 256
+
+SF_SeraphAA:
+	Inherits: RedEye
+	ReloadDelay: 90
+	Range: 6c512
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 7000
+		Versus:
+			None: 10
+			Wood: 50
+			Light: 100
+			Heavy: 100
+			Concrete: 50
+
+SF_PenitentLance:
+	Inherits: PortaTesla
+	ReloadDelay: 45
+	Range: 4c512
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 3200
+		Versus:
+			None: 120
+			Wood: 55
+			Light: 70
+			Heavy: 40
+			Concrete: 30
+
+SF_GatekeeperLance:
+	Inherits: 90mm
+	ReloadDelay: 120
+	Range: 6c512
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 15000
+		Versus:
+			None: 20
+			Wood: 80
+			Light: 80
+			Heavy: 130
+			Concrete: 85
+
+SF_RangerRifle:
+	Inherits: M1Carbine
+	ReloadDelay: 22
+	Range: 6c512
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 1500
+		Versus:
+			None: 125
+			Wood: 25
+			Light: 30
+			Heavy: 10
+			Concrete: 10
+
+SF_TemplarAG:
+	Inherits: Dragon
+	ReloadDelay: 65
+	Range: 6c512
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 5800
+		Versus:
+			None: 25
+			Wood: 75
+			Light: 85
+			Heavy: 115
+			Concrete: 55
+
+SF_TemplarAA:
+	Inherits: RedEye
+	ReloadDelay: 65
+	Range: 7c512
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 4500
+		Versus:
+			None: 10
+			Wood: 50
+			Light: 100
+			Heavy: 100
+			Concrete: 50
+
+SF_SiegeShell:
+	Inherits: SCUD
+	ReloadDelay: 180
+	Range: 11c0
+	Burst: 1
+	MinRange: 4c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 5500
+		Versus:
+			None: 100
+			Wood: 100
+			Light: 80
+			Heavy: 45
+			Concrete: 110
+
+SF_RavagerClaw:
+	Inherits: Claw
+	ReloadDelay: 35
+	Range: 1c512
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 9000
+		Versus:
+			None: 50
+			Wood: 90
+			Light: 100
+			Heavy: 100
+			Concrete: 70
+
+SF_ReaverClaw:
+	Inherits: Claw
+	ReloadDelay: 55
+	Range: 2c0
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 13000
+		Versus:
+			None: 45
+			Wood: 120
+			Light: 100
+			Heavy: 120
+			Concrete: 110
+
+SF_SkitterClaw:
+	Inherits: Claw
+	ReloadDelay: 16
+	Range: 1c256
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 1700
+		Versus:
+			None: 140
+			Wood: 15
+			Light: 20
+			Heavy: 8
+			Concrete: 10
+
+SF_HexBolt:
+	Inherits: PortaTesla
+	ReloadDelay: 75
+	Range: 4c512
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 6500
+		Versus:
+			None: 90
+			Wood: 85
+			Light: 85
+			Heavy: 80
+			Concrete: 50
+
+SF_HexAA:
+	Inherits: RedEye
+	ReloadDelay: 80
+	Range: 6c0
+	Burst: 1
+	Projectile: Missile
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 5000
+		Versus:
+			None: 10
+			Wood: 50
+			Light: 100
+			Heavy: 100
+			Concrete: 50

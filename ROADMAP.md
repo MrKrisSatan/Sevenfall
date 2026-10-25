@@ -38,6 +38,10 @@
 - [ ] Ship a reproducible, engine-verified pre-alpha build
 
 ## Phase 2: Mechanical asymmetry
+- [x] Initial explicit combat stats/weapons, Angel Renewal, Human depot engineering
+      and Demon Blood Frenzy; see [balance and limits](design/FACTION_BALANCE.md)
+- [x] Initial 15 faction defenses, including sanctuary, garrisons and dread conversion
+- [ ] Validate new doctrine balance in full matches and multiplayer
 - [ ] Angels: shields, elite air units, expensive reinforcements
 - [ ] Humans: repair, fortifications, combined-arms and artillery doctrine
 - [ ] Demons: swarms, corruption, infernal gateways and attrition

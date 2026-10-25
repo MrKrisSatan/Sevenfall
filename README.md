@@ -49,6 +49,15 @@ The three major factions each have three playable subfactions:
 
 ## What is actually implemented?
 
+The [faction asymmetry pass](design/FACTION_BALANCE.md) gives Angels durable elites
+with delayed health recovery, Humans longer-range combined arms and faster depot
+repairs, and Demons rapid production and temporary attack-triggered frenzy. All 18
+combat designs have explicit stats and faction weapons, including garrison weapons.
+These are initial balance values; full-match tuning remains outstanding.
+
+See the [25 October implementation audit](docs/IMPLEMENTATION_AUDIT_2026-10-25.md)
+for evaluated changes, verification limits and the prioritized remaining backlog.
+
 The [faction defense pass](docs/DEFENSES.md) adds moaning flesh walls that convert
 enemy infantry, lethal powered light curtains, sanctuary protection, concrete and
 razorwire, three-person entrenchments, and faction ground/anti-air turrets.

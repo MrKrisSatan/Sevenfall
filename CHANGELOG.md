@@ -1,5 +1,19 @@
 # Sevenfall changelog
 
+## Faction asymmetry development pass — 2026-10-25
+
+- Explicit HP, cost, speed, production pacing and faction weapons for all 18
+  combat designs, including consistent garrison weapons and specialist missiles.
+- Angel Renewal restores 1% maximum health per second after eight seconds without
+  taking damage. Human tanks, artillery and harvesters receive 50% faster depot
+  repair. Demon combat units gain temporary, non-stacking Blood Frenzy on attack.
+- Human rifles, rockets and tanks outrange direct faction counterparts; Demon
+  Ravagers and Hellreavers now use close-range claws instead of borrowed tank guns.
+- Updated lobby descriptions, tooltips and website catalogues; documented current
+  balance and a repository-wide implementation audit.
+- Validation: 53 Python tests, seven C# dread assertions, Windows compilation and
+  engine YAML/Fluent checks pass. Competitive and full-match acceptance remain.
+
 ## Faction defenses development pass — 2026-10-25
 
 - Added 15 faction defenses: angelic light curtains, sanctuary and energy/AA
