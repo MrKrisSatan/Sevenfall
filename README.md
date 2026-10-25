@@ -4,7 +4,7 @@
 
 > The Seventh Seal has broken. Heaven has descended, Hell has risen, and humanity refuses to surrender its world.
 
-**Development status:** Pre-alpha **0.3 development candidate**. The pinned Windows engine integration builds and an initial three-mission Lua campaign slice is in source. Live end-to-end skirmish, campaign-win verification and an independently installable release remain outstanding.
+**Development status:** **0.3 Windows skirmish tester alpha**. The standalone package includes twelve faction choices and three skirmish maps. Campaign completion and broader balance/content work remain in development. See the [tester guide](docs/TESTER_GUIDE.md) and [acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
@@ -12,14 +12,17 @@ The field guide includes images and descriptions for all **57 current building d
 and 30 unit designs**, with faction and subfaction filters. Combat-unit images are
 original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 30 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 57 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
 
-## Try the 0.3 development candidate (Windows)
+## Play the Windows skirmish alpha
 
-Clone the repository and double-click **[PLAY_SEVENFALL_DEV.cmd](PLAY_SEVENFALL_DEV.cmd)**,
-or follow [the pinned manual build commands](BUILDING.md). This installs an
-OpenRA SDK and builds it **locally**. The standalone staging pass now uses original
-Sevenfall assets and adapted GPL OpenRA definitions; **Red Alert content is no longer required**.
-A portable Windows candidate has passed native environment checks, but publication
-is still gated by the [release checklist](docs/RELEASE_BLOCKERS.md). After launching, select
+Download the setup EXE or portable ZIP from **[GitHub Releases](https://github.com/MrKrisSatan/Sevenfall/releases)**.
+The game bundles its runtime and content: OpenRA, Red Alert and a separate .NET
+installation are not required. Choose **Singleplayer → Skirmish**; The Twelvefold
+Scar supports up to twelve players. Sources, dependency/font sources and checksums
+accompany the tester release. Read [known alpha scope](docs/TESTER_ALPHA_ACCEPTANCE.md).
+
+For development, clone and run **[PLAY_SEVENFALL_DEV.cmd](PLAY_SEVENFALL_DEV.cmd)**,
+or follow [BUILDING.md](BUILDING.md) with .NET SDK 10.0.402. Contributor builds retain
+three campaign previews, excluded from the public skirmish package. Select
 **Singleplayer → Missions** to inspect one of the three new 0.3 previews:
 
 - **H03 The Glass Fields**: Humans versus Blood Brood.
@@ -79,7 +82,7 @@ razorwire, three-person entrenchments, and faction ground/anti-air turrets.
 All 15 defenses have original art and damage states; 33 native acceptance checks
 exercise their effects and counters.
 
-The repository now includes twelve faction choices, 36 structure variants, three faction Construction Yards and 18 faction defenses, 27 unit variants (including three harvesters), faction weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
+The skirmish alpha includes twelve faction choices, original faction units, structures and defenses, physical harvesting, faction weapons, localisation and land AI. Completed autonomous conquest and replay, two-client synchronization and save/load checks are recorded in [tester acceptance](docs/TESTER_ALPHA_ACCEPTANCE.md). The package has a per-user installer and a portable executable; every faction matchup and large-army balance remain tester work.
 
 The [custom artwork passes](art/README.md) add faction Construction Yards, power buildings, refineries, eight-direction MCVs and harvesters, fifteen production icons, two grades of Veilglass deposits, parent faction emblems and Sevenfall menu branding. The expanded [building pass](art/BUILDINGS.md) adds 30 building sprites and icons, including faction-specific radar, repair, naval, aircraft, beast-training and technology facilities. Implemented combat units now use original directional and animated art. Sounds, projectiles and other unconverted assets still use placeholders.
 

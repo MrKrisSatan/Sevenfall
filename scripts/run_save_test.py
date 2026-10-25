@@ -35,7 +35,12 @@ def main():
             'Launch.Map=save-test' if mode=='baseline' else 'Sevenfall.LoadAcceptance=sevenfall-acceptance.orasav']
         log=support/(mode+'.log')
         with log.open('w',encoding='utf-8') as output:
-            subprocess.run(command,cwd=ROOT,env=env,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=a.timeout)
+            try:
+                subprocess.run(command,cwd=ROOT,env=env,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=a.timeout)
+            except (subprocess.TimeoutExpired, subprocess.CalledProcessError):
+                output.flush()
+                print('\n'.join(log.read_text(encoding='utf-8',errors='replace').splitlines()[-35:]))
+                raise
         text=log.read_text(encoding='utf-8',errors='replace')
         if 'SAVE_TEST COMPLETE restored='+('False' if mode=='baseline' else 'True') not in text or 'DOCTRINE_TEST COMPLETE checks=34' not in text:
             raise RuntimeError('Save/load or doctrine acceptance failed: '+mode)

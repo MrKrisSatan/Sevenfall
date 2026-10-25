@@ -1,9 +1,9 @@
-# Sevenfall Windows skirmish alpha candidate
+# Sevenfall Windows skirmish tester alpha
 
-This is an unfinished playtest build. Publication requires the recorded release
-checks to pass; merely producing this directory does not approve it for release.
+This is an unfinished skirmish alpha for testers. Release notes and the source
+acceptance report describe verified checks and remaining scope.
 
-Run the candidate Setup EXE for a per-user installation, or extract the entire
+Run the Setup EXE for a per-user installation, or extract the entire
 portable archive to a writable folder and run `Sevenfall.exe`.
 OpenRA, Red Alert and a separately installed .NET runtime are not required.
 Windows x64 is the initial target. Saves, settings, replays and logs are kept in

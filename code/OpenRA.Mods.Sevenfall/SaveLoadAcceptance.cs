@@ -9,10 +9,17 @@ namespace OpenRA.Mods.Sevenfall
     {
         public override object Create(ActorInitializer init) => new SFSaveProbe();
     }
-    public class SFSaveProbe : ITick, INotifyGameSaved
+    public class SFSaveProbe : ITick, INotifyGameSaved, INotifyGameLoaded
     {
         int ticks;
         bool acknowledged;
+        public void GameLoaded(World world)
+        {
+            // Normal loading opens the options menu and pauses singleplayer.
+            // The automated scenario must issue the same unpause order as Resume.
+            Game.RunAfterTick(() => world.SetPauseState(false));
+            Console.WriteLine("SAVE_TEST RESUME_AFTER_LOAD");
+        }
         public void GameSaved(World world)
         {
             acknowledged = true;

@@ -103,6 +103,12 @@ jobs:
           python scripts/package_source.py --version "$env:CANDIDATE_VERSION"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: failed-native-acceptance-${{ github.sha }}
+          path: artifacts/**
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
         with:
           name: Sevenfall-windows-skirmish-candidate-${{ github.sha }}
           retention-days: 30

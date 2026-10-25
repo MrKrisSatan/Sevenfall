@@ -1,5 +1,21 @@
 # Sevenfall changelog
 
+## Windows skirmish tester release — 0.3.0-alpha.1
+
+- Self-contained .NET 10.0.13 Windows game, per-user setup, portable ZIP and
+  dedicated server; committed project/engine/SDK and dependency/font source archives.
+- Fixed empty map-preview texture initialization and ANGLE readback. All three
+  public skirmish maps now have previews; developer maps and campaigns stay excluded.
+- Replaced an unavailable-source fuzzy dependency with original GPL squad inference,
+  retained existing squad rules, and verified completed conquest/replay.
+- Added two-client sync-hash and actual save/load round-trip acceptance. Save tests
+  resume after the engine's normal paused load menu. Fresh Windows CI repeats them
+  against self-contained binaries, then tests installer data preservation.
+- Pinned and collected exact library notices and font sources. Packaging reports
+  16 covered runtime packages, zero unresolved runtime notices and 21 source components.
+- Verified 97 Python tests, 120 C# assertions, 31 native terrain/graphics checks and
+  a 49-check twelve-faction executable soak. Detailed scope: docs/TESTER_ALPHA_ACCEPTANCE.md.
+
 ## Cliff terrain and twelve-player candidate - 2026-10-25
 
 - Added an original sixteen-frame cliff atlas and native impassable terrain.

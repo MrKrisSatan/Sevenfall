@@ -1,24 +1,27 @@
-# Release checklist
+# Windows skirmish tester release process
 
-**There is currently no playable release.** The v0.1 starter is a code seed, not an executable build.
+The public release is a self-contained Windows x64 skirmish alpha. Planned campaign
+content is not represented as finished. See [acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
-Current evidence and the asset replacement inventory are tracked in
-[Standalone alpha readiness](docs/RELEASE_BLOCKERS.md). After staging, run
-`python scripts/audit_release_dependencies.py --require-independent` before
-attempting standalone packaging. Passing this narrow check does not replace the
-licence review and clean-machine/runtime acceptance below.
+1. Commit source and the reviewed dependency/engine manifests. Run Python/C# checks
+   and engine validation; preserve completed-conquest/replay and twelve-bot evidence.
+2. Dispatch `windows-candidate.yml` with an exact alpha version, for example
+   `0.3.0-alpha.1`. Leaving it empty produces a numbered development candidate.
+3. Require its exact-package rules/sprite/interface gates, fresh Windows native
+   terrain, standalone two-client sync, standalone save/load and installer lifecycle
+   checks to pass. It bundles project/engine/SDK and dependency/font sources.
+4. Download accepted artifacts. Verify the GitHub artifact digest, all per-file
+   SHA-256 checksums, source revision, skirmish map profile and notice audit.
+5. Prepare a GitHub Release tagged `vVERSION` at the tested source revision. Attach
+   setup EXE, portable ZIP, both source archives and checksums. Mark the tester alpha
+   as a prerelease and document its known scope, controls and reporting instructions.
+6. Publish only after all assets are uploaded and checksums verified. Confirm the
+   unauthenticated public release API/downloads and the project's release page.
 
-For every verified release:
-- [ ] Use a pinned OpenRA Mod SDK revision
-- [ ] Run static consistency checks
-- [ ] Run SDK build / tests; attach full logs
-- [ ] Install and launch on a clean supported machine
-- [ ] Verify factions, Veilglass gather/unload, unit production, combat and victory
-- [ ] Document third-party assets and licences; no packaged proprietary placeholders
-- [ ] Prepare downloadable archive, checksums, install guide and known issues
-- [ ] Update README and CHANGELOG and publish a GitHub Release
-- [ ] Confirm release is visible on project website
+No forced victory is used to satisfy autonomous match acceptance. Controlled network
+and save maps are classified separately. The public archive omits every diagnostic
+map; CI overlays diagnostics only in a disposable copy of the same binaries.
 
-Suggested labels: `v0.1-source` (code only), `v0.2-prealpha` (first tested skirmish), `v0.3-asymmetry`, `v0.4-art`, `v0.5-campaign`.
-
-The live website requests public GitHub Releases through GitHub's API, so a newly published release should appear there automatically. Manual page-source updates remain possible through repository commits.
+Source builds need .NET SDK 10.0.402; the distributed game does not. The reviewed
+engine overlay, runtime notices, source manifests and LGPL replacement instructions
+are part of the source/package. Preserve them when redistributing.

@@ -1,3 +1,6 @@
+> Historical cliff/candidate-2 report. The current renderer/runtime and release
+> checks are in [tester alpha acceptance](../docs/TESTER_ALPHA_ACCEPTANCE.md).
+
 # Cliff terrain and twelve-player acceptance — 25 October 2026
 
 Gameplay source: `331f80bc47d93ef378e16af46ea3c093016d7e39`.

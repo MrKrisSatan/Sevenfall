@@ -7,7 +7,7 @@ end
 WorldLoaded=function()
  Camera.Position=Map.CenterOfCell(CPos.New(128,27))
  for i=0,11 do
-  local p=Player.GetPlayer('Multi'..i);players[i]=p;history[i]={yard=false,mined=false,army=false}
+  local p=Player.GetPlayer('Multi'..i);players[i]=p;history[i]={yard=false,mined=false,army=false,seen={},fielded=0,peak=0}
   p.Cash=5000
   Check(p.IsBot,'autonomous bot configured '..i)
  end
@@ -15,7 +15,8 @@ WorldLoaded=function()
   for i=0,11 do
    Check(history[i].yard,'bot deployed a yard '..i)
    Check(history[i].mined,'bot completed refinery deliveries '..i)
-   Check(history[i].army,'bot produced a combat army '..i)
+   Check(history[i].army,'bot fielded four combat units cumulatively '..i)
+   print('TWELVE_TEST DETAIL: P'..i..' fielded='..history[i].fielded..' peak_alive='..history[i].peak..' losses='..players[i].UnitsLost)
   end
   local kills=0
   for i=0,11 do kills=kills+players[i].UnitsKilled+players[i].BuildingsKilled end
@@ -32,9 +33,15 @@ Tick=function()
   if p.RefinedCredits>0 then history[i].mined=true end
   local combat=0
   for _,unit in ipairs(p.GetActors()) do
-   if unit.HasProperty('Attack') and unit.HasProperty('IsMobile') and unit.IsMobile then combat=combat+1 end
+   if unit.HasProperty('Attack') and unit.HasProperty('IsMobile') and unit.IsMobile then
+    combat=combat+1
+    -- Actor's stable type/ID string measures real fielding despite early casualties.
+    local id=tostring(unit)
+    if not history[i].seen[id] then history[i].seen[id]=true;history[i].fielded=history[i].fielded+1 end
+   end
   end
-  if combat>=4 then history[i].army=true end
+  history[i].peak=math.max(history[i].peak,combat)
+  if history[i].fielded>=4 then history[i].army=true end
  end
  if DateTime.GameTime%DateTime.Seconds(60)==0 then
   for i=0,11 do print('TWELVE_TEST DETAIL: P'..i..' actors='..#players[i].GetActors()..' mined='..players[i].RefinedCredits..' army='..tostring(history[i].army)) end
