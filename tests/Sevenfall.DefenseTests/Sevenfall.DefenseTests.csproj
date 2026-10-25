@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net6.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
   <ItemGroup><Compile Include="../../code/OpenRA.Mods.Sevenfall/DreadRules.cs" Link="DreadRules.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="../../code/OpenRA.Mods.Sevenfall/VeilglassRules.cs" Link="VeilglassRules.cs" /></ItemGroup>
 </Project>

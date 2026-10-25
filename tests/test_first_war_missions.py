@@ -76,7 +76,7 @@ class FirstWarMissionContracts(unittest.TestCase):
                 self.assertIn("WorldLoaded = function()", lua)
                 self.assertIn("Tick = function()", lua)
                 self.assertIn("Trigger.OnAnyProduction(", lua)
-                self.assertIn("commander.Resources", lua)
+                self.assertIn("commander.RefinedCredits", lua)
                 self.assertIn("refinedCredits >= 900", lua)
                 self.assertIn("Has(\"fact\")", lua)
                 self.assertIn('GetActorsByType("fact")', lua)

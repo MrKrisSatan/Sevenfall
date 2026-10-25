@@ -2,6 +2,12 @@
 
 **There is currently no playable release.** The v0.1 starter is a code seed, not an executable build.
 
+Current evidence and the asset replacement inventory are tracked in
+[Standalone alpha readiness](docs/RELEASE_BLOCKERS.md). After staging, run
+`python scripts/audit_release_dependencies.py --require-independent` before
+attempting standalone packaging. Passing this narrow check does not replace the
+licence review and clean-machine/runtime acceptance below.
+
 For every verified release:
 - [ ] Use a pinned OpenRA Mod SDK revision
 - [ ] Run static consistency checks

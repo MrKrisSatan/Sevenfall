@@ -75,6 +75,7 @@
 
 World:
 	SFDefenseManager:
+	SFVeilglassHazard:
 	StartingUnits@mcvonly:
 		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
 	-StartingUnits@lightallies:
@@ -83,6 +84,7 @@ World:
 	-StartingUnits@heavysoviet:
 
 ^BasePlayer:
+	SFHarvestAccounting:
 	PlayerResources:
 		ResourceValues:
 			# Low-grade and high-grade Veilglass, a single mineral.

@@ -5,8 +5,12 @@ on:
 permissions:
   contents: read
 jobs:
-  windows:
-    runs-on: windows-latest
+  engine:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-22.04]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,3 +25,8 @@ jobs:
       - run: python -m unittest discover -s tests
       - run: dotnet run --project tests/Sevenfall.DefenseTests -c Release
       - run: python scripts/build.py build
+      - run: python scripts/audit_release_dependencies.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-dependencies-${{ matrix.os }}
+          path: artifacts/release-dependencies.json

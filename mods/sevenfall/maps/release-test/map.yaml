@@ -1,0 +1,114 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Release Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@P0:
+		Name: P0
+		Faction: a_seraph
+		Playable: True
+		LockFaction: True
+	PlayerReference@P1:
+		Name: P1
+		Faction: a_warden
+	PlayerReference@P2:
+		Name: P2
+		Faction: a_exile
+	PlayerReference@P3:
+		Name: P3
+		Faction: h_bastion
+	PlayerReference@P4:
+		Name: P4
+		Faction: h_union
+	PlayerReference@P5:
+		Name: P5
+		Faction: h_covenant
+	PlayerReference@P6:
+		Name: P6
+		Faction: d_legion
+	PlayerReference@P7:
+		Name: P7
+		Faction: d_brood
+	PlayerReference@P8:
+		Name: P8
+		Faction: d_court
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 10,10
+	Power0: a_spire
+		Owner: P0
+		Location: 5,5
+	Refinery0: a_veilworks
+		Owner: P0
+		Location: 9,9
+	Power1: a_spire
+		Owner: P1
+		Location: 43,5
+	Refinery1: a_veilworks
+		Owner: P1
+		Location: 47,9
+	Power2: a_spire
+		Owner: P2
+		Location: 81,5
+	Refinery2: a_veilworks
+		Owner: P2
+		Location: 85,9
+	Power3: h_generator
+		Owner: P3
+		Location: 5,39
+	Refinery3: h_veilworks
+		Owner: P3
+		Location: 9,43
+	Power4: h_generator
+		Owner: P4
+		Location: 43,39
+	Refinery4: h_veilworks
+		Owner: P4
+		Location: 47,43
+	Power5: h_generator
+		Owner: P5
+		Location: 81,39
+	Refinery5: h_veilworks
+		Owner: P5
+		Location: 85,43
+	Power6: d_heart
+		Owner: P6
+		Location: 5,73
+	Refinery6: d_veilworks
+		Owner: P6
+		Location: 9,77
+	Power7: d_heart
+		Owner: P7
+		Location: 43,73
+	Refinery7: d_veilworks
+		Owner: P7
+		Location: 47,77
+	Power8: d_heart
+		Owner: P8
+		Location: 81,73
+	Refinery8: d_veilworks
+		Owner: P8
+		Location: 85,77
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: release-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True

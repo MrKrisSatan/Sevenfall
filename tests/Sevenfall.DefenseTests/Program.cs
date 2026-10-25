@@ -12,3 +12,11 @@ Check(DreadRules.Advance(5, 5, false, false, false) == 0, "Dread cannot become n
 Check(DreadRules.Advance(295, 5, true, true, false) == 0, "Sanctuary must prevent and clear conversion.");
 Check(DreadRules.Advance(295, 5, true, false, true) == 0, "Recent conversion must prevent ping-pong ownership.");
 Console.WriteLine("PASS: 7 Sevenfall dread timing and counterplay assertions.");
+Check(VeilglassRules.DamageAt(0) == 12000, "Contact takes full blast damage.");
+Check(VeilglassRules.DamageAt(2048) == 6000, "Blast edge damage is half strength.");
+Check(VeilglassRules.DamageAt(2049) == 0, "Outside blast radius is safe.");
+for (var density = 1; density <= 100; density++)
+    Check(VeilglassRules.SpreadBudget(density) <= density && VeilglassRules.SpreadBudget(density) <= 6,
+        "Detonations cannot create extra mineral and must cap spread.");
+Check(VeilglassRules.SpreadBudget(0) == 0, "Empty deposits cannot spread.");
+Console.WriteLine("PASS: 104 Veilglass blast-radius and finite-spread assertions.");

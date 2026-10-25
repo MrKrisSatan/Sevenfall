@@ -1,0 +1,163 @@
+# Original RGBA vector cursors; no external palette or SHP files.
+Cursors:
+	sevenfall|art/cursors.png:
+		scroll-t:
+			Start: 0
+		scroll-tr:
+			Start: 1
+		scroll-r:
+			Start: 2
+		scroll-br:
+			Start: 3
+		scroll-b:
+			Start: 4
+		scroll-bl:
+			Start: 5
+		scroll-l:
+			Start: 6
+		scroll-tl:
+			Start: 7
+		scroll-t-blocked:
+			Start: 8
+		scroll-tr-blocked:
+			Start: 9
+		scroll-r-blocked:
+			Start: 10
+		scroll-br-blocked:
+			Start: 11
+		scroll-b-blocked:
+			Start: 12
+		scroll-bl-blocked:
+			Start: 13
+		scroll-l-blocked:
+			Start: 14
+		scroll-tl-blocked:
+			Start: 15
+		select:
+			Start: 16
+		default:
+			Start: 17
+			X: -13
+			Y: -13
+		default-minimap:
+			Start: 18
+			X: -13
+			Y: -13
+		generic-blocked:
+			Start: 19
+		generic-blocked-minimap:
+			Start: 20
+		move:
+			Start: 21
+		move-minimap:
+			Start: 22
+		move-rough:
+			Start: 23
+		move-blocked:
+			Start: 24
+		move-blocked-minimap:
+			Start: 25
+		attack:
+			Start: 26
+		attack-minimap:
+			Start: 27
+		attackoutsiderange:
+			Start: 28
+		attackoutsiderange-minimap:
+			Start: 29
+		harvest:
+			Start: 30
+		harvest-minimap:
+			Start: 31
+		enter:
+			Start: 32
+		enter-minimap:
+			Start: 33
+		enter-blocked:
+			Start: 34
+		enter-blocked-minimap:
+			Start: 35
+		c4:
+			Start: 36
+		c4-minimap:
+			Start: 37
+		guard:
+			Start: 38
+		guard-minimap:
+			Start: 39
+		capture:
+			Start: 40
+		capture-minimap:
+			Start: 41
+		heal:
+			Start: 42
+		heal-minimap:
+			Start: 43
+		ability:
+			Start: 44
+		ability-minimap:
+			Start: 45
+		joystick-all:
+			Start: 46
+			X: -13
+			Y: -13
+		joystick-t-blocked:
+			Start: 47
+		joystick-tr-blocked:
+			Start: 48
+		joystick-r-blocked:
+			Start: 49
+		joystick-br-blocked:
+			Start: 50
+		joystick-b-blocked:
+			Start: 51
+		joystick-bl-blocked:
+			Start: 52
+		joystick-l-blocked:
+			Start: 53
+		joystick-tl-blocked:
+			Start: 54
+		deploy:
+			Start: 55
+		deploy-blocked:
+			Start: 56
+		goldwrench:
+			Start: 57
+		goldwrench-blocked:
+			Start: 58
+		nuke:
+			Start: 59
+		chrono-select:
+			Start: 60
+		chrono-target:
+			Start: 61
+		sell:
+			Start: 62
+		sell-blocked:
+			Start: 63
+		repair:
+			Start: 64
+		repair-blocked:
+			Start: 65
+		sell2:
+			Start: 66
+		powerdown-blocked:
+			Start: 67
+		powerdown:
+			Start: 68
+		attackmove:
+			Start: 69
+		attackmove-minimap:
+			Start: 70
+		attackmove-blocked:
+			Start: 71
+		attackmove-blocked-minimap:
+			Start: 72
+		assaultmove:
+			Start: 73
+		assaultmove-minimap:
+			Start: 74
+		assaultmove-blocked:
+			Start: 75
+		assaultmove-blocked-minimap:
+			Start: 76

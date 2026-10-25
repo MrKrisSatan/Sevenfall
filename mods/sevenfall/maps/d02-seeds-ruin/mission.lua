@@ -8,7 +8,7 @@ local armyObjective
 local assaultObjective
 local optionalObjective
 local refinedCredits = 0
-local lastStoredCredits = 0
+local startingRefinedCredits = 0
 local sawInfantry = false
 local sawArmour = false
 local winOrLoss = false
@@ -48,7 +48,7 @@ WorldLoaded = function()
 	armyObjective = commander.AddPrimaryObjective("Build d_pit and d_forge; produce d_thrall and d_ravager.")
 	assaultObjective = commander.AddPrimaryObjective("Destroy the hostile Construction Yard.")
 	optionalObjective = commander.AddSecondaryObjective("Preserve the first d_devourer and its refinery.")
-	lastStoredCredits = commander.Resources
+	startingRefinedCredits = commander.RefinedCredits
 	Media.DisplayMessage("D02: Seeds of Ruin. Establish your Veilglass economy and destroy the enemy command.", "Sevenfall")
 
 	-- Only units really produced after mission start count. The starting
@@ -92,11 +92,8 @@ Tick = function()
 		return
 	end
 
-	local stored = commander.Resources
-	if stored > lastStoredCredits then
-		refinedCredits = refinedCredits + (stored - lastStoredCredits)
-	end
-	lastStoredCredits = stored
+	-- Count actual accepted unloads, even when income is spent between polls.
+	refinedCredits = commander.RefinedCredits - startingRefinedCredits
 
 	local economyReady = commander.IsObjectiveCompleted(economyObjective)
 		or (Has("fact") and Has("d_heart") and Has("d_veilworks") and refinedCredits >= 900)

@@ -138,6 +138,7 @@ def main() -> None:
     content = re.sub(r'(?m)^\tTitle: .*$', '\tTitle: sf-title', content, count=1)
     content = re.sub(r'(?m)^\tWindowTitle: .*$', '\tWindowTitle: sf-title', content, count=1)
     content = content.replace('ra|rules/ai.yaml', 'sevenfall|rules/40-ai.yaml')
+    content = content.replace('ra|cursors.yaml', 'sevenfall|cursors.yaml')
     content = content.replace('ra|maps: System', 'sevenfall|maps: System')
     content = content.replace('maps/ra/{DEV_VERSION}', 'maps/sevenfall/0.2')
     content = content.replace('Version: {DEV_VERSION}', 'Version: 0.3-dev')

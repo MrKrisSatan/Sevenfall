@@ -49,7 +49,7 @@ class Mission:
             self.g.production(None, self.add(type, owner), 'test')
 
     def ready(self):
-        self.g.commander.Resources = 900
+        self.g.commander.RefinedCredits = 900
         self.produce()
         self.yard.IsDead = True
 
@@ -58,6 +58,28 @@ class Mission:
 
 
 class MissionRuntimeTests(unittest.TestCase):
+    def test_spending_between_polls_does_not_hide_deliveries(self):
+        for slug, m in self.missions():
+            with self.subTest(mission=slug):
+                m.establish()
+                m.produce()
+                m.yard.IsDead = True
+                for time in (25, 50, 75):
+                    m.g.commander.RefinedCredits += 300
+                    m.g.commander.Resources = 0  # Entire delivery already spent.
+                    m.tick(time)
+                self.assertEqual(m.g.commander.result, 'won')
+
+    def test_stored_resource_grants_do_not_count_as_refining(self):
+        for slug, m in self.missions():
+            with self.subTest(mission=slug):
+                m.establish()
+                m.produce()
+                m.yard.IsDead = True
+                m.g.commander.Resources = 10000
+                m.tick()
+                self.assertEqual(m.state(1), 'incomplete')
+
     def missions(self):
         for slug, data in SCENARIOS.items():
             yield slug, Mission(slug, data)
@@ -81,7 +103,7 @@ class MissionRuntimeTests(unittest.TestCase):
                 m.add(m.data['infantry'])
                 m.add(m.data['vehicle'])
                 m.produce(m.g.enemy)
-                m.g.commander.Resources = 900
+                m.g.commander.RefinedCredits = 900
                 m.yard.IsDead = True
                 m.tick()
                 self.assertEqual(m.state(2), 'incomplete')
@@ -94,11 +116,11 @@ class MissionRuntimeTests(unittest.TestCase):
                 m.produce()
                 m.yard.IsDead = True
                 m.g.commander.Cash = 100000
-                m.g.commander.Resources = 899
+                m.g.commander.RefinedCredits = 899
                 m.tick()
                 self.assertEqual(m.state(1), 'incomplete')
                 self.assertIsNone(m.g.commander.result)
-                m.g.commander.Resources = 900
+                m.g.commander.RefinedCredits = 900
                 m.tick(50)
                 self.assertEqual(m.g.commander.result, 'won')
 
@@ -118,7 +140,7 @@ class MissionRuntimeTests(unittest.TestCase):
             with self.subTest(mission=slug):
                 m.establish()
                 m.produce()
-                m.g.commander.Resources = 900
+                m.g.commander.RefinedCredits = 900
                 m.tick()
                 factory_type = BUILDINGS[m.data['faction'][0]][1]
                 factory = m.g.commander.GetActorsByType(factory_type)[1]

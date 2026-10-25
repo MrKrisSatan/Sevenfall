@@ -1,5 +1,18 @@
 # Sevenfall changelog
 
+## Release blockers and explosive Veilglass — 2026-10-25
+
+- Campaign objectives count real accepted refinery income instead of sampling
+  the stored balance, fixing objectives that stalled when income was spent.
+- Non-harvester ground contact detonates Veilglass, damaging units and structures
+  and scattering a bounded amount of mineral. Harvesters do not trigger blasts;
+  airborne units are excluded. Added a procedural purple shockwave.
+- Added a native nine-faction harvesting/hazard diagnostic, dependency inventory
+  and standalone manifest gate; expanded engine CI to Windows and Ubuntu.
+- Replaced all 77 cursor states with original vector-derived RGBA graphics,
+  retaining the software-cursor workaround and eliminating RA cursor sprites.
+- Native acceptance, asset independence and standalone packaging remain pending.
+
 ## Faction asymmetry development pass — 2026-10-25
 
 - Explicit HP, cost, speed, production pacing and faction weapons for all 18

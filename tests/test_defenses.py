@@ -44,7 +44,7 @@ class Defenses(unittest.TestCase):
 
     def test_native_runner_requires_completion_and_surfaces_lua_failures(self):
         runner = (ROOT / 'scripts/run_defense_test.py').read_text()
-        self.assertIn('DEFENSE_TEST COMPLETE checks=', runner)
+        self.assertIn("marker + ' COMPLETE checks='", runner)
         self.assertIn('Fatal Lua Error:', runner)
         self.assertIn('process.terminate()', runner)
 

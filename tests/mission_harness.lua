@@ -4,7 +4,7 @@ actors = {}
 events = {}
 production = nil
 local function NewPlayer()
-	local player = { Resources = 0, Cash = 0, objectives = {}, result = nil }
+	local player = { Resources = 0, RefinedCredits = 0, Cash = 0, objectives = {}, result = nil }
 	player.GetActorsByType = function(type)
 		local found = {}
 		for _, actor in ipairs(actors) do
