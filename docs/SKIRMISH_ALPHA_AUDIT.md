@@ -89,6 +89,12 @@ No public GitHub Release existed when inspected.
   folder: **24 checks pass**, including actual refinery income while balances are
   spent and finite resource scatter. This remains a component test.
 
+- Portable packaging completed from committed source `11516cd`; its ZIP checksum
+  and **866 file hashes** verified after extraction. The extracted `Sevenfall.exe`
+  passed **11 environment checks** with separate empty support data on the development
+  host. This does not replace an independent clean-machine test. A second candidate
+  also packaged successfully after the changelog UTF-8 correction.
+
 Existing 33-check defense and 99-check production transcripts were inspected as
 historical evidence; they are not relabelled as fresh runs from this audit.
 
