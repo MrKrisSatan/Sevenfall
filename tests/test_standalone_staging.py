@@ -19,6 +19,9 @@ class StandaloneStagingTests(unittest.TestCase):
             sdk = Path(folder)
             ra = sdk/'engine/mods/ra'
             target = sdk/'mods/sevenfall'
+            common = sdk/'engine/mods/common/chrome'
+            common.mkdir(parents=True)
+            (common/'mainmenu.yaml').write_text('Container@MAINMENU:\n\tLogic: MainMenuLogic\n\tChildren:\n\t\tBackground@NEWS_BG:\n\t\t\tDropDownButton@NEWS_BUTTON:\n\t\tContainer@PLAYER_PROFILE_CONTAINER:\n\t\t\tLogic: LoadLocalPlayerProfileLogic\n')
             for directory in ('rules', 'weapons', 'chrome', 'fluent', 'scripts', 'sequences', 'audio'):
                 (ra/directory).mkdir(parents=True)
             for directory in ('rules', 'weapons', 'sequences'):
@@ -37,6 +40,11 @@ class StandaloneStagingTests(unittest.TestCase):
             stage.stage(sdk, target)
             manifest = (target/'mod.yaml').read_text()
             self.assertNotIn('ra|', manifest)
+            menu = (target/'upstream/chrome/mainmenu.yaml').read_text()
+            self.assertNotIn('LoadLocalPlayerProfileLogic', menu)
+            self.assertIn('SevenfallMainMenuLogic', menu)
+            self.assertIn('@SF_CHANGELOG_BUTTON:', menu)
+            self.assertEqual((target/'CHANGELOG.md').read_text(encoding='utf-8'), (ROOT/'CHANGELOG.md').read_text(encoding='utf-8'))
             self.assertNotIn('conquer.mix', manifest)
             self.assertIn('rules/90-alpha.yaml', manifest)
             self.assertFalse((target/'upstream/rules/proprietary.shp').exists())

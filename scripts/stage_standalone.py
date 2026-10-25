@@ -106,6 +106,14 @@ def stage(sdk, target):
         chrome = chrome.replace(f': glyphs{suffix}.png', f': sevenfall|art/ui/alpha-glyphs{suffix}.png')
     (source/'chrome.yaml').write_text(chrome)
 
+    menu = (sdk/'engine/mods/common/chrome/mainmenu.yaml').read_text(encoding='utf-8-sig')
+    menu = re.sub(r'(?ms)^\t\tContainer@PLAYER_PROFILE_CONTAINER:.*\Z', '', menu)
+    menu = menu.replace('Logic: MainMenuLogic', 'Logic: SevenfallMainMenuLogic')
+    menu = menu.replace('@NEWS_BG:', '@SF_CHANGELOG_BG:').replace('@NEWS_BUTTON:', '@SF_CHANGELOG_BUTTON:')
+    (source/'chrome').mkdir(exist_ok=True)
+    (source/'chrome/mainmenu.yaml').write_text(menu, encoding='utf-8')
+    shutil.copy2(Path(__file__).resolve().parents[1]/'CHANGELOG.md', target/'CHANGELOG.md')
+
     # Modify the assembled manifest, keeping only our package and OpenRA common files.
     manifest = (target/'mod.yaml').read_text()
     manifest = re.sub(r'(?ms)^FileSystem:.*?(?=^MapFolders:)',
@@ -116,6 +124,7 @@ def stage(sdk, target):
     manifest = manifest.replace('Sequences:\n', 'Sequences:\n\tsevenfall|sequences/compatibility.yaml\n')
     for section, filename in [('Voices', 'voices'), ('Notifications', 'notifications'), ('Music', 'music')]:
         manifest = manifest.replace(f'ra|audio/{filename}.yaml', f'sevenfall|audio/{filename}.yaml')
+    manifest = manifest.replace('common|chrome/mainmenu.yaml', 'sevenfall|upstream/chrome/mainmenu.yaml')
     manifest = manifest.replace('ra|', 'sevenfall|upstream/')
     manifest = manifest.replace('Website: https://www.openra.net', 'Website: https://github.com/MrKrisSatan/Sevenfall')
     manifest = re.sub(r'(?m)^\tWebIcon32:.*\n', '', manifest)

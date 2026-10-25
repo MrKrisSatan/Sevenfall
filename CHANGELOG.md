@@ -1,5 +1,17 @@
 # Sevenfall changelog
 
+## Standalone alpha and Sevenfall menu — 2026-10-25
+
+- Removed the OpenRA forum account connection panel from the main menu.
+- Replaced Battlefield News with Sevenfall Changelog, fetching the latest entry
+  from this GitHub changelog. Offline launches display the bundled entry.
+- Removed the remaining external Red Alert content dependency and built a
+  portable Windows alpha candidate with the .NET runtime included.
+- Verified nine-faction construction, production and harvesting in native tests,
+  plus Veilglass explosions, faction defenses, civilian damage and bridge repair.
+- Completed an autonomous AI economy and elimination match. Public release
+  remains pending multiplayer, save/replay and distribution acceptance checks.
+
 ## Faction interface and neutral menus — 2026-10-25
 
 - Angels use ivory/gold HUD trim, Humans steel/teal, and Demons obsidian/ember.
