@@ -9,7 +9,7 @@ project/engine/SDK source, dependency/font source, and SHA-256 checksums.
 
 | Check | Evidence |
 |---|---|
-| Python regression suite | 97 passed |
+| Python regression suite | 98 passed |
 | C# mechanics and original squad inference | 120 assertions passed |
 | Native terrain, locomotion, twelve MCV starts, delayed-projectile regression and actual map-preview rendering | 31 passed |
 | Native doctrine mechanics | 34 passed |

@@ -3,8 +3,9 @@
 The release's `dependencies-source.zip` contains the source, build scripts and
 licences for bundled OpenRA wrappers, native libraries, LGPL audio libraries and
 the exact GNU FreeFont 20090104 fonts. Source URLs, revisions and download SHA-256
-hashes are pinned in SOURCE_MANIFEST.json. Unrelated test media and compiled
+hashes are pinned in SOURCE_MANIFEST.json. Unrelated test/sample trees and compiled
 outputs are omitted; library source/build scripts and licence files are retained.
+Fetch the pinned original archive if you want the upstream test suites and fixtures.
 
 The separate project source archive contains Sevenfall, the base OpenRA and SDK
 trees, and the reviewed engine overlay. Build instructions are in BUILDING.md.

@@ -7,11 +7,28 @@ import sys
 import tarfile
 import tempfile
 import unittest
+import zipfile
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import release_dependencies as rd
 
 class ReleaseDependencyTests(unittest.TestCase):
+    def test_source_bundle_keeps_library_code_and_omits_unrelated_raw_fixtures(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);archive=root/'source.tar.gz'
+            with tarfile.open(archive,'w:gz') as tar:
+                for name in ('repo/src/Library/Core.cs','repo/src/Library.Tests/photo.RAW','repo/tests/fixture.unknown','repo/COPYING'):
+                    member=tarfile.TarInfo(name);member.size=1;tar.addfile(member,io.BytesIO(b'x'))
+            entry={'id':'fixture','filename':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest()}
+            manifest=root/'manifest.json';manifest.write_text(json.dumps({'sources':[entry]}))
+            with patch.object(rd,'CACHE',root),patch.object(rd,'MANIFEST',manifest):
+                output=rd.bundle('0.3.0-alpha.test',root/'output')
+            with zipfile.ZipFile(output) as bundle:
+                names=set(bundle.namelist())
+            self.assertIn('fixture/src/Library/Core.cs',names)
+            self.assertIn('fixture/COPYING',names)
+            self.assertFalse(any('photo.RAW' in n or 'fixture.unknown' in n for n in names))
+
     def test_modified_source_cache_is_rejected_without_replacement(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);file=root/'source.tar.gz';file.write_bytes(b'modified')

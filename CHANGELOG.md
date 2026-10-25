@@ -13,7 +13,7 @@
   against self-contained binaries, then tests installer data preservation.
 - Pinned and collected exact library notices and font sources. Packaging reports
   16 covered runtime packages, zero unresolved runtime notices and 21 source components.
-- Verified 97 Python tests, 120 C# assertions, 31 native terrain/graphics checks and
+- Verified 98 Python tests, 120 C# assertions, 31 native terrain/graphics checks and
   a 49-check twelve-faction executable soak. Detailed scope: docs/TESTER_ALPHA_ACCEPTANCE.md.
 
 ## Cliff terrain and twelve-player candidate - 2026-10-25

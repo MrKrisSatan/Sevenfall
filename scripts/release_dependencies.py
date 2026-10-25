@@ -104,6 +104,13 @@ EXCLUDED_MEDIA = {'.mp3','.mp4','.m4a','.wav','.ogg','.flac','.wma','.asf','.ape
     '.ico','.tif','.tiff','.ttf','.otf','.woff','.woff2','.dll','.exe','.pdb',
     '.nupkg','.so','.dylib','.a','.lib'}
 
+def source_file(relative):
+    for part in relative.parts[:-1]:
+        name = part.lower()
+        if name in ('test','tests','samples','sample','raw-samples','testdata','test-data','examples','example') or name.endswith('tests'):
+            return False
+    return relative.suffix.lower() not in EXCLUDED_MEDIA
+
 def bundle(version, destination=None):
     destination = destination or ROOT/'dist'
     destination.mkdir(parents=True, exist_ok=True)
@@ -116,7 +123,7 @@ def bundle(version, destination=None):
         for entry in sources():
             with tarfile.open(archive(entry)) as tar:
                 for member, relative in members(tar):
-                    if relative.suffix.lower() in EXCLUDED_MEDIA:
+                    if not source_file(relative):
                         continue
                     output.writestr(entry['id']+'/'+str(relative), tar.extractfile(member).read())
     target.with_suffix('.zip.sha256').write_text(hashlib.sha256(target.read_bytes()).hexdigest()+'  '+target.name+'\n', encoding='utf-8')
