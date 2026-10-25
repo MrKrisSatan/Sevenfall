@@ -83,6 +83,20 @@
     "subfaction": "shared"
   },
   {
+    "id": "a-judgment",
+    "actor": "A_JUDGMENT",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Judgment Lance",
+    "role": "Defense / anti-armor",
+    "description": "Long-range radiant lance strikes armor slowly. Vulnerable to infantry swarms and power cuts.",
+    "source": "art/defenses/source/a_judgment.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "a-advpower",
     "actor": "A_ADVPOWER",
     "faction": "angels",
@@ -139,6 +153,20 @@
     "subfaction": "shared"
   },
   {
+    "id": "a-sanctuary",
+    "actor": "A_SANCTUARY",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Sanctuary Beacon",
+    "role": "Defense / sanctuary",
+    "description": "Heals nearby allied infantry and prevents Mourning Flesh conversion within four cells. Requires power.",
+    "source": "art/defenses/source/a_sanctuary.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "a-airfield",
     "actor": "A_AIRFIELD",
     "faction": "angels",
@@ -167,6 +195,20 @@
     "subfaction": "shared"
   },
   {
+    "id": "a-skyward",
+    "actor": "A_SKYWARD",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Skyward Choir",
+    "role": "Defense / anti-air",
+    "description": "Guided celestial bolts intercept aircraft; cannot attack ground units. Requires power.",
+    "source": "art/defenses/source/a_skyward.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "a-naval",
     "actor": "A_NAVAL",
     "faction": "angels",
@@ -176,6 +218,34 @@
     "description": "Waterborne production and ship repair. No ships available yet.",
     "source": "art/source/a-naval.png",
     "sprite": false,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "a-dawnwall",
+    "actor": "A_DAWNWALL",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Wall of Dawn",
+    "role": "Defense / wall",
+    "description": "Passable to allies; a powered light curtain incinerates hostile ground units that try to cross. Cut power or attack from range.",
+    "source": "art/defenses/source/a_dawnwall.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "a-watchfire",
+    "actor": "A_WATCHFIRE",
+    "faction": "angels",
+    "kind": "buildings",
+    "name": "Watchfire Bastion",
+    "role": "Defense / anti-infantry",
+    "description": "Rapid halo bolts suppress infantry; less effective against heavy armor. Requires power.",
+    "source": "art/defenses/source/a_watchfire.png",
+    "sprite": true,
     "status": "Original game art",
     "availability": "Shared by all three subfactions",
     "subfaction": "shared"
@@ -320,6 +390,34 @@
     "subfaction": "shared"
   },
   {
+    "id": "h-autocannon",
+    "actor": "H_AUTOCANNON",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Bastion Autocannon",
+    "role": "Defense / anti-ground",
+    "description": "Reliable rapid-fire kinetic defense against infantry and light armor; operates through power failures.",
+    "source": "art/defenses/source/h_autocannon.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "h-blastwall",
+    "actor": "H_BLASTWALL",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Bastion Blast Wall",
+    "role": "Defense / wall",
+    "description": "Reinforced modular wall blocks ground movement and projectiles; siege weapons and heavy crushers can breach it.",
+    "source": "art/defenses/source/h_blastwall.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "h-kennel",
     "actor": "H_KENNEL",
     "faction": "humans",
@@ -404,6 +502,34 @@
     "subfaction": "shared"
   },
   {
+    "id": "h-razorwire",
+    "actor": "H_RAZORWIRE",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Razorwire Entanglement",
+    "role": "Defense / wire",
+    "description": "Enemy infantry are slowed to 65 percent speed and cut while crossing. Ground vehicles crush the wire.",
+    "source": "art/defenses/source/h_razorwire.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "h-entrenchment",
+    "actor": "H_ENTRENCHMENT",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Resistance Entrenchment",
+    "role": "Defense / garrison",
+    "description": "Three infantry can occupy this fortified firing position. Empty positions do not shoot; occupants supply their weapons.",
+    "source": "art/defenses/source/h_entrenchment.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "h-service",
     "actor": "H_SERVICE",
     "faction": "humans",
@@ -413,6 +539,20 @@
     "description": "Repairs damaged vehicles.",
     "source": "art/source/h-service.png",
     "sprite": false,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "h-missilenest",
+    "actor": "H_MISSILENEST",
+    "faction": "humans",
+    "kind": "buildings",
+    "name": "Skyguard Missile Nest",
+    "role": "Defense / anti-air",
+    "description": "Dedicated guided anti-air missiles; crewed backup controls keep it working without power.",
+    "source": "art/defenses/source/h_missilenest.png",
+    "sprite": true,
     "status": "Original game art",
     "availability": "Shared by all three subfactions",
     "subfaction": "shared"
@@ -641,6 +781,34 @@
     "subfaction": "shared"
   },
   {
+    "id": "d-thornfield",
+    "actor": "D_THORNFIELD",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Bloodthorn Snare",
+    "role": "Defense / thorns",
+    "description": "Living thorns slow enemy infantry to half speed and bleed them while crossing. Vehicles crush the growth.",
+    "source": "art/defenses/source/d_thornfield.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "d-cindermaw",
+    "actor": "D_CINDERMAW",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Cinder Maw",
+    "role": "Defense / anti-armor",
+    "description": "A short-range infernal furnace burns armored attackers; outrange it with artillery. Requires power.",
+    "source": "art/defenses/source/d_cindermaw.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "d-forge",
     "actor": "D_FORGE",
     "faction": "demons",
@@ -753,6 +921,20 @@
     "subfaction": "shared"
   },
   {
+    "id": "d-mourningwall",
+    "actor": "D_MOURNINGWALL",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Mourning Flesh",
+    "role": "Defense / flesh",
+    "description": "Regenerating flesh wall. Its powered moans convert enemy infantry after 12 seconds of sustained exposure within three cells; retreat or Sanctuary counters it.",
+    "source": "art/defenses/source/d_mourningwall.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
     "id": "d-radar",
     "actor": "D_RADAR",
     "faction": "demons",
@@ -762,6 +944,34 @@
     "description": "Provides radar while powered.",
     "source": "art/source/d-radar.png",
     "sprite": false,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "d-skyhook",
+    "actor": "D_SKYHOOK",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Skyhook Reliquary",
+    "role": "Defense / anti-air",
+    "description": "Living guided skyhooks attack aircraft only; requires power.",
+    "source": "art/defenses/source/d_skyhook.png",
+    "sprite": true,
+    "status": "Original game art",
+    "availability": "Shared by all three subfactions",
+    "subfaction": "shared"
+  },
+  {
+    "id": "d-spinenest",
+    "actor": "D_SPINENEST",
+    "faction": "demons",
+    "kind": "buildings",
+    "name": "Spine Nest",
+    "role": "Defense / anti-infantry",
+    "description": "A living organ spits bone spines into infantry. Ineffective against heavy armor; requires power.",
+    "source": "art/defenses/source/d_spinenest.png",
+    "sprite": true,
     "status": "Original game art",
     "availability": "Shared by all three subfactions",
     "subfaction": "shared"

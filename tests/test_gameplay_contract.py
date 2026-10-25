@@ -33,7 +33,7 @@ def load_actors():
     """Only top-level actors in Sevenfall sources, not inherited OpenRA actors."""
     result = {}
     for name in ("20-structures.yaml", "25-support-structures.yaml",
-                 "30-units.yaml"):
+                 "30-units.yaml", "45-defenses.yaml"):
         source = (RULES / name).read_text(encoding="utf-8")
         matches = list(re.finditer(r"(?m)^([A-Z][A-Z0-9_]*):$", source))
         for i, match in enumerate(matches):

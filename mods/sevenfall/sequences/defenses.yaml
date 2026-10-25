@@ -1,0 +1,385 @@
+# Generated from original six-state defense atlases.
+a_dawnwall:
+	Defaults:
+		Filename: sevenfall|art/defenses/a_dawnwall.png
+		Offset: 0,-8
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/a_dawnwall-icon.png
+		Offset: 0,0
+
+a_sanctuary:
+	Defaults:
+		Filename: sevenfall|art/defenses/a_sanctuary.png
+		Offset: 0,-12
+	idle:
+		Frames: 0,4,5
+		Length: 3
+		Tick: 220
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/a_sanctuary-icon.png
+		Offset: 0,0
+
+a_watchfire:
+	Defaults:
+		Filename: sevenfall|art/defenses/a_watchfire.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/a_watchfire-icon.png
+		Offset: 0,0
+
+a_judgment:
+	Defaults:
+		Filename: sevenfall|art/defenses/a_judgment.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/a_judgment-icon.png
+		Offset: 0,0
+
+a_skyward:
+	Defaults:
+		Filename: sevenfall|art/defenses/a_skyward.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/a_skyward-icon.png
+		Offset: 0,0
+
+h_blastwall:
+	Defaults:
+		Filename: sevenfall|art/defenses/h_blastwall.png
+		Offset: 0,-8
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/h_blastwall-icon.png
+		Offset: 0,0
+
+h_razorwire:
+	Defaults:
+		Filename: sevenfall|art/defenses/h_razorwire.png
+		Offset: 0,-8
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/h_razorwire-icon.png
+		Offset: 0,0
+
+h_entrenchment:
+	Defaults:
+		Filename: sevenfall|art/defenses/h_entrenchment.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/h_entrenchment-icon.png
+		Offset: 0,0
+
+h_autocannon:
+	Defaults:
+		Filename: sevenfall|art/defenses/h_autocannon.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/h_autocannon-icon.png
+		Offset: 0,0
+
+h_missilenest:
+	Defaults:
+		Filename: sevenfall|art/defenses/h_missilenest.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/h_missilenest-icon.png
+		Offset: 0,0
+
+d_mourningwall:
+	Defaults:
+		Filename: sevenfall|art/defenses/d_mourningwall.png
+		Offset: 0,-8
+	idle:
+		Frames: 0,4,5
+		Length: 3
+		Tick: 220
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/d_mourningwall-icon.png
+		Offset: 0,0
+
+d_thornfield:
+	Defaults:
+		Filename: sevenfall|art/defenses/d_thornfield.png
+		Offset: 0,-8
+	idle:
+		Frames: 0,4,5
+		Length: 3
+		Tick: 220
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/d_thornfield-icon.png
+		Offset: 0,0
+
+d_spinenest:
+	Defaults:
+		Filename: sevenfall|art/defenses/d_spinenest.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/d_spinenest-icon.png
+		Offset: 0,0
+
+d_cindermaw:
+	Defaults:
+		Filename: sevenfall|art/defenses/d_cindermaw.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/d_cindermaw-icon.png
+		Offset: 0,0
+
+d_skyhook:
+	Defaults:
+		Filename: sevenfall|art/defenses/d_skyhook.png
+		Offset: 0,-12
+	idle:
+	damaged-idle:
+		Start: 1
+	critical-idle:
+		Start: 2
+	make:
+		Start: 0
+	damaged-shoot:
+		Start: 1
+	critical-shoot:
+		Start: 2
+	offline:
+		Start: 3
+	shoot:
+		Start: 3
+		Length: 3
+		Tick: 80
+	icon:
+		Filename: sevenfall|art/defenses/d_skyhook-icon.png
+		Offset: 0,0
+

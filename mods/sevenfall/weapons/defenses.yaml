@@ -1,0 +1,83 @@
+# Sevenfall defense tuning. Existing engine effects remain prototype scaffolding.
+SF_Watchfire:
+	Inherits: SF_HaloLance
+	ReloadDelay: 24
+	Range: 5c512
+	Warhead@1Dam: SpreadDamage
+		Damage: 3000
+		ValidRelationships: Enemy
+		Versus:
+			None: 150
+			Light: 45
+			Heavy: 12
+			Wood: 30
+			Concrete: 15
+SF_Judgment:
+	Inherits: SF_HaloLance
+	ReloadDelay: 100
+	Range: 7c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 12000
+		ValidRelationships: Enemy
+		Versus:
+			None: 15
+			Light: 110
+			Heavy: 125
+			Wood: 55
+			Concrete: 50
+SF_Autocannon:
+	Inherits: SF_PulseRifle
+	ReloadDelay: 24
+	Range: 6c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 4000
+		ValidRelationships: Enemy
+		Versus:
+			None: 85
+			Light: 100
+			Heavy: 60
+			Wood: 35
+			Concrete: 25
+SF_Spines:
+	Inherits: SF_PulseRifle
+	ReloadDelay: 25
+	Range: 5c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 2400
+		ValidRelationships: Enemy
+		Versus:
+			None: 130
+			Light: 45
+			Heavy: 12
+SF_CinderMaw:
+	Inherits: SF_Cinder
+	ReloadDelay: 65
+	Range: 4c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 13000
+		ValidRelationships: Enemy
+		Versus:
+			None: 35
+			Light: 100
+			Heavy: 110
+SF_Skyward:
+	Inherits: RedEye
+	Range: 7c512
+	ReloadDelay: 55
+	Warhead@1Dam: SpreadDamage
+		Damage: 4200
+		ValidRelationships: Enemy
+SF_Skyguard:
+	Inherits: RedEye
+	Range: 7c512
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 3800
+		ValidRelationships: Enemy
+SF_Skyhook:
+	Inherits: RedEye
+	Range: 7c512
+	ReloadDelay: 65
+	Warhead@1Dam: SpreadDamage
+		Damage: 4800
+		ValidRelationships: Enemy

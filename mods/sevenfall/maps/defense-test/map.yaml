@@ -1,0 +1,306 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Defense Proving Ground
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 96,96
+Bounds: 1,1,94,94
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Humans:
+		Name: Humans
+		Faction: h_bastion
+		Enemies: Demons, Victims, SilentBrood, DarkAngels
+		Allies: Angels
+		Playable: True
+		LockFaction: True
+		LockSpawn: True
+		Spawn: 1
+	PlayerReference@Angels:
+		Name: Angels
+		Faction: a_warden
+		Enemies: Demons, Victims, SilentBrood
+		Allies: Humans
+	PlayerReference@Demons:
+		Name: Demons
+		Faction: d_brood
+		Enemies: Humans, Angels, Victims
+	PlayerReference@Victims:
+		Name: Victims
+		Faction: h_union
+		Enemies: Demons, Angels, Humans, SilentBrood, DarkAngels
+	PlayerReference@SilentBrood:
+		Name: SilentBrood
+		Faction: d_court
+		Enemies: Victims, Humans, Angels
+	PlayerReference@DarkAngels:
+		Name: DarkAngels
+		Faction: a_seraph
+		Enemies: Victims
+Actors:
+	Spawn0: mpspawn
+		Owner: Neutral
+		Location: 35,25
+	AngelPower0: a_spire
+		Owner: Angels
+		Location: 5,59
+	AngelPower1: a_spire
+		Owner: Angels
+		Location: 10,59
+	AngelPower2: a_spire
+		Owner: Angels
+		Location: 15,59
+	AngelPower3: a_spire
+		Owner: Angels
+		Location: 20,59
+	DemonPower0: d_heart
+		Owner: Demons
+		Location: 5,30
+	DemonPower1: d_heart
+		Owner: Demons
+		Location: 10,30
+	HumanYard: fact
+		Owner: Humans
+		Location: 5,5
+	HumanPower: h_generator
+		Owner: Humans
+		Location: 10,5
+	VictimPower: h_generator
+		Owner: Victims
+		Location: 80,5
+	SilentPower: d_heart
+		Owner: SilentBrood
+		Location: 31,31
+	DarkPower: a_spire
+		Owner: DarkAngels
+		Location: 70,31
+	ConvertWall: d_mourningwall
+		Owner: Demons
+		Location: 15,15
+	OverlapWall: d_mourningwall
+		Owner: Demons
+		Location: 15,16
+	OpposingWall: d_mourningwall
+		Owner: Victims
+		Location: 17,15
+	ConvertVictim: h_rifleman
+		Owner: Victims
+		Location: 16,15
+	WardWall: d_mourningwall
+		Owner: Demons
+		Location: 35,15
+	Ward: a_sanctuary
+		Owner: Angels
+		Location: 38,15
+	WardVictim: h_rifleman
+		Owner: Humans
+		Location: 36,15
+	RetreatWall: d_mourningwall
+		Owner: Demons
+		Location: 55,15
+	RetreatVictim: h_rifleman
+		Owner: Victims
+		Location: 56,15
+	VehicleWall: d_mourningwall
+		Owner: Demons
+		Location: 75,15
+	VehicleVictim: h_bulwark
+		Owner: Victims
+		Location: 76,15
+	DestroyedWall: d_mourningwall
+		Owner: Demons
+		Location: 15,35
+	DestroyedVictim: h_rifleman
+		Owner: Victims
+		Location: 16,35
+	SilentWall: d_mourningwall
+		Owner: SilentBrood
+		Location: 35,35
+	SilentVictim: h_rifleman
+		Owner: Victims
+		Location: 36,35
+	LightWall: a_dawnwall
+		Owner: Angels
+		Location: 55,35
+	LightVictim: h_rifleman
+		Owner: Victims
+		Location: 53,35
+	LightTankWall: a_dawnwall
+		Owner: Angels
+		Location: 55,38
+	LightTank: h_bulwark
+		Owner: Victims
+		Location: 53,38
+	DarkWall: a_dawnwall
+		Owner: DarkAngels
+		Location: 75,35
+	DarkVictim: h_rifleman
+		Owner: Victims
+		Location: 73,35
+	WireWalker: h_rifleman
+		Owner: Victims
+		Location: 8,50
+	WireControl: h_rifleman
+		Owner: Victims
+		Location: 8,53
+	CrushWire: h_razorwire
+		Owner: Humans
+		Location: 9,55
+	Crusher: h_bulwark
+		Owner: Victims
+		Location: 7,55
+	BlastWall: h_blastwall
+		Owner: Humans
+		Location: 29,55
+	BlockedTank: h_bulwark
+		Owner: Victims
+		Location: 27,55
+	ThornWalker: h_rifleman
+		Owner: Victims
+		Location: 38,50
+	ThornControl: h_rifleman
+		Owner: Victims
+		Location: 38,53
+	HumanGun: h_autocannon
+		Owner: Humans
+		Location: 55,55
+	GunTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 59,55
+	Bunker: h_entrenchment
+		Owner: Humans
+		Location: 75,55
+	BunkerTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 79,55
+	AngelGun: a_watchfire
+		Owner: Angels
+		Location: 12,65
+	AngelGunTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 16,65
+	AngelLance: a_judgment
+		Owner: Angels
+		Location: 26,65
+	LanceTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 30,65
+	Spines: d_spinenest
+		Owner: Demons
+		Location: 40,65
+	SpineTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 44,65
+	Maw: d_cindermaw
+		Owner: Demons
+		Location: 54,65
+	MawTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 57,65
+	AngelAA: a_skyward
+		Owner: Angels
+		Location: 15,80
+	HumanAA: h_missilenest
+		Owner: Humans
+		Location: 40,80
+	DemonAA: d_skyhook
+		Owner: Demons
+		Location: 70,80
+	AAGroundTarget: sf_defense_dummy
+		Owner: Victims
+		Location: 43,83
+	Wire0: h_razorwire
+		Owner: Humans
+		Location: 8,50
+	Thorn0: d_thornfield
+		Owner: Demons
+		Location: 38,50
+	Wire1: h_razorwire
+		Owner: Humans
+		Location: 9,50
+	Thorn1: d_thornfield
+		Owner: Demons
+		Location: 39,50
+	Wire2: h_razorwire
+		Owner: Humans
+		Location: 10,50
+	Thorn2: d_thornfield
+		Owner: Demons
+		Location: 40,50
+	Wire3: h_razorwire
+		Owner: Humans
+		Location: 11,50
+	Thorn3: d_thornfield
+		Owner: Demons
+		Location: 41,50
+	Wire4: h_razorwire
+		Owner: Humans
+		Location: 12,50
+	Thorn4: d_thornfield
+		Owner: Demons
+		Location: 42,50
+	Wire5: h_razorwire
+		Owner: Humans
+		Location: 13,50
+	Thorn5: d_thornfield
+		Owner: Demons
+		Location: 43,50
+	Wire6: h_razorwire
+		Owner: Humans
+		Location: 14,50
+	Thorn6: d_thornfield
+		Owner: Demons
+		Location: 44,50
+	Wire7: h_razorwire
+		Owner: Humans
+		Location: 15,50
+	Thorn7: d_thornfield
+		Owner: Demons
+		Location: 45,50
+	Wire8: h_razorwire
+		Owner: Humans
+		Location: 16,50
+	Thorn8: d_thornfield
+		Owner: Demons
+		Location: 46,50
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: defense-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True
+	H_RIFLEMAN:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	H_BULWARK:
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	sf_defense_dummy:
+		Inherits: H_BULWARK
+		-Buildable:
+		Health:
+			HP: 1000000
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	sf_defense_airtarget:
+		Inherits: HELI
+		-Buildable:
+		RenderSprites:
+			Image: heli
+		Health:
+			HP: 1000000

@@ -8,9 +8,9 @@
 
 **[Project website](https://mrkrissatan.github.io/Sevenfall/)** · **[Campaign preview](https://mrkrissatan.github.io/Sevenfall/campaigns.html)** · **[Illustrated faction field guide](https://mrkrissatan.github.io/Sevenfall/forces.html)** · **[Development roadmap](ROADMAP.md)** · **[To-do list / issues](https://github.com/MrKrisSatan/Sevenfall/issues)** · **[Releases](https://github.com/MrKrisSatan/Sevenfall/releases)** · **[Game design bible](design/GAME_DESIGN.md)**
 
-The field guide includes images and descriptions for all **39 current building designs
+The field guide includes images and descriptions for all **54 current building designs
 and 24 unit designs**, with faction and subfaction filters. Combat-unit images are
-original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 24 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 39 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
+original concept illustrations. The [eight-direction artwork gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) adds **312 directional images for 39 designs**, including ships, aircraft and beasts. [PNG frames, sprite sheets and prompts](art/unit-turnarounds/README.md) are included. The [animation and damage pass](art/animations/README.md) now binds movement, attack/work and death cycles for all 24 implemented faction unit designs, damaged unit variants, and heavy/critical damage artwork for all 54 building designs. Additional aircraft, naval and beast concepts still require gameplay implementation.
 
 ## Try the 0.3 development candidate (Windows)
 
@@ -49,7 +49,13 @@ The three major factions each have three playable subfactions:
 
 ## What is actually implemented?
 
-The repository now includes nine faction choices, 36 structure variants plus three faction Construction Yard designs, 21 unit variants (including three harvesters), six weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
+The [faction defense pass](docs/DEFENSES.md) adds moaning flesh walls that convert
+enemy infantry, lethal powered light curtains, sanctuary protection, concrete and
+razorwire, three-person entrenchments, and faction ground/anti-air turrets.
+All 15 defenses have original art and damage states; 33 native acceptance checks
+exercise their effects and counters.
+
+The repository now includes nine faction choices, 36 structure variants, three faction Construction Yards and 15 faction defenses, 21 unit variants (including three harvesters), faction weapons, localisation, a prototype land AI and an original two-player proving ground. The pinned OpenRA engine builds, all engine YAML checks pass, and the game menu launches on Windows. The full harvest → produce → combat loop and AI behavior still need measured playtests. **No standalone release or installable binary is available yet.**
 
 The [custom artwork passes](art/README.md) add faction Construction Yards, power buildings, refineries, eight-direction MCVs and harvesters, fifteen production icons, two grades of Veilglass deposits, parent faction emblems and Sevenfall menu branding. The expanded [building pass](art/BUILDINGS.md) adds 30 building sprites and icons, including faction-specific radar, repair, naval, aircraft, beast-training and technology facilities. Implemented combat units now use original directional and animated art. Sounds, projectiles and other unconverted assets still use placeholders.
 

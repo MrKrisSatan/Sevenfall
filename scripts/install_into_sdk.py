@@ -143,6 +143,7 @@ def main() -> None:
     content = content.replace('Version: {DEV_VERSION}', 'Version: 0.3-dev')
     content = content.replace('SupportsMapsFrom: ra', 'SupportsMapsFrom: sevenfall')
     content = content.replace('SpriteFormats: ShpD2,', 'SpriteFormats: PngSheet, ShpD2,')
+    content = re.sub(r'(?m)^(Assemblies: .+)$', r'\1, OpenRA.Mods.Sevenfall.dll', content, count=1)
     content = content.replace('ra|uibits/loadscreen', 'sevenfall|art/loadscreen')
     content = content.replace('Missions:\n\tra|missions.yaml', 'Missions:')
     content = content.replace('AllowUnusedFluentMessagesInExternalPackages: false',
@@ -155,7 +156,9 @@ def main() -> None:
         ('Rules', 'rules/25-support-structures.yaml'),
         ('Rules', 'rules/30-units.yaml'),
         ('Rules', 'rules/35-animations.yaml'),
+        ('Rules', 'rules/45-defenses.yaml'),
         ('Weapons', 'weapons/sevenfall.yaml'),
+        ('Weapons', 'weapons/defenses.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
         ('Chrome', 'chrome.yaml'),
         ('ChromeMetrics', 'metrics.yaml'),
@@ -165,6 +168,7 @@ def main() -> None:
         ('Sequences', 'sequences/buildings.yaml'),
         ('Sequences', 'sequences/units.yaml'),
         ('Sequences', 'sequences/animations.yaml'),
+        ('Sequences', 'sequences/defenses.yaml'),
     ]:
         content = append_manifest_section(content, section, f'sevenfall|{file}')
     (target / 'mod.yaml').write_text(content, encoding='utf-8')
@@ -193,7 +197,7 @@ def main() -> None:
     print(f'Generated vanilla actor exclusions: {len(original)}')
     print(f'Original eight-facing reference sheets staged: {staged_unit_count}')
     print(f'Authored animation/damage sheets staged: {animation_count}')
-    print('Next: SDK make.cmd [all] and make.cmd [test] (Windows), or make && make test (Linux).')
+    print('Next: python scripts/build.py build (compiles the pinned engine and Sevenfall defense extension).')
     print('NOTE: 0.3 candidate: three source-backed campaign previews installed; live victory/combat remain unverified.')
 
 

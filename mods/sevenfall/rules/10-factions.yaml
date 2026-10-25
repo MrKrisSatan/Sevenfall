@@ -74,6 +74,7 @@
 				Name: sf-resource-veilglass-enriched-name
 
 World:
+	SFDefenseManager:
 	StartingUnits@mcvonly:
 		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court
 	-StartingUnits@lightallies:
@@ -223,3 +224,24 @@ HARV.FullHusk:
 ^Plane:
 	Repairable:
 		RepairActors: a_service, h_service, d_service
+
+^Infantry:
+	SFDreadBar:
+	ExternalCondition@SF_DREAD:
+		Condition: sf-dread
+		TotalCap: 1
+	ExternalCondition@SF_WIRE:
+		Condition: sf-wire
+		TotalCap: 1
+	ExternalCondition@SF_THORNS:
+		Condition: sf-thorns
+		TotalCap: 1
+	SpeedMultiplier@SF_WIRE:
+		Modifier: 65
+		RequiresCondition: sf-wire
+	SpeedMultiplier@SF_THORNS:
+		Modifier: 50
+		RequiresCondition: sf-thorns
+	WithColoredOverlay@SF_DREAD:
+		Color: B146D268
+		RequiresCondition: sf-dread

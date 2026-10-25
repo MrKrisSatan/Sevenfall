@@ -40,6 +40,12 @@ def build_records():
             records.append(dict(id=key,actor=actor,faction=FACTIONS[f][0],kind=kind,name=title,role=role,
               description=description,source=source,sprite=collector,status='Concept illustration' if concept else 'Original game art',
               availability=SUBFACTIONS[subid]+' exclusive' if sub else 'Shared by all three subfactions',subfaction=subid))
+    for defense in json.loads((ROOT/'art/defenses/catalogue.json').read_text(encoding='utf-8')):
+        actor=defense['id']; key=actor.replace('_','-')
+        records.append(dict(id=key,actor=actor.upper(),faction=FACTIONS[actor[0]][0],kind='buildings',
+          name=defense['name'],role='Defense / '+defense['role'],description=defense['description'],
+          source=defense['source'],sprite=True,status='Original game art',
+          availability='Shared by all three subfactions',subfaction='shared'))
     records.sort(key=lambda r:(list(v[0] for v in FACTIONS.values()).index(r['faction']),r['kind']=='units',r['actor'] not in ['FACT','MCV'],r['name']))
     return records
 

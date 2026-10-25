@@ -1,5 +1,19 @@
 # Sevenfall changelog
 
+## Faction defenses development pass — 2026-10-25
+
+- Added 15 faction defenses: angelic light curtains, sanctuary and energy/AA
+  emplacements; human concrete, razorwire, occupied entrenchments and independent
+  gun/missile positions; demonic flesh walls, thorns and organic turrets.
+- Implemented powered flesh-wall dread and ownership conversion, visible exposure,
+  non-stacking influence, retreat decay, sanctuary protection and conversion immunity.
+- Added lethal powered light crossings, infantry obstacle penalties, vehicle
+  crushing, regeneration, faction construction gates and AI defense preferences.
+- Added original six-state art, icons, mourning audio, source prompts, hash manifests,
+  a 78-entry field guide, native C# extension and live acceptance scenario.
+- Validation: 47 Python tests, seven dread-rule assertions and 33 native gameplay
+  assertions pass. Competitive balance and large-match performance remain unmeasured.
+
 ## Animation and damage development pass — 2026-10-25
 
 - Added authored movement, attack/work and collapse/death cycles for all 24

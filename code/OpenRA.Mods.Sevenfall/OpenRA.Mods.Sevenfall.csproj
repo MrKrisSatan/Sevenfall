@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OpenRAEngineDir Condition="'$(OpenRAEngineDir)' == ''">../../.sdk/engine</OpenRAEngineDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenRA.Game"><HintPath>$(OpenRAEngineDir)/bin/OpenRA.Game.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenRA.Mods.Common"><HintPath>$(OpenRAEngineDir)/bin/OpenRA.Mods.Common.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

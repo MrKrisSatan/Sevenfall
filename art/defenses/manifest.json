@@ -1,0 +1,260 @@
+{
+  "tool": "built-in image generation",
+  "assets": [
+    {
+      "id": "a_dawnwall",
+      "source": "art/defenses/source/a_dawnwall.png",
+      "sourceSha256": "b2aaf03becb497237aba2d1a792cde0028bf2380630ba9158c46a2346848b674",
+      "file": "art/defenses/sheets/a_dawnwall.png",
+      "sha256": "ae0735727cbd967a4e6cc0ad1c8ad8c11e1ac471b9d1484534feac3ef9000b31",
+      "frameSize": 48,
+      "frames": 6,
+      "frameHashes": [
+        "800c69e826a6b5b8209f1579c9af9a5ad7abd00cee575a435b2b3cad47fbe224",
+        "d8f016434166cc32c9966ddf7568c06ac5f00b0b4e909509a83a2ff3a3657202",
+        "eac51f515fcb084ed81fdc026c1200b56b057fb6e8acfc3395a79098b53671cc",
+        "b033bcb86fc8560b93c0c4d5d12a0d65d01575c9568561708af8661cd7d29b1a",
+        "4fe1e74bf8b2c8b11a878ce766a2e35e513a935946a7dcdb8e9a41c798893e97",
+        "308d77f39837667761b3d4bd64e49172f64c60c87212e909a066a4657b5d2330"
+      ]
+    },
+    {
+      "id": "a_sanctuary",
+      "source": "art/defenses/source/a_sanctuary.png",
+      "sourceSha256": "36a2567252951794f491f85151aaa8cff41a1f6cc069735b5788f0e40394383c",
+      "file": "art/defenses/sheets/a_sanctuary.png",
+      "sha256": "c65c0b20db3728455804f3a0390c9845291920668c55e98586abdc9ac26fe977",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "811fbb182eca69a36f7c069ba606ce72e488c2ef75cfe5e0b24c0e3e77bef8bf",
+        "2b055b8c695ccd4ba2215d664351229c2a634580ca186ff0451d56e33405d95d",
+        "695ba8f0bc0eb9d67b128f014e7c4bdedf8ae69d9beca56dfc8b4adab75150e1",
+        "011c2cc56f23cb96dda12f27dfb87a4e759a518654b2be76b5526cf572d4d7cf",
+        "f6ad4fa56931727bfee70a2392d3a5959483886e7fc58b4d4f8cc6d0ec5d5e78",
+        "5280bbe25d0e7f52772196fee06aabd609e330a6f177187b84084595ad3028ae"
+      ]
+    },
+    {
+      "id": "a_watchfire",
+      "source": "art/defenses/source/a_watchfire.png",
+      "sourceSha256": "9a8af6da5c8ad68727e3f2ff8549cdc9b761e65c543fea7f1b30961b7c8cab56",
+      "file": "art/defenses/sheets/a_watchfire.png",
+      "sha256": "db63bb046a306f758aed28784bf44382b2274d620e4773857a83459e411e86ea",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "9eabcc84660e0801907c19acde30a116e313313e81be5e67c6daf4d122efb414",
+        "e8adfff3fd4cf380c9b9469dda3ef997a5f3b2e6278f8de1ee831a19f7ce95c8",
+        "a29cf5cf1cc03d06bdd7696dfb8197ae1283c842886aff2f68d78a1158f3babf",
+        "cf11a711efcc7ce18b7e67c364dc967f87c214d653ede822fde2fc7eeab21b6f",
+        "a403ee88d53013ea2bb73ab67e4d7d0c8f5e37795df1cd23edcec62bb32b2e64",
+        "1094439fbfd7441ce5d9b9f03597a04084d24ca28ed923795a4015a566c34894"
+      ]
+    },
+    {
+      "id": "a_judgment",
+      "source": "art/defenses/source/a_judgment.png",
+      "sourceSha256": "1c5438ec724117b493a9977167c36254a6031a6a707598cb5ae18593c1e4e837",
+      "file": "art/defenses/sheets/a_judgment.png",
+      "sha256": "366467ce9914b06a96023362efdd5cb762b4552d5c3435ca1066f5b7398dcc20",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "9d4c738d27163d1812e5794c90c4f335f8714e269ee998d0b31e5fb81d29016b",
+        "172056b646fcefbf4656f163d97e66f713f38758167004b9425aaf9758c7791c",
+        "2163554e41732b06ff068cd5b7287465e8f149d1c1c70957e8009c9447f0d948",
+        "d34d2f12f52dd5c68455815b97b4cc799765dca715ef35c82f04c58760451727",
+        "1ba58c7a72f4d7fa00fd2415d3f51febab9748b6c1a8fbca532374c280fd6644",
+        "9fe393a16ab66ef88219ef23878399d6854b9a98453677034cd9a8e6a9d577ce"
+      ]
+    },
+    {
+      "id": "a_skyward",
+      "source": "art/defenses/source/a_skyward.png",
+      "sourceSha256": "45a98b026e1bdbb1e51edd05090475a3cb621f783cbb4958c1f483d35373cafb",
+      "file": "art/defenses/sheets/a_skyward.png",
+      "sha256": "c32585d87ae9db7a967cc92549cc5dc0e119f9136655eae8ee3e50fa03cbe826",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "b1fd12af44b3edf5f8d5ff406fa3f054dcca392723dda385e15a9b822b786c17",
+        "a63e6617474283e739633c942207f1f8b286a18c20b94f76d3a94524536f77d7",
+        "0cf3dcadaf009373895ad6a22ef1f7da45c7ee2e247326749dffb3c22b1bc78f",
+        "77c754343a981a85ad5df59bd1899e70fc958210552a70c207abf677e3d23b02",
+        "f562ecfe1d8cd205f27f54258c2c7dcf2840b8f9a73d8ffba5d861d897d8e3c7",
+        "530540cdad1509f723a4c429421e78a7c90e5d9f8ff0daf2db7a049296bdca9d"
+      ]
+    },
+    {
+      "id": "h_blastwall",
+      "source": "art/defenses/source/h_blastwall.png",
+      "sourceSha256": "7911635df2dcc6ee779d152af6fad8184f5fdece9deef4e8e5b2c3bb2fd7721f",
+      "file": "art/defenses/sheets/h_blastwall.png",
+      "sha256": "b2c16b3955591c607fdd07128fe762b8dbf2a51b883d80499ed3289ca7c18d82",
+      "frameSize": 48,
+      "frames": 6,
+      "frameHashes": [
+        "3d2265ff14c7ad43d0e00ce87fa83cee6617f2c0e39e3d64b49a9082d0ca971c",
+        "6b40ed035590eb9321ad59ec40f1d08d8753d171675b7c45fcb37b1c5adfd00b",
+        "fea4c77c6659793c6b8a4a8d61e99d5dd4121fe1c66a4a19b542ba8ef2a165b2",
+        "2ed10a8942f54abb3131d36f274c27dcc4237188a21c0c4011b9040ff3e51791",
+        "ae165574cf1e8b5622d81f9d825dce42aa82bfab2ba4da6467fb3558d3442a3c",
+        "6073bfb20ac1a9ed9c75f69adc3aa360982a76b6d4e3103bb486e870983ac3ec"
+      ]
+    },
+    {
+      "id": "h_razorwire",
+      "source": "art/defenses/source/h_razorwire.png",
+      "sourceSha256": "c236a6b8d1556a3fb659cf5c020a37520154751a771a9c8e0570d11cb7007690",
+      "file": "art/defenses/sheets/h_razorwire.png",
+      "sha256": "2735cf4bc395e7fb258e022574f1f408bbae4bc784ce73ede181bacb94ba534d",
+      "frameSize": 48,
+      "frames": 6,
+      "frameHashes": [
+        "349d242791401953900b7c884e36b887677086b4f116a9c9b47c34afb0df407b",
+        "b534c7be6acdc863031b52ddad4864ae8d7a65625073c222abfef001afbe14d4",
+        "944373141c54141343bbb234a1abb1cfec5e076b3e24bb0cf0c13c7801ffc471",
+        "bb5b5225bcb5929b457dd664481751561407ca4e7755bbe6110772af62c79b9b",
+        "42a4aec69222b8e9aff7afdfcb6d1c49ed2cddd21c7989fc599de1e4c5e14f5e",
+        "3e359ffb150eaf6881b6a31b70257054b9fd5089dd524f315f9f94c507711072"
+      ]
+    },
+    {
+      "id": "h_entrenchment",
+      "source": "art/defenses/source/h_entrenchment.png",
+      "sourceSha256": "982591a7a39870c6e9d5391a8a16fbbd229370efba8e6821d5121d7c11ea379d",
+      "file": "art/defenses/sheets/h_entrenchment.png",
+      "sha256": "42c159f2aa78d598f1711290eafabf8be352fd0afe0fe557523daf7869400ac5",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "1b3b61fbfcc208fa445db87c149bb2374268187e15d49cbc4ff4bd09eac724e8",
+        "e889e5e8c6ce351cc89e8db2ff25f4850606938707a5ba39f2ae3905b57b3ba7",
+        "ea4e51b7c7cabca4f77f5abe197d6c22d870c016f1ffeebfa811a1c02f980db6",
+        "d86cb90814324368c9562e62bfa946991d3f0c9599a1b3f8e316efdcce445a0e",
+        "f83e98584e698c9b1072f87f2fba64bcbd242a2a1a8592015ff93c1e65ae0a03",
+        "7c0377632343d092a21e94a93dbf395a8017a0cd79a087c4b9f655ce966020ca"
+      ]
+    },
+    {
+      "id": "h_autocannon",
+      "source": "art/defenses/source/h_autocannon.png",
+      "sourceSha256": "e14018cb14a6610907868b582f77dcade485f557f23ed78d150b65c0ba35244a",
+      "file": "art/defenses/sheets/h_autocannon.png",
+      "sha256": "1925a4888686017d683008e0d8116391b389b1cdcaa2595328bf1e49f46d1b1f",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "7a7fcb03b38fc5b125f1793c6c8f9b81ffbf8d2462aa2c340990778c7d5b75fc",
+        "063babeb5c63f5455eb5b237f0c07d7afff6a955258cb811d69b647944575edc",
+        "542168d2561b2295903793aa00971c6e3689ffd96137533a16758443ffba44a9",
+        "c00a92e0771e322ceeab2d0d77c7296407515e73f493ced207d6518aae37feef",
+        "adf5b2d2a15fed6f051dc62307062a8c51d3ad1cecc3404f8d0fc8405cbecb0b",
+        "634d540eb9a684852a5a390ed94e4e719fe0af93b749fd75c03b38e17cfb5cd0"
+      ]
+    },
+    {
+      "id": "h_missilenest",
+      "source": "art/defenses/source/h_missilenest.png",
+      "sourceSha256": "fd039791f7ac27086bfe8445d6b4cd41ed852bd53ef25c7d5feabf19fc94771c",
+      "file": "art/defenses/sheets/h_missilenest.png",
+      "sha256": "8f32ad161415ebf23e1ae1cbad28bb001a10b3386b6f8921327efca586c04cd4",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "a37ed8cbf395bbe5830c5fef1013c08441d10f95399ec5b0ebf7cdce4e5a2451",
+        "d67ba98265b4c75ecf28c7c7278e6f45104d6d104a257d3e8878b53bf79a9446",
+        "cd20c568d553dcb3f4dde905b6b537c82d177541edc230c80babd7b1cc170637",
+        "57b1cc9ea4a6f99bef399e83d93cf67cdd3974aa390fb725dbf0f2ef796454d2",
+        "4b06d4f93bcd1b8ff6e0fbe4018915b388173d234a3829481f44a75bf64b58d6",
+        "385894aed7c78a99895094546402c83cbc6e7d047c9b017e9ae99d4dbe38d4ec"
+      ]
+    },
+    {
+      "id": "d_mourningwall",
+      "source": "art/defenses/source/d_mourningwall.png",
+      "sourceSha256": "1956f96cdf57bee5dae2f7c3a235cf6f3d64e19d80bc52f24ef54cae0b1ffa86",
+      "file": "art/defenses/sheets/d_mourningwall.png",
+      "sha256": "1a067a468f83d58f268a80efb11066f69bc0d0ed0c8f5fa9516e65d48312188b",
+      "frameSize": 48,
+      "frames": 6,
+      "frameHashes": [
+        "3b890a0a448a70c30475aafd8a0114dcdadea03f6e758bdb0c79db980af98368",
+        "8a54f2c7fb018232929ae8b66b983e2c6d38ce506105981ab463b5198deb0c6b",
+        "2eaf24be3d6a537c0a63597ac66cfe9ae2840635c73657aca21afa4191de9069",
+        "5f6c6bc96f968b20b02487775f79bd052f52bbc1f7db26ed98ffe8459ef62877",
+        "049f47328dfe1d5e3ceaa008ff41f9b163caa4db3f40e6af4c66619662a55195",
+        "3599250795263eafaabe1373bd18f7cb948a8ff6eeb7528040c4813682a8d6ca"
+      ]
+    },
+    {
+      "id": "d_thornfield",
+      "source": "art/defenses/source/d_thornfield.png",
+      "sourceSha256": "8bf0003ba17078f69ced95fbbdf67f7593b7589f22a38579982094518ee544b9",
+      "file": "art/defenses/sheets/d_thornfield.png",
+      "sha256": "6424fe6153fc0fac5a144b864384cd22bd53b6964374beb91bd94ce6098ad6cb",
+      "frameSize": 48,
+      "frames": 6,
+      "frameHashes": [
+        "a700fa762960a05bd8098b6f37b432d34a1ab7bc8a7ea55bcfb0553721a24b07",
+        "15ea1b68c33d06b8f8d6a3771a37dfbf522fec2a01dd3405e5952b1d5f225afb",
+        "942eb65ef7d77bec7015b27d3b150248f2c7da8366fa8969d0af2a0223b1dc3a",
+        "4a22f243516a4c63cc5cfd8f01633d81302f455d8a7977d7a6ef7061929b22fb",
+        "6f0c1154985287f0821ec3b52dfcc8811f25a4fbbc9268fda656164023dd255c",
+        "525bbcf649e49109679cc1eb9686c888ef0486ef5c2e2964342fdeb2b0f632fd"
+      ]
+    },
+    {
+      "id": "d_spinenest",
+      "source": "art/defenses/source/d_spinenest.png",
+      "sourceSha256": "59de15e671a6781bd97ff1a44b1c5901f2370db731513455e0d74f4a07f0e76d",
+      "file": "art/defenses/sheets/d_spinenest.png",
+      "sha256": "e70d0f303ac7e5cc02cafc2435df855af7bf0c5b5429ad6ece50d5a337eed9e0",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "3936179b8e242cba431581153223e82ef9ca47a6dc53608ba45398a8fab314b7",
+        "08ff018d5e1f24f3ff0cef84e7841088d584331ccf4ce44ff8268fe9f76ae111",
+        "f61d0e3603d288b6ca0eeec34689829c90045107fca5d345e15995f73e47402f",
+        "45f403015950aecde9e439ea46e245a687261e855ae40f17ba27ca1cd9fa5360",
+        "80fd918f806fdeaae434249306de2193945af6d192d8d370669624c0ab9b667b",
+        "c59662ca433198be7897cb31f98904c45bcab375861234502d862849f1cf7552"
+      ]
+    },
+    {
+      "id": "d_cindermaw",
+      "source": "art/defenses/source/d_cindermaw.png",
+      "sourceSha256": "48df9e7b64aa22d44a2294b531aa70ebcf9af2601010abc05168105ce4dcd35b",
+      "file": "art/defenses/sheets/d_cindermaw.png",
+      "sha256": "80b339b23089e0c17c7d5241f5a4a0914aac9fb86075b74106211bdee6c7cb05",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "da04c4bf045b4220490b51ea80ddf17e18334a7d243b194244a0adcf4b5c1dfe",
+        "9ed29bf21329880646a285298ce596b5243534b866b62d6f25c72e20e9cda8f5",
+        "d04acb17b9387753928596fcd5ad63cd7440098376d2b0d3cda61b7f7e202934",
+        "f46764d930fbb8e5f6f687a1f789354d671edacec3b903bb065078852d001465",
+        "b384f4c16399d83e592f652d5a1439737865f61ba73429a466a771016c0e2d03",
+        "54f262909e02bbb316579c0ee50dbad859aa9a2deebac4c5598ed59b5c943aad"
+      ]
+    },
+    {
+      "id": "d_skyhook",
+      "source": "art/defenses/source/d_skyhook.png",
+      "sourceSha256": "596e9a32fdd438ed21c7fa53e3595309272a6caceb730a87e036d2d54b573831",
+      "file": "art/defenses/sheets/d_skyhook.png",
+      "sha256": "a5a7a9bef2de2bd81cbbf14b99528b1616d90e9023964f309fc8afc0d950adb5",
+      "frameSize": 96,
+      "frames": 6,
+      "frameHashes": [
+        "afa09d6bcf0ff38a2f2df18334e12020b7395ae9bbdc9537a53393c00b324f12",
+        "70811a809c39152cd6b19491773147a7903b452e8213afa8b18120bbe917253f",
+        "692bbe47093a843ef118cfe3f7d7fea54216b441c36a884fd1d7bc0594db289d",
+        "6901fd220d41558e3cf6dcc98bfb2dc8ceb62bcfeeaa66cc168590c8758614e3",
+        "8b1973ab67fba349b02d30dbe29968f28783f62062baaab98a4dfeadbcf96808",
+        "f1f4b42a88555e2d49182d4daa41e36c6500443a75d275cb8aa99d7291dcbcd6"
+      ]
+    }
+  ]
+}

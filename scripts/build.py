@@ -37,6 +37,9 @@ def main():
     engine = SDK / 'engine'
     if args.action == 'build':
         run(args.dotnet, 'build', engine / 'OpenRA.sln', '-c', 'Release', '--nologo')
+    run(args.dotnet, 'build', ROOT / 'code/OpenRA.Mods.Sevenfall/OpenRA.Mods.Sevenfall.csproj',
+        '-c', 'Release', '--nologo', f'-p:OpenRAEngineDir={engine}',
+        f'-p:OutputPath={engine / "bin"}')
     env = dict(os.environ, ENGINE_DIR=str(engine),
                MOD_SEARCH_PATHS=f'{SDK / "mods"},{engine / "mods"}')
     run(args.dotnet, engine / 'bin/OpenRA.Utility.dll', 'sevenfall', '--check-yaml', env=env)

@@ -47,7 +47,7 @@ python3 scripts/build.py launch
 
 Linux commands are provided but not yet executed on Linux. The Python build command
 invokes the same engine solution and `--check-yaml` utility used by SDK all/test;
-the unmodified SDK itself remains available in `.sdk`. No custom C# assembly is needed.
+the unmodified SDK itself remains available in `.sdk`. The build wrapper also compiles `code/OpenRA.Mods.Sevenfall`, which implements deterministic defense auras and infantry conversion. Use the wrapper rather than building the SDK alone.
 
 ## Play the prototype
 

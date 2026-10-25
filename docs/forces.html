@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Explore every current Sevenfall building and unit: 39 faction building designs and 24 units, with original artwork, roles and subfaction descriptions.">
+  <meta name="description" content="Explore every current Sevenfall building and unit: 54 faction building designs and 24 units, with original artwork, roles and subfaction descriptions.">
   <meta name="theme-color" content="#0b0c13"><title>Faction Field Guide | Sevenfall</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="catalogue.css">
   <script src="catalogue.js" defer></script>
@@ -11,16 +11,16 @@
   <a class="skip" href="#catalogue">Skip to the roster</a>
   <header class="topbar"><a class="logo" href="index.html">✦ SEVENFALL</a><nav aria-label="Main navigation"><a href="index.html#world">The World</a><a href="forces.html" aria-current="page">Field Guide</a><a href="turnarounds.html">Unit Artwork</a><a href="index.html#roadmap">Progress</a><a href="https://github.com/MrKrisSatan/Sevenfall">GitHub ↗</a></nav></header>
   <main>
-    <section class="section guide-intro"><p class="eyebrow">THE WAR FOR CREATION / FIELD GUIDE</p><h1>Know your<br><em>army.</em></h1><p class="guide-lead">Celestial war engines. Human ingenuity. Infernal hunger. Explore the buildings and units of all three realms.</p><div class="guide-counts"><span><b>39</b> building designs</span><span><b>24</b> unit designs</span><span><b>9</b> subfactions</span></div>
+    <section class="section guide-intro"><p class="eyebrow">THE WAR FOR CREATION / FIELD GUIDE</p><h1>Know your<br><em>army.</em></h1><p class="guide-lead">Celestial war engines. Human ingenuity. Infernal hunger. Explore the buildings and units of all three realms.</p><div class="guide-counts"><span><b>54</b> building designs</span><span><b>24</b> unit designs</span><span><b>9</b> subfactions</span></div>
       <div class="guide-note"><strong>A living pre-alpha roster</strong><p>Building, MCV and harvester images show original game artwork. Combat-unit images here show concept illustrations; all 24 implemented faction unit designs now use original animated sprites in game. Descriptions reflect the current prototype; balance and designs may change. Aircraft, ships and kennel beasts are not yet in the playable roster. <a href="turnarounds.html">Explore 39 unit designs in eight directions</a>, including their new concepts.</p></div>
     </section>
     <section class="section roster-section" id="catalogue" aria-label="Building and unit catalogue">
       <form class="roster-controls" id="roster-filters" hidden role="search">
         <div class="faction-filters" role="group" aria-label="Faction"><button type="button" data-filter-faction="all" aria-pressed="true">All realms</button><button type="button" data-filter-faction="angels" aria-pressed="false">Angels</button><button type="button" data-filter-faction="humans" aria-pressed="false">Humans</button><button type="button" data-filter-faction="demons" aria-pressed="false">Demons</button></div>
         <div class="filter-fields"><label>Find a building or unit<input type="search" id="roster-search" placeholder="Name, role or description…" autocomplete="off"></label><label>Category<select id="roster-kind"><option value="all">Buildings &amp; units</option><option value="buildings">Buildings</option><option value="units">Units</option></select></label><label>Subfaction<select id="roster-subfaction"><option value="all">All subfactions</option><option value="a_seraph">Seraphic Synod</option><option value="a_warden">Order of the Gate</option><option value="a_exile">The Unshackled</option><option value="h_bastion">Bastion Directorate</option><option value="h_union">Free Earth Union</option><option value="h_covenant">Ashen Covenant</option><option value="d_legion">Iron Legions</option><option value="d_brood">Blood Brood</option><option value="d_court">Court of Whispers</option></select></label></div>
-        <div class="filter-summary"><p id="roster-count" role="status" aria-live="polite">63 entries</p><button type="reset" class="reset-filters">Reset filters</button></div>
+        <div class="filter-summary"><p id="roster-count" role="status" aria-live="polite">78 entries</p><button type="reset" class="reset-filters">Reset filters</button></div>
       </form>
-      <noscript><p>All 63 entries are listed below. Enable JavaScript to filter the roster and enlarge images.</p></noscript>
+      <noscript><p>All 78 entries are listed below. Enable JavaScript to filter the roster and enlarge images.</p></noscript>
       <p id="roster-empty" hidden>No entries match these filters. Try another name or reset the filters.</p>
       <div class="roster-grid"><article class="roster-card angels" id="a-yard" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Angel Construction Yard artwork" data-art="assets/roster/full/a-yard.webp"><img src="assets/roster/a-yard.webp" width="512" height="384" loading="lazy" decoding="async" alt="Angel Construction Yard — original game art"></button>
@@ -46,6 +46,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Heavenforge artwork" data-art="assets/roster/full/a-armory.webp"><img src="assets/roster/a-armory.webp" width="512" height="384" loading="lazy" decoding="async" alt="Heavenforge — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Vehicle production</p><h3>Heavenforge</h3><p>Assembles elite celestial war engines.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card angels" id="a-judgment" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Judgment Lance artwork" data-art="assets/roster/full/a-judgment.webp"><img src="assets/roster/a-judgment.webp" width="512" height="384" loading="lazy" decoding="async" alt="Judgment Lance — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Defense / anti-armor</p><h3>Judgment Lance</h3><p>Long-range radiant lance strikes armor slowly. Vulnerable to infantry swarms and power cuts.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card angels" id="a-advpower" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Radiant Nexus artwork" data-art="assets/roster/full/a-advpower.webp"><img src="assets/roster/a-advpower.webp" width="512" height="384" loading="lazy" decoding="async" alt="Radiant Nexus — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Advanced power</p><h3>Radiant Nexus</h3><p>Advanced power generation.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
@@ -62,6 +66,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Sanctification Crucible artwork" data-art="assets/roster/full/a-veilworks.webp"><img src="assets/roster/a-veilworks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sanctification Crucible — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Veilglass refinery</p><h3>Sanctification Crucible</h3><p>Processes Veilglass; includes a Gatherer.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card angels" id="a-sanctuary" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sanctuary Beacon artwork" data-art="assets/roster/full/a-sanctuary.webp"><img src="assets/roster/a-sanctuary.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sanctuary Beacon — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Defense / sanctuary</p><h3>Sanctuary Beacon</h3><p>Heals nearby allied infantry and prevents Mourning Flesh conversion within four cells. Requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card angels" id="a-airfield" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Seraph Launchway artwork" data-art="assets/roster/full/a-airfield.webp"><img src="assets/roster/a-airfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Seraph Launchway — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Fixed-wing aircraft</p><h3>Seraph Launchway</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
@@ -70,9 +78,21 @@
   <button class="art-button" type="button" aria-label="Enlarge Sky Sanctum artwork" data-art="assets/roster/full/a-helipad.webp"><img src="assets/roster/a-helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sky Sanctum — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Vertical aircraft</p><h3>Sky Sanctum</h3><p>Vertical aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card angels" id="a-skyward" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Skyward Choir artwork" data-art="assets/roster/full/a-skyward.webp"><img src="assets/roster/a-skyward.webp" width="512" height="384" loading="lazy" decoding="async" alt="Skyward Choir — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Defense / anti-air</p><h3>Skyward Choir</h3><p>Guided celestial bolts intercept aircraft; cannot attack ground units. Requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card angels" id="a-naval" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Tidegate artwork" data-art="assets/roster/full/a-naval.webp"><img src="assets/roster/a-naval.webp" width="512" height="384" loading="lazy" decoding="async" alt="Tidegate — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Naval production</p><h3>Tidegate</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card angels" id="a-dawnwall" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Wall of Dawn artwork" data-art="assets/roster/full/a-dawnwall.webp"><img src="assets/roster/a-dawnwall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Wall of Dawn — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Defense / wall</p><h3>Wall of Dawn</h3><p>Passable to allies; a powered light curtain incinerates hostile ground units that try to cross. Cut power or attack from range.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card angels" id="a-watchfire" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Watchfire Bastion artwork" data-art="assets/roster/full/a-watchfire.webp"><img src="assets/roster/a-watchfire.webp" width="512" height="384" loading="lazy" decoding="async" alt="Watchfire Bastion — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Defense / anti-infantry</p><h3>Watchfire Bastion</h3><p>Rapid halo bolts suppress infantry; less effective against heavy armor. Requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-mcv" data-faction="angels" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Angel MCV artwork" data-art="assets/roster/full/a-mcv.webp"><img src="assets/roster/a-mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Angel MCV — original game art"></button>
@@ -114,6 +134,14 @@
   <button class="art-button" type="button" aria-label="Enlarge Airfield artwork" data-art="assets/roster/full/h-airfield.webp"><img src="assets/roster/h-airfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Airfield — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Fixed-wing aircraft</p><h3>Airfield</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card humans" id="h-autocannon" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Bastion Autocannon artwork" data-art="assets/roster/full/h-autocannon.webp"><img src="assets/roster/h-autocannon.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bastion Autocannon — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / anti-ground</p><h3>Bastion Autocannon</h3><p>Reliable rapid-fire kinetic defense against infantry and light armor; operates through power failures.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card humans" id="h-blastwall" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Bastion Blast Wall artwork" data-art="assets/roster/full/h-blastwall.webp"><img src="assets/roster/h-blastwall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bastion Blast Wall — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / wall</p><h3>Bastion Blast Wall</h3><p>Reinforced modular wall blocks ground movement and projectiles; siege weapons and heavy crushers can breach it.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card humans" id="h-kennel" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Canine Compound artwork" data-art="assets/roster/full/h-kennel.webp"><img src="assets/roster/h-kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Canine Compound — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Beast training</p><h3>Canine Compound</h3><p>Beast-training facility. No beasts available yet.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
@@ -138,9 +166,21 @@
   <button class="art-button" type="button" aria-label="Enlarge Radar Dome artwork" data-art="assets/roster/full/h-radar.webp"><img src="assets/roster/h-radar.webp" width="512" height="384" loading="lazy" decoding="async" alt="Radar Dome — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Radar</p><h3>Radar Dome</h3><p>Provides radar while powered.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card humans" id="h-razorwire" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Razorwire Entanglement artwork" data-art="assets/roster/full/h-razorwire.webp"><img src="assets/roster/h-razorwire.webp" width="512" height="384" loading="lazy" decoding="async" alt="Razorwire Entanglement — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / wire</p><h3>Razorwire Entanglement</h3><p>Enemy infantry are slowed to 65 percent speed and cut while crossing. Ground vehicles crush the wire.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card humans" id="h-entrenchment" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Resistance Entrenchment artwork" data-art="assets/roster/full/h-entrenchment.webp"><img src="assets/roster/h-entrenchment.webp" width="512" height="384" loading="lazy" decoding="async" alt="Resistance Entrenchment — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / garrison</p><h3>Resistance Entrenchment</h3><p>Three infantry can occupy this fortified firing position. Empty positions do not shoot; occupants supply their weapons.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card humans" id="h-service" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Service Depot artwork" data-art="assets/roster/full/h-service.webp"><img src="assets/roster/h-service.webp" width="512" height="384" loading="lazy" decoding="async" alt="Service Depot — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Vehicle repair</p><h3>Service Depot</h3><p>Repairs damaged vehicles.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card humans" id="h-missilenest" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Skyguard Missile Nest artwork" data-art="assets/roster/full/h-missilenest.webp"><img src="assets/roster/h-missilenest.webp" width="512" height="384" loading="lazy" decoding="async" alt="Skyguard Missile Nest — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / anti-air</p><h3>Skyguard Missile Nest</h3><p>Dedicated guided anti-air missiles; crewed backup controls keep it working without power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="h-barracks" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Survival Barracks artwork" data-art="assets/roster/full/h-barracks.webp"><img src="assets/roster/h-barracks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Survival Barracks — original game art"></button>
@@ -206,6 +246,14 @@
   <button class="art-button" type="button" aria-label="Enlarge Birthing Pit artwork" data-art="assets/roster/full/d-pit.webp"><img src="assets/roster/d-pit.webp" width="512" height="384" loading="lazy" decoding="async" alt="Birthing Pit — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Infantry production</p><h3>Birthing Pit</h3><p>Spawns lesser infernal infantry.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card demons" id="d-thornfield" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Bloodthorn Snare artwork" data-art="assets/roster/full/d-thornfield.webp"><img src="assets/roster/d-thornfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bloodthorn Snare — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Defense / thorns</p><h3>Bloodthorn Snare</h3><p>Living thorns slow enemy infantry to half speed and bleed them while crossing. Vehicles crush the growth.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-cindermaw" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Cinder Maw artwork" data-art="assets/roster/full/d-cindermaw.webp"><img src="assets/roster/d-cindermaw.webp" width="512" height="384" loading="lazy" decoding="async" alt="Cinder Maw — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Defense / anti-armor</p><h3>Cinder Maw</h3><p>A short-range infernal furnace burns armored attackers; outrange it with artillery. Requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card demons" id="d-forge" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Flesh Forge artwork" data-art="assets/roster/full/d-forge.webp"><img src="assets/roster/d-forge.webp" width="512" height="384" loading="lazy" decoding="async" alt="Flesh Forge — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Vehicle production</p><h3>Flesh Forge</h3><p>Grows infernal siege creatures.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
@@ -238,9 +286,21 @@
   <button class="art-button" type="button" aria-label="Enlarge Mending Forge artwork" data-art="assets/roster/full/d-service.webp"><img src="assets/roster/d-service.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mending Forge — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Vehicle repair</p><h3>Mending Forge</h3><p>Repairs damaged vehicles.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card demons" id="d-mourningwall" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Mourning Flesh artwork" data-art="assets/roster/full/d-mourningwall.webp"><img src="assets/roster/d-mourningwall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mourning Flesh — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Defense / flesh</p><h3>Mourning Flesh</h3><p>Regenerating flesh wall. Its powered moans convert enemy infantry after 12 seconds of sustained exposure within three cells; retreat or Sanctuary counters it.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card demons" id="d-radar" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Scrying Spire artwork" data-art="assets/roster/full/d-radar.webp"><img src="assets/roster/d-radar.webp" width="512" height="384" loading="lazy" decoding="async" alt="Scrying Spire — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Radar</p><h3>Scrying Spire</h3><p>Provides radar while powered.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-skyhook" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Skyhook Reliquary artwork" data-art="assets/roster/full/d-skyhook.webp"><img src="assets/roster/d-skyhook.webp" width="512" height="384" loading="lazy" decoding="async" alt="Skyhook Reliquary — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Defense / anti-air</p><h3>Skyhook Reliquary</h3><p>Living guided skyhooks attack aircraft only; requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-spinenest" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Spine Nest artwork" data-art="assets/roster/full/d-spinenest.webp"><img src="assets/roster/d-spinenest.webp" width="512" height="384" loading="lazy" decoding="async" alt="Spine Nest — original game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Defense / anti-infantry</p><h3>Spine Nest</h3><p>A living organ spits bone spines into infantry. Ineffective against heavy armor; requires power.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-mcv" data-faction="demons" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Demon MCV artwork" data-art="assets/roster/full/d-mcv.webp"><img src="assets/roster/d-mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Demon MCV — original game art"></button>
@@ -275,7 +335,7 @@
   <div class="roster-card-copy"><p class="card-kicker">Demons / Infantry</p><h3>Thrall</h3><p>Cheap melee horror; overwhelms isolated targets.</p><p class="availability">Shared by all three subfactions</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
 </article></div>
     </section>
-    <section class="section guide-footer"><h2>From concept to battlefield.</h2><p>Initial movement, attack/work and death cycles are integrated for all 24 implemented faction unit designs, with damage variants for vehicles and all 39 buildings. Animation polish, advanced research and expanded air/naval rosters remain in development.</p><a class="btn primary" href="https://github.com/MrKrisSatan/Sevenfall/blob/main/BUILDING.md">Build the prototype ↗</a><a class="btn secondary" href="index.html#roadmap">Development progress</a><p class="muted">Artwork generated for Sevenfall with OpenAI image generation. Original-content licensing remains under review. No borrowed Red Alert artwork is hosted in this catalogue.</p></section>
+    <section class="section guide-footer"><h2>From concept to battlefield.</h2><p>Initial movement, attack/work and death cycles are integrated for all 24 implemented faction unit designs, with damage variants for vehicles and all 54 buildings. Animation polish, advanced research and expanded air/naval rosters remain in development.</p><a class="btn primary" href="https://github.com/MrKrisSatan/Sevenfall/blob/main/BUILDING.md">Build the prototype ↗</a><a class="btn secondary" href="index.html#roadmap">Development progress</a><p class="muted">Artwork generated for Sevenfall with OpenAI image generation. Original-content licensing remains under review. No borrowed Red Alert artwork is hosted in this catalogue.</p></section>
   </main>
   <dialog id="art-dialog" aria-labelledby="art-title"><button type="button" class="dialog-close" autofocus aria-label="Close artwork">Close ×</button><img id="art-full" alt=""><div class="dialog-copy"><p id="art-label" class="eyebrow"></p><h2 id="art-title"></h2><p id="art-description"></p><p id="art-availability" class="muted"></p></div></dialog>
   <footer><a class="logo" href="index.html">✦ SEVENFALL</a><p>The War for Creation · Built with OpenRA</p><a href="https://github.com/MrKrisSatan/Sevenfall">View the source ↗</a></footer>

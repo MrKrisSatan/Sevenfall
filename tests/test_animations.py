@@ -21,7 +21,9 @@ class AnimationExports(unittest.TestCase):
         buildings = {a['id'] for a in self.assets if a['kind'] == 'building'}
         catalogue = json.loads((ROOT / 'docs/roster.json').read_text(encoding='utf-8'))
         self.assertEqual(units, {r['id'] for r in catalogue if r['kind'] == 'units'})
-        self.assertEqual(buildings, {r['id'] for r in catalogue if r['kind'] == 'buildings'})
+        defenses = {a['id'].replace('_', '-') for a in json.loads((ROOT / 'art/defenses/catalogue.json').read_text())}
+        self.assertEqual(buildings | defenses, {r['id'] for r in catalogue if r['kind'] == 'buildings'})
+        self.assertFalse(buildings & defenses)
         self.assertEqual((len(units), len(buildings)), (24, 39))
 
     def test_hashes_metadata_and_real_frame_variation(self):

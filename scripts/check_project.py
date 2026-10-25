@@ -24,12 +24,15 @@ fluent_ids = re.findall(r'^([a-z][a-z0-9-]+)\s*=', ftl, flags=re.MULTILINE)
 assert len(set(fluent_ids)) == len(fluent_ids), 'Duplicate ftl name'
 referenced = set()
 for p in files:
-    referenced.update(re.findall(r'\b(sf-[a-z0-9-]+)\b', p.read_text(encoding='utf8')))
+    # Conditions and filenames may also use the sf- prefix. Only text fields
+    # refer to Fluent messages; treating every prefixed token as text rejects
+    # valid native aura conditions and original sound assets.
+    referenced.update(re.findall(r'(?m)^\t+(?:Name|GenericName|Description|Text|Title):[^\n]*?\b(sf-[a-z0-9-]+)\b', p.read_text(encoding='utf8')))
 missing = referenced - set(fluent_ids)
 assert not missing, f'Missing fluent strings: {sorted(missing)}'
 # All intentional new actor identifiers are assigned an image unless they are rule overrides.
 actors = {}
-for f in ('20-structures.yaml', '25-support-structures.yaml', '30-units.yaml'):
+for f in ('20-structures.yaml', '25-support-structures.yaml', '30-units.yaml', '45-defenses.yaml'):
     filetext = (base / 'rules' / f).read_text(encoding='utf8')
     for m in re.finditer(r'(?m)^([A-Z][A-Z0-9_]+):\n(.*?)(?=^[A-Z][A-Z0-9_]+:\n|\Z)', filetext, re.S|re.M):
         key, body = m.group(1),m.group(2)

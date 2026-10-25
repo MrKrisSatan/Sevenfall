@@ -27,7 +27,16 @@ Player:
 		BarracksTypes: a_chapel, h_barracks, d_pit
 		VehiclesFactoryTypes: a_armory, h_motorpool, d_forge
 		ProductionTypes: a_chapel, h_barracks, d_pit, a_armory, h_motorpool, d_forge
+		DefenseTypes: a_watchfire, a_judgment, a_skyward, h_autocannon, h_missilenest, d_spinenest, d_cindermaw, d_skyhook
 		BuildingLimits:
+			a_watchfire: 2
+			a_judgment: 2
+			a_skyward: 2
+			h_autocannon: 2
+			h_missilenest: 2
+			d_spinenest: 2
+			d_cindermaw: 2
+			d_skyhook: 2
 			a_veilworks: 3
 			h_veilworks: 3
 			d_veilworks: 3
@@ -38,6 +47,14 @@ Player:
 			h_motorpool: 1
 			d_forge: 1
 		BuildingFractions:
+			a_watchfire: 4
+			a_judgment: 4
+			a_skyward: 4
+			h_autocannon: 4
+			h_missilenest: 4
+			d_spinenest: 4
+			d_cindermaw: 4
+			d_skyhook: 4
 			a_veilworks: 30
 			h_veilworks: 30
 			d_veilworks: 30
