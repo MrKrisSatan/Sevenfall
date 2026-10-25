@@ -13,87 +13,38 @@ Players:
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: h_bastion
-	PlayerReference@Host:
-		Name: Host
-		NonCombatant: True
-		Faction: a_seraph
-		Color: E7C76C
-	PlayerReference@Dominion:
-		Name: Dominion
-		NonCombatant: True
-		Faction: h_bastion
-		Color: 69B4D4
-	PlayerReference@Legions:
-		Name: Legions
-		NonCombatant: True
-		Faction: d_legion
-		Color: D34B78
 Actors:
 	MenuCenter: waypoint
 		Owner: Neutral
 		Location: 48,49
-	YardA: fact
-		Owner: Host
-		Location: 41,42
-	YardH: fact
-		Owner: Dominion
-		Location: 47,42
-	YardD: fact
-		Owner: Legions
-		Location: 53,42
-	McvA: mcv
-		Owner: Host
-		Location: 44,50
-		Facing: 640
-	McvH: mcv
-		Owner: Dominion
-		Location: 50,50
-		Facing: 640
-	McvD: mcv
-		Owner: Legions
-		Location: 56,50
-		Facing: 640
-	Gatherer: a_gatherer
-		Owner: Host
-		Location: 42,57
-		Facing: 512
-	Harvester: h_harvester
-		Owner: Dominion
-		Location: 48,57
-		Facing: 512
-	Devourer: d_devourer
-		Owner: Legions
-		Location: 54,57
-		Facing: 512
-	Spire: a_spire
-		Owner: Host
-		Location: 41,48
-	Generator: h_generator
-		Owner: Dominion
-		Location: 47,48
-	Heart: d_heart
-		Owner: Legions
-		Location: 53,48
-	Refinerya: a_veilworks
-		Owner: Host
-		Location: 41,54
-	Refineryh: h_veilworks
-		Owner: Dominion
-		Location: 47,54
-	Refineryd: d_veilworks
-		Owner: Legions
-		Location: 53,54
+	Scenery0: sf_cottage
+		Owner: Neutral
+		Location: 41,45
+	Scenery1: sf_townhouse
+		Owner: Neutral
+		Location: 53,53
+	Scenery2: sf_oak
+		Owner: Neutral
+		Location: 44,54
+	Scenery3: sf_pine
+		Owner: Neutral
+		Location: 55,43
+	Scenery4: sf_deadtree
+		Owner: Neutral
+		Location: 36,48
+	Scenery5: sf_pine
+		Owner: Neutral
+		Location: 61,55
+	Scenery6: sf_oak
+		Owner: Neutral
+		Location: 50,40
 Rules:
 	World:
 		-StartGameNotification:
 		-SpawnStartingUnits:
 		-MapStartingLocations:
-	A_VEILWORKS:
-		-FreeActor:
-	H_VEILWORKS:
-		-FreeActor:
-	D_VEILWORKS:
-		-FreeActor:
+	^SF_CIVILIAN_HOUSE:
+		-WithTextDecoration@OWNER:
 	Player:
 		Shroud:
 			FogCheckboxEnabled: False

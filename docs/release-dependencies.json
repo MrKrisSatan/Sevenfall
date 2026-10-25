@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "manifest_sha256": "88371a1f28ca07f00047fd48f66e4434b5e6d513954e691a0df1ea90c38cf606",
+  "manifest_sha256": "ab5730bd8edf4bed18b5b2a7021d0cec784a42d2f864bee4d6b72e532201b8ea",
   "external_ra_references": [
     {
       "section": "FileSystem",
@@ -364,98 +364,88 @@
     },
     {
       "section": "ChromeLayout",
-      "line": 141,
+      "line": 142,
       "reference": "ra|chrome/ingame-observer.yaml"
     },
     {
       "section": "ChromeLayout",
-      "line": 142,
-      "reference": "ra|chrome/ingame-player.yaml"
-    },
-    {
-      "section": "ChromeLayout",
-      "line": 173,
+      "line": 174,
       "reference": "ra|chrome/gamesave-loading.yaml"
     },
     {
       "section": "FluentMessages",
-      "line": 189,
+      "line": 190,
       "reference": "ra|fluent/ra.ftl"
     },
     {
       "section": "FluentMessages",
-      "line": 190,
+      "line": 191,
       "reference": "ra|fluent/chrome.ftl"
     },
     {
       "section": "FluentMessages",
-      "line": 191,
+      "line": 192,
       "reference": "ra|fluent/hotkeys.ftl"
     },
     {
       "section": "FluentMessages",
-      "line": 192,
+      "line": 193,
       "reference": "ra|fluent/rules.ftl"
     },
     {
       "section": "Weapons",
-      "line": 198,
+      "line": 199,
       "reference": "ra|weapons/explosions.yaml"
     },
     {
       "section": "Weapons",
-      "line": 199,
+      "line": 200,
       "reference": "ra|weapons/ballistics.yaml"
     },
     {
       "section": "Weapons",
-      "line": 200,
+      "line": 201,
       "reference": "ra|weapons/missiles.yaml"
     },
     {
       "section": "Weapons",
-      "line": 201,
+      "line": 202,
       "reference": "ra|weapons/other.yaml"
     },
     {
       "section": "Weapons",
-      "line": 202,
+      "line": 203,
       "reference": "ra|weapons/smallcaliber.yaml"
     },
     {
       "section": "Weapons",
-      "line": 203,
+      "line": 204,
       "reference": "ra|weapons/superweapons.yaml"
     },
     {
       "section": "Voices",
-      "line": 208,
+      "line": 209,
       "reference": "ra|audio/voices.yaml"
     },
     {
       "section": "Notifications",
-      "line": 211,
+      "line": 212,
       "reference": "ra|audio/notifications.yaml"
     },
     {
       "section": "Music",
-      "line": 214,
+      "line": 215,
       "reference": "ra|audio/music.yaml"
     },
     {
       "section": "Hotkeys",
-      "line": 225,
+      "line": 226,
       "reference": "ra|hotkeys.yaml"
     },
     {
       "section": "ChromeMetrics",
-      "line": 241,
+      "line": 242,
       "reference": "ra|metrics.yaml"
-    },
-    {
-      "section": "Fonts",
-      "line": 274,
-      "reference": "Font: ra|ZoodRangmah.ttf"
     }
   ],
   "independent_manifest": false,

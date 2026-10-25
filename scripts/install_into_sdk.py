@@ -139,6 +139,15 @@ def main() -> None:
     content = re.sub(r'(?m)^\tWindowTitle: .*$', '\tWindowTitle: sf-title', content, count=1)
     content = content.replace('ra|rules/ai.yaml', 'sevenfall|rules/40-ai.yaml')
     content = content.replace('ra|cursors.yaml', 'sevenfall|cursors.yaml')
+    # Keep the upstream GPL layout behavior, but bind player chrome to our themes.
+    player_ui = (ra_mod / 'chrome/ingame-player.yaml').read_text(encoding='utf-8')
+    player_ui = '# Adapted from OpenRA RA ingame-player.yaml (GPL-3.0-or-later).\n' + player_ui
+    player_ui = player_ui.replace('Image@COMMAND_BAR_BACKGROUND:\n',
+                                  'Image@COMMAND_BAR_BACKGROUND:\n\t\t\tLogic: AddFactionSuffixLogic\n')
+    (target / 'chrome').mkdir(exist_ok=True)
+    (target / 'chrome/ingame-player.yaml').write_text(player_ui, encoding='utf-8')
+    content = content.replace('ra|chrome/ingame-player.yaml', 'sevenfall|chrome/ingame-player.yaml')
+    content = content.replace('Font: ra|ZoodRangmah.ttf', 'Font: common|FreeSansBold.ttf')
     content = re.sub(r'(?m)^TileSets:\n(?:\t[^\n]*\n)+',
                      'TileSets:\n\tsevenfall|tilesets/alpha.yaml\n', content, count=1)
     content = content.replace('ra|maps: System', 'sevenfall|maps: System')
@@ -148,6 +157,7 @@ def main() -> None:
     content = content.replace('SpriteFormats: ShpD2,', 'SpriteFormats: PngSheet, ShpD2,')
     content = re.sub(r'(?m)^(Assemblies: .+)$', r'\1, OpenRA.Mods.Sevenfall.dll', content, count=1)
     content = content.replace('ra|uibits/loadscreen', 'sevenfall|art/loadscreen')
+    content = content.replace('sevenfall|art/loadscreen', 'sevenfall|art/ui/neutral-brand')
     content = content.replace('Missions:\n\tra|missions.yaml', 'Missions:')
     content = content.replace('AllowUnusedFluentMessagesInExternalPackages: false',
                               'AllowUnusedFluentMessagesInExternalPackages: true')
@@ -166,6 +176,7 @@ def main() -> None:
         ('Weapons', 'weapons/defenses.yaml'),
         ('FluentMessages', 'fluent/sevenfall.ftl'),
         ('Chrome', 'chrome.yaml'),
+        ('Chrome', 'chrome-ui.yaml'),
         ('ChromeMetrics', 'metrics.yaml'),
         ('Sequences', 'sequences/power.yaml'),
         ('Sequences', 'sequences/refineries.yaml'),

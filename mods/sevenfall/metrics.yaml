@@ -1,10 +1,11 @@
 Metrics:
-	FactionSuffix-a_seraph: allies
-	FactionSuffix-a_warden: allies
-	FactionSuffix-a_exile: allies
-	FactionSuffix-h_bastion: allies
-	FactionSuffix-h_union: allies
-	FactionSuffix-h_covenant: allies
-	FactionSuffix-d_legion: soviet
-	FactionSuffix-d_brood: soviet
-	FactionSuffix-d_court: soviet
+	FactionSuffix-a_seraph: angelic
+	FactionSuffix-a_warden: angelic
+	FactionSuffix-a_exile: angelic
+	FactionSuffix-h_bastion: human
+	FactionSuffix-h_union: human
+	FactionSuffix-h_covenant: human
+	FactionSuffix-d_legion: infernal
+	FactionSuffix-d_brood: infernal
+	FactionSuffix-d_court: infernal
+	TextfieldColorHighlight: 434C58

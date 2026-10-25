@@ -43,6 +43,7 @@ def main():
     env = dict(os.environ, ENGINE_DIR=str(engine),
                MOD_SEARCH_PATHS=f'{SDK / "mods"},{engine / "mods"}')
     run(args.dotnet, engine / 'bin/OpenRA.Utility.dll', 'sevenfall', '--check-yaml', env=env)
+    run(args.dotnet, engine / 'bin/OpenRA.Utility.dll', 'sevenfall', '--sf-check-chrome', env=env)
     if args.action == 'launch':
         run(args.dotnet, engine / 'bin/OpenRA.dll', 'Game.Mod=sevenfall',
             f'Engine.EngineDir={engine}', f'Engine.ModSearchPaths={env["MOD_SEARCH_PATHS"]}',

@@ -22,8 +22,8 @@ Status: **not ready to publish a standalone executable release**.
 
 ## Asset replacement inventory
 
-The [generated manifest report](release-dependencies.json) identifies **91**
-external RA references after replacing the cursor manifest and four terrain imports. This counts manifest entries, not unique proprietary
+The [generated manifest report](release-dependencies.json) identifies **89**
+external RA references after replacing the cursor manifest, four terrain imports, player layout import and title font. This counts manifest entries, not unique proprietary
 files. OpenRA-authored rules/layout code and original game content must be
 reviewed separately; a `ra|` reference alone does not establish ownership.
 
@@ -31,7 +31,7 @@ reviewed separately; a `ra|` reference alone does not establish ownership.
 |---|---|---|
 | Manifest/content installation | RA content filesystem, MIX packages, ra-content | Own manifest and asset-only package mounts; no external game installation |
 | Terrain | Original alpha tileset now replaces all four RA tilesets | Native renderer, transition and crossing validation; inherited world palettes still need review |
-| Interface | RA chrome, layouts and title font; original cursors now bound | Original UI graphics; review reusable OpenRA code/fonts and attribution; test cursors |
+| Interface | Original neutral menus and three faction HUD skins; inherited glyph/layout definitions remain | Finish glyph/dependency review and attribution; native HUD, menu and cursor checks |
 | Combat presentation | Inherited sequences, projectile/impact/death effects | Original effect sequences, remove unused inherited actors/assets |
 | Audio | RA sound/voice/music definitions and archive mounts | Original audio or intentionally silent alpha definitions; no missing-file fallback |
 | Rules | Shared RA actors, weapons, world/player definitions | Extract required OpenRA-authored gameplay definitions with licence notices; resolve inheritance |
@@ -63,11 +63,11 @@ Linux executable packaging/clean-machine testing remains separate from Linux CI.
 
 ## Validation recorded for this pass
 
-- 65 Python tests passed, including campaign-spending regression, cursor atlas
+- 68 Python tests passed, including campaign-spending regression, cursor atlas
   integrity and diagnostic-runner failure handling.
 - Seven C# dread assertions and 104 Veilglass radius/spread assertions passed.
 - Sevenfall native extension compiled without warnings or errors; engine YAML,
   sequence definitions and Fluent validation passed for twelve maps/one original tileset.
 - Cursor atlas inspected visually. This is not an in-game cursor acceptance test.
-- Independent-manifest gate correctly failed with the 91 remaining references.
+- Independent-manifest gate correctly failed with the 89 remaining references.
 - Native diagnostics, clean-machine launch and multiplayer were NOT RUN.

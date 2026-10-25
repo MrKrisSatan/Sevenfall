@@ -1,5 +1,16 @@
 # Sevenfall changelog
 
+## Faction interface and neutral menus — 2026-10-25
+
+- Angels use ivory/gold HUD trim, Humans steel/teal, and Demons obsidian/ember.
+  All nine subfactions map to their parent skin using the actual local faction.
+- Added themed command bars, production/sidebar controls and inactive radar
+  emblems, with original vector sources and three display-density exports.
+- Menus, dialogs, spectators and loading branding use charcoal/silver styling.
+  The menu background is now a civilian scene without armies or faction bases.
+- Replaced the RA title font and added merged-engine UI bounds checks to builds.
+  68 Python tests and 152 chrome collections pass; native visual checks pending.
+
 ## Environment damage and repair pass — 2026-10-25
 
 - Added original terrain, roads, paths, cliffs, four trees and Ashen Crossing.
