@@ -1,5 +1,18 @@
 # Sevenfall changelog
 
+## Cliff terrain and twelve-player candidate - 2026-10-25
+
+- Added an original sixteen-frame cliff atlas and native impassable terrain.
+- Added The Twelvefold Scar: twelve starting terraces, equal base deposits,
+  contested expansions, villages, forests and four repairable bridge crossings.
+  Raised ground is visual on the rectangular grid; no elevation combat bonus.
+- Fixed a doctrine crash when a projectile hits after its shooter is disposed.
+- Added skirmish-only packaging and a per-user Windows setup candidate workflow
+  with exact-content validation and user-data-preserving lifecycle checks.
+- Verified 91 Python tests, 27 native terrain/projectile checks, 34 doctrine
+  regressions, 33 defense regressions and a 49-check twelve-bot combat soak.
+- Full map and release limitations: docs/TWELVEFOLD_SCAR.md.
+
 ## Three additional subfaction doctrines - 2026-10-25
 
 - Added Choir of Desolation, Area Fifty Two and Circle of Contempt, preserving the

@@ -37,8 +37,9 @@ It observes deployment, harvesting, army production and combat for five game
 minutes without scripted production or attack orders. This soak is not a completed
 conquest, replay, multiplayer or balance certification. The 25 October native run
 passed all 49 checks, with 214 attributed kills and all twelve economies and armies
-observed. Continuous gravel replaces the striped roads seen during that run;
-terrain types, resources and connectivity are unchanged.
+observed. After the road texture correction, the committed final map passed a
+second 49-check run with 240 attributed kills, twelve working economies and
+twelve combat armies.
 
 ```powershell
 python scripts/run_defense_test.py --scenario terrain --support-dir artifacts/cliffs --timeout 120

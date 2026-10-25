@@ -5,10 +5,12 @@ Status: **Windows candidate builds and launches without Red Alert content; not y
 The [twelve-player terrain pass](TWELVEFOLD_SCAR.md) adds original impassable cliffs,
 a 256×256 map and a skirmish-only distribution profile. Python regression coverage
 is now 91 passing tests. Native cliff/pathing/deployment/projectile checks passed
-27 cases; a five-minute twelve-faction AI soak passed 49 cases with 214 attributed
+27 cases; a five-minute twelve-faction AI soak passed 49 cases with 240 attributed
 kills. It is not completed-match acceptance. Windows candidate CI now compiles
 a setup EXE and checks install/reinstall/uninstall with preserved user data;
-the workflow result must pass before claiming a tested installer artifact.
+the workflow [passed at gameplay revision 331f80b](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40217579692),
+including installer lifecycle checks and corresponding source/checksum artifacts.
+This is runner acceptance, not independent clean-machine gameplay approval.
 
 The [latest skirmish-alpha audit](SKIRMISH_ALPHA_AUDIT.md) reviews commit
 `360d23f`, distinguishes the portable executable from an installer, and records
