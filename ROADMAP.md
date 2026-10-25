@@ -1,82 +1,70 @@
 # Sevenfall development roadmap
 
-**Status as of 21 October 2026: pre-alpha 0.3 development candidate.** This is a planning checklist, not proof of a running game. See GitHub Issues for current task ownership and discussion.
+**Current milestone: [0.3.0-alpha.2 Windows skirmish tester alpha](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2).**
+Twelve faction choices, two exclusive units and one superweapon per choice, and
+three public skirmish maps are shipped. Campaigns and broader competitive balance
+remain in development. This checklist distinguishes implemented features from
+full-match and platform acceptance; see the [issue review](docs/ISSUE_REVIEW_2026-10-25.md)
+and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
-## Phase 0: Foundation and transparency
-- [x] Define original world, factions and Veilglass economy
-- [x] Draft first 9 subfaction choices
-- [x] Produce OpenRA MiniYaml prototype and static checker locally
-- [x] Initialize Sevenfall GitHub repository
-- [x] Publish project website source and living roadmap
-- [x] Import the starter game rules, weapons, localisation and scripts into the repository
-- [x] Pin engine/SDK, build on Windows, pass engine lint and fix menu/lobby load errors
-- [ ] Complete in-match runtime and nine-faction playtests
-- [ ] Verify clean license/asset provenance for public builds
+## Phase 0: Foundation and distribution evidence
 
-## Phase 1: First playable skirmish
+- [x] Define original world, factions, Veilglass economy and the initial starter source ([#1](https://github.com/MrKrisSatan/Sevenfall/issues/1)).
+- [x] Pin engine/SDK, build and launch, validate rules/sprites/interface, and provide reproducible development commands ([#2](https://github.com/MrKrisSatan/Sevenfall/issues/2)).
+- [x] Publish the project website and field guide; GitHub Pages is live ([#11](https://github.com/MrKrisSatan/Sevenfall/issues/11)).
+- [x] Supply runtime notices, exact corresponding font/dependency sources, source revisions and checksums for accepted Windows builds.
+- [x] Publish standalone Windows setup and portable downloads; validate installation, reinstallation and uninstall with retained user data.
+- [ ] Deliver equivalent native Linux packaging and acceptance ([#27](https://github.com/MrKrisSatan/Sevenfall/issues/27)).
 
-**0.3 source integration progress (not live-game acceptance):**
+## Phase 1: Skirmish implementation and remaining acceptance
 
-- [x] Author Lua mission scripts and map sources for H03, A03 and D02
-- [x] Register three previews in the OpenRA mission selector and generate their
-      binary test maps from existing Broken Choir terrain during SDK install
-- [x] Stage all 39 original eight-facing unit sprite sheets into local SDK
-- [x] Add automated mission-map, faction-contract and sprite-staging tests
-- [ ] Confirm the three scripts actually start, complete and fail correctly in game
-- [x] Integrate an initial authored movement, attack/work and death animation pass for all 24 implemented faction unit designs, plus damage artwork for all 39 buildings; polish and wider gameplay acceptance remain
-- [ ] Release a truly tested standalone Windows prototype, once asset rights permit
+- [x] Twelve selectable factions, parent MCVs, deployed yards, legal structures and faction prerequisites ([#3](https://github.com/MrKrisSatan/Sevenfall/issues/3)).
+- [x] Three physical Veilglass collector/refinery chains, accepted-income accounting, depleting deposits and original resource hazards ([#4](https://github.com/MrKrisSatan/Sevenfall/issues/4)).
+- [x] Paid basic infantry/vehicle production and original/additional faction production diagnostics.
+- [x] Native locomotion, cliffs, combat, damage and death behavior; genuine unassisted AI conquest and finalized replay playback.
+- [x] Two independent clients plus dedicated server pass controlled mechanics and simulation-hash checks.
+- [x] Native save/load uses normal game paths; alpha.2 also restores a save taken during pending superweapon warnings.
+- [ ] Complete a normal two-player, player-controlled conquest match and record both results/replay ([#5](https://github.com/MrKrisSatan/Sevenfall/issues/5)).
+- [ ] Finish ordinary AI expansion/recovery and human-vs-AI full-match acceptance ([#6](https://github.com/MrKrisSatan/Sevenfall/issues/6)).
+- [ ] Cover deposit starvation, lost collectors/refineries and blocked-route recovery explicitly ([#23](https://github.com/MrKrisSatan/Sevenfall/issues/23)).
+- [ ] Validate Internet/NAT/latency and disconnect/reconnect behavior ([#24](https://github.com/MrKrisSatan/Sevenfall/issues/24)).
+- [ ] Benchmark sustained twelve-player load and graphics compatibility ([#25](https://github.com/MrKrisSatan/Sevenfall/issues/25)).
 
+## Phase 2: Faction identity and balance
 
-- [ ] Nine factions appear as selectable choices
-- [ ] Construction yard / power plant / refinery placement works
-- [ ] Three faction-specific harvesters mine and unload Veilglass
-- [ ] Infantry and vehicle production works, including prerequisites
-- [ ] Units navigate, attack, take damage and die
-- [ ] Player victory and defeat conditions work
-- [ ] Two human-controlled teams can finish a skirmish
-- [ ] Bot AI can harvest, build and attack in a complete match
-- [ ] Ship a reproducible, engine-verified pre-alpha build
-
-## Phase 2: Mechanical asymmetry
-- [x] Add Choir of Desolation, Area Fifty Two and Circle of Contempt as three
-      additional prototypes, each with two units, a defense and a tested doctrine
-- [ ] Complete full-match balance acceptance for the expanded twelve-choice roster
-- [x] Initial explicit combat stats/weapons, Angel Renewal, Human depot engineering
-      and Demon Blood Frenzy; see [balance and limits](design/FACTION_BALANCE.md)
-- [x] Initial 15 faction defenses, including sanctuary, garrisons and dread conversion
-- [ ] Validate new doctrine balance in full matches and multiplayer
-- [ ] Angels: shields, elite air units, expensive reinforcements
-- [ ] Humans: repair, fortifications, combined-arms and artillery doctrine
-- [ ] Demons: swarms, corruption, infernal gateways and attrition
-- [ ] Give each of nine subfactions an exclusive tech branch and meaningful passive
-- [ ] Tune economy, counters, tech pacing and superweapons
+- [x] Implement parent Renewal, field engineering and Blood Frenzy.
+- [x] Implement Choir hymn/Resonance, Area Fifty Two containment protocols and Circle condemnation/execution.
+- [x] Give all twelve choices distinct mechanics, two exclusive units each and an exclusive powered superweapon ([#8](https://github.com/MrKrisSatan/Sevenfall/issues/8)).
+- [x] Add targeting previews, visible warnings, recharge and destruction/power/capture counterplay; document all [faction identities](docs/FACTION_IDENTITIES.md).
+- [x] Add AI technology/specialist/array production plans; prepared native tests verify independent power launches by all twelve faction AIs.
+- [x] Implement original parent defenses: light barriers, sanctuary, garrisons, physical obstacles and demonic dread conversion.
+- [ ] Validate normally paid advanced branches and full-match balance for all twelve choices ([#22](https://github.com/MrKrisSatan/Sevenfall/issues/22)).
+- [ ] Extend parent asymmetry with actual infernal gateways and further domain mechanics ([#7](https://github.com/MrKrisSatan/Sevenfall/issues/7)).
+- [ ] Implement and validate aircraft, naval and beast production/combat before enabling them in public packages ([#28](https://github.com/MrKrisSatan/Sevenfall/issues/28)).
 
 ## Phase 3: Original world and presentation
-- [x] Add intact sprites and icons for the current base/support building roster across three parent factions
-- [ ] Complete original combat-unit, aircraft, naval and beast sprites
-- [ ] Add building construction/damage frames and unit animation sets
-- [ ] Replace every Red Alert placeholder with licensable, original artwork and audio
-- [ ] Original Veilglass deposits, refinery effects and resource hazards
-- [ ] Nine subfaction colours/emblems, UI and ambient battlefield cues
-- [ ] Original multiplayer and skirmish maps
-- [ ] Full menus, tooltips, tutorial and accessibility settings
 
-## Phase 4: Campaigns and release
-- [x] Specify 75 narrative missions (25 each for Human, Angel and Demon) across five acts; design-only, not playable
-- [ ] Angel campaign: implement and validate all 25 missions
-- [ ] Human campaign: implement and validate all 25 missions
-- [ ] Demon campaign: implement and validate all 25 missions
-- [ ] Implement three alternate Harrow finales and all six narrative ending variants
-- [ ] Scripted objectives, mission briefings and cinematics
-- [ ] Save/resume and mission progression tests
-- [ ] Windows and Linux packaging
-- [ ] Automated builds, changelog and reproducible release process
-- [ ] Gameplay balance, performance and regression passes
+- [x] Integrate original unit/building bodies, initial motion/attack/death cycles and damage states, plus original public skirmish maps and impassable cliff terraces.
+- [x] Publish a 108-entry field guide: 69 building entries and 39 unit entries, including twelve array variants and nine specialist variants using existing authored bodies.
+- [x] Provide 39-design directional concept/reference artwork, including future aircraft/naval/beast designs.
+- [ ] Finish bespoke faction emblems, variant artwork/icons where needed, construction/effect polish, SFX, voices, music and ambient coverage ([#9](https://github.com/MrKrisSatan/Sevenfall/issues/9)).
+- [ ] Complete native audiovisual/accessibility and GPU acceptance as presentation expands ([#9](https://github.com/MrKrisSatan/Sevenfall/issues/9), [#25](https://github.com/MrKrisSatan/Sevenfall/issues/25)).
 
-## Build policy
+## Phase 4: Campaigns and full-game release
 
-Only mark a build **playable** after OpenRA actually launches, the resource economy operates and a skirmish can end correctly. Publish tested binaries under [GitHub Releases](https://github.com/MrKrisSatan/Sevenfall/releases). Development notes and source commits must not be labelled as playable downloads.
+- [x] Specify 75 narrative missions, 25 per realm, with story continuity and planned finale/ending variants. These are design specifications.
+- [x] Add H03, A03 and D02 developer preview scripts, mission registration, test terrain and automated objective/refinery-income tests.
+- [ ] Validate those three previews through native victory, failure, economy and save/resume, and replace temporary layouts ([#26](https://github.com/MrKrisSatan/Sevenfall/issues/26)).
+- [ ] Implement and validate the remaining 72 missions, campaign progression, three Harrow finales and six ethical ending variants ([#10](https://github.com/MrKrisSatan/Sevenfall/issues/10)).
+- [ ] Integrate accepted campaigns into the full-game release profile and complete final cross-platform/content/balance acceptance ([#10](https://github.com/MrKrisSatan/Sevenfall/issues/10)).
 
-The canonical narrative and 75 mission specifications live in [STORY_BIBLE.md](design/STORY_BIBLE.md) and [CAMPAIGN_MISSIONS.md](design/CAMPAIGN_MISSIONS.md). These are design specifications, not shipped game content.
+## Evidence policy
 
-Track fine-grained tasks in [GitHub Issues](https://github.com/MrKrisSatan/Sevenfall/issues).
+Source contracts, controlled native scenarios, prepared-army AI tests, timed soaks,
+complete matches and human playtests are distinct evidence categories. A passing
+component test does not mark every matchup or campaign as accepted. Public builds
+use the exact successful release-workflow artifacts, their sources and checksums.
+
+The [story bible](design/STORY_BIBLE.md) and [mission atlas](design/CAMPAIGN_MISSIONS.md)
+remain the narrative specifications. Track current work and outcomes in
+[GitHub Issues](https://github.com/MrKrisSatan/Sevenfall/issues).
