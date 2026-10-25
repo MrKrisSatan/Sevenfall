@@ -10,6 +10,8 @@ import zipfile
 from audit_release_dependencies import inspect
 from collect_package_notices import collect
 from package_profiles import stage_mod
+import engine_patches
+from build import TARGET_FRAMEWORK
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,9 +31,12 @@ def source_revisions(root):
             # install_into_sdk.py intentionally edits this configuration and
             # creates the overlay. Neither is upstream SDK source compiled here.
             status_args += ['--', '.', ':(exclude)mod.config', ':(exclude)mods/sevenfall']
+        elif name == 'engine':
+            status_args += ['--', '.'] + [':(exclude)'+p['path'] for p in engine_patches.specifications()]
         if subprocess.check_output(status_args, cwd=path).strip():
             raise RuntimeError(f'{name}: commit or isolate local changes before packaging')
         revisions[name] = revision
+    engine_patches.verify(root/'.sdk/engine')
     return revisions
 
 
@@ -43,7 +48,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--profile', choices=['development','skirmish'], default='skirmish')
     parser.add_argument('--version', default='0.3.0-alpha.1')
-    local_dotnet = ROOT/'.tools/dotnet/dotnet.exe'
+    local_dotnet = ROOT/'.tools/dotnet10/dotnet.exe'
     parser.add_argument('--dotnet', default=str(local_dotnet) if local_dotnet.exists() else 'dotnet')
     args = parser.parse_args()
     engine = ROOT/'.sdk/engine'
@@ -60,9 +65,9 @@ def main():
     dest.mkdir(parents=True)
     for project in ('OpenRA.Launcher', 'OpenRA.Mods.Common', 'OpenRA.Mods.Cnc', 'OpenRA.Platforms.Default', 'OpenRA.Utility'):
         run(args.dotnet, 'publish', engine/project/(project+'.csproj'), '-c', 'Release', '-r', 'win-x64',
-            '--self-contained', 'true', '-p:TargetPlatform=win-x64', '-p:PublishDir='+str(dest))
+            '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', '-p:TargetPlatform=win-x64', '-p:PublishDir='+str(dest))
     run(args.dotnet, 'publish', engine/'OpenRA.WindowsLauncher/OpenRA.WindowsLauncher.csproj', '-c', 'Release',
-        '-r', 'win-x64', '--self-contained', 'true', '-p:TargetPlatform=win-x64', '-p:LauncherName=Sevenfall',
+        '-r', 'win-x64', '--self-contained', 'true', f'-p:TargetFramework={TARGET_FRAMEWORK}', '-p:TargetPlatform=win-x64', '-p:LauncherName=Sevenfall',
         '-p:ModID=sevenfall', '-p:DisplayName=Sevenfall', '-p:FaqUrl=https://github.com/MrKrisSatan/Sevenfall/issues',
         '-p:InformationalVersion='+args.version, '-p:PublishDir='+str(dest))
     shutil.copy2(engine/'bin/OpenRA.Mods.Sevenfall.dll', dest)
@@ -85,6 +90,7 @@ def main():
     (dest/'BUILD_INFO.json').write_text(json.dumps({
         'version': args.version, 'platform': 'windows-x64', 'self_contained': True,
         'configuration': 'Release', 'source_revisions': revisions,
+        'target_framework': TARGET_FRAMEWORK, 'engine_patches': engine_patches.verify(engine),
         'profile': args.profile, 'included_maps': included_maps,
     }, indent=2)+'\n', encoding='utf-8')
     # No external proprietary formats are allowed to sneak into the candidate.

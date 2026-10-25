@@ -1,7 +1,7 @@
 """Reproducible Sevenfall developer build. Requires Git, Python 3 and .NET.
 
 python scripts/build.py [build|test|launch] [--dotnet PATH]
-The pinned engine targets .NET 6; install its 6.0.36 runtime alongside your SDK.
+Sevenfall builds the pinned engine for the supported .NET 10 LTS runtime.
 """
 import argparse
 import os
@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SDK = ROOT / '.sdk'
 SDK_COMMIT = '0059e22e0e3bfc862500aaaa9fe1aed4ea4e994a'
 ENGINE_COMMIT = 'b4f3d8ae02b6bd6f4a3a5441e6d0daf7c5073787'
+TARGET_FRAMEWORK = 'net10.0'
 
 def run(*args, **kwargs):
     subprocess.run([str(a) for a in args], check=True, cwd=ROOT, **kwargs)
@@ -27,7 +28,8 @@ def checkout(path, repo, tag, commit):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['build', 'test', 'launch'], nargs='?', default='build')
-    parser.add_argument('--dotnet', default=str(ROOT / '.tools/dotnet/dotnet.exe')
+    parser.add_argument('--dotnet', default=str(ROOT / '.tools/dotnet10/dotnet.exe')
+                        if (ROOT / '.tools/dotnet10/dotnet.exe').exists() else str(ROOT / '.tools/dotnet/dotnet.exe')
                         if (ROOT / '.tools/dotnet/dotnet.exe').exists() else 'dotnet')
     args = parser.parse_args()
     checkout(SDK, 'https://github.com/OpenRA/OpenRAModSDK.git', '20250330', SDK_COMMIT)
@@ -35,8 +37,10 @@ def main():
     run(sys.executable, ROOT / 'scripts/check_project.py')
     run(sys.executable, ROOT / 'scripts/install_into_sdk.py', SDK)
     engine = SDK / 'engine'
+    from engine_patches import apply
+    apply(engine)
     if args.action == 'build':
-        run(args.dotnet, 'build', engine / 'OpenRA.sln', '-c', 'Release', '--nologo')
+        run(args.dotnet, 'build', engine / 'OpenRA.sln', '-c', 'Release', '--nologo', '-m:1')
     run(args.dotnet, 'build', ROOT / 'code/OpenRA.Mods.Sevenfall/OpenRA.Mods.Sevenfall.csproj',
         '-c', 'Release', '--nologo', f'-p:OpenRAEngineDir={engine}',
         f'-p:OutputPath={engine / "bin"}')

@@ -7,12 +7,14 @@ alpha audio, and adapted GPL OpenRA definitions. No Red Alert installation is re
 ## Requirements
 
 - Git and Python 3.10 or later.
-- .NET SDK 8 (tested with 8.0.408) and .NET runtime 6.0.36. The pinned engine targets net6.0.
+- .NET SDK 10.0.402 (runtime 10.0.13). Sevenfall's reviewed engine overlay targets net10.0.
 - Windows x64 or Linux x64 with OpenRA's SDL2/OpenAL/OpenGL prerequisites.
 - No external game-content installer is required.
 
 The SDK and engine are cloned into ignored `.sdk/` directories and verified against
 exact commits by `scripts/build.py`. Existing checkouts at another commit are rejected.
+The [reviewed engine overlay](packaging/engine/README.md) is applied and hash-verified
+automatically; all other engine source changes are rejected when packaging.
 
 | Dependency | Version | Commit |
 |---|---|---|

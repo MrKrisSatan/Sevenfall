@@ -6,6 +6,8 @@ local function Check(ok,name)
  else failures=failures+1;print('TERRAIN_TEST FAIL: '..name) end
 end
 WorldLoaded=function()
+ Check(GraphicsCheck.EmptySheetReadback(),'empty map-preview sheet initializes before GPU readback')
+ Check(GraphicsCheck.PixelRoundTrip(),'GPU texture readback preserves uploaded pixels')
  player=Player.GetPlayer('Tester');Camera.Position=Map.CenterOfCell(CPos.New(114,20))
  infantry=Actor.Create('h_rifleman',true,{Owner=player,Location=CPos.New(114,17)})
  tank=Actor.Create('h_bulwark',true,{Owner=player,Location=CPos.New(114,19)})

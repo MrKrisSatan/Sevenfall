@@ -23,7 +23,7 @@ def diagnostic_status(data, scenario):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--support-dir', type=Path, required=True)
-    parser.add_argument('--dotnet', default='dotnet')
+    parser.add_argument('--dotnet', default=str(ROOT/'.tools/dotnet10/dotnet.exe') if (ROOT/'.tools/dotnet10/dotnet.exe').exists() else 'dotnet')
     parser.add_argument('--engine-dir', type=Path, help='An isolated built engine directory for concurrent diagnostics')
     parser.add_argument('--package', type=Path, help='Test the self-contained executable in this extracted candidate')
     parser.add_argument('--replay', type=Path, help='Replay a recorded diagnostic instead of launching its map')
@@ -60,10 +60,17 @@ def main():
             while time.monotonic() < deadline:
                 data = transcript.read_text(encoding='utf-8', errors='replace')
                 state = diagnostic_status(data, args.scenario)
-                if state == 'failed' or process.poll() is not None:
+                if state == 'failed':
                     break
                 if state == 'passed':
                     success = True
+                    if args.scenario == 'match':
+                        try:
+                            success = process.wait(timeout=15) == 0
+                        except subprocess.TimeoutExpired:
+                            success = False
+                    break
+                if process.poll() is not None:
                     break
                 time.sleep(.5)
         finally:

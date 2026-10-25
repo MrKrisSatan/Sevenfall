@@ -39,6 +39,7 @@ Actors:
 		Location: 80,80
 Rules:
 	World:
+		SFDiagnosticExit:
 		-SpawnStartingUnits:
 		LuaScript:
 			Scripts: match-test.lua

@@ -62,7 +62,7 @@ class PackagingTests(unittest.TestCase):
             (root/'.sdk/mod.config').write_text('generated configuration')
             (root/'.sdk/mods/sevenfall').mkdir(parents=True)
             (root/'.sdk/mods/sevenfall/mod.yaml').write_text('generated overlay')
-            with patch.object(build, 'ENGINE_COMMIT', revisions[2]), patch.object(build, 'SDK_COMMIT', revisions[1]):
+            with patch.object(build, 'ENGINE_COMMIT', revisions[2]), patch.object(build, 'SDK_COMMIT', revisions[1]), patch('engine_patches.verify', return_value={}):
                 self.assertEqual(source_revisions(root)['sevenfall'], revisions[0])
                 (root/'.sdk/engine/source.txt').write_text('uncommitted engine change')
                 with self.assertRaisesRegex(RuntimeError, 'engine: commit or isolate'):

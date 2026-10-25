@@ -1,0 +1,40 @@
+{
+  "base_commit": "b4f3d8ae02b6bd6f4a3a5441e6d0daf7c5073787",
+  "patches": [
+    {
+      "path": "OpenRA.Game/Graphics/Sheet.cs",
+      "before_sha256": "879f9a99e44fd4fefc75aebc01a7d2d1f4d0426d3f8bbc7503adc17642f27211",
+      "after_sha256": "eb0c27880ccd61bf52c7e129275d0ca4d795c38d75c1369ee58229966d04881b",
+      "before": "\t\t\tif (texture == null)\n\t\t\t{\n\t\t\t\ttexture = Game.Renderer.Context.CreateTexture();",
+      "after": "\t\t\tif (texture == null)\n\t\t\t{\n\t\t\t\t// Initialize empty sheets before releasing or reading back their buffer.\n\t\t\t\tdata ??= new byte[4 * Size.Width * Size.Height];\n\t\t\t\ttexture = Game.Renderer.Context.CreateTexture();"
+    },
+    {
+      "path": "OpenRA.Platforms.Default/Texture.cs",
+      "before_sha256": "2bba92c44112cabc74ad5c8329a7feade79fe04195a954c6bd9a97796e65716f",
+      "after_sha256": "7de302b48ac3646e4a704fb906f01af15f1aeb3d6df47051447976263e0d3eee",
+      "before": "\t\t\t// GLES doesn't support glGetTexImage so data must be read back via a frame buffer\n\t\t\tif (OpenGL.Profile == GLProfile.Embedded)",
+      "after": "\t\t\t// GLES and ANGLE require framebuffer readback instead of glGetTexImage.\n\t\t\tif (OpenGL.Profile == GLProfile.Embedded || OpenGL.Profile == GLProfile.ANGLE)"
+    },
+    {
+      "path": "Directory.Build.props",
+      "before_sha256": "632945639d5d0aa6262caaa725756fb9d4bf65298fe46f9a30612e456a1e0746",
+      "after_sha256": "c20c34054bf461dac67b5086c1df44094d660f67139af6cd0e9194c66d0faf76",
+      "before": "<TargetFramework Condition=\"'$(MSBuildRuntimeType)'!='Mono'\">net6.0</TargetFramework>",
+      "after": "<TargetFramework Condition=\"'$(MSBuildRuntimeType)'!='Mono'\">net10.0</TargetFramework>"
+    },
+    {
+      "path": "OpenRA.Mods.Common/OpenRA.Mods.Common.csproj",
+      "before_sha256": "398218407a83119568d4ea5eb6ee7af26d7521fdea7cfd251c362e622c8bda47",
+      "after_sha256": "88bf26bc62ed55faec0059c13d7a48a61d8c0ef0ee570902f5b3fe1c984a7468",
+      "before": "<Project Sdk=\"Microsoft.NET.Sdk\">\n  <ItemGroup>\n    <ProjectReference Include=\"..\\OpenRA.Game\\OpenRA.Game.csproj\">\n      <Private>False</Private>\n    </ProjectReference>\n    <PackageReference Include=\"NuGet.CommandLine\" Version=\"6.12.1\" />\n    <PackageReference Include=\"Microsoft.Win32.Registry\" Version=\"5.0.0\" />\n    <PackageReference Include=\"OpenRA-FuzzyLogicLibrary\" Version=\"1.0.1\" />\n    <PackageReference Include=\"DiscordRichPresence\" Version=\"1.2.1.24\" />\n    <PackageReference Include=\"MP3Sharp\" Version=\"1.0.5\" />\n    <PackageReference Include=\"NVorbis\" Version=\"0.10.5\" />\n    <PackageReference Include=\"TagLibSharp\" Version=\"2.3.0\" />\n    <PackageReference Include=\"rix0rrr.BeaconLib\" Version=\"1.0.2\" />\n    <PackageReference Include=\"Pfim\" Version=\"0.11.3\" />\n  </ItemGroup>\n</Project>\n",
+      "after": "<Project Sdk=\"Microsoft.NET.Sdk\">\n  <ItemGroup>\n    <PackageReference Include=\"NuGet.CommandLine\" Version=\"6.12.5\" />\n    <ProjectReference Include=\"..\\OpenRA.Game\\OpenRA.Game.csproj\">\n      <Private>False</Private>\n    </ProjectReference>\n    <PackageReference Include=\"OpenRA-FuzzyLogicLibrary\" Version=\"1.0.1\" />\n    <PackageReference Include=\"DiscordRichPresence\" Version=\"1.2.1.24\" />\n    <PackageReference Include=\"MP3Sharp\" Version=\"1.0.5\" />\n    <PackageReference Include=\"NVorbis\" Version=\"0.10.5\" />\n    <PackageReference Include=\"TagLibSharp\" Version=\"2.3.0\" />\n    <PackageReference Include=\"rix0rrr.BeaconLib\" Version=\"1.0.2\" />\n    <PackageReference Include=\"Pfim\" Version=\"0.11.3\" />\n  </ItemGroup>\n</Project>\n"
+    },
+    {
+      "path": "OpenRA.Game/OpenRA.Game.csproj",
+      "before_sha256": "564d1a097e37b9344f706b253c89e7fd971366a0b46e160c97e4f6a2f8d1c840",
+      "after_sha256": "366487734cdc447e6b9d6b7ef3bc060ad05d814c870fb78f48b9306d9c7d0dda",
+      "before": "<Project Sdk=\"Microsoft.NET.Sdk\">\n  <PropertyGroup>\n    <RootNamespace>OpenRA</RootNamespace>\n  </PropertyGroup>\n  <ItemGroup Condition=\"'$(MSBuildRuntimeType)'!='Mono'\">\n    <PackageReference Include=\"Microsoft.Extensions.DependencyModel\" Version=\"6.0.2\" />\n    <PackageReference Include=\"System.Runtime.Loader\" Version=\"4.3.0\" />\n  </ItemGroup>\n  <ItemGroup Condition=\"'$(MSBuildRuntimeType)'=='Mono'\">\n    <PackageReference Include=\"System.Collections.Immutable\" Version=\"6.0.0\" />\n  </ItemGroup>\n  <ItemGroup>\n    <PackageReference Include=\"Linguini.Bundle\" Version=\"0.8.1\" />\n    <PackageReference Include=\"OpenRA-Eluant\" Version=\"1.0.22\" />\n    <PackageReference Include=\"Mono.NAT\" Version=\"3.0.4\" />\n    <PackageReference Include=\"SharpZipLib\" Version=\"1.4.2\" />\n    <PackageReference Include=\"System.Threading.Channels\" Version=\"6.0.0\" />\n  </ItemGroup>\n</Project>\n",
+      "after": "<Project Sdk=\"Microsoft.NET.Sdk\">\n  <PropertyGroup>\n    <RootNamespace>OpenRA</RootNamespace>\n  </PropertyGroup>\n  <ItemGroup Condition=\"'$(MSBuildRuntimeType)'!='Mono'\">\n    <PackageReference Include=\"Microsoft.Extensions.DependencyModel\" Version=\"6.0.2\" />\n  </ItemGroup>\n  <ItemGroup Condition=\"'$(MSBuildRuntimeType)'=='Mono'\">\n    <PackageReference Include=\"System.Collections.Immutable\" Version=\"6.0.0\" />\n  </ItemGroup>\n  <ItemGroup>\n    <PackageReference Include=\"Linguini.Bundle\" Version=\"0.8.1\" />\n    <PackageReference Include=\"OpenRA-Eluant\" Version=\"1.0.22\" />\n    <PackageReference Include=\"Mono.NAT\" Version=\"3.0.4\" />\n    <PackageReference Include=\"SharpZipLib\" Version=\"1.4.2\" />\n  </ItemGroup>\n</Project>\n"
+    }
+  ]
+}
