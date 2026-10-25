@@ -52,6 +52,13 @@ The three major factions each have four playable subfactions:
 
 ## What is actually implemented?
 
+[The Twelvefold Scar](docs/TWELVEFOLD_SCAR.md) adds a 256×256 skirmish for up to
+twelve players: impassable original cliff terraces, equal starting deposits,
+contested expansions, villages, forests and four repairable crossings. Elevation
+is visual on the existing rectangular grid. Windows candidate CI now packages
+the skirmish content separately and builds/tests a per-user setup EXE; public
+release acceptance remains open.
+
 The [three additional doctrines](docs/SUBFACTIONS.md) add worshipper martyrdom,
 SERAPH/ABYSS containment protocols, and condemned-target execution. Each new
 subfaction has two exclusive units and a defense, bringing selection to twelve.

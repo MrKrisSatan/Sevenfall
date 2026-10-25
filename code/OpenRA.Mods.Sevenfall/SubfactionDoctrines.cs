@@ -132,6 +132,10 @@ namespace OpenRA.Mods.Sevenfall
         }
         public int MarkDamage(Actor target, Actor attacker)
         {
+            // Projectiles retain their firing actor after it is disposed. Its
+            // traits are no longer accessible; the base impact still applies.
+            if (attacker == null || attacker.Disposed || target.Disposed)
+                return 100;
             var health = target.TraitOrDefault<Health>();
             var execution = attacker?.TraitOrDefault<SFDoctrineMember>()?.Info.Role == SFDoctrineRole.Contemptor
                 && health != null && health.HP < health.MaxHP / 2 ? 130 : 100;

@@ -3,16 +3,20 @@
 This is an unfinished playtest build. Publication requires the recorded release
 checks to pass; merely producing this directory does not approve it for release.
 
-Extract the entire archive to a writable folder and run `Sevenfall.exe`.
+Run the candidate Setup EXE for a per-user installation, or extract the entire
+portable archive to a writable folder and run `Sevenfall.exe`.
 OpenRA, Red Alert and a separately installed .NET runtime are not required.
 Windows x64 is the initial target. Saves, settings, replays and logs are kept in
 the adjacent `Support` folder. Keep the full folder together when moving it.
 
-The alpha focuses on land skirmishes with three parent factions and nine
+The alpha focuses on land skirmishes with three parent factions and twelve
 subfactions, original buildings/units, physical Veilglass harvesting, explosive
 Veilglass hazards, defenses, faction HUDs and destructible civilian environments.
-Ashen Crossing and Broken Choir are the intended skirmish maps. Diagnostic maps
-and campaign previews present in development candidates are not finished content.
+Ashen Crossing, Broken Choir and The Twelvefold Scar are the skirmish maps.
+The Twelvefold Scar supports up to twelve players, with impassable cliff terraces,
+alternate routes, villages and repairable bridges. Elevation is visual; there is
+no high-ground combat bonus. Diagnostic maps and campaign previews are excluded
+from this skirmish distribution.
 
 Air/naval/beast production is hidden. Audio is intentionally limited; inherited
 speech/music is absent. Some effects and glyphs use simple original vector art.

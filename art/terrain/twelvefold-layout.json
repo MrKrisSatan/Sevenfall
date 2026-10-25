@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "name": "The Twelvefold Scar",
+  "size": 256,
+  "players": 12,
+  "starts": [
+    [
+      128,
+      27
+    ],
+    [
+      178,
+      40
+    ],
+    [
+      215,
+      78
+    ],
+    [
+      229,
+      128
+    ],
+    [
+      216,
+      178
+    ],
+    [
+      178,
+      215
+    ],
+    [
+      128,
+      229
+    ],
+    [
+      78,
+      216
+    ],
+    [
+      41,
+      178
+    ],
+    [
+      27,
+      128
+    ],
+    [
+      40,
+      78
+    ],
+    [
+      78,
+      41
+    ]
+  ],
+  "cliff_cells": 1436,
+  "resource_cells": 1400,
+  "starting_ore_credits_each": 20880,
+  "bridges": 4,
+  "topography": "Visual raised terraces on the rectangular grid; cliffs use native impassable Rock. No height-based combat bonus."
+}

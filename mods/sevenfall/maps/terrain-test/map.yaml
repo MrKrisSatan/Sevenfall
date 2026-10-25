@@ -1,0 +1,291 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Cliff Terrain Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 256,256
+Bounds: 1,1,254,254
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Tester:
+		Name: Tester
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+Actors:
+	Spawn1: mpspawn
+		Owner: Neutral
+		Location: 128,27
+	Spawn2: mpspawn
+		Owner: Neutral
+		Location: 178,40
+	Spawn3: mpspawn
+		Owner: Neutral
+		Location: 215,78
+	Spawn4: mpspawn
+		Owner: Neutral
+		Location: 229,128
+	Spawn5: mpspawn
+		Owner: Neutral
+		Location: 216,178
+	Spawn6: mpspawn
+		Owner: Neutral
+		Location: 178,215
+	Spawn7: mpspawn
+		Owner: Neutral
+		Location: 128,229
+	Spawn8: mpspawn
+		Owner: Neutral
+		Location: 78,216
+	Spawn9: mpspawn
+		Owner: Neutral
+		Location: 41,178
+	Spawn10: mpspawn
+		Owner: Neutral
+		Location: 27,128
+	Spawn11: mpspawn
+		Owner: Neutral
+		Location: 40,78
+	Spawn12: mpspawn
+		Owner: Neutral
+		Location: 78,41
+	EW107: sf_bridge_ew
+		Owner: Neutral
+		Location: 127,107
+	EW107West: sf_bridge_post
+		Owner: Neutral
+		Location: 126,106
+	EW107East: sf_bridge_post
+		Owner: Neutral
+		Location: 130,108
+	EW148: sf_bridge_ew
+		Owner: Neutral
+		Location: 127,148
+	EW148West: sf_bridge_post
+		Owner: Neutral
+		Location: 126,147
+	EW148East: sf_bridge_post
+		Owner: Neutral
+		Location: 130,149
+	NS107: sf_bridge_ns
+		Owner: Neutral
+		Location: 107,127
+	NS107North: sf_bridge_post
+		Owner: Neutral
+		Location: 106,126
+	NS107South: sf_bridge_post
+		Owner: Neutral
+		Location: 108,130
+	NS148: sf_bridge_ns
+		Owner: Neutral
+		Location: 148,127
+	NS148North: sf_bridge_post
+		Owner: Neutral
+		Location: 147,126
+	NS148South: sf_bridge_post
+		Owner: Neutral
+		Location: 149,130
+	Village0_0: sf_cottage
+		Owner: Neutral
+		Location: 87,87
+	Village0_1: sf_townhouse
+		Owner: Neutral
+		Location: 92,91
+	Grove0_0: sf_oak
+		Owner: Neutral
+		Location: 82,96
+	Grove0_1: sf_pine
+		Owner: Neutral
+		Location: 85,96
+	Grove0_2: sf_deadtree
+		Owner: Neutral
+		Location: 88,96
+	Grove0_3: sf_burntree
+		Owner: Neutral
+		Location: 91,96
+	Grove0_4: sf_oak
+		Owner: Neutral
+		Location: 82,99
+	Grove0_5: sf_pine
+		Owner: Neutral
+		Location: 85,99
+	Grove0_6: sf_deadtree
+		Owner: Neutral
+		Location: 88,99
+	Grove0_7: sf_burntree
+		Owner: Neutral
+		Location: 91,99
+	Grove0_8: sf_oak
+		Owner: Neutral
+		Location: 82,102
+	Grove0_9: sf_pine
+		Owner: Neutral
+		Location: 85,102
+	Grove0_10: sf_deadtree
+		Owner: Neutral
+		Location: 88,102
+	Grove0_11: sf_burntree
+		Owner: Neutral
+		Location: 91,102
+	Village1_0: sf_cottage
+		Owner: Neutral
+		Location: 163,87
+	Village1_1: sf_townhouse
+		Owner: Neutral
+		Location: 168,91
+	Grove1_0: sf_oak
+		Owner: Neutral
+		Location: 158,96
+	Grove1_1: sf_pine
+		Owner: Neutral
+		Location: 161,96
+	Grove1_2: sf_deadtree
+		Owner: Neutral
+		Location: 164,96
+	Grove1_3: sf_burntree
+		Owner: Neutral
+		Location: 167,96
+	Grove1_4: sf_oak
+		Owner: Neutral
+		Location: 158,99
+	Grove1_5: sf_pine
+		Owner: Neutral
+		Location: 161,99
+	Grove1_6: sf_deadtree
+		Owner: Neutral
+		Location: 164,99
+	Grove1_7: sf_burntree
+		Owner: Neutral
+		Location: 167,99
+	Grove1_8: sf_oak
+		Owner: Neutral
+		Location: 158,102
+	Grove1_9: sf_pine
+		Owner: Neutral
+		Location: 161,102
+	Grove1_10: sf_deadtree
+		Owner: Neutral
+		Location: 164,102
+	Grove1_11: sf_burntree
+		Owner: Neutral
+		Location: 167,102
+	Village2_0: sf_cottage
+		Owner: Neutral
+		Location: 163,163
+	Village2_1: sf_townhouse
+		Owner: Neutral
+		Location: 168,167
+	Grove2_0: sf_oak
+		Owner: Neutral
+		Location: 158,172
+	Grove2_1: sf_pine
+		Owner: Neutral
+		Location: 161,172
+	Grove2_2: sf_deadtree
+		Owner: Neutral
+		Location: 164,172
+	Grove2_3: sf_burntree
+		Owner: Neutral
+		Location: 167,172
+	Grove2_4: sf_oak
+		Owner: Neutral
+		Location: 158,175
+	Grove2_5: sf_pine
+		Owner: Neutral
+		Location: 161,175
+	Grove2_6: sf_deadtree
+		Owner: Neutral
+		Location: 164,175
+	Grove2_7: sf_burntree
+		Owner: Neutral
+		Location: 167,175
+	Grove2_10: sf_deadtree
+		Owner: Neutral
+		Location: 164,178
+	Grove2_11: sf_burntree
+		Owner: Neutral
+		Location: 167,178
+	Village3_0: sf_cottage
+		Owner: Neutral
+		Location: 87,163
+	Village3_1: sf_townhouse
+		Owner: Neutral
+		Location: 92,167
+	Grove3_0: sf_oak
+		Owner: Neutral
+		Location: 82,172
+	Grove3_1: sf_pine
+		Owner: Neutral
+		Location: 85,172
+	Grove3_2: sf_deadtree
+		Owner: Neutral
+		Location: 88,172
+	Grove3_3: sf_burntree
+		Owner: Neutral
+		Location: 91,172
+	Grove3_4: sf_oak
+		Owner: Neutral
+		Location: 82,175
+	Grove3_5: sf_pine
+		Owner: Neutral
+		Location: 85,175
+	Grove3_6: sf_deadtree
+		Owner: Neutral
+		Location: 88,175
+	Grove3_7: sf_burntree
+		Owner: Neutral
+		Location: 91,175
+	Grove3_8: sf_oak
+		Owner: Neutral
+		Location: 82,178
+	Grove3_9: sf_pine
+		Owner: Neutral
+		Location: 85,178
+	Grove3_10: sf_deadtree
+		Owner: Neutral
+		Location: 88,178
+	Grove3_11: sf_burntree
+		Owner: Neutral
+		Location: 91,178
+Rules:
+	Player:
+		-ConquestVictoryConditions:
+	sf_late_shooter:
+		Inherits: H_RIFLEMAN
+		-Buildable:
+		RenderSprites:
+			Image: h_rifleman
+		Armament@PRIMARY:
+			Weapon: SF_LateProjectile
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	sf_late_target:
+		Inherits: H_BULWARK
+		-Buildable:
+		RenderSprites:
+			Image: h_bulwark
+		Health:
+			HP: 1000000
+		AutoTarget:
+			InitialStance: HoldFire
+			InitialStanceAI: HoldFire
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: terrain-test.lua
+Weapons:
+	SF_LateProjectile:
+		Inherits: SF_PulseRifle
+		ReloadDelay: 1000
+		Projectile: Bullet
+			Speed: 16
+		Warhead@1Dam: SpreadDamage
+			Damage: 1000
+			ValidRelationships: Ally, Enemy, Neutral

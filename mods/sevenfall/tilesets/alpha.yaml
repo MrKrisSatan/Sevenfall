@@ -55,6 +55,14 @@ Terrain:
 		TargetTypes: Water
 		Color: 294451
 Templates:
+	Template@217:
+		Id: 217
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 3
+		Categories: Road
+		Tiles:
+			0: Road
 	Template@255:
 		Id: 255
 		Images: sevenfall|art/terrain/ground.png
@@ -289,3 +297,157 @@ Templates:
 		Categories: Path
 		Tiles:
 			0: Road
+
+	# Original connected cliff atlas
+	Template@200:
+		Id: 200
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 0
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@201:
+		Id: 201
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 1
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@202:
+		Id: 202
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 2
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@203:
+		Id: 203
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 3
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@204:
+		Id: 204
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 4
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@205:
+		Id: 205
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 5
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@206:
+		Id: 206
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 6
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@207:
+		Id: 207
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 7
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@208:
+		Id: 208
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 8
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@209:
+		Id: 209
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 9
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@210:
+		Id: 210
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 10
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@211:
+		Id: 211
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 11
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@212:
+		Id: 212
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 12
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@213:
+		Id: 213
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 13
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@214:
+		Id: 214
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 14
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@215:
+		Id: 215
+		Images: sevenfall|art/terrain/cliffs.png
+		Size: 1,1
+		Frames: 15
+		Categories: Cliff
+		Tiles:
+			0: Rock
+
+	Template@216:
+		Id: 216
+		Images: sevenfall|art/terrain/varied.png
+		Size: 1,1
+		Frames: 0
+		Categories: Terrain
+		Tiles:
+			0: Clear

@@ -9,6 +9,7 @@ import sys
 import zipfile
 from audit_release_dependencies import inspect
 from collect_package_notices import collect
+from package_profiles import stage_mod
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -40,6 +41,7 @@ def run(*args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--profile', choices=['development','skirmish'], default='skirmish')
     parser.add_argument('--version', default='0.3.0-alpha.1')
     local_dotnet = ROOT/'.tools/dotnet/dotnet.exe'
     parser.add_argument('--dotnet', default=str(local_dotnet) if local_dotnet.exists() else 'dotnet')
@@ -66,7 +68,7 @@ def main():
     shutil.copy2(engine/'bin/OpenRA.Mods.Sevenfall.dll', dest)
     for name in ('glsl', 'mods/common'):
         shutil.copytree(engine/name, dest/name)
-    shutil.copytree(mod, dest/'mods/sevenfall')
+    included_maps = stage_mod(mod, dest/'mods/sevenfall', args.profile)
     for name in ('COPYING', 'AUTHORS'):
         shutil.copy2(engine/name, dest/name)
     (dest/'VERSION').write_text('release-20250330\n')
@@ -83,6 +85,7 @@ def main():
     (dest/'BUILD_INFO.json').write_text(json.dumps({
         'version': args.version, 'platform': 'windows-x64', 'self_contained': True,
         'configuration': 'Release', 'source_revisions': revisions,
+        'profile': args.profile, 'included_maps': included_maps,
     }, indent=2)+'\n', encoding='utf-8')
     # No external proprietary formats are allowed to sneak into the candidate.
     forbidden = {'.mix', '.aud', '.vqa', '.shp', '.pal', '.vxl', '.hva'}

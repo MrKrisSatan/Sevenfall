@@ -1,0 +1,81 @@
+name: Windows skirmish candidate
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'mods/**'
+      - 'code/**'
+      - 'packaging/**'
+      - 'scripts/package*.py'
+      - 'scripts/test_installer.py'
+      - '.github/workflows/windows-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            6.0.x
+      - run: python -m pip install -r requirements-test.txt
+      - run: python -m unittest discover -s tests
+      - run: python scripts/build.py build
+      - name: Package committed skirmish candidate
+        shell: pwsh
+        run: |
+          $version = '0.3.0-alpha.candidate.${{ github.run_number }}'
+          "CANDIDATE_VERSION=$version" >> $env:GITHUB_ENV
+          python scripts/package_windows.py --profile skirmish --version $version --dotnet dotnet
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $candidate = Join-Path $pwd "dist/Sevenfall-$version-windows-x64"
+          "CANDIDATE_DIR=$candidate" >> $env:GITHUB_ENV
+      - name: Validate exact packaged rules and sprites
+        shell: pwsh
+        run: |
+          $env:ENGINE_DIR = $env:CANDIDATE_DIR
+          $env:MOD_SEARCH_PATHS = Join-Path $env:CANDIDATE_DIR 'mods'
+          & "$env:CANDIDATE_DIR/OpenRA.Utility.exe" sevenfall --check-yaml
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & "$env:CANDIDATE_DIR/OpenRA.Utility.exe" sevenfall --check-missing-sprites
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & "$env:CANDIDATE_DIR/OpenRA.Utility.exe" sevenfall --sf-check-chrome
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Compile setup with preinstalled Inno Setup
+        shell: pwsh
+        run: |
+          $roots = @(${env:ProgramFiles(x86)}, $env:ProgramFiles)
+          $compilers = foreach ($root in $roots) {
+            Get-ChildItem -Path "$root/Inno Setup*/ISCC.exe" -ErrorAction SilentlyContinue
+          }
+          $compiler = $compilers | Sort-Object FullName -Descending | Select-Object -First 1
+          if (-not $compiler) { throw 'Preinstalled Inno Setup compiler missing; no automatic tool download is permitted here.' }
+          python scripts/package_installer.py "$env:CANDIDATE_DIR" --iscc "$($compiler.FullName)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify install, reinstall and uninstall preserve user data
+        shell: pwsh
+        run: |
+          python scripts/test_installer.py --installer "dist/Sevenfall-$env:CANDIDATE_VERSION-Setup-windows-x64.exe" --package "$env:CANDIDATE_DIR" --install-dir "$env:RUNNER_TEMP/SevenfallInstallerLifecycle/Installed" --report artifacts/installer-lifecycle.json
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Bundle corresponding project and pinned engine source
+        shell: pwsh
+        run: |
+          python scripts/package_source.py --version "$env:CANDIDATE_VERSION"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Sevenfall-windows-skirmish-candidate-${{ github.sha }}
+          retention-days: 30
+          path: |
+            dist/*.exe
+            dist/*.zip
+            dist/*.sha256
+            artifacts/installer-lifecycle.json
+            docs/RELEASE_BLOCKERS.md

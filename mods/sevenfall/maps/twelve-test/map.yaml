@@ -1,0 +1,356 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Twelve-Player AI Soak
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 256,256
+Bounds: 1,1,254,254
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Multi0:
+		Name: Multi0
+		Faction: a_seraph
+		Bot: sevenfall
+		Enemies: Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi1:
+		Name: Multi1
+		Faction: a_warden
+		Bot: sevenfall
+		Enemies: Multi0, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi2:
+		Name: Multi2
+		Faction: a_exile
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi3:
+		Name: Multi3
+		Faction: a_desolation
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi4:
+		Name: Multi4
+		Faction: h_bastion
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi5:
+		Name: Multi5
+		Faction: h_union
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi6, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi6:
+		Name: Multi6
+		Faction: h_covenant
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi7, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi7:
+		Name: Multi7
+		Faction: h_area52
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi8, Multi9, Multi10, Multi11
+	PlayerReference@Multi8:
+		Name: Multi8
+		Faction: d_legion
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi9, Multi10, Multi11
+	PlayerReference@Multi9:
+		Name: Multi9
+		Faction: d_brood
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi10, Multi11
+	PlayerReference@Multi10:
+		Name: Multi10
+		Faction: d_court
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi11
+	PlayerReference@Multi11:
+		Name: Multi11
+		Faction: d_contempt
+		Bot: sevenfall
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9, Multi10
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+Actors:
+	Spawn1: mpspawn
+		Owner: Neutral
+		Location: 128,27
+	Spawn2: mpspawn
+		Owner: Neutral
+		Location: 178,40
+	Spawn3: mpspawn
+		Owner: Neutral
+		Location: 215,78
+	Spawn4: mpspawn
+		Owner: Neutral
+		Location: 229,128
+	Spawn5: mpspawn
+		Owner: Neutral
+		Location: 216,178
+	Spawn6: mpspawn
+		Owner: Neutral
+		Location: 178,215
+	Spawn7: mpspawn
+		Owner: Neutral
+		Location: 128,229
+	Spawn8: mpspawn
+		Owner: Neutral
+		Location: 78,216
+	Spawn9: mpspawn
+		Owner: Neutral
+		Location: 41,178
+	Spawn10: mpspawn
+		Owner: Neutral
+		Location: 27,128
+	Spawn11: mpspawn
+		Owner: Neutral
+		Location: 40,78
+	Spawn12: mpspawn
+		Owner: Neutral
+		Location: 78,41
+	EW107: sf_bridge_ew
+		Owner: Neutral
+		Location: 127,107
+	EW107West: sf_bridge_post
+		Owner: Neutral
+		Location: 126,106
+	EW107East: sf_bridge_post
+		Owner: Neutral
+		Location: 130,108
+	EW148: sf_bridge_ew
+		Owner: Neutral
+		Location: 127,148
+	EW148West: sf_bridge_post
+		Owner: Neutral
+		Location: 126,147
+	EW148East: sf_bridge_post
+		Owner: Neutral
+		Location: 130,149
+	NS107: sf_bridge_ns
+		Owner: Neutral
+		Location: 107,127
+	NS107North: sf_bridge_post
+		Owner: Neutral
+		Location: 106,126
+	NS107South: sf_bridge_post
+		Owner: Neutral
+		Location: 108,130
+	NS148: sf_bridge_ns
+		Owner: Neutral
+		Location: 148,127
+	NS148North: sf_bridge_post
+		Owner: Neutral
+		Location: 147,126
+	NS148South: sf_bridge_post
+		Owner: Neutral
+		Location: 149,130
+	Village0_0: sf_cottage
+		Owner: Neutral
+		Location: 87,87
+	Village0_1: sf_townhouse
+		Owner: Neutral
+		Location: 92,91
+	Grove0_0: sf_oak
+		Owner: Neutral
+		Location: 82,96
+	Grove0_1: sf_pine
+		Owner: Neutral
+		Location: 85,96
+	Grove0_2: sf_deadtree
+		Owner: Neutral
+		Location: 88,96
+	Grove0_3: sf_burntree
+		Owner: Neutral
+		Location: 91,96
+	Grove0_4: sf_oak
+		Owner: Neutral
+		Location: 82,99
+	Grove0_5: sf_pine
+		Owner: Neutral
+		Location: 85,99
+	Grove0_6: sf_deadtree
+		Owner: Neutral
+		Location: 88,99
+	Grove0_7: sf_burntree
+		Owner: Neutral
+		Location: 91,99
+	Grove0_8: sf_oak
+		Owner: Neutral
+		Location: 82,102
+	Grove0_9: sf_pine
+		Owner: Neutral
+		Location: 85,102
+	Grove0_10: sf_deadtree
+		Owner: Neutral
+		Location: 88,102
+	Grove0_11: sf_burntree
+		Owner: Neutral
+		Location: 91,102
+	Village1_0: sf_cottage
+		Owner: Neutral
+		Location: 163,87
+	Village1_1: sf_townhouse
+		Owner: Neutral
+		Location: 168,91
+	Grove1_0: sf_oak
+		Owner: Neutral
+		Location: 158,96
+	Grove1_1: sf_pine
+		Owner: Neutral
+		Location: 161,96
+	Grove1_2: sf_deadtree
+		Owner: Neutral
+		Location: 164,96
+	Grove1_3: sf_burntree
+		Owner: Neutral
+		Location: 167,96
+	Grove1_4: sf_oak
+		Owner: Neutral
+		Location: 158,99
+	Grove1_5: sf_pine
+		Owner: Neutral
+		Location: 161,99
+	Grove1_6: sf_deadtree
+		Owner: Neutral
+		Location: 164,99
+	Grove1_7: sf_burntree
+		Owner: Neutral
+		Location: 167,99
+	Grove1_8: sf_oak
+		Owner: Neutral
+		Location: 158,102
+	Grove1_9: sf_pine
+		Owner: Neutral
+		Location: 161,102
+	Grove1_10: sf_deadtree
+		Owner: Neutral
+		Location: 164,102
+	Grove1_11: sf_burntree
+		Owner: Neutral
+		Location: 167,102
+	Village2_0: sf_cottage
+		Owner: Neutral
+		Location: 163,163
+	Village2_1: sf_townhouse
+		Owner: Neutral
+		Location: 168,167
+	Grove2_0: sf_oak
+		Owner: Neutral
+		Location: 158,172
+	Grove2_1: sf_pine
+		Owner: Neutral
+		Location: 161,172
+	Grove2_2: sf_deadtree
+		Owner: Neutral
+		Location: 164,172
+	Grove2_3: sf_burntree
+		Owner: Neutral
+		Location: 167,172
+	Grove2_4: sf_oak
+		Owner: Neutral
+		Location: 158,175
+	Grove2_5: sf_pine
+		Owner: Neutral
+		Location: 161,175
+	Grove2_6: sf_deadtree
+		Owner: Neutral
+		Location: 164,175
+	Grove2_7: sf_burntree
+		Owner: Neutral
+		Location: 167,175
+	Grove2_10: sf_deadtree
+		Owner: Neutral
+		Location: 164,178
+	Grove2_11: sf_burntree
+		Owner: Neutral
+		Location: 167,178
+	Village3_0: sf_cottage
+		Owner: Neutral
+		Location: 87,163
+	Village3_1: sf_townhouse
+		Owner: Neutral
+		Location: 92,167
+	Grove3_0: sf_oak
+		Owner: Neutral
+		Location: 82,172
+	Grove3_1: sf_pine
+		Owner: Neutral
+		Location: 85,172
+	Grove3_2: sf_deadtree
+		Owner: Neutral
+		Location: 88,172
+	Grove3_3: sf_burntree
+		Owner: Neutral
+		Location: 91,172
+	Grove3_4: sf_oak
+		Owner: Neutral
+		Location: 82,175
+	Grove3_5: sf_pine
+		Owner: Neutral
+		Location: 85,175
+	Grove3_6: sf_deadtree
+		Owner: Neutral
+		Location: 88,175
+	Grove3_7: sf_burntree
+		Owner: Neutral
+		Location: 91,175
+	Grove3_8: sf_oak
+		Owner: Neutral
+		Location: 82,178
+	Grove3_9: sf_pine
+		Owner: Neutral
+		Location: 85,178
+	Grove3_10: sf_deadtree
+		Owner: Neutral
+		Location: 88,178
+	Grove3_11: sf_burntree
+		Owner: Neutral
+		Location: 91,178
+	BotMCV0: mcv
+		Owner: Multi0
+		Location: 128,27
+	BotMCV1: mcv
+		Owner: Multi1
+		Location: 178,40
+	BotMCV2: mcv
+		Owner: Multi2
+		Location: 215,78
+	BotMCV3: mcv
+		Owner: Multi3
+		Location: 229,128
+	BotMCV4: mcv
+		Owner: Multi4
+		Location: 216,178
+	BotMCV5: mcv
+		Owner: Multi5
+		Location: 178,215
+	BotMCV6: mcv
+		Owner: Multi6
+		Location: 128,229
+	BotMCV7: mcv
+		Owner: Multi7
+		Location: 78,216
+	BotMCV8: mcv
+		Owner: Multi8
+		Location: 41,178
+	BotMCV9: mcv
+		Owner: Multi9
+		Location: 27,128
+	BotMCV10: mcv
+		Owner: Multi10
+		Location: 40,78
+	BotMCV11: mcv
+		Owner: Multi11
+		Location: 78,41
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: twelve-test.lua

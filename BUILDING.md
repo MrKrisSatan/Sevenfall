@@ -130,7 +130,7 @@ candidate bundles its own runtime and content.
 After `scripts/build.py build`, run:
 
 ```powershell
-python scripts/package_windows.py --version 0.3.0-alpha.1
+python scripts/package_windows.py --profile development --version 0.3.0-alpha.1
 python scripts/run_defense_test.py --scenario environment --package dist/Sevenfall-0.3.0-alpha.1-windows-x64 --support-dir artifacts/portable-test
 ```
 
@@ -153,6 +153,14 @@ The first three have passed with fresh support folders. `production` exercises
 normal paid queues and validated placement; `match` observes unassisted AI conquest.
 Use longer `--timeout` values for those scenarios. For source builds, pass
 `--dotnet PATH` instead of `--package PATH`.
+
+The default packaging profile is `skirmish`: only the three playable skirmish maps
+and menu are included. Use `--profile development` for the diagnostic command above.
+Additional native scenarios include `doctrine`, `subproduction`, `terrain` and
+`twelve`; see [the twelve-player map notes](docs/TWELVEFOLD_SCAR.md).
+The `Windows skirmish candidate` workflow produces a setup EXE, portable archive,
+source archive and checksums. It checks installation, reinstallation and removal
+with preserved user data. It does not publish a release or replace clean-PC testing.
 
 ## Validation and remaining work
 
