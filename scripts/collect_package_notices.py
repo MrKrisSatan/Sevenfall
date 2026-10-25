@@ -10,21 +10,33 @@ import xml.etree.ElementTree as ET
 def collect(engine, destination):
     destination.mkdir(parents=True, exist_ok=True)
     packages = {}
+    folders = set()
+    runtimes = set()
     for project in engine.glob('OpenRA.*/obj/project.assets.json'):
         assets = json.loads(project.read_text())
-        folders = [Path(p) for p in assets.get('packageFolders', {})]
+        project_folders = [Path(p) for p in assets.get('packageFolders', {})]
+        folders.update(project_folders)
+        for framework in assets.get('project', {}).get('frameworks', {}).values():
+            for dependency in framework.get('downloadDependencies', []):
+                name = dependency['name']
+                if name.lower().startswith('microsoft.netcore.app.runtime.win-x64'):
+                    # NuGet records resolved runtime downloads as exact ranges.
+                    version = dependency['version'].strip('[]').split(',')[0].strip()
+                    runtimes.add((name, version))
         for name, value in assets.get('libraries', {}).items():
             if value.get('type') != 'package':
                 continue
-            path = next((p / value['path'] for p in folders if (p/value['path']).exists()), None)
+            path = next((p / value['path'] for p in project_folders if (p/value['path']).exists()), None)
             if path is None:
                 raise RuntimeError('Restored dependency missing: ' + name)
             packages[name] = path
     # Runtime pack is resolved by the SDK rather than an ordinary PackageReference.
-    for folder in folders:
-        runtime = folder/'microsoft.netcore.app.runtime.win-x64/6.0.36'
-        if runtime.exists():
-            packages['Microsoft.NETCore.App.Runtime.win-x64/6.0.36'] = runtime
+    for name, version in sorted(runtimes):
+        runtime = next((folder/name.lower()/version for folder in sorted(folders)
+                        if (folder/name.lower()/version).exists()), None)
+        if runtime is None:
+            raise RuntimeError(f'Restored runtime dependency missing: {name}/{version}')
+        packages[f'{name}/{version}'] = runtime
     inventory = []
     for name, path in sorted(packages.items()):
         out = destination/name.replace('/', '-')

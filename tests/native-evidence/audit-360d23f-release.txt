@@ -1,0 +1,27 @@
+Source: 360d23f; fresh content-free support folder; developer Windows host.
+Lua debug: RELEASE_TEST PASS: initial refined total P0
+Lua debug: RELEASE_TEST PASS: initial refined total P1
+Lua debug: RELEASE_TEST PASS: initial refined total P2
+Lua debug: RELEASE_TEST PASS: initial refined total P3
+Lua debug: RELEASE_TEST PASS: initial refined total P4
+Lua debug: RELEASE_TEST PASS: initial refined total P5
+Lua debug: RELEASE_TEST PASS: initial refined total P6
+Lua debug: RELEASE_TEST PASS: initial refined total P7
+Lua debug: RELEASE_TEST PASS: initial refined total P8
+Lua debug: RELEASE_TEST PASS: harvester contact does not detonate
+Lua debug: RELEASE_TEST PASS: harvester contact does not consume entire deposit
+Lua debug: RELEASE_TEST PASS: non-harvester contact triggers lethal infantry damage
+Lua debug: RELEASE_TEST PASS: triggered cell consumed
+Lua debug: RELEASE_TEST PASS: blast damages nearby structure footprint
+Lua debug: RELEASE_TEST DETAIL: scattered density=6
+Lua debug: RELEASE_TEST PASS: blast scatters capped Veilglass onto new cells
+Lua debug: RELEASE_TEST PASS: real mining while spending P0
+Lua debug: RELEASE_TEST PASS: real mining while spending P1
+Lua debug: RELEASE_TEST PASS: real mining while spending P2
+Lua debug: RELEASE_TEST PASS: real mining while spending P3
+Lua debug: RELEASE_TEST PASS: real mining while spending P4
+Lua debug: RELEASE_TEST PASS: real mining while spending P5
+Lua debug: RELEASE_TEST PASS: real mining while spending P6
+Lua debug: RELEASE_TEST PASS: real mining while spending P7
+Lua debug: RELEASE_TEST PASS: real mining while spending P8
+Lua debug: RELEASE_TEST COMPLETE checks=24

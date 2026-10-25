@@ -2,6 +2,10 @@
 
 Status: **Windows candidate builds and launches without Red Alert content; not yet approved for publication.**
 
+The [latest skirmish-alpha audit](SKIRMISH_ALPHA_AUDIT.md) reviews commit
+`360d23f`, distinguishes the portable executable from an installer, and records
+the next acceptance and release-engineering steps.
+
 ## Scope of the first alpha
 
 Nine faction selections, original ground-unit/building artwork, faction combat doctrines,
@@ -55,6 +59,10 @@ support data. This is not an independent clean-PC or clean-VM installation test.
    public skirmish build; test the final archive, launch path, settings and first-run menu.
 6. Test the final archive on a clean Windows machine/VM, run CI at the published commit,
    then tag and publish binaries, source and checksums together.
+7. Resolve the runtime support decision: the pinned engine targets .NET 6, whose
+   support ended on 12 November 2024. Prefer a tested engine/runtime upgrade before
+   public distribution; a self-contained package carries its own runtime.
+   See [Microsoft's lifecycle policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
 
 ## Reproduce native checks
 

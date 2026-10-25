@@ -5,11 +5,33 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import zipfile
 from audit_release_dependencies import inspect
 from collect_package_notices import collect
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def source_revisions(root):
+    """Do not describe modified or unexpected dependencies as pinned source."""
+    from build import ENGINE_COMMIT, SDK_COMMIT
+    revisions = {}
+    for name, path, expected in [('sevenfall', root, None),
+                                 ('engine', root/'.sdk/engine', ENGINE_COMMIT),
+                                 ('sdk', root/'.sdk', SDK_COMMIT)]:
+        revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=path, text=True).strip()
+        if expected and revision != expected:
+            raise RuntimeError(f'{name}: expected {expected}, found {revision}')
+        status_args = ['git', 'status', '--porcelain']
+        if name == 'sdk':
+            # install_into_sdk.py intentionally edits this configuration and
+            # creates the overlay. Neither is upstream SDK source compiled here.
+            status_args += ['--', '.', ':(exclude)mod.config', ':(exclude)mods/sevenfall']
+        if subprocess.check_output(status_args, cwd=path).strip():
+            raise RuntimeError(f'{name}: commit or isolate local changes before packaging')
+        revisions[name] = revision
+    return revisions
 
 
 def run(*args):
@@ -19,10 +41,15 @@ def run(*args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--version', default='0.3.0-alpha.1')
-    parser.add_argument('--dotnet', default=str(ROOT/'.tools/dotnet/dotnet.exe'))
+    local_dotnet = ROOT/'.tools/dotnet/dotnet.exe'
+    parser.add_argument('--dotnet', default=str(local_dotnet) if local_dotnet.exists() else 'dotnet')
     args = parser.parse_args()
     engine = ROOT/'.sdk/engine'
     mod = ROOT/'.sdk/mods/sevenfall'
+    # Rebuild and restage before copying the extension or any mod data. A successful
+    # build from an earlier checkout is not evidence for this candidate's revision.
+    revisions = source_revisions(ROOT)
+    run(sys.executable, ROOT/'scripts/build.py', 'build', '--dotnet', args.dotnet)
     if not inspect(mod/'mod.yaml')['independent_manifest']:
         raise SystemExit('External RA references remain; packaging refused.')
     dest = ROOT/'dist'/f'Sevenfall-{args.version}-windows-x64'
@@ -53,6 +80,10 @@ def main():
     for file in ('THIRD_PARTY_NOTICES.md', 'ALPHA_README.md'):
         shutil.copy2(ROOT/file, dest/file)
     collect(engine, dest/'Notices')
+    (dest/'BUILD_INFO.json').write_text(json.dumps({
+        'version': args.version, 'platform': 'windows-x64', 'self_contained': True,
+        'configuration': 'Release', 'source_revisions': revisions,
+    }, indent=2)+'\n', encoding='utf-8')
     # No external proprietary formats are allowed to sneak into the candidate.
     forbidden = {'.mix', '.aud', '.vqa', '.shp', '.pal', '.vxl', '.hva'}
     violations = [str(p.relative_to(dest)) for p in dest.rglob('*') if p.suffix.lower() in forbidden]

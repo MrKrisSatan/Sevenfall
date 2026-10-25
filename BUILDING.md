@@ -135,6 +135,12 @@ python scripts/run_defense_test.py --scenario environment --package dist/Sevenfa
 ```
 
 The package contains `Sevenfall.exe` and a local `Support` directory. Packaging
+requires committed Sevenfall and unmodified pinned engine/SDK source (the generated
+SDK configuration and mod overlay are allowed). It rebuilds/restages the game before
+copying assets and the extension, and records all three commits in `BUILD_INFO.json`.
+The default .NET command uses `.tools/dotnet/dotnet.exe` when present, otherwise
+`dotnet` from PATH. Pass `--dotnet PATH` to select another installation.
+Packaging
 refuses external RA manifest references and proprietary game archive formats.
 It creates a ZIP, file inventory and SHA-256 checksum; these do not imply release
 approval. Use a fresh version suffix when rebuilding to preserve prior candidates.

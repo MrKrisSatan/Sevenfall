@@ -1,5 +1,15 @@
 # Sevenfall changelog
 
+## Skirmish alpha release audit — 2026-10-25
+
+- Reviewed standalone staging, gameplay diagnostics, source and Windows distribution.
+- Rebuild candidates from committed pinned sources and record their three source revisions.
+- Collect notices for the actual resolved Windows runtime across all package caches.
+- Verified 74 Python tests, 111 C# assertions, 208 chrome collections, and fresh native
+  environment (11) and nine-faction harvesting/hazard (24) diagnostics.
+- Recorded remaining match/replay, runtime-support, distribution, installer and clean-PC
+  gates in docs/SKIRMISH_ALPHA_AUDIT.md. No public alpha is released by this audit.
+
 ## Standalone alpha and Sevenfall menu â€” 2026-10-25
 
 - Removed the OpenRA forum account connection panel from the main menu.
