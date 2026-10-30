@@ -1,0 +1,4 @@
+Lua debug: PAINTEDREALMS_TEST PASS: spawned 51 designs; move and damaged states
+Lua debug: PAINTEDREALMS_TEST PASS: critical building states
+Lua debug: PAINTEDREALMS_TEST PASS: death actor rendering
+Lua debug: PAINTEDREALMS_TEST COMPLETE checks=3

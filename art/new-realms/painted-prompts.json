@@ -1,0 +1,359 @@
+[
+  {
+    "id": "i_ghost",
+    "kind": "unit",
+    "subject": "Mnemonic Ghost: slender white ceramic synthetic humanoid, carbon joints, hoodlike optical shroud, cyan sensor slit, long precision rifle",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Mnemonic Ghost: slender white ceramic synthetic humanoid, carbon joints, hoodlike optical shroud, cyan sensor slit, long precision rifle. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_ghost.png"
+  },
+  {
+    "id": "i_lance",
+    "kind": "unit",
+    "subject": "Needle Chassis: narrow four-legged robotic precision gun platform, off-white ceramic plates, slender central rail lance, cyan optical lens",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Needle Chassis: narrow four-legged robotic precision gun platform, off-white ceramic plates, slender central rail lance, cyan optical lens. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_lance.png"
+  },
+  {
+    "id": "i_endurer",
+    "kind": "unit",
+    "subject": "Endurer: massive bipedal industrial combat automaton, dark gunmetal layered armor, amber core, broad shoulders, heavy integrated arm rifle, no human skull",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Endurer: massive bipedal industrial combat automaton, dark gunmetal layered armor, amber core, broad shoulders, heavy integrated arm rifle, no human skull. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_endurer.png"
+  },
+  {
+    "id": "i_crucible",
+    "kind": "unit",
+    "subject": "Crucible Engine: huge slow six-tread siege machine, iron armor and copper heat sinks, heavy fixed forward siege cannon, amber furnace core",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Crucible Engine: huge slow six-tread siege machine, iron armor and copper heat sinks, heavy fixed forward siege cannon, amber furnace core. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_crucible.png"
+  },
+  {
+    "id": "i_thread",
+    "kind": "unit",
+    "subject": "Threadkeeper: angular black-and-white humanoid missile automaton, mint network lights, shoulder launcher rack, antenna crown",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Threadkeeper: angular black-and-white humanoid missile automaton, mint network lights, shoulder launcher rack, antenna crown. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_thread.png"
+  },
+  {
+    "id": "i_relay",
+    "kind": "unit",
+    "subject": "Relay Walker: squat quadrupedal white-and-black robotic command vehicle, tall segmented mint holographic relay mast, small forward pulse gun",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Relay Walker: squat quadrupedal white-and-black robotic command vehicle, tall segmented mint holographic relay mast, small forward pulse gun. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_relay.png"
+  },
+  {
+    "id": "i_savant",
+    "kind": "unit",
+    "subject": "Circuit Savant: small agile asymmetrical humanoid robot, cream ceramic shells and yellow circuits, exposed computational backpack, compact rapid-fire gun",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Circuit Savant: small agile asymmetrical humanoid robot, cream ceramic shells and yellow circuits, exposed computational backpack, compact rapid-fire gun. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_savant.png"
+  },
+  {
+    "id": "i_gambit",
+    "kind": "unit",
+    "subject": "Gambit Rover: fast low three-wheel autonomous rover, asymmetrical cream armor, yellow circuit fins, fixed compact energy cannon",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Gambit Rover: fast low three-wheel autonomous rover, asymmetrical cream armor, yellow circuit fins, fixed compact energy cannon. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_gambit.png"
+  },
+  {
+    "id": "f_regent",
+    "kind": "unit",
+    "subject": "Uncrowned Regent: grotesque fallen celestial aristocrat, immense tarnished silver armor enclosing an elongated skeletal body, crown embedded into faceless head, twisted bone wing stumps, violet judgment spear",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Uncrowned Regent: grotesque fallen celestial aristocrat, immense tarnished silver armor enclosing an elongated skeletal body, crown embedded into faceless head, twisted bone wing stumps, violet judgment spear. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_regent.png"
+  },
+  {
+    "id": "f_reliquary",
+    "kind": "unit",
+    "subject": "Walking Reliquary: huge six-legged bone-bound living cathedral engine, ribbed ivory cage, tarnished silver reliquary shrine, twisted wing buttresses, forward violet judgment organ",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Walking Reliquary: huge six-legged bone-bound living cathedral engine, ribbed ivory cage, tarnished silver reliquary shrine, twisted wing buttresses, forward violet judgment organ. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_reliquary.png"
+  },
+  {
+    "id": "f_canticle",
+    "kind": "unit",
+    "subject": "Mute Canticle: gaunt fallen humanoid worshipper, stitched closed mouth, charcoal funeral robes, exposed ivory ribs, pink-violet throat crystal, crooked ranged prayer staff",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Mute Canticle: gaunt fallen humanoid worshipper, stitched closed mouth, charcoal funeral robes, exposed ivory ribs, pink-violet throat crystal, crooked ranged prayer staff. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_canticle.png"
+  },
+  {
+    "id": "f_lamentor",
+    "kind": "unit",
+    "subject": "Lamentor: heavy ground-walking grotesque fallen angel with a ribcage like a pipe organ, long bony legs, torn violet funeral vestments, luminous magenta throat chambers, shredded wing frame",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Lamentor: heavy ground-walking grotesque fallen angel with a ribcage like a pipe organ, long bony legs, torn violet funeral vestments, luminous magenta throat chambers, shredded wing frame. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_lamentor.png"
+  },
+  {
+    "id": "f_flayer",
+    "kind": "unit",
+    "subject": "Vow Flayer: fast hunched fallen angel, bone hooks for hands, ruined wing stumps, scarlet wax seals and torn bandages, pale sinewy body, no weapon gun, melee claws",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Vow Flayer: fast hunched fallen angel, bone hooks for hands, ruined wing stumps, scarlet wax seals and torn bandages, pale sinewy body, no weapon gun, melee claws. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_flayer.png"
+  },
+  {
+    "id": "f_martyr",
+    "kind": "unit",
+    "subject": "Carrion Martyr: huge four-legged skeletal abomination, open rib arch and charred wings fused into armor, red wounds glowing without graphic gore, enormous melee foreclaws",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Carrion Martyr: huge four-legged skeletal abomination, open rib arch and charred wings fused into armor, red wounds glowing without graphic gore, enormous melee foreclaws. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_martyr.png"
+  },
+  {
+    "id": "f_pinions",
+    "kind": "unit",
+    "subject": "Severed Pinion: lean grounded fallen hunter, backward-jointed legs, long broken wing bones folded like a cloak, pale blue eyes, long silver ranged hunting spear",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Severed Pinion: lean grounded fallen hunter, backward-jointed legs, long broken wing bones folded like a cloak, pale blue eyes, long silver ranged hunting spear. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_pinions.png"
+  },
+  {
+    "id": "f_harrow",
+    "kind": "unit",
+    "subject": "Harrow Stalker: fast low four-legged fallen hunting beast with swept-back shattered bone wing blades, ivory and charcoal body, icy blue spectral forward lance",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Harrow Stalker: fast low four-legged fallen hunting beast with swept-back shattered bone wing blades, ivory and charcoal body, icy blue spectral forward lance. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_harrow.png"
+  },
+  {
+    "id": "i_generator",
+    "kind": "building",
+    "subject": "Cognition Reactor: compact hexagonal steel generator, concentric cyan coolant rings and ceramic server stacks",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Cognition Reactor: compact hexagonal steel generator, concentric cyan coolant rings and ceramic server stacks. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_generator.png"
+  },
+  {
+    "id": "i_veilworks",
+    "kind": "building",
+    "subject": "Matter Compiler: broad automated refinery, low front docking apron, three ore processing cylinders, cyan crystal hopper and industrial robot arms",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Matter Compiler: broad automated refinery, low front docking apron, three ore processing cylinders, cyan crystal hopper and industrial robot arms. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_veilworks.png"
+  },
+  {
+    "id": "i_barracks",
+    "kind": "building",
+    "subject": "Shell Foundry: compact rectangular robot infantry assembly plant, open dark front assembly exit and two white skeletal gantries",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Shell Foundry: compact rectangular robot infantry assembly plant, open dark front assembly exit and two white skeletal gantries. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_barracks.png"
+  },
+  {
+    "id": "i_motorpool",
+    "kind": "building",
+    "subject": "Chassis Forge: wide heavy robot vehicle factory, large front vehicle door, overhead robotic assembly cranes, blue-white industrial armor",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Chassis Forge: wide heavy robot vehicle factory, large front vehicle door, overhead robotic assembly cranes, blue-white industrial armor. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_motorpool.png"
+  },
+  {
+    "id": "i_advpower",
+    "kind": "building",
+    "subject": "Fusion Stack: tall clustered reactors, three luminous cyan containment rings, heavy steel cooling fins",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Fusion Stack: tall clustered reactors, three luminous cyan containment rings, heavy steel cooling fins. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_advpower.png"
+  },
+  {
+    "id": "i_service",
+    "kind": "building",
+    "subject": "Reconstruction Bay: open low vehicle service platform, robotic repair arms around clear central pad, cyan repair arcs",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Reconstruction Bay: open low vehicle service platform, robotic repair arms around clear central pad, cyan repair arcs. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_service.png"
+  },
+  {
+    "id": "i_radar",
+    "kind": "building",
+    "subject": "Prediction Spire: tapered white ceramic computation tower with a rotating geometric sensor crown and cyan lenses",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Prediction Spire: tapered white ceramic computation tower with a rotating geometric sensor crown and cyan lenses. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_radar.png"
+  },
+  {
+    "id": "i_tech",
+    "kind": "building",
+    "subject": "Recursion Core: large black-glass computing citadel inside interlocking white polygonal supports, brilliant cyan contained central lattice",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Recursion Core: large black-glass computing citadel inside interlocking white polygonal supports, brilliant cyan contained central lattice. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_tech.png"
+  },
+  {
+    "id": "i_autocannon",
+    "kind": "building",
+    "subject": "Sentry Node: compact autonomous armored twin-barrel turret on squat hexagonal bunker base, cyan targeting eye",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Sentry Node: compact autonomous armored twin-barrel turret on squat hexagonal bunker base, cyan targeting eye. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_autocannon.png"
+  },
+  {
+    "id": "i_missilenest",
+    "kind": "building",
+    "subject": "Interceptor Node: armored vertical missile battery on low hexagonal base, angled launcher pods and cyan targeting dish",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Interceptor Node: armored vertical missile battery on low hexagonal base, angled launcher pods and cyan targeting dish. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_missilenest.png"
+  },
+  {
+    "id": "f_spire",
+    "kind": "building",
+    "subject": "Apostate Pyre: crooked ivory bone spire enclosing a violet sacrificial flame, charred stone base and broken halo rings",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Apostate Pyre: crooked ivory bone spire enclosing a violet sacrificial flame, charred stone base and broken halo rings. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_spire.png"
+  },
+  {
+    "id": "f_veilworks",
+    "kind": "building",
+    "subject": "Ossuary Mill: broad grotesque bone refinery, ribbed vault, low front collector docking mouth, purple Veilglass crucibles, no detached characters",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Ossuary Mill: broad grotesque bone refinery, ribbed vault, low front collector docking mouth, purple Veilglass crucibles, no detached characters. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_veilworks.png"
+  },
+  {
+    "id": "f_chapel",
+    "kind": "building",
+    "subject": "Profaned Chapel: compact distorted gothic chapel, twisted bone buttresses, mouthlike front infantry doorway, ripped violet banners and fractured halo",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Profaned Chapel: compact distorted gothic chapel, twisted bone buttresses, mouthlike front infantry doorway, ripped violet banners and fractured halo. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_chapel.png"
+  },
+  {
+    "id": "f_armory",
+    "kind": "building",
+    "subject": "Flesh Crucible: broad living bone vehicle forge, huge rib-arch exit, tendonlike supports and violet furnace chambers, gothic ruin architecture",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Flesh Crucible: broad living bone vehicle forge, huge rib-arch exit, tendonlike supports and violet furnace chambers, gothic ruin architecture. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_armory.png"
+  },
+  {
+    "id": "f_advpower",
+    "kind": "building",
+    "subject": "Sundered Halo: tall broken halo energy plant, three cracked hovering bone rings chained to violet-flame ossuary pylons",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Sundered Halo: tall broken halo energy plant, three cracked hovering bone rings chained to violet-flame ossuary pylons. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_advpower.png"
+  },
+  {
+    "id": "f_service",
+    "kind": "building",
+    "subject": "Suture Shrine: low open repair courtyard framed by bent angel wing bones, hanging spectral sutures and violet energy above central pad",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Suture Shrine: low open repair courtyard framed by bent angel wing bones, hanging spectral sutures and violet energy above central pad. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_service.png"
+  },
+  {
+    "id": "f_radar",
+    "kind": "building",
+    "subject": "Blind Oracle: twisted eyeless giant angel statue fused into a gothic sensor tower, crown of small violet lenses and cracked wings",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Blind Oracle: twisted eyeless giant angel statue fused into a gothic sensor tower, crown of small violet lenses and cracked wings. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_radar.png"
+  },
+  {
+    "id": "f_tech",
+    "kind": "building",
+    "subject": "Testament Vault: imposing bone-and-black-stone library fortress, sealed violet booklike central monolith, crooked wing buttresses and broken silver halo",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Testament Vault: imposing bone-and-black-stone library fortress, sealed violet booklike central monolith, crooked wing buttresses and broken silver halo. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_tech.png"
+  },
+  {
+    "id": "f_watchfire",
+    "kind": "building",
+    "subject": "Balefire Watch: squat bone watchtower with a violet flame brazier and small skeletal gun aperture",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Balefire Watch: squat bone watchtower with a violet flame brazier and small skeletal gun aperture. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_watchfire.png"
+  },
+  {
+    "id": "f_judgment",
+    "kind": "building",
+    "subject": "Wrath Organ: heavy gothic defensive organ, clustered long bone energy barrels over a squat armored ossuary base",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Wrath Organ: heavy gothic defensive organ, clustered long bone energy barrels over a squat armored ossuary base. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_judgment.png"
+  },
+  {
+    "id": "f_skyward",
+    "kind": "building",
+    "subject": "Broken Halo Battery: anti-air tower of crooked ivory prongs enclosing a fractured silver halo, violet targeting crystal",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Broken Halo Battery: anti-air tower of crooked ivory prongs enclosing a fractured silver halo, violet targeting crystal. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_skyward.png"
+  },
+  {
+    "id": "i_rifleman",
+    "kind": "unit",
+    "subject": "Shell Trooper: standardized autonomous biped robot, slate armored torso, white shoulder plates, cyan face strip, practical pulse rifle",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Shell Trooper: standardized autonomous biped robot, slate armored torso, white shoulder plates, cyan face strip, practical pulse rifle. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_rifleman.png"
+  },
+  {
+    "id": "i_rocketeer",
+    "kind": "unit",
+    "subject": "Breach Automaton: broad-shouldered armored robot carrying a twin-tube missile launcher, cyan sensor head, white and charcoal armor",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Breach Automaton: broad-shouldered armored robot carrying a twin-tube missile launcher, cyan sensor head, white and charcoal armor. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_rocketeer.png"
+  },
+  {
+    "id": "i_bulwark",
+    "kind": "unit",
+    "subject": "Sentinel Chassis: robust low four-track autonomous tank, white angular glacis, fixed forward cyan energy cannon, no human crew or markings",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Sentinel Chassis: robust low four-track autonomous tank, white angular glacis, fixed forward cyan energy cannon, no human crew or markings. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_bulwark.png"
+  },
+  {
+    "id": "i_engineer",
+    "kind": "unit",
+    "subject": "Repair Proxy: small slender utility biped robot, white ceramic body, cyan repair backpack, manipulator tool hands, no gun",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Repair Proxy: small slender utility biped robot, white ceramic body, cyan repair backpack, manipulator tool hands, no gun. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_engineer.png"
+  },
+  {
+    "id": "i_harvester",
+    "kind": "unit",
+    "subject": "Reclaimer: heavy six-wheel autonomous mineral collector, low front articulated harvesting jaws, cyan ore container, white armored hull, no gun",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Reclaimer: heavy six-wheel autonomous mineral collector, low front articulated harvesting jaws, cyan ore container, white armored hull, no gun. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_harvester.png"
+  },
+  {
+    "id": "f_watcher",
+    "kind": "unit",
+    "subject": "Oath Husk: skeletal fallen infantry with twisted ivory armor, closed cracked face, torn purple vestment and crooked energy spear",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Oath Husk: skeletal fallen infantry with twisted ivory armor, closed cracked face, torn purple vestment and crooked energy spear. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_watcher.png"
+  },
+  {
+    "id": "f_judicator",
+    "kind": "unit",
+    "subject": "Blight Herald: tall hunched fallen ranged soldier, ribbed shoulders, broken small wing bones, black vestment and violet heavy judgment staff",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Blight Herald: tall hunched fallen ranged soldier, ribbed shoulders, broken small wing bones, black vestment and violet heavy judgment staff. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_judicator.png"
+  },
+  {
+    "id": "f_aegis",
+    "kind": "unit",
+    "subject": "Bonebound Engine: low heavy four-legged abomination with ivory rib armor, twisted wing stump shields, forward violet energy maw",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Bonebound Engine: low heavy four-legged abomination with ivory rib armor, twisted wing stump shields, forward violet energy maw. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_aegis.png"
+  },
+  {
+    "id": "f_engineer",
+    "kind": "unit",
+    "subject": "Suture Keeper: gaunt robed fallen repair priest, ivory mask, long delicate tool fingers, spectral violet thread spool, no gun",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Suture Keeper: gaunt robed fallen repair priest, ivory mask, long delicate tool fingers, spectral violet thread spool, no gun. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_engineer.png"
+  },
+  {
+    "id": "f_gatherer",
+    "kind": "unit",
+    "subject": "Tithe Bearer: enormous squat six-legged bone-armored mineral beast, front crystal-scooping mandibles, swollen violet ore cage on back, no weapon",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Tithe Bearer: enormous squat six-legged bone-armored mineral beast, front crystal-scooping mandibles, swollen violet ore cage on back, no weapon. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_gatherer.png"
+  },
+  {
+    "id": "i_yard",
+    "kind": "building",
+    "subject": "Assembly Nexus construction yard: broad modular automated construction command complex, two articulated cranes, cyan planning lattice, white ceramic command bunker and dark steel footprint",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Assembly Nexus construction yard: broad modular automated construction command complex, two articulated cranes, cyan planning lattice, white ceramic command bunker and dark steel footprint. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_yard.png"
+  },
+  {
+    "id": "f_yard",
+    "kind": "building",
+    "subject": "Exile Seat construction yard: sprawling ruined celestial throne-workshop, bone cranes, twisted gothic arches, violet creation well and broken enormous halo",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Exile Seat construction yard: sprawling ruined celestial throne-workshop, bone cranes, twisted gothic arches, violet creation well and broken enormous halo. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 3 columns and 2 rows, 6 equal cells, landscape sheet. Fixed elevated isometric camera facing southeast; the SAME building and footprint in EVERY cell. Reading order: intact; visibly damaged with cracked surfaces; critical damage with collapsed sections; early construction scaffold; half-built structure; operating/weapon firing energy pulse. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_yard.png"
+  },
+  {
+    "id": "i_mcv",
+    "kind": "unit",
+    "subject": "Seed Carrier mobile construction vehicle: huge folded six-wheel autonomous construction machine, collapsed white gantries, cyan core and heavy steel chassis",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Seed Carrier mobile construction vehicle: huge folded six-wheel autonomous construction machine, collapsed white gantries, cyan core and heavy steel chassis. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/i_mcv.png"
+  },
+  {
+    "id": "f_mcv",
+    "kind": "unit",
+    "subject": "Pilgrim Ossuary mobile construction vehicle: huge lumbering six-legged walking shrine, tightly folded bone cranes and wing arches, violet core, remains a ground vehicle",
+    "prompt": "Original production sprite atlas for Sevenfall dark apocalyptic science-fiction RTS. Subject: Pilgrim Ossuary mobile construction vehicle: huge lumbering six-legged walking shrine, tightly folded bone cranes and wing arches, violet core, remains a ground vehicle. Painterly realistic miniature game art, strongly readable silhouette, detailed muted materials. EXACTLY 8 columns and 4 rows, 32 equal cells, wide landscape sheet. Eight views in each row, clockwise: north (back to viewer), northeast, east, southeast, south (front), southwest, west, northwest. Row 1 standing/idle; row 2 walking/rolling active stride; row 3 firing/using tools/harvesting; row 4 destroyed corpse or wreck lying flat. Same complete subject and scale in every cell, fixed elevated isometric camera, each facing must show a different angle. NO duplicate rows. Keep generous transparent gutters between cells, each entire subject inside its own cell with no overlap. Actual alpha transparency, NO background, checkerboard, text, labels, gridlines, scenery, franchise symbols or watermark. All sprites aligned to a consistent ground anchor. Render small miniatures with empty space, not oversized portraits.",
+    "source": "art/new-realms/painted-source/f_mcv.png"
+  }
+]

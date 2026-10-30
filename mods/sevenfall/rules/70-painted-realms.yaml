@@ -1,0 +1,368 @@
+# Generated painted asset bindings; gameplay values are unchanged.
+I_GHOST:
+	RenderSprites:
+		Image: i_ghost
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_ghost.death
+
+I_LANCE:
+	RenderSprites:
+		Image: i_lance
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_lance.death
+
+I_ENDURER:
+	RenderSprites:
+		Image: i_endurer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_endurer.death
+
+I_CRUCIBLE:
+	RenderSprites:
+		Image: i_crucible
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_crucible.death
+
+I_THREAD:
+	RenderSprites:
+		Image: i_thread
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_thread.death
+
+I_RELAY:
+	RenderSprites:
+		Image: i_relay
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_relay.death
+
+I_SAVANT:
+	RenderSprites:
+		Image: i_savant
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_savant.death
+
+I_GAMBIT:
+	RenderSprites:
+		Image: i_gambit
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_gambit.death
+
+F_REGENT:
+	RenderSprites:
+		Image: f_regent
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_regent.death
+
+F_RELIQUARY:
+	RenderSprites:
+		Image: f_reliquary
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_reliquary.death
+
+F_CANTICLE:
+	RenderSprites:
+		Image: f_canticle
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_canticle.death
+
+F_LAMENTOR:
+	RenderSprites:
+		Image: f_lamentor
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_lamentor.death
+
+F_FLAYER:
+	RenderSprites:
+		Image: f_flayer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_flayer.death
+
+F_MARTYR:
+	RenderSprites:
+		Image: f_martyr
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_martyr.death
+
+F_PINIONS:
+	RenderSprites:
+		Image: f_pinions
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_pinions.death
+
+F_HARROW:
+	RenderSprites:
+		Image: f_harrow
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_harrow.death
+
+I_GENERATOR:
+	RenderSprites:
+		Image: i_generator
+
+I_VEILWORKS:
+	RenderSprites:
+		Image: i_veilworks
+
+I_BARRACKS:
+	RenderSprites:
+		Image: i_barracks
+
+I_MOTORPOOL:
+	RenderSprites:
+		Image: i_motorpool
+
+I_ADVPOWER:
+	RenderSprites:
+		Image: i_advpower
+
+I_SERVICE:
+	RenderSprites:
+		Image: i_service
+
+I_RADAR:
+	RenderSprites:
+		Image: i_radar
+
+I_TECH:
+	RenderSprites:
+		Image: i_tech
+
+I_AUTOCANNON:
+	RenderSprites:
+		Image: i_autocannon
+
+I_MISSILENEST:
+	RenderSprites:
+		Image: i_missilenest
+
+F_SPIRE:
+	RenderSprites:
+		Image: f_spire
+
+F_VEILWORKS:
+	RenderSprites:
+		Image: f_veilworks
+
+F_CHAPEL:
+	RenderSprites:
+		Image: f_chapel
+
+F_ARMORY:
+	RenderSprites:
+		Image: f_armory
+
+F_ADVPOWER:
+	RenderSprites:
+		Image: f_advpower
+
+F_SERVICE:
+	RenderSprites:
+		Image: f_service
+
+F_RADAR:
+	RenderSprites:
+		Image: f_radar
+
+F_TECH:
+	RenderSprites:
+		Image: f_tech
+
+F_WATCHFIRE:
+	RenderSprites:
+		Image: f_watchfire
+
+F_JUDGMENT:
+	RenderSprites:
+		Image: f_judgment
+
+F_SKYWARD:
+	RenderSprites:
+		Image: f_skyward
+
+I_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_rifleman_death
+
+I_RIFLEMAN:
+	RenderSprites:
+		Image: i_rifleman
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_rifleman.death
+
+I_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_rocketeer_death
+
+I_ROCKETEER:
+	RenderSprites:
+		Image: i_rocketeer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_rocketeer.death
+
+I_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_bulwark_death
+
+I_BULWARK:
+	RenderSprites:
+		Image: i_bulwark
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_bulwark.death
+
+I_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_engineer_death
+
+I_ENGINEER:
+	RenderSprites:
+		Image: i_engineer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_engineer.death
+	-SpawnActorOnDeath:
+
+I_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_harvester_death
+
+I_HARVESTER:
+	RenderSprites:
+		Image: i_harvester
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_harvester.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: i_harvester
+
+F_WATCHER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_watcher_death
+
+F_WATCHER:
+	RenderSprites:
+		Image: f_watcher
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_watcher.death
+
+F_JUDICATOR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_judicator_death
+
+F_JUDICATOR:
+	RenderSprites:
+		Image: f_judicator
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_judicator.death
+
+F_AEGIS.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_aegis_death
+
+F_AEGIS:
+	RenderSprites:
+		Image: f_aegis
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_aegis.death
+
+F_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_engineer_death
+
+F_ENGINEER:
+	RenderSprites:
+		Image: f_engineer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_engineer.death
+	-SpawnActorOnDeath:
+
+F_GATHERER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_gatherer_death
+
+F_GATHERER:
+	RenderSprites:
+		Image: f_gatherer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_gatherer.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: f_gatherer
+
+FACT:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_yard
+			i_iron: i_yard
+			i_grid: i_yard
+			i_paradox: i_yard
+			f_thrones: f_yard
+			f_choir: f_yard
+			f_scars: f_yard
+			f_wings: f_yard
+
+MCV:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_mcv
+			i_iron: i_mcv
+			i_grid: i_mcv
+			i_paradox: i_mcv
+			f_thrones: f_mcv
+			f_choir: f_mcv
+			f_scars: f_mcv
+			f_wings: f_mcv
+
+MCV.Husk:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_mcv
+			i_iron: i_mcv
+			i_grid: i_mcv
+			i_paradox: i_mcv
+			f_thrones: f_mcv
+			f_choir: f_mcv
+			f_scars: f_mcv
+			f_wings: f_mcv
+
+MCV.SFDEATH:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_mcv_death
+			i_iron: i_mcv_death
+			i_grid: i_mcv_death
+			i_paradox: i_mcv_death
+			f_thrones: f_mcv_death
+			f_choir: f_mcv_death
+			f_scars: f_mcv_death
+			f_wings: f_mcv_death
+
+HARV.EmptyHusk:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_harvester
+			i_iron: i_harvester
+			i_grid: i_harvester
+			i_paradox: i_harvester
+			f_thrones: f_gatherer
+			f_choir: f_gatherer
+			f_scars: f_gatherer
+			f_wings: f_gatherer
+
+HARV.FullHusk:
+	RenderSprites:
+		FactionImages:
+			i_echo: i_harvester
+			i_iron: i_harvester
+			i_grid: i_harvester
+			i_paradox: i_harvester
+			f_thrones: f_gatherer
+			f_choir: f_gatherer
+			f_scars: f_gatherer
+			f_wings: f_gatherer

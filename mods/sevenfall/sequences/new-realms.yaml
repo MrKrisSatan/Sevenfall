@@ -76,6 +76,27 @@ i_ghost:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_ghost.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_ghost.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_ghost.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_ghost-icon.png
 i_ghost_death:
@@ -168,6 +189,27 @@ i_lance:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_lance.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_lance.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_lance.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_lance-icon.png
@@ -262,6 +304,27 @@ i_endurer:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_endurer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_endurer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_endurer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_endurer-icon.png
 i_endurer_death:
@@ -354,6 +417,27 @@ i_crucible:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_crucible.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_crucible.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_crucible.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_crucible-icon.png
@@ -448,6 +532,27 @@ i_thread:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_thread.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_thread.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_thread.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_thread-icon.png
 i_thread_death:
@@ -540,6 +645,27 @@ i_relay:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_relay.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_relay.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_relay.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_relay-icon.png
@@ -634,6 +760,27 @@ i_savant:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_savant.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_savant.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_savant.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_savant-icon.png
 i_savant_death:
@@ -726,6 +873,27 @@ i_gambit:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_gambit.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_gambit.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_gambit.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/i_gambit-icon.png
@@ -820,6 +988,27 @@ f_regent:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_regent.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_regent.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_regent.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_regent-icon.png
 f_regent_death:
@@ -912,6 +1101,27 @@ f_reliquary:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_reliquary.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_reliquary.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_reliquary.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_reliquary-icon.png
@@ -1006,6 +1216,27 @@ f_canticle:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_canticle.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_canticle.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_canticle.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_canticle-icon.png
 f_canticle_death:
@@ -1098,6 +1329,27 @@ f_lamentor:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_lamentor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_lamentor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_lamentor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_lamentor-icon.png
@@ -1192,6 +1444,27 @@ f_flayer:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_flayer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_flayer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_flayer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_flayer-icon.png
 f_flayer_death:
@@ -1284,6 +1557,27 @@ f_martyr:
 		Length: 1
 		Facings: -8
 		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_martyr.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_martyr.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_martyr.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
 		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_martyr-icon.png
@@ -1378,6 +1672,27 @@ f_pinions:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_pinions.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_pinions.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_pinions.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_pinions-icon.png
 f_pinions_death:
@@ -1471,6 +1786,27 @@ f_harrow:
 		Facings: -8
 		Stride: 1
 		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_harrow.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_harrow.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_harrow.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
 	icon:
 		Filename: sevenfall|art/new-realms/f_harrow-icon.png
 f_harrow_death:
@@ -1482,6 +1818,2961 @@ f_harrow_death:
 		Tick: 120
 	corpse:
 		Filename: sevenfall|art/new-realms/f_harrow.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_generator:
+	idle:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_generator.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_generator-icon.png
+i_veilworks:
+	idle:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_veilworks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_veilworks-icon.png
+i_barracks:
+	idle:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_barracks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_barracks-icon.png
+i_motorpool:
+	idle:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_motorpool.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_motorpool-icon.png
+i_advpower:
+	idle:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_advpower.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_advpower-icon.png
+i_service:
+	idle:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_service.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_service-icon.png
+i_radar:
+	idle:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_radar.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_radar-icon.png
+i_tech:
+	idle:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_tech.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_tech-icon.png
+i_autocannon:
+	idle:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_autocannon.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_autocannon-icon.png
+i_missilenest:
+	idle:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_missilenest.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_missilenest-icon.png
+f_spire:
+	idle:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_spire.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_spire-icon.png
+f_veilworks:
+	idle:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_veilworks.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_veilworks-icon.png
+f_chapel:
+	idle:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_chapel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_chapel-icon.png
+f_armory:
+	idle:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_armory.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_armory-icon.png
+f_advpower:
+	idle:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_advpower.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_advpower-icon.png
+f_service:
+	idle:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_service.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_service-icon.png
+f_radar:
+	idle:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_radar.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_radar-icon.png
+f_tech:
+	idle:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_tech.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_tech-icon.png
+f_watchfire:
+	idle:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_watchfire.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_watchfire-icon.png
+f_judgment:
+	idle:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_judgment.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_judgment-icon.png
+f_skyward:
+	idle:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_skyward.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_skyward-icon.png
+i_rifleman:
+	idle:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_rifleman-icon.png
+i_rifleman_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_rifleman.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_rocketeer:
+	idle:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_rocketeer-icon.png
+i_rocketeer_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_rocketeer.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_bulwark:
+	idle:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_bulwark-icon.png
+i_bulwark_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_bulwark.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_engineer:
+	idle:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_engineer-icon.png
+i_engineer_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_engineer.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_harvester:
+	idle:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_harvester-icon.png
+i_harvester_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_harvester.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_watcher:
+	idle:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_watcher-icon.png
+f_watcher_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_watcher.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_judicator:
+	idle:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_judicator-icon.png
+f_judicator_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_judicator.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_aegis:
+	idle:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_aegis-icon.png
+f_aegis_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_aegis.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_engineer:
+	idle:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_engineer-icon.png
+f_engineer_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_engineer.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_gatherer:
+	idle:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_gatherer-icon.png
+f_gatherer_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_gatherer.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_yard:
+	idle:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/i_yard.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/i_yard-icon.png
+f_yard:
+	idle:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/new-realms/f_yard.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/new-realms/f_yard-icon.png
+i_mcv:
+	idle:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/i_mcv-icon.png
+i_mcv_death:
+	die:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/i_mcv.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_mcv:
+	idle:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/new-realms/f_mcv-icon.png
+f_mcv_death:
+	die:
+		Filename: sevenfall|art/new-realms/f_mcv.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/new-realms/f_mcv.png
 		Start: 42
 		Length: 1
 		Facings: -8

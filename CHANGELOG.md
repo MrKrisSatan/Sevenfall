@@ -1,5 +1,20 @@
 # Sevenfall changelog
 
+## Painted new-realm roster — development
+
+- Replaced temporary graphics with 51 painted sheets: 23 buildings and 28 units
+  across the Noetic Assembly, Forsaken Host and all eight subfactions.
+- Added matching build icons, eight-direction unit poses, building construction
+  and damage states, collector graphics, MCVs, yards and wreck bindings.
+- Expanded the development website gallery to the full current roster. Preserved
+  source images, exact prompts and SHA-256 provenance for reproducible packing.
+- Added eight distinct subfaction flags and fixed the missing tooltip flag crash.
+- Passed 108 Python tests, engine asset checks, native rendering smoke and all
+  96 paid-production checks across the eight new subfactions.
+- This is initial animation coverage: four authored states per unit facing, with
+  held wrecks; longer cycles and bespoke mobile damage bodies remain polish.
+  Published alpha.2 downloads remain unchanged.
+
 ## Noetic Assembly and Forsaken Host — development expansion
 
 - Added two original realms with four subfactions each, bringing development

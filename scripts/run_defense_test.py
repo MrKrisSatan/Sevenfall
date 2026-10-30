@@ -27,7 +27,7 @@ def main():
     parser.add_argument('--engine-dir', type=Path, help='An isolated built engine directory for concurrent diagnostics')
     parser.add_argument('--package', type=Path, help='Test the self-contained executable in this extracted candidate')
     parser.add_argument('--replay', type=Path, help='Replay a recorded diagnostic instead of launching its map')
-    parser.add_argument('--scenario', choices=['defense', 'release', 'environment', 'production', 'match', 'doctrine', 'subproduction', 'terrain', 'twelve', 'identity', 'identityai', 'newrealms', 'realmdoctrine'], default='defense')
+    parser.add_argument('--scenario', choices=['defense', 'release', 'environment', 'production', 'match', 'doctrine', 'subproduction', 'terrain', 'twelve', 'identity', 'identityai', 'newrealms', 'realmdoctrine', 'paintedrealms'], default='defense')
     parser.add_argument('--timeout', type=int)
     args = parser.parse_args()
     support = args.support_dir.resolve()

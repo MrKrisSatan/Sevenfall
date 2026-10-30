@@ -5,8 +5,8 @@
 - [x] Noetic Assembly and Forsaken Host, four selectable subfactions each.
 - [x] Sixteen exclusive units, two independent technology/economy branches, bot
   build lists, eight combat doctrines and two HUD themes.
-- [x] Original prototype directional sprites and a development roster page.
-- [ ] Bespoke building/shared-unit artwork and polished exclusive-unit animation.
+- [x] Painted building/shared-unit/exclusive-unit sprites and a full development roster gallery.
+- [ ] Longer animation cycles, mobile damage bodies and weapon alignment polish.
 - [ ] Expanded-roster full-match balance, multiplayer/save-load and release acceptance.
 
 Mechanics, limitations and native component evidence: [new realms](docs/NEW_REALMS.md).

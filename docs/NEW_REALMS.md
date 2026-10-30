@@ -66,10 +66,12 @@ Balefire Watches, Wrath Organs and Broken Halo Batteries provide defenses.
 - Shared combat units have distinct HP, cost and weapon damage from their donor
   definitions. Forsaken combat units do not inherit angelic Renewal or demonic
   Blood Frenzy. Each exclusive unit has explicit HP, cost, speed and weapon.
-- Existing original building/shared-unit bodies are temporary presentation.
-  Sixteen exclusive units have new original vector prototype sprites: eight
-  directions, two movement frames, two firing frames and three death phases.
-  Detailed painted bodies, bespoke building art and fuller animation remain work.
+- 51 painted sheets replace the temporary bodies: 23 buildings and 28 units,
+  including construction yards, MCVs, collectors and all sixteen exclusive units.
+  Units have eight directions and four authored states: idle, stride, action and
+  wreck. Buildings have intact, damaged, critical, two construction and operating
+  states. The sequence pack holds each wreck for three frames; this is one pose,
+  not three death phases. Mobile damage states still reuse the intact body.
 - Machine HUDs use cyan/blue circuitry; Forsaken HUDs use violet/bone and a
   broken-wing emblem. Neutral menus remain neutral.
 - This pass adds no new superweapons, aircraft, naval or flying fallen units.
@@ -80,7 +82,9 @@ Balefire Watches, Wrath Organs and Broken Halo Batteries provide defenses.
 
 ## Rebuild
 
-Run `python scripts/build_new_realms.py`, `node scripts/build_new_realm_art.cjs`,
+Run `python scripts/build_new_realms.py`, `node scripts/prepare_realm_painted_art.cjs`,
+`python scripts/bind_realm_painted_art.py`,
+`node scripts/build_realm_flags.cjs`, `python scripts/build_new_realms_page.py`
 and `node scripts/build_ui.cjs` (Node requires sharp). Then generate the native
 maps with `scripts/generate_new_realms_test.py` and
 `scripts/generate_realm_doctrine_test.py`, and use `scripts/build.py build`.
@@ -89,7 +93,18 @@ Run `scripts/run_defense_test.py --scenario newrealms --support-dir PATH
 activation/expiration. Diagnostic maps are excluded by the public map allowlist.
 
 The reviewed roster and stats live in `design/NEW_REALMS_ROSTER.json` and the
-generator. Sprite provenance is recorded in `art/new-realms/manifest.json`.
+generator. Full sprite provenance is recorded in `art/new-realms/painted-manifest.json`.
+
+The painted pass also supplies eight distinct vector faction flags for lobby and
+unit tooltips. A native tooltip inspection exposed the missing flag mappings;
+all eight are now bound and covered by the selection contract test.
+
+Painted-pass acceptance: 108 Python tests, engine YAML and missing-sprite checks,
+245 chrome collections at 1x/2x/3x, and a native 51-design rendering smoke scenario
+covering movement, damaged/critical buildings and death actors. See
+[rendering evidence](../tests/native-evidence/painted-realms-rendering.txt).
+All [96 paid-production checks](../tests/native-evidence/painted-realms-production.txt)
+were rerun successfully with the painted art and corrected faction flags.
 
 ## Recorded development acceptance
 

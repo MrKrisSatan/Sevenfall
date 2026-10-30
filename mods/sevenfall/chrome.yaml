@@ -1,9 +1,17 @@
-# Parent faction emblems; dedicated subfaction marks remain a later art pass.
+# Original realm emblems plus eight distinct Assembly/Forsaken subfaction marks.
 flags:
-	Image: sevenfall|art/factions.png
-	Image2x: sevenfall|art/factions-2x.png
-	Image3x: sevenfall|art/factions-3x.png
+	Image: sevenfall|art/ui/all-realm-flags.png
+	Image2x: sevenfall|art/ui/all-realm-flags-2x.png
+	Image3x: sevenfall|art/ui/all-realm-flags-3x.png
 	Regions:
+		i_echo: 30, 0, 30, 15
+		i_iron: 30, 15, 30, 15
+		i_grid: 30, 30, 30, 15
+		i_paradox: 30, 45, 30, 15
+		f_thrones: 30, 60, 30, 15
+		f_choir: 30, 75, 30, 15
+		f_scars: 30, 90, 30, 15
+		f_wings: 30, 105, 30, 15
 		a_seraph: 0, 0, 30, 15
 		a_warden: 0, 0, 30, 15
 		a_exile: 0, 0, 30, 15

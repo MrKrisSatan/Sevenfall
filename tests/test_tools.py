@@ -106,9 +106,10 @@ class IntegrationTools(unittest.TestCase):
                     self.assertGreaterEqual(size, required)
                     self.assertEqual(size & (size-1), 0, 'Chrome textures must be power-of-two')
         chrome = (ROOT / 'mods/sevenfall/chrome.yaml').read_text()
+        atlas_width, atlas_height = png_size('ui/all-realm-flags.png')
         for x, y, width, height in re.findall(r'^\t\t\w+: (\d+), (\d+), (\d+), (\d+)$', chrome, re.M):
-            self.assertLessEqual(int(x)+int(width), 30)
-            self.assertLessEqual(int(y)+int(height), 60)
+            self.assertLessEqual(int(x)+int(width), atlas_width)
+            self.assertLessEqual(int(y)+int(height), atlas_height)
 
     def test_every_faction_has_lobby_icon_and_ingame_theme(self):
         mod = ROOT / 'mods/sevenfall'

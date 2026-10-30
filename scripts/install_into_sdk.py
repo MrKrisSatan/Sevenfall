@@ -175,6 +175,7 @@ def main() -> None:
         ('Rules', 'rules/55-subfactions.yaml'),
         ('Rules', 'rules/60-identities.yaml'),
         ('Rules', 'rules/65-new-realms.yaml'),
+        ('Rules', 'rules/70-painted-realms.yaml'),
         ('Weapons', 'weapons/new-realms.yaml'),
         ('FluentMessages', 'fluent/new-realms.ftl'),
         ('Sequences', 'sequences/new-realms.yaml'),

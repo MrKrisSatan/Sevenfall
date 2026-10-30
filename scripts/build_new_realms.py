@@ -1,6 +1,6 @@
 """Original Noetic Assembly and Forsaken Host gameplay. GPL-3.0-or-later.
 
-Uses explicitly identified existing Sevenfall animated bodies for this gameplay pass.
+Painted renderer overrides are generated separately by bind_realm_painted_art.py.
 No film characters, designs, dialogue or external game assets are imported.
 """
 from pathlib import Path
@@ -89,7 +89,7 @@ def main():
    if suffix in ('harvester','gatherer','bulwark','aegis'):
     b+=f'\tRepairable:\n\t\tRepairActors: {prefix}_service\n'
    out.append(b)
-   fluent += [f'sf-{key}-name = {name}',f'sf-{key}-description = {name}. '+('Noetic Assembly' if prefix=='i' else 'Forsaken Host')+' infrastructure or shared roster. Uses a temporary existing Sevenfall body.']
+   fluent += [f'sf-{key}-name = {name}',f'sf-{key}-description = {name}. '+('Noetic Assembly' if prefix=='i' else 'Forsaken Host')+' infrastructure or shared roster.']
    records.append(dict(id=actor,name=name,parent=parent,realm=family))
  for faction,actor,name,parent,cost,hp,speed,weapon,damage,range_,reload,role in UNITS:
   family='machine' if faction[0]=='i' else 'fallen'; vehicle=parent in ('H_BULWARK','A_AEGIS','D_RAVAGER'); factory=('i_motorpool' if faction[0]=='i' else 'f_armory') if vehicle else ('i_barracks' if faction[0]=='i' else 'f_chapel')

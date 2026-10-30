@@ -1,6 +1,7 @@
 // Original code-native prototype silhouettes, GPL-3.0-or-later.
 const fs=require('node:fs/promises'),path=require('node:path'),sharp=require('sharp'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..');
+if(require('node:fs').existsSync(path.join(root,'art/new-realms/painted-manifest.json')))throw Error('Prototype generator retired: use prepare_realm_painted_art.cjs to preserve painted artwork.');
 function chunk(k,v){const d=Buffer.from(k+'\0'+v),b=Buffer.concat([Buffer.from('tEXt'),d]);let c=0xffffffff;for(const x of b){c^=x;for(let i=0;i<8;i++)c=(c>>>1)^((c&1)?0xedb88320:0);}const n=Buffer.alloc(4),s=Buffer.alloc(4);n.writeUInt32BE(d.length);s.writeUInt32BE((c^0xffffffff)>>>0);return Buffer.concat([n,b,s]);}
 function pose(index,facing,phase,vehicle,machine){
  const angle=facing*Math.PI/4,dx=Math.sin(angle),dy=-Math.cos(angle)*.55;
