@@ -1,0 +1,183 @@
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: no building means no power f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: building automatically starts charging f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: automatic charge completes f_cataclysm
+POWERLIFECYCLE_TEST PASS: powers hidden on Buildings tab
+POWERLIFECYCLE_TEST PASS: power appears on Defences tab
+POWERLIFECYCLE_TEST PASS: defense icons clear the power row
+POWERLIFECYCLE_TEST PASS: old detached support palette removed
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: destroyed building removes ready power and blocks orders f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild restores fresh charging f_cataclysm
+POWERLIFECYCLE_TEST PASS: Defences remains selectable without Construction Yard
+POWERLIFECYCLE_TEST PASS: rebuilt installation restores sidebar icon without yard
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuilt building can deploy and recharge f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: low power pauses charge without removing icon f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: restoring electricity resumes charge f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: removal or sale removes power f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_a_seraph_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_a_warden_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_a_exile_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_a_desolation_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_h_bastion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_h_union_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_h_covenant_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_h_area52_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_d_legion_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_d_brood_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_d_court_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power sf_d_contempt_ultimate
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power h_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power a_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power d_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power i_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: rebuild after removal restores power f_cataclysm
+Lua debug: POWERLIFECYCLE_TEST PASS: surviving duplicate retains shared power
+Lua debug: POWERLIFECYCLE_TEST PASS: last duplicate lost removes shared power
+POWERLIFECYCLE_TEST PASS: captured power icons wrap into six rows
+POWERLIFECYCLE_TEST PASS: wrapped powers do not overlap defenses
+POWERLIFECYCLE_TEST PASS: all seventeen powers fit viewport
+Lua debug: POWERLIFECYCLE_TEST PASS: captured installations expose seventeen distinct powers
+Lua debug: POWERLIFECYCLE_TEST COMPLETE checks=173

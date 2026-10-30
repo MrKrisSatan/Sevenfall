@@ -23,6 +23,14 @@ beast; hell has cheaper assault aircraft.
 
 Each shared installation requires its faction technology building, costs 6000,
 consumes 250 power, has a five-minute recharge at normal speed and a limit of one.
+Their power icons appear automatically at the top of the Defences tab and charge
+without a purchase or queue click. Click a ready icon to target. Losing the last
+supplying installation removes its icon and firing access; rebuilding starts a
+fresh charge cycle. Losing electricity pauses charging. A surviving duplicate
+installation keeps its shared power available. The Defences tab remains usable
+without a Construction Yard if a power installation survives. These rules also
+apply to all twelve subfaction powers.
+
 All powers use normal support-power orders, explored-area targeting and a visible
 five-second warning. Source destruction, ownership loss or power loss during the
 warning cancels the strike. Existing faction-specific powers remain separate.
@@ -61,3 +69,7 @@ validation and [53 native checks](../tests/native-evidence/shared-arsenal.txt).
 The existing subfaction powers also passed [78 native regression checks](../tests/native-evidence/shared-arsenal-regression.txt).
 Full multiplayer/save-load, autonomous AI full matches, audio and competitive
 balance remain separate acceptance work. Published alpha.2 is unchanged.
+
+Building lifecycle and sidebar acceptance: 113 Python tests, engine validation,
+and [173 lifecycle + 9 UI checks](../tests/native-evidence/power-lifecycle.txt).
+Verified the grid at 1600×900 and 1280×720; a direct sidebar click selected and launched Nuclear.

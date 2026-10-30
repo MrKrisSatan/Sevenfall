@@ -13,7 +13,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.Sevenfall
 {
     public enum SFUltimate { Dawn, Sanctuary, Rebellion, Requiem, Barrage, Relief, Covenant, Singularity, Furnace, Bloodtide, Silence, Verdict, Nuclear, Petrification, Hellrift, Extinction, Rapture }
-    public class SFFactionPowerInfo : SupportPowerInfo
+    public class SFFactionPowerInfo : SupportPowerInfo, Requires<BuildingInfo>
     {
         public readonly SFUltimate Kind;
         public readonly int Radius = 5;

@@ -1,5 +1,17 @@
 # Sevenfall changelog
 
+## Building-bound superweapons — development
+
+- All 17 superweapon powers automatically charge in the Defences tab while their
+  installation exists. Ready powers light the tab; click a ready icon to target.
+- Losing the last supplying installation removes its icon and firing access.
+  Rebuilding restores the icon with a fresh charge; loss of electricity pauses it.
+- Powers wrap into a three-column grid above ordinary defenses. The tab remains
+  usable without a Construction Yard when a superweapon installation survives.
+- Native acceptance passed 173 lifecycle checks and 9 sidebar checks, including
+  all 17 powers, rebuilding, removal, power loss and duplicate installations.
+  The 113 Python tests and engine validation also pass.
+
 ## Shared realm arsenal â€” development
 
 - All five parent realms now offer aircraft, beasts and shared superweapons to

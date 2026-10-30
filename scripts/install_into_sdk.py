@@ -144,6 +144,8 @@ def main() -> None:
     player_ui = '# Adapted from OpenRA RA ingame-player.yaml (GPL-3.0-or-later).\n' + player_ui
     player_ui = player_ui.replace('Image@COMMAND_BAR_BACKGROUND:\n',
                                   'Image@COMMAND_BAR_BACKGROUND:\n\t\t\tLogic: AddFactionSuffixLogic\n')
+    from superweapon_sidebar import integrate
+    player_ui = integrate(player_ui)
     (target / 'chrome').mkdir(exist_ok=True)
     (target / 'chrome/ingame-player.yaml').write_text(player_ui, encoding='utf-8')
     content = content.replace('ra|chrome/ingame-player.yaml', 'sevenfall|chrome/ingame-player.yaml')

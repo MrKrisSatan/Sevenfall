@@ -19,6 +19,8 @@ namespace OpenRA.Mods.Sevenfall
     {
         public SFIdentityPlayerProperties(ScriptContext context, Player player) : base(context, player) { }
         public bool FactionPowerReady => Player.PlayerActor.Trait<SupportPowerManager>().Powers.Values.Any(p => p.Info is SFFactionPowerInfo && p.Ready);
+        public int FactionPowerCount => Player.PlayerActor.Trait<SupportPowerManager>().Powers.Values.Count(p => p.Info is SFFactionPowerInfo && !p.Disabled);
+        public int FactionPowerRemaining => Player.PlayerActor.Trait<SupportPowerManager>().Powers.Values.Where(p => p.Info is SFFactionPowerInfo && !p.Disabled).Select(p => p.RemainingTicks).DefaultIfEmpty(-1).First();
         public int FactionPowerLaunches => Player.World.WorldActor.Trait<SFFactionPowerManager>().Launches(Player);
         public bool FireFactionPower(CPos cell)
         {

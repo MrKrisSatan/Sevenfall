@@ -1,0 +1,134 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Superweapon Lifecycle Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Observer:
+		Name: Observer
+		Faction: a_seraph
+		Playable: True
+		NonCombatant: True
+	PlayerReference@P1:
+		Name: P1
+		Faction: a_warden
+	PlayerReference@P2:
+		Name: P2
+		Faction: a_exile
+	PlayerReference@P3:
+		Name: P3
+		Faction: a_desolation
+	PlayerReference@P4:
+		Name: P4
+		Faction: h_bastion
+	PlayerReference@P5:
+		Name: P5
+		Faction: h_union
+	PlayerReference@P6:
+		Name: P6
+		Faction: h_covenant
+	PlayerReference@P7:
+		Name: P7
+		Faction: h_area52
+	PlayerReference@P8:
+		Name: P8
+		Faction: d_legion
+	PlayerReference@P9:
+		Name: P9
+		Faction: d_brood
+	PlayerReference@P10:
+		Name: P10
+		Faction: d_court
+	PlayerReference@P11:
+		Name: P11
+		Faction: d_contempt
+	PlayerReference@P12:
+		Name: P12
+		Faction: h_bastion
+	PlayerReference@P13:
+		Name: P13
+		Faction: a_seraph
+	PlayerReference@P14:
+		Name: P14
+		Faction: d_legion
+	PlayerReference@P15:
+		Name: P15
+		Faction: i_echo
+	PlayerReference@P16:
+		Name: P16
+		Faction: f_thrones
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 40,40
+Rules:
+	World:
+		-SpawnStartingUnits:
+		SFPowerSidebarProbe:
+		LuaScript:
+			Scripts: powerlifecycle-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			ExploredMapCheckboxEnabled: True
+	SF_A_SERAPH_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_A_WARDEN_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_A_EXILE_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_A_DESOLATION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_H_BASTION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_H_UNION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_H_COVENANT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_H_AREA52_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_D_LEGION_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_D_BROOD_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_D_COURT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	SF_D_CONTEMPT_ULTIMATE:
+		SFFactionPower:
+			ChargeInterval: 75
+	H_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 75
+	A_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 75
+	D_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 75
+	I_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 75
+	F_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 75
