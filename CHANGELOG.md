@@ -1,5 +1,17 @@
 # Sevenfall changelog
 
+## Noetic Assembly and Forsaken Host — development expansion
+
+- Added two original realms with four subfactions each, bringing development
+  selection to twenty while preserving all twelve existing choices.
+- Added sixteen exclusive units, separate shared armies/economies and eight
+  combat doctrines with distinct strengths and counterplay.
+- Added machine and fallen HUD themes and original eight-direction vector
+  prototype unit sprites with movement, firing and death phases.
+- Existing building/shared-unit bodies remain temporary. Expanded-roster balance,
+  full-match multiplayer and save/load acceptance remain pending; alpha.2 downloads
+  are unchanged. See docs/NEW_REALMS.md for mechanics and scope.
+
 ## Twelve-faction identity pass (alpha.2)
 
 - Added unique passive mechanics to the nine original choices, retaining the

@@ -1,0 +1,97 @@
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P0
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P1
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P2
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P3
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P4
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P5
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P6
+Lua debug: NEWREALMS_TEST PASS: MCV deploys P7
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_generator P0
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_generator P1
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_generator P2
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_generator P3
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_spire P4
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_spire P5
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_spire P6
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_spire P7
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_barracks P0
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_barracks P1
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_barracks P2
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_barracks P3
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_chapel P4
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_chapel P5
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_chapel P6
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_chapel P7
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_veilworks P0
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_veilworks P1
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_veilworks P2
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_veilworks P3
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_veilworks P4
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_veilworks P5
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_veilworks P6
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_veilworks P7
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_motorpool P0
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_motorpool P1
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_motorpool P2
+Lua debug: NEWREALMS_TEST PASS: paid and placed i_motorpool P3
+Lua debug: NEWREALMS_TEST PASS: produced i_rifleman P0
+Lua debug: NEWREALMS_TEST PASS: produced i_rifleman P1
+Lua debug: NEWREALMS_TEST PASS: produced i_rifleman P2
+Lua debug: NEWREALMS_TEST PASS: produced i_rifleman P3
+Lua debug: NEWREALMS_TEST PASS: produced i_bulwark P0
+Lua debug: NEWREALMS_TEST PASS: produced i_bulwark P1
+Lua debug: NEWREALMS_TEST PASS: produced i_bulwark P2
+Lua debug: NEWREALMS_TEST PASS: produced i_bulwark P3
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_armory P4
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_armory P5
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_armory P6
+Lua debug: NEWREALMS_TEST PASS: paid and placed f_armory P7
+Lua debug: NEWREALMS_TEST PASS: produced i_savant P3
+Lua debug: NEWREALMS_TEST PASS: produced i_endurer P1
+Lua debug: NEWREALMS_TEST PASS: produced i_thread P2
+Lua debug: NEWREALMS_TEST PASS: produced f_watcher P4
+Lua debug: NEWREALMS_TEST PASS: produced f_watcher P5
+Lua debug: NEWREALMS_TEST PASS: produced f_watcher P6
+Lua debug: NEWREALMS_TEST PASS: produced f_watcher P7
+Lua debug: NEWREALMS_TEST PASS: produced i_ghost P0
+Lua debug: NEWREALMS_TEST PASS: produced i_gambit P3
+Lua debug: NEWREALMS_TEST PASS: produced i_relay P2
+Lua debug: NEWREALMS_TEST PASS: produced i_lance P0
+Lua debug: NEWREALMS_TEST PASS: produced i_crucible P1
+Lua debug: NEWREALMS_TEST PASS: produced f_aegis P4
+Lua debug: NEWREALMS_TEST PASS: produced f_aegis P5
+Lua debug: NEWREALMS_TEST PASS: produced f_aegis P6
+Lua debug: NEWREALMS_TEST PASS: produced f_aegis P7
+Lua debug: NEWREALMS_TEST PASS: produced f_flayer P6
+Lua debug: NEWREALMS_TEST PASS: produced f_canticle P5
+Lua debug: NEWREALMS_TEST PASS: produced f_pinions P7
+Lua debug: NEWREALMS_TEST PASS: produced f_regent P4
+Lua debug: NEWREALMS_TEST PASS: produced f_martyr P6
+Lua debug: NEWREALMS_TEST PASS: produced f_lamentor P5
+Lua debug: NEWREALMS_TEST PASS: produced f_harrow P7
+Lua debug: NEWREALMS_TEST PASS: produced f_reliquary P4
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P0
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P0
+Lua debug: NEWREALMS_TEST PASS: production spent cash P0
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P1
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P1
+Lua debug: NEWREALMS_TEST PASS: production spent cash P1
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P2
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P2
+Lua debug: NEWREALMS_TEST PASS: production spent cash P2
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P3
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P3
+Lua debug: NEWREALMS_TEST PASS: production spent cash P3
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P4
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P4
+Lua debug: NEWREALMS_TEST PASS: production spent cash P4
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P5
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P5
+Lua debug: NEWREALMS_TEST PASS: production spent cash P5
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P6
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P6
+Lua debug: NEWREALMS_TEST PASS: production spent cash P6
+Lua debug: NEWREALMS_TEST PASS: complete paid construction and shared infantry/armor and both exclusive units P7
+Lua debug: NEWREALMS_TEST PASS: constructed refinery accepts real deliveries P7
+Lua debug: NEWREALMS_TEST PASS: production spent cash P7
+Lua debug: NEWREALMS_TEST COMPLETE checks=96

@@ -1,5 +1,16 @@
 # Sevenfall development roadmap
 
+## New realms development expansion
+
+- [x] Noetic Assembly and Forsaken Host, four selectable subfactions each.
+- [x] Sixteen exclusive units, two independent technology/economy branches, bot
+  build lists, eight combat doctrines and two HUD themes.
+- [x] Original prototype directional sprites and a development roster page.
+- [ ] Bespoke building/shared-unit artwork and polished exclusive-unit animation.
+- [ ] Expanded-roster full-match balance, multiplayer/save-load and release acceptance.
+
+Mechanics, limitations and native component evidence: [new realms](docs/NEW_REALMS.md).
+
 **Current milestone: [0.3.0-alpha.2 Windows skirmish tester alpha](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2).**
 Twelve faction choices, two exclusive units and one superweapon per choice, and
 three public skirmish maps are shipped. Campaigns and broader competitive balance

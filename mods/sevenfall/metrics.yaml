@@ -12,3 +12,11 @@ Metrics:
 	FactionSuffix-d_court: infernal
 	FactionSuffix-d_contempt: infernal
 	TextfieldColorHighlight: 434C58
+	FactionSuffix-i_echo: machine
+	FactionSuffix-i_iron: machine
+	FactionSuffix-i_grid: machine
+	FactionSuffix-i_paradox: machine
+	FactionSuffix-f_thrones: fallen
+	FactionSuffix-f_choir: fallen
+	FactionSuffix-f_scars: fallen
+	FactionSuffix-f_wings: fallen

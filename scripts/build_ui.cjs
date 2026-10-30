@@ -7,7 +7,9 @@ const themes = {
   neutral: {base:'#181b20', edge:'#78828d', accent:'#c2c8cf'},
   angelic: {base:'#292a29', edge:'#9e8961', accent:'#eedaa2'},
   human: {base:'#192830', edge:'#527f8c', accent:'#8bd8df'},
-  infernal: {base:'#2a1a20', edge:'#974d47', accent:'#f49768'}
+  infernal: {base:'#2a1a20', edge:'#974d47', accent:'#f49768'},
+  machine: {base:'#101f28', edge:'#467ca8', accent:'#70f6ee'},
+  fallen: {base:'#261d30', edge:'#8c708f', accent:'#d6b3d3'}
 };
 const svg = (w,h,body) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`;
 function panel(x,y,w,h,t,fill=t.base) {
@@ -18,6 +20,8 @@ function mark(theme,x,y,r) {
   if(theme==='angelic') d='M0 -26 L7 -7 L30 -18 L20 3 L8 13 L0 27 L-8 13 L-20 3 L-30 -18 L-7 -7 Z M-24 -10 L-9 2 M24 -10 L9 2';
   else if(theme==='human') d='M-23 -24 H23 V5 L0 27 L-23 5 Z M-12 9 V-10 H-3 V-18 H5 V-10 H13 V9 M-16 15 H16';
   else if(theme==='infernal') d='M-27 -27 L-9 -11 L0 -21 L9 -11 L27 -27 L21 3 L0 28 L-21 3 Z M0 -8 L9 5 L0 18 L-9 5 Z';
+  else if(theme==='machine') d='M-18 -18 H18 V18 H-18 Z M-8 -8 H8 V8 H-8 Z M0 -30 V-18 M0 18 V30 M-30 0 H-18 M18 0 H30 M-26 -26 L-18 -18 M18 18 L26 26';
+  else if(theme==='fallen') d='M-24 -21 L-10 -7 L-30 5 L-12 3 L-20 21 L0 11 L20 21 L12 3 L30 5 L10 -7 L24 -21 M-12 -24 Q0 -31 12 -24 M-8 -20 L0 11 L8 -20';
   else d='M0 -28 L22 -17 L27 7 L12 25 L-12 25 L-27 7 L-22 -17 Z M0 -28 V28 M-27 7 L22 -17 M27 7 L-22 -17';
   return `<g transform="translate(${x} ${y}) scale(${r/30})" fill="none" stroke="${themes[theme].accent}" stroke-width="1.8" stroke-linejoin="round"><path d="${d}"/></g>`;
 }
@@ -76,6 +80,7 @@ const image = name => `\tImage: sevenfall|art/ui/${name}.png\n\tImage2x: sevenfa
     preview+=`<text x="${x+130}" y="190" text-anchor="middle" fill="${themes[name].accent}" font-family="sans-serif" font-size="20">${name.toUpperCase()}</text>`;
     preview+=panel(x+20,220,220,36,themes[name])+panel(x+20,270,220,80,themes[name]);
   }
-  await fs.writeFile(path.join(root,'art/ui/theme-preview.svg'),svg(1120,390,preview));
-  await sharp(Buffer.from(svg(1120,390,preview))).png().toFile(path.join(root,'art/ui/theme-preview.png'));
+  const previewWidth=Object.keys(themes).length*280;
+  await fs.writeFile(path.join(root,'art/ui/theme-preview.svg'),svg(previewWidth,390,preview));
+  await sharp(Buffer.from(svg(previewWidth,390,preview))).png().toFile(path.join(root,'art/ui/theme-preview.png'));
 })();

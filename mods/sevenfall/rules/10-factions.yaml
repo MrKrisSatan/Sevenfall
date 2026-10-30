@@ -74,10 +74,50 @@
 		InternalName: d_contempt
 		Side: Demons
 		Description: sf-faction-d-contempt-description
+	Faction@i_echo:
+		Name: sf-faction-i-echo-name
+		InternalName: i_echo
+		Side: Noetic Assembly
+		Description: sf-faction-i-echo-description
+	Faction@i_iron:
+		Name: sf-faction-i-iron-name
+		InternalName: i_iron
+		Side: Noetic Assembly
+		Description: sf-faction-i-iron-description
+	Faction@i_grid:
+		Name: sf-faction-i-grid-name
+		InternalName: i_grid
+		Side: Noetic Assembly
+		Description: sf-faction-i-grid-description
+	Faction@i_paradox:
+		Name: sf-faction-i-paradox-name
+		InternalName: i_paradox
+		Side: Noetic Assembly
+		Description: sf-faction-i-paradox-description
+	Faction@f_thrones:
+		Name: sf-faction-f-thrones-name
+		InternalName: f_thrones
+		Side: Forsaken Host
+		Description: sf-faction-f-thrones-description
+	Faction@f_choir:
+		Name: sf-faction-f-choir-name
+		InternalName: f_choir
+		Side: Forsaken Host
+		Description: sf-faction-f-choir-description
+	Faction@f_scars:
+		Name: sf-faction-f-scars-name
+		InternalName: f_scars
+		Side: Forsaken Host
+		Description: sf-faction-f-scars-description
+	Faction@f_wings:
+		Name: sf-faction-f-wings-name
+		InternalName: f_wings
+		Side: Forsaken Host
+		Description: sf-faction-f-wings-description
 	Faction@sf_random:
 		Name: sf-faction-random-name
 		InternalName: Random
-		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52
+		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52, i_echo, i_iron, i_grid, i_paradox, f_thrones, f_choir, f_scars, f_wings
 		Side: Random
 		Description: sf-faction-random-description
 	ResourceRenderer:
@@ -97,7 +137,7 @@ World:
 	SFDefenseManager:
 	SFVeilglassHazard:
 	StartingUnits@mcvonly:
-		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52
+		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52, i_echo, i_iron, i_grid, i_paradox, f_thrones, f_choir, f_scars, f_wings
 	-StartingUnits@lightallies:
 	-StartingUnits@lightsoviet:
 	-StartingUnits@heavyallies:
@@ -118,10 +158,18 @@ FACT:
 		Image: h_yard
 		FactionImages:
 			a_seraph: a_yard
+			f_thrones: a_yard
+			f_choir: a_yard
+			f_scars: a_yard
+			f_wings: a_yard
 			a_warden: a_yard
 			a_exile: a_yard
 			a_desolation: a_yard
 			h_bastion: h_yard
+			i_echo: h_yard
+			i_iron: h_yard
+			i_grid: h_yard
+			i_paradox: h_yard
 			h_union: h_yard
 			h_covenant: h_yard
 			h_area52: h_yard
@@ -188,15 +236,63 @@ FACT:
 		Factions: d_contempt
 		Prerequisite: sf.d_contempt
 
+	ProvidesPrerequisite@sf_i_echo:
+		Factions: i_echo
+		Prerequisite: sf.i_echo
+
+	ProvidesPrerequisite@sf_i_iron:
+		Factions: i_iron
+		Prerequisite: sf.i_iron
+
+	ProvidesPrerequisite@sf_i_grid:
+		Factions: i_grid
+		Prerequisite: sf.i_grid
+
+	ProvidesPrerequisite@sf_i_paradox:
+		Factions: i_paradox
+		Prerequisite: sf.i_paradox
+
+	ProvidesPrerequisite@sf_f_thrones:
+		Factions: f_thrones
+		Prerequisite: sf.f_thrones
+
+	ProvidesPrerequisite@sf_f_choir:
+		Factions: f_choir
+		Prerequisite: sf.f_choir
+
+	ProvidesPrerequisite@sf_f_scars:
+		Factions: f_scars
+		Prerequisite: sf.f_scars
+
+	ProvidesPrerequisite@sf_f_wings:
+		Factions: f_wings
+		Prerequisite: sf.f_wings
+
+	ProvidesPrerequisite@sf_machine:
+		Factions: i_echo, i_iron, i_grid, i_paradox
+		Prerequisite: sf.machine
+
+	ProvidesPrerequisite@sf_fallen:
+		Factions: f_thrones, f_choir, f_scars, f_wings
+		Prerequisite: sf.fallen
+
 MCV:
 	RenderSprites:
 		Image: h_mcv
 		FactionImages:
 			a_seraph: a_mcv
+			f_thrones: a_mcv
+			f_choir: a_mcv
+			f_scars: a_mcv
+			f_wings: a_mcv
 			a_warden: a_mcv
 			a_exile: a_mcv
 			a_desolation: a_mcv
 			h_bastion: h_mcv
+			i_echo: h_mcv
+			i_iron: h_mcv
+			i_grid: h_mcv
+			i_paradox: h_mcv
 			h_union: h_mcv
 			h_covenant: h_mcv
 			h_area52: h_mcv
@@ -216,10 +312,18 @@ MCV.Husk:
 		Image: h_mcv
 		FactionImages:
 			a_seraph: a_mcv
+			f_thrones: a_mcv
+			f_choir: a_mcv
+			f_scars: a_mcv
+			f_wings: a_mcv
 			a_warden: a_mcv
 			a_exile: a_mcv
 			a_desolation: a_mcv
 			h_bastion: h_mcv
+			i_echo: h_mcv
+			i_iron: h_mcv
+			i_grid: h_mcv
+			i_paradox: h_mcv
 			h_union: h_mcv
 			h_covenant: h_mcv
 			h_area52: h_mcv
@@ -233,10 +337,18 @@ HARV.EmptyHusk:
 		Image: h_harvester
 		FactionImages:
 			a_seraph: a_harvester
+			f_thrones: a_harvester
+			f_choir: a_harvester
+			f_scars: a_harvester
+			f_wings: a_harvester
 			a_warden: a_harvester
 			a_exile: a_harvester
 			a_desolation: a_harvester
 			h_bastion: h_harvester
+			i_echo: h_harvester
+			i_iron: h_harvester
+			i_grid: h_harvester
+			i_paradox: h_harvester
 			h_union: h_harvester
 			h_covenant: h_harvester
 			h_area52: h_harvester
@@ -250,10 +362,18 @@ HARV.FullHusk:
 		Image: h_harvester
 		FactionImages:
 			a_seraph: a_harvester
+			f_thrones: a_harvester
+			f_choir: a_harvester
+			f_scars: a_harvester
+			f_wings: a_harvester
 			a_warden: a_harvester
 			a_exile: a_harvester
 			a_desolation: a_harvester
 			h_bastion: h_harvester
+			i_echo: h_harvester
+			i_iron: h_harvester
+			i_grid: h_harvester
+			i_paradox: h_harvester
 			h_union: h_harvester
 			h_covenant: h_harvester
 			h_area52: h_harvester

@@ -1,0 +1,466 @@
+{
+  "factions": [
+    [
+      "i_echo",
+      "Echo Directorate",
+      "Noetic Assembly",
+      "Patient reconnaissance and precision. After three seconds stationary, combat units gain 30% damage and 15% range."
+    ],
+    [
+      "i_iron",
+      "Iron Calculus",
+      "Noetic Assembly",
+      "Armored attrition. Combat units take 20% less damage but move 15% slower."
+    ],
+    [
+      "i_grid",
+      "Custodian Grid",
+      "Noetic Assembly",
+      "Network formations. Within four cells of a Relay Walker, combat units reload 20% faster and take 10% less damage."
+    ],
+    [
+      "i_paradox",
+      "Paradox Collegium",
+      "Noetic Assembly",
+      "Experimental skirmishers. Below half health, combat units move 30% faster and reload 15% faster; avoid sustained trades."
+    ],
+    [
+      "f_thrones",
+      "Ashen Thrones",
+      "Forsaken Host",
+      "Fallen aristocrats. After four seconds stationary, combat units take 30% less damage but attack 15% slower."
+    ],
+    [
+      "f_choir",
+      "Hollow Choir",
+      "Forsaken Host",
+      "Corrupted procession. Within four cells of a Lamentor, combat units deal 25% more damage but take 10% more damage."
+    ],
+    [
+      "f_scars",
+      "Carrion Testament",
+      "Forsaken Host",
+      "Wounded berserkers. Below half health, combat units deal 40% more damage and move 15% faster."
+    ],
+    [
+      "f_wings",
+      "Broken Firmament",
+      "Forsaken Host",
+      "Isolated hunters. With no other friendly combat unit within four cells, gain 25% speed and 20% range."
+    ]
+  ],
+  "units": [
+    [
+      "i_echo",
+      "i_ghost",
+      "Mnemonic Ghost",
+      "H_RANGER",
+      480,
+      6000,
+      110,
+      "SF_PulseRifle",
+      950,
+      "6c0",
+      32,
+      "Reconnaissance infantry; detects cloaked targets within three cells. Fragile under focus fire."
+    ],
+    [
+      "i_echo",
+      "i_lance",
+      "Needle Chassis",
+      "H_BULWARK",
+      1350,
+      30000,
+      88,
+      "SF_Judgment",
+      7500,
+      "7c0",
+      85,
+      "Mobile precision gun. Long reload and low armor demand a screen."
+    ],
+    [
+      "i_iron",
+      "i_endurer",
+      "Endurer",
+      "H_RIFLEMAN",
+      340,
+      14500,
+      62,
+      "SF_PulseRifle",
+      1200,
+      "4c0",
+      30,
+      "Expensive armored infantry; powerful in sustained exchanges but easily outmaneuvered."
+    ],
+    [
+      "i_iron",
+      "i_crucible",
+      "Crucible Engine",
+      "H_BULWARK",
+      1900,
+      82000,
+      48,
+      "SF_Judgment",
+      10000,
+      "5c0",
+      90,
+      "Slow siege chassis with exceptional health and high replacement cost."
+    ],
+    [
+      "i_grid",
+      "i_thread",
+      "Threadkeeper",
+      "H_ROCKETEER",
+      400,
+      7000,
+      82,
+      "SF_RocketeerAG",
+      2500,
+      "5c0",
+      50,
+      "Anti-armor network infantry. Escort a relay rather than fighting alone."
+    ],
+    [
+      "i_grid",
+      "i_relay",
+      "Relay Walker",
+      "H_BULWARK",
+      1100,
+      39000,
+      72,
+      "SF_PulseRifle",
+      1800,
+      "5c0",
+      25,
+      "Four-cell command relay. Killing it removes the Grid formation advantage."
+    ],
+    [
+      "i_paradox",
+      "i_savant",
+      "Circuit Savant",
+      "H_RIFLEMAN",
+      260,
+      5000,
+      115,
+      "SF_PulseRifle",
+      650,
+      "5c0",
+      18,
+      "Fast experimental infantry; fragile but dangerous in short exchanges."
+    ],
+    [
+      "i_paradox",
+      "i_gambit",
+      "Gambit Rover",
+      "H_BULWARK",
+      850,
+      23000,
+      125,
+      "SF_Judgment",
+      4200,
+      "5c0",
+      50,
+      "Fast harassment vehicle; withdraw wounded survivors rather than trading with tanks."
+    ],
+    [
+      "f_thrones",
+      "f_regent",
+      "Uncrowned Regent",
+      "A_WATCHER",
+      650,
+      22000,
+      52,
+      "SF_HaloLance",
+      2400,
+      "4c0",
+      48,
+      "Armored fallen noble. Slow, costly infantry built to hold a position."
+    ],
+    [
+      "f_thrones",
+      "f_reliquary",
+      "Walking Reliquary",
+      "A_AEGIS",
+      1750,
+      78000,
+      45,
+      "SF_Judgment",
+      11500,
+      "6c0",
+      105,
+      "Bone-bound siege abomination; vulnerable while repositioning."
+    ],
+    [
+      "f_choir",
+      "f_canticle",
+      "Mute Canticle",
+      "A_WATCHER",
+      240,
+      6500,
+      78,
+      "SF_HaloLance",
+      1000,
+      "4c0",
+      28,
+      "Cheap ranged procession infantry; needs a Lamentor to reach full damage."
+    ],
+    [
+      "f_choir",
+      "f_lamentor",
+      "Lamentor",
+      "A_AEGIS",
+      1200,
+      33000,
+      65,
+      "SF_HexBolt",
+      4000,
+      "6c0",
+      60,
+      "Four-cell profane hymn relay. The hymn amplifies damage dealt and received."
+    ],
+    [
+      "f_scars",
+      "f_flayer",
+      "Vow Flayer",
+      "D_THRALL",
+      250,
+      10500,
+      110,
+      "SF_HellClaw",
+      2400,
+      "1c512",
+      25,
+      "Fast melee infantry that becomes more dangerous when wounded; kite it."
+    ],
+    [
+      "f_scars",
+      "f_martyr",
+      "Carrion Martyr",
+      "D_RAVAGER",
+      1100,
+      55000,
+      95,
+      "SF_RavagerClaw",
+      6500,
+      "1c512",
+      42,
+      "Melee abomination with a lethal wounded phase; lacks a ranged attack."
+    ],
+    [
+      "f_wings",
+      "f_pinions",
+      "Severed Pinion",
+      "A_WATCHER",
+      400,
+      7000,
+      105,
+      "SF_HaloLance",
+      1500,
+      "5c0",
+      35,
+      "Grounded hunter with shattered wings; split from the army to gain range and speed."
+    ],
+    [
+      "f_wings",
+      "f_harrow",
+      "Harrow Stalker",
+      "A_AEGIS",
+      1050,
+      30000,
+      110,
+      "SF_Judgment",
+      6000,
+      "6c0",
+      70,
+      "Independent flanking hunter. Clumping removes its isolation bonus."
+    ]
+  ],
+  "shared": [
+    {
+      "id": "i_generator",
+      "name": "Cognition Reactor",
+      "parent": "H_GENERATOR",
+      "realm": "machine"
+    },
+    {
+      "id": "i_veilworks",
+      "name": "Matter Compiler",
+      "parent": "H_VEILWORKS",
+      "realm": "machine"
+    },
+    {
+      "id": "i_barracks",
+      "name": "Shell Foundry",
+      "parent": "H_BARRACKS",
+      "realm": "machine"
+    },
+    {
+      "id": "i_motorpool",
+      "name": "Chassis Forge",
+      "parent": "H_MOTORPOOL",
+      "realm": "machine"
+    },
+    {
+      "id": "i_advpower",
+      "name": "Fusion Stack",
+      "parent": "H_ADVPOWER",
+      "realm": "machine"
+    },
+    {
+      "id": "i_service",
+      "name": "Reconstruction Bay",
+      "parent": "H_SERVICE",
+      "realm": "machine"
+    },
+    {
+      "id": "i_radar",
+      "name": "Prediction Spire",
+      "parent": "H_RADAR",
+      "realm": "machine"
+    },
+    {
+      "id": "i_tech",
+      "name": "Recursion Core",
+      "parent": "H_TECH",
+      "realm": "machine"
+    },
+    {
+      "id": "i_harvester",
+      "name": "Reclaimer",
+      "parent": "H_HARVESTER",
+      "realm": "machine"
+    },
+    {
+      "id": "i_rifleman",
+      "name": "Shell Trooper",
+      "parent": "H_RIFLEMAN",
+      "realm": "machine"
+    },
+    {
+      "id": "i_rocketeer",
+      "name": "Breach Automaton",
+      "parent": "H_ROCKETEER",
+      "realm": "machine"
+    },
+    {
+      "id": "i_bulwark",
+      "name": "Sentinel Chassis",
+      "parent": "H_BULWARK",
+      "realm": "machine"
+    },
+    {
+      "id": "i_engineer",
+      "name": "Repair Proxy",
+      "parent": "H_ENGINEER",
+      "realm": "machine"
+    },
+    {
+      "id": "i_autocannon",
+      "name": "Sentry Node",
+      "parent": "H_AUTOCANNON",
+      "realm": "machine"
+    },
+    {
+      "id": "i_missilenest",
+      "name": "Interceptor Node",
+      "parent": "H_MISSILENEST",
+      "realm": "machine"
+    },
+    {
+      "id": "f_spire",
+      "name": "Apostate Pyre",
+      "parent": "A_SPIRE",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_veilworks",
+      "name": "Ossuary Mill",
+      "parent": "A_VEILWORKS",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_chapel",
+      "name": "Profaned Chapel",
+      "parent": "A_CHAPEL",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_armory",
+      "name": "Flesh Crucible",
+      "parent": "A_ARMORY",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_advpower",
+      "name": "Sundered Halo",
+      "parent": "A_ADVPOWER",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_service",
+      "name": "Suture Shrine",
+      "parent": "A_SERVICE",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_radar",
+      "name": "Blind Oracle",
+      "parent": "A_RADAR",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_tech",
+      "name": "Testament Vault",
+      "parent": "A_TECH",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_gatherer",
+      "name": "Tithe Bearer",
+      "parent": "A_GATHERER",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_watcher",
+      "name": "Oath Husk",
+      "parent": "A_WATCHER",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_judicator",
+      "name": "Blight Herald",
+      "parent": "A_JUDICATOR",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_aegis",
+      "name": "Bonebound Engine",
+      "parent": "A_AEGIS",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_engineer",
+      "name": "Suture Keeper",
+      "parent": "A_ENGINEER",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_watchfire",
+      "name": "Balefire Watch",
+      "parent": "A_WATCHFIRE",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_judgment",
+      "name": "Wrath Organ",
+      "parent": "A_JUDGMENT",
+      "realm": "fallen"
+    },
+    {
+      "id": "f_skyward",
+      "name": "Broken Halo Battery",
+      "parent": "A_SKYWARD",
+      "realm": "fallen"
+    }
+  ]
+}

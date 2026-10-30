@@ -43,11 +43,22 @@ namespace OpenRA.Mods.Sevenfall
             var health = self.TraitOrDefault<Health>();
             if (health == null || self.OccupiesSpace == null) return null;
             var faction = self.Owner.Faction.InternalName;
+            // New realm doctrines are combat-only: collectors and engineers do not
+            // acquire combat/escape bonuses. Fallen miracles obey null suppression.
+            if ((faction.StartsWith("i_") || faction.StartsWith("f_")) && !self.Info.HasTraitInfo<ArmamentInfo>()) return null;
             if (faction != "h_bastion" && faction != "h_union" && Suppressed(self)) return null;
             var friends = self.World.FindActorsInCircle(self.CenterPosition,new WDist(6144))
                 .Where(a => Living(a) && a.Owner == self.Owner && a != self && a.OccupiesSpace != null);
             switch (self.Owner.Faction.InternalName)
             {
+                case "i_echo": return stillTicks >= 75 ? "sf-focus" : null;
+                case "i_iron": return "sf-machine-iron";
+                case "i_grid": return friends.Any(a => a.Info.Name == "i_relay" && Near(a, self, 4)) ? "sf-machine-grid" : null;
+                case "i_paradox": return health.HP * 2 < health.MaxHP ? "sf-machine-paradox" : null;
+                case "f_thrones": return stillTicks >= 100 ? "sf-fallen-throne" : null;
+                case "f_choir": return friends.Any(a => a.Info.Name == "f_lamentor" && Near(a, self, 4)) ? "sf-fallen-choir" : null;
+                case "f_scars": return health.HP * 2 < health.MaxHP ? "sf-fallen-scars" : null;
+                case "f_wings": return !friends.Any(a => a.Info.HasTraitInfo<ArmamentInfo>() && Near(a, self, 4)) ? "sf-fallen-wings" : null;
                 case "a_seraph": return stillTicks >= 75 ? "sf-focus" : null;
                 case "a_warden": return friends.Any(a => (a.Info.Name == "a_gatekeeper" || a.Info.Name == "a_wardbearer") && Near(a, self, 4)) ? "sf-aegis" : null;
                 case "a_exile": return health.HP * 2 < health.MaxHP ? "sf-defiance" : null;

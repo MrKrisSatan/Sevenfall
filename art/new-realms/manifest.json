@@ -1,0 +1,114 @@
+[
+  {
+    "id": "i_ghost",
+    "sha256": "fe06ad4333d84fcf0e2ae4ca4412978c6fdaf6cb73c9bf3e5ddf14b383152029",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_lance",
+    "sha256": "712105e6003e5f1b7b448519fb65016c7efb42059e4f65e861dc58d67f6a8603",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_endurer",
+    "sha256": "b83c3532edc74c1afb503f57284d9379532fb6f1ebbc8898f9c420775cb654d2",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_crucible",
+    "sha256": "db4159c5c87a53ee0d781fd78c71ef22a1a09531c5c0e53bcfe555d4155c58f2",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_thread",
+    "sha256": "4fde3d637a763fb484f75ed32862df372a3548c6ee2d90d77966ae31c276ae35",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_relay",
+    "sha256": "c8ad6ebacac9229c6cfb0f4811594d6e3534fb704b60056cb8b4aa8bbf7301c2",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_savant",
+    "sha256": "3921c2756df0697a06080ba3146c8e65124bc55ff9387fd5818cc75056308526",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "i_gambit",
+    "sha256": "d3a8b65a32e81af14ac9d980e3bb3046895ad7b33a94605ed65d53ba93732bfd",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_regent",
+    "sha256": "64961fd53e3d1dcb97bdcb3ed4c39b8a6875fd08182ce03e0d65a6ddf946f235",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_reliquary",
+    "sha256": "76db8b7fc34ad99b5f4c84b2d75b6ee2eec8e3e1905468afac6782320b5732a3",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_canticle",
+    "sha256": "c78416a61584b863f77c4b9f98c9551191d3e8a021896e7c194a54cfd71fe7d0",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_lamentor",
+    "sha256": "26f8acc9a0e0740ac3649c004da09114846587dceca7358ff738cd234af6fee6",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_flayer",
+    "sha256": "bdeb361dc616425e03ebc4856cc95182b1e6fedb0773d7518a013faf13ad481e",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_martyr",
+    "sha256": "d222225c24301bb168cd95c8416ea83c55d3cad21669f1f1d72f2e0b094e1f76",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_pinions",
+    "sha256": "b4452e87f8f4254b66dec7740595de1f07a8fa62eafe9e771a19df6dda8e5ba0",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  },
+  {
+    "id": "f_harrow",
+    "sha256": "5867e3ba67d495b9e07e289febe0f9fd3117f98cf2d625006307478a243d7ad1",
+    "frames": 64,
+    "frameSize": 72,
+    "style": "Original vector prototype; not final painted art"
+  }
+]

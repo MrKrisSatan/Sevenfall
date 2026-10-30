@@ -1,0 +1,60 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall New Realm Doctrine Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@P0:
+		Name: P0
+		Faction: i_echo
+	PlayerReference@P1:
+		Name: P1
+		Faction: i_iron
+	PlayerReference@P2:
+		Name: P2
+		Faction: i_grid
+	PlayerReference@P3:
+		Name: P3
+		Faction: i_paradox
+	PlayerReference@P4:
+		Name: P4
+		Faction: f_thrones
+	PlayerReference@P5:
+		Name: P5
+		Faction: f_choir
+	PlayerReference@P6:
+		Name: P6
+		Faction: f_scars
+	PlayerReference@P7:
+		Name: P7
+		Faction: f_wings
+	PlayerReference@Observer:
+		Name: Observer
+		Faction: h_bastion
+		NonCombatant: True
+		Playable: True
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 10,10
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: realmdoctrine-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True

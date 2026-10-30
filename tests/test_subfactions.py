@@ -20,8 +20,8 @@ class AdditionalSubfactions(unittest.TestCase):
  def test_new_choices_keep_parent_economy_and_matching_hud(self):
   rules=(ROOT/'mods/sevenfall/rules/10-factions.yaml').read_text(encoding='utf-8')
   pool=re.search(r'RandomFactionMembers: (.+)',rules)[1].split(', ')
-  self.assertEqual(len(pool),12)
-  self.assertEqual(len(set(pool)),12)
+  self.assertEqual(len(pool),20)
+  self.assertEqual(len(set(pool)),20)
   for faction in ['a_desolation','h_area52','d_contempt']:
    self.assertIn(faction,pool)
    self.assertIn(faction+': '+faction[0]+'_mcv',rules)

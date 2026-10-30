@@ -2,6 +2,11 @@
 
 **An original apocalyptic real-time strategy game using OpenRA.**
 
+**Development expansion:** [Noetic Assembly and Forsaken Host](docs/NEW_REALMS.md)
+add eight subfactions and sixteen exclusive units, bringing development builds to
+twenty choices across five realms. [New realm roster](https://mrkrissatan.github.io/Sevenfall/new-realms.html).
+The alpha.2 downloads below retain their twelve-choice released roster.
+
 > The Seventh Seal has broken. Heaven has descended, Hell has risen, and humanity refuses to surrender its world.
 
 **Development status:** **0.3 Windows skirmish tester alpha**. The standalone package includes twelve faction choices and three skirmish maps. Campaign completion and broader balance/content work remain in development. See the [tester guide](docs/TESTER_GUIDE.md) and [acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).

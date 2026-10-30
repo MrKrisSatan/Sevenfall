@@ -391,6 +391,202 @@ command-button-infernal-highlighted-disabled:
 	Image2x: sevenfall|art/ui/hud-infernal-2x.png
 	Image3x: sevenfall|art/ui/hud-infernal-3x.png
 	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-machine:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-machine:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-machine:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-hover:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-pressed:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-disabled:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-highlighted:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-highlighted-hover:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-machine-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-machine:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-machine-hover:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-machine-pressed:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-machine-disabled:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-machine-highlighted:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-machine-highlighted-hover:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-machine-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-machine-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-machine.png
+	Image2x: sevenfall|art/ui/hud-machine-2x.png
+	Image3x: sevenfall|art/ui/hud-machine-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-fallen:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-fallen:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-fallen:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-hover:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-pressed:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-disabled:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-highlighted:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-highlighted-hover:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-fallen-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-fallen:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-fallen-hover:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-fallen-pressed:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-fallen-disabled:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-fallen-highlighted:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-fallen-highlighted-hover:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-fallen-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-fallen-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-fallen.png
+	Image2x: sevenfall|art/ui/hud-fallen-2x.png
+	Image3x: sevenfall|art/ui/hud-fallen-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
 ^Dialog:
 	Image: sevenfall|art/ui/neutral-dialog.png
 	Image2x: sevenfall|art/ui/neutral-dialog-2x.png

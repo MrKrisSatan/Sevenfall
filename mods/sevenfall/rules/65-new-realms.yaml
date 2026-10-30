@@ -1,0 +1,1436 @@
+I_GENERATOR:
+	Inherits: H_GENERATOR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.machine, ~techlevel.infonly
+		Description: sf-i-generator-description
+	Tooltip:
+		Name: sf-i-generator-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_VEILWORKS:
+	Inherits: H_VEILWORKS
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.machine, ~techlevel.infonly
+		Description: sf-i-veilworks-description
+	FreeActor:
+		Actor: i_harvester
+	Tooltip:
+		Name: sf-i-veilworks-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_BARRACKS:
+	Inherits: H_BARRACKS
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.machine, ~techlevel.infonly
+		Description: sf-i-barracks-description
+	Tooltip:
+		Name: sf-i-barracks-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_MOTORPOOL:
+	Inherits: H_MOTORPOOL
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: i_veilworks, ~sf.machine, ~techlevel.low
+		Description: sf-i-motorpool-description
+	Tooltip:
+		Name: sf-i-motorpool-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_ADVPOWER:
+	Inherits: H_ADVPOWER
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: i_radar, ~sf.machine, ~techlevel.medium
+		Description: sf-i-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_advpower
+	Tooltip:
+		Name: sf-i-advpower-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_SERVICE:
+	Inherits: H_SERVICE
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: i_motorpool, ~sf.machine, ~techlevel.medium
+		Description: sf-i-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_service
+	Tooltip:
+		Name: sf-i-service-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	ProvidesPrerequisite@sf_service:
+		Prerequisite: sf_service
+
+I_RADAR:
+	Inherits: H_RADAR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: i_veilworks, ~sf.machine, ~techlevel.medium
+		Description: sf-i-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_radar
+	Tooltip:
+		Name: sf-i-radar-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_TECH:
+	Inherits: H_TECH
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: i_motorpool, i_radar, ~sf.machine, ~techlevel.high
+		Description: sf-i-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_tech
+	Tooltip:
+		Name: sf-i-tech-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_HARVESTER:
+	Inherits: H_HARVESTER
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 35
+		Prerequisites: i_veilworks, ~sf.machine, ~techlevel.infonly
+		Description: sf-i-harvester-description
+	Tooltip:
+		Name: sf-i-harvester-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: i_service
+
+I_RIFLEMAN:
+	Inherits: H_RIFLEMAN
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: i_barracks, ~sf.machine, ~techlevel.infonly
+		Description: sf-i-rifleman-description
+		BuildDurationModifier: 60
+	Tooltip:
+		Name: sf-i-rifleman-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Health:
+		HP: 5760
+	Valued:
+		Cost: 103
+	Armament@GARRISONED:
+		Weapon: SF_i_PulseRifle
+	Armament@PRIMARY:
+		Weapon: SF_i_PulseRifle
+
+I_ROCKETEER:
+	Inherits: H_ROCKETEER
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 20
+		Prerequisites: i_barracks, ~sf.machine, ~techlevel.low
+		Description: sf-i-rocketeer-description
+		BuildDurationModifier: 60
+	Tooltip:
+		Name: sf-i-rocketeer-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Health:
+		HP: 5400
+	Valued:
+		Cost: 299
+	Armament@PRIMARY:
+		Weapon: SF_i_RocketeerAA
+	Armament@SECONDARY:
+		Weapon: SF_i_RocketeerAG
+	Armament@GARRISONED:
+		Weapon: SF_i_RocketeerAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_i_RocketeerAG
+
+I_BULWARK:
+	Inherits: H_BULWARK
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: i_motorpool, ~sf.machine, ~techlevel.medium
+		Description: sf-i-bulwark-description
+		BuildDurationModifier: 60
+	Tooltip:
+		Name: sf-i-bulwark-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Health:
+		HP: 57600
+	Valued:
+		Cost: 1092
+	Armament:
+		Weapon: SF_i_Stormshell
+	Repairable:
+		RepairActors: i_service
+
+I_ENGINEER:
+	Inherits: H_ENGINEER
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: i_barracks, ~sf.machine, ~techlevel.infonly
+		Description: sf-i-engineer-description
+		BuildDurationModifier: 60
+	Tooltip:
+		Name: sf-i-engineer-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_AUTOCANNON:
+	Inherits: H_AUTOCANNON
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: i_barracks, ~sf.machine, ~techlevel.low
+		Description: sf-i-autocannon-description
+	Tooltip:
+		Name: sf-i-autocannon-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_MISSILENEST:
+	Inherits: H_MISSILENEST
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: i_radar, ~sf.machine, ~techlevel.medium
+		Description: sf-i-missilenest-description
+	Tooltip:
+		Name: sf-i-missilenest-name
+	WithTextDecoration@REALM:
+		Text: NOETIC
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_SPIRE:
+	Inherits: A_SPIRE
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-spire-description
+	Tooltip:
+		Name: sf-f-spire-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_VEILWORKS:
+	Inherits: A_VEILWORKS
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-veilworks-description
+	FreeActor:
+		Actor: f_gatherer
+	Tooltip:
+		Name: sf-f-veilworks-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_CHAPEL:
+	Inherits: A_CHAPEL
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-chapel-description
+	Tooltip:
+		Name: sf-f-chapel-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_ARMORY:
+	Inherits: A_ARMORY
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: f_veilworks, ~sf.fallen, ~techlevel.low
+		Description: sf-f-armory-description
+	Tooltip:
+		Name: sf-f-armory-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_ADVPOWER:
+	Inherits: A_ADVPOWER
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: f_radar, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_advpower
+	Tooltip:
+		Name: sf-f-advpower-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_SERVICE:
+	Inherits: A_SERVICE
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: f_armory, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_service
+	Tooltip:
+		Name: sf-f-service-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	ProvidesPrerequisite@sf_service:
+		Prerequisite: sf_service
+
+F_RADAR:
+	Inherits: A_RADAR
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: f_veilworks, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_radar
+	Tooltip:
+		Name: sf-f-radar-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_TECH:
+	Inherits: A_TECH
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: f_armory, f_radar, ~sf.fallen, ~techlevel.high
+		Description: sf-f-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_tech
+	Tooltip:
+		Name: sf-f-tech-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_GATHERER:
+	Inherits: A_GATHERER
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 35
+		Prerequisites: f_veilworks, ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-gatherer-description
+	Tooltip:
+		Name: sf-f-gatherer-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: f_service
+
+F_WATCHER:
+	Inherits: A_WATCHER
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 10
+		Prerequisites: f_chapel, ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-watcher-description
+		BuildDurationModifier: 75
+	Tooltip:
+		Name: sf-f-watcher-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	-ChangesHealth@SF_RENEWAL:
+	Health:
+		HP: 9900
+	Valued:
+		Cost: 229
+	Armament@GARRISONED:
+		Weapon: SF_f_HaloLance
+	Armament@PRIMARY:
+		Weapon: SF_f_HaloLance
+
+F_JUDICATOR:
+	Inherits: A_JUDICATOR
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 20
+		Prerequisites: f_chapel, ~sf.fallen, ~techlevel.low
+		Description: sf-f-judicator-description
+		BuildDurationModifier: 75
+	Tooltip:
+		Name: sf-f-judicator-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	-ChangesHealth@SF_RENEWAL:
+	Health:
+		HP: 10560
+	Valued:
+		Cost: 459
+	Armament@PRIMARY:
+		Weapon: SF_f_JudicatorAA
+	Armament@SECONDARY:
+		Weapon: SF_f_JudicatorAG
+	Armament@GARRISONED:
+		Weapon: SF_f_JudicatorAA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_f_JudicatorAG
+
+F_AEGIS:
+	Inherits: A_AEGIS
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: f_armory, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-aegis-description
+		BuildDurationModifier: 75
+	Tooltip:
+		Name: sf-f-aegis-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	-ChangesHealth@SF_RENEWAL:
+	Health:
+		HP: 79200
+	Valued:
+		Cost: 1954
+	Armament:
+		Weapon: SF_f_Sanction
+	Repairable:
+		RepairActors: f_service
+
+F_ENGINEER:
+	Inherits: A_ENGINEER
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: f_chapel, ~sf.fallen, ~techlevel.infonly
+		Description: sf-f-engineer-description
+		BuildDurationModifier: 75
+	Tooltip:
+		Name: sf-f-engineer-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	-ChangesHealth@SF_RENEWAL:
+
+F_WATCHFIRE:
+	Inherits: A_WATCHFIRE
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 20
+		Prerequisites: f_chapel, ~sf.fallen, ~techlevel.low
+		Description: sf-f-watchfire-description
+	Tooltip:
+		Name: sf-f-watchfire-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_JUDGMENT:
+	Inherits: A_JUDGMENT
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 25
+		Prerequisites: f_radar, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-judgment-description
+	Tooltip:
+		Name: sf-f-judgment-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_SKYWARD:
+	Inherits: A_SKYWARD
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: f_radar, ~sf.fallen, ~techlevel.medium
+		Description: sf-f-skyward-description
+	Tooltip:
+		Name: sf-f-skyward-name
+	WithTextDecoration@REALM:
+		Text: FORSAKEN
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_GHOST:
+	Inherits: H_RANGER
+	Buildable:
+		Queue: Infantry
+		Prerequisites: i_barracks, ~sf.i_echo, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-ghost-description
+	Tooltip:
+		Name: sf-i-ghost-name
+	Valued:
+		Cost: 480
+	Health:
+		HP: 6000
+	Mobile:
+		Speed: 110
+	Armament@PRIMARY:
+		Weapon: SF_i_ghost
+	Armament@GARRISONED:
+		Weapon: SF_i_ghost
+	RenderSprites:
+		Image: i_ghost
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_ghost.death
+	RevealsShroud:
+		Range: 8c0
+	DetectCloaked:
+		Range: 3c0
+	WithTextDecoration@REALM:
+		Text: MNEMONIC GHOST
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_GHOST.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_ghost_death
+
+I_LANCE:
+	Inherits: H_BULWARK
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: i_motorpool, ~sf.i_echo, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-lance-description
+	Tooltip:
+		Name: sf-i-lance-name
+	Valued:
+		Cost: 1350
+	Health:
+		HP: 30000
+	Mobile:
+		Speed: 88
+	Armament:
+		Weapon: SF_i_lance
+	RenderSprites:
+		Image: i_lance
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_lance.death
+	WithTextDecoration@REALM:
+		Text: NEEDLE CHASSIS
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: i_service
+
+I_LANCE.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_lance_death
+
+I_ENDURER:
+	Inherits: H_RIFLEMAN
+	Buildable:
+		Queue: Infantry
+		Prerequisites: i_barracks, ~sf.i_iron, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-endurer-description
+	Tooltip:
+		Name: sf-i-endurer-name
+	Valued:
+		Cost: 340
+	Health:
+		HP: 14500
+	Mobile:
+		Speed: 62
+	Armament@PRIMARY:
+		Weapon: SF_i_endurer
+	Armament@GARRISONED:
+		Weapon: SF_i_endurer
+	RenderSprites:
+		Image: i_endurer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_endurer.death
+	WithTextDecoration@REALM:
+		Text: ENDURER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_ENDURER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_endurer_death
+
+I_CRUCIBLE:
+	Inherits: H_BULWARK
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: i_motorpool, ~sf.i_iron, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-crucible-description
+	Tooltip:
+		Name: sf-i-crucible-name
+	Valued:
+		Cost: 1900
+	Health:
+		HP: 82000
+	Mobile:
+		Speed: 48
+	Armament:
+		Weapon: SF_i_crucible
+	RenderSprites:
+		Image: i_crucible
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_crucible.death
+	WithTextDecoration@REALM:
+		Text: CRUCIBLE ENGINE
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: i_service
+
+I_CRUCIBLE.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_crucible_death
+
+I_THREAD:
+	Inherits: H_ROCKETEER
+	Buildable:
+		Queue: Infantry
+		Prerequisites: i_barracks, ~sf.i_grid, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-thread-description
+	Tooltip:
+		Name: sf-i-thread-name
+	Valued:
+		Cost: 400
+	Health:
+		HP: 7000
+	Mobile:
+		Speed: 82
+	Armament@PRIMARY:
+		Weapon: SF_i_thread
+	Armament@GARRISONED:
+		Weapon: SF_i_thread
+	Armament@SECONDARY:
+		Weapon: SF_i_thread
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_i_thread
+	RenderSprites:
+		Image: i_thread
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_thread.death
+	WithTextDecoration@REALM:
+		Text: THREADKEEPER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_THREAD.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_thread_death
+
+I_RELAY:
+	Inherits: H_BULWARK
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: i_motorpool, ~sf.i_grid, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-relay-description
+	Tooltip:
+		Name: sf-i-relay-name
+	Valued:
+		Cost: 1100
+	Health:
+		HP: 39000
+	Mobile:
+		Speed: 72
+	Armament:
+		Weapon: SF_i_relay
+	RenderSprites:
+		Image: i_relay
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_relay.death
+	WithTextDecoration@REALM:
+		Text: RELAY WALKER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: i_service
+
+I_RELAY.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_relay_death
+
+I_SAVANT:
+	Inherits: H_RIFLEMAN
+	Buildable:
+		Queue: Infantry
+		Prerequisites: i_barracks, ~sf.i_paradox, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-savant-description
+	Tooltip:
+		Name: sf-i-savant-name
+	Valued:
+		Cost: 260
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 115
+	Armament@PRIMARY:
+		Weapon: SF_i_savant
+	Armament@GARRISONED:
+		Weapon: SF_i_savant
+	RenderSprites:
+		Image: i_savant
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_savant.death
+	WithTextDecoration@REALM:
+		Text: CIRCUIT SAVANT
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+I_SAVANT.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_savant_death
+
+I_GAMBIT:
+	Inherits: H_BULWARK
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: i_motorpool, ~sf.i_paradox, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-i-gambit-description
+	Tooltip:
+		Name: sf-i-gambit-name
+	Valued:
+		Cost: 850
+	Health:
+		HP: 23000
+	Mobile:
+		Speed: 125
+	Armament:
+		Weapon: SF_i_gambit
+	RenderSprites:
+		Image: i_gambit
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_gambit.death
+	WithTextDecoration@REALM:
+		Text: GAMBIT ROVER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: i_service
+
+I_GAMBIT.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_gambit_death
+
+F_REGENT:
+	Inherits: A_WATCHER
+	Buildable:
+		Queue: Infantry
+		Prerequisites: f_chapel, ~sf.f_thrones, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-regent-description
+	Tooltip:
+		Name: sf-f-regent-name
+	Valued:
+		Cost: 650
+	Health:
+		HP: 22000
+	Mobile:
+		Speed: 52
+	Armament@PRIMARY:
+		Weapon: SF_f_regent
+	Armament@GARRISONED:
+		Weapon: SF_f_regent
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_regent
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_regent.death
+	WithTextDecoration@REALM:
+		Text: UNCROWNED REGENT
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_REGENT.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_regent_death
+
+F_RELIQUARY:
+	Inherits: A_AEGIS
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: f_armory, ~sf.f_thrones, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-reliquary-description
+	Tooltip:
+		Name: sf-f-reliquary-name
+	Valued:
+		Cost: 1750
+	Health:
+		HP: 78000
+	Mobile:
+		Speed: 45
+	Armament:
+		Weapon: SF_f_reliquary
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_reliquary
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_reliquary.death
+	WithTextDecoration@REALM:
+		Text: WALKING RELIQUARY
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: f_service
+
+F_RELIQUARY.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_reliquary_death
+
+F_CANTICLE:
+	Inherits: A_WATCHER
+	Buildable:
+		Queue: Infantry
+		Prerequisites: f_chapel, ~sf.f_choir, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-canticle-description
+	Tooltip:
+		Name: sf-f-canticle-name
+	Valued:
+		Cost: 240
+	Health:
+		HP: 6500
+	Mobile:
+		Speed: 78
+	Armament@PRIMARY:
+		Weapon: SF_f_canticle
+	Armament@GARRISONED:
+		Weapon: SF_f_canticle
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_canticle
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_canticle.death
+	WithTextDecoration@REALM:
+		Text: MUTE CANTICLE
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_CANTICLE.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_canticle_death
+
+F_LAMENTOR:
+	Inherits: A_AEGIS
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: f_armory, ~sf.f_choir, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-lamentor-description
+	Tooltip:
+		Name: sf-f-lamentor-name
+	Valued:
+		Cost: 1200
+	Health:
+		HP: 33000
+	Mobile:
+		Speed: 65
+	Armament:
+		Weapon: SF_f_lamentor
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_lamentor
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_lamentor.death
+	WithTextDecoration@REALM:
+		Text: LAMENTOR
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: f_service
+
+F_LAMENTOR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_lamentor_death
+
+F_FLAYER:
+	Inherits: D_THRALL
+	Buildable:
+		Queue: Infantry
+		Prerequisites: f_chapel, ~sf.f_scars, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-flayer-description
+	Tooltip:
+		Name: sf-f-flayer-name
+	Valued:
+		Cost: 250
+	Health:
+		HP: 10500
+	Mobile:
+		Speed: 110
+	Armament@PRIMARY:
+		Weapon: SF_f_flayer
+	Armament@GARRISONED:
+		Weapon: SF_f_flayer
+	-GrantConditionOnAttack@SF_FRENZY:
+	-FirepowerMultiplier@SF_FRENZY:
+	-SpeedMultiplier@SF_FRENZY:
+	-WithColoredOverlay@SF_FRENZY:
+	RenderSprites:
+		Image: f_flayer
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_flayer.death
+	WithTextDecoration@REALM:
+		Text: VOW FLAYER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_FLAYER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_flayer_death
+
+F_MARTYR:
+	Inherits: D_RAVAGER
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: f_armory, ~sf.f_scars, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-martyr-description
+	Tooltip:
+		Name: sf-f-martyr-name
+	Valued:
+		Cost: 1100
+	Health:
+		HP: 55000
+	Mobile:
+		Speed: 95
+	Armament:
+		Weapon: SF_f_martyr
+	-GrantConditionOnAttack@SF_FRENZY:
+	-FirepowerMultiplier@SF_FRENZY:
+	-SpeedMultiplier@SF_FRENZY:
+	-WithColoredOverlay@SF_FRENZY:
+	RenderSprites:
+		Image: f_martyr
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_martyr.death
+	WithTextDecoration@REALM:
+		Text: CARRION MARTYR
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: f_service
+
+F_MARTYR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_martyr_death
+
+F_PINIONS:
+	Inherits: A_WATCHER
+	Buildable:
+		Queue: Infantry
+		Prerequisites: f_chapel, ~sf.f_wings, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-pinions-description
+	Tooltip:
+		Name: sf-f-pinions-name
+	Valued:
+		Cost: 400
+	Health:
+		HP: 7000
+	Mobile:
+		Speed: 105
+	Armament@PRIMARY:
+		Weapon: SF_f_pinions
+	Armament@GARRISONED:
+		Weapon: SF_f_pinions
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_pinions
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_pinions.death
+	WithTextDecoration@REALM:
+		Text: SEVERED PINION
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+
+F_PINIONS.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_pinions_death
+
+F_HARROW:
+	Inherits: A_AEGIS
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: f_armory, ~sf.f_wings, ~techlevel.low
+		BuildPaletteOrder: 85
+		Description: sf-f-harrow-description
+	Tooltip:
+		Name: sf-f-harrow-name
+	Valued:
+		Cost: 1050
+	Health:
+		HP: 30000
+	Mobile:
+		Speed: 110
+	Armament:
+		Weapon: SF_f_harrow
+	-ChangesHealth@SF_RENEWAL:
+	RenderSprites:
+		Image: f_harrow
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_harrow.death
+	WithTextDecoration@REALM:
+		Text: HARROW STALKER
+		Position: Top
+		RequiresSelection: True
+		ValidRelationships: Ally
+	Repairable:
+		RepairActors: f_service
+
+F_HARROW.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_harrow_death
+
+^Infantry:
+	ExternalCondition@REALM_machine-iron:
+		Condition: sf-machine-iron
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@REALM_machine-iron:
+		Modifier: 80
+		RequiresCondition: sf-machine-iron && !sf-null
+	SpeedMultiplier@REALM_machine-iron:
+		Modifier: 85
+		RequiresCondition: sf-machine-iron && !sf-null
+	ExternalCondition@REALM_machine-grid:
+		Condition: sf-machine-grid
+		TotalCap: 1
+		SourceCap: 1
+	ReloadDelayMultiplier@REALM_machine-grid:
+		Modifier: 80
+		RequiresCondition: sf-machine-grid && !sf-null
+	DamageMultiplier@REALM_machine-grid:
+		Modifier: 90
+		RequiresCondition: sf-machine-grid && !sf-null
+	ExternalCondition@REALM_machine-paradox:
+		Condition: sf-machine-paradox
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@REALM_machine-paradox:
+		Modifier: 130
+		RequiresCondition: sf-machine-paradox && !sf-null
+	ReloadDelayMultiplier@REALM_machine-paradox:
+		Modifier: 85
+		RequiresCondition: sf-machine-paradox && !sf-null
+	ExternalCondition@REALM_fallen-throne:
+		Condition: sf-fallen-throne
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@REALM_fallen-throne:
+		Modifier: 70
+		RequiresCondition: sf-fallen-throne && !sf-null
+	ReloadDelayMultiplier@REALM_fallen-throne:
+		Modifier: 115
+		RequiresCondition: sf-fallen-throne && !sf-null
+	ExternalCondition@REALM_fallen-choir:
+		Condition: sf-fallen-choir
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@REALM_fallen-choir:
+		Modifier: 125
+		RequiresCondition: sf-fallen-choir && !sf-null
+	DamageMultiplier@REALM_fallen-choir:
+		Modifier: 110
+		RequiresCondition: sf-fallen-choir && !sf-null
+	ExternalCondition@REALM_fallen-scars:
+		Condition: sf-fallen-scars
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@REALM_fallen-scars:
+		Modifier: 140
+		RequiresCondition: sf-fallen-scars && !sf-null
+	SpeedMultiplier@REALM_fallen-scars:
+		Modifier: 115
+		RequiresCondition: sf-fallen-scars && !sf-null
+	ExternalCondition@REALM_fallen-wings:
+		Condition: sf-fallen-wings
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@REALM_fallen-wings:
+		Modifier: 125
+		RequiresCondition: sf-fallen-wings && !sf-null
+	RangeMultiplier@REALM_fallen-wings:
+		Modifier: 120
+		RequiresCondition: sf-fallen-wings && !sf-null
+
+^Vehicle:
+	ExternalCondition@REALM_machine-iron:
+		Condition: sf-machine-iron
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@REALM_machine-iron:
+		Modifier: 80
+		RequiresCondition: sf-machine-iron && !sf-null
+	SpeedMultiplier@REALM_machine-iron:
+		Modifier: 85
+		RequiresCondition: sf-machine-iron && !sf-null
+	ExternalCondition@REALM_machine-grid:
+		Condition: sf-machine-grid
+		TotalCap: 1
+		SourceCap: 1
+	ReloadDelayMultiplier@REALM_machine-grid:
+		Modifier: 80
+		RequiresCondition: sf-machine-grid && !sf-null
+	DamageMultiplier@REALM_machine-grid:
+		Modifier: 90
+		RequiresCondition: sf-machine-grid && !sf-null
+	ExternalCondition@REALM_machine-paradox:
+		Condition: sf-machine-paradox
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@REALM_machine-paradox:
+		Modifier: 130
+		RequiresCondition: sf-machine-paradox && !sf-null
+	ReloadDelayMultiplier@REALM_machine-paradox:
+		Modifier: 85
+		RequiresCondition: sf-machine-paradox && !sf-null
+	ExternalCondition@REALM_fallen-throne:
+		Condition: sf-fallen-throne
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@REALM_fallen-throne:
+		Modifier: 70
+		RequiresCondition: sf-fallen-throne && !sf-null
+	ReloadDelayMultiplier@REALM_fallen-throne:
+		Modifier: 115
+		RequiresCondition: sf-fallen-throne && !sf-null
+	ExternalCondition@REALM_fallen-choir:
+		Condition: sf-fallen-choir
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@REALM_fallen-choir:
+		Modifier: 125
+		RequiresCondition: sf-fallen-choir && !sf-null
+	DamageMultiplier@REALM_fallen-choir:
+		Modifier: 110
+		RequiresCondition: sf-fallen-choir && !sf-null
+	ExternalCondition@REALM_fallen-scars:
+		Condition: sf-fallen-scars
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@REALM_fallen-scars:
+		Modifier: 140
+		RequiresCondition: sf-fallen-scars && !sf-null
+	SpeedMultiplier@REALM_fallen-scars:
+		Modifier: 115
+		RequiresCondition: sf-fallen-scars && !sf-null
+	ExternalCondition@REALM_fallen-wings:
+		Condition: sf-fallen-wings
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@REALM_fallen-wings:
+		Modifier: 125
+		RequiresCondition: sf-fallen-wings && !sf-null
+	RangeMultiplier@REALM_fallen-wings:
+		Modifier: 120
+		RequiresCondition: sf-fallen-wings && !sf-null
+
+Player:
+	ModularBot@Sevenfall:
+		Name: sf-bot-name
+		Type: sevenfall
+	GrantConditionOnBotOwner@Sevenfall:
+		Condition: sevenfall-ai
+		Bots: sevenfall
+	McvManagerBotModule:
+		RequiresCondition: sevenfall-ai
+		McvTypes: mcv
+		ConstructionYardTypes: fact
+		McvFactoryTypes: a_armory, h_motorpool, d_forge, f_armory, i_motorpool
+	HarvesterBotModule:
+		RequiresCondition: sevenfall-ai
+		HarvesterTypes: a_gatherer, h_harvester, d_devourer, f_gatherer, i_harvester
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks, f_veilworks, i_veilworks
+	BuildingRepairBotModule:
+		RequiresCondition: sevenfall-ai
+	BaseBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		MinimumExcessPower: 30
+		MaximumExcessPower: 130
+		ConstructionYardTypes: fact
+		PowerTypes: a_spire, h_generator, d_heart, f_spire, i_generator
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks, f_veilworks, i_veilworks
+		BarracksTypes: a_chapel, h_barracks, d_pit, f_chapel, i_barracks
+		VehiclesFactoryTypes: a_armory, h_motorpool, d_forge, f_armory, i_motorpool
+		ProductionTypes: a_chapel, h_barracks, d_pit, a_armory, h_motorpool, d_forge, f_chapel, i_barracks, f_armory, i_motorpool
+		DefenseTypes: a_watchfire, a_judgment, a_skyward, h_autocannon, h_missilenest, d_spinenest, d_cindermaw, d_skyhook, a_processional, h_containment, d_throne, f_watchfire, f_judgment, f_skyward, i_autocannon, i_missilenest
+		BuildingLimits:
+			a_processional: 2
+			h_containment: 1
+			d_throne: 2
+			a_watchfire: 2
+			f_watchfire: 2
+			a_judgment: 2
+			f_judgment: 2
+			a_skyward: 2
+			f_skyward: 2
+			h_autocannon: 2
+			i_autocannon: 2
+			h_missilenest: 2
+			i_missilenest: 2
+			d_spinenest: 2
+			d_cindermaw: 2
+			d_skyhook: 2
+			a_veilworks: 3
+			f_veilworks: 3
+			h_veilworks: 3
+			i_veilworks: 3
+			d_veilworks: 3
+			a_chapel: 2
+			f_chapel: 2
+			h_barracks: 2
+			i_barracks: 2
+			d_pit: 2
+			a_armory: 1
+			f_armory: 1
+			h_motorpool: 1
+			i_motorpool: 1
+			d_forge: 1
+		BuildingFractions:
+			a_processional: 4
+			h_containment: 8
+			d_throne: 4
+			a_watchfire: 4
+			f_watchfire: 4
+			a_judgment: 4
+			f_judgment: 4
+			a_skyward: 4
+			f_skyward: 4
+			h_autocannon: 4
+			i_autocannon: 4
+			h_missilenest: 4
+			i_missilenest: 4
+			d_spinenest: 4
+			d_cindermaw: 4
+			d_skyhook: 4
+			a_veilworks: 30
+			f_veilworks: 30
+			h_veilworks: 30
+			i_veilworks: 30
+			d_veilworks: 30
+			a_chapel: 10
+			f_chapel: 10
+			h_barracks: 10
+			i_barracks: 10
+			d_pit: 10
+			a_armory: 10
+			f_armory: 10
+			h_motorpool: 10
+			i_motorpool: 10
+			d_forge: 10
+	UnitBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		UnitsToBuild:
+			i_ghost: 25
+			i_lance: 25
+			i_endurer: 25
+			i_crucible: 25
+			i_thread: 25
+			i_relay: 25
+			i_savant: 25
+			i_gambit: 25
+			f_regent: 25
+			f_reliquary: 25
+			f_canticle: 25
+			f_lamentor: 25
+			f_flayer: 25
+			f_martyr: 25
+			f_pinions: 25
+			f_harrow: 25
+			a_congregant: 45
+			a_cantor: 12
+			h_retrieval: 20
+			h_janus: 25
+			d_magistrate: 15
+			d_contemptor: 30
+			a_gatherer: 15
+			f_gatherer: 15
+			h_harvester: 15
+			i_harvester: 15
+			d_devourer: 15
+			a_watcher: 60
+			f_watcher: 60
+			h_rifleman: 60
+			i_rifleman: 60
+			d_thrall: 75
+			a_judicator: 25
+			f_judicator: 25
+			h_rocketeer: 25
+			i_rocketeer: 25
+			d_cinderling: 25
+			a_aegis: 30
+			f_aegis: 30
+			h_bulwark: 40
+			i_bulwark: 40
+			d_ravager: 45
+			a_seraphim: 15
+			a_gatekeeper: 15
+			a_penitent: 20
+			h_siegegun: 15
+			h_ranger: 20
+			h_templar: 15
+			d_hellreaver: 15
+			d_skitter: 30
+			d_hexer: 15
+		UnitLimits:
+			a_gatherer: 4
+			f_gatherer: 4
+			h_harvester: 4
+			i_harvester: 4
+			d_devourer: 4
+	SquadManagerBotModule:
+		RequiresCondition: sevenfall-ai
+		SquadSize: 12
+		ExcludeFromSquadsTypes: mcv, a_gatherer, h_harvester, d_devourer, f_gatherer, i_harvester
+		ConstructionYardTypes: fact
+		ProtectionTypes: fact, a_veilworks, h_veilworks, d_veilworks, a_gatherer, h_harvester, d_devourer, f_veilworks, i_veilworks, f_gatherer, i_harvester

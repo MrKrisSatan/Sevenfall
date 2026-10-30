@@ -76,6 +76,7 @@ class SkirmishContracts(unittest.TestCase):
         names = re.findall(r"(?m)^\t\tInternalName: ([ahd]_[a-z0-9]+)$", self.factions)
         self.assertEqual(set(names), expected)
         self.assertEqual(len(names), len(expected))
+        expected |= {'i_echo','i_iron','i_grid','i_paradox','f_thrones','f_choir','f_scars','f_wings'}
 
         world_start = re.search(
             r"(?m)^\tStartingUnits@mcvonly:\n\t\tFactions: ([^\n]+)",

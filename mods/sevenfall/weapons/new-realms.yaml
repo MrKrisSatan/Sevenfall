@@ -1,0 +1,151 @@
+SF_i_PulseRifle:
+	Inherits: SF_PulseRifle
+	Warhead@1Dam: SpreadDamage
+		Damage: 1320
+
+SF_i_RocketeerAA:
+	Inherits: SF_RocketeerAA
+	Warhead@1Dam: SpreadDamage
+		Damage: 4180
+
+SF_i_RocketeerAG:
+	Inherits: SF_RocketeerAG
+	Warhead@1Dam: SpreadDamage
+		Damage: 4620
+
+SF_i_Stormshell:
+	Inherits: SF_Stormshell
+	Warhead@1Dam: SpreadDamage
+		Damage: 7920
+
+SF_f_HaloLance:
+	Inherits: SF_HaloLance
+	Warhead@1Dam: SpreadDamage
+		Damage: 5760
+
+SF_f_JudicatorAA:
+	Inherits: SF_JudicatorAA
+	Warhead@1Dam: SpreadDamage
+		Damage: 7800
+
+SF_f_JudicatorAG:
+	Inherits: SF_JudicatorAG
+	Warhead@1Dam: SpreadDamage
+		Damage: 9000
+
+SF_f_Sanction:
+	Inherits: SF_Sanction
+	Warhead@1Dam: SpreadDamage
+		Damage: 14400
+
+SF_i_ghost:
+	Inherits: SF_PulseRifle
+	Range: 6c0
+	ReloadDelay: 32
+	Warhead@1Dam: SpreadDamage
+		Damage: 950
+
+SF_i_lance:
+	Inherits: SF_Judgment
+	Range: 7c0
+	ReloadDelay: 85
+	Warhead@1Dam: SpreadDamage
+		Damage: 7500
+
+SF_i_endurer:
+	Inherits: SF_PulseRifle
+	Range: 4c0
+	ReloadDelay: 30
+	Warhead@1Dam: SpreadDamage
+		Damage: 1200
+
+SF_i_crucible:
+	Inherits: SF_Judgment
+	Range: 5c0
+	ReloadDelay: 90
+	Warhead@1Dam: SpreadDamage
+		Damage: 10000
+
+SF_i_thread:
+	Inherits: SF_RocketeerAG
+	Range: 5c0
+	ReloadDelay: 50
+	Warhead@1Dam: SpreadDamage
+		Damage: 2500
+
+SF_i_relay:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 25
+	Warhead@1Dam: SpreadDamage
+		Damage: 1800
+
+SF_i_savant:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 18
+	Warhead@1Dam: SpreadDamage
+		Damage: 650
+
+SF_i_gambit:
+	Inherits: SF_Judgment
+	Range: 5c0
+	ReloadDelay: 50
+	Warhead@1Dam: SpreadDamage
+		Damage: 4200
+
+SF_f_regent:
+	Inherits: SF_HaloLance
+	Range: 4c0
+	ReloadDelay: 48
+	Warhead@1Dam: SpreadDamage
+		Damage: 2400
+
+SF_f_reliquary:
+	Inherits: SF_Judgment
+	Range: 6c0
+	ReloadDelay: 105
+	Warhead@1Dam: SpreadDamage
+		Damage: 11500
+
+SF_f_canticle:
+	Inherits: SF_HaloLance
+	Range: 4c0
+	ReloadDelay: 28
+	Warhead@1Dam: SpreadDamage
+		Damage: 1000
+
+SF_f_lamentor:
+	Inherits: SF_HexBolt
+	Range: 6c0
+	ReloadDelay: 60
+	Warhead@1Dam: SpreadDamage
+		Damage: 4000
+
+SF_f_flayer:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 25
+	Warhead@1Dam: SpreadDamage
+		Damage: 2400
+
+SF_f_martyr:
+	Inherits: SF_RavagerClaw
+	Range: 1c512
+	ReloadDelay: 42
+	Warhead@1Dam: SpreadDamage
+		Damage: 6500
+
+SF_f_pinions:
+	Inherits: SF_HaloLance
+	Range: 5c0
+	ReloadDelay: 35
+	Warhead@1Dam: SpreadDamage
+		Damage: 1500
+
+SF_f_harrow:
+	Inherits: SF_Judgment
+	Range: 6c0
+	ReloadDelay: 70
+	Warhead@1Dam: SpreadDamage
+		Damage: 6000

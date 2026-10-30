@@ -1,0 +1,25 @@
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine i_ghost got sf-focus
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine i_endurer got sf-machine-iron
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine i_thread got none
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine i_savant got none
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine f_regent got sf-fallen-throne
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine f_canticle got none
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine f_flayer got none
+Lua debug: REALMDOCTRINE_TEST PASS: initial doctrine f_pinions got sf-fallen-wings
+Lua debug: REALMDOCTRINE_TEST PASS: Iron damage reduction
+Lua debug: REALMDOCTRINE_TEST PASS: Throne damage reduction
+Lua debug: REALMDOCTRINE_TEST PASS: Grid relay activates network
+Lua debug: REALMDOCTRINE_TEST PASS: Lamentor activates hymn
+Lua debug: REALMDOCTRINE_TEST PASS: wounded Paradox activates
+Lua debug: REALMDOCTRINE_TEST PASS: wounded Testament activates
+Lua debug: REALMDOCTRINE_TEST PASS: nearby combat ally cancels isolation
+Lua debug: REALMDOCTRINE_TEST PASS: Grid network armor is applied
+Lua debug: REALMDOCTRINE_TEST PASS: Choir vulnerability tradeoff is applied
+Lua debug: REALMDOCTRINE_TEST PASS: Paradox escape speed is applied
+Lua debug: REALMDOCTRINE_TEST PASS: lost relay removes network
+Lua debug: REALMDOCTRINE_TEST PASS: lost Lamentor removes hymn
+Lua debug: REALMDOCTRINE_TEST PASS: isolation returns after ally removal
+Lua debug: REALMDOCTRINE_TEST PASS: network modifier expires
+Lua debug: REALMDOCTRINE_TEST PASS: hymn modifier expires
+Lua debug: REALMDOCTRINE_TEST PASS: collector excluded from combat doctrine
+Lua debug: REALMDOCTRINE_TEST COMPLETE checks=24
