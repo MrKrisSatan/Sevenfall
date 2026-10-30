@@ -1,0 +1,970 @@
+H_GUNSHIP:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	RenderSprites:
+		Image: h_gunship
+		Palette: sf_rgba
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 110
+		Prerequisites: h_helipad, ~sf.humans, ~techlevel.medium
+		Description: sf-completion-h-gunship-description
+	Tooltip:
+		Name: sf-completion-h-gunship-name
+	Valued:
+		Cost: 1600
+	Health:
+		HP: 22000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_gunship.death
+	-SpawnActorOnDeath:
+	-EjectOnDeath:
+	Aircraft:
+		Speed: 145
+		TurnSpeed: 24
+		CruiseAltitude: 1c512
+		Crushes: crate
+		PauseOnCondition: sf-petrified
+	RevealsShroud:
+		Range: 8c0
+		Type: GroundPosition
+	Armament:
+		Weapon: SF_h_gunship
+	WithFacingSpriteBody:
+		Sequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		RequiresCondition: !sf-petrified
+	AttackAircraft:
+		AttackType: Hover
+		FacingTolerance: 80
+		PauseOnCondition: sf-petrified
+	AutoTarget:
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
+	Repairable:
+		RepairActors: h_service
+
+H_GUNSHIP.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_gunship_death
+
+H_WARHOUND:
+	Inherits: H_RIFLEMAN
+	RenderSprites:
+		Image: h_warhound
+		Palette: sf_rgba
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Dog
+		BuildPaletteOrder: 110
+		Prerequisites: h_kennel, ~sf.humans, ~techlevel.medium
+		Description: sf-completion-h-warhound-description
+	Tooltip:
+		Name: sf-completion-h-warhound-name
+	Valued:
+		Cost: 250
+	Health:
+		HP: 7500
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: h_warhound.death
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Mobile:
+		Speed: 140
+	Armament@PRIMARY:
+		Weapon: SF_h_warhound
+	Armament@GARRISONED:
+		Weapon: SF_h_warhound
+
+H_WARHOUND.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: h_warhound_death
+
+H_CATACLYSM:
+	Inherits: H_TECH
+	Inherits@POWER: ^DisableOnLowPowerOrPowerDown
+	RenderSprites:
+		Image: h_tech
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: h_tech, ~sf.humans, ~techlevel.high
+		Description: sf-completion-h-cataclysm-description
+	Tooltip:
+		Name: sf-completion-h-cataclysm-name
+	Valued:
+		Cost: 6000
+	Health:
+		HP: 80000
+	Power:
+		Amount: -250
+	SupportPowerChargeBar:
+	SFFactionPower:
+		Kind: Nuclear
+		Radius: 6
+		WarningTicks: 125
+		OrderName: SFSharedNuclearOrder
+		ChargeInterval: 7500
+		IconImage: h_tech
+		Icon: icon
+		IconPalette: sf_rgba
+		Name: sf-shared-h-name
+		Description: sf-shared-h-description
+		PauseOnCondition: disabled || build-incomplete || sf-petrified
+		DisplayTimerRelationships: Ally, Enemy
+		DisplayRadarPing: True
+
+A_SKYWARDEN:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	RenderSprites:
+		Image: a_skywarden
+		Palette: sf_rgba
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 110
+		Prerequisites: a_helipad, ~sf.angels, ~techlevel.medium
+		Description: sf-completion-a-skywarden-description
+	Tooltip:
+		Name: sf-completion-a-skywarden-name
+	Valued:
+		Cost: 1900
+	Health:
+		HP: 30000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_skywarden.death
+	-SpawnActorOnDeath:
+	-EjectOnDeath:
+	Aircraft:
+		Speed: 115
+		TurnSpeed: 24
+		CruiseAltitude: 1c512
+		Crushes: crate
+		PauseOnCondition: sf-petrified
+	RevealsShroud:
+		Range: 8c0
+		Type: GroundPosition
+	Armament:
+		Weapon: SF_a_skywarden
+	WithFacingSpriteBody:
+		Sequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		RequiresCondition: !sf-petrified
+	AttackAircraft:
+		AttackType: Hover
+		FacingTolerance: 80
+		PauseOnCondition: sf-petrified
+	AutoTarget:
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
+	Repairable:
+		RepairActors: a_service
+
+A_SKYWARDEN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_skywarden_death
+
+A_GRYPHON:
+	Inherits: H_RIFLEMAN
+	RenderSprites:
+		Image: a_gryphon
+		Palette: sf_rgba
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Dog
+		BuildPaletteOrder: 110
+		Prerequisites: a_kennel, ~sf.angels, ~techlevel.medium
+		Description: sf-completion-a-gryphon-description
+	Tooltip:
+		Name: sf-completion-a-gryphon-name
+	Valued:
+		Cost: 650
+	Health:
+		HP: 24000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: a_gryphon.death
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Mobile:
+		Speed: 95
+	Armament@PRIMARY:
+		Weapon: SF_a_gryphon
+	Armament@GARRISONED:
+		Weapon: SF_a_gryphon
+
+A_GRYPHON.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: a_gryphon_death
+
+A_CATACLYSM:
+	Inherits: A_TECH
+	Inherits@POWER: ^DisableOnLowPowerOrPowerDown
+	RenderSprites:
+		Image: a_cataclysm
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: a_tech, ~sf.angels, ~techlevel.high
+		Description: sf-completion-a-cataclysm-description
+	Tooltip:
+		Name: sf-completion-a-cataclysm-name
+	Valued:
+		Cost: 6000
+	Health:
+		HP: 80000
+	Power:
+		Amount: -250
+	SupportPowerChargeBar:
+	SFFactionPower:
+		Kind: Petrification
+		Radius: 4
+		WarningTicks: 125
+		OrderName: SFSharedPetrificationOrder
+		ChargeInterval: 7500
+		IconImage: a_cataclysm
+		Icon: icon
+		IconPalette: sf_rgba
+		Name: sf-shared-a-name
+		Description: sf-shared-a-description
+		PauseOnCondition: disabled || build-incomplete || sf-petrified
+		DisplayTimerRelationships: Ally, Enemy
+		DisplayRadarPing: True
+
+D_WYVERN:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	RenderSprites:
+		Image: d_wyvern
+		Palette: sf_rgba
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 110
+		Prerequisites: d_helipad, ~sf.demons, ~techlevel.medium
+		Description: sf-completion-d-wyvern-description
+	Tooltip:
+		Name: sf-completion-d-wyvern-name
+	Valued:
+		Cost: 1400
+	Health:
+		HP: 24000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_wyvern.death
+	-SpawnActorOnDeath:
+	-EjectOnDeath:
+	Aircraft:
+		Speed: 135
+		TurnSpeed: 24
+		CruiseAltitude: 1c512
+		Crushes: crate
+		PauseOnCondition: sf-petrified
+	RevealsShroud:
+		Range: 8c0
+		Type: GroundPosition
+	Armament:
+		Weapon: SF_d_wyvern
+	WithFacingSpriteBody:
+		Sequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		RequiresCondition: !sf-petrified
+	AttackAircraft:
+		AttackType: Hover
+		FacingTolerance: 80
+		PauseOnCondition: sf-petrified
+	AutoTarget:
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
+	Repairable:
+		RepairActors: d_service
+
+D_WYVERN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_wyvern_death
+
+D_HELLHOUND:
+	Inherits: H_RIFLEMAN
+	RenderSprites:
+		Image: d_hellhound
+		Palette: sf_rgba
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Dog
+		BuildPaletteOrder: 110
+		Prerequisites: d_kennel, ~sf.demons, ~techlevel.medium
+		Description: sf-completion-d-hellhound-description
+	Tooltip:
+		Name: sf-completion-d-hellhound-name
+	Valued:
+		Cost: 400
+	Health:
+		HP: 13000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: d_hellhound.death
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Mobile:
+		Speed: 125
+	Armament@PRIMARY:
+		Weapon: SF_d_hellhound
+	Armament@GARRISONED:
+		Weapon: SF_d_hellhound
+
+D_HELLHOUND.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: d_hellhound_death
+
+D_CATACLYSM:
+	Inherits: D_TECH
+	Inherits@POWER: ^DisableOnLowPowerOrPowerDown
+	RenderSprites:
+		Image: d_cataclysm
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: d_tech, ~sf.demons, ~techlevel.high
+		Description: sf-completion-d-cataclysm-description
+	Tooltip:
+		Name: sf-completion-d-cataclysm-name
+	Valued:
+		Cost: 6000
+	Health:
+		HP: 80000
+	Power:
+		Amount: -250
+	SupportPowerChargeBar:
+	SFFactionPower:
+		Kind: Hellrift
+		Radius: 5
+		WarningTicks: 125
+		OrderName: SFSharedHellriftOrder
+		ChargeInterval: 7500
+		IconImage: d_cataclysm
+		Icon: icon
+		IconPalette: sf_rgba
+		Name: sf-shared-d-name
+		Description: sf-shared-d-description
+		PauseOnCondition: disabled || build-incomplete || sf-petrified
+		DisplayTimerRelationships: Ally, Enemy
+		DisplayRadarPing: True
+
+I_HELIPAD:
+	Inherits: H_HELIPAD
+	RenderSprites:
+		Image: i_helipad
+	Buildable:
+		Prerequisites: i_radar, ~sf.machine, ~techlevel.medium
+		Description: sf-completion-i-helipad-description
+	Tooltip:
+		Name: sf-completion-i-helipad-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_helipad
+	Production:
+		PauseOnCondition: sf-petrified
+
+I_KENNEL:
+	Inherits: H_KENNEL
+	RenderSprites:
+		Image: i_kennel
+	Buildable:
+		Prerequisites: i_barracks, ~sf.machine, ~techlevel.medium
+		Description: sf-completion-i-kennel-description
+	Tooltip:
+		Name: sf-completion-i-kennel-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: i_kennel
+	Production:
+		PauseOnCondition: sf-petrified
+
+I_INTERCEPTOR:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	RenderSprites:
+		Image: i_interceptor
+		Palette: sf_rgba
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 110
+		Prerequisites: i_helipad, ~sf.machine, ~techlevel.medium
+		Description: sf-completion-i-interceptor-description
+	Tooltip:
+		Name: sf-completion-i-interceptor-name
+	Valued:
+		Cost: 1700
+	Health:
+		HP: 18000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_interceptor.death
+	-SpawnActorOnDeath:
+	-EjectOnDeath:
+	Aircraft:
+		Speed: 190
+		TurnSpeed: 24
+		CruiseAltitude: 1c512
+		Crushes: crate
+		PauseOnCondition: sf-petrified
+	RevealsShroud:
+		Range: 8c0
+		Type: GroundPosition
+	Armament:
+		Weapon: SF_i_interceptor
+	WithFacingSpriteBody:
+		Sequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		RequiresCondition: !sf-petrified
+	AttackAircraft:
+		AttackType: Hover
+		FacingTolerance: 80
+		PauseOnCondition: sf-petrified
+	AutoTarget:
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
+	Repairable:
+		RepairActors: i_service
+
+I_INTERCEPTOR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_interceptor_death
+
+I_STALKER:
+	Inherits: H_RIFLEMAN
+	RenderSprites:
+		Image: i_stalker
+		Palette: sf_rgba
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Dog
+		BuildPaletteOrder: 110
+		Prerequisites: i_kennel, ~sf.machine, ~techlevel.medium
+		Description: sf-completion-i-stalker-description
+	Tooltip:
+		Name: sf-completion-i-stalker-name
+	Valued:
+		Cost: 550
+	Health:
+		HP: 16000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: i_stalker.death
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Mobile:
+		Speed: 135
+	Armament@PRIMARY:
+		Weapon: SF_i_stalker
+	Armament@GARRISONED:
+		Weapon: SF_i_stalker
+
+I_STALKER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: i_stalker_death
+
+I_CATACLYSM:
+	Inherits: I_TECH
+	Inherits@POWER: ^DisableOnLowPowerOrPowerDown
+	RenderSprites:
+		Image: i_cataclysm
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: i_tech, ~sf.machine, ~techlevel.high
+		Description: sf-completion-i-cataclysm-description
+	Tooltip:
+		Name: sf-completion-i-cataclysm-name
+	Valued:
+		Cost: 6000
+	Health:
+		HP: 80000
+	Power:
+		Amount: -250
+	SupportPowerChargeBar:
+	SFFactionPower:
+		Kind: Extinction
+		Radius: 5
+		WarningTicks: 125
+		OrderName: SFSharedExtinctionOrder
+		ChargeInterval: 7500
+		IconImage: i_cataclysm
+		Icon: icon
+		IconPalette: sf_rgba
+		Name: sf-shared-i-name
+		Description: sf-shared-i-description
+		PauseOnCondition: disabled || build-incomplete || sf-petrified
+		DisplayTimerRelationships: Ally, Enemy
+		DisplayRadarPing: True
+
+F_HELIPAD:
+	Inherits: A_HELIPAD
+	RenderSprites:
+		Image: f_helipad
+	Buildable:
+		Prerequisites: f_radar, ~sf.fallen, ~techlevel.medium
+		Description: sf-completion-f-helipad-description
+	Tooltip:
+		Name: sf-completion-f-helipad-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_helipad
+	Production:
+		PauseOnCondition: sf-petrified
+
+F_KENNEL:
+	Inherits: A_KENNEL
+	RenderSprites:
+		Image: f_kennel
+	Buildable:
+		Prerequisites: f_chapel, ~sf.fallen, ~techlevel.medium
+		Description: sf-completion-f-kennel-description
+	Tooltip:
+		Name: sf-completion-f-kennel-name
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: f_kennel
+	Production:
+		PauseOnCondition: sf-petrified
+
+F_BONEKITE:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	RenderSprites:
+		Image: f_bonekite
+		Palette: sf_rgba
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 110
+		Prerequisites: f_helipad, ~sf.fallen, ~techlevel.medium
+		Description: sf-completion-f-bonekite-description
+	Tooltip:
+		Name: sf-completion-f-bonekite-name
+	Valued:
+		Cost: 1800
+	Health:
+		HP: 28000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_bonekite.death
+	-SpawnActorOnDeath:
+	-EjectOnDeath:
+	Aircraft:
+		Speed: 125
+		TurnSpeed: 24
+		CruiseAltitude: 1c512
+		Crushes: crate
+		PauseOnCondition: sf-petrified
+	RevealsShroud:
+		Range: 8c0
+		Type: GroundPosition
+	Armament:
+		Weapon: SF_f_bonekite
+	WithFacingSpriteBody:
+		Sequence: move
+	WithAttackAnimation:
+		Sequence: shoot
+		RequiresCondition: !sf-petrified
+	AttackAircraft:
+		AttackType: Hover
+		FacingTolerance: 80
+		PauseOnCondition: sf-petrified
+	AutoTarget:
+		InitialStance: AttackAnything
+		InitialStanceAI: AttackAnything
+	Repairable:
+		RepairActors: f_service
+
+F_BONEKITE.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_bonekite_death
+
+F_CARRION:
+	Inherits: H_RIFLEMAN
+	RenderSprites:
+		Image: f_carrion
+		Palette: sf_rgba
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Dog
+		BuildPaletteOrder: 110
+		Prerequisites: f_kennel, ~sf.fallen, ~techlevel.medium
+		Description: sf-completion-f-carrion-description
+	Tooltip:
+		Name: sf-completion-f-carrion-name
+	Valued:
+		Cost: 750
+	Health:
+		HP: 30000
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: f_carrion.death
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Mobile:
+		Speed: 85
+	Armament@PRIMARY:
+		Weapon: SF_f_carrion
+	Armament@GARRISONED:
+		Weapon: SF_f_carrion
+
+F_CARRION.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: f_carrion_death
+
+F_CATACLYSM:
+	Inherits: F_TECH
+	Inherits@POWER: ^DisableOnLowPowerOrPowerDown
+	RenderSprites:
+		Image: f_cataclysm
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: f_tech, ~sf.fallen, ~techlevel.high
+		Description: sf-completion-f-cataclysm-description
+	Tooltip:
+		Name: sf-completion-f-cataclysm-name
+	Valued:
+		Cost: 6000
+	Health:
+		HP: 80000
+	Power:
+		Amount: -250
+	SupportPowerChargeBar:
+	SFFactionPower:
+		Kind: Rapture
+		Radius: 5
+		WarningTicks: 125
+		OrderName: SFSharedRaptureOrder
+		ChargeInterval: 7500
+		IconImage: f_cataclysm
+		Icon: icon
+		IconPalette: sf_rgba
+		Name: sf-shared-f-name
+		Description: sf-shared-f-description
+		PauseOnCondition: disabled || build-incomplete || sf-petrified
+		DisplayTimerRelationships: Ally, Enemy
+		DisplayRadarPing: True
+
+^Infantry:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	Mobile:
+		PauseOnCondition: sf-petrified
+
+^Vehicle:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	Mobile:
+		PauseOnCondition: being-captured || sf-petrified
+
+^Ship:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	Mobile:
+		PauseOnCondition: sf-petrified
+
+^Building:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	PowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+
+^NeutralPlane:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	Aircraft:
+		PauseOnCondition: sf-petrified
+
+^SF_TREE:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+
+^SF_BRIDGE:
+	SFPetrifiable:
+	ExternalCondition@PETRIFIED:
+		Condition: sf-petrified
+		SourceCap: 1
+		TotalCap: 1
+	WithColoredOverlay@PETRIFIED:
+		Color: E8E5DFFF
+		RequiresCondition: sf-petrified
+	DamageMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+	FirepowerMultiplier@PETRIFIED:
+		Modifier: 0
+		RequiresCondition: sf-petrified
+
+FACT:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_CHAPEL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_BARRACKS:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_PIT:
+	Production:
+		PauseOnCondition: sf-petrified
+
+I_BARRACKS:
+	Production:
+		PauseOnCondition: sf-petrified
+
+F_CHAPEL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_ARMORY:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_MOTORPOOL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_FORGE:
+	Production:
+		PauseOnCondition: sf-petrified
+
+I_MOTORPOOL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+F_ARMORY:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_HELIPAD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_KENNEL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_HELIPAD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_KENNEL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_HELIPAD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_KENNEL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_AIRFIELD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+A_NAVAL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_AIRFIELD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+H_NAVAL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_AIRFIELD:
+	Production:
+		PauseOnCondition: sf-petrified
+
+D_NAVAL:
+	Production:
+		PauseOnCondition: sf-petrified
+
+Player:
+	UnitBuilderBotModule:
+		UnitsToBuild:
+			h_gunship: 12
+			h_warhound: 18
+			a_skywarden: 12
+			a_gryphon: 18
+			d_wyvern: 12
+			d_hellhound: 18
+			i_interceptor: 12
+			i_stalker: 18
+			f_bonekite: 12
+			f_carrion: 18
+	BaseBuilderBotModule:
+		BuildingFractions:
+			h_helipad: 8
+			h_kennel: 5
+			h_tech: 5
+			h_cataclysm: 2
+			a_helipad: 8
+			a_kennel: 5
+			a_tech: 5
+			a_cataclysm: 2
+			d_helipad: 8
+			d_kennel: 5
+			d_tech: 5
+			d_cataclysm: 2
+			i_helipad: 8
+			i_kennel: 5
+			i_tech: 5
+			i_cataclysm: 2
+			f_helipad: 8
+			f_kennel: 5
+			f_tech: 5
+			f_cataclysm: 2
+		BuildingLimits:
+			h_helipad: 1
+			h_kennel: 1
+			h_cataclysm: 1
+			a_helipad: 1
+			a_kennel: 1
+			a_cataclysm: 1
+			d_helipad: 1
+			d_kennel: 1
+			d_cataclysm: 1
+			i_helipad: 1
+			i_kennel: 1
+			i_cataclysm: 1
+			f_helipad: 1
+			f_kennel: 1
+			f_cataclysm: 1
+	SupportPowerBotModule@SHARED:
+		RequiresCondition: sevenfall-ai
+		Decisions:
+			Nuclear:
+				OrderName: SFSharedNuclearOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 6c0
+			Petrification:
+				OrderName: SFSharedPetrificationOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 4c0
+			Hellrift:
+				OrderName: SFSharedHellriftOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 5c0
+			Extinction:
+				OrderName: SFSharedExtinctionOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 5c0
+			Rapture:
+				OrderName: SFSharedRaptureOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 5c0

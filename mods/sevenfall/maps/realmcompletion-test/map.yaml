@@ -1,0 +1,119 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Shared Realm Arsenal Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Enemy:
+		Name: Enemy
+		Faction: h_bastion
+		Enemies: P0, P1, P2, P3, P4, Cancel
+	PlayerReference@P0:
+		Name: P0
+		Faction: h_bastion
+		Enemies: Enemy
+	PlayerReference@P1:
+		Name: P1
+		Faction: a_seraph
+		Enemies: Enemy
+	PlayerReference@P2:
+		Name: P2
+		Faction: d_legion
+		Enemies: Enemy
+	PlayerReference@P3:
+		Name: P3
+		Faction: i_echo
+		Enemies: Enemy
+	PlayerReference@P4:
+		Name: P4
+		Faction: f_thrones
+		Enemies: Enemy
+	PlayerReference@Cancel:
+		Name: Cancel
+		Faction: a_warden
+		Enemies: Enemy
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 45,65
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: realmcompletion-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True
+	H_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 25
+	H_GUNSHIP:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	H_WARHOUND:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	A_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 25
+	A_SKYWARDEN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	A_GRYPHON:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	D_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 25
+	D_WYVERN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	D_HELLHOUND:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	I_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 25
+	I_INTERCEPTOR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	I_STALKER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	F_CATACLYSM:
+		SFFactionPower:
+			ChargeInterval: 25
+	F_BONEKITE:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	F_CARRION:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100

@@ -12,7 +12,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.Sevenfall
 {
-    public enum SFUltimate { Dawn, Sanctuary, Rebellion, Requiem, Barrage, Relief, Covenant, Singularity, Furnace, Bloodtide, Silence, Verdict }
+    public enum SFUltimate { Dawn, Sanctuary, Rebellion, Requiem, Barrage, Relief, Covenant, Singularity, Furnace, Bloodtide, Silence, Verdict, Nuclear, Petrification, Hellrift, Extinction, Rapture }
     public class SFFactionPowerInfo : SupportPowerInfo
     {
         public readonly SFUltimate Kind;
@@ -95,6 +95,15 @@ namespace OpenRA.Mods.Sevenfall
         public void Launch(Actor source, SFFactionPowerInfo info, CPos cell)
         {
             launches[source.Owner]=Launches(source.Owner)+1;
+            if (info.Kind==SFUltimate.Petrification)
+                source.World.AddFrameEndTask(w=>w.Add(new SpriteEffect(w.Map.CenterOfCell(cell)+new WVec(0,0,2048),w,"sf_witness","warning","sf_rgba")));
+            if (info.Kind==SFUltimate.Nuclear)
+            {
+                var launchedAt=source.World.WorldTick;
+                source.World.AddFrameEndTask(w=>w.Add(new SpriteEffect(
+                    ()=>w.Map.CenterOfCell(cell)+new WVec(0,0,12000*System.Math.Max(0,info.WarningTicks-(w.WorldTick-launchedAt))/System.Math.Max(1,info.WarningTicks)),
+                    ()=>WAngle.Zero,w,"sf_nuclear","warning","sf_rgba")));
+            }
             pending.Add(new Strike { Source = source, Owner = source.Owner, Info = info, Cell = cell, At = source.World.WorldTick + info.WarningTicks });
             // Visible to everyone with vision at the target; no hidden-information leak.
             source.World.AddFrameEndTask(w => w.Add(new FloatingText(w.Map.CenterOfCell(cell), source.Owner.Color,
@@ -113,6 +122,10 @@ namespace OpenRA.Mods.Sevenfall
             switch (kind)
             {
                 case SFUltimate.Dawn: return building ? 25000 : 15000;
+                case SFUltimate.Nuclear: return building ? 120000 : 60000;
+                case SFUltimate.Hellrift: return building ? 50000 : 30000;
+                case SFUltimate.Extinction: return building ? 18000 : 10000;
+                case SFUltimate.Rapture: return building ? 45000 : 35000;
                 case SFUltimate.Barrage: return building ? 18000 : 9000;
                 case SFUltimate.Singularity: return 12000;
                 case SFUltimate.Furnace: return building ? 65000 : 10000;
@@ -129,6 +142,8 @@ namespace OpenRA.Mods.Sevenfall
             var radius = strike.Info.Radius * 1024;
             var impactCenter=center;
             world.AddFrameEndTask(w=>w.Add(new SFFactionPowerEffect(impactCenter,radius,strike.Info.Kind,45,true)));
+            if (strike.Info.Kind==SFUltimate.Petrification || strike.Info.Kind==SFUltimate.Nuclear)
+                world.AddFrameEndTask(w=>w.Add(new SpriteEffect(impactCenter,w,strike.Info.Kind==SFUltimate.Petrification?"sf_witness":"sf_nuclear","impact","sf_rgba")));
             foreach (var target in world.FindActorsInCircle(center, new WDist(radius)).Where(SFFactionIdentity.Living).OrderBy(a => a.ActorID).ToArray())
             {
                 var health = target.TraitOrDefault<Health>();
@@ -136,14 +151,22 @@ namespace OpenRA.Mods.Sevenfall
                 var relation = strike.Owner.RelationshipWith(target.Owner);
                 var ally = relation == PlayerRelationship.Ally;
                 var enemy = relation == PlayerRelationship.Enemy;
-                var mobile = target.Info.HasTraitInfo<MobileInfo>();
+                var mobile = target.Info.HasTraitInfo<MobileInfo>() || target.Info.HasTraitInfo<AircraftInfo>();
                 var infantry = target.Info.HasTraitInfo<WithInfantryBodyInfo>();
                 void Grant(string name, int ticks) => SFFactionIdentity.Grant(target, this, name, ticks);
-                var damage = enemy ? DamageFor(strike.Info.Kind, !mobile, health.HP, health.MaxHP) : 0;
+                if (strike.Info.Kind==SFUltimate.Petrification)
+                {
+                    target.TraitOrDefault<SFPetrifiable>()?.Petrify(target,strike.Source,100);
+                    continue;
+                }
+                var damage = (enemy || strike.Info.Kind==SFUltimate.Nuclear) ? DamageFor(strike.Info.Kind, !mobile, health.HP, health.MaxHP) : 0;
                 if (damage > 0) target.InflictDamage(strike.Source, new Damage(damage));
                 if (!SFFactionIdentity.Living(target)) continue;
                 switch (strike.Info.Kind)
                 {
+                    case SFUltimate.Extinction: if (enemy) Grant("sf-lockdown",75); break;
+                    case SFUltimate.Hellrift: if (enemy) Grant("sf-scorched",250); break;
+                    case SFUltimate.Rapture: if (enemy) Grant("sf-null",750); break;
                     case SFUltimate.Sanctuary: if (ally && mobile) Grant("sf-sanctum", 375); break;
                     case SFUltimate.Rebellion: if (ally && mobile) Grant("sf-rebellion", 500); break;
                     case SFUltimate.Requiem:
@@ -178,7 +201,7 @@ namespace OpenRA.Mods.Sevenfall
                     ? strike.Source.TraitsImplementing<SFFactionPower>().FirstOrDefault(p => p.Info == strike.Info) : null;
                 if (power == null || power.IsTraitDisabled || power.IsTraitPaused) { pending.Remove(strike); continue; }
                 Impact(self, strike);
-                if (strike.Info.Kind == SFUltimate.Barrage && ++strike.Pulse < 3) strike.At += 25;
+                if ((strike.Info.Kind == SFUltimate.Barrage || strike.Info.Kind == SFUltimate.Extinction) && ++strike.Pulse < 3) strike.At += 25;
                 else pending.Remove(strike);
             }
         }

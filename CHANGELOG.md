@@ -1,5 +1,22 @@
 # Sevenfall changelog
 
+## Shared realm arsenal — development
+
+- All five parent realms now offer aircraft, beasts and shared superweapons to
+  their four subfactions, alongside their existing buildings and defenses.
+- Added ten asymmetrical units, four machine/fallen production buildings, five
+  shared superweapon installations, AI build preferences and targeting decisions.
+- Humans gain a nuclear missile. Angels summon a six-winged Witness whose flash
+  petrifies units, structures, trees and bridges; salt statues crumble four seconds
+  later. Both powers can harm friendly and neutral actors. Terrain is unchanged.
+- Hell gains Hellrift, machines gain the three-pulse Extinction strike, and the
+  Forsaken gain Sepulchral Rapture. Existing subfaction powers remain available.
+- Added twenty generated sprite sheets, icons and a shared-arsenal website gallery.
+  The human missile installation currently reuses human tech-building artwork.
+- Passed 111 Python tests, 120 C# assertions, engine asset validation and 53
+  native production/combat/superweapon checks, plus 78 existing-power regression
+  checks. Published alpha.2 is unchanged.
+
 ## Painted new-realm roster — development
 
 - Replaced temporary graphics with 51 painted sheets: 23 buildings and 28 units

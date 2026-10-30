@@ -1,0 +1,162 @@
+[
+  {
+    "id": "h_gunship",
+    "kind": "unit",
+    "subject": "Bastion Gunship, military human VTOL gunship with twin ducted rotors, olive armored fuselage and rocket pods",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/h_gunship.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Bastion Gunship, military human VTOL gunship with twin ducted rotors, olive armored fuselage and rocket pods. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "a_skywarden",
+    "kind": "unit",
+    "subject": "Sky Warden, radiant armored angelic flying warrior with two broad feathered wings, ivory gold armor and a luminous spear",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/a_skywarden.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Sky Warden, radiant armored angelic flying warrior with two broad feathered wings, ivory gold armor and a luminous spear. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "d_wyvern",
+    "kind": "unit",
+    "subject": "Ash Wyvern, infernal flying reptilian beast, charcoal scales, burning throat, membranous red wings",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/d_wyvern.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Ash Wyvern, infernal flying reptilian beast, charcoal scales, burning throat, membranous red wings. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "i_interceptor",
+    "kind": "unit",
+    "subject": "Vector Interceptor, autonomous AI triangular hover drone, white ceramic carbon hull, cyan lens and twin energy emitters",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/i_interceptor.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Vector Interceptor, autonomous AI triangular hover drone, white ceramic carbon hull, cyan lens and twin energy emitters. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "f_bonekite",
+    "kind": "unit",
+    "subject": "Mourning Kite, grotesque fallen angel aerial abomination, ragged three-pair vestigial wings, exposed bone carapace, violet mouth",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/f_bonekite.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Mourning Kite, grotesque fallen angel aerial abomination, ragged three-pair vestigial wings, exposed bone carapace, violet mouth. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "h_warhound",
+    "kind": "unit",
+    "subject": "Ironjaw Warhound, realistic muscular military working dog with olive ballistic armor and mechanical reinforced jaw",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/h_warhound.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Ironjaw Warhound, realistic muscular military working dog with olive ballistic armor and mechanical reinforced jaw. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "a_gryphon",
+    "kind": "unit",
+    "subject": "Covenant Gryphon, grounded lion and eagle guardian beast with folded ivory wings and gold head armor",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/a_gryphon.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Covenant Gryphon, grounded lion and eagle guardian beast with folded ivory wings and gold head armor. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "d_hellhound",
+    "kind": "unit",
+    "subject": "Cinder Hound, muscular infernal hound with three heads, black scales, ember veins and burning jaws",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/d_hellhound.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Cinder Hound, muscular infernal hound with three heads, black scales, ember veins and burning jaws. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "i_stalker",
+    "kind": "unit",
+    "subject": "Logic Stalker, AI mechanical quadrupedal hunting beast, white ceramic armor, cyan optical eyes, four articulated claw legs",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/i_stalker.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Logic Stalker, AI mechanical quadrupedal hunting beast, white ceramic armor, cyan optical eyes, four articulated claw legs. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "f_carrion",
+    "kind": "unit",
+    "subject": "Carrion Chimera, grotesque fallen celestial quadruped with mismatched bone limbs, ruined feather mane, violet eyes and split armored jaw",
+    "frameSize": 80,
+    "source": "art/realm-completion/painted-source/f_carrion.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Carrion Chimera, grotesque fallen celestial quadruped with mismatched bone limbs, ruined feather mane, violet eyes and split armored jaw. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 8 columns and 4 rows of isolated evenly spaced sprites. Columns clockwise N NE E SE S SW W NW. Row1 idle, row2 stride or wings midflap or flight motion, row3 firing or biting action facing the same direction, row4 fallen wreck or corpse. Exactly 32 cells, generous transparent gutters; no overlapping cells. All poses same scale."
+  },
+  {
+    "id": "i_helipad",
+    "kind": "building",
+    "subject": "Vector Launch Deck, compact AI drone production platform, cyan induction ring, white ceramic gantry, no weapons",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/i_helipad.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Vector Launch Deck, compact AI drone production platform, cyan induction ring, white ceramic gantry, no weapons. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "f_helipad",
+    "kind": "building",
+    "subject": "Mourning Roost, fallen aerial production nest of pale ribs, ragged feathers and violet altar, no weapons",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/f_helipad.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Mourning Roost, fallen aerial production nest of pale ribs, ragged feathers and violet altar, no weapons. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "i_kennel",
+    "kind": "building",
+    "subject": "Quadruped Assembly, small AI robotic beast fabrication shed with cyan scanners and articulated robot arms, no weapons",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/i_kennel.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Quadruped Assembly, small AI robotic beast fabrication shed with cyan scanners and articulated robot arms, no weapons. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "f_kennel",
+    "kind": "building",
+    "subject": "Carrion Cradle, fallen beast breeding pen formed from ribs and ruined ivory arches, violet marrow vats, no weapons",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/f_kennel.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Carrion Cradle, fallen beast breeding pen formed from ribs and ruined ivory arches, violet marrow vats, no weapons. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "a_cataclysm",
+    "kind": "building",
+    "subject": "Throne of Witness, angelic ivory gold temple with six wing-shaped arches around a brilliant halo, summons judgement",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/a_cataclysm.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Throne of Witness, angelic ivory gold temple with six wing-shaped arches around a brilliant halo, summons judgement. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "d_cataclysm",
+    "kind": "building",
+    "subject": "Hellmouth Crucible, infernal obsidian fortress containing a circular molten volcanic chasm and demonic horns",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/d_cataclysm.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Hellmouth Crucible, infernal obsidian fortress containing a circular molten volcanic chasm and demonic horns. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "i_cataclysm",
+    "kind": "building",
+    "subject": "Extinction Array, AI white carbon orbital targeting installation, cyan focusing dish and angular supercomputer pylons",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/i_cataclysm.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Extinction Array, AI white carbon orbital targeting installation, cyan focusing dish and angular supercomputer pylons. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "f_cataclysm",
+    "kind": "building",
+    "subject": "Sepulchral Crown, fallen bone cathedral superweapon with shattered halo, hanging black veils and violet soul vortex",
+    "frameSize": 128,
+    "source": "art/realm-completion/painted-source/f_cataclysm.png",
+    "prompt": "Original Sevenfall painterly isometric RTS game sprite sheet: Sepulchral Crown, fallen bone cathedral superweapon with shattered halo, hanging black veils and violet soul vortex. Crisp silhouette, high camera 35-degree elevation, detailed materials. Transparent alpha background, no text, no grid lines, no ground tiles. Exactly 3 columns and 2 rows, six isolated states: top row intact, moderately damaged, critically damaged; bottom row early construction, half constructed, operating. Buildings fixed southeast view, same footprint and scale, generous transparent gutters."
+  },
+  {
+    "id": "sf_witness",
+    "kind": "effect",
+    "subject": "A single monumental hovering biblical six-winged angel, exactly three pairs of feathered wings (six total), ivory-gold armored body, no text: chronological frames folded wings, half opening, fully opening six wings, brilliant white golden flash, fading angel, white stone salt dust crumbling. Transparent, centered six equal cells arranged 3 columns by 2 rows, consistent camera and scale, isolated effects, no backgrounds.",
+    "frameSize": 256,
+    "source": "art/realm-completion/painted-source/sf_witness.png",
+    "prompt": "A single monumental hovering biblical six-winged angel, exactly three pairs of feathered wings (six total), ivory-gold armored body, no text: chronological frames folded wings, half opening, fully opening six wings, brilliant white golden flash, fading angel, white stone salt dust crumbling. Transparent, centered six equal cells arranged 3 columns by 2 rows, consistent camera and scale, isolated effects, no backgrounds."
+  },
+  {
+    "id": "sf_nuclear",
+    "kind": "effect",
+    "subject": "Nuclear missile impact visual effect for isometric RTS. Chronological six frames: falling olive missile pointed down, initial white impact flash, orange fireball, rising mushroom cloud, mushroom cloud expanding, fading ash and smoke. Transparent, six equal cells arranged 3 columns by 2 rows, same anchor and scale, no terrain or background.",
+    "frameSize": 256,
+    "source": "art/realm-completion/painted-source/sf_nuclear.png",
+    "prompt": "Nuclear missile impact visual effect for isometric RTS. Chronological six frames: falling olive missile pointed down, initial white impact flash, orange fireball, rising mushroom cloud, mushroom cloud expanding, fading ash and smoke. Transparent, six equal cells arranged 3 columns by 2 rows, same anchor and scale, no terrain or background."
+  }
+]

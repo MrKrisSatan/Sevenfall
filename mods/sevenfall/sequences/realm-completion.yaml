@@ -1,0 +1,1860 @@
+h_gunship:
+	idle:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/h_gunship-icon.png
+h_gunship_death:
+	die:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/h_gunship.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+a_skywarden:
+	idle:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/a_skywarden-icon.png
+a_skywarden_death:
+	die:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/a_skywarden.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+d_wyvern:
+	idle:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/d_wyvern-icon.png
+d_wyvern_death:
+	die:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/d_wyvern.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_interceptor:
+	idle:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/i_interceptor-icon.png
+i_interceptor_death:
+	die:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/i_interceptor.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_bonekite:
+	idle:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/f_bonekite-icon.png
+f_bonekite_death:
+	die:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/f_bonekite.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+h_warhound:
+	idle:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/h_warhound-icon.png
+h_warhound_death:
+	die:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/h_warhound.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+a_gryphon:
+	idle:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/a_gryphon-icon.png
+a_gryphon_death:
+	die:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/a_gryphon.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+d_hellhound:
+	idle:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/d_hellhound-icon.png
+d_hellhound_death:
+	die:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/d_hellhound.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_stalker:
+	idle:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/i_stalker-icon.png
+i_stalker_death:
+	die:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/i_stalker.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+f_carrion:
+	idle:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	stand:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	run:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	move:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	shoot:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-stand:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	prone-run:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 8
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	prone-shoot:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	parachute:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 0
+		Length: 1
+		Facings: -8
+		Stride: 1
+		Tick: 120
+	harvest:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	dock-loop:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 24
+		Length: 2
+		Facings: -8
+		Stride: 2
+		Tick: 120
+	icon:
+		Filename: sevenfall|art/realm-completion/f_carrion-icon.png
+f_carrion_death:
+	die:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 40
+		Length: 3
+		Facings: -8
+		Tick: 120
+	corpse:
+		Filename: sevenfall|art/realm-completion/f_carrion.png
+		Start: 42
+		Length: 1
+		Facings: -8
+		Stride: 3
+i_helipad:
+	idle:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/i_helipad.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/i_helipad-icon.png
+f_helipad:
+	idle:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/f_helipad.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/f_helipad-icon.png
+i_kennel:
+	idle:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/i_kennel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/i_kennel-icon.png
+f_kennel:
+	idle:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/f_kennel.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/f_kennel-icon.png
+a_cataclysm:
+	idle:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/a_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/a_cataclysm-icon.png
+d_cataclysm:
+	idle:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/d_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/d_cataclysm-icon.png
+i_cataclysm:
+	idle:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/i_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/i_cataclysm-icon.png
+f_cataclysm:
+	idle:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/f_cataclysm.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	icon:
+		Filename: sevenfall|art/realm-completion/f_cataclysm-icon.png
+sf_witness:
+	idle:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	warning:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 0
+		Length: 3
+		Tick: 1667
+	impact:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 3
+		Length: 2
+		Tick: 200
+	crumble:
+		Filename: sevenfall|art/realm-completion/sf_witness.png
+		Start: 5
+		Length: 1
+		Tick: 1200
+	icon:
+		Filename: sevenfall|art/realm-completion/sf_witness-icon.png
+sf_nuclear:
+	idle:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-idle:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	critical-idle:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	make:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 3
+		Length: 2
+		Tick: 160
+		Offset: 0,-24
+	build:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-build:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	active:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	damaged-active:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 1
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	shoot:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 5
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	place:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 0
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	dead:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 2
+		Length: 1
+		Tick: 160
+		Offset: 0,-24
+	warning:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 0
+		Length: 1
+		Tick: 5000
+	impact:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 1
+		Length: 5
+		Tick: 200
+	crumble:
+		Filename: sevenfall|art/realm-completion/sf_nuclear.png
+		Start: 5
+		Length: 1
+		Tick: 1200
+	icon:
+		Filename: sevenfall|art/realm-completion/sf_nuclear-icon.png

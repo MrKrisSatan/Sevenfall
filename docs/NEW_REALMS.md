@@ -74,9 +74,9 @@ Balefire Watches, Wrath Organs and Broken Halo Batteries provide defenses.
   not three death phases. Mobile damage states still reuse the intact body.
 - Machine HUDs use cyan/blue circuitry; Forsaken HUDs use violet/bone and a
   broken-wing emblem. Neutral menus remain neutral.
-- This pass adds no new superweapons, aircraft, naval or flying fallen units.
-  Grounded wings are intentional. These are future content decisions, not hidden
-  promises in the unit descriptions.
+- The [shared arsenal](SHARED_ARSENAL.md) now adds aircraft, beasts and parent-realm
+  superweapons. The original Severed Pinion remains grounded; the Mourning Kite
+  is a separate flying unit. A complete naval roster remains future work.
 - Native component acceptance is not a full-match balance, multiplayer or
   save/load certification for this expanded roster. Keep those results separate.
 

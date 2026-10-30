@@ -1,0 +1,79 @@
+Lua debug: IDENTITY_TEST PASS: Brood enemy kill feeds and heals killer
+Lua debug: IDENTITY_TEST PASS: Brood feeding grants timed identity
+Lua debug: IDENTITY_TEST PASS: Court attack applies real slow and weakness
+Lua debug: IDENTITY_TEST PASS: Synod prepares a real charged volley
+Lua debug: IDENTITY_TEST PASS: Gate formation protects nearby ally
+Lua debug: IDENTITY_TEST PASS: Unshackled wounded state increases firepower
+Lua debug: IDENTITY_TEST PASS: Bastion entrenchment reduces actual damage
+Lua debug: IDENTITY_TEST PASS: Union supply corridor increases movement
+Lua debug: IDENTITY_TEST PASS: Covenant aura heals wounded infantry
+Lua debug: IDENTITY_TEST PASS: Legion formation reduces incoming damage
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 1
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 1
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 1
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 2
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 2
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 2
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 3
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 3
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 3
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 4
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 4
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 4
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 5
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 5
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 5
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 6
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 6
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 6
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 7
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 7
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 7
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 8
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 8
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 8
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 9
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 9
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 9
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 10
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 10
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 10
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 11
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 11
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 11
+Lua debug: IDENTITY_TEST PASS: exclusive specialist loads animated body 12
+Lua debug: IDENTITY_TEST PASS: faction superweapon charges 12
+Lua debug: IDENTITY_TEST PASS: normal power order consumes ready charge 12
+Lua debug: IDENTITY_TEST PASS: movement interrupts Synod focus
+Lua debug: IDENTITY_TEST PASS: movement breaks Bastion entrenchment
+Lua debug: IDENTITY_TEST PASS: superweapon warning allows a response before impact
+Lua debug: IDENTITY_TEST PASS: Dawn damages enemy troops
+Lua debug: IDENTITY_TEST PASS: Unbroken Gate protection multiplies with formation armor
+Lua debug: IDENTITY_TEST PASS: Rebellion trades exposure for speed and firepower
+Lua debug: IDENTITY_TEST PASS: Requiem empowers allies and weakens enemy infantry
+Lua debug: IDENTITY_TEST PASS: Rolling Thunder performs advancing impacts
+Lua debug: IDENTITY_TEST PASS: Emergency Airlift repairs and accelerates troops
+Lua debug: IDENTITY_TEST PASS: Ashes to Ashes restores infantry and protects them
+Lua debug: IDENTITY_TEST PASS: Event Horizon damages and locks enemies
+Lua debug: IDENTITY_TEST PASS: Event Horizon also locks and suppresses friendly troops
+Lua debug: IDENTITY_TEST PASS: Ninth Furnace destroys enemy infrastructure and damages armor
+Lua debug: IDENTITY_TEST PASS: Red Deluge heals and regenerates allied infantry
+Lua debug: IDENTITY_TEST PASS: Nameless Silence disables enemy movement and weapon damage
+Lua debug: IDENTITY_TEST PASS: Final Verdict punishes wounded targets more than healthy armor
+Lua debug: IDENTITY_TEST PASS: Final Verdict empowers nearby allies
+Lua debug: IDENTITY_TEST PASS: ordinary feeding expires without another kill
+Lua debug: IDENTITY_TEST PASS: ordinary Court curse expires
+Lua debug: IDENTITY_TEST PASS: friendly kills grant no Brood feeding
+Lua debug: IDENTITY_TEST PASS: second power can be ordered after recharge
+Lua debug: IDENTITY_TEST PASS: siege power recharges through normal manager
+Lua debug: IDENTITY_TEST PASS: army buff recharges through normal manager
+Lua debug: IDENTITY_TEST PASS: losing power cancels warned siege strike
+Lua debug: IDENTITY_TEST PASS: destroying installation cancels warned strike
+Lua debug: IDENTITY_TEST PASS: lock expires while longer null suppression remains
+Lua debug: IDENTITY_TEST PASS: capturing installation cancels old owner army buff
+Lua debug: IDENTITY_TEST PASS: formation benefit expires outside Gate range
+Lua debug: IDENTITY_TEST PASS: mobile supply benefit expires outside corridor
+Lua debug: IDENTITY_TEST PASS: Legion benefit expires outside command formation
+Lua debug: IDENTITY_TEST PASS: Event Horizon suppression expires after thirty seconds
+Lua debug: IDENTITY_TEST PASS: Silence expires without permanent disable
+Lua debug: IDENTITY_TEST COMPLETE checks=78

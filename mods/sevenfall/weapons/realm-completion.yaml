@@ -1,0 +1,94 @@
+SF_h_gunship:
+	Inherits: HellfireAA
+	ReloadDelay: 40
+	Range: 5c0
+	Burst: 1
+	ValidTargets: GroundActor, WaterActor, AirborneActor
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Damage: 3600
+
+SF_h_warhound:
+	Inherits: SF_HellClaw
+	ReloadDelay: 20
+	Warhead@1Dam: SpreadDamage
+		Damage: 1800
+		Versus:
+			Light: 45
+			Heavy: 20
+
+SF_a_skywarden:
+	Inherits: HellfireAA
+	ReloadDelay: 70
+	Range: 5c0
+	Burst: 1
+	ValidTargets: GroundActor, WaterActor, AirborneActor
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Damage: 6500
+
+SF_a_gryphon:
+	Inherits: SF_HellClaw
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 4800
+		Versus:
+			Light: 100
+			Heavy: 85
+
+SF_d_wyvern:
+	Inherits: HellfireAA
+	ReloadDelay: 48
+	Range: 5c0
+	Burst: 1
+	ValidTargets: GroundActor, WaterActor, AirborneActor
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Damage: 4200
+
+SF_d_hellhound:
+	Inherits: SF_HellClaw
+	ReloadDelay: 28
+	Warhead@1Dam: SpreadDamage
+		Damage: 3000
+		Versus:
+			Light: 45
+			Heavy: 20
+
+SF_i_interceptor:
+	Inherits: HellfireAA
+	ReloadDelay: 25
+	Range: 7c0
+	Burst: 1
+	ValidTargets: GroundActor, WaterActor, AirborneActor
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Damage: 3000
+
+SF_i_stalker:
+	Inherits: SF_HellClaw
+	ReloadDelay: 25
+	Warhead@1Dam: SpreadDamage
+		Damage: 2500
+		Versus:
+			Light: 100
+			Heavy: 20
+
+SF_f_bonekite:
+	Inherits: HellfireAA
+	ReloadDelay: 65
+	Range: 5c0
+	Burst: 1
+	ValidTargets: GroundActor, WaterActor, AirborneActor
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Damage: 5800
+
+SF_f_carrion:
+	Inherits: SF_HellClaw
+	ReloadDelay: 50
+	Warhead@1Dam: SpreadDamage
+		Damage: 6000
+		Versus:
+			Light: 100
+			Heavy: 85

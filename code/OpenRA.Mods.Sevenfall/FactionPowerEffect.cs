@@ -22,7 +22,7 @@ namespace OpenRA.Mods.Sevenfall
         IEnumerable<IRenderable> IEffectAnnotation.RenderAnnotation(WorldRenderer wr)
         {
             if (wr.World.FogObscures(center) || wr.World.ShroudObscures(center)) yield break;
-            Color.TryParse(Colors[(int)kind],out var baseColor);
+            Color.TryParse(kind==SFUltimate.Petrification ? "FFFFFF" : Colors[(int)kind%Colors.Length],out var baseColor);
             var color=Color.FromArgb(impact ? 200 : 160,baseColor);
             // Warning boundary remains accurate; impact rings expand entirely within it.
             yield return new CircleAnnotationRenderable(center,new WDist(radius),impact ? 3 : 2,color);

@@ -2,6 +2,11 @@
 
 ## New realms development expansion
 
+- [x] Shared aircraft, beasts and superweapons for all five parent realms and
+  twenty subfactions; nuclear missile and timed six-winged salt judgement.
+- [ ] Shared-arsenal full-match balance, AI and multiplayer/save-load acceptance;
+  bespoke human missile-silo art and longer flight/effect animation cycles.
+
 - [x] Noetic Assembly and Forsaken Host, four selectable subfactions each.
 - [x] Sixteen exclusive units, two independent technology/economy branches, bot
   build lists, eight combat doctrines and two HUD themes.

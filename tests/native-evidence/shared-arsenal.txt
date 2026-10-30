@@ -1,0 +1,54 @@
+Lua debug: REALMCOMPLETION_TEST PASS: paid aircraft queue h_gunship
+Lua debug: REALMCOMPLETION_TEST PASS: paid beast queue h_warhound
+Lua debug: REALMCOMPLETION_TEST PASS: shared power order h
+Lua debug: REALMCOMPLETION_TEST PASS: paid aircraft queue a_skywarden
+Lua debug: REALMCOMPLETION_TEST PASS: paid beast queue a_gryphon
+Lua debug: REALMCOMPLETION_TEST PASS: shared power order a
+Lua debug: REALMCOMPLETION_TEST PASS: paid aircraft queue d_wyvern
+Lua debug: REALMCOMPLETION_TEST PASS: paid beast queue d_hellhound
+Lua debug: REALMCOMPLETION_TEST PASS: shared power order d
+Lua debug: REALMCOMPLETION_TEST PASS: paid aircraft queue i_interceptor
+Lua debug: REALMCOMPLETION_TEST PASS: paid beast queue i_stalker
+Lua debug: REALMCOMPLETION_TEST PASS: shared power order i
+Lua debug: REALMCOMPLETION_TEST PASS: paid aircraft queue f_bonekite
+Lua debug: REALMCOMPLETION_TEST PASS: paid beast queue f_carrion
+Lua debug: REALMCOMPLETION_TEST PASS: shared power order f
+Lua debug: REALMCOMPLETION_TEST PASS: cancellable Witness order
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft produced h_gunship
+Lua debug: REALMCOMPLETION_TEST PASS: beast produced h_warhound
+Lua debug: REALMCOMPLETION_TEST PASS: production deducted credits h
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft produced a_skywarden
+Lua debug: REALMCOMPLETION_TEST PASS: beast produced a_gryphon
+Lua debug: REALMCOMPLETION_TEST PASS: production deducted credits a
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft produced d_wyvern
+Lua debug: REALMCOMPLETION_TEST PASS: beast produced d_hellhound
+Lua debug: REALMCOMPLETION_TEST PASS: production deducted credits d
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft produced i_interceptor
+Lua debug: REALMCOMPLETION_TEST PASS: beast produced i_stalker
+Lua debug: REALMCOMPLETION_TEST PASS: production deducted credits i
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft produced f_bonekite
+Lua debug: REALMCOMPLETION_TEST PASS: beast produced f_carrion
+Lua debug: REALMCOMPLETION_TEST PASS: production deducted credits f
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft becomes salt
+Lua debug: REALMCOMPLETION_TEST PASS: building becomes salt
+Lua debug: REALMCOMPLETION_TEST PASS: trees and bridges become salt
+Lua debug: REALMCOMPLETION_TEST PASS: friendly unit becomes salt
+Lua debug: REALMCOMPLETION_TEST PASS: neutral unit becomes salt
+Lua debug: REALMCOMPLETION_TEST PASS: outside radius remains free
+Lua debug: REALMCOMPLETION_TEST PASS: statue persists before crumble
+Lua debug: REALMCOMPLETION_TEST PASS: destroying source during warning cancels flash
+Lua debug: REALMCOMPLETION_TEST PASS: salt crumbles even after source loss
+Lua debug: REALMCOMPLETION_TEST PASS: outside radius survives
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft crumbles
+Lua debug: REALMCOMPLETION_TEST PASS: trees and bridges crumble
+Lua debug: REALMCOMPLETION_TEST PASS: nuclear friendly and neutral damage
+Lua debug: REALMCOMPLETION_TEST PASS: shared strike damages target h
+Lua debug: REALMCOMPLETION_TEST PASS: shared strike damages target d
+Lua debug: REALMCOMPLETION_TEST PASS: shared strike damages target i
+Lua debug: REALMCOMPLETION_TEST PASS: shared strike damages target f
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft damages ground target h_gunship
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft damages ground target a_skywarden
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft damages ground target d_wyvern
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft damages ground target i_interceptor
+Lua debug: REALMCOMPLETION_TEST PASS: aircraft damages ground target f_bonekite
+Lua debug: REALMCOMPLETION_TEST COMPLETE checks=53

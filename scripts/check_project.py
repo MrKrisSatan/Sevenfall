@@ -16,7 +16,7 @@ for p in files:
             assert key not in local_ids, f'Duplicate {key} within {p}'
             local_ids.add(key)
             # These overlays intentionally refine actors declared earlier.
-            if p.name not in ('10-factions.yaml', '35-animations.yaml', '55-subfactions.yaml', '60-identities.yaml', '65-new-realms.yaml', '70-painted-realms.yaml', '90-alpha.yaml'):
+            if p.name not in ('10-factions.yaml', '35-animations.yaml', '55-subfactions.yaml', '60-identities.yaml', '65-new-realms.yaml', '70-painted-realms.yaml', '75-realm-completion.yaml', '90-alpha.yaml'):
                 assert key not in ids, f'Duplicate {key}: {p} and {ids[key]}'
             ids[key] = f'{p.name}:{no}'
 ftl = '\n'.join(p.read_text(encoding='utf8') for p in (base / 'fluent').glob('*.ftl'))
