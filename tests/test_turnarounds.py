@@ -22,7 +22,7 @@ class TurnaroundTests(unittest.TestCase):
         ids = {r['id'] for r in self.roster}
         new = json.loads((ROOT / 'art/subfactions/manifest.json').read_text(encoding='utf-8'))
         animated_ids = {e['id'].replace('_','-') for e in new['assets'] if e['frames']==64}
-        for group in ['new-realms','realm-completion']:
+        for group in ['new-realms','realm-completion','additional-realms']:
             painted=json.loads((ROOT/'art'/group/'painted-manifest.json').read_text(encoding='utf-8'))
             animated_ids |= {e['id'].replace('_','-') for e in painted if e['kind']=='unit' and e['frames']==64 and e['authoredFrames']==32}
         self.assertTrue(current_ids <= ids | animated_ids)

@@ -7,7 +7,7 @@
   const kind = document.getElementById('roster-kind');
   const subfaction = document.getElementById('roster-subfaction');
   const params = new URLSearchParams(location.search);
-  let faction = ['angels','humans','demons','machine','fallen'].includes(params.get('faction')) ? params.get('faction') : 'all';
+  let faction = ['angels','humans','demons','machine','fallen','veilborn','unwritten','silence','nephilim'].includes(params.get('faction')) ? params.get('faction') : 'all';
   const parents = {a:'angels',h:'humans',d:'demons',i:'machine',f:'fallen'};
   search.value = params.get('q') || '';
   kind.value = ['buildings','units'].includes(params.get('type')) ? params.get('type') : 'all';
@@ -27,6 +27,8 @@
     });
     buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filterFaction === faction)));
     [...subfaction.options].forEach(o => {o.disabled = o.value !== 'all' && faction !== 'all' && parents[o.value[0]] !== faction;});
+    subfaction.disabled = ['veilborn','unwritten','silence','nephilim'].includes(faction);
+    subfaction.options[0].textContent = subfaction.disabled ? 'No subfactions' : 'All subfactions';
     document.getElementById('roster-count').textContent = `${count} ${count === 1 ? 'entry' : 'entries'}${subfaction.value !== 'all' ? ' · includes shared faction roster' : ''}`;
     document.getElementById('roster-empty').hidden = count !== 0;
     const next = new URLSearchParams();

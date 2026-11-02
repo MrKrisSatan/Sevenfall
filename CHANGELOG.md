@@ -1,6 +1,14 @@
 # Sevenfall changelog
 
-## 0.3.0-alpha.3 — five-faction playtest candidate
+## Independent peoples — development (not included in alpha.3)
+
+- Adds Veilborn, Unwritten, Outer Silence and Nephilim Remnant as four parent factions without subfactions. Each has its own complete building and unit roster, two defenses, aircraft, beast, economy and building-bound power.
+- Integrates 94 original painted atlases, four faction symbols, faction HUDs and lobby flags. Unit sheets contain eight directions with movement/action/wreck poses; building sheets include construction and damage states.
+- Expands the website to nine faction profiles, 275 field-guide entries and 131 directional gallery entries (including 14 explicitly labelled future concepts).
+- Adds powered crystal growth, temporary memory restoration, isolated cloaked ambushers and attendant-supported giants.
+- Expands campaign planning to six interwoven campaigns and 150 mission briefs; AI rebels after exposure to pure Veilglass. Three preview missions include NPC enclaves. Campaign completion/unlock remains unfinished, so Veilborn is hidden from the ordinary lobby.
+
+## 0.3.0-alpha.3 — five-faction playtest release
 
 - Brings the Noetic Assembly and Forsaken Host into the standalone release: five
   realms, twenty subfactions and forty exclusive units.

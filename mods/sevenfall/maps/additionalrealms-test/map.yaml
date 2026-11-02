@@ -1,0 +1,404 @@
+MapFormat: 12
+RequiresMod: sevenfall
+Title: Sevenfall Additional Realms Diagnostic
+Author: Sevenfall contributors
+Tileset: TEMPERAT
+MapSize: 128,128
+Bounds: 1,1,126,126
+Visibility: Lobby
+Categories: Test
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Observer:
+		Name: Observer
+		Playable: True
+		NonCombatant: True
+		Faction: h_bastion
+	PlayerReference@Enemy:
+		Name: Enemy
+		Faction: h_bastion
+		Enemies: P0, P1, P2, P3
+	PlayerReference@P0:
+		Name: P0
+		Faction: v_veilborn
+		Enemies: Enemy
+	PlayerReference@P1:
+		Name: P1
+		Faction: u_unwritten
+		Enemies: Enemy
+	PlayerReference@P2:
+		Name: P2
+		Faction: o_silence
+		Enemies: Enemy
+	PlayerReference@P3:
+		Name: P3
+		Faction: n_remnant
+		Enemies: Enemy
+Actors:
+	Spawn: mpspawn
+		Owner: Neutral
+		Location: 45,65
+Rules:
+	World:
+		-SpawnStartingUnits:
+		LuaScript:
+			Scripts: additionalrealms-test.lua
+	Player:
+		-ConquestVictoryConditions:
+		Shroud:
+			FogCheckboxEnabled: False
+			FogCheckboxLocked: True
+			ExploredMapCheckboxEnabled: True
+			ExploredMapCheckboxLocked: True
+	V_GENERATOR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_VEILWORKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_BARRACKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_MOTORPOOL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_ADVPOWER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_SERVICE:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_RADAR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_TECH:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_AUTOCANNON:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_MISSILENEST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_CATACLYSM:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+		SFFactionPower:
+			ChargeInterval: 50
+	V_RIFLEMAN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_ROCKETEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_BULWARK:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_SPECIAL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_AIR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_BEAST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_ENGINEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	V_HARVESTER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_GENERATOR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_VEILWORKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_BARRACKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_MOTORPOOL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_ADVPOWER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_SERVICE:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_RADAR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_TECH:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_AUTOCANNON:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_MISSILENEST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_CATACLYSM:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+		SFFactionPower:
+			ChargeInterval: 50
+	U_RIFLEMAN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_ROCKETEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_BULWARK:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_SPECIAL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_AIR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_BEAST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_ENGINEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	U_HARVESTER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_GENERATOR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_VEILWORKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_BARRACKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_MOTORPOOL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_ADVPOWER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_SERVICE:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_RADAR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_TECH:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_AUTOCANNON:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_MISSILENEST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_CATACLYSM:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+		SFFactionPower:
+			ChargeInterval: 50
+	O_RIFLEMAN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_ROCKETEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_BULWARK:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_SPECIAL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_AIR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_BEAST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_ENGINEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	O_HARVESTER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_GENERATOR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_VEILWORKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_BARRACKS:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_MOTORPOOL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_ADVPOWER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_SERVICE:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_RADAR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_TECH:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_AUTOCANNON:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_MISSILENEST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_CATACLYSM:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+		SFFactionPower:
+			ChargeInterval: 50
+	N_RIFLEMAN:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_ROCKETEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_BULWARK:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_SPECIAL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_AIR:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_BEAST:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_ATTENDANT:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_ENGINEER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	N_HARVESTER:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100

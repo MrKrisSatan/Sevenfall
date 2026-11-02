@@ -1,5 +1,22 @@
 # Additional realm emblems
 
+## Independent faction emblems — 2 November 2026
+
+Generated with built-in imagegen on transparent backgrounds; originals are `art/source/{family}-emblem.png`, website derivatives are 512px WebP. Technical trimming/resizing uses sharp.
+
+### unwritten
+
+One original painted heraldic faction emblem for Sevenfall dark apocalyptic RTS: an open book-shaped silver crest whose outer pages dissolve into pale memory ribbons, a luminous pearl in its center, erased names represented only by abstract strokes, weathered silver and blue-grey. Premium realistic painted 3D fantasy strategy crest, detailed dimensional materials, bold silhouette readable at 160px, matches a set of gold angelic, steel human and infernal faction symbols. Isolated centered with generous clear margin on actual transparent background. No text, lettering, characters, scenic backdrop or watermark. Square icon.
+
+### silence
+
+One original painted heraldic faction emblem for Sevenfall dark apocalyptic RTS: a perfectly dark central oval void framed by three inward-curving alien obsidian crescents, subtle violet edge light, unsettling elegant alien symmetry. Premium realistic painted 3D fantasy strategy crest, detailed dimensional materials, bold silhouette readable at 160px, matches a set of gold angelic, steel human and infernal faction symbols. Isolated centered with generous clear margin on actual transparent background. No text, lettering, characters, scenic backdrop or watermark. Square icon.
+
+### nephilim
+
+One original painted heraldic faction emblem for Sevenfall dark apocalyptic RTS: three weathered limestone standing stones bound by an antique bronze oath ring, a mountain silhouette and a small warm golden star, ancient monumental dignity. Premium realistic painted 3D fantasy strategy crest, detailed dimensional materials, bold silhouette readable at 160px, matches a set of gold angelic, steel human and infernal faction symbols. Isolated centered with generous clear margin on actual transparent background. No text, lettering, characters, scenic backdrop or watermark. Square icon.
+
+
 Created 2 November 2026 using the built-in imagegen tool. Original full-resolution transparent PNGs are in `art/source/machine-emblem.png` and `art/source/fallen-emblem.png`; optimized 512px WebP copies are in `docs/assets/roster/`. These are website faction symbols, not additional combat sprites.
 
 ## Noetic Assembly prompt

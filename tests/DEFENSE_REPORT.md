@@ -1,5 +1,7 @@
 # Faction defense verification — 2026-10-25
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 Environment: Windows, pinned OpenRA release-20250330 engine, .NET 6 runtime,
 legally installed Red Alert support content. No proprietary support assets are
 included in the commit.

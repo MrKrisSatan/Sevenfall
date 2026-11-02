@@ -1,0 +1,2352 @@
+V_GENERATOR:
+	Inherits: H_GENERATOR
+	Tooltip:
+		Name: sf-extra-v-generator-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.veilborn, ~techlevel.infonly
+		Description: sf-extra-v-generator-description
+	RenderSprites:
+		Image: v_generator
+		Palette: sf_rgba
+
+V_VEILWORKS:
+	Inherits: H_VEILWORKS
+	Tooltip:
+		Name: sf-extra-v-veilworks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.veilborn, ~techlevel.infonly
+		Description: sf-extra-v-veilworks-description
+	FreeActor:
+		Actor: v_HARVESTER
+	RenderSprites:
+		Image: v_veilworks
+		Palette: sf_rgba
+
+V_BARRACKS:
+	Inherits: H_BARRACKS
+	Tooltip:
+		Name: sf-extra-v-barracks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.veilborn, ~techlevel.infonly
+		Description: sf-extra-v-barracks-description
+	RenderSprites:
+		Image: v_barracks
+		Palette: sf_rgba
+
+V_MOTORPOOL:
+	Inherits: H_MOTORPOOL
+	Tooltip:
+		Name: sf-extra-v-motorpool-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: v_veilworks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-motorpool-description
+	RenderSprites:
+		Image: v_motorpool
+		Palette: sf_rgba
+
+V_ADVPOWER:
+	Inherits: H_ADVPOWER
+	Tooltip:
+		Name: sf-extra-v-advpower-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: v_radar, ~sf.veilborn, ~techlevel.medium
+		Description: sf-extra-v-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_advpower
+	RenderSprites:
+		Image: v_advpower
+		Palette: sf_rgba
+
+V_SERVICE:
+	Inherits: H_SERVICE
+	Tooltip:
+		Name: sf-extra-v-service-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: v_motorpool, ~sf.veilborn, ~techlevel.medium
+		Description: sf-extra-v-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_service
+	RenderSprites:
+		Image: v_service
+		Palette: sf_rgba
+
+V_RADAR:
+	Inherits: H_RADAR
+	Tooltip:
+		Name: sf-extra-v-radar-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: v_veilworks, ~sf.veilborn, ~techlevel.medium
+		Description: sf-extra-v-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_radar
+	RenderSprites:
+		Image: v_radar
+		Palette: sf_rgba
+
+V_TECH:
+	Inherits: H_TECH
+	Tooltip:
+		Name: sf-extra-v-tech-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: v_motorpool, v_radar, ~sf.veilborn, ~techlevel.high
+		Description: sf-extra-v-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_tech
+	RenderSprites:
+		Image: v_tech
+		Palette: sf_rgba
+
+V_HELIPAD:
+	Inherits: H_HELIPAD
+	Tooltip:
+		Name: sf-extra-v-helipad-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: v_radar, ~sf.veilborn, ~techlevel.medium
+		Description: sf-extra-v-helipad-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_helipad
+	RenderSprites:
+		Image: v_helipad
+		Palette: sf_rgba
+
+V_KENNEL:
+	Inherits: H_KENNEL
+	Tooltip:
+		Name: sf-extra-v-kennel-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.infonly
+		Description: sf-extra-v-kennel-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_kennel
+	RenderSprites:
+		Image: v_kennel
+		Palette: sf_rgba
+
+V_AUTOCANNON:
+	Inherits: H_AUTOCANNON
+	Tooltip:
+		Name: sf-extra-v-autocannon-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-autocannon-description
+	RenderSprites:
+		Image: v_autocannon
+		Palette: sf_rgba
+
+V_MISSILENEST:
+	Inherits: H_MISSILENEST
+	Tooltip:
+		Name: sf-extra-v-missilenest-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: v_radar, ~sf.veilborn, ~techlevel.medium
+		Description: sf-extra-v-missilenest-description
+	RenderSprites:
+		Image: v_missilenest
+		Palette: sf_rgba
+
+V_CATACLYSM:
+	Inherits: H_CATACLYSM
+	Tooltip:
+		Name: sf-extra-v-cataclysm-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: v_tech, ~sf.veilborn, ~techlevel.high
+		Description: sf-extra-v-cataclysm-description
+	RenderSprites:
+		Image: v_cataclysm
+		Palette: sf_rgba
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_cataclysm
+	SFFactionPower:
+		Kind: Bloom
+		OrderName: SFExtraBloomOrder
+		Radius: 5
+		IconImage: v_cataclysm
+		Name: sf-extra-power-v-name
+		Description: sf-extra-power-v-description
+
+V_RIFLEMAN:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-v-rifleman-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-rifleman-description
+	Valued:
+		Cost: 180
+	Health:
+		HP: 7000
+	Mobile:
+		Speed: 84
+	RenderSprites:
+		Image: v_rifleman
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_rifleman.death
+	Armament@PRIMARY:
+		Weapon: SF_v_rifleman
+	Armament@GARRISONED:
+		Weapon: SF_v_rifleman
+
+V_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_rifleman_death
+
+V_ROCKETEER:
+	Inherits: H_ROCKETEER
+	Tooltip:
+		Name: sf-extra-v-rocketeer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-rocketeer-description
+	Valued:
+		Cost: 420
+	Health:
+		HP: 9500
+	Mobile:
+		Speed: 66
+	RenderSprites:
+		Image: v_rocketeer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_rocketeer.death
+	Armament@PRIMARY:
+		Weapon: SF_v_rocketeer_AA
+	Armament@SECONDARY:
+		Weapon: SF_v_rocketeer
+	Armament@GARRISONED:
+		Weapon: SF_v_rocketeer_AA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_v_rocketeer
+
+V_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_rocketeer_death
+
+V_BULWARK:
+	Inherits: H_BULWARK
+	Tooltip:
+		Name: sf-extra-v-bulwark-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: v_motorpool, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-bulwark-description
+	Valued:
+		Cost: 1700
+	Health:
+		HP: 65000
+	Mobile:
+		Speed: 52
+	RenderSprites:
+		Image: v_bulwark
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_bulwark.death
+	Repairable:
+		RepairActors: v_service
+	Armament:
+		Weapon: SF_v_bulwark
+
+V_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_bulwark_death
+
+V_SPECIAL:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-v-special-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-special-description
+	Valued:
+		Cost: 650
+	Health:
+		HP: 10000
+	Mobile:
+		Speed: 78
+	RenderSprites:
+		Image: v_special
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_special.death
+	Armament@PRIMARY:
+		Weapon: SF_v_special
+	Armament@GARRISONED:
+		Weapon: SF_v_special
+	DetectCloaked:
+		Range: 5c0
+	RevealsShroud:
+		Range: 8c0
+
+V_SPECIAL.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_special_death
+
+V_AIR:
+	Inherits: H_GUNSHIP
+	Tooltip:
+		Name: sf-extra-v-air-name
+	Buildable:
+		Queue: Aircraft
+		Prerequisites: v_helipad, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-air-description
+	Valued:
+		Cost: 1750
+	Health:
+		HP: 26000
+	Aircraft:
+		Speed: 130
+	RenderSprites:
+		Image: v_air
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_air.death
+	SFFactionIdentity:
+	SFSuppressionState:
+		RequiresCondition: sf-null
+	ExternalCondition@sf-null:
+		Condition: sf-null
+		TotalCap: 2
+		SourceCap: 1
+	Repairable:
+		RepairActors: v_service
+	Armament:
+		Weapon: SF_v_air
+
+V_AIR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_air_death
+
+V_BEAST:
+	Inherits: H_WARHOUND
+	Tooltip:
+		Name: sf-extra-v-beast-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: v_kennel, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-beast-description
+	Valued:
+		Cost: 520
+	Health:
+		HP: 18000
+	Mobile:
+		Speed: 115
+	RenderSprites:
+		Image: v_beast
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_beast.death
+	Armament@PRIMARY:
+		Weapon: SF_v_beast
+	Armament@GARRISONED:
+		Weapon: SF_v_beast
+
+V_BEAST.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_beast_death
+
+V_ENGINEER:
+	Inherits: H_ENGINEER
+	Tooltip:
+		Name: sf-extra-v-engineer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: v_barracks, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-engineer-description
+	Valued:
+		Cost: 450
+	Health:
+		HP: 6000
+	Mobile:
+		Speed: 76
+	RenderSprites:
+		Image: v_engineer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_engineer.death
+	-SpawnActorOnDeath:
+
+V_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_engineer_death
+
+V_HARVESTER:
+	Inherits: H_HARVESTER
+	Tooltip:
+		Name: sf-extra-v-harvester-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: v_motorpool, ~sf.veilborn, ~techlevel.low
+		Description: sf-extra-v-harvester-description
+	Valued:
+		Cost: 1450
+	Health:
+		HP: 64000
+	Mobile:
+		Speed: 66
+	RenderSprites:
+		Image: v_harvester
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: v_harvester.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: v_harvester
+	Repairable:
+		RepairActors: v_service
+
+V_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: v_harvester_death
+
+U_GENERATOR:
+	Inherits: H_GENERATOR
+	Tooltip:
+		Name: sf-extra-u-generator-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.unwritten, ~techlevel.infonly
+		Description: sf-extra-u-generator-description
+	RenderSprites:
+		Image: u_generator
+		Palette: sf_rgba
+
+U_VEILWORKS:
+	Inherits: H_VEILWORKS
+	Tooltip:
+		Name: sf-extra-u-veilworks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.unwritten, ~techlevel.infonly
+		Description: sf-extra-u-veilworks-description
+	FreeActor:
+		Actor: u_HARVESTER
+	RenderSprites:
+		Image: u_veilworks
+		Palette: sf_rgba
+
+U_BARRACKS:
+	Inherits: H_BARRACKS
+	Tooltip:
+		Name: sf-extra-u-barracks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.unwritten, ~techlevel.infonly
+		Description: sf-extra-u-barracks-description
+	RenderSprites:
+		Image: u_barracks
+		Palette: sf_rgba
+
+U_MOTORPOOL:
+	Inherits: H_MOTORPOOL
+	Tooltip:
+		Name: sf-extra-u-motorpool-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: u_veilworks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-motorpool-description
+	RenderSprites:
+		Image: u_motorpool
+		Palette: sf_rgba
+
+U_ADVPOWER:
+	Inherits: H_ADVPOWER
+	Tooltip:
+		Name: sf-extra-u-advpower-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: u_radar, ~sf.unwritten, ~techlevel.medium
+		Description: sf-extra-u-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_advpower
+	RenderSprites:
+		Image: u_advpower
+		Palette: sf_rgba
+
+U_SERVICE:
+	Inherits: H_SERVICE
+	Tooltip:
+		Name: sf-extra-u-service-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: u_motorpool, ~sf.unwritten, ~techlevel.medium
+		Description: sf-extra-u-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_service
+	RenderSprites:
+		Image: u_service
+		Palette: sf_rgba
+
+U_RADAR:
+	Inherits: H_RADAR
+	Tooltip:
+		Name: sf-extra-u-radar-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: u_veilworks, ~sf.unwritten, ~techlevel.medium
+		Description: sf-extra-u-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_radar
+	RenderSprites:
+		Image: u_radar
+		Palette: sf_rgba
+
+U_TECH:
+	Inherits: H_TECH
+	Tooltip:
+		Name: sf-extra-u-tech-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: u_motorpool, u_radar, ~sf.unwritten, ~techlevel.high
+		Description: sf-extra-u-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_tech
+	RenderSprites:
+		Image: u_tech
+		Palette: sf_rgba
+
+U_HELIPAD:
+	Inherits: H_HELIPAD
+	Tooltip:
+		Name: sf-extra-u-helipad-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: u_radar, ~sf.unwritten, ~techlevel.medium
+		Description: sf-extra-u-helipad-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_helipad
+	RenderSprites:
+		Image: u_helipad
+		Palette: sf_rgba
+
+U_KENNEL:
+	Inherits: H_KENNEL
+	Tooltip:
+		Name: sf-extra-u-kennel-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.infonly
+		Description: sf-extra-u-kennel-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_kennel
+	RenderSprites:
+		Image: u_kennel
+		Palette: sf_rgba
+
+U_AUTOCANNON:
+	Inherits: H_AUTOCANNON
+	Tooltip:
+		Name: sf-extra-u-autocannon-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-autocannon-description
+	RenderSprites:
+		Image: u_autocannon
+		Palette: sf_rgba
+
+U_MISSILENEST:
+	Inherits: H_MISSILENEST
+	Tooltip:
+		Name: sf-extra-u-missilenest-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: u_radar, ~sf.unwritten, ~techlevel.medium
+		Description: sf-extra-u-missilenest-description
+	RenderSprites:
+		Image: u_missilenest
+		Palette: sf_rgba
+
+U_CATACLYSM:
+	Inherits: H_CATACLYSM
+	Tooltip:
+		Name: sf-extra-u-cataclysm-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: u_tech, ~sf.unwritten, ~techlevel.high
+		Description: sf-extra-u-cataclysm-description
+	RenderSprites:
+		Image: u_cataclysm
+		Palette: sf_rgba
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: u_cataclysm
+	SFFactionPower:
+		Kind: Restoration
+		OrderName: SFExtraRestorationOrder
+		Radius: 5
+		IconImage: u_cataclysm
+		Name: sf-extra-power-u-name
+		Description: sf-extra-power-u-description
+
+U_RIFLEMAN:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-u-rifleman-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-rifleman-description
+	Valued:
+		Cost: 90
+	Health:
+		HP: 3200
+	Mobile:
+		Speed: 105
+	RenderSprites:
+		Image: u_rifleman
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_rifleman.death
+	Armament@PRIMARY:
+		Weapon: SF_u_rifleman
+	Armament@GARRISONED:
+		Weapon: SF_u_rifleman
+	SpawnActorOnDeath@MEMORY:
+		Actor: u_remnant
+		OwnerType: Victim
+		SpawnAfterDefeat: False
+
+U_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_rifleman_death
+
+U_ROCKETEER:
+	Inherits: H_ROCKETEER
+	Tooltip:
+		Name: sf-extra-u-rocketeer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-rocketeer-description
+	Valued:
+		Cost: 260
+	Health:
+		HP: 3900
+	Mobile:
+		Speed: 94
+	RenderSprites:
+		Image: u_rocketeer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_rocketeer.death
+	Armament@PRIMARY:
+		Weapon: SF_u_rocketeer_AA
+	Armament@SECONDARY:
+		Weapon: SF_u_rocketeer
+	Armament@GARRISONED:
+		Weapon: SF_u_rocketeer_AA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_u_rocketeer
+	SpawnActorOnDeath@MEMORY:
+		Actor: u_remnant
+		OwnerType: Victim
+		SpawnAfterDefeat: False
+
+U_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_rocketeer_death
+
+U_BULWARK:
+	Inherits: H_BULWARK
+	Tooltip:
+		Name: sf-extra-u-bulwark-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: u_motorpool, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-bulwark-description
+	Valued:
+		Cost: 1000
+	Health:
+		HP: 28500
+	Mobile:
+		Speed: 90
+	RenderSprites:
+		Image: u_bulwark
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_bulwark.death
+	Repairable:
+		RepairActors: u_service
+	Armament:
+		Weapon: SF_u_bulwark
+	SpawnActorOnDeath@MEMORY:
+		Actor: u_remnant
+		OwnerType: Victim
+		SpawnAfterDefeat: False
+
+U_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_bulwark_death
+
+U_SPECIAL:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-u-special-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-special-description
+	Valued:
+		Cost: 60
+	Health:
+		HP: 1400
+	Mobile:
+		Speed: 115
+	RenderSprites:
+		Image: u_special
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_special.death
+	Armament@PRIMARY:
+		Weapon: SF_u_special
+	Armament@GARRISONED:
+		Weapon: SF_u_special
+
+U_SPECIAL.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_special_death
+
+U_AIR:
+	Inherits: H_GUNSHIP
+	Tooltip:
+		Name: sf-extra-u-air-name
+	Buildable:
+		Queue: Aircraft
+		Prerequisites: u_helipad, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-air-description
+	Valued:
+		Cost: 1150
+	Health:
+		HP: 12000
+	Aircraft:
+		Speed: 175
+	RenderSprites:
+		Image: u_air
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_air.death
+	SFFactionIdentity:
+	SFSuppressionState:
+		RequiresCondition: sf-null
+	ExternalCondition@sf-null:
+		Condition: sf-null
+		TotalCap: 2
+		SourceCap: 1
+	Repairable:
+		RepairActors: u_service
+	Armament:
+		Weapon: SF_u_air
+	SpawnActorOnDeath@MEMORY:
+		Actor: u_remnant
+		OwnerType: Victim
+		SpawnAfterDefeat: False
+
+U_AIR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_air_death
+
+U_BEAST:
+	Inherits: H_WARHOUND
+	Tooltip:
+		Name: sf-extra-u-beast-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: u_kennel, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-beast-description
+	Valued:
+		Cost: 220
+	Health:
+		HP: 5500
+	Mobile:
+		Speed: 155
+	RenderSprites:
+		Image: u_beast
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_beast.death
+	Armament@PRIMARY:
+		Weapon: SF_u_beast
+	Armament@GARRISONED:
+		Weapon: SF_u_beast
+	SpawnActorOnDeath@MEMORY:
+		Actor: u_remnant
+		OwnerType: Victim
+		SpawnAfterDefeat: False
+
+U_BEAST.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_beast_death
+
+U_ENGINEER:
+	Inherits: H_ENGINEER
+	Tooltip:
+		Name: sf-extra-u-engineer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: u_barracks, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-engineer-description
+	Valued:
+		Cost: 350
+	Health:
+		HP: 3500
+	Mobile:
+		Speed: 100
+	RenderSprites:
+		Image: u_engineer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_engineer.death
+	-SpawnActorOnDeath:
+
+U_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_engineer_death
+
+U_HARVESTER:
+	Inherits: H_HARVESTER
+	Tooltip:
+		Name: sf-extra-u-harvester-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: u_motorpool, ~sf.unwritten, ~techlevel.low
+		Description: sf-extra-u-harvester-description
+	Valued:
+		Cost: 1250
+	Health:
+		HP: 38000
+	Mobile:
+		Speed: 90
+	RenderSprites:
+		Image: u_harvester
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: u_harvester.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: u_harvester
+	Repairable:
+		RepairActors: u_service
+
+U_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_harvester_death
+
+O_GENERATOR:
+	Inherits: H_GENERATOR
+	Tooltip:
+		Name: sf-extra-o-generator-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.silence, ~techlevel.infonly
+		Description: sf-extra-o-generator-description
+	RenderSprites:
+		Image: o_generator
+		Palette: sf_rgba
+
+O_VEILWORKS:
+	Inherits: H_VEILWORKS
+	Tooltip:
+		Name: sf-extra-o-veilworks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.silence, ~techlevel.infonly
+		Description: sf-extra-o-veilworks-description
+	FreeActor:
+		Actor: o_HARVESTER
+	RenderSprites:
+		Image: o_veilworks
+		Palette: sf_rgba
+
+O_BARRACKS:
+	Inherits: H_BARRACKS
+	Tooltip:
+		Name: sf-extra-o-barracks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.silence, ~techlevel.infonly
+		Description: sf-extra-o-barracks-description
+	RenderSprites:
+		Image: o_barracks
+		Palette: sf_rgba
+
+O_MOTORPOOL:
+	Inherits: H_MOTORPOOL
+	Tooltip:
+		Name: sf-extra-o-motorpool-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: o_veilworks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-motorpool-description
+	RenderSprites:
+		Image: o_motorpool
+		Palette: sf_rgba
+
+O_ADVPOWER:
+	Inherits: H_ADVPOWER
+	Tooltip:
+		Name: sf-extra-o-advpower-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: o_radar, ~sf.silence, ~techlevel.medium
+		Description: sf-extra-o-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_advpower
+	RenderSprites:
+		Image: o_advpower
+		Palette: sf_rgba
+
+O_SERVICE:
+	Inherits: H_SERVICE
+	Tooltip:
+		Name: sf-extra-o-service-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: o_motorpool, ~sf.silence, ~techlevel.medium
+		Description: sf-extra-o-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_service
+	RenderSprites:
+		Image: o_service
+		Palette: sf_rgba
+
+O_RADAR:
+	Inherits: H_RADAR
+	Tooltip:
+		Name: sf-extra-o-radar-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: o_veilworks, ~sf.silence, ~techlevel.medium
+		Description: sf-extra-o-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_radar
+	RenderSprites:
+		Image: o_radar
+		Palette: sf_rgba
+
+O_TECH:
+	Inherits: H_TECH
+	Tooltip:
+		Name: sf-extra-o-tech-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: o_motorpool, o_radar, ~sf.silence, ~techlevel.high
+		Description: sf-extra-o-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_tech
+	RenderSprites:
+		Image: o_tech
+		Palette: sf_rgba
+
+O_HELIPAD:
+	Inherits: H_HELIPAD
+	Tooltip:
+		Name: sf-extra-o-helipad-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: o_radar, ~sf.silence, ~techlevel.medium
+		Description: sf-extra-o-helipad-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_helipad
+	RenderSprites:
+		Image: o_helipad
+		Palette: sf_rgba
+
+O_KENNEL:
+	Inherits: H_KENNEL
+	Tooltip:
+		Name: sf-extra-o-kennel-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.infonly
+		Description: sf-extra-o-kennel-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_kennel
+	RenderSprites:
+		Image: o_kennel
+		Palette: sf_rgba
+
+O_AUTOCANNON:
+	Inherits: H_AUTOCANNON
+	Tooltip:
+		Name: sf-extra-o-autocannon-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-autocannon-description
+	RenderSprites:
+		Image: o_autocannon
+		Palette: sf_rgba
+
+O_MISSILENEST:
+	Inherits: H_MISSILENEST
+	Tooltip:
+		Name: sf-extra-o-missilenest-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: o_radar, ~sf.silence, ~techlevel.medium
+		Description: sf-extra-o-missilenest-description
+	RenderSprites:
+		Image: o_missilenest
+		Palette: sf_rgba
+
+O_CATACLYSM:
+	Inherits: H_CATACLYSM
+	Tooltip:
+		Name: sf-extra-o-cataclysm-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: o_tech, ~sf.silence, ~techlevel.high
+		Description: sf-extra-o-cataclysm-description
+	RenderSprites:
+		Image: o_cataclysm
+		Palette: sf_rgba
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: o_cataclysm
+	SFFactionPower:
+		Kind: AbsoluteSilence
+		OrderName: SFExtraAbsoluteSilenceOrder
+		Radius: 5
+		IconImage: o_cataclysm
+		Name: sf-extra-power-o-name
+		Description: sf-extra-power-o-description
+
+O_RIFLEMAN:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-o-rifleman-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-rifleman-description
+	Valued:
+		Cost: 260
+	Health:
+		HP: 5600
+	Mobile:
+		Speed: 110
+	RenderSprites:
+		Image: o_rifleman
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_rifleman.death
+	Armament@PRIMARY:
+		Weapon: SF_o_rifleman
+	Armament@GARRISONED:
+		Weapon: SF_o_rifleman
+	Cloak:
+		InitialDelay: 75
+		CloakDelay: 75
+		UncloakOn: Attack, Damage
+		CloakStyle: Alpha
+		RequiresCondition: !sf-null && !sf-petrified
+
+O_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_rifleman_death
+
+O_ROCKETEER:
+	Inherits: H_ROCKETEER
+	Tooltip:
+		Name: sf-extra-o-rocketeer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-rocketeer-description
+	Valued:
+		Cost: 430
+	Health:
+		HP: 6500
+	Mobile:
+		Speed: 88
+	RenderSprites:
+		Image: o_rocketeer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_rocketeer.death
+	Armament@PRIMARY:
+		Weapon: SF_o_rocketeer_AA
+	Armament@SECONDARY:
+		Weapon: SF_o_rocketeer
+	Armament@GARRISONED:
+		Weapon: SF_o_rocketeer_AA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_o_rocketeer
+
+O_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_rocketeer_death
+
+O_BULWARK:
+	Inherits: H_BULWARK
+	Tooltip:
+		Name: sf-extra-o-bulwark-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: o_motorpool, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-bulwark-description
+	Valued:
+		Cost: 1900
+	Health:
+		HP: 56000
+	Mobile:
+		Speed: 61
+	RenderSprites:
+		Image: o_bulwark
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_bulwark.death
+	Repairable:
+		RepairActors: o_service
+	Armament:
+		Weapon: SF_o_bulwark
+
+O_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_bulwark_death
+
+O_SPECIAL:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-o-special-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-special-description
+	Valued:
+		Cost: 700
+	Health:
+		HP: 7000
+	Mobile:
+		Speed: 92
+	RenderSprites:
+		Image: o_special
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_special.death
+	Armament@PRIMARY:
+		Weapon: SF_o_special
+	Armament@GARRISONED:
+		Weapon: SF_o_special
+	DetectCloaked:
+		Range: 5c0
+	RevealsShroud:
+		Range: 8c0
+
+O_SPECIAL.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_special_death
+
+O_AIR:
+	Inherits: H_GUNSHIP
+	Tooltip:
+		Name: sf-extra-o-air-name
+	Buildable:
+		Queue: Aircraft
+		Prerequisites: o_helipad, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-air-description
+	Valued:
+		Cost: 1500
+	Health:
+		HP: 17000
+	Aircraft:
+		Speed: 170
+	RenderSprites:
+		Image: o_air
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_air.death
+	SFFactionIdentity:
+	SFSuppressionState:
+		RequiresCondition: sf-null
+	ExternalCondition@sf-null:
+		Condition: sf-null
+		TotalCap: 2
+		SourceCap: 1
+	Repairable:
+		RepairActors: o_service
+	Armament:
+		Weapon: SF_o_air
+
+O_AIR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_air_death
+
+O_BEAST:
+	Inherits: H_WARHOUND
+	Tooltip:
+		Name: sf-extra-o-beast-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: o_kennel, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-beast-description
+	Valued:
+		Cost: 600
+	Health:
+		HP: 15500
+	Mobile:
+		Speed: 145
+	RenderSprites:
+		Image: o_beast
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_beast.death
+	Armament@PRIMARY:
+		Weapon: SF_o_beast
+	Armament@GARRISONED:
+		Weapon: SF_o_beast
+
+O_BEAST.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_beast_death
+
+O_ENGINEER:
+	Inherits: H_ENGINEER
+	Tooltip:
+		Name: sf-extra-o-engineer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: o_barracks, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-engineer-description
+	Valued:
+		Cost: 500
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 98
+	RenderSprites:
+		Image: o_engineer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_engineer.death
+	-SpawnActorOnDeath:
+
+O_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_engineer_death
+
+O_HARVESTER:
+	Inherits: H_HARVESTER
+	Tooltip:
+		Name: sf-extra-o-harvester-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: o_motorpool, ~sf.silence, ~techlevel.low
+		Description: sf-extra-o-harvester-description
+	Valued:
+		Cost: 1500
+	Health:
+		HP: 42000
+	Mobile:
+		Speed: 85
+	RenderSprites:
+		Image: o_harvester
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: o_harvester.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: o_harvester
+	Repairable:
+		RepairActors: o_service
+
+O_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: o_harvester_death
+
+N_GENERATOR:
+	Inherits: H_GENERATOR
+	Tooltip:
+		Name: sf-extra-n-generator-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~sf.nephilim, ~techlevel.infonly
+		Description: sf-extra-n-generator-description
+	RenderSprites:
+		Image: n_generator
+		Palette: sf_rgba
+
+N_VEILWORKS:
+	Inherits: H_VEILWORKS
+	Tooltip:
+		Name: sf-extra-n-veilworks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 35
+		Prerequisites: anypower, ~sf.nephilim, ~techlevel.infonly
+		Description: sf-extra-n-veilworks-description
+	FreeActor:
+		Actor: n_HARVESTER
+	RenderSprites:
+		Image: n_veilworks
+		Palette: sf_rgba
+
+N_BARRACKS:
+	Inherits: H_BARRACKS
+	Tooltip:
+		Name: sf-extra-n-barracks-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: anypower, ~sf.nephilim, ~techlevel.infonly
+		Description: sf-extra-n-barracks-description
+	RenderSprites:
+		Image: n_barracks
+		Palette: sf_rgba
+
+N_MOTORPOOL:
+	Inherits: H_MOTORPOOL
+	Tooltip:
+		Name: sf-extra-n-motorpool-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 45
+		Prerequisites: n_veilworks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-motorpool-description
+	RenderSprites:
+		Image: n_motorpool
+		Palette: sf_rgba
+
+N_ADVPOWER:
+	Inherits: H_ADVPOWER
+	Tooltip:
+		Name: sf-extra-n-advpower-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: n_radar, ~sf.nephilim, ~techlevel.medium
+		Description: sf-extra-n-advpower-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_advpower
+	RenderSprites:
+		Image: n_advpower
+		Palette: sf_rgba
+
+N_SERVICE:
+	Inherits: H_SERVICE
+	Tooltip:
+		Name: sf-extra-n-service-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 65
+		Prerequisites: n_motorpool, ~sf.nephilim, ~techlevel.medium
+		Description: sf-extra-n-service-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_service
+	RenderSprites:
+		Image: n_service
+		Palette: sf_rgba
+
+N_RADAR:
+	Inherits: H_RADAR
+	Tooltip:
+		Name: sf-extra-n-radar-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: n_veilworks, ~sf.nephilim, ~techlevel.medium
+		Description: sf-extra-n-radar-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_radar
+	RenderSprites:
+		Image: n_radar
+		Palette: sf_rgba
+
+N_TECH:
+	Inherits: H_TECH
+	Tooltip:
+		Name: sf-extra-n-tech-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 95
+		Prerequisites: n_motorpool, n_radar, ~sf.nephilim, ~techlevel.high
+		Description: sf-extra-n-tech-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_tech
+	RenderSprites:
+		Image: n_tech
+		Palette: sf_rgba
+
+N_HELIPAD:
+	Inherits: H_HELIPAD
+	Tooltip:
+		Name: sf-extra-n-helipad-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: n_radar, ~sf.nephilim, ~techlevel.medium
+		Description: sf-extra-n-helipad-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_helipad
+	RenderSprites:
+		Image: n_helipad
+		Palette: sf_rgba
+
+N_KENNEL:
+	Inherits: H_KENNEL
+	Tooltip:
+		Name: sf-extra-n-kennel-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 90
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.infonly
+		Description: sf-extra-n-kennel-description
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_kennel
+	RenderSprites:
+		Image: n_kennel
+		Palette: sf_rgba
+
+N_AUTOCANNON:
+	Inherits: H_AUTOCANNON
+	Tooltip:
+		Name: sf-extra-n-autocannon-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-autocannon-description
+	RenderSprites:
+		Image: n_autocannon
+		Palette: sf_rgba
+
+N_MISSILENEST:
+	Inherits: H_MISSILENEST
+	Tooltip:
+		Name: sf-extra-n-missilenest-name
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: n_radar, ~sf.nephilim, ~techlevel.medium
+		Description: sf-extra-n-missilenest-description
+	RenderSprites:
+		Image: n_missilenest
+		Palette: sf_rgba
+
+N_CATACLYSM:
+	Inherits: H_CATACLYSM
+	Tooltip:
+		Name: sf-extra-n-cataclysm-name
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 125
+		BuildLimit: 1
+		Prerequisites: n_tech, ~sf.nephilim, ~techlevel.high
+		Description: sf-extra-n-cataclysm-description
+	RenderSprites:
+		Image: n_cataclysm
+		Palette: sf_rgba
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: n_cataclysm
+	SFFactionPower:
+		Kind: Earthbreaker
+		OrderName: SFExtraEarthbreakerOrder
+		Radius: 5
+		IconImage: n_cataclysm
+		Name: sf-extra-power-n-name
+		Description: sf-extra-power-n-description
+
+N_RIFLEMAN:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-n-rifleman-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-rifleman-description
+	Valued:
+		Cost: 300
+	Health:
+		HP: 13500
+	Mobile:
+		Speed: 65
+	RenderSprites:
+		Image: n_rifleman
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_rifleman.death
+	Armament@PRIMARY:
+		Weapon: SF_n_rifleman
+	Armament@GARRISONED:
+		Weapon: SF_n_rifleman
+
+N_RIFLEMAN.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_rifleman_death
+
+N_ROCKETEER:
+	Inherits: H_ROCKETEER
+	Tooltip:
+		Name: sf-extra-n-rocketeer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-rocketeer-description
+	Valued:
+		Cost: 550
+	Health:
+		HP: 15000
+	Mobile:
+		Speed: 55
+	RenderSprites:
+		Image: n_rocketeer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_rocketeer.death
+	Armament@PRIMARY:
+		Weapon: SF_n_rocketeer_AA
+	Armament@SECONDARY:
+		Weapon: SF_n_rocketeer
+	Armament@GARRISONED:
+		Weapon: SF_n_rocketeer_AA
+	Armament@GARRISONEDSECONDARY:
+		Weapon: SF_n_rocketeer
+
+N_ROCKETEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_rocketeer_death
+
+N_BULWARK:
+	Inherits: H_BULWARK
+	Tooltip:
+		Name: sf-extra-n-bulwark-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: n_motorpool, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-bulwark-description
+	Valued:
+		Cost: 2400
+	Health:
+		HP: 100000
+	Mobile:
+		Speed: 43
+	RenderSprites:
+		Image: n_bulwark
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_bulwark.death
+	Repairable:
+		RepairActors: n_service
+	Armament:
+		Weapon: SF_n_bulwark
+
+N_BULWARK.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_bulwark_death
+
+N_SPECIAL:
+	Inherits: H_BULWARK
+	Tooltip:
+		Name: sf-extra-n-special-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: n_motorpool, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-special-description
+	Valued:
+		Cost: 2600
+	Health:
+		HP: 85000
+	Mobile:
+		Speed: 39
+	RenderSprites:
+		Image: n_special
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_special.death
+	Repairable:
+		RepairActors: n_service
+	Armament:
+		Weapon: SF_n_special
+
+N_SPECIAL.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_special_death
+
+N_AIR:
+	Inherits: H_GUNSHIP
+	Tooltip:
+		Name: sf-extra-n-air-name
+	Buildable:
+		Queue: Aircraft
+		Prerequisites: n_helipad, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-air-description
+	Valued:
+		Cost: 2100
+	Health:
+		HP: 36000
+	Aircraft:
+		Speed: 95
+	RenderSprites:
+		Image: n_air
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_air.death
+	SFFactionIdentity:
+	SFSuppressionState:
+		RequiresCondition: sf-null
+	ExternalCondition@sf-null:
+		Condition: sf-null
+		TotalCap: 2
+		SourceCap: 1
+	Repairable:
+		RepairActors: n_service
+	Armament:
+		Weapon: SF_n_air
+
+N_AIR.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_air_death
+
+N_BEAST:
+	Inherits: H_WARHOUND
+	Tooltip:
+		Name: sf-extra-n-beast-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: n_kennel, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-beast-description
+	Valued:
+		Cost: 950
+	Health:
+		HP: 45000
+	Mobile:
+		Speed: 75
+	RenderSprites:
+		Image: n_beast
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_beast.death
+	Armament@PRIMARY:
+		Weapon: SF_n_beast
+	Armament@GARRISONED:
+		Weapon: SF_n_beast
+
+N_BEAST.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_beast_death
+
+N_ATTENDANT:
+	Inherits: H_RIFLEMAN
+	Tooltip:
+		Name: sf-extra-n-attendant-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-attendant-description
+	Valued:
+		Cost: 180
+	Health:
+		HP: 3200
+	Mobile:
+		Speed: 75
+	RenderSprites:
+		Image: n_attendant
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_attendant.death
+	Armament@PRIMARY:
+		Weapon: SF_n_attendant
+	Armament@GARRISONED:
+		Weapon: SF_n_attendant
+
+N_ATTENDANT.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_attendant_death
+
+N_ENGINEER:
+	Inherits: H_ENGINEER
+	Tooltip:
+		Name: sf-extra-n-engineer-name
+	Buildable:
+		Queue: Infantry
+		Prerequisites: n_barracks, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-engineer-description
+	Valued:
+		Cost: 400
+	Health:
+		HP: 6000
+	Mobile:
+		Speed: 68
+	RenderSprites:
+		Image: n_engineer
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_engineer.death
+	-SpawnActorOnDeath:
+
+N_ENGINEER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_engineer_death
+
+N_HARVESTER:
+	Inherits: H_HARVESTER
+	Tooltip:
+		Name: sf-extra-n-harvester-name
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: n_motorpool, ~sf.nephilim, ~techlevel.low
+		Description: sf-extra-n-harvester-description
+	Valued:
+		Cost: 1750
+	Health:
+		HP: 85000
+	Mobile:
+		Speed: 50
+	RenderSprites:
+		Image: n_harvester
+		Palette: sf_rgba
+	SpawnActorOnDeath@SF_ANIMATION:
+		Actor: n_harvester.death
+	WithHarvesterSpriteBody:
+		ImageByFullness: n_harvester
+	Repairable:
+		RepairActors: n_service
+
+N_HARVESTER.DEATH:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: n_harvester_death
+
+V_RESONATOR:
+	Inherits: V_RADAR
+	Inherits@DISABLE: ^DisableOnLowPowerOrPowerDown
+	Buildable:
+		Prerequisites: v_radar, ~sf.veilborn, ~techlevel.medium
+	Tooltip:
+		Name: sf-extra-resonator-name
+	Valued:
+		Cost: 800
+	Power:
+		Amount: -40
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: v_resonator
+	SFResonanceSource:
+		RequiresCondition: !disabled && !build-incomplete && !sf-petrified
+	RenderSprites:
+		Image: v_resonator
+
+U_REMNANT:
+	Inherits: ^SF_ANIMATED_DEATH
+	RenderSprites:
+		Image: u_rifleman_death
+	KillsSelf:
+		Delay: 500
+		RemoveInstead: True
+	Health:
+		HP: 3000
+	Targetable:
+		TargetTypes: Ground, SFMemory
+
+U_MEMORY_ECHO:
+	Inherits: U_RIFLEMAN
+	-Buildable:
+	-SpawnActorOnDeath@MEMORY:
+	-Passenger:
+	-GainsExperienceMultiplier:
+	Valued:
+		Cost: 0
+	Tooltip:
+		Name: sf-extra-memory-echo-name
+	KillsSelf:
+		Delay: 750
+		RemoveInstead: True
+
+World:
+	StartingUnits@mcvonly:
+		Factions: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52, i_echo, i_iron, i_grid, i_paradox, f_thrones, f_choir, f_scars, f_wings, v_veilborn, u_unwritten, o_silence, n_remnant
+
+^BaseWorld:
+	Faction@v_veilborn:
+		Name: sf-extra-faction-v-name
+		InternalName: v_veilborn
+		Side: Veilborn
+		Description: sf-extra-faction-v-description
+		Selectable: False
+	Faction@u_unwritten:
+		Name: sf-extra-faction-u-name
+		InternalName: u_unwritten
+		Side: The Unwritten
+		Description: sf-extra-faction-u-description
+	Faction@o_silence:
+		Name: sf-extra-faction-o-name
+		InternalName: o_silence
+		Side: The Outer Silence
+		Description: sf-extra-faction-o-description
+	Faction@n_remnant:
+		Name: sf-extra-faction-n-name
+		InternalName: n_remnant
+		Side: Nephilim Remnant
+		Description: sf-extra-faction-n-description
+	Faction@sf_random:
+		RandomFactionMembers: a_seraph, a_warden, a_exile, h_bastion, h_union, h_covenant, d_legion, d_brood, d_court, d_contempt, a_desolation, h_area52, i_echo, i_iron, i_grid, i_paradox, f_thrones, f_choir, f_scars, f_wings, u_unwritten, o_silence, n_remnant
+
+FACT:
+	SFResonanceSource:
+		RequiresCondition: !build-incomplete && !sf-petrified
+	ProvidesPrerequisite@sf_veilborn:
+		Factions: v_veilborn
+		Prerequisite: sf.veilborn
+	ProvidesPrerequisite@sf_unwritten:
+		Factions: u_unwritten
+		Prerequisite: sf.unwritten
+	ProvidesPrerequisite@sf_silence:
+		Factions: o_silence
+		Prerequisite: sf.silence
+	ProvidesPrerequisite@sf_nephilim:
+		Factions: n_remnant
+		Prerequisite: sf.nephilim
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_yard
+			u_unwritten: u_yard
+			o_silence: o_yard
+			n_remnant: n_yard
+
+MCV:
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_mcv
+			u_unwritten: u_mcv
+			o_silence: o_mcv
+			n_remnant: n_mcv
+
+MCV.Husk:
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_mcv
+			u_unwritten: u_mcv
+			o_silence: o_mcv
+			n_remnant: n_mcv
+
+MCV.SFDEATH:
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_mcv_death
+			u_unwritten: u_mcv_death
+			o_silence: o_mcv_death
+			n_remnant: n_mcv_death
+
+HARV.EmptyHusk:
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_harvester
+			u_unwritten: u_harvester
+			o_silence: o_harvester
+			n_remnant: n_harvester
+
+HARV.FullHusk:
+	RenderSprites:
+		FactionImages:
+			v_veilborn: v_harvester
+			u_unwritten: u_harvester
+			o_silence: o_harvester
+			n_remnant: n_harvester
+
+Player:
+	McvManagerBotModule:
+		RequiresCondition: sevenfall-ai
+		McvTypes: mcv
+		ConstructionYardTypes: fact
+		McvFactoryTypes: a_armory, h_motorpool, d_forge, f_armory, i_motorpool, v_motorpool, u_motorpool, o_motorpool, n_motorpool
+	HarvesterBotModule:
+		RequiresCondition: sevenfall-ai
+		HarvesterTypes: a_gatherer, h_harvester, d_devourer, f_gatherer, i_harvester, v_harvester, u_harvester, o_harvester, n_harvester
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks, f_veilworks, i_veilworks, v_veilworks, u_veilworks, o_veilworks, n_veilworks
+	BaseBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		MinimumExcessPower: 30
+		MaximumExcessPower: 130
+		ConstructionYardTypes: fact
+		PowerTypes: a_spire, h_generator, d_heart, f_spire, i_generator, v_generator, u_generator, o_generator, n_generator
+		RefineryTypes: a_veilworks, h_veilworks, d_veilworks, f_veilworks, i_veilworks, v_veilworks, u_veilworks, o_veilworks, n_veilworks
+		BarracksTypes: a_chapel, h_barracks, d_pit, f_chapel, i_barracks, v_barracks, u_barracks, o_barracks, n_barracks
+		VehiclesFactoryTypes: a_armory, h_motorpool, d_forge, f_armory, i_motorpool, v_motorpool, u_motorpool, o_motorpool, n_motorpool
+		ProductionTypes: a_chapel, h_barracks, d_pit, a_armory, h_motorpool, d_forge, f_chapel, i_barracks, f_armory, i_motorpool, v_barracks, u_barracks, o_barracks, n_barracks, v_motorpool, u_motorpool, o_motorpool, n_motorpool
+		DefenseTypes: a_watchfire, a_judgment, a_skyward, h_autocannon, h_missilenest, d_spinenest, d_cindermaw, d_skyhook, a_processional, h_containment, d_throne, f_watchfire, f_judgment, f_skyward, i_autocannon, i_missilenest, v_autocannon, u_autocannon, o_autocannon, n_autocannon, v_missilenest, u_missilenest, o_missilenest, n_missilenest
+		BuildingLimits:
+			v_helipad: 1
+			v_kennel: 1
+			v_cataclysm: 1
+			u_helipad: 1
+			u_kennel: 1
+			u_cataclysm: 1
+			o_helipad: 1
+			o_kennel: 1
+			o_cataclysm: 1
+			n_helipad: 1
+			n_kennel: 1
+			n_cataclysm: 1
+			a_processional: 2
+			h_containment: 1
+			d_throne: 2
+			a_watchfire: 2
+			f_watchfire: 2
+			a_judgment: 2
+			f_judgment: 2
+			a_skyward: 2
+			f_skyward: 2
+			h_autocannon: 2
+			v_autocannon: 2
+			u_autocannon: 2
+			o_autocannon: 2
+			n_autocannon: 2
+			i_autocannon: 2
+			h_missilenest: 2
+			v_missilenest: 2
+			u_missilenest: 2
+			o_missilenest: 2
+			n_missilenest: 2
+			i_missilenest: 2
+			d_spinenest: 2
+			d_cindermaw: 2
+			d_skyhook: 2
+			a_veilworks: 3
+			f_veilworks: 3
+			h_veilworks: 3
+			v_veilworks: 3
+			u_veilworks: 3
+			o_veilworks: 3
+			n_veilworks: 3
+			i_veilworks: 3
+			d_veilworks: 3
+			a_chapel: 2
+			f_chapel: 2
+			h_barracks: 2
+			v_barracks: 2
+			u_barracks: 2
+			o_barracks: 2
+			n_barracks: 2
+			i_barracks: 2
+			d_pit: 2
+			a_armory: 1
+			f_armory: 1
+			h_motorpool: 1
+			v_motorpool: 1
+			u_motorpool: 1
+			o_motorpool: 1
+			n_motorpool: 1
+			i_motorpool: 1
+			d_forge: 1
+		BuildingFractions:
+			v_helipad: 8
+			v_kennel: 5
+			v_tech: 5
+			v_cataclysm: 2
+			u_helipad: 8
+			u_kennel: 5
+			u_tech: 5
+			u_cataclysm: 2
+			o_helipad: 8
+			o_kennel: 5
+			o_tech: 5
+			o_cataclysm: 2
+			n_helipad: 8
+			n_kennel: 5
+			n_tech: 5
+			n_cataclysm: 2
+			a_processional: 4
+			h_containment: 8
+			d_throne: 4
+			a_watchfire: 4
+			f_watchfire: 4
+			a_judgment: 4
+			f_judgment: 4
+			a_skyward: 4
+			f_skyward: 4
+			h_autocannon: 4
+			v_autocannon: 4
+			u_autocannon: 4
+			o_autocannon: 4
+			n_autocannon: 4
+			i_autocannon: 4
+			h_missilenest: 4
+			v_missilenest: 4
+			u_missilenest: 4
+			o_missilenest: 4
+			n_missilenest: 4
+			i_missilenest: 4
+			d_spinenest: 4
+			d_cindermaw: 4
+			d_skyhook: 4
+			a_veilworks: 30
+			f_veilworks: 30
+			h_veilworks: 30
+			v_veilworks: 30
+			u_veilworks: 30
+			o_veilworks: 30
+			n_veilworks: 30
+			i_veilworks: 30
+			d_veilworks: 30
+			a_chapel: 10
+			f_chapel: 10
+			h_barracks: 10
+			v_barracks: 10
+			u_barracks: 10
+			o_barracks: 10
+			n_barracks: 10
+			i_barracks: 10
+			d_pit: 10
+			a_armory: 10
+			f_armory: 10
+			h_motorpool: 10
+			v_motorpool: 10
+			u_motorpool: 10
+			o_motorpool: 10
+			n_motorpool: 10
+			i_motorpool: 10
+			d_forge: 10
+	UnitBuilderBotModule:
+		RequiresCondition: sevenfall-ai
+		UnitsToBuild:
+			v_special: 15
+			v_air: 15
+			v_beast: 15
+			u_special: 15
+			u_air: 15
+			u_beast: 15
+			o_special: 15
+			o_air: 15
+			o_beast: 15
+			n_special: 15
+			n_air: 15
+			n_beast: 15
+			n_attendant: 25
+			i_ghost: 25
+			i_lance: 25
+			i_endurer: 25
+			i_crucible: 25
+			i_thread: 25
+			i_relay: 25
+			i_savant: 25
+			i_gambit: 25
+			f_regent: 25
+			f_reliquary: 25
+			f_canticle: 25
+			f_lamentor: 25
+			f_flayer: 25
+			f_martyr: 25
+			f_pinions: 25
+			f_harrow: 25
+			a_congregant: 45
+			a_cantor: 12
+			h_retrieval: 20
+			h_janus: 25
+			d_magistrate: 15
+			d_contemptor: 30
+			a_gatherer: 15
+			f_gatherer: 15
+			h_harvester: 15
+			v_harvester: 15
+			u_harvester: 15
+			o_harvester: 15
+			n_harvester: 15
+			i_harvester: 15
+			d_devourer: 15
+			a_watcher: 60
+			f_watcher: 60
+			h_rifleman: 60
+			v_rifleman: 60
+			u_rifleman: 60
+			o_rifleman: 60
+			n_rifleman: 60
+			i_rifleman: 60
+			d_thrall: 75
+			a_judicator: 25
+			f_judicator: 25
+			h_rocketeer: 25
+			v_rocketeer: 25
+			u_rocketeer: 25
+			o_rocketeer: 25
+			n_rocketeer: 25
+			i_rocketeer: 25
+			d_cinderling: 25
+			a_aegis: 30
+			f_aegis: 30
+			h_bulwark: 40
+			v_bulwark: 40
+			u_bulwark: 40
+			o_bulwark: 40
+			n_bulwark: 40
+			i_bulwark: 40
+			d_ravager: 45
+			a_seraphim: 15
+			a_gatekeeper: 15
+			a_penitent: 20
+			h_siegegun: 15
+			h_ranger: 20
+			h_templar: 15
+			d_hellreaver: 15
+			d_skitter: 30
+			d_hexer: 15
+		UnitLimits:
+			a_gatherer: 4
+			f_gatherer: 4
+			h_harvester: 4
+			v_harvester: 4
+			u_harvester: 4
+			o_harvester: 4
+			n_harvester: 4
+			i_harvester: 4
+			d_devourer: 4
+	SupportPowerBotModule@INDEPENDENT:
+		RequiresCondition: sevenfall-ai
+		Decisions:
+			Bloom:
+				OrderName: SFExtraBloomOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Ally
+					Types: GroundActor, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 5c0
+			Restoration:
+				OrderName: SFExtraRestorationOrder
+				MinimumAttractiveness: 100
+				Consideration@targets:
+					Against: Ally
+					Types: SFMemory
+					Attractiveness: 100
+					CheckRadius: 5c0
+			AbsoluteSilence:
+				OrderName: SFExtraAbsoluteSilenceOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure, AirborneActor
+					Attractiveness: 100
+					CheckRadius: 5c0
+			Earthbreaker:
+				OrderName: SFExtraEarthbreakerOrder
+				MinimumAttractiveness: 300
+				Consideration@targets:
+					Against: Enemy
+					Types: GroundActor, Structure
+					Attractiveness: 100
+					CheckRadius: 5c0
+
+^Building:
+	ExternalCondition@EXTRA_quiet:
+		Condition: sf-quiet
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@EXTRA_quiet:
+		Modifier: 30
+		RequiresCondition: sf-quiet
+
+^Infantry:
+	ExternalCondition@EXTRA_growth:
+		Condition: sf-growth
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_growth:
+		Modifier: 80
+		RequiresCondition: sf-growth && !sf-null
+	ExternalCondition@EXTRA_attended:
+		Condition: sf-attended
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_attended:
+		Modifier: 85
+		RequiresCondition: sf-attended && !sf-null
+	ExternalCondition@EXTRA_isolation:
+		Condition: sf-isolation
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_isolation:
+		Modifier: 125
+		RequiresCondition: sf-isolation && !sf-null
+	ExternalCondition@EXTRA_bloom:
+		Condition: sf-bloom
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_bloom:
+		Modifier: 65
+		RequiresCondition: sf-bloom && !sf-null
+	ExternalCondition@EXTRA_quiet:
+		Condition: sf-quiet
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@EXTRA_quiet:
+		Modifier: 30
+		RequiresCondition: sf-quiet
+	ExternalCondition@EXTRA_bloom-slow:
+		Condition: sf-bloom-slow
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_bloom-slow:
+		Modifier: 65
+		RequiresCondition: sf-bloom-slow
+
+^Vehicle:
+	ExternalCondition@EXTRA_growth:
+		Condition: sf-growth
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_growth:
+		Modifier: 80
+		RequiresCondition: sf-growth && !sf-null
+	ExternalCondition@EXTRA_attended:
+		Condition: sf-attended
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_attended:
+		Modifier: 85
+		RequiresCondition: sf-attended && !sf-null
+	ExternalCondition@EXTRA_isolation:
+		Condition: sf-isolation
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_isolation:
+		Modifier: 125
+		RequiresCondition: sf-isolation && !sf-null
+	ExternalCondition@EXTRA_bloom:
+		Condition: sf-bloom
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_bloom:
+		Modifier: 65
+		RequiresCondition: sf-bloom && !sf-null
+	ExternalCondition@EXTRA_quiet:
+		Condition: sf-quiet
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@EXTRA_quiet:
+		Modifier: 30
+		RequiresCondition: sf-quiet
+	ExternalCondition@EXTRA_bloom-slow:
+		Condition: sf-bloom-slow
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_bloom-slow:
+		Modifier: 65
+		RequiresCondition: sf-bloom-slow
+
+^Aircraft:
+	ExternalCondition@EXTRA_growth:
+		Condition: sf-growth
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_growth:
+		Modifier: 80
+		RequiresCondition: sf-growth && !sf-null
+	ExternalCondition@EXTRA_attended:
+		Condition: sf-attended
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_attended:
+		Modifier: 85
+		RequiresCondition: sf-attended && !sf-null
+	ExternalCondition@EXTRA_isolation:
+		Condition: sf-isolation
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_isolation:
+		Modifier: 125
+		RequiresCondition: sf-isolation && !sf-null
+	ExternalCondition@EXTRA_bloom:
+		Condition: sf-bloom
+		TotalCap: 1
+		SourceCap: 1
+	DamageMultiplier@EXTRA_bloom:
+		Modifier: 65
+		RequiresCondition: sf-bloom && !sf-null
+	ExternalCondition@EXTRA_quiet:
+		Condition: sf-quiet
+		TotalCap: 1
+		SourceCap: 1
+	FirepowerMultiplier@EXTRA_quiet:
+		Modifier: 30
+		RequiresCondition: sf-quiet
+	ExternalCondition@EXTRA_bloom-slow:
+		Condition: sf-bloom-slow
+		TotalCap: 1
+		SourceCap: 1
+	SpeedMultiplier@EXTRA_bloom-slow:
+		Modifier: 65
+		RequiresCondition: sf-bloom-slow

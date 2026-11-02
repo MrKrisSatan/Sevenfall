@@ -25,13 +25,29 @@ Players:
 		Color: 69B4D4
 		LockTeam: True
 		LockSpawn: True
-		Enemies: Enemy
+		Allies: EnclaveFriendly
+		Enemies: Enemy, EnclaveHostile
 	PlayerReference@Enemy:
 		Name: Enemy
 		Faction: d_brood
 		Color: D34B78
 		Bot: sevenfall
-		Enemies: Commander
+		Enemies: Commander, EnclaveHostile, EnclaveFriendly
+	PlayerReference@Enclave:
+		Name: Enclave
+		Faction: n_remnant
+		NonCombatant: True
+	PlayerReference@EnclaveHostile:
+		Name: EnclaveHostile
+		Faction: n_remnant
+		NonCombatant: True
+		Enemies: Commander, Enemy
+	PlayerReference@EnclaveFriendly:
+		Name: EnclaveFriendly
+		Faction: n_remnant
+		NonCombatant: True
+		Allies: Commander
+		Enemies: Enemy
 Actors:
 	CommanderMcv: mcv
 		Owner: Commander
@@ -74,7 +90,7 @@ Rules:
 		-SpawnStartingUnits:
 		-MapStartingLocations:
 		LuaScript:
-			Scripts: mission.lua
+			Scripts: mission.lua, enclave.lua
 		MissionData:
 			Briefing: The Host must protect the Gatherers while refining unstable Veilglass. Raise a Sanctification Crucible, field Watchers and Aegis Engines, and purge the Blood Brood beachhead.
 		ObjectivesPanel:

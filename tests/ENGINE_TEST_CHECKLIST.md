@@ -1,14 +1,16 @@
 # OpenRA integration acceptance checklist
 
-All checkboxes remain unchecked until verified in a real OpenRA SDK environment.
+Reusable checklist for a new candidate. Record results independently; see [current release evidence](../docs/TESTER_ALPHA_ACCEPTANCE.md) for completed checks.
 
 - [ ] Starter overlay loads in OpenRA without missing rules/traits/actor exceptions.
-- [ ] All nine lobby subfactions appear and load appropriate prerequisites.
-- [ ] Angel, Human and Demon MCVs deploy construction yards.
+- [ ] All twenty lobby subfactions appear and load appropriate prerequisites.
+- [ ] Angel, Human, Demon, Noetic and Forsaken MCVs deploy construction yards.
 - [ ] Each side builds power, refinery and infantry production.
-- [ ] Three faction-specific harvesters navigate to Veilglass, collect it and unload.
+- [ ] Five faction-specific collectors navigate to Veilglass, collect it and unload.
 - [ ] Deposits deplete and the player's resources increase by the correct amount.
 - [ ] At least one infantry and one vehicle type per major faction can be produced.
+- [ ] All five realms can normally build aircraft, beasts and supplying superweapon installations.
+- [ ] All seventeen powers charge in Defences, disappear on last-source loss and restart after rebuilding.
 - [ ] Combat weapons hit intended target classes and damage is applied.
 - [ ] Base destruction triggers correctly and victory/defeat terminates the match.
 - [ ] Each AI builds, harvests and attacks without referencing removed RA actor IDs.

@@ -7,6 +7,16 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.Sevenfall
 {
+    public class SFResonanceSourceInfo : ConditionalTraitInfo
+    {
+        public override object Create(ActorInitializer init) => new SFResonanceSource(this);
+    }
+    public class SFResonanceSource : ConditionalTrait<SFResonanceSourceInfo>
+    {
+        public SFResonanceSource(SFResonanceSourceInfo info) : base(info) { }
+        public bool Active(Actor self) => !IsTraitDisabled &&
+            self.Owner.PlayerActor.Trait<PowerManager>().PowerState == PowerState.Normal;
+    }
     public class SFSuppressionStateInfo : ConditionalTraitInfo
     {
         public override object Create(ActorInitializer init) => new SFSuppressionState(this);
@@ -45,12 +55,15 @@ namespace OpenRA.Mods.Sevenfall
             var faction = self.Owner.Faction.InternalName;
             // New realm doctrines are combat-only: collectors and engineers do not
             // acquire combat/escape bonuses. Fallen miracles obey null suppression.
-            if ((faction.StartsWith("i_") || faction.StartsWith("f_")) && !self.Info.HasTraitInfo<ArmamentInfo>()) return null;
+            if ((faction.StartsWith("i_") || faction.StartsWith("f_") || faction.StartsWith("v_") || faction.StartsWith("u_") || faction.StartsWith("o_") || faction.StartsWith("n_")) && !self.Info.HasTraitInfo<ArmamentInfo>()) return null;
             if (faction != "h_bastion" && faction != "h_union" && Suppressed(self)) return null;
             var friends = self.World.FindActorsInCircle(self.CenterPosition,new WDist(6144))
                 .Where(a => Living(a) && a.Owner == self.Owner && a != self && a.OccupiesSpace != null);
             switch (self.Owner.Faction.InternalName)
             {
+                case "v_veilborn": return friends.Any(a => a.TraitOrDefault<SFResonanceSource>()?.Active(a) == true) ? "sf-growth" : null;
+                case "n_remnant": return friends.Any(a => a.Info.Name == "n_attendant" && Near(a,self,4) && !Suppressed(a)) ? "sf-attended" : null;
+                case "o_silence": return !friends.Any(a => a.Info.HasTraitInfo<ArmamentInfo>() && Near(a,self,4)) ? "sf-isolation" : null;
                 case "i_echo": return stillTicks >= 75 ? "sf-focus" : null;
                 case "i_iron": return "sf-machine-iron";
                 case "i_grid": return friends.Any(a => a.Info.Name == "i_relay" && Near(a, self, 4)) ? "sf-machine-grid" : null;
@@ -80,6 +93,8 @@ namespace OpenRA.Mods.Sevenfall
             if (self.World.WorldTick % 5 != 0) return;
             var condition = ActiveCondition(self);
             if (condition != null) Grant(self, this, condition, 6);
+            if ((condition == "sf-growth" || condition == "sf-attended") && self.World.WorldTick % 25 == 0)
+                self.InflictDamage(self, new Damage(-Math.Max(1,self.Trait<Health>().MaxHP / 100)));
             // Oath heals infantry only, at 200 HP/second. Multiple confessors never stack.
             if (condition == "sf-oath" && self.Info.HasTraitInfo<WithInfantryBodyInfo>() && self.World.WorldTick % 25 == 0)
                 self.InflictDamage(self, new Damage(-200));
@@ -88,7 +103,7 @@ namespace OpenRA.Mods.Sevenfall
         void INotifyAttack.Attacking(Actor self, in Target target, Armament armament, Barrel barrel)
         {
             if (target.Type != TargetType.Actor || !Living(target.Actor) || self.Owner.RelationshipWith(target.Actor.Owner) != PlayerRelationship.Enemy || Suppressed(self)) return;
-            if (self.Owner.Faction.InternalName == "d_court" && (self.Info.Name == "d_hexer" || self.Info.Name == "d_silencer"))
+            if ((self.Owner.Faction.InternalName == "d_court" && (self.Info.Name == "d_hexer" || self.Info.Name == "d_silencer")) || (self.Owner.Faction.InternalName == "o_silence" && self.Info.Name == "o_special"))
                 Grant(target.Actor, self, "sf-whisper", 100);
         }
         void INotifyKilled.Killed(Actor self, AttackInfo attack)

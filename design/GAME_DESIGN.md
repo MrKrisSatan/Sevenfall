@@ -1,9 +1,16 @@
 # SEVENFALL: The War for Creation
-## Original RTS design bible | Concept version 0.1
+
+## Current implemented roster
+
+Five playable parent factions each have four subfactions: Humans, Angels, Hell/Demons, Noetic Assembly and Forsaken Host. Each choice has two exclusive units and a doctrine; each parent supplies economy, buildings, defenses, aircraft, beasts and a shared superweapon. The original twelve choices also retain their exclusive powers: seventeen powers in total. All are bound to supplying buildings and charge automatically in Defences.
+
+The [five-faction guide](../docs/FACTIONS.md), [new-realm roster](../docs/NEW_REALMS.md), [shared arsenal](../docs/SHARED_ARSENAL.md), and actor rules describe the current alpha. The original roster concepts below remain design history where they differ from these implemented systems. Six planned campaigns each contain 25 missions: Humans, Angels, Hell, Noetic Assembly, Forsaken Host and the secret Veilborn finale. The first five completions unlock the sixth. These are designs, not finished playable campaigns.
+
+## RTS design bible | Five-realm alpha.3 update
 
 **Tagline:** *The Apocalypse wasn't the end. It was the beginning of the war for everything.*
 
-**Genre:** original dark-fantasy/science-fantasy RTS, built with OpenRA, individual-unit C&C combat, not squad capture-point combat. **Players:** 1–8 target for skirmish and multiplayer, subject to performance testing. **Platform targets:** Windows/Linux first. **Camera:** isometric 2D with readable terrain, infantry, air, and siege machinery.
+**Genre:** original dark-fantasy/science-fantasy RTS, built with OpenRA, individual-unit C&C combat, not squad capture-point combat. **Players:** up to twelve simultaneous players on The Twelvefold Scar; twenty selectable subfactions. Large-match performance remains under testing. **Platform:** standalone Windows x64 alpha; Linux packaging remains planned. **Camera:** isometric 2D with readable terrain, infantry, air, and siege machinery.
 
 ## The world
 

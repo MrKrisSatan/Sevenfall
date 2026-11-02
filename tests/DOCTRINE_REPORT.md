@@ -1,5 +1,7 @@
 # Additional subfaction verification — 25 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 - Python regression suite: **79 passed**.
 - Pure C# assertions: **7 dread + 104 Veilglass checks passed**.
 - Native doctrine acceptance: **34 passed** in a fresh content-free support folder.

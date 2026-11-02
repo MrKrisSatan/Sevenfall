@@ -1,6 +1,6 @@
 # Faction defenses
 
-All nine subfactions can build their parent faction's five defenses from the Defense tab. These are prototype balance values at normal game speed.
+All twenty subfactions use their parent realm’s defensive structures. The original three realms each have five shared defenses; the Noetic Assembly has two and the Forsaken Host three. Choir of Desolation, Area Fifty Two and Circle of Contempt also have an exclusive defense. Superweapon icons share the Defences tab. These are prototype balance values at normal game speed.
 
 | Faction | Defense | Purpose and counterplay |
 | --- | --- | --- |
@@ -19,6 +19,11 @@ All nine subfactions can build their parent faction's five defenses from the Def
 | Demons | Spine Nest | Powered anti-infantry organic turret. |
 | Demons | Cinder Maw | Powered short-range anti-armor emplacement. |
 | Demons | Skyhook Spire | Powered anti-air organic defense. |
+| Noetic Assembly | Sentry Node | Shared machine ground-defense turret; use ranged pressure and flanking to break fixed coverage. |
+| Noetic Assembly | Interceptor Node | Shared machine anti-air defense; ground attackers bypass its targeting role. |
+| Forsaken Host | Balefire Watch | Shared fallen anti-infantry emplacement. |
+| Forsaken Host | Wrath Organ | Shared fallen heavy anti-armor emplacement; pressure its firing cadence. |
+| Forsaken Host | Broken Halo Battery | Shared fallen anti-air emplacement. |
 
 Mourning Flesh does not stack its conversion rate. A purple selection bar shows rising dread. Leaving its radius drains exposure twice as fast as it accumulates. Vehicles are immune. Sanctuary protection clears dread, destroying the wall stops its influence, and loss of demonic power silences it. Converted infantry receive 30 seconds of immunity against immediate conversion back. All ownership changes use deterministic engine logic and cancel the unit's current orders.
 
@@ -32,4 +37,8 @@ The 15 original six-state atlases include healthy, damaged, critical and firing/
 
 ## Reproduce validation
 
-Run Python unit discovery, `dotnet run --project tests/Sevenfall.DefenseTests -c Release`, and `python scripts/build.py test`. With legally installed Red Alert content, run `python scripts/run_defense_test.py --support-dir PATH`. Its developer map exercises live conversion, immunity, sanctuary, power loss, vehicle crushing, movement penalties, light crossings, garrison fire and air/ground targeting. The runner requires the completion marker and reports failures with a native transcript.
+Run Python unit discovery, `dotnet run --project tests/Sevenfall.DefenseTests -c Release`, and `python scripts/build.py test`. No Red Alert content is required. Run `python scripts/run_defense_test.py --support-dir PATH`. Its developer map exercises live conversion, immunity, sanctuary, power loss, vehicle crushing, movement penalties, light crossings, garrison fire and air/ground targeting. The runner requires the completion marker and reports failures with a native transcript.
+
+## Independent development factions
+
+Each new realm has two dedicated defensive buildings, with original painted construction and damage states: Veilborn Shard Battery / Sky Prism; Unwritten Script Battery / Sky Quill; Outer Silence Hush Battery / Sky Void; Nephilim Cairn Battery / Sky Spear. Batteries protect ground approaches; sky emplacements provide anti-air coverage. Their shared underlying weapons remain an initial balance baseline, while each realm’s combat units and doctrine differ. The four factions have no subfactions. [Illustrated complete rosters](https://mrkrissatan.github.io/Sevenfall/additional-realms.html).

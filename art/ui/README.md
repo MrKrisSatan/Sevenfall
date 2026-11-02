@@ -9,8 +9,15 @@ not an in-game screenshot.
 - Angelic: dark stone, ivory/gold trim and wing geometry.
 - Human: blue-grey steel, teal trim and a fortified shield.
 - Infernal: obsidian, ember trim and angular horn/crystal geometry.
+- Machine: dark blue steel, cyan trim and geometric circuit imagery.
+- Fallen: dark violet stone, pale lavender trim and broken celestial imagery.
 
-All nine subfactions map to their parent theme through ChromeMetrics.
+- Veilborn: turquoise mineral facets and gold veins.
+- Unwritten: silver memory ribbons and an archive mark.
+- Outer Silence: violet void geometry on near-black panels.
+- Nephilim: ochre stone and bronze oath geometry.
+
+All twenty original subfactions and four independent faction IDs map to their parent theme through ChromeMetrics. Veilborn remains hidden in the normal lobby.
 OpenRA's AddFactionSuffixLogic reads the actual local player's faction at HUD
 creation, including resolved Random selections and campaign players. The
 upstream GPL player layout is staged with faction binding added to the command

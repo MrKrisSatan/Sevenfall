@@ -587,6 +587,398 @@ command-button-fallen-highlighted-disabled:
 	Image2x: sevenfall|art/ui/hud-fallen-2x.png
 	Image3x: sevenfall|art/ui/hud-fallen-3x.png
 	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-veilborn:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-veilborn:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-veilborn:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-hover:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-pressed:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-disabled:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-highlighted:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-highlighted-hover:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-veilborn-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-veilborn:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-veilborn-hover:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-veilborn-pressed:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-veilborn-disabled:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-veilborn-highlighted:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-veilborn-highlighted-hover:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-veilborn-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-veilborn-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-veilborn.png
+	Image2x: sevenfall|art/ui/hud-veilborn-2x.png
+	Image3x: sevenfall|art/ui/hud-veilborn-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-unwritten:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-unwritten:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-unwritten:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-hover:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-pressed:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-disabled:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-highlighted:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-highlighted-hover:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-unwritten-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-unwritten:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-unwritten-hover:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-unwritten-pressed:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-unwritten-disabled:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-unwritten-highlighted:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-unwritten-highlighted-hover:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-unwritten-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-unwritten-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-unwritten.png
+	Image2x: sevenfall|art/ui/hud-unwritten-2x.png
+	Image3x: sevenfall|art/ui/hud-unwritten-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-silence:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-silence:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-silence:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-hover:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-pressed:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-disabled:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-highlighted:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-highlighted-hover:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-silence-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-silence:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-silence-hover:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-silence-pressed:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-silence-disabled:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-silence-highlighted:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-silence-highlighted-hover:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-silence-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-silence-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-silence.png
+	Image2x: sevenfall|art/ui/hud-silence-2x.png
+	Image3x: sevenfall|art/ui/hud-silence-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+sidebar-nephilim:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	Regions:
+		radar: 240, 0, 222, 222
+		background-top: 0, 0, 238, 262
+		background-moneybin: 0, 264, 238, 28
+		background-iconbg: 0, 294, 190, 47
+		background-iconrow: 0, 343, 238, 47
+		background-bottom: 0, 392, 238, 8
+		background-supportoverlay: 240, 224, 64, 48
+commandbar-nephilim:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	Regions:
+		background: 0, 404, 434, 44
+sidebar-button-nephilim:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-hover:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-pressed:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-disabled:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-highlighted:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-highlighted-hover:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+sidebar-button-nephilim-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
+command-button-nephilim:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 0, 3, 3, 24, 24, 3, 3
+command-button-nephilim-hover:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 32, 3, 3, 24, 24, 3, 3
+command-button-nephilim-pressed:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 64, 3, 3, 24, 24, 3, 3
+command-button-nephilim-disabled:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 96, 3, 3, 24, 24, 3, 3
+command-button-nephilim-highlighted:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 128, 3, 3, 24, 24, 3, 3
+command-button-nephilim-highlighted-hover:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 160, 3, 3, 24, 24, 3, 3
+command-button-nephilim-highlighted-pressed:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 192, 3, 3, 24, 24, 3, 3
+command-button-nephilim-highlighted-disabled:
+	Image: sevenfall|art/ui/hud-nephilim.png
+	Image2x: sevenfall|art/ui/hud-nephilim-2x.png
+	Image3x: sevenfall|art/ui/hud-nephilim-3x.png
+	PanelRegion: 464, 224, 3, 3, 24, 24, 3, 3
 ^Dialog:
 	Image: sevenfall|art/ui/neutral-dialog.png
 	Image2x: sevenfall|art/ui/neutral-dialog-2x.png

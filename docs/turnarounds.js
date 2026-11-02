@@ -22,7 +22,7 @@
     stage.setAttribute('aria-label',selected.dataset.name+' facing '+names[index].toLowerCase());
     document.getElementById('turn-facing').textContent=names[index];
     [...choices.children].forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));
-    document.getElementById('turn-download').href=`https://github.com/MrKrisSatan/Sevenfall/blob/main/art/unit-turnarounds/frames/${selected.closest('article').id}/${short[index].toLowerCase()}.png`;
+    document.getElementById('turn-download').href=`https://github.com/MrKrisSatan/Sevenfall/blob/main/${selected.dataset.source}`;
   }
   names.forEach((name,i)=>{const b=document.createElement('button');b.type='button';b.textContent=short[i];b.setAttribute('aria-label',name);b.addEventListener('click',()=>{index=i;show();});choices.append(b);});
   document.querySelectorAll('.turn-open').forEach(button=>button.addEventListener('click',()=>{

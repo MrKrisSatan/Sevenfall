@@ -2,7 +2,9 @@
 
 Historical parent-faction tuning below. The subsequent [twelve-faction identity
 pass](../docs/FACTION_IDENTITIES.md) implements exclusive mechanics, additional
-specialists, support powers and superweapons for every choice.
+specialists, support powers and superweapons for the original twelve choices. The current
+roster has five realms and twenty subfactions: see [new realm doctrines](../docs/NEW_REALMS.md),
+[shared air/beast/power stats](../docs/SHARED_ARSENAL.md), and [the complete overview](../docs/FACTIONS.md).
 
 Implemented 25 October 2026 against upstream `681cf3b`. This is an initial balance
 pass, not a claim of competitive balance or completed faction technology trees.
@@ -82,3 +84,7 @@ queues, nine exclusive units, animation bindings and economic chains are preserv
 Source of truth: `mods/sevenfall/rules/30-units.yaml` and
 `mods/sevenfall/weapons/sevenfall.yaml`. Tooltips and the website catalogue describe
 the same implemented specialisations.
+
+## Independent development realms
+
+Veilborn, Unwritten, Outer Silence and Nephilim Remnant use separate costs, hit points, speeds, weapon damage/ranges/reloads and combat doctrines. They have no subfactions. Full values: [roster generator data](../scripts/additional_realms_data.py); roles and counterplay: [independent realm specification](ADDITIONAL_REALMS.md). Their economy/building roles reuse the proven production framework; defensive weapon baselines are shared initially. Component tests are not competitive-balance acceptance.

@@ -11,7 +11,11 @@ flags:
 		f_thrones: 30, 60, 30, 15
 		f_choir: 30, 75, 30, 15
 		f_scars: 30, 90, 30, 15
-		f_wings: 30, 105, 30, 15
+		v_veilborn: 30, 105, 30, 15
+		u_unwritten: 30, 120, 30, 15
+		o_silence: 30, 135, 30, 15
+		n_remnant: 30, 150, 30, 15
+		f_wings: 30, 165, 30, 15
 		a_seraph: 0, 0, 30, 15
 		a_warden: 0, 0, 30, 15
 		a_exile: 0, 0, 30, 15

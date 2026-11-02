@@ -1,5 +1,7 @@
 # Eight-direction unit artwork
 
+> Scope: this records the original three-realm art pass. Current five-faction coverage, expansion sheets and gallery links are in [the artwork overview](https://github.com/MrKrisSatan/Sevenfall/blob/main/art/README.md). Current gameplay is documented in [the five-faction guide](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/FACTIONS.md).
+
 This library covers **39 unit designs / 312 directional images**: the current
 24-unit roster plus 15 new naval, aerial and kennel concepts. Each parent faction
 has 13 designs. The existing six MCV/harvester turnarounds are reused; 33 new

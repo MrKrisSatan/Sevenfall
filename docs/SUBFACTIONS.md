@@ -1,11 +1,13 @@
 # Three additional subfaction doctrines
 
-The current twelve-faction pass is documented in [Faction identities](FACTION_IDENTITIES.md).
-All twelve now have two exclusive units, distinct mechanics and a superweapon.
+The current roster has five realms and twenty subfactions; see [the full overview](FACTIONS.md).
+The twelve original choices have two exclusive units and an exclusive superweapon;
+the eight machine/fallen choices have two exclusive units and use their shared realm power.
+All twenty choices have a doctrine and access to their parent’s shared aircraft, beast and superweapon.
 The detailed Choir, Area Fifty Two and Circle mechanics below remain in effect.
 
 These are additive playable prototypes: the original nine choices remain, and the
-lobby/random pool now contains twelve. Each addition has two exclusive units and
+lobby/random pool now contains twenty, including the later Noetic Assembly and Forsaken Host. Each addition has two exclusive units and
 one exclusive defense, while retaining its parent's economy and shared army.
 
 ## Choir of Desolation — "You were promised purpose."

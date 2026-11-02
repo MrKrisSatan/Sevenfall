@@ -1,5 +1,13 @@
 # Sevenfall development roadmap
 
+## Four independent development factions
+
+- [x] Veilborn, Unwritten, Outer Silence and Nephilim Remnant: complete authored tech trees, units, defenses, air, beasts and four building-bound powers; no subfactions.
+- [x] 94 original painted atlases, faction symbols, HUD themes, 275-entry field guide and directional previews.
+- [x] NPC enclave aid/hostility in H03, A03 and D02 developer previews.
+- [ ] Complete full-match AI/balance, network and save/load acceptance for these four additions before packaging the next expansion alpha.
+- [ ] Implement the five campaign completion records and legitimate Veilborn unlock; it remains hidden in the normal lobby.
+
 ## Five-faction alpha.3
 
 - [x] Shared aircraft, beasts and superweapons for all five parent realms and
@@ -16,10 +24,10 @@
 
 Mechanics, limitations and native component evidence: [new realms](docs/NEW_REALMS.md).
 
-**Current milestone: [0.3.0-alpha.3 Windows playtest candidate](https://github.com/MrKrisSatan/Sevenfall/releases).**
+**Current milestone: [0.3.0-alpha.3 Windows playtest release](https://github.com/MrKrisSatan/Sevenfall/releases).**
 Twenty faction choices, two exclusive units per choice, five shared realm powers,
 twelve original subfaction powers, aircraft, beasts and three public skirmish maps
-are implemented. Alpha.3 packaging and release verification are in progress. Campaigns and broader competitive balance
+are implemented. Alpha.3 is published after exact-package Windows acceptance. The four independent factions are a separate development expansion. Campaigns and broader competitive balance
 remain in development. This checklist distinguishes implemented features from
 full-match and platform acceptance; see the [issue review](docs/ISSUE_REVIEW_2026-10-25.md)
 and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
@@ -35,7 +43,7 @@ and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
 ## Phase 1: Skirmish implementation and remaining acceptance
 
-- [x] Twelve selectable factions, parent MCVs, deployed yards, legal structures and faction prerequisites ([#3](https://github.com/MrKrisSatan/Sevenfall/issues/3)).
+- [x] Twenty selectable subfactions across five realms, parent MCVs, deployed yards, legal structures and faction prerequisites ([#3](https://github.com/MrKrisSatan/Sevenfall/issues/3)).
 - [x] Three physical Veilglass collector/refinery chains, accepted-income accounting, depleting deposits and original resource hazards ([#4](https://github.com/MrKrisSatan/Sevenfall/issues/4)).
 - [x] Paid basic infantry/vehicle production and original/additional faction production diagnostics.
 - [x] Native locomotion, cliffs, combat, damage and death behavior; genuine unassisted AI conquest and finalized replay playback.
@@ -51,11 +59,11 @@ and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
 - [x] Implement parent Renewal, field engineering and Blood Frenzy.
 - [x] Implement Choir hymn/Resonance, Area Fifty Two containment protocols and Circle condemnation/execution.
-- [x] Give all twelve choices distinct mechanics, two exclusive units each and an exclusive powered superweapon ([#8](https://github.com/MrKrisSatan/Sevenfall/issues/8)).
+- [x] Give the twelve original choices distinct mechanics, two exclusive units each and an exclusive powered superweapon; add eight machine/fallen doctrines and sixteen exclusive units ([#8](https://github.com/MrKrisSatan/Sevenfall/issues/8)).
 - [x] Add targeting previews, visible warnings, recharge and destruction/power/capture counterplay; document all [faction identities](docs/FACTION_IDENTITIES.md).
 - [x] Add AI technology/specialist/array production plans; prepared native tests verify independent power launches by all twelve faction AIs.
 - [x] Implement original parent defenses: light barriers, sanctuary, garrisons, physical obstacles and demonic dread conversion.
-- [ ] Validate normally paid advanced branches and full-match balance for all twelve choices ([#22](https://github.com/MrKrisSatan/Sevenfall/issues/22)).
+- [ ] Validate normally paid advanced branches and full-match balance for all twenty choices ([#22](https://github.com/MrKrisSatan/Sevenfall/issues/22)).
 - [ ] Extend parent asymmetry with actual infernal gateways and further domain mechanics ([#7](https://github.com/MrKrisSatan/Sevenfall/issues/7)).
 - [ ] Implement and validate aircraft, naval and beast production/combat before enabling them in public packages ([#28](https://github.com/MrKrisSatan/Sevenfall/issues/28)).
 
@@ -69,7 +77,7 @@ and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).
 
 ## Phase 4: Campaigns and full-game release
 
-- [x] Specify 75 narrative missions, 25 per realm, with story continuity and planned finale/ending variants. These are design specifications.
+- [x] Specify 150 narrative missions, 25 per realm, with story continuity and planned finale/ending variants. These are design specifications.
 - [x] Add H03, A03 and D02 developer preview scripts, mission registration, test terrain and automated objective/refinery-income tests.
 - [ ] Validate those three previews through native victory, failure, economy and save/resume, and replace temporary layouts ([#26](https://github.com/MrKrisSatan/Sevenfall/issues/26)).
 - [ ] Implement and validate the remaining 72 missions, campaign progression, three Harrow finales and six ethical ending variants ([#10](https://github.com/MrKrisSatan/Sevenfall/issues/10)).

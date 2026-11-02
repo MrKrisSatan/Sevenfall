@@ -1,0 +1,986 @@
+{
+  "realms": {
+    "v": {
+      "family": "veilborn",
+      "faction": "v_veilborn",
+      "name": "Veilborn",
+      "power": "Bloom",
+      "colors": [
+        "72e8d9",
+        "8266d9",
+        "e3c572"
+      ],
+      "buildings": [
+        "Lumen Growth",
+        "Assimilation Well",
+        "Seed Nursery",
+        "Cathedral Foundry",
+        "Pure Spire",
+        "Mending Pool",
+        "Listening Prism",
+        "Memory Lattice",
+        "Manta Aerie",
+        "Glassmaw Cradle",
+        "Shard Battery",
+        "Sky Prism",
+        "Heart Prism"
+      ]
+    },
+    "u": {
+      "family": "unwritten",
+      "faction": "u_unwritten",
+      "name": "The Unwritten",
+      "power": "Restoration",
+      "colors": [
+        "dce8ef",
+        "657991",
+        "adcad4"
+      ],
+      "buildings": [
+        "Mnemonic Lamp",
+        "Remembrance Mill",
+        "Echo Hall",
+        "Palimpsest Foundry",
+        "Memory Beacon",
+        "Recollection Pool",
+        "Witness Lens",
+        "Index of Lives",
+        "Lantern Loft",
+        "Memory Den",
+        "Script Battery",
+        "Sky Quill",
+        "Archive of Names"
+      ]
+    },
+    "o": {
+      "family": "silence",
+      "faction": "o_silence",
+      "name": "The Outer Silence",
+      "power": "AbsoluteSilence",
+      "colors": [
+        "34314e",
+        "9b8ad5",
+        "171621"
+      ],
+      "buildings": [
+        "Dark Pulse",
+        "Hollow Siphon",
+        "Hush Chamber",
+        "Null Foundry",
+        "Deep Pulse",
+        "Stillwater Basin",
+        "Absence Lens",
+        "Boundary Archive",
+        "Eclipse Nest",
+        "Quiet Den",
+        "Hush Battery",
+        "Sky Void",
+        "Null Cathedral"
+      ]
+    },
+    "n": {
+      "family": "nephilim",
+      "faction": "n_remnant",
+      "name": "Nephilim Remnant",
+      "power": "Earthbreaker",
+      "colors": [
+        "b99b64",
+        "7b8275",
+        "e0c99a"
+      ],
+      "buildings": [
+        "Hearth Tower",
+        "Burden Mill",
+        "Attendant Lodge",
+        "Giant Hall",
+        "Sun Hearth",
+        "Resting Court",
+        "Horizon Watch",
+        "Ancestral Chronicle",
+        "Dawn Roost",
+        "Stonehorn Pen",
+        "Cairn Battery",
+        "Sky Spear",
+        "Ancestral Cairn"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "id": "v_generator",
+      "name": "Lumen Growth",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "generator"
+    },
+    {
+      "id": "v_veilworks",
+      "name": "Assimilation Well",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "veilworks"
+    },
+    {
+      "id": "v_barracks",
+      "name": "Seed Nursery",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "barracks"
+    },
+    {
+      "id": "v_motorpool",
+      "name": "Cathedral Foundry",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "motorpool"
+    },
+    {
+      "id": "v_advpower",
+      "name": "Pure Spire",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "advpower"
+    },
+    {
+      "id": "v_service",
+      "name": "Mending Pool",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "service"
+    },
+    {
+      "id": "v_radar",
+      "name": "Listening Prism",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "radar"
+    },
+    {
+      "id": "v_tech",
+      "name": "Memory Lattice",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "tech"
+    },
+    {
+      "id": "v_helipad",
+      "name": "Manta Aerie",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "helipad"
+    },
+    {
+      "id": "v_kennel",
+      "name": "Glassmaw Cradle",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "kennel"
+    },
+    {
+      "id": "v_autocannon",
+      "name": "Shard Battery",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "autocannon"
+    },
+    {
+      "id": "v_missilenest",
+      "name": "Sky Prism",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "missilenest"
+    },
+    {
+      "id": "v_cataclysm",
+      "name": "Heart Prism",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "cataclysm"
+    },
+    {
+      "id": "v_rifleman",
+      "name": "Shardling",
+      "kind": "infantry",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "rifleman",
+      "description": "Crystalline screening infantry; gains protection and recovery inside the growth network.",
+      "cost": 180,
+      "hp": 7000,
+      "damage": 1200
+    },
+    {
+      "id": "v_rocketeer",
+      "name": "Prism Lancer",
+      "kind": "rocket",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "rocketeer",
+      "description": "Deliberate anti-armor and anti-air fire; weak when swarmed.",
+      "cost": 420,
+      "hp": 9500,
+      "damage": 4800
+    },
+    {
+      "id": "v_bulwark",
+      "name": "Cathedral Walker",
+      "kind": "vehicle",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "bulwark",
+      "description": "Expensive heavy anchor. Protect its slow advance with resonators and screens.",
+      "cost": 1700,
+      "hp": 65000,
+      "damage": 8200
+    },
+    {
+      "id": "v_special",
+      "name": "Facet Seer",
+      "kind": "infantry",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "special",
+      "description": "Long-sight detector and ranged support; cannot replace a powered network node.",
+      "cost": 650,
+      "hp": 10000,
+      "damage": 1500
+    },
+    {
+      "id": "v_air",
+      "name": "Crystal Manta",
+      "kind": "air",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "air",
+      "description": "Hovering crystalline attacker; vulnerable to anti-air concentration.",
+      "cost": 1750,
+      "hp": 26000,
+      "damage": 4700
+    },
+    {
+      "id": "v_beast",
+      "name": "Glassmaw",
+      "kind": "beast",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "beast",
+      "description": "Fast mineral predator for intercepting raids; needs support against heavy armor.",
+      "cost": 520,
+      "hp": 18000,
+      "damage": 3700
+    },
+    {
+      "id": "v_engineer",
+      "name": "Facet Mender",
+      "kind": "engineer",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "engineer",
+      "description": "Repairs civilian structures and bridges; captures eligible buildings.",
+      "cost": 450,
+      "hp": 6000,
+      "damage": 0
+    },
+    {
+      "id": "v_harvester",
+      "name": "Root Carrier",
+      "kind": "harvester",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "harvester",
+      "description": "Physical Veilglass collector; no free-resource generation and safe from contact blasts.",
+      "cost": 1450,
+      "hp": 64000,
+      "damage": 0
+    },
+    {
+      "id": "v_yard",
+      "name": "Heartroot",
+      "kind": "building",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "yard"
+    },
+    {
+      "id": "v_mcv",
+      "name": "Seed Pilgrim",
+      "kind": "vehicle",
+      "realm": "veilborn",
+      "prefix": "v",
+      "role": "mcv"
+    },
+    {
+      "id": "u_generator",
+      "name": "Mnemonic Lamp",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "generator"
+    },
+    {
+      "id": "u_veilworks",
+      "name": "Remembrance Mill",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "veilworks"
+    },
+    {
+      "id": "u_barracks",
+      "name": "Echo Hall",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "barracks"
+    },
+    {
+      "id": "u_motorpool",
+      "name": "Palimpsest Foundry",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "motorpool"
+    },
+    {
+      "id": "u_advpower",
+      "name": "Memory Beacon",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "advpower"
+    },
+    {
+      "id": "u_service",
+      "name": "Recollection Pool",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "service"
+    },
+    {
+      "id": "u_radar",
+      "name": "Witness Lens",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "radar"
+    },
+    {
+      "id": "u_tech",
+      "name": "Index of Lives",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "tech"
+    },
+    {
+      "id": "u_helipad",
+      "name": "Lantern Loft",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "helipad"
+    },
+    {
+      "id": "u_kennel",
+      "name": "Memory Den",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "kennel"
+    },
+    {
+      "id": "u_autocannon",
+      "name": "Script Battery",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "autocannon"
+    },
+    {
+      "id": "u_missilenest",
+      "name": "Sky Quill",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "missilenest"
+    },
+    {
+      "id": "u_cataclysm",
+      "name": "Archive of Names",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "cataclysm"
+    },
+    {
+      "id": "u_rifleman",
+      "name": "Memory Infantry",
+      "kind": "infantry",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "rifleman",
+      "description": "Fast fragile echo infantry. Real deaths leave a short-lived memory remnant.",
+      "cost": 90,
+      "hp": 3200,
+      "damage": 1050
+    },
+    {
+      "id": "u_rocketeer",
+      "name": "Errata Lancer",
+      "kind": "rocket",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "rocketeer",
+      "description": "Fragile armor/air counter; screens and decoys must protect it.",
+      "cost": 260,
+      "hp": 3900,
+      "damage": 2800
+    },
+    {
+      "id": "u_bulwark",
+      "name": "Palimpsest Walker",
+      "kind": "vehicle",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "bulwark",
+      "description": "Mobile ranged chassis with poor durability; leaves a recoverable memory remnant.",
+      "cost": 1000,
+      "hp": 28500,
+      "damage": 5600
+    },
+    {
+      "id": "u_special",
+      "name": "Decoy Echo",
+      "kind": "infantry",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "special",
+      "description": "Targetable distraction with no damaging weapon; cannot generate memory remnants.",
+      "cost": 60,
+      "hp": 1400,
+      "damage": 0
+    },
+    {
+      "id": "u_air",
+      "name": "Lantern Shade",
+      "kind": "air",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "air",
+      "description": "Fast fragile aerial raider; loses direct trades with dedicated anti-air.",
+      "cost": 1150,
+      "hp": 12000,
+      "damage": 2400
+    },
+    {
+      "id": "u_beast",
+      "name": "Mnemonic Hound",
+      "kind": "beast",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "beast",
+      "description": "Swift spectral scout and melee pursuer; cannot sustain a frontal attack.",
+      "cost": 220,
+      "hp": 5500,
+      "damage": 1600
+    },
+    {
+      "id": "u_engineer",
+      "name": "Namekeeper",
+      "kind": "engineer",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "engineer",
+      "description": "Engineering and capture specialist, not a free resurrection source.",
+      "cost": 350,
+      "hp": 3500,
+      "damage": 0
+    },
+    {
+      "id": "u_harvester",
+      "name": "Remembrance Carrier",
+      "kind": "harvester",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "harvester",
+      "description": "Fast vulnerable physical collector. Escort it; destruction never creates a replacement.",
+      "cost": 1250,
+      "hp": 38000,
+      "damage": 0
+    },
+    {
+      "id": "u_yard",
+      "name": "Refuge of Names",
+      "kind": "building",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "yard"
+    },
+    {
+      "id": "u_mcv",
+      "name": "Wandering Archive",
+      "kind": "vehicle",
+      "realm": "unwritten",
+      "prefix": "u",
+      "role": "mcv"
+    },
+    {
+      "id": "o_generator",
+      "name": "Dark Pulse",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "generator"
+    },
+    {
+      "id": "o_veilworks",
+      "name": "Hollow Siphon",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "veilworks"
+    },
+    {
+      "id": "o_barracks",
+      "name": "Hush Chamber",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "barracks"
+    },
+    {
+      "id": "o_motorpool",
+      "name": "Null Foundry",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "motorpool"
+    },
+    {
+      "id": "o_advpower",
+      "name": "Deep Pulse",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "advpower"
+    },
+    {
+      "id": "o_service",
+      "name": "Stillwater Basin",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "service"
+    },
+    {
+      "id": "o_radar",
+      "name": "Absence Lens",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "radar"
+    },
+    {
+      "id": "o_tech",
+      "name": "Boundary Archive",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "tech"
+    },
+    {
+      "id": "o_helipad",
+      "name": "Eclipse Nest",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "helipad"
+    },
+    {
+      "id": "o_kennel",
+      "name": "Quiet Den",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "kennel"
+    },
+    {
+      "id": "o_autocannon",
+      "name": "Hush Battery",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "autocannon"
+    },
+    {
+      "id": "o_missilenest",
+      "name": "Sky Void",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "missilenest"
+    },
+    {
+      "id": "o_cataclysm",
+      "name": "Null Cathedral",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "cataclysm"
+    },
+    {
+      "id": "o_rifleman",
+      "name": "Hush Stalker",
+      "kind": "infantry",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "rifleman",
+      "description": "Cloaks after three quiet seconds. Attacking or taking damage reveals it; detectors counter concealment.",
+      "cost": 260,
+      "hp": 5600,
+      "damage": 2400
+    },
+    {
+      "id": "o_rocketeer",
+      "name": "Dissonance Lance",
+      "kind": "rocket",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "rocketeer",
+      "description": "Short-range armor/air ambusher; exposed while firing.",
+      "cost": 430,
+      "hp": 6500,
+      "damage": 5200
+    },
+    {
+      "id": "o_bulwark",
+      "name": "Null Leviathan",
+      "kind": "vehicle",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "bulwark",
+      "description": "Heavy close-range attacker; cannot safely siege long-range defenses alone.",
+      "cost": 1900,
+      "hp": 56000,
+      "damage": 10500
+    },
+    {
+      "id": "o_special",
+      "name": "Stillness Seer",
+      "kind": "infantry",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "special",
+      "description": "Detector whose attacks briefly slow and weaken the target; suppression refreshes instead of stacking.",
+      "cost": 700,
+      "hp": 7000,
+      "damage": 900
+    },
+    {
+      "id": "o_air",
+      "name": "Eclipse Ray",
+      "kind": "air",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "air",
+      "description": "Fast short-range airborne ambusher; retreat after a strike.",
+      "cost": 1500,
+      "hp": 17000,
+      "damage": 3900
+    },
+    {
+      "id": "o_beast",
+      "name": "Quiet Predator",
+      "kind": "beast",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "beast",
+      "description": "Rapid melee pursuit beast; vulnerable to screens and focused fire.",
+      "cost": 600,
+      "hp": 15500,
+      "damage": 4400
+    },
+    {
+      "id": "o_engineer",
+      "name": "Void Tender",
+      "kind": "engineer",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "engineer",
+      "description": "Repairs and captures; has no combat isolation or cloak bonus.",
+      "cost": 500,
+      "hp": 5000,
+      "damage": 0
+    },
+    {
+      "id": "o_harvester",
+      "name": "Hollow Gatherer",
+      "kind": "harvester",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "harvester",
+      "description": "Visible physical resource collector; normal refinery unloading is required.",
+      "cost": 1500,
+      "hp": 42000,
+      "damage": 0
+    },
+    {
+      "id": "o_yard",
+      "name": "Quiet Threshold",
+      "kind": "building",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "yard"
+    },
+    {
+      "id": "o_mcv",
+      "name": "Threshold Carrier",
+      "kind": "vehicle",
+      "realm": "silence",
+      "prefix": "o",
+      "role": "mcv"
+    },
+    {
+      "id": "n_generator",
+      "name": "Hearth Tower",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "generator"
+    },
+    {
+      "id": "n_veilworks",
+      "name": "Burden Mill",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "veilworks"
+    },
+    {
+      "id": "n_barracks",
+      "name": "Attendant Lodge",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "barracks"
+    },
+    {
+      "id": "n_motorpool",
+      "name": "Giant Hall",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "motorpool"
+    },
+    {
+      "id": "n_advpower",
+      "name": "Sun Hearth",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "advpower"
+    },
+    {
+      "id": "n_service",
+      "name": "Resting Court",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "service"
+    },
+    {
+      "id": "n_radar",
+      "name": "Horizon Watch",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "radar"
+    },
+    {
+      "id": "n_tech",
+      "name": "Ancestral Chronicle",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "tech"
+    },
+    {
+      "id": "n_helipad",
+      "name": "Dawn Roost",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "helipad"
+    },
+    {
+      "id": "n_kennel",
+      "name": "Stonehorn Pen",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "kennel"
+    },
+    {
+      "id": "n_autocannon",
+      "name": "Cairn Battery",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "autocannon"
+    },
+    {
+      "id": "n_missilenest",
+      "name": "Sky Spear",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "missilenest"
+    },
+    {
+      "id": "n_cataclysm",
+      "name": "Ancestral Cairn",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "cataclysm"
+    },
+    {
+      "id": "n_rifleman",
+      "name": "Remnant Warden",
+      "kind": "infantry",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "rifleman",
+      "description": "Costly durable human guardian. Protect attendants and giant approaches.",
+      "cost": 300,
+      "hp": 13500,
+      "damage": 2000
+    },
+    {
+      "id": "n_rocketeer",
+      "name": "Cairn Slinger",
+      "kind": "rocket",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "rocketeer",
+      "description": "Slow heavy anti-armor and anti-air support; punish its long reload.",
+      "cost": 550,
+      "hp": 15000,
+      "damage": 6600
+    },
+    {
+      "id": "n_bulwark",
+      "name": "Oathbound Giant",
+      "kind": "vehicle",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "bulwark",
+      "description": "Towering melee combatant. Extremely costly and slow; kite it or isolate its attendants.",
+      "cost": 2400,
+      "hp": 100000,
+      "damage": 16000
+    },
+    {
+      "id": "n_special",
+      "name": "Mountain Bearer",
+      "kind": "vehicle",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "special",
+      "description": "Slow ranged siege giant. Needs screening and cannot cover multiple fronts.",
+      "cost": 2600,
+      "hp": 85000,
+      "damage": 12500
+    },
+    {
+      "id": "n_air",
+      "name": "Dawn Kite",
+      "kind": "air",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "air",
+      "description": "Durable slow aircraft with heavy volleys; expensive to replace.",
+      "cost": 2100,
+      "hp": 36000,
+      "damage": 7800
+    },
+    {
+      "id": "n_beast",
+      "name": "Stonehorn Beast",
+      "kind": "beast",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "beast",
+      "description": "Heavy ground beast; strong in sustained close combat and vulnerable to kiting.",
+      "cost": 950,
+      "hp": 45000,
+      "damage": 7800
+    },
+    {
+      "id": "n_attendant",
+      "name": "Human Attendant",
+      "kind": "infantry",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "attendant",
+      "description": "Vulnerable support. Within four cells, allied Remnant combatants gain protection and recover health.",
+      "cost": 180,
+      "hp": 3200,
+      "damage": 300
+    },
+    {
+      "id": "n_engineer",
+      "name": "Cairnkeeper",
+      "kind": "engineer",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "engineer",
+      "description": "Repair/capture specialist; not a giant and not an attendant aura source.",
+      "cost": 400,
+      "hp": 6000,
+      "damage": 0
+    },
+    {
+      "id": "n_harvester",
+      "name": "Burden Carrier",
+      "kind": "harvester",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "harvester",
+      "description": "Very durable slow collector. Its long travel cycle makes route defense essential.",
+      "cost": 1750,
+      "hp": 85000,
+      "damage": 0
+    },
+    {
+      "id": "n_yard",
+      "name": "Ancestral Seat",
+      "kind": "building",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "yard"
+    },
+    {
+      "id": "n_mcv",
+      "name": "Ancestral Caravan",
+      "kind": "vehicle",
+      "realm": "nephilim",
+      "prefix": "n",
+      "role": "mcv"
+    }
+  ]
+}

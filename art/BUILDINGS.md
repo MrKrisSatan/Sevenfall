@@ -1,5 +1,7 @@
 # Faction building pass
 
+> Scope: this records the original three-realm art pass. Current nine-faction development coverage, expansion sheets and gallery links are in [the artwork overview](https://github.com/MrKrisSatan/Sevenfall/blob/main/art/README.md). Current gameplay is documented in [the faction guide](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/FACTIONS.md).
+
 The current base roster has 39 intact building designs: 13 roles across Angels,
 Humans and Demons. Each parent's three subfactions share these designs. This pass
 adds 30 sprites and 30 build icons to the existing yards, basic power and refineries.

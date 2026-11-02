@@ -1,4 +1,6 @@
 > Historical cliff/candidate-2 report. The current renderer/runtime and release
+
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
 > checks are in [tester alpha acceptance](../docs/TESTER_ALPHA_ACCEPTANCE.md).
 
 # Cliff terrain and twelve-player acceptance — 25 October 2026

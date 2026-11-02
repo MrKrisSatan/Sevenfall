@@ -5,7 +5,7 @@
 Alpha.3 includes five parent factions and twenty subfactions, the Noetic Assembly
 and Forsaken Host with sixteen exclusive units, shared aircraft and beasts for
 all five realms, and seventeen building-bound superweapons in the Defences tab.
-The field guide now covers 181 illustrated entries, including six unavailable
+The alpha.3 source field guide covered 181 illustrated entries, including six unavailable
 naval/fixed-wing facilities explicitly labelled as future content.
 
 The release workflow adds exact-package checks for new realm production,
@@ -14,8 +14,7 @@ and all seventeen power building lifecycles. Dedicated-server/two-client and
 save/load variants exercise the new shared powers, including a save made during
 active salt petrification before crumbling. Local acceptance passed 113 Python tests, 120 C# assertions, 73 arsenal checks,
 73 checks on each network client with five matching sync hashes, and 73 checks
-in each save/load run with four matching post-load hashes. Final exact-package
-workflow evidence is required before publication.
+in each save/load run with four matching post-load hashes. Exact-package Windows acceptance passed in [run 41492950237](https://github.com/MrKrisSatan/Sevenfall/actions/runs/41492950237), built from `8e4bda5d727b35de668aa8429225aec7fefb837a`. The [published alpha.3](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.3) includes installer, portable ZIP, matching source bundles and SHA-256 sidecars. Subsequent independent-faction changes are not in that package.
 
 The original three realms' helipads and kennels are now enabled in the public
 profile. A stale restriction was found during release preparation and removed;

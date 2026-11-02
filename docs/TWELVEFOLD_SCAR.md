@@ -1,7 +1,7 @@
 # The Twelvefold Scar
 
 A 256×256 land skirmish for up to twelve players, with twelve equivalent starting
-terraces and all twelve faction choices available through normal production.
+terraces and all twenty subfaction choices available through normal production.
 The map uses the existing environment families: both civilian houses, all four
 tree types, both bridge orientations and repair posts, water, Veilglass and enriched
 Veilglass. Units and defenses are built by players rather than preplaced as scenery.

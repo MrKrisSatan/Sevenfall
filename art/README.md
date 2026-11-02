@@ -1,5 +1,12 @@
 # Sevenfall faction art
 
+## Current five-realm artwork
+
+The current game has five parent factions and twenty subfactions. The website field guide covers 181 building/unit entries. The expansion adds 51 machine/fallen painted sheets and 20 shared-arsenal sheets, with eight-direction units and initial animation states. All five factions have themed HUDs; menus remain neutral. The two new [painted website emblems](realm-emblems.md) join the original three. The [direction gallery](https://mrkrissatan.github.io/Sevenfall/turnarounds.html) covers 80 current units plus 14 clearly labelled future concepts. Some original specialist variants and power buildings reuse parent art.
+
+The sections below record the earlier original-three-faction artwork passes; their nine-choice counts describe that historical stage, not the current game.
+
+
 ![In-game-size sprites enlarged 3x](power-buildings-preview.png)
 
 Left to right: **Radiant Spire** (Angels), **Veil Generator** (Humans),
@@ -108,3 +115,7 @@ add construction/damage animations and team-colour masks as the animation pipeli
 
 The historical static passes above are superseded for movement, attacks, unit deaths
 and building damage by [the authored animation pass](animations/README.md).
+
+## Four independent painted factions
+
+The current development expansion adds [94 painted atlases](additional-realms/README.md) for Veilborn, Unwritten, Outer Silence and Nephilim Remnant. Each includes full economy/technology/defense buildings, construction and damage states, and eight-direction combat/logistics/aircraft/beast units. No new subfactions. Sources, prompts, hashes and game bindings are retained. The website now displays 275 roster entries and 131 directional entries, including labelled future concepts.

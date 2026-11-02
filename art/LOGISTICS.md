@@ -1,5 +1,7 @@
 # Construction, logistics and Veilglass artwork
 
+> Scope: this records the original three-realm art pass. Current nine-faction development coverage, expansion sheets and gallery links are in [the artwork overview](https://github.com/MrKrisSatan/Sevenfall/blob/main/art/README.md). Current gameplay is documented in [the faction guide](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/FACTIONS.md).
+
 ![Yards, MCVs, harvesters and Veilglass](logistics-preview.png)
 
 Columns are Angels, Humans and Demons. Rows show Construction Yards, MCVs and

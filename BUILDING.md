@@ -101,7 +101,7 @@ all own construction yards and MCVs fails the scenario.
 **Important test caveat:** currently the script observes increases in a player's
 stored resource credits rather than a dedicated harvester-unload callback. It
 cannot *independently* prove that two separate unloading cycles occurred. The
-nine-faction runbook still requires visual confirmation of two complete trips.
+twenty-subfaction runbook still requires visual confirmation of two complete trips.
 Enemy AI is the existing prototype `sevenfall` bot, whose complete campaign
 behavior must still be verified during a real match. Lua mission scripts have
 not yet been observed running to a full win/loss on a Windows desktop.
@@ -169,11 +169,14 @@ with preserved user data. It does not publish a release or replace clean-PC test
 Use the [nine-faction skirmish runbook](tests/SKIRMISH_RUNBOOK.md) to record
 real economy, combat, AI and victory results. All cases begin as NOT RUN.
 
-See [the integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
+See [current alpha acceptance](docs/TESTER_ALPHA_ACCEPTANCE.md) and the dated
+[initial integration report](tests/INTEGRATION_REPORT.md). Passing engine lint does
 not prove harvesting, balance, victory, replay safety or AI quality. The next milestone
-is measured end-to-end economy/combat testing for all three parent factions, followed
-by the nine-faction matrix. Animation polish, the remaining 72 campaign missions, defense balance,
-expansion MCVs, support powers and superweapons remain future work.
+is measured end-to-end economy/combat testing for all five parent factions and twenty subfactions. Aircraft, beasts, replacement MCVs and
+seventeen building-bound powers are implemented. Full-match balance, AI expansion,
+naval/fixed-wing content, animation/audio polish and playable campaigns remain.
+See [current acceptance](docs/TESTER_ALPHA_ACCEPTANCE.md), [all playstyles](docs/FACTIONS.md)
+and [shared arsenal controls](docs/SHARED_ARSENAL.md).
 
 Sources: [OpenRA SDK](https://github.com/OpenRA/OpenRAModSDK),
 [OpenRA stable release](https://www.openra.net/news/release-20250330/).

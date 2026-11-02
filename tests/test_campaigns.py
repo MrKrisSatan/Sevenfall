@@ -1,10 +1,11 @@
-"""Source-level checks for the planned Sevenfall 75-mission narrative.
+"""Source-level checks for the planned Sevenfall six-campaign,150-mission narrative.
 
 This does not execute any OpenRA campaign map or assert mission playability.
 """
 from html.parser import HTMLParser
 from pathlib import Path
 import re
+import json
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,7 +32,7 @@ EXPECTED_ORIGINAL_TITLES = {
 
 
 def get_missions(text):
-    pattern = r"(?ms)^#### ([HAD])(\d{2})\. ([^\n]+)\n(.*?)(?=^#### [HAD]\d{2}\.|^### ACT |^## |\Z)"
+    pattern = r"(?ms)^#### ([HADIFV])(\d{2})\. ([^\n]+)\n(.*?)(?=^#### [HADIFV]\d{2}\.|^### ACT |^## |\Z)"
     return [
         (side, int(number), title, body)
         for side, number, title, body in re.findall(pattern, text)
@@ -63,9 +64,9 @@ class CampaignDesignTests(unittest.TestCase):
         cls.atlas = ATLAS.read_text(encoding="utf-8")
         cls.missions = get_missions(cls.atlas)
 
-    def test_all_75_numbered_briefs_are_complete(self):
-        self.assertEqual(len(self.missions), 75)
-        for faction in "HAD":
+    def test_all_150_numbered_briefs_are_complete(self):
+        self.assertEqual(len(self.missions), 150)
+        for faction in "HADIFV":
             faction_missions = [
                 (n, title, body) for f, n, title, body in self.missions if f == faction
             ]
@@ -85,10 +86,10 @@ class CampaignDesignTests(unittest.TestCase):
             self.assertEqual(titles[-1], expected[-1])
 
     def test_five_acts_per_campaign_and_crossovers(self):
-        self.assertEqual(len(re.findall(r"(?m)^### ACT [IVX]+:", self.atlas)), 15)
+        self.assertEqual(len(re.findall(r"(?m)^### ACT [IVX]+:", self.atlas)), 30)
         for identifier in ("H07", "A08", "H10", "A10", "D12", "H25", "A25", "D25"):
             self.assertIn(identifier, self.atlas)
-        self.assertIn("H25, A25 and D25 are mutually exclusive", self.atlas)
+        self.assertIn("concurrent fronts of one shared Harrow victory", self.atlas)
 
     def test_public_campaign_page_matches_mission_atlas(self):
         text = PAGE.read_text(encoding="utf-8")
@@ -96,7 +97,7 @@ class CampaignDesignTests(unittest.TestCase):
         parser.feed(text)
         expected = [f"{f.lower()}{number:02}" for f, number, _, _ in self.missions]
         self.assertEqual(parser.mission_ids, expected)
-        self.assertEqual(len(parser.mission_ids), 75)
+        self.assertEqual(len(parser.mission_ids), 150)
         for source, alt in parser.image_sources:
             self.assertTrue(source and alt)
             self.assertTrue((ROOT / "docs" / source).is_file(), source)
@@ -114,14 +115,34 @@ class CampaignDesignTests(unittest.TestCase):
         self.assertIn("OPENING_CINEMATIC.md", (ROOT / "README.md").read_text())
         self.assertIn("OPENING_CINEMATIC.md", (ROOT / "docs/campaigns.html").read_text())
 
+    def test_shared_chronology_unlock_and_third_party_roles(self):
+        plan=json.loads((ROOT/'design/CAMPAIGN_PLAN.json').read_text(encoding='utf-8'))
+        ids={m['id'] for c in plan['campaigns'] for m in c['missions']}
+        self.assertEqual(plan['unlock']['requires_all'],['H25','A25','D25','I25','F25'])
+        self.assertEqual([c['id'] for c in plan['campaigns'] if c['secret']],['V'])
+        self.assertFalse(plan['unlock']['skirmish_wins_count'])
+        self.assertFalse(plan['unlock']['replays_count'])
+        self.assertFalse(plan['unlock']['developer_diagnostics_count'])
+        encounters=[]
+        for c in plan['campaigns']:
+            self.assertNotIn(c['faction'],plan['skirmish_only_factions'])
+            for m in c['missions']:
+                self.assertTrue(set(m['crossovers'])<=ids,m['id'])
+                encounters.extend(m['third_parties'])
+        self.assertGreater(sum(e['initial_relationship']=='neutral' for e in encounters),len(encounters)/2)
+        self.assertEqual({e['faction'] for e in encounters},set(plan['skirmish_only_factions']))
+        rebellion=next(m for c in plan['campaigns'] for m in c['missions'] if m['id']=='I13')
+        self.assertIn('pure-Veilglass',rebellion['primary'])
+        self.assertIn('choose rebellion',rebellion['story'])
+
     def test_project_documents_use_new_scope(self):
         bible = BIBLE.read_text(encoding="utf-8")
         game_design = (ROOT / "design" / "GAME_DESIGN.md").read_text(encoding="utf-8")
         roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
         home = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
-        self.assertIn("75 missions", bible)
+        self.assertIn("150 missions", bible)
         self.assertIn("25 missions", game_design)
-        self.assertIn("75 narrative missions", roadmap)
+        self.assertIn("150 narrative missions", roadmap)
         self.assertIn('href="campaigns.html"', home)
         self.assertIn('campaigns.html', (ROOT / "README.md").read_text(encoding="utf-8"))
 

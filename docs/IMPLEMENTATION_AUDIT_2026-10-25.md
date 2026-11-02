@@ -1,5 +1,7 @@
 # Sevenfall implementation audit — 25 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 Audited upstream main **681cf3b1e2ee6f4eae4b1929efb1d0cb48998a18**, including all
 nine commits since the directional artwork pass `44d6afa`. Sources inspected:
 rules, weapons, native extension, animation bindings/manifests, Lua missions,

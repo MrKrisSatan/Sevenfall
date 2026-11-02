@@ -1,0 +1,202 @@
+SF_v_rifleman:
+	Inherits: SF_PulseRifle
+	Range: 4c0
+	ReloadDelay: 32
+	Warhead@1Dam: SpreadDamage
+		Damage: 1200
+
+SF_v_rocketeer_AA:
+	Inherits: SF_RocketeerAA
+	Range: 6c0
+	ReloadDelay: 75
+	Warhead@1Dam: SpreadDamage
+		Damage: 4800
+
+SF_v_rocketeer:
+	Inherits: SF_RocketeerAG
+	Range: 6c0
+	ReloadDelay: 75
+	Warhead@1Dam: SpreadDamage
+		Damage: 4800
+
+SF_v_bulwark:
+	Inherits: SF_Judgment
+	Range: 6c0
+	ReloadDelay: 85
+	Warhead@1Dam: SpreadDamage
+		Damage: 8200
+
+SF_v_special:
+	Inherits: SF_PulseRifle
+	Range: 6c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 1500
+
+SF_v_air:
+	Inherits: SF_h_gunship
+	Range: 5c0
+	ReloadDelay: 55
+	Warhead@1Dam: SpreadDamage
+		Damage: 4700
+
+SF_v_beast:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 34
+	Warhead@1Dam: SpreadDamage
+		Damage: 3700
+
+SF_u_rifleman:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 30
+	Warhead@1Dam: SpreadDamage
+		Damage: 1050
+
+SF_u_rocketeer_AA:
+	Inherits: SF_RocketeerAA
+	Range: 5c0
+	ReloadDelay: 56
+	Warhead@1Dam: SpreadDamage
+		Damage: 2800
+
+SF_u_rocketeer:
+	Inherits: SF_RocketeerAG
+	Range: 5c0
+	ReloadDelay: 56
+	Warhead@1Dam: SpreadDamage
+		Damage: 2800
+
+SF_u_bulwark:
+	Inherits: SF_Judgment
+	Range: 6c0
+	ReloadDelay: 70
+	Warhead@1Dam: SpreadDamage
+		Damage: 5600
+
+SF_u_special:
+	Inherits: SF_PulseRifle
+	Range: 4c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+
+SF_u_air:
+	Inherits: SF_h_gunship
+	Range: 5c0
+	ReloadDelay: 34
+	Warhead@1Dam: SpreadDamage
+		Damage: 2400
+
+SF_u_beast:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 20
+	Warhead@1Dam: SpreadDamage
+		Damage: 1600
+
+SF_o_rifleman:
+	Inherits: SF_PulseRifle
+	Range: 3c512
+	ReloadDelay: 38
+	Warhead@1Dam: SpreadDamage
+		Damage: 2400
+
+SF_o_rocketeer_AA:
+	Inherits: SF_RocketeerAA
+	Range: 4c512
+	ReloadDelay: 80
+	Warhead@1Dam: SpreadDamage
+		Damage: 5200
+
+SF_o_rocketeer:
+	Inherits: SF_RocketeerAG
+	Range: 4c512
+	ReloadDelay: 80
+	Warhead@1Dam: SpreadDamage
+		Damage: 5200
+
+SF_o_bulwark:
+	Inherits: SF_Judgment
+	Range: 4c0
+	ReloadDelay: 85
+	Warhead@1Dam: SpreadDamage
+		Damage: 10500
+
+SF_o_special:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 50
+	Warhead@1Dam: SpreadDamage
+		Damage: 900
+
+SF_o_air:
+	Inherits: SF_h_gunship
+	Range: 4c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 3900
+
+SF_o_beast:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 40
+	Warhead@1Dam: SpreadDamage
+		Damage: 4400
+
+SF_n_rifleman:
+	Inherits: SF_PulseRifle
+	Range: 5c0
+	ReloadDelay: 42
+	Warhead@1Dam: SpreadDamage
+		Damage: 2000
+
+SF_n_rocketeer_AA:
+	Inherits: SF_RocketeerAA
+	Range: 6c0
+	ReloadDelay: 95
+	Warhead@1Dam: SpreadDamage
+		Damage: 6600
+
+SF_n_rocketeer:
+	Inherits: SF_RocketeerAG
+	Range: 6c0
+	ReloadDelay: 95
+	Warhead@1Dam: SpreadDamage
+		Damage: 6600
+
+SF_n_bulwark:
+	Inherits: SF_Judgment
+	Range: 1c768
+	ReloadDelay: 65
+	Warhead@1Dam: SpreadDamage
+		Damage: 16000
+
+SF_n_special:
+	Inherits: SF_Judgment
+	Range: 7c0
+	ReloadDelay: 110
+	Warhead@1Dam: SpreadDamage
+		Damage: 12500
+
+SF_n_air:
+	Inherits: SF_h_gunship
+	Range: 6c0
+	ReloadDelay: 90
+	Warhead@1Dam: SpreadDamage
+		Damage: 7800
+
+SF_n_beast:
+	Inherits: SF_HellClaw
+	Range: 1c512
+	ReloadDelay: 60
+	Warhead@1Dam: SpreadDamage
+		Damage: 7800
+
+SF_n_attendant:
+	Inherits: SF_PulseRifle
+	Range: 3c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 300

@@ -12,6 +12,7 @@ namespace OpenRA.Mods.Sevenfall
         public string ActiveIdentity => Self.Trait<SFFactionIdentity>().ActiveCondition(Self) ?? "none";
         public int IdentitySpeed => Self.TraitsImplementing<ISpeedModifier>().Aggregate(100, (n, m) => n * m.GetSpeedModifier() / 100);
         public int IdentityArmor => Self.TraitsImplementing<IDamageModifier>().Aggregate(100, (n, m) => n * m.GetDamageModifier(null, new Damage(1000)) / 100);
+        public int IdentityFirepower => Self.TraitsImplementing<IFirepowerModifier>().Aggregate(100, (n, m) => n * m.GetFirepowerModifier() / 100);
         public void IdentityDamage(Actor target, int damage) => target.InflictDamage(Self, new Damage(damage));
     }
     [ScriptPropertyGroup("Sevenfall faction superweapon")]

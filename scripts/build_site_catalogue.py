@@ -89,6 +89,29 @@ def build_records():
         for suffix,name,kind,role in [(AIR[p][0],airname,'units','Aircraft'),(BEAST[p][0],beastname,'units','Beast'),('cataclysm',powername,'buildings','Shared superweapon')]+([('helipad','Vector Launch Deck' if p=='i' else 'Mourning Roost','buildings','Aircraft production'),('kennel','Quadruped Assembly' if p=='i' else 'Carrion Cradle','buildings','Beast training')] if p in 'if' else []):
             actor=p+'_'+suffix;key=actor.replace('_','-');reuse=actor=='h_cataclysm'
             records.append(dict(id=key,actor=actor.upper(),faction=family,kind=kind,name=name,role=role,description=strings['sf-completion-'+key+'-description'],source='art/source/h-tech.png' if reuse else 'art/realm-completion/painted-source/'+actor+'.png',image='assets/roster/h-tech.webp' if reuse else 'assets/realm-completion/'+actor+'.webp',status='Existing technology-building art' if reuse else 'Original animated game art',availability='Shared by all four subfactions',subfaction='shared'))
+    expansion=json.loads((ROOT/'design/ADDITIONAL_REALMS_ROSTER.json').read_text(encoding='utf-8'))
+    extra=expansion['assets']+[dict(id='v_resonator',name='Resonator',kind='building',realm='veilborn',prefix='v',role='radar',description='Powered six-cell growth-network relay. Combat units gain 20% protection and recover 1% health per second. Bonuses never stack.')]
+    for a in extra:
+        actor=a['id'];suffix=a['role'];family=a['realm'];realm=expansion['realms'][a['prefix']]
+        description=a.get('description',a['name']+' provides '+ROLES.get(suffix,suffix).lower()+' for '+realm['name']+'.')
+        if a['kind']=='building' and suffix!='cataclysm' and actor!='v_resonator':
+            description={
+                'yard':'The heart of the base: provides construction queues and the faction technology identity. Deploy its MCV to establish a new base.',
+                'generator':'Early power infrastructure. Build sufficient generation before adding energy-hungry technology and defenses.',
+                'advpower':'Higher-output power infrastructure for an expanding base. Protect it: losing generation can pause superweapon charging.',
+                'veilworks':'Receives physical Veilglass deliveries and supplies the first faction collector. Protect its unloading approach and resource route.',
+                'barracks':'Trains this faction’s infantry, anti-armor troops and engineers. Establish a screen before committing more expensive units.',
+                'motorpool':'Produces heavy ground combatants, collectors and replacement MCVs when their prerequisites are met.',
+                'service':'Repairs compatible ground vehicles and aircraft and unlocks replacement MCV production. Keep a safe route back from the front.',
+                'radar':'Provides the radar and the next tier of technology. A prerequisite for this faction’s aircraft infrastructure.',
+                'tech':'Advanced technology prerequisite for the faction superweapon installation. Defend this investment while preparing the endgame.',
+                'autocannon':'Ground-defense battery that screens production and harvesting routes. Support it against heavy armor and air attacks.',
+                'missilenest':'Dedicated air-defense emplacement. Protect vulnerable production and power structures from aircraft.',
+                'helipad':'Produces this faction’s aircraft after Radar technology.',
+                'kennel':'Trains this faction’s beast after medium technology.'
+            }.get(suffix,description)
+        if suffix=='cataclysm':description={'v':'Heart Prism deploys Bloom: warns the target area, then protects allied combatants and slows enemies.','u':'Archive of Names deploys Restoration: consumes up to six nearby own memory remnants to restore temporary infantry for thirty seconds.','o':'Null Cathedral deploys Absolute Silence: suppresses enemy weapons and faction abilities for twelve seconds while allowing escape.','n':'Ancestral Cairn deploys Earthbreaker: damages enemy ground troops and structures; aircraft are immune.'}[a['prefix']]
+        records.append(dict(id=actor.replace('_','-'),actor='FACT' if suffix=='yard' else 'MCV' if suffix=='mcv' else actor.upper(),faction=family,kind='buildings' if a['kind']=='building' else 'units',name=a['name'],role=ROLES.get(suffix,{'air':'Aircraft','beast':'Beast','special':'Signature specialist','attendant':'Support infantry','cataclysm':'Superweapon installation'}.get(suffix,suffix)),description=description,source='art/additional-realms/painted-source/'+actor+'.png',image='assets/additional-realms/'+actor+'.webp',status='Original painted game artwork',availability='Secret campaign faction — locked in the normal lobby' if a['prefix']=='v' else 'Development skirmish faction; non-player campaign encounters. No subfactions.',subfaction='shared'))
     for r in records:
         if r['id']=='h-cataclysm':r.update(variant_of='h-tech',art_id='h-tech')
         if r['id'].endswith(('-naval','-airfield')):
@@ -96,7 +119,7 @@ def build_records():
         if r['id'].endswith('-mcv'):r['description']='Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.'
         if r['id'].endswith('-helipad'):r['description']='Produces the shared realm aircraft after Radar technology.'
         if r['id'].endswith('-kennel'):r['description']='Trains the shared realm beast. Beast production requires medium technology.'
-    order=['angels','humans','demons','machine','fallen']
+    order=['angels','humans','demons','machine','fallen','veilborn','unwritten','silence','nephilim']
     records.sort(key=lambda r:(order.index(r['faction']),r['kind']=='units',r['actor'] not in ['FACT','MCV'],r['name']))
     return records
 

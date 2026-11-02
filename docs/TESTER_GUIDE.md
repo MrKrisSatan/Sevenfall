@@ -20,7 +20,8 @@ supplying building removes the power; rebuilding starts a fresh charge.
 Nuclear and Witness of Salt can harm friendly units. See [the shared arsenal](SHARED_ARSENAL.md).
 
 See the
-[twelve faction mechanics, exclusive units and superweapons](FACTION_IDENTITIES.md),
+[five-faction overview](FACTIONS.md), [twenty illustrated playstyles](https://mrkrissatan.github.io/Sevenfall/subfactions.html),
+[original twelve doctrines](FACTION_IDENTITIES.md),
 [subfaction controls and counterplay](SUBFACTIONS.md) and [defenses](DEFENSES.md).
 Area Fifty Two changes its SERAPH/ABYSS protocol by deploying a powered Containment
 Pylon. Flesh-wall influence, powered light barriers and hazardous Veilglass can

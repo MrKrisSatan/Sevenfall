@@ -2,7 +2,8 @@
 
 An original apocalyptic real-time strategy game built on OpenRA.
 
-**Alpha.3 release candidate: five factions, twenty subfactions, three skirmish maps.**
+**Alpha.3 released: five factions, twenty subfactions, three skirmish maps.**
+**Development roster: nine parent factions; the four new factions have no subfactions.**
 The Noetic Assembly and Forsaken Host join Humans, Angels and Hell. Each parent
 faction has an economy, production buildings, defenses, aircraft, beasts and a
 shared superweapon. Each subfaction has two exclusive units and its own doctrine.
@@ -11,9 +12,7 @@ shared superweapon. Each subfaction has two exclusive units and its own doctrine
 
 ## Playtesting
 
-The new **v0.3.0-alpha.3** is being packaged and verified. The previous
-[v0.3.0-alpha.2](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2)
-remains available until publication and contains the original twelve choices.
+[**Download v0.3.0-alpha.3**](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.3). The release includes the original five realms and twenty choices. The four independent factions below are development additions and are not included in that binary.
 
 Use the Windows x64 setup EXE or extract the entire portable ZIP and run
 `Sevenfall.exe`. The package includes its runtime and original game content;
@@ -25,7 +24,7 @@ Twenty faction choices do not mean twenty simultaneous player slots.
 
 [Tester guide](docs/TESTER_GUIDE.md) · [Acceptance and known limitations](docs/TESTER_ALPHA_ACCEPTANCE.md) · [Changelog](CHANGELOG.md)
 
-## Five factions, twenty doctrines
+## The original five factions, twenty doctrines
 
 | Faction | Specialisation | Four subfactions |
 |---|---|---|
@@ -40,6 +39,21 @@ religious-horror themes. They are distinct from both native demons and the
 angelic Unshackled. [New faction mechanics and counterplay](docs/NEW_REALMS.md).
 [Original twelve doctrines](docs/FACTION_IDENTITIES.md).
 
+## Four independent factions — no subfactions
+
+| Faction | Army and playstyle | Building-bound power |
+|---|---|---|
+| Veilborn | Living crystal; protect costly units inside a powered growth network | Bloom / Heart Prism |
+| Unwritten | Fragile Memory Infantry, decoys and temporary infantry restored from recent losses | Restoration / Archive of Names |
+| Outer Silence | Cloaked Hush Stalkers, isolated flanking groups, suppression and Null Leviathans | Absolute Silence / Null Cathedral |
+| Nephilim Remnant | Oathbound Giants and Mountain Bearers supported by vulnerable attendants | Earthbreaker / Ancestral Cairn |
+
+Each has a complete economy, construction yard/MCV, production, technology, repair, two defenses, aircraft, beast, engineer, harvester and signature combat roster. Their **94 original painted atlases** include construction/damage states and eight-direction units. The field guide now contains **275 entries: 158 buildings and 117 units**, including explicitly labelled future concepts.
+
+The Unwritten, Outer Silence and Nephilim Remnant are selectable in development skirmish and appear only as NPCs in campaigns, usually neutral. **Veilborn is authored but hidden from the normal lobby while campaign progression is unfinished.** No extra subfactions have been added.
+
+[Illustrated profiles and complete rosters](https://mrkrissatan.github.io/Sevenfall/additional-realms.html) · [Design and counterplay](design/ADDITIONAL_REALMS.md)
+
 ## Shared arsenal and battlefield systems
 
 | Faction | Aircraft | Beast | Shared superweapon |
@@ -50,7 +64,7 @@ angelic Unshackled. [New faction mechanics and counterplay](docs/NEW_REALMS.md).
 | Noetic Assembly | Vector Interceptor | Logic Stalker | Extinction |
 | Forsaken Host | Mourning Kite | Carrion Chimera | Sepulchral Rapture |
 
-All **17 superweapons** are building-bound: twelve original subfaction powers
+The published alpha’s **17 superweapons** are building-bound: twelve original subfaction powers
 and five shared realm powers. Their icons automatically charge in **Defences**.
 Losing the last supplying building removes the power; rebuilding starts a fresh
 charge. Low power pauses charging. The shared installations require technology,
@@ -65,9 +79,9 @@ garrisoned, damaged and destroyed. Engineers repair surviving houses and restore
 bridges through repair posts. Cliff terraces block movement; they do not grant
 high-ground combat bonuses.
 
-The field guide contains **181 illustrated entries: 101 buildings and 80 units**,
+The field guide contains **275 illustrated entries: 158 buildings and 117 units**,
 including six clearly labelled unavailable naval/fixed-wing production concepts.
-The expansion adds **71 painted sprite sheets**: 51 for the two new realms and
+The released five-realm expansion adds **71 painted sprite sheets**: 51 for the two new realms and
 20 for the shared arsenal. Units include eight directions and initial animation
 poses. Twelve original power arrays and the human nuclear installation reuse
 technology-building artwork. [Artwork and source provenance](art/README.md).
@@ -77,7 +91,7 @@ technology-building artwork. [Artwork and source provenance](art/README.md).
 - Windows x64 skirmishes, AI opponents, local multiplayer, saves and replays.
 - Aircraft and beasts are playable. Naval units and fixed-wing aircraft remain future work.
 - Early animation, audio and balance; broad Internet, GPU and large-army testing is welcome.
-- Three campaign previews remain developer-only. The planned 75-mission campaigns are unfinished.
+- Three campaign previews remain developer-only. The planned 150-mission campaigns are unfinished.
 - Unsigned executables. Save/replay compatibility between alpha versions is not promised.
 
 ## Development

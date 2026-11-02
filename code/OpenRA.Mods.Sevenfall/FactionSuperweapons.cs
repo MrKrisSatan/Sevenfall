@@ -12,7 +12,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.Sevenfall
 {
-    public enum SFUltimate { Dawn, Sanctuary, Rebellion, Requiem, Barrage, Relief, Covenant, Singularity, Furnace, Bloodtide, Silence, Verdict, Nuclear, Petrification, Hellrift, Extinction, Rapture }
+    public enum SFUltimate { Dawn, Sanctuary, Rebellion, Requiem, Barrage, Relief, Covenant, Singularity, Furnace, Bloodtide, Silence, Verdict, Nuclear, Petrification, Hellrift, Extinction, Rapture, Bloom, Restoration, AbsoluteSilence, Earthbreaker }
     public class SFFactionPowerInfo : SupportPowerInfo, Requires<BuildingInfo>
     {
         public readonly SFUltimate Kind;
@@ -126,6 +126,7 @@ namespace OpenRA.Mods.Sevenfall
                 case SFUltimate.Hellrift: return building ? 50000 : 30000;
                 case SFUltimate.Extinction: return building ? 18000 : 10000;
                 case SFUltimate.Rapture: return building ? 45000 : 35000;
+                case SFUltimate.Earthbreaker: return building ? 85000 : 40000;
                 case SFUltimate.Barrage: return building ? 18000 : 9000;
                 case SFUltimate.Singularity: return 12000;
                 case SFUltimate.Furnace: return building ? 65000 : 10000;
@@ -141,6 +142,24 @@ namespace OpenRA.Mods.Sevenfall
             if (strike.Info.Kind == SFUltimate.Barrage) center += new WVec((strike.Pulse - 1) * 2048, 0, 0);
             var radius = strike.Info.Radius * 1024;
             var impactCenter=center;
+            if (strike.Info.Kind == SFUltimate.Restoration)
+            {
+                // Physical remnants make eligibility, expiry and consumption part of the
+                // deterministic world. A consumed remnant can never be used twice.
+                var remnants=world.Actors.Where(a=>a.IsInWorld && !a.IsDead && a.Owner==strike.Owner && a.Info.Name=="u_remnant" &&
+                    (a.CenterPosition-center).HorizontalLengthSquared <= (long)radius*radius).OrderBy(a=>a.ActorID).Take(6).ToArray();
+                foreach (var remnant in remnants)
+                {
+                    var cell=remnant.Location;
+                    remnant.Dispose();
+                    world.AddFrameEndTask(w=>
+                    {
+                        var echo=w.CreateActor(false,"u_memory_echo",new TypeDictionary { new OwnerInit(strike.Owner), new LocationInit(cell) });
+                        if (echo.Trait<Mobile>().CanEnterCell(cell)) w.Add(echo);
+                        else echo.Dispose();
+                    });
+                }
+            }
             world.AddFrameEndTask(w=>w.Add(new SFFactionPowerEffect(impactCenter,radius,strike.Info.Kind,45,true)));
             if (strike.Info.Kind==SFUltimate.Petrification || strike.Info.Kind==SFUltimate.Nuclear)
                 world.AddFrameEndTask(w=>w.Add(new SpriteEffect(impactCenter,w,strike.Info.Kind==SFUltimate.Petrification?"sf_witness":"sf_nuclear","impact","sf_rgba")));
@@ -160,10 +179,16 @@ namespace OpenRA.Mods.Sevenfall
                     continue;
                 }
                 var damage = (enemy || strike.Info.Kind==SFUltimate.Nuclear) ? DamageFor(strike.Info.Kind, !mobile, health.HP, health.MaxHP) : 0;
+                if (strike.Info.Kind==SFUltimate.Earthbreaker && target.Info.HasTraitInfo<AircraftInfo>()) damage=0;
                 if (damage > 0) target.InflictDamage(strike.Source, new Damage(damage));
                 if (!SFFactionIdentity.Living(target)) continue;
                 switch (strike.Info.Kind)
                 {
+                    case SFUltimate.Bloom:
+                        if (ally && mobile && target.Info.HasTraitInfo<ArmamentInfo>()) { Grant("sf-bloom",375); target.InflictDamage(worldActor,new Damage(-health.MaxHP/4)); }
+                        if (enemy && mobile) Grant("sf-bloom-slow",375);
+                        break;
+                    case SFUltimate.AbsoluteSilence: if (enemy) { Grant("sf-quiet",300); Grant("sf-null",300); } break;
                     case SFUltimate.Extinction: if (enemy) Grant("sf-lockdown",75); break;
                     case SFUltimate.Hellrift: if (enemy) Grant("sf-scorched",250); break;
                     case SFUltimate.Rapture: if (enemy) Grant("sf-null",750); break;

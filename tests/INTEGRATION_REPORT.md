@@ -1,5 +1,7 @@
 # Engine integration report — 21 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 ## Passed on Windows x64
 
 - Built the pinned OpenRA solution in Release with .NET SDK 8.0.408 and runtime 6.0.36.

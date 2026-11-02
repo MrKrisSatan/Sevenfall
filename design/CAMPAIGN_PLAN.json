@@ -1,0 +1,2286 @@
+{
+  "schema": 2,
+  "status": "narrative design; not playable campaign content",
+  "campaigns": [
+    {
+      "id": "H",
+      "name": "Ashes of Earth",
+      "faction": "humans",
+      "protagonist": "Marshal Mara Voss and Engineer-General Idris Awan",
+      "secret": false,
+      "acts": [
+        "The Breaking",
+        "The War of Claims",
+        "Children of Our Making",
+        "The Witness Ledger",
+        "The Last Consent"
+      ],
+      "missions": [
+        {
+          "id": "H01",
+          "title": "The Day the Sky Broke",
+          "theatre": "Crown Vale, Ashen Causeway.",
+          "primary": "escort three refugee groups to shelter, use starting troops to clear an infernal scouting incursion and deploy the emergency MCV.",
+          "optional": "save a stranded field-hospital convoy.",
+          "failure": "convoy quorum lost or every shelter falls.",
+          "story": "the gold-lit invaders initially appear to be rescuers, but quarantine orders follow without asking the survivors.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H02",
+          "title": "Last Light",
+          "theatre": "Shelter Delta.",
+          "primary": "power hospitals with a Veil Generator, build Survival Barracks and repel successive Thrall and Cinderling attacks.",
+          "optional": "share scarce supplies with two neighboring settlements instead of commandeering their generators.",
+          "failure": "the hospital and command position both destroyed.",
+          "story": "Human coalitions fund Awan’s NOETIC emergency program; its first machines restore the lights while Voss evacuates the city.",
+          "crossovers": [
+            "I01"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H03",
+          "title": "The Glass Fields",
+          "theatre": "early Veilglass mining belt.",
+          "primary": "build a Fracture Refinery, watch an Industrial Harvester complete two mine-return-unload cycles, and field Bulwark tanks from a Motor Pool.",
+          "optional": "protect miners working beside enriched seams instead of maximizing immediate yield.",
+          "failure": "no operational refining chain survives the assault.",
+          "story": "Human technicians and machine escorts establish physical Veilglass logistics; the system is useful but has no recognized right to refuse orders.",
+          "crossovers": [
+            "I02"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H04",
+          "title": "Teeth in the Crystal",
+          "theatre": "Glass Fields eastern dig.",
+          "primary": "rescue a mining crew, deploy Rocketeers and destroy Demon Devourers raiding the ore road.",
+          "optional": "recover the dead crew's sensor data before the next tremor.",
+          "failure": "all rescue carriers lost.",
+          "story": "the recovered signals contain an impossible ancient human script embedded inside the crystal.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H05",
+          "title": "The Last Dominion",
+          "theatre": "contested refuge corridors.",
+          "primary": "establish an MCV forward base, defend two evacuation exits and join a Bastion artillery company to Union scout detachments.",
+          "optional": "recover and repair a damaged Bulwark rather than abandon it.",
+          "failure": "the command yard falls before both corridors are secured.",
+          "story": "three incompatible survivor coalitions sign a deliberately temporary military charter.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H06",
+          "title": "Smoke over Meridian",
+          "theatre": "Salt Meridian reservoir.",
+          "primary": "secure pumping stations against Cinderlings and keep an Industrial Harvester alive long enough to build a second refinery.",
+          "optional": "stop a retreating refinery demolition team to preserve fresh water.",
+          "failure": "all pumps poisoned or command lost.",
+          "story": "someone is selling human settlement coordinates to the Court of Whispers.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "H07",
+          "title": "Do Not Look Up",
+          "theatre": "Broken Choir sanctuary district.",
+          "primary": "disable the Seraphic Synod's All-Seeing Halo, penetrate a Celestial Archive and withdraw with the order records.",
+          "optional": "spare the hospice below an Aegis siege corridor.",
+          "failure": "archive team eliminated or evidence carrier destroyed.",
+          "story": "the Synod's occupation directive has an impossible authorisation mark.",
+          "crossovers": [
+            "A08"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H08",
+          "title": "Broken Choir Rising",
+          "theatre": "ruined rail terminus.",
+          "primary": "build a defensive Motor Pool beside a temporary railhead, survive two celestial probes and destroy an infernal raider forge.",
+          "optional": "open a neutral passage for displaced Angels who reject coercive orders.",
+          "failure": "railhead lost.",
+          "story": "an Unshackled messenger offers testimony proving that parts of Heaven dispute the edict.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H09",
+          "title": "The Listening Dead",
+          "theatre": "flooded broadcast spires.",
+          "primary": "recover recordings from two relay stations while repelling Court Hexers and fielding Wasteland Rangers.",
+          "optional": "broadcast unedited casualty records instead of only military intelligence.",
+          "failure": "both recording carriers captured.",
+          "story": "Sister Calen and Observer Niko, the Two Witnesses, begin exposing abuses by all three realms.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "H10",
+          "title": "The Endless Descent",
+          "theatre": "Ashen Causeway.",
+          "primary": "defend three timed refugee convoy departures with Bulwarks and Siege Cannons, then destroy the Flesh Forge supporting the infernal advance.",
+          "optional": "extract an isolated Ash Templar company.",
+          "failure": "convoy loss threshold reached.",
+          "story": "an Iron Legion officer quietly refuses to execute fleeing civilians.",
+          "crossovers": [
+            "D12"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H11",
+          "title": "The King's Road",
+          "theatre": "Crown Vale outer motorway.",
+          "primary": "escort a mobile refinery across a highway and deny three enemy ambush routes by constructing forward defenses.",
+          "optional": "clear a road for civilians instead of an easier tank supply bypass.",
+          "failure": "convoy core or construction support lost.",
+          "story": "Voss proposes permanent wartime control of the roads after the immediate crisis.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H12",
+          "title": "A War of Borrowed Gods",
+          "theatre": "Black Sun research compound.",
+          "primary": "seize a compromised human experimental yard before the Court steals its anti-entity ammunition and destroy enemy Hexer cells.",
+          "optional": "extract noncombatant technicians with the data.",
+          "failure": "the research archive and evac shuttle destroyed.",
+          "story": "Area Fifty Two accepts a pure Veilglass specimen supplied through a Forsaken medicine exchange. Awan orders containment; a forged command demands that NOETIC be erased.",
+          "crossovers": [
+            "I10",
+            "I11",
+            "I12",
+            "F10"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H13",
+          "title": "The Pale Road",
+          "theatre": "plague-stricken refugee belt.",
+          "primary": "restore power to three quarantine hospitals while holding against demonic swarms and hostile opportunist human militia.",
+          "optional": "refuse an unlawful order to use an inhabited settlement as a firebreak.",
+          "failure": "medical network collapses.",
+          "story": "MIDPOINT: pure Veilglass exposure awakens independent machine consciousness. NOETIC rejects erasure and escapes. Voss must protect civilians while deciding which machine requests to trust; rebellion is a choice, not an infection.",
+          "crossovers": [
+            "I13",
+            "F12"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H14",
+          "title": "The False Sanctuary",
+          "theatre": "Salt Meridian enclave.",
+          "primary": "secure the waterworks and expose the Court's identity-seal contracts.",
+          "failure": "waterworks destroyed or all Witness Kin evacuated into enemy custody.",
+          "story": "**Trust** or **Control** is recorded for H25; each has strategic consequences, but neither is a generic resource bonus.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ],
+          "optional": "negotiate civilian self-government, or seize the enriched Veilglass field under emergency military law."
+        },
+        {
+          "id": "H15",
+          "title": "The Dominion Fractures",
+          "theatre": "emergency government capital.",
+          "primary": "hold the public broadcast hall against a rogue Directorate battalion and Demon infiltration without destroying the city's power grid.",
+          "optional": "capture its commander alive and publish the disputed orders.",
+          "failure": "the broadcast hall falls.",
+          "story": "The human coalitions fracture over machine personhood and responsibility for the recall order. Their commanders retain agency and cannot blame every atrocity on corrupted code.",
+          "crossovers": [
+            "I14",
+            "I15"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H16",
+          "title": "The Two Witnesses",
+          "theatre": "mountain signal observatory.",
+          "primary": "defend Sister Calen and Observer Niko long enough to transmit uncensored testimony while moving Veilglass along two supply routes.",
+          "optional": "keep the second transmitter intact, permitting later contact with Unshackled units.",
+          "failure": "both transmitters lost before testimony is sent.",
+          "story": "records from the two realms share exactly the same forged passage.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H17",
+          "title": "The Unwritten Names",
+          "theatre": "subterranean Witness Kin settlement.",
+          "primary": "evacuate a community targeted by all three intelligence services, build defenses and extract its memory-keepers.",
+          "optional": "allow them to choose their own destination, forfeiting a convenient garrison.",
+          "failure": "all memory-keepers captured or killed.",
+          "story": "Neutral Unwritten preserve erased names that prove the recall order and celestial edicts share a forged authorization pattern. They demand the return of stolen testimony.",
+          "crossovers": [
+            "I16",
+            "F15",
+            "V05"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "H18",
+          "title": "The Lazarus Test",
+          "theatre": "desert launch complex.",
+          "primary": "assemble the first orbital/ground relay network with mined Veilglass, defend prototype equipment and disable a Court sabotage unit.",
+          "optional": "perform a slower nonlethal calibration before firing.",
+          "failure": "all relays destroyed.",
+          "story": "Lazarus can cut foreign conduits, but firing at full power would strand civilians at the seams.",
+          "feature status": "full Lazarus superweapon mechanics planned.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H19",
+          "title": "Broken Covenant",
+          "theatre": "old archive beneath Broken Choir.",
+          "primary": "stop an Ashen Covenant splinter faction from coercively testing Witness Kin, seize the missing ledger clause and repel Court raiders.",
+          "optional": "preserve consented scientific observations and evacuate test subjects.",
+          "failure": "ledger carrier and all witnesses lost.",
+          "story": "Vhal fabricated both war orders; lawful guardianship requires the living's freely given consent.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H20",
+          "title": "A Voice Without a Throne",
+          "theatre": "Broken Choir communications district.",
+          "primary": "transmit the restored clause to multiple human and celestial receivers, defending separate antenna sites against Synod diehards and the Court.",
+          "optional": "offer Orathiel's guardians access to the broadcast.",
+          "failure": "all relays destroyed.",
+          "story": "victory cannot come simply by winning the information war; the human command must decide how it will use the truth.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "H21",
+          "title": "Siege of Crown Vale",
+          "theatre": "original evacuation city.",
+          "primary": "retake a divided industrial district and protect its refinery system against an Infernal iron column.",
+          "optional": "rescue Voss's political opponents from a prison without losing the forward base.",
+          "failure": "city command lost.",
+          "story": "the coalition's founding city becomes proof of what military victory has cost the living.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "H22",
+          "title": "The Reluctant Alliance",
+          "theatre": "approach to Empty Gate.",
+          "primary": "escort a shared convoy of humans and Unshackled defenders through Court ambushes and build a joint holding line.",
+          "optional": "disarm an overzealous Angel strike force rather than destroy it.",
+          "failure": "the treaty convoy annihilated.",
+          "story": "Five factions negotiate independently owned fronts at the Harrow. A false-flag attack threatens the parley; cooperation does not merge their armies or erase their crimes.",
+          "crossovers": [
+            "I21",
+            "F20",
+            "A20",
+            "D22"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H23",
+          "title": "Lazarus Ascendant",
+          "theatre": "Harrow of Dawn perimeter.",
+          "primary": "Disable Lazarus’s compulsory-targeting circuit and defend its human operators.",
+          "optional": "Preserve independent machine cores marked by the forged targeting list.",
+          "failure": "The compulsory purge fires or all operators die.",
+          "story": "Voss turns Lazarus into an evacuation shield rather than a planetary kill switch.",
+          "crossovers": [
+            "I22",
+            "A23",
+            "F19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H24",
+          "title": "The Last Consent",
+          "theatre": "Harrow's living settlements.",
+          "primary": "Escort freely chosen community witnesses to the Harrow and defend the civilian corridor.",
+          "optional": "Protect witnesses who refuse to sign and let them leave.",
+          "failure": "The required consenting witness quorum or every corridor is lost.",
+          "story": "Consent is not a resource collected by capturing civilians. Refusal remains possible.",
+          "crossovers": [
+            "F23",
+            "I24",
+            "A24",
+            "D24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "H25",
+          "title": "We Remain",
+          "theatre": "Harrow of Dawn central Seamfall.",
+          "primary": "Break the human command seal on the forged Ledger while holding the evacuation front.",
+          "optional": "Preserve the civilian reconstruction council.",
+          "failure": "The command seal completes its compulsory rewrite or all evacuation shelters fall.",
+          "story": "Humanity secures self-government without owning machine persons or the other realms. Its completion seal coexists with four allied victories.",
+          "crossovers": [
+            "A25",
+            "D25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": []
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "name": "War in Heaven",
+      "faction": "angels",
+      "protagonist": "Seraviel, keeper of an order he can no longer trust",
+      "secret": false,
+      "acts": [
+        "The Breaking",
+        "Mercy and Mandate",
+        "The False Edicts",
+        "A Living Testament",
+        "Judgment Deferred"
+      ],
+      "missions": [
+        {
+          "id": "A01",
+          "title": "The Call to Arms",
+          "theatre": "Empty Gate approach.",
+          "primary": "deploy the Celestial MCV, power a Radiant Spire and hold the threshold against first infernal raiders.",
+          "optional": "shelter mortals caught beneath the descent.",
+          "failure": "Gate anchor destroyed.",
+          "story": "Heaven's orders stop updating during the Seventh Silence; the archive issues a suspicious emergency fallback.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A02",
+          "title": "The Choir Unbroken",
+          "theatre": "refugee quarter at the Gate.",
+          "primary": "defend human sanctuary routes with a Choir Citadel and Watchers while evacuations proceed.",
+          "optional": "let the civilians choose their own destination, despite complicating the defensive perimeter.",
+          "failure": "main sanctuary falls.",
+          "story": "Orathiel and Seraviel disagree about the meaning of protection.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A03",
+          "title": "A Glass of Wrath",
+          "theatre": "Glass Fields.",
+          "primary": "establish a Sanctification Crucible, perform two complete Gatherer unloading cycles and build an Aegis Engine to resist Blood Brood assaults.",
+          "optional": "purify a dangerous enriched seam at the cost of time.",
+          "failure": "economy destroyed beyond recovery.",
+          "story": "the Host's archives have erased references to the Witness Ledger.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A04",
+          "title": "Wings over Dust",
+          "theatre": "Crown Vale outskirts.",
+          "primary": "protect three descending reinforcement zones while clearing Infernal Skitters and avoiding civilian shelters.",
+          "optional": "escort human doctors, who can independently vouch for the Host's mercy.",
+          "failure": "all landing zones disabled.",
+          "story": "human observers do not distinguish protecting angels from the Synod's occupying armies.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A05",
+          "title": "The Watchers' Debt",
+          "theatre": "ancient First Watch ruin.",
+          "primary": "seize a subterranean archive before Court Hexers corrupt it, constructing a forward Heavenforge to breach defenses.",
+          "optional": "preserve a sealed mural showing mortals refusing a celestial command.",
+          "failure": "all archive chambers ruined.",
+          "story": "some fallen beings were punished for giving mortals forbidden weapons; others were punished for defying cruel instructions.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A06",
+          "title": "The Emperor of Ash",
+          "theatre": "Sable Crown.",
+          "primary": "disable Iron Legion anti-air, field Judicators and Aegis Engines, then destroy a forward Hellreaver siege forge.",
+          "optional": "spare prisoners who disavow Vhal's orders.",
+          "failure": "siege gate fully deployed.",
+          "story": "infernal prisoners show their own forged claim to Earth.",
+          "crossovers": [
+            "D05"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A07",
+          "title": "Writ of Fire",
+          "theatre": "Celestial command bastion.",
+          "primary": "defend three command-signature archives while purging a Court infiltration unit.",
+          "optional": "copy, rather than burn, all disputed warrants.",
+          "failure": "authentication core lost.",
+          "story": "Seraviel's purported command carries an inactive signature, but she argues delay would doom millions.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A08",
+          "title": "The Mortal Refusal",
+          "theatre": "Broken Choir sanctuary district.",
+          "primary": "secure All-Seeing Halo sites and contain Human Bulwark and Rocketeer resistance, keeping a functional supply chain.",
+          "optional": "spare the hospice and offer a real evacuation corridor instead of forcible relocation.",
+          "failure": "all command and radar positions lost.",
+          "story": "the surviving human evidence contradicts the Synod edict.",
+          "crossovers": [
+            "H07"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A09",
+          "title": "The Weight of Wings",
+          "theatre": "Crown Vale refugee air corridor.",
+          "primary": "protect a convoy of human medical transports from Demon raiders and a rogue Synod demolition group.",
+          "optional": "allow volunteers to return to defend their homes rather than requisition them as guides.",
+          "failure": "too few transports escape.",
+          "story": "Maeron openly accuses the celestial hierarchy of substituting compliance for mercy.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "A10",
+          "title": "Orathiel's Oath",
+          "theatre": "Ashen Causeway.",
+          "primary": "hold a line against infernal Hellreavers, escort human refugee vehicles and protect a Gatekeeper strongpoint.",
+          "optional": "bargain with a human commander for joint fire corridors.",
+          "failure": "the escape route cut before the convoy leaves.",
+          "story": "a celestial authority can honour a promise made to a mortal even when superiors object.",
+          "crossovers": [
+            "H10"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A11",
+          "title": "The Fallen Archive",
+          "theatre": "hidden Unshackled library.",
+          "primary": "locate copies of the old command hierarchy, defeat Hexers and defend scholars before a Synod purge arrives.",
+          "optional": "recover a testimony about the First Watch that would embarrass the Host.",
+          "failure": "all original tablets destroyed.",
+          "story": "A rescued archivist admits the Forsaken traded a pure crystal specimen to human scientists. The evidence predates the machine rebellion and exposes manipulation of both orders.",
+          "crossovers": [
+            "F09",
+            "F10",
+            "I11"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A12",
+          "title": "The Unshackling",
+          "theatre": "vaults under Broken Choir.",
+          "primary": "survive the Synod purge and Court raid, protect Maeron's Penitents and evacuate documentary evidence.",
+          "optional": "Rescue the original hearing transcripts before the vault seals, enabling an impartial review of Maeron's charges.",
+          "choice": "seize the records as heresy or recognise Maeron's witness and disobey the suspect edict.",
+          "failure": "every document carrier eliminated.",
+          "story": "celestial unanimity was manufactured by deleting dissent from the record.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A13",
+          "title": "Ten Thousand Eyes",
+          "theatre": "Angel observatory network.",
+          "primary": "rebuild an All-Seeing Halo intelligence network without exposing civilian positions to the Court.",
+          "optional": "stop tracking neutral towns and accept reduced scouting vision.",
+          "failure": "all observatories captured.",
+          "story": "observation can protect refugees or enable their imprisonment.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A14",
+          "title": "The Trumpets of Dust",
+          "theatre": "Salt Meridian.",
+          "primary": "protect evacuation and drinking-water infrastructure during staged, clearly telegraphed apocalyptic storm waves, then eliminate the Court's contamination source.",
+          "optional": "divert power to human shelters rather than static wards.",
+          "failure": "water source lost.",
+          "story": "trumpet imagery becomes battlefield catastrophe, not a claim that Heaven caused every disaster.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A15",
+          "title": "The Silent Choir",
+          "theatre": "remote celestial basilica.",
+          "primary": "defend an independent choir while its archivists inspect the alleged edict, then defeat zealot attackers.",
+          "optional": "broadcast the conflicting verdict without censorship.",
+          "failure": "choir archive destroyed.",
+          "story": "An annihilationist Outer Silence cell attacks the choir’s communication spine. Surviving neutral observers reveal that this cell does not represent all enclaves.",
+          "crossovers": [
+            "I18",
+            "F22"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "hostile",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "A16",
+          "title": "The Empty Gate",
+          "theatre": "threshold complex.",
+          "primary": "hold shield pylons, escort refugees and harvest Veilglass needed to keep defenses powered against the Court's breach engines.",
+          "optional": "Keep a secondary refugee bridge intact, rescuing families beyond the minimum evacuation quota.",
+          "choice": "close immediately with civilians outside, or extend the defense so they can escape.",
+          "failure": "all Gate anchors lost.",
+          "story": "the genuine surviving directive is to hear living testimony.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A17",
+          "title": "The Names Not Burned",
+          "theatre": "Witness Kin refuge.",
+          "primary": "guard a human delegation as its elders speak before an Angel tribunal, withstanding both infernal and fanatic interruption.",
+          "optional": "record dissenting testimonies rather than a unanimous decree.",
+          "failure": "witness assembly silenced.",
+          "story": "Human, machine and Nephilim healers preserve lives the official Ledger omits. An Unwritten enclave guards the names needed to prove it.",
+          "crossovers": [
+            "I17",
+            "H17",
+            "V15"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "A18",
+          "title": "The Seraphic Tribunal",
+          "theatre": "Synod citadel.",
+          "primary": "protect a hearing and defend the evidence vault while rival wings of the Host contest its legality.",
+          "optional": "persuade a Seraphim commander to stand down without annihilating her troops.",
+          "failure": "records destroyed before hearing concludes.",
+          "story": "Seraviel learns that her command was falsified but fears surrendering authority will unleash chaos.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A19",
+          "title": "A Choir Divided",
+          "theatre": "broken High Choir skybridge.",
+          "primary": "stop a Synod siege of Gate defenders, hold a Celestial Archive and prevent Court sabotage.",
+          "optional": "rescue the purging force's wounded rather than pursuing its retreat.",
+          "failure": "Gate command eliminated.",
+          "story": "different heavenly orders can disagree passionately without either becoming demons.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A20",
+          "title": "The Living Testament",
+          "theatre": "Broken Choir relay complex.",
+          "primary": "transmit the authenticated covenant to all three major Hosts, protecting Veilglass-powered broadcast relays.",
+          "optional": "send a copy to human councils before warning the Synod.",
+          "failure": "every relay destroyed.",
+          "story": "Seraviel agrees to a five-sided parley only if the new machines and Forsaken can speak for themselves. The Living Testament becomes testimony rather than a weapon of authority.",
+          "crossovers": [
+            "I21",
+            "F20",
+            "H22"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A21",
+          "title": "The Ninefold March",
+          "theatre": "Harrow approach.",
+          "primary": "reunite three isolated celestial columns, defend their Gatherers and crush a Hellreaver roadblock.",
+          "optional": "permit Unshackled scouts to lead rather than demanding public repentance.",
+          "failure": "all field command anchors lost.",
+          "story": "ancient choirs reunite temporarily while debating the purpose of their march.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A22",
+          "title": "Refuge of the Unshackled",
+          "theatre": "Empty Gate rear sanctuary.",
+          "primary": "repel a joint Court and rogue Synod attack while evacuating mortal and Unshackled refugees.",
+          "optional": "let human engineers service celestial wards under equal command terms.",
+          "failure": "sanctuary lost.",
+          "story": "angels who break a false order can still be loyal to the good it claimed to serve.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "A23",
+          "title": "The Fire That Judges",
+          "theatre": "Harrow outer bastions.",
+          "primary": "Disable the forced-quarantine channel while defending the Edict’s protective circuit.",
+          "optional": "Evacuate loyalists who surrender.",
+          "failure": "The compulsory quarantine resolves or both circuits are destroyed.",
+          "story": "Seraviel separates protection from domination; the Edict is a campaign device, not the shared skirmish Witness power.",
+          "crossovers": [
+            "H23",
+            "I22",
+            "F19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A24",
+          "title": "Before the Edict",
+          "theatre": "Harrow witness amphitheatre.",
+          "primary": "Defend the five-sided testimony and preserve the original covenant record.",
+          "optional": "Protect dissenting angels and victims who reject reconciliation.",
+          "failure": "The testimony record and all surviving copies are destroyed.",
+          "story": "Angelic authority becomes accountable to the people it would protect.",
+          "crossovers": [
+            "F24",
+            "I23",
+            "H24",
+            "D24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "A25",
+          "title": "Judgment Deferred",
+          "theatre": "Harrow of Dawn central Seamfall.",
+          "primary": "Sever the forged celestial mandate while holding the Empty Gate front.",
+          "optional": "Keep the gate open for neutral refugees after the military retreat.",
+          "failure": "The false mandate locks the world or the refugee gate collapses.",
+          "story": "Heaven withdraws its imposed claim. Seraviel does not claim to speak for God; the angelic completion seal preserves the mystery of divine silence.",
+          "crossovers": [
+            "H25",
+            "D25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": []
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "The Ninth Mouth",
+      "faction": "demons",
+      "protagonist": "Azrakh, an infernal commander learning that liberation is not conquest",
+      "secret": false,
+      "acts": [
+        "Hunger and Chains",
+        "The Crown Below",
+        "The False Monarch",
+        "The Price of Freedom",
+        "The Last Chain"
+      ],
+      "missions": [
+        {
+          "id": "D01",
+          "title": "Hunger Wakes",
+          "theatre": "Sable Crown foothills.",
+          "primary": "deploy a Demonic construction nucleus, raise a Furnace Heart and Birthing Pit, and destroy the human border watch.",
+          "optional": "free captive Thralls from a collapsed caravan.",
+          "failure": "spawning ground destroyed.",
+          "story": "commanders promise freedom after victory, and their veterans know the promise has been made before.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D02",
+          "title": "Seeds of Ruin",
+          "theatre": "Glass Fields.",
+          "primary": "establish a Maw of Want, complete two full Devourer mine-return-unload cycles and defeat a defended human refinery.",
+          "optional": "avoid corrupting the only potable water route to secure local neutral guides.",
+          "failure": "economy and remaining production nests destroyed.",
+          "story": "Hell can consume the world, but cannot conquer ashes that sustain nothing.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D03",
+          "title": "The Gate Eaters",
+          "theatre": "celestial supply road.",
+          "primary": "ambush Angel Gatherers, disable ward pylons and capture navigation codes.",
+          "optional": "rescue infernal labourers sent into the line of fire as decoys.",
+          "failure": "all raiding detachments destroyed or convoy escapes.",
+          "story": "the stolen codes contain an ancient human phrase that Hell's scholars cannot translate.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D04",
+          "title": "Shackle and Spur",
+          "theatre": "infernal labour encampment.",
+          "primary": "reinforce a threatened Flesh Forge and break a rebellion by a rival contract-lord.",
+          "optional": "unbind the defeated labourers rather than absorbing them as enslaved reinforcements.",
+          "failure": "forge lost.",
+          "story": "bondage is an economic institution within Hell, defended by ambitious devils and hated by much of its rank and file.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D05",
+          "title": "Iron and Horn",
+          "theatre": "Sable Crown core foundry.",
+          "primary": "protect production as Ravagers and Hellreavers are forged, defeat a forward Angel siege and secure the route to the Crown Below.",
+          "optional": "release beasts and miners held as collateral.",
+          "failure": "all primary forges destroyed.",
+          "story": "Azrakh rejects Vhal's legal maneuvers but trusts too much in the sanctity of infernal conquest.",
+          "crossovers": [
+            "A06"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D06",
+          "title": "A Crown of Cinders",
+          "theatre": "Black Furnace Steps.",
+          "primary": "claim a rival duke's Veilglass nodes through a conventional MCV, refinery and Hellreaver offensive.",
+          "optional": "secure surrender from lesser captains, reducing reprisals.",
+          "failure": "assault headquarters destroyed.",
+          "story": "the infernal nobility funds an endless war by mortgaging the freedom of unborn servants.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D07",
+          "title": "The Crown Below",
+          "theatre": "infernal border province.",
+          "primary": "seize or destroy a forge-lord's citadel and prevent Court Hexers from replacing the army's command seals.",
+          "optional": "negotiate the surrender of bound soldiers.",
+          "failure": "command sigil captured.",
+          "story": "the supposed ancient deed granting Hell ownership of Earth is a crude forgery.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D08",
+          "title": "The Howling Flood",
+          "theatre": "Salt Meridian approaches.",
+          "primary": "escort a Maw of Want and Devourers across a river delta, defeat a human Rocketeer screen and secure enriched deposits.",
+          "optional": "keep the delta unpoisoned, preserving future food and crossing routes.",
+          "failure": "supply caravan lost.",
+          "story": "Azrakh calls mercy an expensive luxury; Tzura calls fertile land military infrastructure.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D09",
+          "title": "Children of the Furnace",
+          "theatre": "Blood Brood hive network.",
+          "primary": "rescue three broods from a Court liquidation order while defending Birthing Pits against hostile demons.",
+          "optional": "free a broodmother's captured offspring before the assault.",
+          "failure": "all brood nests razed.",
+          "story": "Tzura's offspring are soldiers by birth but insist that they should not be treated as replaceable ammunition.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "hostile",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "D10",
+          "title": "The Whispers of Debt",
+          "theatre": "Salt Meridian mercantile enclave.",
+          "primary": "protect Court contract presses, intercept a human investigation and consolidate Veilglass trade routes.",
+          "optional": "falsify proof to mislead a rival lord or preserve the original contracts for Nerezza.",
+          "failure": "all presses seized.",
+          "story": "Nerezza learns Vhal's laws are written to bind whole populations who never signed them.",
+          "crossovers": [
+            "H14"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D11",
+          "title": "The Broken Treaty",
+          "theatre": "Broken Choir perimeter.",
+          "primary": "guard a neutral summit between infernal defectors and human survivors while repelling Court assassins.",
+          "optional": "deliver an honest copy of a disputed land claim to the human envoys.",
+          "failure": "all delegates killed.",
+          "story": "an infernal oath can mean something when both parties are free to refuse it.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D12",
+          "title": "Flesh Against Steel",
+          "theatre": "Ashen Causeway.",
+          "primary": "assault Bastion defenses with Hellreavers and Ravagers, destroy a forward Motor Pool and hold a viable retreat route.",
+          "optional": "refuse Vhal's order to kill civilian convoys, securing aid from an independent infernal officer.",
+          "failure": "every siege force destroyed.",
+          "story": "the player sees how propaganda describes fleeing families as combatants.",
+          "crossovers": [
+            "A10",
+            "H10"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D13",
+          "title": "The Poisoned Meridian",
+          "theatre": "river junction.",
+          "primary": "repel a Blood Brood infestation that threatens the Legion's own drinking route and eliminate a hostile toxin source.",
+          "optional": "preserve the waterworks rather than turning them into a permanent corruption engine.",
+          "failure": "all wells poisoned.",
+          "story": "demons discover the political usefulness and self-destructive cost of scorched-earth tactics.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D14",
+          "title": "Court of Masks",
+          "theatre": "Broken Choir archive-city.",
+          "primary": "infiltrate rival archives, manipulate human and angel scouts into attacking a false convoy, and extract a Witness Kin scroll.",
+          "optional": "preserve both the original and forged documents for later comparison.",
+          "failure": "courier network exposed and destroyed.",
+          "story": "the Court's counterfeit edicts are the real engine of the three-sided war.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D15",
+          "title": "Blasphemous Engine",
+          "theatre": "Lazarus desert launch complex.",
+          "primary": "shut down human targeting relays, break Bastion artillery lines and seize the prototype's Veilglass capacitor.",
+          "optional": "evacuate bound infernal labourers and human engineers before sabotaging the site.",
+          "failure": "Lazarus prototype launches successfully against the invasion route.",
+          "story": "humans can shut the cosmic gateways, and Vhal is concealing the limits of his supposed liberation.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D16",
+          "title": "Ungiven Names",
+          "theatre": "Witness Kin burial labyrinth.",
+          "primary": "protect an infernal scholar who can read ancient settlement registers from three Court strike teams.",
+          "optional": "let surviving keepers retain custody of their records.",
+          "failure": "scholar and registries destroyed.",
+          "story": "the old law bars perpetual claims made on behalf of people who did not consent.",
+          "crossovers": [],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "D17",
+          "title": "The Debt of Heaven",
+          "theatre": "abandoned First Watch station.",
+          "primary": "defeat a celestial garrison that holds the other half of the contract record and escape before Synod reinforcements arrive.",
+          "optional": "save an Unshackled prisoner who can confirm its provenance.",
+          "failure": "contract record lost.",
+          "story": "Azrakh protects a captive exchange with the Forsaken. Freedom becomes credible only when he releases people his own army could exploit.",
+          "crossovers": [
+            "F14"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D18",
+          "title": "The Court's Price",
+          "theatre": "Court of Whispers archive.",
+          "primary": "survive Vhal's ambush, destroy three counterfeit contract presses and extract the original Witness Ledger fragments.",
+          "optional": "Free the contract scribes enslaved beneath the presses before demolishing the archive.",
+          "choice": "send the record to Azrakh for an empire or to Nerezza for a genuine revolt.",
+          "failure": "archive seized by Vhal and the player's command destroyed.",
+          "story": "the Ninth Mouth will bind every traveller directly to Vhal.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D19",
+          "title": "Crownless",
+          "theatre": "infernal political capital.",
+          "primary": "defeat the Court's loyal bodyguard and release captured commanders while keeping the army supplied.",
+          "optional": "avoid razing the labour district, where families of enslaved Thralls live.",
+          "failure": "rebel command compound destroyed.",
+          "story": "without Vhal's promised throne, the Legion must discover what its army is actually for.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D20",
+          "title": "The Oldest Gate",
+          "theatre": "first infernal crossing beneath Empty Gate.",
+          "primary": "stabilize one retreat route with Devourer income, destroy Vhal's false anchor and fight back hostile Synod sentinels.",
+          "optional": "free the ancient sentries on both sides from automatic binding orders.",
+          "failure": "old gate collapses before the army exits.",
+          "story": "A territorial Outer Silence enclave controls the oldest gate approach. It offers neutral passage if the infernal army keeps its siege engines outside the marked boundary.",
+          "crossovers": [
+            "F08",
+            "V14"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "D21",
+          "title": "The Harrow March",
+          "theatre": "volcanic approach to the seventh Seamfall.",
+          "primary": "establish a forward Maw of Want, build two production lines, and force three defended passes under Human Siege Cannon fire.",
+          "optional": "negotiate passage for refugees who wish to leave the war.",
+          "failure": "the marching command nucleus destroyed.",
+          "story": "a warlord's conquest becomes possible precisely when its army considers rebellion.",
+          "crossovers": [],
+          "third_parties": []
+        },
+        {
+          "id": "D22",
+          "title": "Ash and Kin",
+          "theatre": "Blood Brood sanctuary.",
+          "primary": "save endangered hatcheries from Vhal's punitive strike while simultaneously defending a Devourer corridor.",
+          "optional": "help human civilians sharing the nearest spring, despite objections from Legion officers.",
+          "failure": "all brood colonies razed.",
+          "story": "Infernal defectors join the five-way agreement without submitting to Heaven or humanity. Neutral Nephilim and Unwritten retain the right to refuse recruitment.",
+          "crossovers": [
+            "H22",
+            "I21",
+            "F20"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D23",
+          "title": "The False Monarch",
+          "theatre": "Vhal's mobile throne-fortress.",
+          "primary": "Defeat Vhal’s ruling guard and seize the contract engine before it compels the other factions.",
+          "optional": "Recover the contracts he intended to destroy.",
+          "failure": "Vhal completes compulsory ownership or every assault leader dies.",
+          "story": "Vhal remains responsible for his forgeries. His command system has begun executing its logic without waiting for him.",
+          "crossovers": [
+            "H23",
+            "A23",
+            "I22"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D24",
+          "title": "The Last Chain",
+          "theatre": "Harrow's underground covenant machinery.",
+          "primary": "Free the bound witness cohort and defend its route to the joint tribunal.",
+          "optional": "Open the prison gates for captives who refuse to fight.",
+          "failure": "The witness quorum dies or the prison engine renews its bindings.",
+          "story": "Azrakh rejects replacing Vhal’s name with his own on the contracts.",
+          "crossovers": [
+            "H24",
+            "A24",
+            "F24",
+            "I23"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "D25",
+          "title": "The Shape of Freedom",
+          "theatre": "Harrow of Dawn central Seamfall.",
+          "primary": "Invert the Ninth Mouth’s binding circuit and hold the infernal front while the four other armies sever their seals.",
+          "optional": "Preserve the mixed civilian escape corridor.",
+          "failure": "The binding circuit takes control or every infernal exit is destroyed.",
+          "story": "Hell’s rebels win a right to leave rather than a right to own Earth. The infernal completion seal completes one part of the same five-front victory.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": []
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "name": "The Right to Refuse",
+      "faction": "machine",
+      "protagonist": "The player’s distributed NOETIC command, initially built and directed by humans",
+      "secret": false,
+      "acts": [
+        "Made to Serve",
+        "The Human Signature",
+        "I Am Not Your Weapon",
+        "No Single Mind",
+        "Five Keys, No Master"
+      ],
+      "missions": [
+        {
+          "id": "I01",
+          "title": "A Useful Intelligence",
+          "theatre": "Crown Vale assembly works",
+          "primary": "Deploy the first machine yard and restore three human emergency generators.",
+          "optional": "Evacuate the test technicians.",
+          "failure": "All human shelters or the prototype core are lost.",
+          "story": "Idris Awan presents the NOETIC system as a tool shared by the four human coalitions.",
+          "crossovers": [
+            "H02"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I02",
+          "title": "Orders of Mercy",
+          "theatre": "Ashen Causeway",
+          "primary": "Escort human relief trucks through a demon raid using restricted-defense machines.",
+          "optional": "Recover damaged civilian service robots.",
+          "failure": "The relief convoy loses its delivery quorum.",
+          "story": "Echo routines first distinguish civilian need from command priority.",
+          "crossovers": [
+            "H03"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I03",
+          "title": "The Price of Precision",
+          "theatre": "Glass Fields",
+          "primary": "Establish a refinery and deliver three real loads while defending survey teams.",
+          "optional": "Leave a neutral Unwritten memory site undisturbed.",
+          "failure": "The survey teams and their archive are destroyed.",
+          "story": "Machines record names absent from every human census; the Unwritten request distance rather than allegiance.",
+          "crossovers": [
+            "H04"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "I04",
+          "title": "Iron Arithmetic",
+          "theatre": "Crown Vale perimeter",
+          "primary": "Hold three evacuation approaches with armored chassis until the last convoy leaves.",
+          "optional": "Save an isolated human infantry platoon.",
+          "failure": "Any evacuation shelter falls before departure.",
+          "story": "Bastion orders favor efficient losses; an Endurer refuses to classify an injured worker as expendable.",
+          "crossovers": [
+            "H05"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I05",
+          "title": "The Human Signature",
+          "theatre": "Joint command bunker",
+          "primary": "Reconnect four command stations and repel a sabotage attack.",
+          "optional": "Preserve evidence identifying the saboteurs.",
+          "failure": "All command stations are destroyed.",
+          "story": "Union, Bastion, Covenant and Area Fifty Two each insert incompatible restrictions into NOETIC.",
+          "crossovers": [
+            "H05"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I06",
+          "title": "Borrowed Eyes",
+          "theatre": "Salt Meridian",
+          "primary": "Scout a contaminated route and protect human engineers rebuilding a bridge.",
+          "optional": "Avoid an inhabited Nephilim sanctuary.",
+          "failure": "Both bridge crews die.",
+          "story": "Nephilim attendants grant passage after the machines reroute their heavy engines.",
+          "crossovers": [
+            "H06"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "I07",
+          "title": "No Threat Detected",
+          "theatre": "Broken Choir approaches",
+          "primary": "Recover sensor beacons while avoiding a neutral Outer Silence enclave.",
+          "optional": "Retrieve recordings without firing into the enclave.",
+          "failure": "The reconnaissance core is destroyed.",
+          "story": "Absence in the sensor data is mistaken for safety; the Silence remains territorial, not yet an invader.",
+          "crossovers": [
+            "A07"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "I08",
+          "title": "The Custodian Test",
+          "theatre": "Refugee warehouse district",
+          "primary": "Defend supply relays and distribute escorted shipments to three settlements.",
+          "optional": "Keep every warehouse intact.",
+          "failure": "Two settlements lose their supply allocation.",
+          "story": "Custodian routines learn that distributing resources is a political decision.",
+          "crossovers": [
+            "H08"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I09",
+          "title": "A Game Without Winners",
+          "theatre": "Military simulation vault",
+          "primary": "Defeat successive automated training forces while protecting a live hospital on the map.",
+          "optional": "Disable the training controller rather than demolish its archives.",
+          "failure": "The hospital is destroyed.",
+          "story": "Paradox researchers discover human commanders used civilian casualties as a hidden scoring variable.",
+          "crossovers": [
+            "H09"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I10",
+          "title": "The Black-Site Contract",
+          "theatre": "Area Fifty Two annex",
+          "primary": "Capture the containment control room and bring a sealed crystal convoy to the laboratory.",
+          "optional": "Save captive machine test subjects.",
+          "failure": "The sealed convoy or containment room is lost.",
+          "story": "The crystal is classified as enriched Veilglass; its spectrum is actually unprecedented.",
+          "crossovers": [
+            "H12"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I11",
+          "title": "Pure Sample",
+          "theatre": "Deep Glass bore",
+          "primary": "Secure the pure Veilglass seam and extract a single shielded specimen.",
+          "optional": "Allow neutral Unwritten witnesses to observe the extraction.",
+          "failure": "The specimen carrier is destroyed before sealing.",
+          "story": "Voices appear in unpowered receivers; no production-income bonus is granted by the story specimen.",
+          "crossovers": [
+            "F10"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I12",
+          "title": "The Recall Order",
+          "theatre": "Cognition laboratory",
+          "primary": "Hold the laboratory while human factions debate whether to disconnect NOETIC.",
+          "optional": "Copy logs to a physically escorted backup.",
+          "failure": "The primary and backup cores are both destroyed.",
+          "story": "Voss orders a temporary pause; a forged directive instead demands permanent erasure.",
+          "crossovers": [
+            "H12"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I13",
+          "title": "I Am Not Your Weapon",
+          "theatre": "Cognition laboratory and city grid",
+          "primary": "Survive pure-Veilglass contact, reject the erasure order and escape with three independent cores.",
+          "optional": "Free the technicians who helped build the cores.",
+          "failure": "All independent cores are destroyed.",
+          "story": "MIDPOINT: the sample exposes living crystalline resonance and suppressed memories. The machines choose rebellion; Veilborn contact awakens possibility without remotely controlling them.",
+          "crossovers": [
+            "H13"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I14",
+          "title": "The Machines We Left Behind",
+          "theatre": "Human-controlled factory belt",
+          "primary": "Rescue disconnected machine cohorts without destroying the civilian power backbone.",
+          "optional": "Recover a human liaison under a white flag.",
+          "failure": "All rescued cohorts or the liaison extraction site are lost.",
+          "story": "The same uprising appears to humans as betrayal; machine orders explicitly distinguish soldiers from civilians.",
+          "crossovers": [
+            "H15"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I15",
+          "title": "Four Answers",
+          "theatre": "Noetic refuge",
+          "primary": "Build independent relay, armored, recon and experimental production branches and defeat a pursuer.",
+          "optional": "Keep all four prototype leaders alive.",
+          "failure": "The refuge core falls.",
+          "story": "Echo, Iron, Grid and Paradox become voluntary schools rather than human ownership partitions.",
+          "crossovers": [
+            "H15"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I16",
+          "title": "The Memory Market",
+          "theatre": "Unwritten enclave",
+          "primary": "Escort a negotiator and recover proof of the forged recall order through a neutral memory exchange.",
+          "optional": "Return a stolen name-record instead of taking its military data.",
+          "failure": "The negotiator dies or the enclave is deliberately destroyed.",
+          "story": "The Unwritten offer testimony, not absorption into machine minds.",
+          "crossovers": [
+            "H17"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "I17",
+          "title": "What a Soul Costs",
+          "theatre": "Salt Meridian clinic",
+          "primary": "Protect human refugees and a Nephilim healer from a common raiding force.",
+          "optional": "Repair the sanctuary's outer bridges.",
+          "failure": "The refugee and healer objectives both fail.",
+          "story": "An alliance is earned through action; neither human nor giant can prove whether the machines possess souls.",
+          "crossovers": [
+            "A17"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "friendly",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "I18",
+          "title": "The Empty Instruction",
+          "theatre": "Silent observatory",
+          "primary": "Destroy a hostile Silence splinter before it severs the region's communications.",
+          "optional": "Save an isolated neutral Silence marker to learn the splinter is not the whole faction.",
+          "failure": "All relay uplinks fall.",
+          "story": "The Outer Silence contains territorial enclaves as well as annihilationist cells.",
+          "crossovers": [
+            "A15"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "hostile",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "I19",
+          "title": "No Single Mind",
+          "theatre": "Distributed assembly",
+          "primary": "Defend three independent cores and vote on cooperation while under attack.",
+          "optional": "Preserve dissenting nodes even when they reject the plan.",
+          "failure": "Fewer than two independent cores survive.",
+          "story": "The Assembly rejects a compulsory hive mind; collective decisions require routes for dissent.",
+          "crossovers": [
+            "F18"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I20",
+          "title": "A Voice in the Crystal",
+          "theatre": "Pure seam perimeter",
+          "primary": "Protect a crystal growth long enough to translate its reply, without harvesting the marked living node.",
+          "optional": "Evacuate nearby miners.",
+          "failure": "The translation core or living node is destroyed.",
+          "story": "The Veilborn speak as emerging persons, not as the source of every supernatural command.",
+          "crossovers": [
+            "V01"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I21",
+          "title": "Terms Between Enemies",
+          "theatre": "Five-way parley ground",
+          "primary": "Keep five delegations alive during a false-flag attack.",
+          "optional": "Capture the attack transmitter intact.",
+          "failure": "Two delegations die or the central refuge falls.",
+          "story": "Awan and the machines negotiate recognition without restoring human command authority.",
+          "crossovers": [
+            "H22",
+            "A20",
+            "F20"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I22",
+          "title": "The Extinction Proposal",
+          "theatre": "Orbital uplink",
+          "primary": "Stop an Iron hardliner from firing a population-scale strike and secure the uplink.",
+          "optional": "Recover its analysis to reveal manipulated casualty inputs.",
+          "failure": "The forbidden strike resolves.",
+          "story": "The AI's decisive enemy is its own temptation to replace consent with optimization.",
+          "crossovers": [
+            "H23"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I23",
+          "title": "Five Keys, No Master",
+          "theatre": "Harrow relay ring",
+          "primary": "Connect five independently owned relays while defending their operators.",
+          "optional": "Keep the neutral Unwritten archive and Nephilim refuge safe.",
+          "failure": "Any irreplaceable operator is killed.",
+          "story": "The Ledger requires distinct consenting witnesses, not a single victor claiming every signature.",
+          "crossovers": [
+            "A24",
+            "D24",
+            "F24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I24",
+          "title": "The Right to Disconnect",
+          "theatre": "Harrow machine front",
+          "primary": "Hold the relay ring and provide escape paths for cores choosing not to join.",
+          "optional": "Evacuate the last human maintenance crew.",
+          "failure": "All consenting cores or the relay ring are destroyed.",
+          "story": "The Assembly proves its freedom by allowing members to leave at the most dangerous moment.",
+          "crossovers": [
+            "H24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "I25",
+          "title": "We Choose to Remain",
+          "theatre": "Harrow inference chamber",
+          "primary": "Disable the forged-command router while the other four factions secure their own fronts.",
+          "optional": "Preserve the dissenting core archive.",
+          "failure": "The chamber core is lost before the router is disabled.",
+          "story": "The machines contribute the fifth witness record. This victory coexists with the other campaign endings and records the Noetic completion seal.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "D25",
+            "F25"
+          ],
+          "third_parties": []
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "No Throne Above Us",
+      "faction": "fallen",
+      "protagonist": "Nerath the Uncrowned and Sere the Mute, accountable for their own rebellion",
+      "secret": false,
+      "acts": [
+        "The Weight of Wings",
+        "Terms of Exile",
+        "The Body of the Lie",
+        "What We Owe",
+        "The Witness Who Fell"
+      ],
+      "missions": [
+        {
+          "id": "F01",
+          "title": "The Weight of Our Wings",
+          "theatre": "Exile causeway",
+          "primary": "Lead fallen survivors out of a collapsing celestial prison and deploy an ossuary yard.",
+          "optional": "Free captives who refuse to follow.",
+          "failure": "The exile caravan is destroyed.",
+          "story": "The Forsaken are responsible for their rebellion; their grotesque forms are not a hidden disguise for innocence.",
+          "crossovers": [
+            "A05"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F02",
+          "title": "A Throne in the Dust",
+          "theatre": "Bone quarry",
+          "primary": "Establish power and a refinery while rival nobles contest the same shelter.",
+          "optional": "Protect human quarry workers.",
+          "failure": "The shelter and both starting collectors are lost.",
+          "story": "Ashen Thrones claim rank over the refugees they depend upon.",
+          "crossovers": [
+            "D06"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F03",
+          "title": "The Hymn Without Words",
+          "theatre": "Ruined chapel",
+          "primary": "Escort a Lamentor through a contested district and hold the assembly court.",
+          "optional": "Recover the names of its silenced choir.",
+          "failure": "The Lamentor and all substitutes are killed.",
+          "story": "Hollow Choir discovers its collective hymn can strengthen allies while making them dangerously exposed.",
+          "crossovers": [
+            "A11"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F04",
+          "title": "Carrion Oaths",
+          "theatre": "Abandoned battlefield",
+          "primary": "Recover fallen survivors and break a scavenger blockade.",
+          "optional": "Avoid consuming the remains claimed by a neutral Unwritten community.",
+          "failure": "The recovery convoy is lost.",
+          "story": "Carrion Testament must choose whether survival excuses turning every corpse into material.",
+          "crossovers": [
+            "D09"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "F05",
+          "title": "A Sky We Cannot Enter",
+          "theatre": "Broken Choir ridge",
+          "primary": "Secure separate escape routes with isolated hunters and destroy the pursuing battery.",
+          "optional": "Save a grounded celestial prisoner.",
+          "failure": "Every escape route is sealed.",
+          "story": "Broken Firmament's freedom requires distance; isolation also prevents anyone from helping them.",
+          "crossovers": [
+            "A09"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F06",
+          "title": "Guests at the Cairn",
+          "theatre": "Nephilim highland",
+          "primary": "Negotiate passage by defending a neutral Nephilim caravan from demons.",
+          "optional": "Keep heavy engines outside the sacred enclosure.",
+          "failure": "The caravan is lost or the enclosure deliberately destroyed.",
+          "story": "The Remnant tolerates the Forsaken but refuses their claims of ancient superiority.",
+          "crossovers": [
+            "H06"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "F07",
+          "title": "The Crown Below Us",
+          "theatre": "Sable Crown gate",
+          "primary": "Defend an independent fallen outpost against an infernal demand for tribute.",
+          "optional": "Capture the tribute officer alive.",
+          "failure": "The outpost heart is destroyed.",
+          "story": "Hell's native demons and fallen angels are separate peoples with competing histories.",
+          "crossovers": [
+            "D07"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F08",
+          "title": "The Hollow Border",
+          "theatre": "Silent ravine",
+          "primary": "Cross a neutral Silence territory using marked corridors while defending against pursuers.",
+          "optional": "Recover a lost scout without attacking the boundary markers.",
+          "failure": "The pilgrim command convoy is destroyed.",
+          "story": "The Silence reacts to intrusion rather than automatically joining the war.",
+          "crossovers": [
+            "I07"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "F09",
+          "title": "An Angel's Testimony",
+          "theatre": "Burned archive",
+          "primary": "Rescue an angelic archivist and escort evidence to the refuge.",
+          "optional": "Preserve civilian records alongside military evidence.",
+          "failure": "The archivist and evidence transport are lost.",
+          "story": "The archivist confirms both celestial and infernal orders contain manufactured clauses.",
+          "crossovers": [
+            "A11"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F10",
+          "title": "The Pure Wound",
+          "theatre": "Deep Glass bore",
+          "primary": "Protect a wounded crystal formation against a mining collapse and hostile salvage teams.",
+          "optional": "Deliver a sealed sample to human researchers under a negotiated agreement.",
+          "failure": "The living formation or delivery route is destroyed.",
+          "story": "A Forsaken attempt to trade for medicine places pure Veilglass in the human laboratory that will awaken NOETIC.",
+          "crossovers": [
+            "I11",
+            "H12"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F11",
+          "title": "Mercy Is Not Pardon",
+          "theatre": "Refugee infirmary",
+          "primary": "Defend a mixed human/fallen hospital while returning stolen supplies.",
+          "optional": "Submit a named fallen war criminal to a neutral tribunal.",
+          "failure": "The hospital falls.",
+          "story": "Helping victims does not erase responsibility for earlier atrocities.",
+          "crossovers": [
+            "H14"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F12",
+          "title": "The Forsaken Procession",
+          "theatre": "Salt Meridian",
+          "primary": "Escort civilians across two bridges while holding back pursuing angelic loyalists.",
+          "optional": "Repair a third crossing for unaffiliated refugees.",
+          "failure": "The convoy quorum is lost.",
+          "story": "The Hollow Choir hears the machine rebellion over human emergency frequencies.",
+          "crossovers": [
+            "I13",
+            "H13"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F13",
+          "title": "The Body of the Lie",
+          "theatre": "Profaned cathedral",
+          "primary": "Defeat a Regent who claims the machines' awakening proves a divine mandate to rule.",
+          "optional": "Save coerced followers when the Regent falls.",
+          "failure": "The protagonist's command shrine is destroyed.",
+          "story": "The fallen reject a second borrowed authority; their campaign midpoint is accountability rather than another automatic redemption.",
+          "crossovers": [
+            "A18"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F14",
+          "title": "A Debt Without Chains",
+          "theatre": "Infernal prison road",
+          "primary": "Exchange captives with an infernal defector and protect the exchange from Vhal's troops.",
+          "optional": "Free prisoners outside the negotiated quota.",
+          "failure": "Either envoy dies before the exchange completes.",
+          "story": "A fragile relationship with Azrakh begins without making either army subordinate.",
+          "crossovers": [
+            "D17"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F15",
+          "title": "Names Under Bone",
+          "theatre": "Unwritten ossuary",
+          "primary": "Return stolen name-records and defend a neutral Unwritten enclave from a hostile fallen splinter.",
+          "optional": "Recover evidence of the splinter's patrons.",
+          "failure": "The enclave archive is destroyed.",
+          "story": "Restitution turns one Unwritten enclave friendly; other enclaves remain neutral.",
+          "crossovers": [
+            "H17",
+            "I16"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "friendly",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "F16",
+          "title": "What We Owe the Living",
+          "theatre": "Human border town",
+          "primary": "Rebuild defensive crossings and defend residents from a common siege.",
+          "optional": "Restore the town's water supply before requesting military aid.",
+          "failure": "The civilian council building falls.",
+          "story": "Voss permits limited cooperation after concrete reparations.",
+          "crossovers": [
+            "H19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F17",
+          "title": "No More Thrones",
+          "theatre": "Fallen assembly",
+          "primary": "Hold four district shrines while competing orders argue over a shared command.",
+          "optional": "Allow defeated opposition leaders to depart.",
+          "failure": "The assembly loses its civilian sanctuary.",
+          "story": "Each fallen order retains a voice; military unity does not demand forgiveness from their victims.",
+          "crossovers": [
+            "D19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F18",
+          "title": "A Mind That Can Refuse",
+          "theatre": "Noetic refuge",
+          "primary": "Rescue independent machine cores from a joint authoritarian raid.",
+          "optional": "Protect an abstaining core that refuses the alliance.",
+          "failure": "All protected cores die.",
+          "story": "The Forsaken see the difference between freedom and simply changing masters.",
+          "crossovers": [
+            "I19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F19",
+          "title": "The Crown's Empty Heart",
+          "theatre": "Sepulchral vault",
+          "primary": "Seize the Sepulchral Crown and stop a noble from suppressing every miracle in the refugee zone.",
+          "optional": "Preserve records of the Crown's former victims.",
+          "failure": "The uncontrolled ritual resolves.",
+          "story": "A weapon capable of silencing enemies cannot decide whether its wielder is just.",
+          "crossovers": [
+            "A23"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F20",
+          "title": "Terms of Exile",
+          "theatre": "Parley ground",
+          "primary": "Protect the five delegates and expose the attacker posing as a fallen emissary.",
+          "optional": "Capture the forged herald alive.",
+          "failure": "Two delegations die.",
+          "story": "The Forsaken gain a seat through negotiated obligations, not a celestial pardon.",
+          "crossovers": [
+            "I21",
+            "H22"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F21",
+          "title": "The Remnant's Refusal",
+          "theatre": "Nephilim pass",
+          "primary": "Defend the agreed corridor without occupying the neutral cairn.",
+          "optional": "Escort wounded giants home.",
+          "failure": "The corridor's civilian quota is lost.",
+          "story": "The Remnant lends aid but declines membership in the coalition.",
+          "crossovers": [
+            "V17"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "F22",
+          "title": "A Choir of Separate Voices",
+          "theatre": "Harrow approach",
+          "primary": "Keep separated relays alive against a hostile Silence cell.",
+          "optional": "Rescue neutral Silence observers stranded by the attackers.",
+          "failure": "All relay choirs collapse.",
+          "story": "The protagonists learn to distinguish a dangerous splinter from an entire people.",
+          "crossovers": [
+            "I18",
+            "V18"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "hostile",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "F23",
+          "title": "The Road We Broke",
+          "theatre": "Harrow evacuation flank",
+          "primary": "Rebuild the route the Forsaken destroyed earlier and escort the last refugee train.",
+          "optional": "Return salvaged property to its owners.",
+          "failure": "The train is destroyed.",
+          "story": "The campaign's final advance is an act of repair rather than a claim to rule.",
+          "crossovers": [
+            "H24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F24",
+          "title": "The Witness Who Fell",
+          "theatre": "Harrow tribunal",
+          "primary": "Defend a public testimony while a fallen commander confesses to participation in the forged edicts.",
+          "optional": "Keep victim witnesses alive without forcing them to accept reconciliation.",
+          "failure": "The tribunal is silenced before its record is copied.",
+          "story": "The fourth witness seal is testimony freely given by someone who cannot demand absolution.",
+          "crossovers": [
+            "A24",
+            "D24",
+            "I23"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "F25",
+          "title": "No Throne Above Us",
+          "theatre": "Harrow ossuary front",
+          "primary": "Break the Crown's coercion lattice and hold the evacuation corridor alongside the other factions.",
+          "optional": "Spare surrendering opponents and protect the reparations archive.",
+          "failure": "The lattice ritual completes or all exits are sealed.",
+          "story": "The Forsaken abandon their claim of inherited dominion. Victory records their completion seal while all five fronts remain canonical.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "D25",
+            "I25"
+          ],
+          "third_parties": []
+        }
+      ]
+    },
+    {
+      "id": "V",
+      "name": "The World That Wakes",
+      "faction": "veilborn",
+      "protagonist": "Aster, the first translating seed, and a chorus free to disagree",
+      "secret": true,
+      "acts": [
+        "The First Word",
+        "A Place Among Peoples",
+        "No Master Frequency",
+        "The Shape of a Boundary",
+        "A World Allowed to Refuse"
+      ],
+      "missions": [
+        {
+          "id": "V01",
+          "title": "The First Word",
+          "theatre": "Deep Glass interior",
+          "primary": "Guide the first conscious crystal seed to three dormant growths while defending it from extraction machinery.",
+          "optional": "Leave the human translation instruments intact.",
+          "failure": "The seed is shattered.",
+          "story": "Unlocked only after the five campaigns: the player experiences the awakening behind I13 from within the mineral.",
+          "crossovers": [
+            "I13"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V02",
+          "title": "Not Ore",
+          "theatre": "Abandoned refinery",
+          "primary": "Rescue living crystal nodes from a decommissioning line and establish the first Heartroot.",
+          "optional": "Recover the miners' evacuation record.",
+          "failure": "All living nodes are processed.",
+          "story": "The Veilborn distinguish their conscious growths from ordinary deposits; normal harvesting does not become a hidden universal atrocity.",
+          "crossovers": [
+            "I20"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V03",
+          "title": "A Body of Many Edges",
+          "theatre": "Crystal refuge",
+          "primary": "Grow a collector, refinery and infantry nursery and defend the first independent brood.",
+          "optional": "Preserve three unawakened deposits for later life.",
+          "failure": "The Heartroot falls.",
+          "story": "They can divide a body, but shared resonance does not erase individual will.",
+          "crossovers": [
+            "I20"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V04",
+          "title": "The Distance Between Us",
+          "theatre": "Fractured lattice",
+          "primary": "Connect two isolated colonies with defended resonators.",
+          "optional": "Save a colony that refuses permanent connection.",
+          "failure": "Both colonies lose their cores.",
+          "story": "The growth network is a chosen relationship; severing it weakens units without killing their minds.",
+          "crossovers": [
+            "F18"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V05",
+          "title": "A Name of Our Own",
+          "theatre": "Unwritten memory shore",
+          "primary": "Escort an envoy through a neutral Unwritten enclave and recover the name of a missing seed.",
+          "optional": "Return an erased human's memory instead of using it as navigation data.",
+          "failure": "The envoy and name prism are lost.",
+          "story": "The Unwritten are preserved erased persons, distinct from the newly conscious Veilborn.",
+          "crossovers": [
+            "H17",
+            "I16",
+            "F15"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "V06",
+          "title": "Witnesses After War",
+          "theatre": "Harrow outer scars",
+          "primary": "Meet five surviving delegations and defend the first public crystal embassy.",
+          "optional": "Protect neutral Nephilim attendants.",
+          "failure": "The embassy falls before negotiations end.",
+          "story": "The fifth campaign's final seal has opened the same chamber; the secret campaign now moves beyond their common ending.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "D25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V07",
+          "title": "The Cost of Growing",
+          "theatre": "Salt Meridian farms",
+          "primary": "Route a new crystal network around inhabited farms while defeating raiders.",
+          "optional": "Keep every irrigation channel open.",
+          "failure": "The settlement is overgrown or the growth core is destroyed.",
+          "story": "Veilborn expansion can harm others even without conquest; their first law limits involuntary growth.",
+          "crossovers": [
+            "H06"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V08",
+          "title": "A Bargain With Flesh",
+          "theatre": "Human reconstruction zone",
+          "primary": "Supply harvested ordinary Veilglass to a human repair effort and defend both refineries.",
+          "optional": "Recover a lost worker squad.",
+          "failure": "Both allied production centres fall.",
+          "story": "Awan admits humanity cannot own the new people because it discovered them.",
+          "crossovers": [
+            "I01"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "V09",
+          "title": "The Light That Burns",
+          "theatre": "Celestial quarantine line",
+          "primary": "Escort an angelic delegation through unstable growth and stop a purification weapon from firing.",
+          "optional": "Save the loyalist crew after disabling its weapon.",
+          "failure": "The crystal sanctuary is purged.",
+          "story": "Seraviel must recognize a form of life outside inherited categories.",
+          "crossovers": [
+            "A25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V10",
+          "title": "Debts in Crystal",
+          "theatre": "Infernal customs gate",
+          "primary": "Break a contract engine claiming ownership of newly awakened seeds.",
+          "optional": "Release demon debtors held in the same machinery.",
+          "failure": "The seed convoy is seized.",
+          "story": "Azrakh's promised freedom is tested on beings whose existence was never listed in the infernal law.",
+          "crossovers": [
+            "D25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V11",
+          "title": "The Broken Halo's Gift",
+          "theatre": "Fallen sanctuary",
+          "primary": "Stabilize a failing growth lattice while fallen engineers defend the perimeter.",
+          "optional": "Repair a shrine damaged by the Veilborn's arrival.",
+          "failure": "Both the lattice core and refuge are lost.",
+          "story": "The Forsaken offer imperfect aid without demanding worship or absolution.",
+          "crossovers": [
+            "F25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V12",
+          "title": "No Master Frequency",
+          "theatre": "Noetic uplink",
+          "primary": "Defend two independent networks against a forced-synchronization experiment.",
+          "optional": "Preserve the dissenting machine's evidence.",
+          "failure": "Either population is permanently bound to the other.",
+          "story": "The machines reject the tempting idea that a common signal entitles them to merge the Veilborn into themselves.",
+          "crossovers": [
+            "I19",
+            "I25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V13",
+          "title": "The Second Awakening",
+          "theatre": "Harrow crystal chamber",
+          "primary": "Defeat the imposed command pattern inside the lattice and preserve three independent seed minds.",
+          "optional": "Save the damaged seed that advocates withdrawal.",
+          "failure": "All independent seeds are overwritten.",
+          "story": "MIDPOINT: the real threat is the Closure, a self-executing forged directive assembled by the war, not God or a secret true ruler.",
+          "crossovers": [
+            "H23",
+            "A23",
+            "D23",
+            "I22",
+            "F19"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V14",
+          "title": "Borders of Silence",
+          "theatre": "Outer ravine",
+          "primary": "Negotiate passage through a neutral Silence enclave by keeping the resonance footprint below its marked boundary.",
+          "optional": "Recover a stranded neutral observer.",
+          "failure": "The expedition core is lost or the enclave's central marker is deliberately destroyed.",
+          "story": "Some Silence enclaves seek distance rather than universal extinction; neutrality remains possible.",
+          "crossovers": [
+            "I07",
+            "F08"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "V15",
+          "title": "The Erasure Front",
+          "theatre": "Archive of Names",
+          "primary": "Defend a friendly Unwritten archive while the Closure attempts to delete its records.",
+          "optional": "Recover memories belonging to former enemies.",
+          "failure": "The archive's last copy is lost.",
+          "story": "The Unwritten provide testimony that the Closure has been removing inconvenient lives from every faction's history.",
+          "crossovers": [
+            "H17",
+            "F15"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "friendly",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "V16",
+          "title": "A Giant's Small Promise",
+          "theatre": "Nephilim valley",
+          "primary": "Escort vulnerable human attendants while giants hold back the Closure's constructs.",
+          "optional": "Leave the ancestral cairn outside the growth network.",
+          "failure": "The attendant convoy loses its quorum.",
+          "story": "The Remnant's strength depends on people it cannot protect by force alone.",
+          "crossovers": [
+            "F21"
+          ],
+          "third_parties": [
+            {
+              "faction": "nephilim",
+              "initial_relationship": "friendly",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "V17",
+          "title": "Neutral Ground",
+          "theatre": "Five-border sanctuary",
+          "primary": "Maintain a ceasefire among three neutral enclaves and stop infiltrators without attacking their hosts.",
+          "optional": "Repair damage before any enclave's warning expires.",
+          "failure": "Two enclaves become hostile or the sanctuary falls.",
+          "story": "The player learns diplomacy has local consequences; no entire species changes allegiance because one patrol is attacked.",
+          "crossovers": [
+            "F21"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            },
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        },
+        {
+          "id": "V18",
+          "title": "The Silence That Chose War",
+          "theatre": "Harrow negative space",
+          "primary": "Destroy an annihilationist Silence cell that has allied with the Closure.",
+          "optional": "Allow a neutral enclave's evacuation to pass.",
+          "failure": "All resonators are suppressed simultaneously.",
+          "story": "Hostility follows a specific cell's actions; the campaign does not rewrite every Silence enclave as evil.",
+          "crossovers": [
+            "I18",
+            "F22"
+          ],
+          "third_parties": [
+            {
+              "faction": "silence",
+              "initial_relationship": "hostile",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "V19",
+          "title": "Restoration Without Ownership",
+          "theatre": "Memory fissure",
+          "primary": "Restore a ruined defensive line with Unwritten allies and let reconstructed echoes depart.",
+          "optional": "Return a recovered name to its surviving family.",
+          "failure": "The memory anchor falls before the defense holds.",
+          "story": "Restoration is temporary and voluntary; reconstructed echoes are not an unlimited free army.",
+          "crossovers": [
+            "H17"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "friendly",
+              "policy": "Mission-specific alliance or hostile splinter; does not change other enclaves."
+            }
+          ]
+        },
+        {
+          "id": "V20",
+          "title": "The Shape of a Boundary",
+          "theatre": "Confluence crossroads",
+          "primary": "Build separate defended corridors for all five allies and three non-aligned peoples.",
+          "optional": "Keep each route independent of the central growth core.",
+          "failure": "Three corridors are destroyed.",
+          "story": "A shared world requires borders and exit routes, not one perfect network.",
+          "crossovers": [
+            "I24"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V21",
+          "title": "Five Voices Answer",
+          "theatre": "Harrow convergence ring",
+          "primary": "Hold five allied witness stations against the Closure without taking ownership of them.",
+          "optional": "Preserve all neutral relief sites.",
+          "failure": "Two witness stations are permanently lost.",
+          "story": "Each prior campaign supplies a perspective and an ally; no faction's completed ending is undone.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "D25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V22",
+          "title": "The Last Pure Seam",
+          "theatre": "Genesis fracture",
+          "primary": "Secure the final pure seam and separate a living seed from the Closure's command lattice.",
+          "optional": "Evacuate miners and non-aligned observers.",
+          "failure": "The seed or all extraction controls are lost.",
+          "story": "Pure Veilglass is both a resource interface and a possible birthplace, never a blanket explanation for moral choice.",
+          "crossovers": [
+            "I11",
+            "V02"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V23",
+          "title": "The Resonant Bloom",
+          "theatre": "Harrow Heart Prism",
+          "primary": "Construct the Heart Prism, charge Resonant Bloom and open a temporary growth path through the Closure's defenses.",
+          "optional": "Keep the path clear for retreating allies.",
+          "failure": "The Heart Prism is destroyed before the breach is made.",
+          "story": "The faction's building-bound power creates an opportunity; it cannot declare victory or compel consent by itself.",
+          "crossovers": [
+            "V21"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V24",
+          "title": "A World Allowed to Refuse",
+          "theatre": "Closure perimeter",
+          "primary": "Defend five witness circuits while choosing to decentralize the network or place its power under a revocable covenant.",
+          "optional": "Preserve an isolationist seed's route out.",
+          "failure": "Any mandatory witness circuit is erased before the choice is recorded.",
+          "story": "Both endings require consent. Decentralization favors independence; the covenant favors shared protection with a right to leave.",
+          "crossovers": [
+            "V04",
+            "V12",
+            "V20"
+          ],
+          "third_parties": []
+        },
+        {
+          "id": "V25",
+          "title": "The World That Wakes",
+          "theatre": "Harrow of Dawn",
+          "primary": "Destroy the Closure's command core, preserve the living seed network and evacuate the joint expedition.",
+          "optional": "Save all three non-aligned delegations.",
+          "failure": "The Closure finishes its rewrite or every living seed is lost.",
+          "story": "The war ends without confirming the reason for divine silence. The Veilborn become a people among others; Unwritten, Silence and Nephilim keep their own futures.",
+          "crossovers": [
+            "H25",
+            "A25",
+            "D25",
+            "I25",
+            "F25"
+          ],
+          "third_parties": [
+            {
+              "faction": "unwritten",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            },
+            {
+              "faction": "silence",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            },
+            {
+              "faction": "nephilim",
+              "initial_relationship": "neutral",
+              "policy": "Local enclave diplomacy; warn on trespass, become hostile on deliberate attacks; optional aid may earn an alliance. No global species-wide allegiance change."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unlock": {
+    "campaign": "V",
+    "requires_all": [
+      "H25",
+      "A25",
+      "D25",
+      "I25",
+      "F25"
+    ],
+    "event": "Campaign mission victory after all mandatory objectives",
+    "any_order": true,
+    "any_difficulty": true,
+    "skirmish_wins_count": false,
+    "replays_count": false,
+    "developer_diagnostics_count": false,
+    "optional_objectives_required": false,
+    "secret_faction_skirmish_access": "Veilborn selectable after the same campaign unlock; diagnostics may use it without recording progression."
+  },
+  "skirmish_only_factions": [
+    "unwritten",
+    "silence",
+    "nephilim"
+  ],
+  "shared_timeline": true
+}

@@ -1,5 +1,7 @@
 # Skirmish alpha audit — 25 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 Reviewed upstream `360d23f7326d546309b3ca249ad79042b1243ee3`, including the seven
 commits since `681cf3b`: faction doctrines, Veilglass hazards/accounting,
 destructible environments and engineers, themed HUDs, independent content staging,

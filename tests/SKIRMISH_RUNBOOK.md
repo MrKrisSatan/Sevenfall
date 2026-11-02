@@ -1,14 +1,14 @@
-# Sevenfall 0.2: first playable skirmish runbook
+# Sevenfall five-faction skirmish playtest runbook
 
-**Status: awaiting manual OpenRA runtime verification.** Static tests and a
+**Reusable full-match matrix: no results are implied by an unchecked row.** Component and package evidence lives in [current acceptance](../docs/TESTER_ALPHA_ACCEPTANCE.md). Static tests and a
 successful menu launch are not a substitute for the runs in this document.
 Use [BUILDING.md](../BUILDING.md) to install, build, and launch the pinned engine.
 
 ## Prerequisites and reproducibility
 
 1. Record the Sevenfall commit SHA, OpenRA/SDK pins in `BUILDING.md`, Windows
-   version, GPU, .NET version, player count, and whether Red Alert test
-   content was installed locally.
+   version, GPU, .NET version, player count, and the release version and whether the setup or portable package was used.
+   No Red Alert installation is required.
 2. Run `py -3 -m unittest discover -s tests`, then
    `py -3 scripts/build.py build` and `py -3 scripts/build.py launch`.
    Linux uses `python3` instead of `py -3`. Record failures and logs.
@@ -21,7 +21,7 @@ Use [BUILDING.md](../BUILDING.md) to install, build, and launch the pinned engin
 
 ## Economy, production, combat and victory procedure
 
-For **each of the nine lobby selections**:
+For **each of the twenty lobby selections**:
 
 - [ ] Spawn and deploy the correct side's MCV into a Construction Yard.
 - [ ] Build that side's power building; observe positive available power.
@@ -58,6 +58,17 @@ cases as **NOT RUN**, never inferred from another faction.
 | Iron Legions | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | Blood Brood | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | Court of Whispers | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Choir of Desolation | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Area Fifty Two | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Circle of Contempt | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Echo Directorate | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Iron Calculus | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Custodian Grid | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Paradox Collegium | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Ashen Thrones | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Hollow Choir | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Carrion Testament | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Broken Firmament | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 
 ## AI and multiplayer follow-up
 

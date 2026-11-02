@@ -1,5 +1,7 @@
 # Sevenfall animation and damage verification — 25 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 Implemented in the local branch `fix/campaign-objective-lifecycle`, based on upstream `b53ac9d`.
 
 ## Delivered scope

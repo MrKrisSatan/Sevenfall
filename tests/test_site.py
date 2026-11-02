@@ -45,6 +45,9 @@ class WebsiteTests(unittest.TestCase):
         actors = set()
         for filename in ['20-structures.yaml', '25-support-structures.yaml', '30-units.yaml', '45-defenses.yaml','55-subfactions.yaml','60-identities.yaml','51-engineers.yaml','65-new-realms.yaml','75-realm-completion.yaml']:
             actors.update(re.findall(r'^([A-Z][A-Z0-9_]+):', (ROOT / 'mods/sevenfall/rules' / filename).read_text(encoding='utf-8'), re.M))
+        extra=json.loads((ROOT/'design/ADDITIONAL_REALMS_ROSTER.json').read_text())
+        actors.update(a['id'].upper() for a in extra['assets'] if a['role'] not in ('yard','mcv'))
+        actors.add('V_RESONATOR')
         self.assertEqual({r['actor'] for r in records}, actors | {'FACT', 'MCV'})
         for faction in ['angels', 'humans', 'demons']:
             self.assertEqual(collections.Counter(r['kind'] for r in records if r['faction'] == faction), {'buildings': 24, 'units': 16})
@@ -70,8 +73,8 @@ class WebsiteTests(unittest.TestCase):
             if name == 'forces.html':
                 for option in ['buildings', 'units', *catalogue.SUBFACTIONS]:
                     self.assertIn(option, page.options)
-                self.assertEqual(len(page.images), 181)
-                self.assertEqual(len(page.full_art), 181)
+                self.assertEqual(len(page.images), 275)
+                self.assertEqual(len(page.full_art), 275)
                 expected = (ROOT / 'docs/catalogue.template.html').read_text(encoding='utf-8').replace('<!-- ROSTER_CARDS -->', '\n'.join(map(catalogue.render_card, catalogue.build_records())))
                 self.assertEqual(text, expected)
 

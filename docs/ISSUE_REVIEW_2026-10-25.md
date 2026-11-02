@@ -1,5 +1,7 @@
 # GitHub issue review — 25 October 2026
 
+> Historical evidence for the dated scope below. Current five-faction/twenty-subfaction release status and acceptance are maintained in [the alpha acceptance report](https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/TESTER_ALPHA_ACCEPTANCE.md); earlier counts and limitations are not current release claims.
+
 Reviewed all **11 existing issues** (10 open, 1 closed) against current main
 `7d44998`, released [alpha.2](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2),
 [exact-package acceptance](https://github.com/MrKrisSatan/Sevenfall/actions/runs/40243071020),
