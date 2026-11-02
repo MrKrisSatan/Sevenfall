@@ -15,7 +15,11 @@ ROLES = {'advpower':'Advanced power','service':'Vehicle repair','radar':'Radar',
  'helipad':'Vertical aircraft','airfield':'Fixed-wing aircraft','kennel':'Beast training','tech':'Technology',
  'chapel':'Infantry production','barracks':'Infantry production','pit':'Infantry production',
  'armory':'Vehicle production','motorpool':'Vehicle production','forge':'Vehicle production',
- 'spire':'Power','generator':'Power','heart':'Power','veilworks':'Veilglass refinery'}
+ 'spire':'Power','generator':'Power','heart':'Power','veilworks':'Veilglass refinery',
+ 'yard':'Base construction','mcv':'Mobile construction','harvester':'Veilglass collector',
+ 'gatherer':'Veilglass collector','engineer':'Repair and capture','rifleman':'Line infantry',
+ 'rocketeer':'Anti-armor infantry','bulwark':'Combat vehicle','watcher':'Line infantry',
+ 'judicator':'Ranged infantry','aegis':'Combat vehicle'}
 
 SUBFACTIONS.update({f[0]:f[1] for f in NEW_FACTIONS})
 

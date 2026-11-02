@@ -8,3 +8,4 @@
 .hero-force-art{flex-wrap:wrap}.hero-force-art img{max-width:18%;object-fit:contain}.faction.machine{--faction:#77e7ea;border-color:#377f87}.faction.fallen{--faction:#d9a3d9;border-color:#87618c}
 
 .topbar{gap:28px}.topbar .logo{white-space:nowrap;flex-shrink:0}.topbar nav{justify-content:flex-end;gap:14px 20px}@media(max-width:800px){.topbar{flex-direction:column}.topbar nav{justify-content:center}}
+.subfaction-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:5px 0}.subfaction-link span{color:var(--gold)}.subfaction-link:hover{color:var(--gold)}

@@ -4,7 +4,9 @@ from pathlib import Path
 import re
 
 base = Path(__file__).resolve().parent.parent / 'mods' / 'sevenfall'
-files = list((base / 'rules').glob('*.yaml')) + list((base / 'weapons').glob('*.yaml'))
+# Filesystem enumeration differs between Windows and Linux. Apply numbered
+# overlays after their base definitions, regardless of checkout directory order.
+files = sorted((base / 'rules').glob('*.yaml')) + sorted((base / 'weapons').glob('*.yaml'))
 assert files, 'No OpenRA YAML found'
 ids = {}
 for p in files:

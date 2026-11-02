@@ -1,6 +1,8 @@
-# Twelve hosts, twelve ways to wage war
+# The original twelve subfaction doctrines
 
-All twelve faction choices now have an active gameplay identity, two exclusive
+This guide covers the Angels, Humans and Demons. See the [twenty-subfaction playstyle guide](https://mrkrissatan.github.io/Sevenfall/subfactions.html) and [Noetic Assembly / Forsaken Host mechanics](NEW_REALMS.md) for the full five-realm roster.
+
+All twelve original faction choices have an active gameplay identity, two exclusive
 units and an exclusive late-game superweapon. The parent faction's economy and
 core units remain available, so recognizable armies can develop different plans.
 These are implemented alpha mechanics; competitive balance remains playtest work.
