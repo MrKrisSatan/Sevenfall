@@ -105,7 +105,9 @@ jobs:
           $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
           foreach ($scenario in @('newrealms', 'realmdoctrine', 'paintedrealms', 'realmcompletion', 'powerlifecycle')) {
             Copy-Item -LiteralPath ".sdk/mods/sevenfall/maps/$scenario-test" -Destination "$acceptance/mods/sevenfall/maps/$scenario-test" -Recurse
-            python scripts/run_defense_test.py --package $acceptance --scenario $scenario --support-dir "artifacts/windows-$scenario" --timeout 200
+            # Paid eight-subfaction progression has a 550-second simulation deadline.
+            $scenarioTimeout = if ($scenario -eq 'newrealms') { 700 } else { 200 }
+            python scripts/run_defense_test.py --package $acceptance --scenario $scenario --support-dir "artifacts/windows-$scenario" --timeout $scenarioTimeout
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }
       - name: Shared arsenal synchronization and salt-state save-load
