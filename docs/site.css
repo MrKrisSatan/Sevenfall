@@ -9,3 +9,6 @@
 
 .topbar{gap:28px}.topbar .logo{white-space:nowrap;flex-shrink:0}.topbar nav{justify-content:flex-end;gap:14px 20px}@media(max-width:800px){.topbar{flex-direction:column}.topbar nav{justify-content:center}}
 .subfaction-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:5px 0}.subfaction-link span{color:var(--gold)}.subfaction-link:hover{color:var(--gold)}
+
+/* Nine-faction homepage navigation. */
+.hero-faction-symbols{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));max-width:1100px;gap:12px;margin:30px auto 10px}.hero-faction-symbols a{min-width:0;padding:8px 3px;border:1px solid transparent;border-radius:4px}.hero-faction-symbols a:hover{border-color:var(--gold);background:var(--surface)}.hero-faction-symbols img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain}.hero-faction-symbols span{display:block;font-size:.65rem;line-height:1.4;margin-top:8px;color:var(--muted)}@media(max-width:850px){.hero-faction-symbols{grid-template-columns:repeat(5,minmax(0,1fr));max-width:650px}}@media(max-width:540px){.hero-faction-symbols{grid-template-columns:repeat(3,minmax(0,1fr));max-width:360px}}
