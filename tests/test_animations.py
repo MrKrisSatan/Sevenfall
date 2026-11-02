@@ -23,6 +23,9 @@ class AnimationExports(unittest.TestCase):
         extras = json.loads((ROOT / 'art/subfactions/catalogue.json').read_text(encoding='utf-8'))
         newunits = {e['id'].replace('_', '-') for e in extras if e['kind']=='unit'}
         newbuildings = {e['id'].replace('_', '-') for e in extras if e['kind']=='building'}
+        painted = [a for group in ['new-realms','realm-completion'] for a in json.loads((ROOT/'art'/group/'painted-manifest.json').read_text(encoding='utf-8'))]
+        newunits |= {a['id'].replace('_','-') for a in painted if a['kind']=='unit'}
+        newbuildings |= {a['id'].replace('_','-') for a in painted if a['kind']=='building'}
         self.assertEqual(units | newunits, {r.get('variant_of',r['id']) for r in catalogue if r['kind'] == 'units'})
         defenses = {a['id'].replace('_', '-') for a in json.loads((ROOT / 'art/defenses/catalogue.json').read_text())}
         self.assertEqual(buildings | defenses | newbuildings, {r.get('variant_of',r['id']) for r in catalogue if r['kind'] == 'buildings'})

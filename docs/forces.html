@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Explore every current Sevenfall building and unit: 69 building entries and 39 unit entries, including original-art roster variants, with original artwork, roles and subfaction descriptions.">
+  <meta name="description" content="Explore every current Sevenfall building and unit: 101 building entries and 80 unit entries, including original-art roster variants, with original artwork, roles and subfaction descriptions.">
   <meta name="theme-color" content="#0b0c13"><title>Faction Field Guide | Sevenfall</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="catalogue.css">
   <script src="catalogue.js" defer></script>
@@ -11,16 +11,16 @@
   <a class="skip" href="#catalogue">Skip to the roster</a>
   <header class="topbar"><a class="logo" href="index.html">✦ SEVENFALL</a><nav aria-label="Main navigation"><a href="index.html#world">The World</a><a href="forces.html" aria-current="page">Field Guide</a><a href="turnarounds.html">Unit Artwork</a><a href="index.html#roadmap">Progress</a><a href="https://github.com/MrKrisSatan/Sevenfall">GitHub ↗</a></nav></header>
   <main>
-    <section class="section guide-intro"><p class="eyebrow">THE WAR FOR CREATION / FIELD GUIDE</p><h1>Know your<br><em>army.</em></h1><p class="guide-lead">Celestial war engines. Human ingenuity. Infernal hunger. Explore the buildings and units of all three realms.</p><div class="guide-counts"><span><b>69</b> building entries</span><span><b>39</b> unit entries</span><span><b>12</b> subfactions</span></div>
-      <div class="guide-note"><strong>A living skirmish alpha roster</strong><p>Building, MCV and harvester images show original game artwork. Some combat-unit images show concept illustrations; the new doctrine entries show their game sprites. All 30 original unit bodies use authored animations; nine new specialists inherit those bodies. Twelve superweapon arrays reuse technology-building art. <a href="https://github.com/MrKrisSatan/Sevenfall/blob/main/docs/FACTION_IDENTITIES.md">Read all twelve faction mechanics and superweapons</a>. Descriptions reflect the current prototype; balance and designs may change. Aircraft, ships and kennel beasts are not yet in the playable roster. <a href="turnarounds.html">Explore 39 unit designs in eight directions</a>, including their new concepts.</p></div>
+    <section class="section guide-intro"><p class="eyebrow">THE WAR FOR CREATION / FIELD GUIDE</p><h1>Know your<br><em>army.</em></h1><p class="guide-lead">Celestial war engines. Human ingenuity. Infernal hunger. Explore the buildings and units of all five realms.</p><div class="guide-counts"><span><b>101</b> building entries</span><span><b>80</b> unit entries</span><span><b>20</b> subfactions</span></div>
+      <div class="guide-note"><strong>Alpha.3: five realms, twenty subfactions</strong><p>Explore Humans, Angels, Hell, the AI Noetic Assembly and the fallen Forsaken Host. All realms have buildings, defenses, aircraft, beasts and shared superweapons. Each new subfaction adds two exclusive units and a distinct doctrine. Six naval and fixed-wing production concepts are labelled as unavailable. Older combat portraits are concept references; new-realm and shared-arsenal portraits show integrated sprite artwork. <a href="new-realms.html">New faction doctrines</a> · <a href="arsenal.html">Shared superweapons and controls</a>.</p></div>
     </section>
     <section class="section roster-section" id="catalogue" aria-label="Building and unit catalogue">
       <form class="roster-controls" id="roster-filters" hidden role="search">
-        <div class="faction-filters" role="group" aria-label="Faction"><button type="button" data-filter-faction="all" aria-pressed="true">All realms</button><button type="button" data-filter-faction="angels" aria-pressed="false">Angels</button><button type="button" data-filter-faction="humans" aria-pressed="false">Humans</button><button type="button" data-filter-faction="demons" aria-pressed="false">Demons</button></div>
-        <div class="filter-fields"><label>Find a building or unit<input type="search" id="roster-search" placeholder="Name, role or description…" autocomplete="off"></label><label>Category<select id="roster-kind"><option value="all">Buildings &amp; units</option><option value="buildings">Buildings</option><option value="units">Units</option></select></label><label>Subfaction<select id="roster-subfaction"><option value="all">All subfactions</option><option value="a_seraph">Seraphic Synod</option><option value="a_warden">Order of the Gate</option><option value="a_exile">The Unshackled</option><option value="a_desolation">Choir of Desolation</option><option value="h_bastion">Bastion Directorate</option><option value="h_union">Free Earth Union</option><option value="h_covenant">Ashen Covenant</option><option value="h_area52">Area Fifty Two</option><option value="d_legion">Iron Legions</option><option value="d_brood">Blood Brood</option><option value="d_court">Court of Whispers</option><option value="d_contempt">Circle of Contempt</option></select></label></div>
-        <div class="filter-summary"><p id="roster-count" role="status" aria-live="polite">108 entries</p><button type="reset" class="reset-filters">Reset filters</button></div>
+        <div class="faction-filters" role="group" aria-label="Faction"><button type="button" data-filter-faction="all" aria-pressed="true">All realms</button><button type="button" data-filter-faction="angels" aria-pressed="false">Angels</button><button type="button" data-filter-faction="humans" aria-pressed="false">Humans</button><button type="button" data-filter-faction="demons" aria-pressed="false">Demons</button><button type="button" data-filter-faction="machine" aria-pressed="false">Noetic Assembly</button><button type="button" data-filter-faction="fallen" aria-pressed="false">Forsaken Host</button></div>
+        <div class="filter-fields"><label>Find a building or unit<input type="search" id="roster-search" placeholder="Name, role or description…" autocomplete="off"></label><label>Category<select id="roster-kind"><option value="all">Buildings &amp; units</option><option value="buildings">Buildings</option><option value="units">Units</option></select></label><label>Subfaction<select id="roster-subfaction"><option value="all">All subfactions</option><option value="a_seraph">Seraphic Synod</option><option value="a_warden">Order of the Gate</option><option value="a_exile">The Unshackled</option><option value="a_desolation">Choir of Desolation</option><option value="h_bastion">Bastion Directorate</option><option value="h_union">Free Earth Union</option><option value="h_covenant">Ashen Covenant</option><option value="h_area52">Area Fifty Two</option><option value="d_legion">Iron Legions</option><option value="d_brood">Blood Brood</option><option value="d_court">Court of Whispers</option><option value="d_contempt">Circle of Contempt</option><option value="i_echo">Echo Directorate</option><option value="i_iron">Iron Calculus</option><option value="i_grid">Custodian Grid</option><option value="i_paradox">Paradox Collegium</option><option value="f_thrones">Ashen Thrones</option><option value="f_choir">Hollow Choir</option><option value="f_scars">Carrion Testament</option><option value="f_wings">Broken Firmament</option></select></label></div>
+        <div class="filter-summary"><p id="roster-count" role="status" aria-live="polite">181 entries</p><button type="reset" class="reset-filters">Reset filters</button></div>
       </form>
-      <noscript><p>All 108 entries are listed below. Enable JavaScript to filter the roster and enlarge images.</p></noscript>
+      <noscript><p>All 181 entries are listed below. Enable JavaScript to filter the roster and enlarge images.</p></noscript>
       <p id="roster-empty" hidden>No entries match these filters. Try another name or reset the filters.</p>
       <div class="roster-grid"><article class="roster-card angels" id="a-yard" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Angel Construction Yard artwork" data-art="assets/roster/full/a-yard.webp"><img src="assets/roster/a-yard.webp" width="512" height="384" loading="lazy" decoding="async" alt="Angel Construction Yard — original game art"></button>
@@ -40,7 +40,7 @@
 </article>
 <article class="roster-card angels" id="a-kennel" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Guardian Cloister artwork" data-art="assets/roster/full/a-kennel.webp"><img src="assets/roster/a-kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Guardian Cloister — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Angels / Beast training</p><h3>Guardian Cloister</h3><p>Beast-training facility. No beasts available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Beast training</p><h3>Guardian Cloister</h3><p>Trains the shared realm beast. Beast production requires medium technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="sf-a-exile-ultimate" data-faction="angels" data-kind="buildings" data-subfaction="a_exile">
   <button class="art-button" type="button" aria-label="Enlarge Heaven in Revolt Array artwork" data-art="assets/roster/full/a-tech.webp"><img src="assets/roster/a-tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Heaven in Revolt Array — variant — parent building art"></button>
@@ -84,11 +84,11 @@
 </article>
 <article class="roster-card angels" id="a-airfield" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Seraph Launchway artwork" data-art="assets/roster/full/a-airfield.webp"><img src="assets/roster/a-airfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Seraph Launchway — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Angels / Fixed-wing aircraft</p><h3>Seraph Launchway</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Fixed-wing aircraft</p><h3>Seraph Launchway</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-helipad" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Sky Sanctum artwork" data-art="assets/roster/full/a-helipad.webp"><img src="assets/roster/a-helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sky Sanctum — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Angels / Vertical aircraft</p><h3>Sky Sanctum</h3><p>Vertical aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Vertical aircraft</p><h3>Sky Sanctum</h3><p>Produces the shared realm aircraft after Radar technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-skyward" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Skyward Choir artwork" data-art="assets/roster/full/a-skyward.webp"><img src="assets/roster/a-skyward.webp" width="512" height="384" loading="lazy" decoding="async" alt="Skyward Choir — original game art"></button>
@@ -102,9 +102,13 @@
   <button class="art-button" type="button" aria-label="Enlarge The Unbroken Gate Array artwork" data-art="assets/roster/full/a-tech.webp"><img src="assets/roster/a-tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="The Unbroken Gate Array — variant — parent building art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Exclusive superweapon</p><h3>The Unbroken Gate Array</h3><p>After 3s, allies within 6 cells take 65% less damage and regenerate 2% HP per second for 15s. Requires explored terrain; losing the installation, power or ownership during the warning cancels the strike. Recharge: 210s.</p><p class="availability">Order of the Gate exclusive</p><p class="art-status"><span>Variant — parent building art</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
 </article>
+<article class="roster-card angels" id="a-cataclysm" data-faction="angels" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Throne of Witness artwork" data-art="assets/realm-completion/a_cataclysm.webp"><img src="assets/realm-completion/a_cataclysm.webp" width="512" height="384" loading="lazy" decoding="async" alt="Throne of Witness — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Shared superweapon</p><h3>Throne of Witness</h3><p>A six-winged Witness unfolds above the target. After five seconds, all units and buildings in four cells become immobile salt statues and crumble four seconds later, including allies.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card angels" id="a-naval" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Tidegate artwork" data-art="assets/roster/full/a-naval.webp"><img src="assets/roster/a-naval.webp" width="512" height="384" loading="lazy" decoding="async" alt="Tidegate — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Angels / Naval production</p><h3>Tidegate</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Naval production</p><h3>Tidegate</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-dawnwall" data-faction="angels" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Wall of Dawn artwork" data-art="assets/roster/full/a-dawnwall.webp"><img src="assets/roster/a-dawnwall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Wall of Dawn — original game art"></button>
@@ -116,11 +120,15 @@
 </article>
 <article class="roster-card angels" id="a-mcv" data-faction="angels" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Angel MCV artwork" data-art="assets/roster/full/a-mcv.webp"><img src="assets/roster/a-mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Angel MCV — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Angels / Mobile construction</p><h3>Angel MCV</h3><p>Deploys into a faction Construction Yard to establish a base. Available as a starting unit; replacement MCV production is not enabled yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Mobile construction</p><h3>Angel MCV</h3><p>Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-aegis" data-faction="angels" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Aegis Engine artwork" data-art="assets/roster/full/a-aegis.webp"><img src="assets/roster/a-aegis.webp" width="512" height="384" loading="lazy" decoding="async" alt="Aegis Engine — concept illustration"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Combat vehicle</p><h3>Aegis Engine</h3><p>Durable precision war engine with heavy anti-armour volleys and Renewal. Slow and expensive.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
+</article>
+<article class="roster-card angels" id="a-engineer" data-faction="angels" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Angelic Restorer artwork" data-art="assets/roster/full/a-watcher.webp"><img src="assets/roster/a-watcher.webp" width="512" height="384" loading="lazy" decoding="async" alt="Angelic Restorer — variant — parent concept reference"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Repair and capture</p><h3>Angelic Restorer</h3><p>Repairs surviving civilian houses and bridges through repair posts; captures eligible enemy buildings.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
 </article>
 <article class="roster-card angels" id="a-congregant" data-faction="angels" data-kind="units" data-subfaction="a_desolation">
   <button class="art-button" type="button" aria-label="Enlarge Ashbound Congregant artwork" data-art="assets/roster/full/a-congregant.webp"><img src="assets/roster/a-congregant.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ashbound Congregant — original game art"></button>
@@ -133,6 +141,10 @@
 <article class="roster-card angels" id="a-gatherer" data-faction="angels" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Celestial Gatherer artwork" data-art="assets/roster/full/a-gatherer.webp"><img src="assets/roster/a-gatherer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Celestial Gatherer — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Veilglass collector</p><h3>Celestial Gatherer</h3><p>Slow and resilient Veilglass collector.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card angels" id="a-gryphon" data-faction="angels" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Covenant Gryphon artwork" data-art="assets/realm-completion/a_gryphon.webp"><img src="assets/realm-completion/a_gryphon.webp" width="512" height="384" loading="lazy" decoding="async" alt="Covenant Gryphon — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Beast</p><h3>Covenant Gryphon</h3><p>Ground beast trained at the faction kennel; melee combat and scouting.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card angels" id="a-outrider" data-faction="angels" data-kind="units" data-subfaction="a_exile">
   <button class="art-button" type="button" aria-label="Enlarge Exile Outrider artwork" data-art="assets/roster/full/a-aegis.webp"><img src="assets/roster/a-aegis.webp" width="512" height="384" loading="lazy" decoding="async" alt="Exile Outrider — variant — parent concept reference"></button>
@@ -158,6 +170,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Seraphim artwork" data-art="assets/roster/full/a-seraphim.webp"><img src="assets/roster/a-seraphim.webp" width="512" height="384" loading="lazy" decoding="async" alt="Seraphim — concept illustration"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Infantry</p><h3>Seraphim</h3><p>Synod-exclusive radiant area fire and heavy anti-air missiles; Renewal. Costly and slow.</p><p class="availability">Seraphic Synod exclusive</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
 </article>
+<article class="roster-card angels" id="a-skywarden" data-faction="angels" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sky Warden artwork" data-art="assets/realm-completion/a_skywarden.webp"><img src="assets/realm-completion/a_skywarden.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sky Warden — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Angels / Aircraft</p><h3>Sky Warden</h3><p>Armed hovering aircraft; vulnerable to dedicated anti-air.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card angels" id="a-wardbearer" data-faction="angels" data-kind="units" data-subfaction="a_warden">
   <button class="art-button" type="button" aria-label="Enlarge Wardbearer artwork" data-art="assets/roster/full/a-watcher.webp"><img src="assets/roster/a-watcher.webp" width="512" height="384" loading="lazy" decoding="async" alt="Wardbearer — variant — parent concept reference"></button>
   <div class="roster-card-copy"><p class="card-kicker">Angels / Exclusive specialist</p><h3>Wardbearer</h3><p>Infantry shield relay. Projects the same four-cell non-stacking formation protection as a Gatekeeper.</p><p class="availability">Order of the Gate exclusive</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
@@ -172,7 +188,7 @@
 </article>
 <article class="roster-card humans" id="h-airfield" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Airfield artwork" data-art="assets/roster/full/h-airfield.webp"><img src="assets/roster/h-airfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Airfield — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Humans / Fixed-wing aircraft</p><h3>Airfield</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Fixed-wing aircraft</p><h3>Airfield</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="sf-h-covenant-ultimate" data-faction="humans" data-kind="buildings" data-subfaction="h_covenant">
   <button class="art-button" type="button" aria-label="Enlarge Ashes to Ashes Array artwork" data-art="assets/roster/full/h-tech.webp"><img src="assets/roster/h-tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ashes to Ashes Array — variant — parent building art"></button>
@@ -188,7 +204,7 @@
 </article>
 <article class="roster-card humans" id="h-kennel" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Canine Compound artwork" data-art="assets/roster/full/h-kennel.webp"><img src="assets/roster/h-kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Canine Compound — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Humans / Beast training</p><h3>Canine Compound</h3><p>Beast-training facility. No beasts available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Beast training</p><h3>Canine Compound</h3><p>Trains the shared realm beast. Beast production requires medium technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="h-containment" data-faction="humans" data-kind="buildings" data-subfaction="h_area52">
   <button class="art-button" type="button" aria-label="Enlarge Containment Pylon artwork" data-art="assets/roster/full/h-containment.webp"><img src="assets/roster/h-containment.webp" width="512" height="384" loading="lazy" decoding="async" alt="Containment Pylon — original game art"></button>
@@ -204,7 +220,7 @@
 </article>
 <article class="roster-card humans" id="h-helipad" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Helipad artwork" data-art="assets/roster/full/h-helipad.webp"><img src="assets/roster/h-helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Helipad — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Humans / Vertical aircraft</p><h3>Helipad</h3><p>Vertical aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Vertical aircraft</p><h3>Helipad</h3><p>Produces the shared realm aircraft after Radar technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="h-motorpool" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Motor Pool artwork" data-art="assets/roster/full/h-motorpool.webp"><img src="assets/roster/h-motorpool.webp" width="512" height="384" loading="lazy" decoding="async" alt="Motor Pool — original game art"></button>
@@ -212,7 +228,7 @@
 </article>
 <article class="roster-card humans" id="h-naval" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Naval Yard artwork" data-art="assets/roster/full/h-naval.webp"><img src="assets/roster/h-naval.webp" width="512" height="384" loading="lazy" decoding="async" alt="Naval Yard — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Humans / Naval production</p><h3>Naval Yard</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Naval production</p><h3>Naval Yard</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="sf-h-area52-ultimate" data-faction="humans" data-kind="buildings" data-subfaction="h_area52">
   <button class="art-button" type="button" aria-label="Enlarge Project Event Horizon Array artwork" data-art="assets/roster/full/h-tech.webp"><img src="assets/roster/h-tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Project Event Horizon Array — variant — parent building art"></button>
@@ -242,6 +258,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Skyguard Missile Nest artwork" data-art="assets/roster/full/h-missilenest.webp"><img src="assets/roster/h-missilenest.webp" width="512" height="384" loading="lazy" decoding="async" alt="Skyguard Missile Nest — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Defense / anti-air</p><h3>Skyguard Missile Nest</h3><p>Dedicated guided anti-air missiles; crewed backup controls keep it working without power.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card humans" id="h-cataclysm" data-faction="humans" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Strategic Missile Silo artwork" data-art="assets/roster/h-tech.webp"><img src="assets/roster/h-tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Strategic Missile Silo — existing technology-building art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Shared superweapon</p><h3>Strategic Missile Silo</h3><p>Launches a nuclear missile. Five-second warning; damages all units and structures in six cells, including allies.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Existing technology-building art</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
+</article>
 <article class="roster-card humans" id="h-barracks" data-faction="humans" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Survival Barracks artwork" data-art="assets/roster/full/h-barracks.webp"><img src="assets/roster/h-barracks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Survival Barracks — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Infantry production</p><h3>Survival Barracks</h3><p>Trains human infantry.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
@@ -260,7 +280,7 @@
 </article>
 <article class="roster-card humans" id="h-mcv" data-faction="humans" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Human MCV artwork" data-art="assets/roster/full/h-mcv.webp"><img src="assets/roster/h-mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Human MCV — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Humans / Mobile construction</p><h3>Human MCV</h3><p>Deploys into a faction Construction Yard to establish a base. Available as a starting unit; replacement MCV production is not enabled yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Mobile construction</p><h3>Human MCV</h3><p>Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="h-confessor" data-faction="humans" data-kind="units" data-subfaction="h_covenant">
   <button class="art-button" type="button" aria-label="Enlarge Ash Confessor artwork" data-art="assets/roster/full/h-rifleman.webp"><img src="assets/roster/h-rifleman.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ash Confessor — variant — parent concept reference"></button>
@@ -270,6 +290,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Ash Templar artwork" data-art="assets/roster/full/h-templar.webp"><img src="assets/roster/h-templar.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ash Templar — concept illustration"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Infantry</p><h3>Ash Templar</h3><p>Covenant-exclusive armoured missile infantry. Stronger individual shots but slower fire than Rocketeers.</p><p class="availability">Ashen Covenant exclusive</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
 </article>
+<article class="roster-card humans" id="h-gunship" data-faction="humans" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Bastion Gunship artwork" data-art="assets/realm-completion/h_gunship.webp"><img src="assets/realm-completion/h_gunship.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bastion Gunship — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Aircraft</p><h3>Bastion Gunship</h3><p>Armed hovering aircraft; vulnerable to dedicated anti-air.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
 <article class="roster-card humans" id="h-sapper" data-faction="humans" data-kind="units" data-subfaction="h_bastion">
   <button class="art-button" type="button" aria-label="Enlarge Bastion Sapper artwork" data-art="assets/roster/full/h-rocketeer.webp"><img src="assets/roster/h-rocketeer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bastion Sapper — variant — parent concept reference"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Exclusive specialist</p><h3>Bastion Sapper</h3><p>Short-range breaching rocket specialist. Strong against concrete; fragile during the approach.</p><p class="availability">Bastion Directorate exclusive</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
@@ -278,9 +302,17 @@
   <button class="art-button" type="button" aria-label="Enlarge Bulwark Tank artwork" data-art="assets/roster/full/h-bulwark.webp"><img src="assets/roster/h-bulwark.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bulwark Tank — concept illustration"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Combat vehicle</p><h3>Bulwark Tank</h3><p>Cost-efficient tank with long-range sustained cannon fire and 50% faster depot repair. Less durable than Angel engines.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
 </article>
+<article class="roster-card humans" id="h-engineer" data-faction="humans" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Human Field Engineer artwork" data-art="assets/roster/full/h-rifleman.webp"><img src="assets/roster/h-rifleman.webp" width="512" height="384" loading="lazy" decoding="async" alt="Human Field Engineer — variant — parent concept reference"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Repair and capture</p><h3>Human Field Engineer</h3><p>Repairs surviving civilian houses and bridges through repair posts; captures eligible enemy buildings.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
+</article>
 <article class="roster-card humans" id="h-harvester" data-faction="humans" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Industrial Harvester artwork" data-art="assets/roster/full/h-harvester.webp"><img src="assets/roster/h-harvester.webp" width="512" height="384" loading="lazy" decoding="async" alt="Industrial Harvester — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Humans / Veilglass collector</p><h3>Industrial Harvester</h3><p>Balanced Veilglass collector with 50% faster depot repair. Requires a staffed economy to replace losses.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card humans" id="h-warhound" data-faction="humans" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Ironjaw Warhound artwork" data-art="assets/realm-completion/h_warhound.webp"><img src="assets/realm-completion/h_warhound.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ironjaw Warhound — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Humans / Beast</p><h3>Ironjaw Warhound</h3><p>Ground beast trained at the faction kennel; melee combat and scouting.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card humans" id="h-janus" data-faction="humans" data-kind="units" data-subfaction="h_area52">
   <button class="art-button" type="button" aria-label="Enlarge Janus Tank artwork" data-art="assets/roster/full/h-janus.webp"><img src="assets/roster/h-janus.webp" width="512" height="384" loading="lazy" decoding="async" alt="Janus Tank — original game art"></button>
@@ -320,7 +352,7 @@
 </article>
 <article class="roster-card demons" id="d-naval" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Abyssal Pen artwork" data-art="assets/roster/full/d-naval.webp"><img src="assets/roster/d-naval.webp" width="512" height="384" loading="lazy" decoding="async" alt="Abyssal Pen — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Demons / Naval production</p><h3>Abyssal Pen</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Naval production</p><h3>Abyssal Pen</h3><p>Waterborne production and ship repair. No ships available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-pit" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Birthing Pit artwork" data-art="assets/roster/full/d-pit.webp"><img src="assets/roster/d-pit.webp" width="512" height="384" loading="lazy" decoding="async" alt="Birthing Pit — original game art"></button>
@@ -348,15 +380,19 @@
 </article>
 <article class="roster-card demons" id="d-helipad" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Harpy Roost artwork" data-art="assets/roster/full/d-helipad.webp"><img src="assets/roster/d-helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Harpy Roost — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Demons / Vertical aircraft</p><h3>Harpy Roost</h3><p>Vertical aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Vertical aircraft</p><h3>Harpy Roost</h3><p>Produces the shared realm aircraft after Radar technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-kennel" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Hellhound Den artwork" data-art="assets/roster/full/d-kennel.webp"><img src="assets/roster/d-kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Hellhound Den — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Demons / Beast training</p><h3>Hellhound Den</h3><p>Beast-training facility. No beasts available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Beast training</p><h3>Hellhound Den</h3><p>Trains the shared realm beast. Beast production requires medium technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-cataclysm" data-faction="demons" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Hellmouth Crucible artwork" data-art="assets/realm-completion/d_cataclysm.webp"><img src="assets/realm-completion/d_cataclysm.webp" width="512" height="384" loading="lazy" decoding="async" alt="Hellmouth Crucible — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Shared superweapon</p><h3>Hellmouth Crucible</h3><p>Opens a Hellrift after five seconds, burning enemy units and structures in five cells.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-airfield" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Hellwing Runway artwork" data-art="assets/roster/full/d-airfield.webp"><img src="assets/roster/d-airfield.webp" width="512" height="384" loading="lazy" decoding="async" alt="Hellwing Runway — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Demons / Fixed-wing aircraft</p><h3>Hellwing Runway</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Fixed-wing aircraft</p><h3>Hellwing Runway</h3><p>Fixed-wing aircraft landing and resupply. No aircraft available yet.</p><p class="availability">Not buildable in alpha.3 — future naval/fixed-wing roster</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-veilworks" data-faction="demons" data-kind="buildings" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Maw of Want artwork" data-art="assets/roster/full/d-veilworks.webp"><img src="assets/roster/d-veilworks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Maw of Want — original game art"></button>
@@ -404,7 +440,15 @@
 </article>
 <article class="roster-card demons" id="d-mcv" data-faction="demons" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Demon MCV artwork" data-art="assets/roster/full/d-mcv.webp"><img src="assets/roster/d-mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Demon MCV — original game art"></button>
-  <div class="roster-card-copy"><p class="card-kicker">Demons / Mobile construction</p><h3>Demon MCV</h3><p>Deploys into a faction Construction Yard to establish a base. Available as a starting unit; replacement MCV production is not enabled yet.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Mobile construction</p><h3>Demon MCV</h3><p>Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-wyvern" data-faction="demons" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Ash Wyvern artwork" data-art="assets/realm-completion/d_wyvern.webp"><img src="assets/realm-completion/d_wyvern.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ash Wyvern — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Aircraft</p><h3>Ash Wyvern</h3><p>Armed hovering aircraft; vulnerable to dedicated anti-air.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card demons" id="d-hellhound" data-faction="demons" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Cinder Hound artwork" data-art="assets/realm-completion/d_hellhound.webp"><img src="assets/realm-completion/d_hellhound.webp" width="512" height="384" loading="lazy" decoding="async" alt="Cinder Hound — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Beast</p><h3>Cinder Hound</h3><p>Ground beast trained at the faction kennel; melee combat and scouting.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
 </article>
 <article class="roster-card demons" id="d-cinderling" data-faction="demons" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Cinderling artwork" data-art="assets/roster/full/d-cinderling.webp"><img src="assets/roster/d-cinderling.webp" width="512" height="384" loading="lazy" decoding="async" alt="Cinderling — concept illustration"></button>
@@ -430,6 +474,10 @@
   <button class="art-button" type="button" aria-label="Enlarge Infernal Devourer artwork" data-art="assets/roster/full/d-devourer.webp"><img src="assets/roster/d-devourer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Infernal Devourer — original game art"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Veilglass collector</p><h3>Infernal Devourer</h3><p>Fast but fragile Veilglass collector.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original game art</span> Current original artwork.</p></div>
 </article>
+<article class="roster-card demons" id="d-engineer" data-faction="demons" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Infernal Mason artwork" data-art="assets/roster/full/d-thrall.webp"><img src="assets/roster/d-thrall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Infernal Mason — variant — parent concept reference"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Demons / Repair and capture</p><h3>Infernal Mason</h3><p>Repairs surviving civilian houses and bridges through repair posts; captures eligible enemy buildings.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
+</article>
 <article class="roster-card demons" id="d-taskmaster" data-faction="demons" data-kind="units" data-subfaction="d_legion">
   <button class="art-button" type="button" aria-label="Enlarge Iron Taskmaster artwork" data-art="assets/roster/full/d-cinderling.webp"><img src="assets/roster/d-cinderling.webp" width="512" height="384" loading="lazy" decoding="async" alt="Iron Taskmaster — variant — parent concept reference"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Exclusive specialist</p><h3>Iron Taskmaster</h3><p>Armored command infantry. Projects a four-cell siege formation that trades movement speed for protection.</p><p class="availability">Iron Legions exclusive</p><p class="art-status"><span>Variant — parent concept reference</span> Uses existing parent artwork; distinct in-game role and abilities.</p></div>
@@ -453,9 +501,253 @@
 <article class="roster-card demons" id="d-thrall" data-faction="demons" data-kind="units" data-subfaction="shared">
   <button class="art-button" type="button" aria-label="Enlarge Thrall artwork" data-art="assets/roster/full/d-thrall.webp"><img src="assets/roster/d-thrall.webp" width="512" height="384" loading="lazy" decoding="async" alt="Thrall — concept illustration"></button>
   <div class="roster-card-copy"><p class="card-kicker">Demons / Infantry</p><h3>Thrall</h3><p>Cheap, fragile melee infantry. Fast production; attacking triggers Blood Frenzy. Vulnerable before closing range.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Concept illustration</span> Original animated game sprite integrated; concept art shown.</p></div>
+</article>
+<article class="roster-card machine" id="i-yard" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Construction Yard artwork" data-art="assets/new-realms/i_yard.webp"><img src="assets/new-realms/i_yard.webp" width="512" height="384" loading="lazy" decoding="async" alt="Construction Yard — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Defense</p><h3>Construction Yard</h3><p>Deploy an MCV to establish faction construction and build the shared realm base.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-motorpool" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Chassis Forge artwork" data-art="assets/new-realms/i_motorpool.webp"><img src="assets/new-realms/i_motorpool.webp" width="512" height="384" loading="lazy" decoding="async" alt="Chassis Forge — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Vehicle production</p><h3>Chassis Forge</h3><p>Chassis Forge provides vehicle production for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-generator" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Cognition Reactor artwork" data-art="assets/new-realms/i_generator.webp"><img src="assets/new-realms/i_generator.webp" width="512" height="384" loading="lazy" decoding="async" alt="Cognition Reactor — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Power</p><h3>Cognition Reactor</h3><p>Cognition Reactor provides power for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-cataclysm" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Extinction Array artwork" data-art="assets/realm-completion/i_cataclysm.webp"><img src="assets/realm-completion/i_cataclysm.webp" width="512" height="384" loading="lazy" decoding="async" alt="Extinction Array — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared superweapon</p><h3>Extinction Array</h3><p>An orbital Extinction strike pulses three times against enemies in five cells, disrupting their combat systems.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-advpower" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Fusion Stack artwork" data-art="assets/new-realms/i_advpower.webp"><img src="assets/new-realms/i_advpower.webp" width="512" height="384" loading="lazy" decoding="async" alt="Fusion Stack — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Advanced power</p><h3>Fusion Stack</h3><p>Fusion Stack provides advanced power for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-missilenest" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Interceptor Node artwork" data-art="assets/new-realms/i_missilenest.webp"><img src="assets/new-realms/i_missilenest.webp" width="512" height="384" loading="lazy" decoding="async" alt="Interceptor Node — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Defense</p><h3>Interceptor Node</h3><p>Interceptor Node provides defense for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-veilworks" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Matter Compiler artwork" data-art="assets/new-realms/i_veilworks.webp"><img src="assets/new-realms/i_veilworks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Matter Compiler — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Veilglass refinery</p><h3>Matter Compiler</h3><p>Matter Compiler provides veilglass refinery for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-radar" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Prediction Spire artwork" data-art="assets/new-realms/i_radar.webp"><img src="assets/new-realms/i_radar.webp" width="512" height="384" loading="lazy" decoding="async" alt="Prediction Spire — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Radar</p><h3>Prediction Spire</h3><p>Prediction Spire provides radar for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-kennel" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Quadruped Assembly artwork" data-art="assets/realm-completion/i_kennel.webp"><img src="assets/realm-completion/i_kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Quadruped Assembly — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Beast training</p><h3>Quadruped Assembly</h3><p>Trains the shared realm beast. Beast production requires medium technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-service" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Reconstruction Bay artwork" data-art="assets/new-realms/i_service.webp"><img src="assets/new-realms/i_service.webp" width="512" height="384" loading="lazy" decoding="async" alt="Reconstruction Bay — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Vehicle repair</p><h3>Reconstruction Bay</h3><p>Reconstruction Bay provides vehicle repair for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-tech" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Recursion Core artwork" data-art="assets/new-realms/i_tech.webp"><img src="assets/new-realms/i_tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Recursion Core — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Technology</p><h3>Recursion Core</h3><p>Recursion Core provides technology for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-autocannon" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sentry Node artwork" data-art="assets/new-realms/i_autocannon.webp"><img src="assets/new-realms/i_autocannon.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sentry Node — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Defense</p><h3>Sentry Node</h3><p>Sentry Node provides defense for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-barracks" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Shell Foundry artwork" data-art="assets/new-realms/i_barracks.webp"><img src="assets/new-realms/i_barracks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Shell Foundry — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Infantry production</p><h3>Shell Foundry</h3><p>Shell Foundry provides infantry production for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-helipad" data-faction="machine" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Vector Launch Deck artwork" data-art="assets/realm-completion/i_helipad.webp"><img src="assets/realm-completion/i_helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Vector Launch Deck — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Aircraft production</p><h3>Vector Launch Deck</h3><p>Produces the shared realm aircraft after Radar technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-mcv" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Mobile Construction Vehicle artwork" data-art="assets/new-realms/i_mcv.webp"><img src="assets/new-realms/i_mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mobile Construction Vehicle — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Mobile Construction Vehicle</h3><p>Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-rocketeer" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Breach Automaton artwork" data-art="assets/new-realms/i_rocketeer.webp"><img src="assets/new-realms/i_rocketeer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Breach Automaton — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Breach Automaton</h3><p>Breach Automaton provides shared combat unit for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-savant" data-faction="machine" data-kind="units" data-subfaction="i_paradox">
+  <button class="art-button" type="button" aria-label="Enlarge Circuit Savant artwork" data-art="assets/new-realms/i_savant.webp"><img src="assets/new-realms/i_savant.webp" width="512" height="384" loading="lazy" decoding="async" alt="Circuit Savant — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Circuit Savant</h3><p>Fast experimental infantry; fragile but dangerous in short exchanges.</p><p class="availability">Paradox Collegium exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-crucible" data-faction="machine" data-kind="units" data-subfaction="i_iron">
+  <button class="art-button" type="button" aria-label="Enlarge Crucible Engine artwork" data-art="assets/new-realms/i_crucible.webp"><img src="assets/new-realms/i_crucible.webp" width="512" height="384" loading="lazy" decoding="async" alt="Crucible Engine — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Crucible Engine</h3><p>Slow siege chassis with exceptional health and high replacement cost.</p><p class="availability">Iron Calculus exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-endurer" data-faction="machine" data-kind="units" data-subfaction="i_iron">
+  <button class="art-button" type="button" aria-label="Enlarge Endurer artwork" data-art="assets/new-realms/i_endurer.webp"><img src="assets/new-realms/i_endurer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Endurer — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Endurer</h3><p>Expensive armored infantry; powerful in sustained exchanges but easily outmaneuvered.</p><p class="availability">Iron Calculus exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-gambit" data-faction="machine" data-kind="units" data-subfaction="i_paradox">
+  <button class="art-button" type="button" aria-label="Enlarge Gambit Rover artwork" data-art="assets/new-realms/i_gambit.webp"><img src="assets/new-realms/i_gambit.webp" width="512" height="384" loading="lazy" decoding="async" alt="Gambit Rover — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Gambit Rover</h3><p>Fast harassment vehicle; withdraw wounded survivors rather than trading with tanks.</p><p class="availability">Paradox Collegium exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-stalker" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Logic Stalker artwork" data-art="assets/realm-completion/i_stalker.webp"><img src="assets/realm-completion/i_stalker.webp" width="512" height="384" loading="lazy" decoding="async" alt="Logic Stalker — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Beast</p><h3>Logic Stalker</h3><p>Ground beast trained at the faction kennel; melee combat and scouting.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-ghost" data-faction="machine" data-kind="units" data-subfaction="i_echo">
+  <button class="art-button" type="button" aria-label="Enlarge Mnemonic Ghost artwork" data-art="assets/new-realms/i_ghost.webp"><img src="assets/new-realms/i_ghost.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mnemonic Ghost — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Mnemonic Ghost</h3><p>Reconnaissance infantry; detects cloaked targets within three cells. Fragile under focus fire.</p><p class="availability">Echo Directorate exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-lance" data-faction="machine" data-kind="units" data-subfaction="i_echo">
+  <button class="art-button" type="button" aria-label="Enlarge Needle Chassis artwork" data-art="assets/new-realms/i_lance.webp"><img src="assets/new-realms/i_lance.webp" width="512" height="384" loading="lazy" decoding="async" alt="Needle Chassis — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Needle Chassis</h3><p>Mobile precision gun. Long reload and low armor demand a screen.</p><p class="availability">Echo Directorate exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-harvester" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Reclaimer artwork" data-art="assets/new-realms/i_harvester.webp"><img src="assets/new-realms/i_harvester.webp" width="512" height="384" loading="lazy" decoding="async" alt="Reclaimer — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Reclaimer</h3><p>Collects Veilglass safely and delivers it to the refinery.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-relay" data-faction="machine" data-kind="units" data-subfaction="i_grid">
+  <button class="art-button" type="button" aria-label="Enlarge Relay Walker artwork" data-art="assets/new-realms/i_relay.webp"><img src="assets/new-realms/i_relay.webp" width="512" height="384" loading="lazy" decoding="async" alt="Relay Walker — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Relay Walker</h3><p>Four-cell command relay. Killing it removes the Grid formation advantage.</p><p class="availability">Custodian Grid exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-engineer" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Repair Proxy artwork" data-art="assets/new-realms/i_engineer.webp"><img src="assets/new-realms/i_engineer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Repair Proxy — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Repair Proxy</h3><p>Repairs surviving civilian houses and bridge posts; captures eligible enemy buildings.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-bulwark" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sentinel Chassis artwork" data-art="assets/new-realms/i_bulwark.webp"><img src="assets/new-realms/i_bulwark.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sentinel Chassis — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Sentinel Chassis</h3><p>Sentinel Chassis provides shared combat unit for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-rifleman" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Shell Trooper artwork" data-art="assets/new-realms/i_rifleman.webp"><img src="assets/new-realms/i_rifleman.webp" width="512" height="384" loading="lazy" decoding="async" alt="Shell Trooper — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Shared combat unit</p><h3>Shell Trooper</h3><p>Shell Trooper provides shared combat unit for every Noetic Assembly subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-thread" data-faction="machine" data-kind="units" data-subfaction="i_grid">
+  <button class="art-button" type="button" aria-label="Enlarge Threadkeeper artwork" data-art="assets/new-realms/i_thread.webp"><img src="assets/new-realms/i_thread.webp" width="512" height="384" loading="lazy" decoding="async" alt="Threadkeeper — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Exclusive combat unit</p><h3>Threadkeeper</h3><p>Anti-armor network infantry. Escort a relay rather than fighting alone.</p><p class="availability">Custodian Grid exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card machine" id="i-interceptor" data-faction="machine" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Vector Interceptor artwork" data-art="assets/realm-completion/i_interceptor.webp"><img src="assets/realm-completion/i_interceptor.webp" width="512" height="384" loading="lazy" decoding="async" alt="Vector Interceptor — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Machine / Aircraft</p><h3>Vector Interceptor</h3><p>Armed hovering aircraft; vulnerable to dedicated anti-air.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-yard" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Construction Yard artwork" data-art="assets/new-realms/f_yard.webp"><img src="assets/new-realms/f_yard.webp" width="512" height="384" loading="lazy" decoding="async" alt="Construction Yard — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Defense</p><h3>Construction Yard</h3><p>Deploy an MCV to establish faction construction and build the shared realm base.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-spire" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Apostate Pyre artwork" data-art="assets/new-realms/f_spire.webp"><img src="assets/new-realms/f_spire.webp" width="512" height="384" loading="lazy" decoding="async" alt="Apostate Pyre — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Power</p><h3>Apostate Pyre</h3><p>Apostate Pyre provides power for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-watchfire" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Balefire Watch artwork" data-art="assets/new-realms/f_watchfire.webp"><img src="assets/new-realms/f_watchfire.webp" width="512" height="384" loading="lazy" decoding="async" alt="Balefire Watch — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Defense</p><h3>Balefire Watch</h3><p>Balefire Watch provides defense for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-radar" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Blind Oracle artwork" data-art="assets/new-realms/f_radar.webp"><img src="assets/new-realms/f_radar.webp" width="512" height="384" loading="lazy" decoding="async" alt="Blind Oracle — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Radar</p><h3>Blind Oracle</h3><p>Blind Oracle provides radar for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-skyward" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Broken Halo Battery artwork" data-art="assets/new-realms/f_skyward.webp"><img src="assets/new-realms/f_skyward.webp" width="512" height="384" loading="lazy" decoding="async" alt="Broken Halo Battery — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Defense</p><h3>Broken Halo Battery</h3><p>Broken Halo Battery provides defense for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-kennel" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Carrion Cradle artwork" data-art="assets/realm-completion/f_kennel.webp"><img src="assets/realm-completion/f_kennel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Carrion Cradle — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Beast training</p><h3>Carrion Cradle</h3><p>Trains the shared realm beast. Beast production requires medium technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-armory" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Flesh Crucible artwork" data-art="assets/new-realms/f_armory.webp"><img src="assets/new-realms/f_armory.webp" width="512" height="384" loading="lazy" decoding="async" alt="Flesh Crucible — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Vehicle production</p><h3>Flesh Crucible</h3><p>Flesh Crucible provides vehicle production for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-helipad" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Mourning Roost artwork" data-art="assets/realm-completion/f_helipad.webp"><img src="assets/realm-completion/f_helipad.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mourning Roost — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Aircraft production</p><h3>Mourning Roost</h3><p>Produces the shared realm aircraft after Radar technology.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-veilworks" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Ossuary Mill artwork" data-art="assets/new-realms/f_veilworks.webp"><img src="assets/new-realms/f_veilworks.webp" width="512" height="384" loading="lazy" decoding="async" alt="Ossuary Mill — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Veilglass refinery</p><h3>Ossuary Mill</h3><p>Ossuary Mill provides veilglass refinery for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-chapel" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Profaned Chapel artwork" data-art="assets/new-realms/f_chapel.webp"><img src="assets/new-realms/f_chapel.webp" width="512" height="384" loading="lazy" decoding="async" alt="Profaned Chapel — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Infantry production</p><h3>Profaned Chapel</h3><p>Profaned Chapel provides infantry production for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-cataclysm" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sepulchral Crown artwork" data-art="assets/realm-completion/f_cataclysm.webp"><img src="assets/realm-completion/f_cataclysm.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sepulchral Crown — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared superweapon</p><h3>Sepulchral Crown</h3><p>The Sepulchral Rapture tears at enemy armies and suppresses their miracles for thirty seconds.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-advpower" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Sundered Halo artwork" data-art="assets/new-realms/f_advpower.webp"><img src="assets/new-realms/f_advpower.webp" width="512" height="384" loading="lazy" decoding="async" alt="Sundered Halo — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Advanced power</p><h3>Sundered Halo</h3><p>Sundered Halo provides advanced power for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-service" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Suture Shrine artwork" data-art="assets/new-realms/f_service.webp"><img src="assets/new-realms/f_service.webp" width="512" height="384" loading="lazy" decoding="async" alt="Suture Shrine — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Vehicle repair</p><h3>Suture Shrine</h3><p>Suture Shrine provides vehicle repair for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-tech" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Testament Vault artwork" data-art="assets/new-realms/f_tech.webp"><img src="assets/new-realms/f_tech.webp" width="512" height="384" loading="lazy" decoding="async" alt="Testament Vault — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Technology</p><h3>Testament Vault</h3><p>Testament Vault provides technology for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-judgment" data-faction="fallen" data-kind="buildings" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Wrath Organ artwork" data-art="assets/new-realms/f_judgment.webp"><img src="assets/new-realms/f_judgment.webp" width="512" height="384" loading="lazy" decoding="async" alt="Wrath Organ — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Defense</p><h3>Wrath Organ</h3><p>Wrath Organ provides defense for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-mcv" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Mobile Construction Vehicle artwork" data-art="assets/new-realms/f_mcv.webp"><img src="assets/new-realms/f_mcv.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mobile Construction Vehicle — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Mobile Construction Vehicle</h3><p>Deploys into a faction Construction Yard. Replacement MCVs become available after a Service Depot.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-judicator" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Blight Herald artwork" data-art="assets/new-realms/f_judicator.webp"><img src="assets/new-realms/f_judicator.webp" width="512" height="384" loading="lazy" decoding="async" alt="Blight Herald — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Blight Herald</h3><p>Blight Herald provides shared combat unit for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-aegis" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Bonebound Engine artwork" data-art="assets/new-realms/f_aegis.webp"><img src="assets/new-realms/f_aegis.webp" width="512" height="384" loading="lazy" decoding="async" alt="Bonebound Engine — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Bonebound Engine</h3><p>Bonebound Engine provides shared combat unit for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-carrion" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Carrion Chimera artwork" data-art="assets/realm-completion/f_carrion.webp"><img src="assets/realm-completion/f_carrion.webp" width="512" height="384" loading="lazy" decoding="async" alt="Carrion Chimera — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Beast</p><h3>Carrion Chimera</h3><p>Ground beast trained at the faction kennel; melee combat and scouting.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-martyr" data-faction="fallen" data-kind="units" data-subfaction="f_scars">
+  <button class="art-button" type="button" aria-label="Enlarge Carrion Martyr artwork" data-art="assets/new-realms/f_martyr.webp"><img src="assets/new-realms/f_martyr.webp" width="512" height="384" loading="lazy" decoding="async" alt="Carrion Martyr — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Carrion Martyr</h3><p>Melee abomination with a lethal wounded phase; lacks a ranged attack.</p><p class="availability">Carrion Testament exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-harrow" data-faction="fallen" data-kind="units" data-subfaction="f_wings">
+  <button class="art-button" type="button" aria-label="Enlarge Harrow Stalker artwork" data-art="assets/new-realms/f_harrow.webp"><img src="assets/new-realms/f_harrow.webp" width="512" height="384" loading="lazy" decoding="async" alt="Harrow Stalker — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Harrow Stalker</h3><p>Independent flanking hunter. Clumping removes its isolation bonus.</p><p class="availability">Broken Firmament exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-lamentor" data-faction="fallen" data-kind="units" data-subfaction="f_choir">
+  <button class="art-button" type="button" aria-label="Enlarge Lamentor artwork" data-art="assets/new-realms/f_lamentor.webp"><img src="assets/new-realms/f_lamentor.webp" width="512" height="384" loading="lazy" decoding="async" alt="Lamentor — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Lamentor</h3><p>Four-cell profane hymn relay. The hymn amplifies damage dealt and received.</p><p class="availability">Hollow Choir exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-bonekite" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Mourning Kite artwork" data-art="assets/realm-completion/f_bonekite.webp"><img src="assets/realm-completion/f_bonekite.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mourning Kite — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Aircraft</p><h3>Mourning Kite</h3><p>Armed hovering aircraft; vulnerable to dedicated anti-air.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-canticle" data-faction="fallen" data-kind="units" data-subfaction="f_choir">
+  <button class="art-button" type="button" aria-label="Enlarge Mute Canticle artwork" data-art="assets/new-realms/f_canticle.webp"><img src="assets/new-realms/f_canticle.webp" width="512" height="384" loading="lazy" decoding="async" alt="Mute Canticle — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Mute Canticle</h3><p>Cheap ranged procession infantry; needs a Lamentor to reach full damage.</p><p class="availability">Hollow Choir exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-watcher" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Oath Husk artwork" data-art="assets/new-realms/f_watcher.webp"><img src="assets/new-realms/f_watcher.webp" width="512" height="384" loading="lazy" decoding="async" alt="Oath Husk — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Oath Husk</h3><p>Oath Husk provides shared combat unit for every Forsaken Host subfaction.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-pinions" data-faction="fallen" data-kind="units" data-subfaction="f_wings">
+  <button class="art-button" type="button" aria-label="Enlarge Severed Pinion artwork" data-art="assets/new-realms/f_pinions.webp"><img src="assets/new-realms/f_pinions.webp" width="512" height="384" loading="lazy" decoding="async" alt="Severed Pinion — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Severed Pinion</h3><p>Grounded hunter with shattered wings; split from the army to gain range and speed.</p><p class="availability">Broken Firmament exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-engineer" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Suture Keeper artwork" data-art="assets/new-realms/f_engineer.webp"><img src="assets/new-realms/f_engineer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Suture Keeper — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Suture Keeper</h3><p>Repairs surviving civilian houses and bridge posts; captures eligible enemy buildings.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-gatherer" data-faction="fallen" data-kind="units" data-subfaction="shared">
+  <button class="art-button" type="button" aria-label="Enlarge Tithe Bearer artwork" data-art="assets/new-realms/f_gatherer.webp"><img src="assets/new-realms/f_gatherer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Tithe Bearer — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Shared combat unit</p><h3>Tithe Bearer</h3><p>Collects Veilglass safely and delivers it to the refinery.</p><p class="availability">Shared by all four subfactions</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-regent" data-faction="fallen" data-kind="units" data-subfaction="f_thrones">
+  <button class="art-button" type="button" aria-label="Enlarge Uncrowned Regent artwork" data-art="assets/new-realms/f_regent.webp"><img src="assets/new-realms/f_regent.webp" width="512" height="384" loading="lazy" decoding="async" alt="Uncrowned Regent — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Uncrowned Regent</h3><p>Armored fallen noble. Slow, costly infantry built to hold a position.</p><p class="availability">Ashen Thrones exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-flayer" data-faction="fallen" data-kind="units" data-subfaction="f_scars">
+  <button class="art-button" type="button" aria-label="Enlarge Vow Flayer artwork" data-art="assets/new-realms/f_flayer.webp"><img src="assets/new-realms/f_flayer.webp" width="512" height="384" loading="lazy" decoding="async" alt="Vow Flayer — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Vow Flayer</h3><p>Fast melee infantry that becomes more dangerous when wounded; kite it.</p><p class="availability">Carrion Testament exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
+</article>
+<article class="roster-card fallen" id="f-reliquary" data-faction="fallen" data-kind="units" data-subfaction="f_thrones">
+  <button class="art-button" type="button" aria-label="Enlarge Walking Reliquary artwork" data-art="assets/new-realms/f_reliquary.webp"><img src="assets/new-realms/f_reliquary.webp" width="512" height="384" loading="lazy" decoding="async" alt="Walking Reliquary — original animated game art"></button>
+  <div class="roster-card-copy"><p class="card-kicker">Fallen / Exclusive combat unit</p><h3>Walking Reliquary</h3><p>Bone-bound siege abomination; vulnerable while repositioning.</p><p class="availability">Ashen Thrones exclusive</p><p class="art-status"><span>Original animated game art</span> Current original artwork.</p></div>
 </article></div>
     </section>
-    <section class="section guide-footer"><h2>From concept to battlefield.</h2><p>Initial movement, attack/work and death cycles are integrated for all 30 implemented faction unit designs, with damage variants for vehicles and all 57 buildings. Animation polish, advanced research and expanded air/naval rosters remain in development.</p><a class="btn primary" href="https://github.com/MrKrisSatan/Sevenfall/blob/main/BUILDING.md">Build the prototype ↗</a><a class="btn secondary" href="index.html#roadmap">Development progress</a><p class="muted">Artwork generated for Sevenfall with OpenAI image generation. Original-content licensing remains under review. No borrowed Red Alert artwork is hosted in this catalogue.</p></section>
+    <section class="section guide-footer"><h2>From concept to battlefield.</h2><p>Alpha.3 adds 71 painted sheets across the new realms and shared arsenal, including eight-direction units, building damage states and superweapon effects. Animation, audio, balance, campaigns and naval warfare still need development.</p><a class="btn primary" href="https://github.com/MrKrisSatan/Sevenfall/blob/main/BUILDING.md">Build the alpha ↗</a><a class="btn secondary" href="index.html#roadmap">Development progress</a><p class="muted">Artwork generated for Sevenfall with OpenAI image generation. Source art and provenance are supplied in the repository. No borrowed Red Alert artwork is hosted in this catalogue.</p></section>
   </main>
   <dialog id="art-dialog" aria-labelledby="art-title"><button type="button" class="dialog-close" autofocus aria-label="Close artwork">Close ×</button><img id="art-full" alt=""><div class="dialog-copy"><p id="art-label" class="eyebrow"></p><h2 id="art-title"></h2><p id="art-description"></p><p id="art-availability" class="muted"></p></div></dialog>
   <footer><a class="logo" href="index.html">✦ SEVENFALL</a><p>The War for Creation · Built with OpenRA</p><a href="https://github.com/MrKrisSatan/Sevenfall">View the source ↗</a></footer>

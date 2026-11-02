@@ -1,6 +1,6 @@
 # Sevenfall development roadmap
 
-## New realms development expansion
+## Five-faction alpha.3
 
 - [x] Shared aircraft, beasts and superweapons for all five parent realms and
   twenty subfactions; nuclear missile and timed six-winged salt judgement.
@@ -16,9 +16,10 @@
 
 Mechanics, limitations and native component evidence: [new realms](docs/NEW_REALMS.md).
 
-**Current milestone: [0.3.0-alpha.2 Windows skirmish tester alpha](https://github.com/MrKrisSatan/Sevenfall/releases/tag/v0.3.0-alpha.2).**
-Twelve faction choices, two exclusive units and one superweapon per choice, and
-three public skirmish maps are shipped. Campaigns and broader competitive balance
+**Current milestone: [0.3.0-alpha.3 Windows playtest candidate](https://github.com/MrKrisSatan/Sevenfall/releases).**
+Twenty faction choices, two exclusive units per choice, five shared realm powers,
+twelve original subfaction powers, aircraft, beasts and three public skirmish maps
+are implemented. Alpha.3 packaging and release verification are in progress. Campaigns and broader competitive balance
 remain in development. This checklist distinguishes implemented features from
 full-match and platform acceptance; see the [issue review](docs/ISSUE_REVIEW_2026-10-25.md)
 and [native acceptance evidence](docs/TESTER_ALPHA_ACCEPTANCE.md).

@@ -1,6 +1,17 @@
 # Sevenfall changelog
 
-## Building-bound superweapons � development
+## 0.3.0-alpha.3 — five-faction playtest candidate
+
+- Brings the Noetic Assembly and Forsaken Host into the standalone release: five
+  realms, twenty subfactions and forty exclusive units.
+- Includes 71 new painted sheets, shared aircraft/beasts and seventeen building-bound
+  superweapons in Defences, with the six-winged Witness of Salt and human Nuclear.
+- Enables normal helipad and kennel construction for the original three realms.
+- Updates the website to 181 illustrated building/unit entries and twenty filters.
+- Adds exact-package expansion, building lifecycle, multiplayer and salt-state
+  save/load gates. Fixes UTF-8 changelog staging on clean Windows/Linux runners.
+
+## Building-bound superweapons — development
 
 - All 17 superweapon powers automatically charge in the Defences tab while their
   installation exists. Ready powers light the tab; click a ready icon to target.

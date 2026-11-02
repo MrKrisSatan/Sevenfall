@@ -16,7 +16,7 @@ def main():
     parser.add_argument('--package',type=Path)
     parser.add_argument('--dotnet',default=str(ROOT/'.tools/dotnet10/dotnet.exe'))
     parser.add_argument('--support-dir',type=Path,required=True)
-    parser.add_argument('--scenario',choices=['doctrine','identity'],default='doctrine')
+    parser.add_argument('--scenario',choices=['doctrine','identity','realmcompletion'],default='doctrine')
     parser.add_argument('--timeout',type=int,default=240)
     args=parser.parse_args();engine=(args.package or args.engine_dir).resolve();support=args.support_dir.resolve()
     if support.exists():parser.error('Preserving existing acceptance evidence; choose a fresh directory')
@@ -24,8 +24,8 @@ def main():
     search=str(engine/'mods') if args.package else f'{ROOT/".sdk/mods"},{engine/"mods"}'
     env=dict(os.environ,ENGINE_DIR=str(engine),MOD_SEARCH_PATHS=search)
     utility=[str(engine/'OpenRA.Utility.exe')] if args.package else [args.dotnet,str(engine/'bin/OpenRA.Utility.dll')]
-    mapname='identitynetwork-test' if args.scenario=='identity' else 'network-test'
-    checks=78 if args.scenario=='identity' else 34
+    mapname={'identity':'identitynetwork-test','doctrine':'network-test','realmcompletion':'realmcompletionnetwork-test'}[args.scenario]
+    checks={'identity':78,'doctrine':34,'realmcompletion':73}[args.scenario]
     marker=args.scenario.upper()+'_TEST COMPLETE checks='+str(checks)
     network_map=engine/'mods/sevenfall/maps'/mapname if args.package else ROOT/'.sdk/mods/sevenfall/maps'/mapname
     uid=subprocess.check_output([*utility,'sevenfall','--map-hash',str(network_map)],env=env,text=True).strip()

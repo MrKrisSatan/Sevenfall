@@ -37,15 +37,6 @@ H_NAVAL:
 D_NAVAL:
 	Buildable:
 		Prerequisites: ~disabled
-A_HELIPAD:
-	Buildable:
-		Prerequisites: ~disabled
-H_HELIPAD:
-	Buildable:
-		Prerequisites: ~disabled
-D_HELIPAD:
-	Buildable:
-		Prerequisites: ~disabled
 A_AIRFIELD:
 	Buildable:
 		Prerequisites: ~disabled
@@ -53,14 +44,5 @@ H_AIRFIELD:
 	Buildable:
 		Prerequisites: ~disabled
 D_AIRFIELD:
-	Buildable:
-		Prerequisites: ~disabled
-A_KENNEL:
-	Buildable:
-		Prerequisites: ~disabled
-H_KENNEL:
-	Buildable:
-		Prerequisites: ~disabled
-D_KENNEL:
 	Buildable:
 		Prerequisites: ~disabled

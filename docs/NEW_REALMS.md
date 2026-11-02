@@ -1,8 +1,7 @@
 # The Noetic Assembly and the Forsaken Host
 
-Development expansion: **five parent realms, twenty selectable subfactions**.
-The published alpha.2 remains a twelve-choice release; these additions require a
-new development build. Each new choice has two exclusive paid units, a shared
+Alpha.3 expansion: **five parent realms, twenty selectable subfactions**.
+Alpha.3 includes these additions; alpha.2 remains the previous twelve-choice release. Each new choice has two exclusive paid units, a shared
 realm economy/army, and a combat doctrine. No existing faction is removed.
 
 ## Noetic Assembly

@@ -1,0 +1,14 @@
+{
+  "normal_save_and_load_orders": true,
+  "realmcompletion_assertions_per_run": 73,
+  "matching_state_checkpoints": {
+    "375": "1037539389",
+    "500": "-1235642598",
+    "875": "1375274541",
+    "1000": "915293164"
+  },
+  "normal_exit_codes": [
+    0,
+    0
+  ]
+}

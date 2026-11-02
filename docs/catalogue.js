@@ -7,8 +7,8 @@
   const kind = document.getElementById('roster-kind');
   const subfaction = document.getElementById('roster-subfaction');
   const params = new URLSearchParams(location.search);
-  let faction = ['angels','humans','demons'].includes(params.get('faction')) ? params.get('faction') : 'all';
-  const parents = {a:'angels',h:'humans',d:'demons'};
+  let faction = ['angels','humans','demons','machine','fallen'].includes(params.get('faction')) ? params.get('faction') : 'all';
+  const parents = {a:'angels',h:'humans',d:'demons',i:'machine',f:'fallen'};
   search.value = params.get('q') || '';
   kind.value = ['buildings','units'].includes(params.get('type')) ? params.get('type') : 'all';
   if ([...subfaction.options].some(o => o.value === params.get('subfaction'))) subfaction.value = params.get('subfaction');

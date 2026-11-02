@@ -15,6 +15,8 @@ on:
       - 'scripts/package*.py'
       - 'scripts/test_installer.py'
       - '.github/workflows/windows-candidate.yml'
+env:
+  PYTHONUTF8: "1"
 permissions:
   contents: read
 jobs:
@@ -97,6 +99,26 @@ jobs:
           $env:DOTNET_ROOT = Join-Path $env:RUNNER_TEMP 'NoExternalDotnetRuntime'
           python scripts/run_save_test.py --package $acceptance --support-dir artifacts/windows-native-save --timeout 180
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Expanded factions, shared arsenal and building lifecycle
+        shell: pwsh
+        run: |
+          $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
+          foreach ($scenario in @('newrealms', 'realmdoctrine', 'paintedrealms', 'realmcompletion', 'powerlifecycle')) {
+            Copy-Item -LiteralPath ".sdk/mods/sevenfall/maps/$scenario-test" -Destination "$acceptance/mods/sevenfall/maps/$scenario-test" -Recurse
+            python scripts/run_defense_test.py --package $acceptance --scenario $scenario --support-dir "artifacts/windows-$scenario" --timeout 200
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+      - name: Shared arsenal synchronization and salt-state save-load
+        shell: pwsh
+        run: |
+          $acceptance = Join-Path $env:RUNNER_TEMP 'SevenfallNativeAcceptance'
+          foreach ($map in @('realmcompletionnetwork-test', 'realmcompletionsave-test')) {
+            Copy-Item -LiteralPath ".sdk/mods/sevenfall/maps/$map" -Destination "$acceptance/mods/sevenfall/maps/$map" -Recurse
+          }
+          python scripts/run_network_test.py --package $acceptance --scenario realmcompletion --support-dir artifacts/windows-arsenal-network --timeout 300
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/run_save_test.py --package $acceptance --scenario realmcompletion --support-dir artifacts/windows-arsenal-save --timeout 200
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Compile setup with preinstalled Inno Setup
         shell: pwsh
         run: |
@@ -140,4 +162,11 @@ jobs:
             artifacts/windows-native-identityai/*
             artifacts/windows-identity-network/*
             artifacts/windows-identity-save/*
+            artifacts/windows-newrealms/*
+            artifacts/windows-realmdoctrine/*
+            artifacts/windows-paintedrealms/*
+            artifacts/windows-realmcompletion/*
+            artifacts/windows-powerlifecycle/*
+            artifacts/windows-arsenal-network/*
+            artifacts/windows-arsenal-save/*
             docs/RELEASE_BLOCKERS.md

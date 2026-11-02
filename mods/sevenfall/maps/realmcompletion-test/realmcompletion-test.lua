@@ -16,6 +16,8 @@ WorldLoaded=function()
   local p=Player.GetPlayer('P'..(i-1));players[i]=p;p.Cash=30000
   local x=8+(i-1)*24
   Make('fact',p,x,6);Make(prefix..'_tech',p,x+6,6)
+  Make(prefix..'_radar',p,x,31)
+  Make(({'h_barracks','a_chapel','d_pit','i_barracks','f_chapel'})[i],p,x+6,31)
   Make(prefix..'_helipad',p,x,16);Make(prefix..'_kennel',p,x+6,16)
   for j=0,4 do Make(powers[i],p,x+j*3,26) end
   sources[i]=Make(prefix..'_cataclysm',p,x+10,6)
@@ -68,6 +70,21 @@ WorldLoaded=function()
   Check(saltTree.IsDead and saltBridge.IsDead,'trees and bridges crumble')
   Check(allies[1].IsDead and neutrals[1].IsDead,'nuclear friendly and neutral damage')
   for _,i in ipairs({1,3,4,5}) do Check(targets[i].IsDead or targets[i].Health<targets[i].MaxHealth,'shared strike damages target '..names[i]) end
+ end)
+ Trigger.AfterDelay(DateTime.Seconds(20),function()
+  for i,p in ipairs(players) do Check(p.QueueProduction(names[i]..'_helipad'),'normal helipad construction queue '..names[i]) end
+ end)
+ Trigger.AfterDelay(DateTime.Seconds(22),function()
+  for i,p in ipairs(players) do p.PlaceCompletedBuilding(names[i]..'_helipad',CPos.New(11+(i-1)*24,6)) end
+ end)
+ Trigger.AfterDelay(DateTime.Seconds(24),function()
+  for i,p in ipairs(players) do Check(#p.GetActorsByType(names[i]..'_helipad')==2,'paid helipad placed '..names[i]);Check(p.QueueProduction(names[i]..'_kennel'),'normal kennel construction queue '..names[i]) end
+ end)
+ Trigger.AfterDelay(DateTime.Seconds(26),function()
+  for i,p in ipairs(players) do p.PlaceCompletedBuilding(names[i]..'_kennel',CPos.New(11+(i-1)*24,10)) end
+ end)
+ Trigger.AfterDelay(DateTime.Seconds(30),function()
+  for i,p in ipairs(players) do Check(#p.GetActorsByType(names[i]..'_kennel')==2,'paid kennel placed '..names[i]) end
  end)
  Trigger.AfterDelay(DateTime.Seconds(45),function()
   for i,a in ipairs(airtargets) do Check(a.IsDead or a.Health<a.MaxHealth,'aircraft damages ground target '..air[i]) end

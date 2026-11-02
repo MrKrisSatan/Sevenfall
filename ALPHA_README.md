@@ -13,7 +13,7 @@ The build prefers native OpenGL (Modern). The engine overlay fixes empty map-pre
 textures and uses framebuffer readback for ANGLE/GLES. Additional GPU/driver
 combinations remain useful tester feedback.
 
-The alpha focuses on land skirmishes with three parent factions and twelve
+The alpha focuses on skirmishes with five parent factions and twenty
 subfactions, original buildings/units, physical Veilglass harvesting, explosive
 Veilglass hazards, defenses, faction HUDs and destructible civilian environments.
 Ashen Crossing, Broken Choir and The Twelvefold Scar are the skirmish maps.
@@ -22,7 +22,10 @@ alternate routes, villages and repairable bridges. Elevation is visual; there is
 no high-ground combat bonus. Diagnostic maps and campaign previews are excluded
 from this skirmish distribution.
 
-Air/naval/beast production is hidden. Audio is intentionally limited; inherited
+Aircraft and beasts are playable. Naval and fixed-wing aircraft remain unavailable.
+Superweapon powers automatically charge in Defences while their building exists;
+losing the building removes access and rebuilding starts a fresh charge cycle.
+See the website for the Noetic Assembly and Forsaken Host doctrines. Audio is intentionally limited; inherited
 speech/music is absent. Some effects and glyphs use simple original vector art.
 Engineers reuse existing infantry artwork and have a plus marker. House rubble
 cannot be rebuilt; engineers repair surviving houses and restore bridges through

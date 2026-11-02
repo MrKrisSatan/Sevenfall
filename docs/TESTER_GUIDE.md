@@ -11,7 +11,15 @@ and add Sevenfall AI opponents to open slots. Start the game, select your MCV an
 press **F** to deploy. Build power, a Veilworks refinery, barracks and vehicle
 production. Harvesters gather physical Veilglass and deliver it to the refinery.
 
-Three parent factions each offer four choices. See the
+Five parent factions each offer four choices. The AI Noetic Assembly and fallen
+Forsaken Host add eight doctrines and sixteen exclusive units: see [new factions](NEW_REALMS.md).
+Build a helipad/roost for aircraft and a kennel/cradle for beasts. Shared superweapon
+installations unlock after faction technology. Their powers automatically charge
+in **Defences**; click a ready icon and choose a target. Destroying the last
+supplying building removes the power; rebuilding starts a fresh charge.
+Nuclear and Witness of Salt can harm friendly units. See [the shared arsenal](SHARED_ARSENAL.md).
+
+See the
 [twelve faction mechanics, exclusive units and superweapons](FACTION_IDENTITIES.md),
 [subfaction controls and counterplay](SUBFACTIONS.md) and [defenses](DEFENSES.md).
 Area Fifty Two changes its SERAPH/ABYSS protocol by deploying a powered Containment

@@ -1,4 +1,33 @@
-# Skirmish tester alpha acceptance — 25 October 2026
+# Skirmish tester alpha acceptance
+
+## Alpha.3 five-faction expansion — 2 November 2026
+
+Alpha.3 includes five parent factions and twenty subfactions, the Noetic Assembly
+and Forsaken Host with sixteen exclusive units, shared aircraft and beasts for
+all five realms, and seventeen building-bound superweapons in the Defences tab.
+The field guide now covers 181 illustrated entries, including six unavailable
+naval/fixed-wing facilities explicitly labelled as future content.
+
+The release workflow adds exact-package checks for new realm production,
+doctrines and painted sprites, all shared powers and paid helipad/kennel placement,
+and all seventeen power building lifecycles. Dedicated-server/two-client and
+save/load variants exercise the new shared powers, including a save made during
+active salt petrification before crumbling. Local acceptance passed 113 Python tests, 120 C# assertions, 73 arsenal checks,
+73 checks on each network client with five matching sync hashes, and 73 checks
+in each save/load run with four matching post-load hashes. Final exact-package
+workflow evidence is required before publication.
+
+The original three realms' helipads and kennels are now enabled in the public
+profile. A stale restriction was found during release preparation and removed;
+normal paid construction and placement are covered by 73 native arsenal checks.
+Text files use UTF-8 in local and fresh-runner builds.
+
+Known alpha.3 limits: early balance/animation/audio, incomplete naval and fixed-wing
+rosters, unfinished campaigns, unsigned Windows binaries and limited Internet/GPU
+coverage. The human nuclear installation reuses its realm technology-building art.
+New saves/replays should be created for this version. The evidence below describes
+the historical alpha.1/alpha.2 baseline, not additional alpha.3 claims.
+
 
 ## Alpha.2 faction identity pass
 

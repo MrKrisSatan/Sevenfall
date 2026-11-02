@@ -1,7 +1,7 @@
 # Standalone tester alpha readiness
 
 The release scope is a complete, self-contained **Windows x64 skirmish alpha for
-testers**, with twelve faction choices and three skirmish maps. This is separate
+testers**, with twenty faction choices and three skirmish maps. This is separate
 from the finished campaign game's future release.
 
 Current evidence: [tester alpha acceptance](TESTER_ALPHA_ACCEPTANCE.md).
@@ -29,8 +29,7 @@ approve a release. Check the release notes for its workflow run and source revis
 ## Remaining alpha limitations
 
 Balance across every pairing, wide-area Internet latency/NAT, additional GPUs and
-very large armies need tester coverage. Campaign previews, aircraft/naval/beast
-production and fuller audio are outside this public skirmish scope. Elevation is
+very large armies need tester coverage. Campaign previews, naval/fixed-wing production and fuller audio are outside this public skirmish scope. Elevation is
 visual with impassable cliff edges, without high-ground combat bonuses.
 
 The initial five-minute twelve-bot diagnostic required four combat units to be

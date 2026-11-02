@@ -65,6 +65,14 @@ Rules:
 	H_CATACLYSM:
 		SFFactionPower:
 			ChargeInterval: 25
+	H_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	H_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
 	H_GUNSHIP:
 		Buildable:
 			BuildDuration: 25
@@ -76,6 +84,14 @@ Rules:
 	A_CATACLYSM:
 		SFFactionPower:
 			ChargeInterval: 25
+	A_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	A_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
 	A_SKYWARDEN:
 		Buildable:
 			BuildDuration: 25
@@ -87,6 +103,14 @@ Rules:
 	D_CATACLYSM:
 		SFFactionPower:
 			ChargeInterval: 25
+	D_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	D_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
 	D_WYVERN:
 		Buildable:
 			BuildDuration: 25
@@ -98,6 +122,14 @@ Rules:
 	I_CATACLYSM:
 		SFFactionPower:
 			ChargeInterval: 25
+	I_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	I_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
 	I_INTERCEPTOR:
 		Buildable:
 			BuildDuration: 25
@@ -109,6 +141,14 @@ Rules:
 	F_CATACLYSM:
 		SFFactionPower:
 			ChargeInterval: 25
+	F_HELIPAD:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
+	F_KENNEL:
+		Buildable:
+			BuildDuration: 25
+			BuildDurationModifier: 100
 	F_BONEKITE:
 		Buildable:
 			BuildDuration: 25

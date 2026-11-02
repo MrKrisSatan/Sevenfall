@@ -1,0 +1,17 @@
+{
+  "clients": 2,
+  "dedicated_server": true,
+  "realmcompletion_assertions_per_client": 73,
+  "matching_sync_snapshots": {
+    "250": "977373126",
+    "500": "-1133249384",
+    "750": "-325917956",
+    "1000": "-491125015",
+    "1250": "-1253554241"
+  },
+  "ticks": 1250,
+  "normal_client_exit_codes": [
+    0,
+    0
+  ]
+}

@@ -68,8 +68,8 @@ Recorded acceptance: 111 Python tests, 120 C# assertions, engine YAML/sprite/chr
 validation and [53 native checks](../tests/native-evidence/shared-arsenal.txt).
 The existing subfaction powers also passed [78 native regression checks](../tests/native-evidence/shared-arsenal-regression.txt).
 Full multiplayer/save-load, autonomous AI full matches, audio and competitive
-balance remain separate acceptance work. Published alpha.2 is unchanged.
+balance remain separate acceptance work. Alpha.3 includes the shared arsenal.
 
 Building lifecycle and sidebar acceptance: 113 Python tests, engine validation,
 and [173 lifecycle + 9 UI checks](../tests/native-evidence/power-lifecycle.txt).
-Verified the grid at 1600×900 and 1280×720; a direct sidebar click selected and launched Nuclear.
+Verified the grid at 1600Ã—900 and 1280Ã—720; a direct sidebar click selected and launched Nuclear.
